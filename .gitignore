@@ -1,0 +1,5 @@
+solver
+solver.c*
+.vscode
+__*
+package.json
