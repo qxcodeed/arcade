@@ -4,12 +4,7 @@
 
 Nestes arquivos você vai encontrar uma série de exercícios para praticar sua
 resolução de problemas. Os tópicos abordam diferentes competências de
-pensamento.
-
-Cada questão possui uma descrição e um conjunto de testes. Esses testes podem ser utilizado para os professores que utilizam o plugin VPL no Moodle para
-automatizar suas disciplinas de programação.
-
-Também vão as soluções das questões em linguagens como C ou Python. Se você for aluno, use com sabedoria. Programar se aprende programando e não olhando código. Mas se você travou em alguma parte e não consegue ajuda, uma olhadinha seria uma boa ideia.
+pensamento em estrutura de dados.
 
 ## Contribuindo
 
