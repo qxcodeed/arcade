@@ -20,5 +20,10 @@ Lista de Exercícios
 - [Link](./base/0004/Readme.md#qxcode) [rec][QE0004] L3 - Triângulo da soma
 
 
+## lst
+- [Link](./base/0008/Readme.md#qxcode) [lst][QE0008] L3 - Cabeças vão rolar V1 - com lista
+- [Link](./base/0009/Readme.md#qxcode) [lst][QE0008] L4 - Cabeças vão rolar V3 - com lista dupla
+
+
 ## sta
 - [Link](./base/0007/Readme.md#qxcode) [sta][QE0007] L4 - Queimada utilizando pilha
