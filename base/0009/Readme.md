@@ -1,4 +1,4 @@
-## [lst][QE0008] L4 - Cabeças vão rolar V3 - com lista dupla
+## [lst][QE0009] L4 - Cabeças vão rolar V3 - com lista dupla
 
 Resolva novamente o problema cabeças vão rolar V3 utilizando uma lista ligada circular no lugar do vetor.
 
