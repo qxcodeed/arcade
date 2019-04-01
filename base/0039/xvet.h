@@ -41,7 +41,7 @@ void calc_yfactor(int * vet, int size){
     yfactor /= max;
     if(yfactor < 0.2)
         yfactor = 0.2;
-    printf("yf %f", yfactor);
+    //printf("yf %f", yfactor);
 }
 
 //processa cores e parametros
