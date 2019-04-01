@@ -1,0 +1,40 @@
+## 01.1 Cabeças vão Rolar V1 com vector         @QE0000
+## 01.2 Cabeças vão Rolar V2 com vector         @QE0001
+## 01.3 Cabeças vão Rolar V3 com vector         @QE0002
+## 01.4 Cabeças vão Rolar V1 com lista simples  @QE0013 #todo
+## 01.5 Cabeças vão Rolar V3 com lista dupla    @QE0014 #todo
+## 02.1 Rec Operações básicas                   @QE0005
+## 02.2 Rec Triângulo da soma                   @QE0004
+## 02.3 Desenhando Fractais com xpaint          @QE0022 #todo
+## 03.1 Queimada V1: chamada recursiva          @QE0003
+## 03.2 Queimada V2: aleatória recursiva        @QE0011 #todo
+## 03.3 Queimada V3: utilizando pilha           @QE0007 #todo
+## 03.4 Mat: Gerando um matriz aleatória        @QE0006
+## 03.5 Mat: Visualizando mat com xpaint        @QE0015
+## 03.6 Mat: Andanado no lab xpaint nolock      @QE0036 #todo
+## 04.1 Labirinto: Criando com Recursão         @QE0010
+## 04.1 Labirinto: Criando com Recursão video   @QE0038
+## 04.2 Labirinto: Resolvendo com recursão      @QE0008 #todo
+## 04.3 Labirinto: Criando com pilha            @QE0012 #todo
+## 04.4 Labirinto: Resolvendo com pilha         @QE0009 #todo
+## 04.5 Labirinto: Criando sem quinas (desafio) @QE0037 #todo
+## 05.1 Build: Vetor dinâmico                   @QE0016 #todo
+## 05.2 Build: Lista Simples                    @QE0017 #todo
+## 05.3 Build: Lista Dupla                      @QE0018 #todo
+## 05.4 Build: Fila em vetor (Buffer)           @QE0019 #todo
+## 05.5 Build: Hash com Lista                   @QE0020 #todo
+## 05.6 Build: BSTREE                           @QE0033 #todo
+## 05.6 Build: BTREE                            @QE0032 #todo
+## 05.6 Build: Hash com Linear Probing          @QE0021 #todo
+## 06.1 Lista: Editor de texto                  @QE0023 #todo
+## 06.1 Lista: Editor de texto xpaint nolock    @QE0035 #todo
+## 06.2 Lista: Simulação Fila Bancária          @QE0024 #todo
+## 07.1 Fila: Floodfill                         @QE0025 #todo
+## 07.2 Fila: Pathfinding                       @QE0026 #todo
+## 08.1 Busca Binária                           @QE0031 #todo
+## 08.2 Sort: Bubble Selection Insertion        @QE0027 #todo
+## 08.3 Sort: Insertion em Lista                @QE0030 #todo
+## 08.4 Sort: Quick Sort                        @QE0028 #todo
+## 08.5 Sort: Merge Sort                        @QE0029 #todo
+## 08.6 Sort: Visualizando ordenação            @QE0039
+## 09.1 Tree: Árvore de Decisão                 @QE0034 #todo

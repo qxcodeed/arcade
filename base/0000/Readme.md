@@ -1,4 +1,4 @@
-## [vet][QE0000] L2 - Cabeças vão Rolar V1
+## 01.1 Cabeças vão Rolar V1 com vector         @QE0000
 [![](logo.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.
@@ -16,13 +16,23 @@ No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 
     - Etapa a etapa, os elementos que estão vivos na fila circular, indicando com um > quem está com a espada.
 
 ---
+## Implementação usando vetor
+- Utilize um vetor com dois algoritmos
+    - marcando os elementos que morrem.
+    - retirando os elementos que morrem e diminuindo o tamanho do vetor.
 
-- Implemente esse problemas utilizando as seguintes abordagens:
-    - utilizando um vetor
-        - marcando os elementos que morrem.
-        - retirando os elementos que morrem e diminuindo o tamanho do vetor.
-    - utilizando um lista ligada simples sem nós de marcação. 
+---
+## Implementação usando listas
 
+Resolva novamente o problema utilizando uma lista ligada circular no lugar do vetor.
+
+```c
+struct Node{
+    int value;
+    Node * next;
+};
+
+```
 
 ---
 Testes:

@@ -1,4 +1,4 @@
-## [lst][QE0008] L3 - Cabeças vão rolar V1 - com lista
+## 04.2 Labirinto: Resolvendo com recursão      @QE0008 #todo
 
 Resolva novamente o problema cabeças vão rolar V1 utilizando uma lista ligada circular no lugar do vetor.
 

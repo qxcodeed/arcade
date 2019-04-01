@@ -1,4 +1,4 @@
-## [aux][QX0006] L2 - Gerando um matriz aleatória
+## 03.4 Mat: Gerando um matriz aleatória        @QE0006
 ## @qxcode
 
 Vamos preencher uma matriz aleatoriamente com árvores `#` e espaços vazios `.`.

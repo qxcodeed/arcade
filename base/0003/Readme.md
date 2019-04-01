@@ -1,4 +1,4 @@
-## [rec][QE0003] L2 - Queimada utilizando recursão
+## 03.1 Queimada V1: chamada recursiva          @QE0003
 ## @qxcode
 
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas.

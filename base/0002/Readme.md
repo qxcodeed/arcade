@@ -1,4 +1,4 @@
-## [vet][QE0002] L4 - Cabeças vão Rolar v3
+## 01.3 Cabeças vão Rolar V3 com vector         @QE0002
 
 [![](logo.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
@@ -13,16 +13,23 @@ Esse jogo é equivalente ao V2 porém com duas diferenças.
     - Etapa a etapa, os elementos que estão vivos na fila circular.
         - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
 
+
 ---
+## Implementação com lista
 
-- Implemente esse problemas utilizando as seguintes abordagens:
-    - utilizando um vetor
-        - marcando os elementos que morrem.
-        - retirando os elementos que morrem e diminuindo o tamanho do vetor.
-    - utilizando um lista circular **dupla**  sem nós de marcação. 
+Resolva novamente o problema cabeças vão rolar V3 utilizando uma lista ligada circular no lugar do vetor.
 
+```c
+struct Node{
+    int value;
+    Node * next;
+    Node * prev;
+};
 
-Testes:
+```
+
+---
+## Testes:
 
 ```
 >>>>>>>> 01

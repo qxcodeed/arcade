@@ -1,4 +1,4 @@
-## [sta][QE0007] L4 - Queimada utilizando pilha
+## 03.3 Queimada V3: utilizando pilha           @QE0007 #todo
 ## @qxcode
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.

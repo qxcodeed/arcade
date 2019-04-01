@@ -1,4 +1,4 @@
-## [vet][QE0001] L3 - Cabeças vão Rolar v2
+## 01.2 Cabeças vão Rolar V2 com vector         @QE0001
 
 [![](logo.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
