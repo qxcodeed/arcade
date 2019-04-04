@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "../libs/xpaint.h"
-#include "xvet.h"
+#include "../libs/xvet.h"
 
 void insertion(int * vet, int size){
     for(int i = 1; i < size; i++){

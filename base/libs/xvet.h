@@ -1,5 +1,5 @@
 #define H_ONLY
-#include "../libs/xpaint.h"
+#include "xpaint.h"
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
