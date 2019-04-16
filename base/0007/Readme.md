@@ -1,4 +1,4 @@
-## 03.3 Queimada V3: utilizando pilha           @QE0007 #todo
+## 03.3 Queimada V3  utilizando pilha           #todo
 ## @qxcode
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.

@@ -1,4 +1,5 @@
-## 03.5 Mat: Visualizando mat com xpaint        @QE0015
+## 03.5 Mat  Visualizando mat com xpaint
+## @qxcode
 
 Você pode utilizar esse modelo de código para gerar a visualização do seu labirinto com o xpaint.
 

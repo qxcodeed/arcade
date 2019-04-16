@@ -1,4 +1,5 @@
-## 01.2 Cabeças vão Rolar V2 com vector         @QE0001
+## 01.2 Cabeças vão Rolar V2 com vector
+## @qxcode
 
 [![](logo.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

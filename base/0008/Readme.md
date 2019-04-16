@@ -1,4 +1,5 @@
-## 04.2 Labirinto: Resolvendo com recursão      @QE0008 #todo
+## 04.2 Labirinto  Resolvendo com recursão      #todo
+## @qxcode
 
 Resolva novamente o problema cabeças vão rolar V1 utilizando uma lista ligada circular no lugar do vetor.
 

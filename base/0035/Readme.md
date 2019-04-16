@@ -1,1 +1,2 @@
-## 06.1 Lista: Editor de texto xpaint nolock    @QE0035 #todo
+## 06.1 Lista  Editor de texto xpaint nolock    #todo
+## @qxcode

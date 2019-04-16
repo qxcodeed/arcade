@@ -1,4 +1,4 @@
-## 02.1 Rec Operações básicas                   @QE0005
+## 02.1 Rec Operações básicas
 ## @qxcode
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 

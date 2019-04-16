@@ -1,4 +1,4 @@
-## 03.2 Queimada V2: aleatória recursiva        @QE0011 #todo
+## 03.2 Queimada V2  aleatória recursiva        #todo
 ## @qxcode
 
 Refaça o algoritmo da queimada com recursão escolhendo em cada nó aleatoriamente os vizinhos que serão visitados.
