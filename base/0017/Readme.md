@@ -1,4 +1,4 @@
-## 05.2 Build  Lista Simples                    #todo
+## 05.2 Build Lista Simples                    #todo
 ## @qxcode
 
 Implementações de Lista Encadeada

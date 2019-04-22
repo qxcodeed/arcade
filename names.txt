@@ -9,35 +9,36 @@
 0005: 02.1 Rec Operações básicas
 0004: 02.2 Rec Triângulo da soma
 0022: 02.3 Desenhando Fractais com xpaint          #todo
-0003: 03.1 Queimada V1  chamada recursiva
-0011: 03.2 Queimada V2  aleatória recursiva        #todo
-0007: 03.3 Queimada V3  utilizando pilha           #todo
-0006: 03.4 Mat  Gerando um matriz aleatória
-0015: 03.5 Mat  Visualizando mat com xpaint
-0036: 03.6 Mat  Andanado no lab xpaint nolock      #todo
-0010: 04.1 Labirinto  Criando com Recursão
-0038: 04.1 Labirinto  Criando com Recursão video
-0008: 04.2 Labirinto  Resolvendo com recursão      #todo
-0012: 04.3 Labirinto  Criando com pilha            #todo
-0009: 04.4 Labirinto  Resolvendo com pilha         #todo
-0037: 04.5 Labirinto  Criando sem quinas (desafio) #todo
-0016: 05.1 Build  Vetor dinâmico                   #todo
-0017: 05.2 Build  Lista Simples                    #todo
-0018: 05.3 Build  Lista Dupla                      #todo
-0019: 05.4 Build  Fila em vetor (Buffer)           #todo
-0020: 05.5 Build  Hash com Lista                   #todo
-0033: 05.6 Build  BSTREE                           #todo
-0032: 05.6 Build  BTREE                            #todo
-0021: 05.6 Build  Hash com Linear Probing          #todo
-0023: 06.1 Lista  Editor de texto                  #todo
-0035: 06.1 Lista  Editor de texto xpaint nolock    #todo
-0024: 06.2 Lista  Simulação Fila Bancária          #todo
-0025: 07.1 Fila  Floodfill                         #todo
-0026: 07.2 Fila  Pathfinding                       #todo
+0003: 03.1 Queimada V1 chamada recursiva
+0011: 03.2 Queimada V2 aleatória recursiva        #todo
+0007: 03.3 Queimada V3 utilizando pilha           #todo
+0006: 03.4 Mat Gerando um matriz aleatória
+0015: 03.5 Mat Visualizando mat com xpaint
+0036: 03.6 Mat Andanado no lab xpaint nolock      #todo
+0010: 04.1 Labirinto Criando com Recursão
+0038: 04.1 Labirinto Criando com Recursão video
+0008: 04.2 Labirinto Resolvendo com recursão      #todo
+0012: 04.3 Labirinto Criando com pilha            #todo
+0009: 04.4 Labirinto Resolvendo com pilha         #todo
+0037: 04.5 Labirinto Criando sem quinas (desafio) #todo
+0016: 05.1 Build Vetor dinâmico                   #todo
+0017: 05.2 Build Lista Simples                    #todo
+0018: 05.3 Build Lista Dupla                      #todo
+0019: 05.4 Build Fila em vetor (Buffer)           #todo
+0020: 05.5 Build Hash com Lista                   #todo
+0033: 05.6 Build BSTREE                           #todo
+0032: 05.6 Build BTREE                            #todo
+0021: 05.6 Build Hash com Linear Probing          #todo
+0023: 06.1 Lista Editor de texto                  #todo
+0035: 06.1 Lista Editor de texto xpaint nolock    #todo
+0024: 06.2 Lista Simulação Fila Bancária          #todo
+0025: 07.1 Fila Floodfill                         #todo
+0026: 07.2 Fila Pathfinding                       #todo
 0031: 08.1 Busca Binária                           #todo
-0027: 08.2 Sort  Bubble Selection Insertion        #todo
-0030: 08.3 Sort  Insertion em Lista                #todo
-0028: 08.4 Sort  Quick Sort                        #todo
-0029: 08.5 Sort  Merge Sort                        #todo
-0039: 08.6 Sort  Visualizando ordenação
-0034: 09.1 Tree  Árvore de Decisão                 #todo
+0027: 08.2 Sort Bubble Selection Insertion        #todo
+0030: 08.3 Sort Insertion em Lista                #todo
+0028: 08.4 Sort Quick Sort                        #todo
+0029: 08.5 Sort Merge Sort                        #todo
+0039: 08.6 Sort Visualizando ordenação
+0034: 09.1 Tree Árvore de Decisão                 #todo
+0043: 20.0 Exemplos  Lista dupla com shared_ptr

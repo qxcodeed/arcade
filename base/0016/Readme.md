@@ -1,2 +1,2 @@
-## 05.1 Build  Vetor dinâmico                   #todo
+## 05.1 Build Vetor dinâmico                   #todo
 ## @qxcode

@@ -1,11 +1,9 @@
-## 06.1 Lista  Editor de texto                  #todo
+## 06.1 Lista Editor de texto                  #todo
 ## @qxcode
 
+- Adicionar casos de teste para moodle
+- Baixar 
 
-
-# Editor de Texto com Control Z e Control R
-
-## Objetivo
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

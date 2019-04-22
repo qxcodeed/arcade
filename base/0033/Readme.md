@@ -1,2 +1,2 @@
-## 05.6 Build  BSTREE                           #todo
+## 05.6 Build BSTREE                           #todo
 ## @qxcode

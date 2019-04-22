@@ -1,2 +1,2 @@
-## 08.5 Sort  Merge Sort                        #todo
+## 08.5 Sort Merge Sort                        #todo
 ## @qxcode

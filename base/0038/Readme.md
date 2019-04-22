@@ -1,4 +1,4 @@
-## 04.1 Labirinto  Criando com Recursão video
+## 04.1 Labirinto Criando com Recursão video
 ## @qxcode
 
 !toc

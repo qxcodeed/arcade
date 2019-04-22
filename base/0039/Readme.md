@@ -1,4 +1,4 @@
-## 08.6 Sort  Visualizando ordenação
+## 08.6 Sort Visualizando ordenação
 ## @qxcode
 
 Os seguintes comandos podem ser utilizados para visualizar ordenação

@@ -1,4 +1,4 @@
-## 04.1 Labirinto  Criando com Recursão
+## 04.1 Labirinto Criando com Recursão
 ## @qxcode
 
 Crie um labirinto perfeito. Em um labirinto perfeito, entre dois pontos quaisquer existem apenas um caminho.
