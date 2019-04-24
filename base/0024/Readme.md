@@ -2,6 +2,20 @@
 ## @qxcode
 
 
+```cpp
+struct Client{
+    string id;
+    int docs;
+    int pac; 
+};
+
+struct Banco{
+    vector<Client*> caixas;
+    list<Client*> fila_entrada;
+    queue<Client*> fila_saida;
+};
+
+```
 
 ```
 para todos os clientes na fila de saida
@@ -20,7 +34,6 @@ para todos os clientes da fila de entrada
         decremente um na paciencia
     senao
         ponha na fila de saida
-
 ```
 
 
@@ -126,25 +139,24 @@ $show
 in :{ }
 out:{ }
 
-# o cmd 'saldo' 
+# se existirem clientes ainda no banco, continue passando o tempo até esvaziar o banco
 # mostra quantos documentos foram processados pelo banco
 # mostra quantos documentos foram perdidos pelo banco com clientes
 # que desistiram
-$saldo
-recebido: 16
-perdido: 6
+$finalizar
+docs recebidos: 16
+docs perdidos: 6
 
 # end termina a simulacao
 $end
 ```
 
 
+# Parte 2
 
-
-
-
-
-
+- Dado o valor de um dia de trabalho do caixa
+- Calcule a quantidade ideal de caixas para maximizar o lucro.
+- documentos_recebidos - total_caixas * valor_de_caixa
 
 
 
