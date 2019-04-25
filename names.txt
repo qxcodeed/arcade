@@ -1,10 +1,10 @@
 0041: 00.0 Estrutura de Dados e Algoritmos Ementa     #ready
 0040: 00.1 Apostilas de ED da Puc Rio                 #ready
 0042: 00.3 Quando utilizar cada estrutura de dados?   #ready
-0000: 01.1 Princesa V1                                #ready
-0001: 01.2 Princesa V2                                #ready
-0002: 01.3 Princesa V3                                #ready
-0013: 01.4 Princesa Vector x List                     #todo
+0000: 01.1 Princesa V1
+0001: 01.2 Princesa V2
+0002: 01.3 Princesa V3
+0013: 01.4 Princesa Vector x List  #todo
 0014: 01.5 EMPTY    #todo
 0005: 02.1 Rec Operações básicas
 0004: 02.2 Rec Triângulo da soma

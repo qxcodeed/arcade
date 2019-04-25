@@ -120,9 +120,9 @@ class Itens:
         for item in self.itens:
             title = item.generate_link_name() #generating name of file .title.md
             files = os.listdir(item.dir) #getting files and directories
-            old_titles = [x for x in files if x.endswith(".title.md")]
+            old_titles = [x for x in files if x.endswith(".link.md")]
             old_titles = [(item.dir + os.sep + x) for x in old_titles]
-            new_title = item.dir + os.sep + title + ".title.md"
+            new_title = item.dir + os.sep + title + ".link.md"
 
             if (len(old_titles) == 1) and (old_titles[0] == new_title): #doesn't have change
                 continue
@@ -130,8 +130,9 @@ class Itens:
             for file in old_titles:
                 os.remove(file)
             print("recriando link do titulo", new_title)
-            with open(new_title, "w") as f:
-                f.write("[README](Readme.md)\n")
+            os.symlink("Readme.md", new_title)
+            #with open(new_title, "w") as f:
+            #    f.write("[README](Readme.md)\n")
    
     def update_first_line(self):
         for item in self.itens:
@@ -152,7 +153,7 @@ class Itens:
     def update_qxcode_link(self):
         for item in self.itens:
             data = []
-            print(item)
+            # print(item)
             with open(item.readme_path, "r") as f:
                 data = f.readlines()
             if len(data) < 2 or data[1] != "## @qxcode\n":
@@ -203,15 +204,15 @@ def main():
 
     itens = Itens()
     if args.s:
-        print("obtendo nomes do arquivo names.txt")
+        print("Obtendo nomes do arquivo names.txt")
         itens.parse_from_names_file()
         itens.update_first_line()
     else:
-        print("obtendo nomes dos títulos dos arquivos")
+        print("Obtendo nomes dos títulos dos arquivos nos diretórios")
         itens.parse_from_dirs()
 
     itens.update_qxcode_link()
-    print("atualizado: recriando title.md")
+    print("atualizado: recriando link.md")
     itens.update_title_md_links()
     print("atualizado: nomes dos arquivos")
     itens.update_names_txt()
