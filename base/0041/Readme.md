@@ -1,10 +1,10 @@
-## 00.0 Estrutura de Dados e Algoritmos Ementa
+## 00.0 Estrutura de Dados e Algoritmos Ementa     #ready
 ## @qxcode
 
 ## Objetivos
 - Entender Complexidade
-- Saber a estrutura, vantagens e a desvantagem de cada estrutura e variação de implementação.
-- Ter contato com recursão e tipos de algoritmos recursivos
+- Saber as vantagens e a desvantagem de cada estrutura e as variações de implementação.
+- Ter contato com recursão e tipos de algoritmos recursivos.
 - Construir as estruturas de dados em baixo nível
     - Array Dinâmico (vector)
     - Lista
@@ -14,25 +14,25 @@
     - Hash
     - Árvore Binária e Binária de Busca
     - Árvore N-ária
-- Conhecer os algorítmos de busca e ordenação
+- Conhecer os algoritmos de busca e ordenação
 - Saber utilizar as estruturas de alto nível oferecidas pela linguagem
     - vector
     - list, stack, queue
     - map (tree and hash)
     - Ser capaz de manipular as estruturas (percorrer, inserir, remover, buscar)
-- Resolver contato com problemas que exigem o uso dessas estruturas
+- Resolver problemas que exigem o uso dessas estruturas
 
 ## Introdução ao C++
 - Classes
-- Operador de referência
-- Contrutores e destrutores
+- Operador de referência e ponteiros
+- Construtores e destrutores
 - Sobrecarga de operadores
 
 ## Visão superior
 - Introdução às estruturas em alto nível
     - Exemplo da utilização de cada estrutura (vector, list, set)
 - Trabalhos
-    - Comparação de Desempenho (inserção, remoção, busca)
+    - Comparação de Desempenho (inserção, remoção, busca) TODO
         - estruturas: vector ordenado, list ordenado, set
 
 ## Complexidade
@@ -40,7 +40,7 @@
     - Entender melhor, pior e caso médio
     - Saber contar o número de instruções
     - Saber comparar as ordens de Complexidade
-    - Compreencer o significa de O(N)
+    - Compreender o significa de O(N)
 - Trabalhos
     - Lista de exercícios
 
@@ -70,14 +70,14 @@
         - Bubble, Insert, Selection (lineares)
         - Merge, Quick (recursivos)
     - Compreender e implementar os métodos de **busca** em VETOR
-        - Busca Sequêncial, Binária.
+        - Busca Sequêncial, Binária. TODO
 - Trabalhos
     - Implementação
 
 ## Lista Encadeada
 - Objetivos
     - Compreender a estrutura e fundamentos das listas
-    - Lista implementada sobre vetor: pilha, buffer, pilha
+    - Lista implementada sobre vetor: pilha, buffer
     - lista limples (interativa e recursiva)
         - lista ordenada
         - lista circular
@@ -86,12 +86,12 @@
     - list
     - std::find
     - iteradores
-    - construindo iterador para lista circular
+    - construindo iterador para lista circular TODO
 - Trabalhos
     - Implementações de lista
-    - Implementar Princesa com lista circular usando iteradores
-    - Simulação Bancária
-    - Editor de Texto
+    - Implementar Princesa com lista circular
+    - Simulação Bancária TODO
+    - Editor de Texto TODO
 
 ## Pilha
 - Objetivos
@@ -100,7 +100,7 @@
 - Trabalhos
     - Calcular parenteses e palindromes
     - Criar labirinto com pilha
-    - Resolver labirinto com pilha
+    - Resolver labirinto com pilha TODO
 
 ## Filas
 - Objetivos
@@ -108,7 +108,7 @@
     - Estudar alguns algoritmos de fila
 - Trabalhos
     - Implementar preenchimento de imagens com fila (floodfill)
-    - Encontrar menor caminho entre dois pontos
+    - Encontrar menor caminho entre dois pontos (pathfinding)
 
 ## Hash
 - Objetivos
@@ -127,9 +127,9 @@
         - operações(buscas, min, max, soma, altura, largura)
     - Árvore Binária de Busca
         - operações(buscas, min, max, soma, altura, largura)
-    - Árvore Heap
+    - Árvore Heap (TALVEZ)
 - Trabalhos 
-    - Jogo da Velha ou Soma 15
+    - Jogo da Velha ou Soma 15 TODO
     - Implementação da Binária
     - Árvore de expressão
-    - Árvore de Decisão ou Genealógica Interativa Visual
+    - Árvore de Decisão TODO

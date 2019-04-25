@@ -1,4 +1,4 @@
-## 00.3 Quando utilizar cada estrutura de dados?
+## 00.3 Quando utilizar cada estrutura de dados?   #ready
 ## @qxcode
 
 Pesquise e escreva um texto sobre quando utilizar cada uma das estruturas de dados apresentadas.

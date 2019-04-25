@@ -1,11 +1,11 @@
-0041: 00.0 Estrutura de Dados e Algoritmos Ementa
-0040: 00.1 Apostilas de ED da Puc Rio
-0042: 00.3 Quando utilizar cada estrutura de dados?
-0000: 01.1 Cabeças vão Rolar V1 com vector
-0001: 01.2 Cabeças vão Rolar V2 com vector
-0002: 01.3 Cabeças vão Rolar V3 com vector
-0013: 01.4 Cabeças vão Rolar V1 com lista simples  #todo
-0014: 01.5 Cabeças vão Rolar V3 com lista dupla    #todo
+0041: 00.0 Estrutura de Dados e Algoritmos Ementa     #ready
+0040: 00.1 Apostilas de ED da Puc Rio                 #ready
+0042: 00.3 Quando utilizar cada estrutura de dados?   #ready
+0000: 01.1 Princesa V1                                #ready
+0001: 01.2 Princesa V2                                #ready
+0002: 01.3 Princesa V3                                #ready
+0013: 01.4 Princesa Vector x List                     #todo
+0014: 01.5 EMPTY    #todo
 0005: 02.1 Rec Operações básicas
 0004: 02.2 Rec Triângulo da soma
 0022: 02.3 Desenhando Fractais com xpaint          #todo

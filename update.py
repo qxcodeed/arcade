@@ -165,11 +165,15 @@ class Itens:
     def update_indices(self):
         def tree_generate(itens):
             tree = {}
+            tree["tagless"] = []
             for item in itens:
-                for tag in item.tags:
-                    if not tag in tree:
-                        tree[tag] = []
-                    tree[tag].append(item)
+                if(len(item.tags) == 0):
+                    tree["tagless"].append(item)
+                else:    
+                    for tag in item.tags:
+                        if not tag in tree:
+                            tree[tag] = []
+                        tree[tag].append(item)
             return tree
 
         self.itens.sort(key=lambda x: x.filter_by_prefix("@"))
@@ -179,7 +183,8 @@ class Itens:
             
             f.write("\n# " + "TAGS" + "\n\n")
             for tag, lista in tree.items():
-                f.write("\n## " + tag + "\n\n")
+                if(len(lista) > 0):
+                    f.write("\n## " + tag + "\n\n")
                 lista.sort(key=lambda x: x.filter_by_prefix("@"))
                 for item in lista:
                     f.write("- [" + item.filter_by_prefix("#@") + "](" + item.readme_path + "#qxcode" ")\n")       
