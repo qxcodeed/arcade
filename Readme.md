@@ -18,6 +18,8 @@
 - [03.5 Mat Visualizando mat com xpaint](base/0015/Readme.md#qxcode)
 - [04.1 Labirinto Criando com Recursão](base/0010/Readme.md#qxcode)
 - [04.1 Labirinto Criando com Recursão video](base/0038/Readme.md#qxcode)
+- [06.1 Lista Editor de texto interativo com sfml](base/0035/Readme.md#qxcode)
+- [06.2 Lista Simulação Fila Bancária](base/0024/Readme.md#qxcode)
 - [08.6 Sort Visualizando ordenação](base/0039/Readme.md#qxcode)
 - [20.0 Exemplos  Lista dupla com shared_ptr](base/0043/Readme.md#qxcode)
 
@@ -48,8 +50,6 @@
 - [05.6 Build BTREE                           ](base/0032/Readme.md#qxcode)
 - [05.6 Build Hash com Linear Probing         ](base/0021/Readme.md#qxcode)
 - [06.1 Lista Editor de texto                 ](base/0023/Readme.md#qxcode)
-- [06.1 Lista Editor de texto xpaint nolock   ](base/0035/Readme.md#qxcode)
-- [06.2 Lista Simulação Fila Bancária         ](base/0024/Readme.md#qxcode)
 - [07.1 Fila Floodfill                        ](base/0025/Readme.md#qxcode)
 - [07.2 Fila Pathfinding                      ](base/0026/Readme.md#qxcode)
 - [08.1 Busca Binária                          ](base/0031/Readme.md#qxcode)

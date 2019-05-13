@@ -30,8 +30,8 @@
 0032: 05.6 Build BTREE                            #todo
 0021: 05.6 Build Hash com Linear Probing          #todo
 0023: 06.1 Lista Editor de texto                  #todo
-0035: 06.1 Lista Editor de texto xpaint nolock    #todo
-0024: 06.2 Lista Simulação Fila Bancária          #todo
+0035: 06.1 Lista Editor de texto interativo com sfml
+0024: 06.2 Lista Simulação Fila Bancária
 0025: 07.1 Fila Floodfill                         #todo
 0026: 07.2 Fila Pathfinding                       #todo
 0031: 08.1 Busca Binária                           #todo
