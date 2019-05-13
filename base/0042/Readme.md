@@ -18,8 +18,6 @@ Pensando nisso, a nossa atividade consiste em analisar o desempenho de algumas e
 A partir de um arquivo de entrada contendo valores e operações a serem realizadas sobre esses valores, meça o tempo que a implementação sobre cada estrutura (vetor, lista, árvore e etc) leva para processar o arquivo.
 
 ## Arquivo de entrada
-O arquivo de entrada consiste em uma sequencia de pares operação/valor. 
-
 Cada par ocupa uma linha do arquivo. As operações são representadas por um único caractere, onde:
 
 - 'i' representa inserção, 

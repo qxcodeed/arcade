@@ -1,64 +1,49 @@
 ## 06.1 Lista Editor de texto                  #todo
 ## @qxcode
 
-- Adicionar casos de teste para moodle
-- Baixar 
-
-
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.
 
 - Os caracteres minúsculos "abc...z" e "-" são compreendidas como texto.
 - Os seguintes caracteres serão comandos.
     - __Parte 1__ - Movimentação de Cursor
-        * ">" move o cursor para direita.
-        * "<" move o cursor para esquerda.
+        * "R" return, insere o Enter.
         * "B" backspace, apaga o caractere atrás do cursor, se houver.
         * "D" delete, apaga o caractere na frente do cursor, se houver.
+        * ">" move o cursor para direita, se for possível.
+        * "<" move o cursor para esquerda, se for possível.
     - __Parte 2__ - Fila de ações.
-        * "Z" Desfazer, desfaz a ultima acao
-        * "R" Refazer, refaz a ultima ação se houver
+        * "Z" Desfazer, desfaz a ultima ação
+        * "Y" Refazer, refaz a ultima ação se houver
+    - __Parte 3__ - Movimentação Avançada
+        * "A" up, vai pra linha de cima na posição correspondente que for acessível.
+        * "V" down, vai para linha de baixo na posição .
 
-## Simulação 1
 
-Na simulação o # representa a posicao do cursor. O : representa a entrada de
-dados do usuário seguinda de Enter. Se mais de um caractere for dado na entrada
-processe todos os comandos.
+## Testes
 
-    #
-    e
+```
+>>>>>>>>
+euRteRamo
+========
+<<<<<<<<
 
-    e#
-    -
+>>>>>>>>
+euRamo<<<
+========
+<<<<<<<<
 
-    e-#
-    mo
+>>>>>>>>
+euRamo<<<<<<<como-
+========
+<<<<<<<<
 
-    e-mo#
-    <<
 
-    e-#mo
-    e
-
-    e-e#mo
-    <<
-
-    e#-emo
-    o
-
-    eo#-emo
-    B
-
-    e#-emo
-    u>
-
-    eu-#emo
-    Da
-
-    eu-a#mo
-    >>
-
-    eu-amo#
+>>>>>>>>
+euRemo<<Ba>>>>>>
+========
+<<<<<<<<
+```
 
 ## Simulação 2
     voce-vai#

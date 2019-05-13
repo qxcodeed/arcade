@@ -1,4 +1,4 @@
-## 06.2 Lista Simulação Fila Bancária          #todo
+## 06.2 Lista Simulação Fila Bancária
 ## @qxcode
 
 
@@ -143,9 +143,10 @@ out:{ }
 # mostra quantos documentos foram processados pelo banco
 # mostra quantos documentos foram perdidos pelo banco com clientes
 # que desistiram
-$finalizar
-docs recebidos: 16
-docs perdidos: 6
+$finish
+received: 16
+lost: 6
+tics: 6
 
 # end termina a simulacao
 $end
@@ -156,7 +157,7 @@ $end
 
 - Dado o valor de um dia de trabalho do caixa
 - Calcule a quantidade ideal de caixas para maximizar o lucro.
-- documentos_recebidos - total_caixas * valor_de_caixa
+- documentos_recebidos - total_caixas * 100
 
 
 
