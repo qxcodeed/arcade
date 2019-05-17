@@ -21,6 +21,10 @@
 - [06.1 Lista Editor de texto interativo com sfml](base/0035/Readme.md#qxcode)
 - [06.2 Lista Simulação Fila Bancária](base/0024/Readme.md#qxcode)
 - [08.6 Sort Visualizando ordenação](base/0039/Readme.md#qxcode)
+- [10.1 Tree Altura e Nível](base/0045/Readme.md#qxcode)
+- [10.1 Tree Caminhos para o nó](base/0047/Readme.md#qxcode)
+- [10.1 Tree Serialize and Show](base/0044/Readme.md#qxcode)
+- [10.1 Tree Soma e Menor](base/0046/Readme.md#qxcode)
 - [20.0 Exemplos  Lista dupla com shared_ptr](base/0043/Readme.md#qxcode)
 
 ## ready

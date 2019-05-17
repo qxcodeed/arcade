@@ -41,4 +41,8 @@
 0029: 08.5 Sort Merge Sort                        #todo
 0039: 08.6 Sort Visualizando ordenação
 0034: 09.1 Tree Árvore de Decisão                 #todo
+0045: 10.1 Tree Altura e Nível
+0047: 10.1 Tree Caminhos para o nó
+0044: 10.1 Tree Serialize and Show
+0046: 10.1 Tree Soma e Menor
 0043: 20.0 Exemplos  Lista dupla com shared_ptr
