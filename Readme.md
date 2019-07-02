@@ -56,7 +56,7 @@
 - [06.1 Lista Editor de texto                 ](base/0023/Readme.md#qxcode)
 - [07.1 Fila Floodfill                        ](base/0025/Readme.md#qxcode)
 - [07.2 Fila Pathfinding                      ](base/0026/Readme.md#qxcode)
-- [08.1 Busca Binária                          ](base/0031/Readme.md#qxcode)
+- [08.1 Busca Binária                         ](base/0031/Readme.md#qxcode)
 - [08.2 Sort Bubble Selection Insertion       ](base/0027/Readme.md#qxcode)
 - [08.3 Sort Insertion em Lista               ](base/0030/Readme.md#qxcode)
 - [08.4 Sort Quick Sort                       ](base/0028/Readme.md#qxcode)

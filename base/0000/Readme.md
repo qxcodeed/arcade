@@ -25,7 +25,7 @@ No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 
 ---
 ## Implementação usando listas
 
-Resolva novamente o problema utilizando uma lista ligada circular no lugar do vetor.
+Resolva novamente o problema utilizando uma lista ligada no lugar do vetor.
 
 ```c
 struct Node{
