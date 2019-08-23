@@ -1,48 +1,31 @@
-0041: 00.0 Estrutura de Dados e Algoritmos Ementa     #ready
-0040: 00.1 Apostilas de ED da Puc Rio                 #ready
-0042: 00.3 Quando utilizar cada estrutura de dados?   #ready
-0000: 01.1 Princesa V1
-0001: 01.2 Princesa V2
-0002: 01.3 Princesa V3
-0013: 01.4 Princesa Vector x List  #todo
-0014: 01.5 EMPTY    #todo
-0005: 02.1 Rec Operações básicas
-0004: 02.2 Rec Triângulo da soma
-0022: 02.3 Desenhando Fractais com xpaint          #todo
-0003: 03.1 Queimada V1 chamada recursiva
-0011: 03.2 Queimada V2 aleatória recursiva        #todo
-0007: 03.3 Queimada V3 utilizando pilha           #todo
-0006: 03.4 Mat Gerando um matriz aleatória
-0015: 03.5 Mat Visualizando mat com xpaint
-0036: 03.6 Mat Andanado no lab xpaint nolock      #todo
-0010: 04.1 Labirinto Criando com Recursão
-0038: 04.1 Labirinto Criando com Recursão video
-0008: 04.2 Labirinto Resolvendo com recursão      #todo
-0012: 04.3 Labirinto Criando com pilha            #todo
-0009: 04.4 Labirinto Resolvendo com pilha         #todo
-0037: 04.5 Labirinto Criando sem quinas (desafio) #todo
-0016: 05.1 Build Vetor dinâmico                   #todo
-0017: 05.2 Build Lista Simples                    #todo
-0018: 05.3 Build Lista Dupla                      #todo
-0019: 05.4 Build Fila em vetor (Buffer)           #todo
-0020: 05.5 Build Hash com Lista                   #todo
-0033: 05.6 Build BSTREE                           #todo
-0032: 05.6 Build BTREE                            #todo
-0021: 05.6 Build Hash com Linear Probing          #todo
-0023: 06.1 Lista Editor de texto                  #todo
-0035: 06.1 Lista Editor de texto interativo com sfml
-0024: 06.2 Lista Simulação Fila Bancária
-0025: 07.1 Fila Floodfill                         #todo
-0026: 07.2 Fila Pathfinding                       #todo
-0031: 08.1 Busca Binária                           #todo
-0027: 08.2 Sort Bubble Selection Insertion        #todo
-0030: 08.3 Sort Insertion em Lista                #todo
-0028: 08.4 Sort Quick Sort                        #todo
-0029: 08.5 Sort Merge Sort                        #todo
-0039: 08.6 Sort Visualizando ordenação
-0034: 09.1 Tree Árvore de Decisão                 #todo
-0045: 10.1 Tree Altura e Nível
-0047: 10.1 Tree Caminhos para o nó
-0044: 10.1 Tree Serialize and Show
-0046: 10.1 Tree Soma e Menor
-0043: 20.0 Exemplos  Lista dupla com shared_ptr
+000: 01.1 Princesa V1
+001: 01.2 Princesa V2
+002: 01.3 Princesa V3
+005: 02.1 Rec Operações básicas
+004: 02.2 Rec Triângulo da soma
+003: 03.1 Queimada V1 chamada recursiva
+007: 03.3 Queimada V2 Busca em profundidade     #todo
+011: 03.3 Queimada V3 Busca em largura           #todo
+008: 04.2 Labirinto Resolvendo com recursão      #todo
+009: 04.4 Labirinto Resolvendo com pilha         #todo
+016: 05.1 Build Vetor dinâmico                   #todo
+017: 05.2 Build Lista Simples                    #todo
+018: 05.3 Build Lista Dupla                      #todo
+019: 05.4 Build Fila em vetor (Buffer)           #todo
+020: 05.5 Build Hash com Lista                   #todo
+033: 05.6 Build BSTREE                           #todo
+032: 05.6 Build BTREE                            #todo
+021: 05.6 Build Hash com Linear Probing          #todo
+023: 06.1 Lista Editor de texto                  #todo
+024: 06.2 Lista Simulação Fila Bancária
+025: 07.1 Fila Floodfill                         #todo
+026: 07.2 Fila Pathfinding                       #todo
+031: 08.1 Busca Binária                           #todo
+027: 08.2 Sort Bubble Selection Insertion        #todo
+030: 08.3 Sort Insertion em Lista                #todo
+028: 08.4 Sort Quick Sort                        #todo
+029: 08.5 Sort Merge Sort                        #todo
+045: 10.1 Tree Altura e Nível
+047: 10.1 Tree Caminhos para o nó
+044: 10.1 Tree Serialize and Show
+046: 10.1 Tree Soma e Menor

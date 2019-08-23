@@ -1,0 +1,43 @@
+>>>>>>>> 01 init vazio 10%
+show
+end
+========
+$show
+[ ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 02 add !%
+show
+add 3 4 5 1
+show
+end
+========
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 03 add mais !%
+show
+add 3 4 5 1
+show
+add 7
+show
+end
+========
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$add 7
+$show
+[ 3 4 5 1 7 ]
+$end
+<<<<<<<<
