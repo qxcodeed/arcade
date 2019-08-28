@@ -1,4 +1,4 @@
-## @024 #done 06.2 Lista Simulação Fila Bancária
+## @6.2 Lista Simulação Fila Bancária
 ## @qxcode
 
 

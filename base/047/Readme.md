@@ -1,4 +1,4 @@
-## @047 #done 10.1 Tree Caminhos para o nó
+## @047 #doing 10.1 Tree Caminhos para o nó
 ## @qxcode
 
 - Entrada

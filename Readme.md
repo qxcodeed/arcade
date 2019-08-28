@@ -8,6 +8,17 @@
 
 ## __tagless
 
+- [Lista Simulação Fila Bancária](base/6.2/Readme.md#qxcode)
+- [Princesa V1](base/1.1/Readme.md#qxcode)
+- [Princesa V2](base/1.2/Readme.md#qxcode)
+- [Princesa V3](base/1.3/Readme.md#qxcode)
+- [Queimada V1 chamada recursiva](base/3.1/Readme.md#qxcode)
+- [Rec Operações básicas](base/2.1/Readme.md#qxcode)
+- [Rec Triângulo da soma](base/2.2/Readme.md#qxcode)
+- [Tree Altura e Nível](base/0.2/Readme.md#qxcode)
+- [Tree Caminhos para o nó](base/0.4/Readme.md#qxcode)
+- [Tree Serialize and Show](base/0.1/Readme.md#qxcode)
+- [Tree Soma e Menor](base/0.3/Readme.md#qxcode)
 
 ## done
 
@@ -45,3 +56,20 @@
 - [08.3 Sort Insertion em Lista](base/030/Readme.md#qxcode)
 - [08.4 Sort Quick Sort](base/028/Readme.md#qxcode)
 - [08.5 Sort Merge Sort](base/029/Readme.md#qxcode)
+- [Build BSTREE                          ](base/5.6/Readme.md#qxcode)
+- [Build Fila em vetor (Buffer)          ](base/5.4/Readme.md#qxcode)
+- [Build Hash com Lista                  ](base/5.5/Readme.md#qxcode)
+- [Build Lista Dupla                     ](base/5.3/Readme.md#qxcode)
+- [Build Lista Simples                   ](base/5.2/Readme.md#qxcode)
+- [Build Vetor dinâmico                  ](base/5.1/Readme.md#qxcode)
+- [Busca Binária                          ](base/8.1/Readme.md#qxcode)
+- [Fila Floodfill                        ](base/7.1/Readme.md#qxcode)
+- [Fila Pathfinding                      ](base/7.2/Readme.md#qxcode)
+- [Labirinto Resolvendo com pilha        ](base/4.4/Readme.md#qxcode)
+- [Labirinto Resolvendo com recursão     ](base/4.2/Readme.md#qxcode)
+- [Lista Editor de texto                 ](base/6.1/Readme.md#qxcode)
+- [Queimada V2 Busca em profundidade    ](base/3.3/Readme.md#qxcode)
+- [Sort Bubble Selection Insertion       ](base/8.2/Readme.md#qxcode)
+- [Sort Insertion em Lista               ](base/8.3/Readme.md#qxcode)
+- [Sort Merge Sort                       ](base/8.5/Readme.md#qxcode)
+- [Sort Quick Sort                       ](base/8.4/Readme.md#qxcode)

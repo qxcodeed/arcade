@@ -248,7 +248,7 @@ def main():
         itens.parse_from_dirs()
         itens.verify_integrity()
 
-    itens.generate_html_and_vpl()
+#    itens.generate_html_and_vpl()
     itens.update_qxcode_link()
     itens.update_names_txt()
     itens.update_indices()
