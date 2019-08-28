@@ -1,4 +1,4 @@
-## @017 #doing 05.2 Build Lista Simples
+## @017 05.2 Build Lista Simples            #doing
 ## @qxcode
 
 Implementações de Lista Encadeada
