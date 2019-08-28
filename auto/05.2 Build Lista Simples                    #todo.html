@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>05.2 Build Lista Simples #todo</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="build-lista-simples-todo">05.2 Build Lista Simples #todo</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<h1 id="implementações-de-lista-encadeada">Implementações de Lista Encadeada</h1>
+<p>Vamos trabalhar com implementações de listas simples e duplamente encadeadas, listas circulares.</p>
+<p>Compreender o funcionamento das <strong>listas simples</strong> é muito importante para nos preparar para trabalhar com árvores.</p>
+<h2 id="listas-simples">1. Listas Simples</h2>
+<p>Implemente uma <em>Lista Encadeada Simples</em> com os seguintes métodos e teste o funcionamento da sua implementação.</p>
+<ul>
+<li><p>criar #cria uma lista vazia criar()</p>
+<pre><code>  #cria uma lista a partir de outra
+  #não utilize push_back
+  #realize m O(N)
+  clone(lista)</code></pre></li>
+<li><p>inserir #insere na frente da lista void push_front(value)</p>
+<pre><code>  #insere no fim da lista
+  void push_back(value)    </code></pre></li>
+<li><p>destruir #destrutor ou equivalente destroy()</p></li>
+<li><p>remover #retira o no da frente void pop_front()</p>
+<pre><code>  #retira o no do fundo
+  void pop_back()
+
+  #retira e retorna o primeiro no com esse valor
+  node remove(value)</code></pre></li>
+<li><p>acessar #retorna o primeiro no ou nulo node front()</p>
+<pre><code>  #retorna o ultimo no ou nulo
+  node back()</code></pre></li>
+<li><p>visualizar #mostra a lista entre [ ] void print()</p>
+<pre><code>  #mostra lista ao contrario
+  void reverse_print()    </code></pre></li>
+<li><p>manipular #retorna se lista vazia bool is_empty()</p>
+<pre><code>  #se o valor existir retorne o no
+  node find(value)
+
+  #retorna o tamanho da lista
+  int size()
+
+  #verifica se duas listas são iguais
+  bool equals(list_other)</code></pre></li>
+</ul>
+<h2 id="lista-simples-ordenada">2. Lista Simples Ordenada</h2>
+<p>Listas Ordenadas são muito práticas por facilitar a busca de elementos na lista.</p>
+<p>Construa uma ListaSimplesOrdenada com os métodos da ListaSimples e as seguintes modificações.</p>
+<ul>
+<li>Remover os métodos push_back(value) push_front(value)</li>
+<li>Adicionar os métodos #insere o valor de forma ordenado na lista. insert(value)<br />
+</li>
+<li>Mantenha todos os outros métodos fazendo adaptações quando necessário. Ex: o método find não precisa mais procurar em todos os elementos.</li>
+</ul>
+<p>Nossa lista deve aceitar valores repetidos.</p>
+<h2 id="lista-simples-circular">3. Lista Simples Circular</h2>
+<p>Listas circulares são extremamente úteis. Leia mais sobre Ring Buffer quando puder. Fica mais fácil se você usar um node sentinela para o início da lista. Assim o sentinela aponta para o primeiro elemento e o último elemento aponta para o sentinela.</p>
+<ul>
+<li><p>Métodos a remover void push_front(value) void push_back(value) void pop_front() void pop_back() node front() node back() bool equals(list_other)</p></li>
+<li><p>Métodos a alterar node remove(value) node find(value) void print() void reverse_print()</p></li>
+<li><p>Métodos a adaptar bool is_empty() int size()</p></li>
+</ul>
+<h2 id="listas-simples-recursiva">4. Listas Simples Recursiva</h2>
+<p>Adapte os métodos da lista simples para trabalhar apenas com recursão.</p>
+</body>
+</html>

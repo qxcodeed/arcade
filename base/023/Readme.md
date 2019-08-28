@@ -1,4 +1,4 @@
-## 06.1 Lista Editor de texto                  #todo
+## @023 #done 06.1 Lista Editor de texto
 ## @qxcode
 
 Implementar um editor de texto simplificado que receba os seguintes valores como

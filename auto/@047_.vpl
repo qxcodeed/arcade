@@ -1,0 +1,67 @@
+case=01 um
+input=4 # #
+4
+output="x
+"
+grade reduction=100%
+
+
+case=02 dois
+input=1 # 0 # # 
+0
+output="rx
+"
+grade reduction=100%
+
+
+case=03 tres
+input=4 # 8 2 # # # 
+2
+output="rlx
+"
+grade reduction=100%
+
+
+case=04 quatro
+input=0 9 4 # # # 5 # # 
+5
+output="rx
+"
+grade reduction=100%
+
+
+case=05 quatro not found
+input=0 9 4 # # # 5 # # 
+7
+output="-1
+"
+grade reduction=100%
+
+
+case=06 cinco
+input=0 4 # # 2 0 # # 4 # # 
+4
+output="[ 0 l4 ]
+[ 0 r2 r4 ]
+"
+grade reduction=100%
+
+
+case=07 seis
+input=2 9 5 # # # 9 # 7 # 9 # # 
+9
+output="[ 2 l9 ]
+[ 2 r9 ]
+[ 2 r9 r7 r9 ]
+"
+grade reduction=100%
+
+
+case=08 dez
+input=1 8 7 # # 5 # 6 # # 5 0 # # 9 # 5 2 # # # 
+5
+output="[ 1 l8 r5 ]
+[ 1 r5 ]
+[ 1 r5 r9 r5 ]
+"
+grade reduction=100%

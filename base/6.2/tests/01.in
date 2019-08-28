@@ -1,0 +1,35 @@
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+tic
+show
+tic
+in Fa 4 5
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+finish
+end

@@ -6,44 +6,14 @@ import argparse
 import unicodedata
 import string
 import configparser
-
-SOURCE_FOLDER = ""
-
-class Text:
-    @staticmethod
-    def strip_accents(text):
-        try:
-            text = unicode(text, 'utf-8')
-        except NameError: # unicode is a default on python 3 
-            pass
-        text = unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode("utf-8")
-        return str(text)
-
-    @staticmethod
-    def filter_punct(title):
-        title = Text.strip_accents(title).lower()
-        new_title = ""
-        for c in title:
-            if c in string.punctuation or c in string.whitespace:
-                new_title += "_"
-            else:
-                new_title += c
-        while "__" in new_title:
-            new_title = new_title.replace("__", "_")
-        if new_title.endswith("_"):
-            new_title = new_title[:-1]
-        return new_title
-    
-
-    @staticmethod
-    def has_only_hashtags(word):
-        for c in word:
-            if c != "#":
-                return False
-        return True
-
+import subprocess
+from subprocess import run, PIPE
+SOURCE_FOLDER = "base"
+DESTIN_FOLDER = "auto"
+REMOTE_DATABASE = "https://raw.githubusercontent.com/qxcodeed/arcade/master/base"
 
 class ItemGenerator:
+    # load Item description from folder
     @staticmethod
     def make_from_hook(hook):
         readme_path = SOURCE_FOLDER + os.sep + hook + os.sep + "Readme.md"
@@ -55,37 +25,47 @@ class ItemGenerator:
                 exit(1)
             return item
 
+    # load item description from a single line in names.txt
     @staticmethod
     def make_from_line(line):
         if(line[-1] == "\n"): #removing \n
             line = line[:-1]
         parts = line.split(":")
         hook = parts[0]
-        title = " ".join(parts[1:])
+        title = " ".join(parts[1:]) #skip index
         return Item(hook.strip(), title.strip())
 
 class Item:
-    def __init__(self, hook, title):
-        words = title.split(" ")            #removendo os # no começo da linha
-        if Text.has_only_hashtags(words[0]):
+
+    # get first line from file to mount Item
+    def __init__(self, hook, line):
+        words = line.split(" ")            # removing ## used to set title
+        keep = False
+        for c in words[0]:
+            if c != "#":
+                keep = True
+        if not keep:
             del words[0]
-        self.title = " ".join(words)
-        self.hook = hook
+
+        self.fulltitle = " ".join(words) # title without the ##
+        self.index = words[0][1:] # index sem o @
+        self.title = " ".join(words[1:]) # fulltitle without the @index
+        self.hook = hook # directory
         self.tags = [x[1:] for x in words if x.startswith("#")]
         self.dir = SOURCE_FOLDER + os.sep + self.hook
         self.readme_path = self.dir + os.sep + "Readme.md"
 
+    #return all the words in fulltitle that dont start with any of the targets
+    #targets example "#" or "#@"
     def filter_by_prefix(self, targets):
-        words = self.title.split(" ")
+        words = self.fulltitle.split(" ")
         for c in targets:
             words = [x for x in words if not x.startswith(c)]
         return " ".join(words)
 
-    def generate_link_name(self):
-        return Text.filter_punct(self.filter_by_prefix("@#").strip())
-
+    #return 
     def __str__(self):
-        return self.hook + ": " + self.title
+        return self.hook + ": " + self.fulltitle
 
 
 class Itens:
@@ -107,7 +87,6 @@ class Itens:
             for line in names_list:
                 self.itens.append(ItemGenerator.make_from_line(line))
         
-
     def __str__(self):
         return "\n".join(str(v) for v in self.itens)
 
@@ -116,24 +95,6 @@ class Itens:
         with open("names.txt", "w") as names:
             names.write("\n".join([str(x) for x in self.itens]))
 
-    def update_title_md_links(self):
-        for item in self.itens:
-            title = item.generate_link_name() #generating name of file .title.md
-            files = os.listdir(item.dir) #getting files and directories
-            old_titles = [x for x in files if x.endswith(".link.md")]
-            old_titles = [(item.dir + os.sep + x) for x in old_titles]
-            new_title = item.dir + os.sep + title + ".link.md"
-
-            if (len(old_titles) == 1) and (old_titles[0] == new_title): #doesn't have change
-                continue
-
-            for file in old_titles:
-                os.remove(file)
-            print("recriando link do titulo", new_title)
-            os.symlink("Readme.md", new_title)
-            #with open(new_title, "w") as f:
-            #    f.write("[README](Readme.md)\n")
-   
     def update_first_line(self):
         for item in self.itens:
             data = []
@@ -145,15 +106,40 @@ class Itens:
             else:                
                 with open(readme_path, "r") as f: #le conteudo
                     data = f.readlines()
-                with open(readme_path, "w") as f: #reescreve linha1
-                    data[0] = ("## " + item.title + "\n")
-                    f.write("".join(data))
+                old_first_line = data[0]
+                new_first_line = "## @" + item.index + " " + item.title + "\n"
+                if(old_first_line != new_first_line):
+                    with open(readme_path, "w") as f: #reescreve linha 0
+                        data[0] = new_first_line
+                        f.write("".join(data))
 
+    def verify_integrity(self):
+        for item in self.itens:
+            if item.index != item.hook:
+                print("warning: hook=", item.hook, "index=", item.index)
+
+    def update_hook_from_index(self):
+        changes = False
+        for item in self.itens:
+            if item.index != item.hook:
+                if os.path.isdir(SOURCE_FOLDER + os.sep + item.index):
+                    print("warning: cannot move hook", item.hook, "to", item.index)
+                else:
+                    os.rename(SOURCE_FOLDER + os.sep + item.hook, SOURCE_FOLDER + os.sep + item.index)
+                    #removing old html, title and vpl
+                    files = os.listdir(DESTIN_FOLDER) #getting files and directories
+                    filter_by_hook = [x for x in files if x.startswith("@" + item.hook)]
+                    for file in filter_by_hook:
+                        print("removing ", file)
+                        os.remove(DESTIN_FOLDER + os.sep + file)
+                    changes = True
+        return changes
+        
 
     def update_qxcode_link(self):
         for item in self.itens:
             data = []
-            # print(item)
+            #print(item)
             with open(item.readme_path, "r") as f:
                 data = f.readlines()
             if len(data) < 2 or data[1] != "## @qxcode\n":
@@ -162,15 +148,15 @@ class Itens:
                     print("adicionando @qxcode no arquivo", item.hook)
                     f.write("".join(data))
 
-
+    # update Readme.md
     def update_indices(self):
         def tree_generate(itens):
             tree = {}
-            tree["tagless"] = []
+            tree['__tagless'] = []
             for item in itens:
-                if(len(item.tags) == 0):
-                    tree["tagless"].append(item)
-                else:    
+                if len(item.tags) == 0:
+                    tree['__tagless'].append(item)
+                else:
                     for tag in item.tags:
                         if not tag in tree:
                             tree[tag] = []
@@ -184,12 +170,56 @@ class Itens:
             
             f.write("\n# " + "TAGS" + "\n\n")
             for tag, lista in tree.items():
-                if(len(lista) > 0):
-                    f.write("\n## " + tag + "\n\n")
+                f.write("\n## " + tag + "\n\n")
                 lista.sort(key=lambda x: x.filter_by_prefix("@"))
                 for item in lista:
                     f.write("- [" + item.filter_by_prefix("#@") + "](" + item.readme_path + "#qxcode" ")\n")       
         
+    def generate_html_and_vpl(self):
+        for item in self.itens:
+            infile = SOURCE_FOLDER + os.sep + item.hook + os.sep + "Readme.md"
+            #outfile = DESTIN_FOLDER + os.sep + item.hook  + ".b.html"
+            outfile = DESTIN_FOLDER + os.sep + item.fulltitle + ".html"
+
+
+            if not os.path.exists(outfile) or (os.path.getmtime(infile) > os.path.getmtime(outfile)):
+            #if True:
+                print("updating html from hook", item.hook)
+                # adaptando titulo para execucao no bash
+                fulltitle = item.fulltitle.replace('!', '\\!').replace('?', '\\?')
+                cmd = ["pandoc", infile, '--metadata', 'pagetitle=' + fulltitle, '-s',  '-o', outfile]
+                try:
+                    p = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, universal_newlines=True)
+                    stdout, stderr = p.communicate()
+                    if(stdout != "" or stderr != ""):
+                        print(stdout)
+                        print(stderr)
+                except Exception as e:
+                    print("Erro no comando pandoc:", e)
+                    exit(1)
+                try:
+                    text = ""
+                    with open(outfile, 'r') as f:
+                        text = f.read().replace('<img src="__', '<img src="' + REMOTE_DATABASE + '/' + item.hook + "/" + "__")
+                    with open(outfile, 'w') as f:
+                        f.write(text)
+                except:
+                    print("Error changing local references to remote on hook", item.hook)
+                    exit(1)
+
+        for item in self.itens:
+            infile = SOURCE_FOLDER + os.sep + item.hook + os.sep + "Readme.md"
+            outfile = DESTIN_FOLDER + os.sep + '@' + item.hook + "_.vpl"
+            if not os.path.exists(outfile) or (os.path.getmtime(infile) > os.path.getmtime(outfile)):
+                print("updating vpl from hook", item.hook)
+                cmd = "th build " + outfile + ' ' + infile
+                try:
+                    p = subprocess.Popen(cmd.split(" "), stdout=PIPE, stderr=PIPE, universal_newlines=True)
+                    stdout, stderr = p.communicate()
+                    if(stderr != ""):
+                        print(stderr)
+                except Exception as e:
+                    print("Erro no comando th", e)
 
 def main():
     parser = argparse.ArgumentParser(prog='th.py')
@@ -204,21 +234,24 @@ def main():
 
     itens = Itens()
     if args.s:
-        print("Obtendo nomes do arquivo names.txt")
+        print("obtendo nomes do arquivo names.txt")
         itens.parse_from_names_file()
         itens.update_first_line()
+        changes = itens.update_hook_from_index()
+        if changes:
+            itens = Itens()
+            itens.parse_from_dirs()
+            itens.verify_integrity()
+
     else:
-        print("Obtendo nomes dos títulos dos arquivos nos diretórios")
+        print("obtendo nomes dos títulos dos arquivos")
         itens.parse_from_dirs()
+        itens.verify_integrity()
 
+    itens.generate_html_and_vpl()
     itens.update_qxcode_link()
-    print("atualizado: recriando link.md")
-    itens.update_title_md_links()
-    print("atualizado: nomes dos arquivos")
     itens.update_names_txt()
-    print("atualizado: names.txt")
     itens.update_indices()
-    print("atualizado: indices")
-
+    print("all done")
 
 main()

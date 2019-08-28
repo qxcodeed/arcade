@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@007 03.3 Queimada V2 Busca em profundidade #todo</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="queimada-v2-busca-em-profundidade-todo"><span class="citation" data-cites="007">@007</span> 03.3 Queimada V2 Busca em profundidade #todo</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<p>Busca em profundidade</p>
+<p>Refaça o problema da queimada utilizando pilha no lugar da recursão.</p>
+<p>Você pode utilizar esse algoritmo.</p>
+<pre><code>verifique a primeira posição e queime-o
+inicie a fila com esse elemento
+enquanto a fila não estiver vazia faça
+    pegue topo da fila
+
+    faça uma lista com todos os vizinhos de topo que podem ser queimados
+    se lista eh vazia
+        desempilhe
+    senão
+        escolha um dos vizinhos
+        queime
+        empilhe</code></pre>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
+2 3 1 1
+#.#
+.##
+========
+#.o
+.oo
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02
+5 5 0 0
+#..#.
+#...#
+###..
+..#.#
+..###
+========
+o..#.
+o...#
+ooo..
+..o.o
+..ooo
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03
+5 7 2 0
+#..#.#.
+#..####
+###...#
+..#.###
+#.###..
+========
+o..o.o.
+o..oooo
+ooo...o
+..o.ooo
+#.ooo..
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04
+5 5 0 0
+...#.
+#...#
+###..
+..#.#
+..###
+========
+...#.
+#...#
+###..
+..#.#
+..###
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 05
+10 40 0 3
+..####..##.##.#..#.#####.##.####.#.#.###
+.##.####..#####.##..##.#.###...##.#.#.#.
+.#....#..##.#...#.#.#..#.##.#.###.#.###.
+.###.#.##.##.######.###..##..#####.#..##
+.##########.##########.########.######.#
+.########.#####.###.########.#..##.####.
+###.###..##.#..###.#.##.##.###..####.###
+..######..#.#..#.###.##......####..#.###
+######.##.##.#.####.####.##############.
+##.##.#.###.###........###.##.####.###..
+========
+..oooo..##.oo.o..o.ooooo.oo.oooo.#.#.###
+.oo.oooo..ooooo.oo..oo.o.ooo...oo.#.#.#.
+.o....o..oo.o...o.o.o..o.oo.#.ooo.#.###.
+.ooo.o.oo.oo.oooooo.ooo..oo..ooooo.o..##
+.oooooooooo.oooooooooo.oooooooo.oooooo.#
+.oooooooo.ooooo.ooo.oooooooo.o..oo.oooo.
+ooo.ooo..oo.o..ooo.o.oo.oo.ooo..oooo.ooo
+..oooooo..o.o..o.ooo.oo......oooo..o.ooo
+oooooo.oo.oo.#.oooo.oooo.oooooooooooooo.
+oo.oo.#.ooo.###........ooo.oo.oooo.ooo..
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre>
+</body>
+</html>

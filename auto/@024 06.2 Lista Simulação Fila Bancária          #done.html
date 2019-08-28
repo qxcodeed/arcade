@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@024 06.2 Lista Simulação Fila Bancária #done</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="lista-simulação-fila-bancária-done"><span class="citation" data-cites="024">@024</span> 06.2 Lista Simulação Fila Bancária #done</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">struct</span> Client{</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    string id;</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="dt">int</span> docs;</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    <span class="dt">int</span> pac; </span>
+<span id="cb1-5"><a href="#cb1-5"></a>};</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="kw">struct</span> Banco{</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    vector&lt;Client*&gt; caixas;</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    list&lt;Client*&gt; fila_entrada;</span>
+<span id="cb1-10"><a href="#cb1-10"></a>    queue&lt;Client*&gt; fila_saida;</span>
+<span id="cb1-11"><a href="#cb1-11"></a>};</span></code></pre></div>
+<pre><code>para todos os clientes na fila de saida
+    remova cliente do banco
+para todos os caixas
+    se existe um cliente
+        se o cliente tem documentos
+            processe um documento desse cliente
+        senao
+            mova cliente para fila de saida
+    senao
+        se houver clientes na fila de entrada
+            pegue um cliente da fila de entrada
+para todos os clientes da fila de entrada
+    se paciencia maior que zero
+        decremente um na paciencia
+    senao
+        ponha na fila de saida</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#__case one</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># inicia a quantidade de caixas </span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="va">$init</span> <span class="ex">3</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># mostra os caixas, a fila de entrada e a filha de saída</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="va">$show</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>[][][]</span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="co"># O comando &#39;in&#39; aciona um cliente na fila</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="co"># in _nome _acoes _paciencia</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="va">$in</span> <span class="ex">Ai</span> 4 6</span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="va">$in</span> <span class="ex">Bo</span> 2 3</span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="va">$in</span> <span class="ex">Ce</span> 3 8</span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="va">$in</span> <span class="ex">Di</span> 3 5</span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="va">$in</span> <span class="ex">Em</span> 3 2</span>
+<span id="cb3-18"><a href="#cb3-18"></a></span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="va">$show</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>[][][]</span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Ai</span>:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2 <span class="kw">}</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-23"><a href="#cb3-23"></a></span>
+<span id="cb3-24"><a href="#cb3-24"></a><span class="co"># O comando &#39;tic&#39; faz passar um intervalo de tempo. </span></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="va">$tic</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a></span>
+<span id="cb3-27"><a href="#cb3-27"></a><span class="va">$show</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>[<span class="ex">Ai</span>:4:6][Bo:2:3][Ce:3:8]</span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Di</span>:3:4 Em:3:1 <span class="kw">}</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-31"><a href="#cb3-31"></a></span>
+<span id="cb3-32"><a href="#cb3-32"></a><span class="va">$tic</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a></span>
+<span id="cb3-34"><a href="#cb3-34"></a><span class="va">$show</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a>[<span class="ex">Ai</span>:3:6][Bo:1:3][Ce:2:8]</span>
+<span id="cb3-36"><a href="#cb3-36"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Di</span>:3:3 Em:3:0 <span class="kw">}</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-38"><a href="#cb3-38"></a></span>
+<span id="cb3-39"><a href="#cb3-39"></a><span class="va">$tic</span></span>
+<span id="cb3-40"><a href="#cb3-40"></a></span>
+<span id="cb3-41"><a href="#cb3-41"></a><span class="va">$in</span> <span class="ex">Fa</span> 4 5</span>
+<span id="cb3-42"><a href="#cb3-42"></a></span>
+<span id="cb3-43"><a href="#cb3-43"></a><span class="va">$show</span></span>
+<span id="cb3-44"><a href="#cb3-44"></a>[<span class="ex">Ai</span>:2:6][Bo:0:3][Ce:1:8]</span>
+<span id="cb3-45"><a href="#cb3-45"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Di</span>:3:2 Fa:4:5 <span class="kw">}</span></span>
+<span id="cb3-46"><a href="#cb3-46"></a><span class="ex">out</span>:{ Em:3:0 }</span>
+<span id="cb3-47"><a href="#cb3-47"></a></span>
+<span id="cb3-48"><a href="#cb3-48"></a><span class="va">$tic</span></span>
+<span id="cb3-49"><a href="#cb3-49"></a><span class="va">$show</span></span>
+<span id="cb3-50"><a href="#cb3-50"></a>[<span class="ex">Ai</span>:1:6][][Ce:0:8]</span>
+<span id="cb3-51"><a href="#cb3-51"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Di</span>:3:1 Fa:4:4 <span class="kw">}</span></span>
+<span id="cb3-52"><a href="#cb3-52"></a><span class="ex">out</span>:{ Bo:0:3 }</span>
+<span id="cb3-53"><a href="#cb3-53"></a></span>
+<span id="cb3-54"><a href="#cb3-54"></a><span class="va">$tic</span></span>
+<span id="cb3-55"><a href="#cb3-55"></a><span class="va">$show</span></span>
+<span id="cb3-56"><a href="#cb3-56"></a>[<span class="ex">Ai</span>:0:6][Di:3:1][]</span>
+<span id="cb3-57"><a href="#cb3-57"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="ex">Fa</span>:4:3 <span class="kw">}</span></span>
+<span id="cb3-58"><a href="#cb3-58"></a><span class="ex">out</span>:{ Ce:0:8 }</span>
+<span id="cb3-59"><a href="#cb3-59"></a></span>
+<span id="cb3-60"><a href="#cb3-60"></a><span class="va">$tic</span></span>
+<span id="cb3-61"><a href="#cb3-61"></a><span class="va">$show</span></span>
+<span id="cb3-62"><a href="#cb3-62"></a>[][<span class="ex">Di</span>:2:1][Fa:4:3]</span>
+<span id="cb3-63"><a href="#cb3-63"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-64"><a href="#cb3-64"></a><span class="ex">out</span>:{ Ai:0:6 }</span>
+<span id="cb3-65"><a href="#cb3-65"></a></span>
+<span id="cb3-66"><a href="#cb3-66"></a><span class="va">$tic</span></span>
+<span id="cb3-67"><a href="#cb3-67"></a><span class="va">$show</span></span>
+<span id="cb3-68"><a href="#cb3-68"></a>[][<span class="ex">Di</span>:1:1][Fa:3:3]</span>
+<span id="cb3-69"><a href="#cb3-69"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-70"><a href="#cb3-70"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-71"><a href="#cb3-71"></a></span>
+<span id="cb3-72"><a href="#cb3-72"></a><span class="va">$tic</span></span>
+<span id="cb3-73"><a href="#cb3-73"></a><span class="va">$show</span></span>
+<span id="cb3-74"><a href="#cb3-74"></a>[][<span class="ex">Di</span>:0:1][Fa:2:3]</span>
+<span id="cb3-75"><a href="#cb3-75"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-76"><a href="#cb3-76"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-77"><a href="#cb3-77"></a></span>
+<span id="cb3-78"><a href="#cb3-78"></a><span class="va">$tic</span></span>
+<span id="cb3-79"><a href="#cb3-79"></a><span class="va">$show</span></span>
+<span id="cb3-80"><a href="#cb3-80"></a>[][][<span class="ex">Fa</span>:1:3]</span>
+<span id="cb3-81"><a href="#cb3-81"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-82"><a href="#cb3-82"></a><span class="ex">out</span>:{ Di:0:1 }</span>
+<span id="cb3-83"><a href="#cb3-83"></a></span>
+<span id="cb3-84"><a href="#cb3-84"></a><span class="va">$tic</span></span>
+<span id="cb3-85"><a href="#cb3-85"></a><span class="va">$show</span></span>
+<span id="cb3-86"><a href="#cb3-86"></a>[][][<span class="ex">Fa</span>:0:3]</span>
+<span id="cb3-87"><a href="#cb3-87"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-88"><a href="#cb3-88"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-89"><a href="#cb3-89"></a></span>
+<span id="cb3-90"><a href="#cb3-90"></a><span class="va">$tic</span></span>
+<span id="cb3-91"><a href="#cb3-91"></a><span class="va">$show</span></span>
+<span id="cb3-92"><a href="#cb3-92"></a>[][][]</span>
+<span id="cb3-93"><a href="#cb3-93"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-94"><a href="#cb3-94"></a><span class="ex">out</span>:{ Fa:0:3 }</span>
+<span id="cb3-95"><a href="#cb3-95"></a></span>
+<span id="cb3-96"><a href="#cb3-96"></a><span class="va">$tic</span></span>
+<span id="cb3-97"><a href="#cb3-97"></a><span class="va">$show</span></span>
+<span id="cb3-98"><a href="#cb3-98"></a>[][][]</span>
+<span id="cb3-99"><a href="#cb3-99"></a><span class="kw">in</span> :<span class="kw">{</span> <span class="kw">}</span></span>
+<span id="cb3-100"><a href="#cb3-100"></a><span class="ex">out</span>:{ }</span>
+<span id="cb3-101"><a href="#cb3-101"></a></span>
+<span id="cb3-102"><a href="#cb3-102"></a><span class="co"># se existirem clientes ainda no banco, continue passando o tempo até esvaziar o banco</span></span>
+<span id="cb3-103"><a href="#cb3-103"></a><span class="co"># mostra quantos documentos foram processados pelo banco</span></span>
+<span id="cb3-104"><a href="#cb3-104"></a><span class="co"># mostra quantos documentos foram perdidos pelo banco com clientes</span></span>
+<span id="cb3-105"><a href="#cb3-105"></a><span class="co"># que desistiram</span></span>
+<span id="cb3-106"><a href="#cb3-106"></a><span class="va">$finish</span></span>
+<span id="cb3-107"><a href="#cb3-107"></a><span class="ex">received</span>: 16</span>
+<span id="cb3-108"><a href="#cb3-108"></a><span class="ex">lost</span>: 6</span>
+<span id="cb3-109"><a href="#cb3-109"></a><span class="ex">tics</span>: 6</span>
+<span id="cb3-110"><a href="#cb3-110"></a></span>
+<span id="cb3-111"><a href="#cb3-111"></a><span class="co"># end termina a simulacao</span></span>
+<span id="cb3-112"><a href="#cb3-112"></a><span class="va">$end</span></span></code></pre></div>
+<h1 id="parte-2">Parte 2</h1>
+<ul>
+<li>Dado o valor de um dia de trabalho do caixa</li>
+<li>Calcule a quantidade ideal de caixas para maximizar o lucro.</li>
+<li>documentos_recebidos - total_caixas * 100</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@000 01.1 Princesa V1 #done</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="princesa-v1-done"><span class="citation" data-cites="000">@000</span> 01.1 Princesa V1 #done</h2>
+<h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<p><a href="https://www.youtube.com/watch?v=uCsD3ZGzMgE"><img src="logo.jpg" /></a></p>
+<p>Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.</p>
+<p>Nosso objetivo aqui será apenas implementar seu funcionamento.</p>
+<hr />
+<p>No problema, <strong>N</strong> pessoas se colocam numa fila circular e assumem valores de 1 até <strong>N</strong>. Um número <strong>E</strong> é escolhido para iniciar o jogo. <strong>E</strong> pega a espada, mata o elemento à sua frente e passa a espada uma posição à frente. O jogo continua até que um único elemento permaneça vivo.</p>
+<h2 id="implementação-usando-vetor">Implementação usando vetor</h2>
+<ul>
+<li>Utilize um vetor com dois algoritmos
+<ul>
+<li>marcando os elementos que morrem.</li>
+<li>retirando os elementos que morrem e diminuindo o tamanho do vetor.</li>
+</ul></li>
+</ul>
+<p>Testes:</p>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
+3 1
+========
+[ 1&gt; 2 3 ]
+[ 1 3&gt; ]
+[ 3&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02
+3 2
+========
+[ 1 2&gt; 3 ]
+[ 1&gt; 2 ]
+[ 1&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03
+3 3
+========
+[ 1 2 3&gt; ]
+[ 2&gt; 3 ]
+[ 2&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04
+6 3
+========
+[ 1 2 3&gt; 4 5 6 ]
+[ 1 2 3 5&gt; 6 ]
+[ 1&gt; 2 3 5 ]
+[ 1 3&gt; 5 ]
+[ 1&gt; 3 ]
+[ 1&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 05
+9 9
+========
+[ 1 2 3 4 5 6 7 8 9&gt; ]
+[ 2&gt; 3 4 5 6 7 8 9 ]
+[ 2 4&gt; 5 6 7 8 9 ]
+[ 2 4 6&gt; 7 8 9 ]
+[ 2 4 6 8&gt; 9 ]
+[ 2&gt; 4 6 8 ]
+[ 2 6&gt; 8 ]
+[ 2&gt; 6 ]
+[ 2&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 06
+20 1
+========
+[ 1&gt; 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ]
+[ 1 3&gt; 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ]
+[ 1 3 5&gt; 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ]
+[ 1 3 5 7&gt; 8 9 10 11 12 13 14 15 16 17 18 19 20 ]
+[ 1 3 5 7 9&gt; 10 11 12 13 14 15 16 17 18 19 20 ]
+[ 1 3 5 7 9 11&gt; 12 13 14 15 16 17 18 19 20 ]
+[ 1 3 5 7 9 11 13&gt; 14 15 16 17 18 19 20 ]
+[ 1 3 5 7 9 11 13 15&gt; 16 17 18 19 20 ]
+[ 1 3 5 7 9 11 13 15 17&gt; 18 19 20 ]
+[ 1 3 5 7 9 11 13 15 17 19&gt; 20 ]
+[ 1&gt; 3 5 7 9 11 13 15 17 19 ]
+[ 1 5&gt; 7 9 11 13 15 17 19 ]
+[ 1 5 9&gt; 11 13 15 17 19 ]
+[ 1 5 9 13&gt; 15 17 19 ]
+[ 1 5 9 13 17&gt; 19 ]
+[ 1&gt; 5 9 13 17 ]
+[ 1 9&gt; 13 17 ]
+[ 1 9 17&gt; ]
+[ 9&gt; 17 ]
+[ 9&gt; ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+</code></pre>
+</body>
+</html>

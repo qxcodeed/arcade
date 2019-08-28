@@ -1,4 +1,4 @@
-## 02.2 Rec Triângulo da soma
+## @004 #done 02.2 Rec Triângulo da soma
 ## @qxcode
 
 Dado um vetor de inteiros A, imprima um triângulo de números
