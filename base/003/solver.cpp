@@ -8,21 +8,24 @@ const char EMPTY = '.';
 #else
 #endif
 
-void show(int nl, int nc, char mat[nl][nc]){
+void show(int nl, int nc, char * mat){
     for(int l = 0; l < nl; l++){
         for(int c = 0; c < nc; c++)
-            printf("%c", mat[l][c]);
+            printf("%c", mat[l * nc + c]);
         puts("");
     }
 }
-
-void tocar_fogo(int nl, int nc, char mat[nl][nc], int l, int c){
+/*
+para acessar a posicao l, c da matriz voce deve utilizar
+mat[l * nc + c]
+*/
+void tocar_fogo(int nl, int nc, char * mat, int l, int c){
 #ifdef PROF
     if((l < 0) || (l >= nl) || (c < 0) || (c >= nc))
         return;
-    if(mat[l][c] != TREE)
+    if(mat[l * nc + c] != TREE)
         return;
-    mat[l][c] = FIRE;
+    mat[l * nc + c] = FIRE;
     tocar_fogo(nl, nc, mat, l, c + 1);
     tocar_fogo(nl, nc, mat, l, c - 1);
     tocar_fogo(nl, nc, mat, l - 1, c);
@@ -42,6 +45,6 @@ int main(){
     for(int l = 0; l < nl; l++)
         for(int c = 0; c < nc; c++)
             scanf(" %c", &mat[l][c]);
-    tocar_fogo(nl, nc, mat, l, c);
-    show(nl, nc, mat);
+    tocar_fogo(nl, nc, &mat[0][0], l, c);
+    show(nl, nc, &mat[0][0]);
 }
