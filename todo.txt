@@ -1,10 +1,10 @@
 Labirinto Resolvendo com pilha
 Build Fila em vetor (Buffer)  
 5.3 build lista dupla
-Build Hash com Lista
 Hash com linear probing
+Build Hash com Lista
 build bstree
 fila floodfill
 fila pathfinding
-insertion sort em lista
 merge sort
+insertion sort em lista

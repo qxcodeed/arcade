@@ -5,7 +5,9 @@
     - linha 1: o serial de uma árvore binária
     - linha 2: um valor de nó
 - Saída
-    - para nó da árvore que tenha o valor procurado, mostre um por linha o caminho da raiz até o nó, indicando 'l' ou 'r' se o filho é da esquerda ou da direita e -1 se o nó não existir.
+    - para nó da árvore que tenha o valor procurado, mostre o caminho da raiz até o nó, indicando 'l' ou 'r' se o caminho é pelo filho da esquerda ou da direita. 
+    - Inicio com um '>' para o root e ponha um 'x' quando achar o nó.
+    - Se o valor não existir na árvore, imprima valor não encontrado.
 - Limitação
     - Você deve percorrer a árvore uma única vez para obter os caminhos.
 
@@ -15,72 +17,36 @@ struct Node{
     Node * left, * right;
 };
 
-struct Tree{
-    Node * root;
-};
-
 string find_path(Node * root, int value);
 ```
+
 ```
 >>>>>>>> 01 um
 4 # #
 4
 ========
-x
+>x
 <<<<<<<<
 
 >>>>>>>> 02 dois
 1 # 0 # # 
 0
 ========
-rx
+>rx
 <<<<<<<<
 
 >>>>>>>> 03 tres
 4 # 8 2 # # # 
 2
 ========
-rlx
+>rlx
 <<<<<<<<
 
->>>>>>>> 04 quatro
-0 9 4 # # # 5 # # 
-5
-========
-rx
-<<<<<<<<
-
->>>>>>>> 05 quatro not found
+>>>>>>>> 04 not found
 0 9 4 # # # 5 # # 
 7
 ========
--1
-<<<<<<<<
-
->>>>>>>> 06 cinco
-0 4 # # 2 0 # # 4 # # 
-4
-========
-[ 0 l4 ]
-[ 0 r2 r4 ]
-<<<<<<<<
-
->>>>>>>> 07 seis
-2 9 5 # # # 9 # 7 # 9 # # 
-9
-========
-[ 2 l9 ]
-[ 2 r9 ]
-[ 2 r9 r7 r9 ]
-<<<<<<<<
-
->>>>>>>> 08 dez
-1 8 7 # # 5 # 6 # # 5 0 # # 9 # 5 2 # # # 
-5
-========
-[ 1 l8 r5 ]
-[ 1 r5 ]
-[ 1 r5 r9 r5 ]
+value not fount
 <<<<<<<<
 
 ```
