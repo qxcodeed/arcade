@@ -4,11 +4,12 @@
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas.
 
 A matriz está codificada assim.
-1a linha: nl, nc, l, c sendo: número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
-linhas subsequentes
-- '\#' representa uma árvore
-- '.' representa um espaço vazio
-- 'o' representa uma árvore queimada
+1a linha: `nl, nc, l, c` respectivamente
+-  número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
+- Nas linhas subsequentes:
+    - '\#' representa uma árvore
+    - '.' representa um espaço vazio
+    - 'o' representa uma árvore queimada
 
 Saída esperada:
 - Imprima a matriz após a queimada acontecer.

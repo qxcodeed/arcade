@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void show(int nl, int nc, char * mat){
     for(int l = 0; l < nl; l++){
         for(int c = 0; c < nc; c++)
