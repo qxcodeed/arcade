@@ -1,7 +1,7 @@
 ## @001 01.2 Princesa V2                     #done
 ## @qxcode
 
-[![](logo.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.

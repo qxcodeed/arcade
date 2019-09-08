@@ -1,7 +1,7 @@
 ## @045 10.3 Tree Altura e Nível             #done
 ## @qxcode
 
-![](capa.jpg)
+![](__capa.jpg)
 
 - Entrada
     - linha 1: o serial de uma árvore

@@ -1,0 +1,112 @@
+>>>>>>>> 01 init vazio 10%
+show
+end
+========
+$show
+[ ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 02 add !%
+show
+add 3 4 5 1
+show
+end
+========
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 03 add mais !%
+show
+add 3 4 5 1
+show
+add 7
+show
+end
+========
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$add 7
+$show
+[ 3 4 5 1 7 ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 04 create !%
+init 3
+status
+end
+========
+$init 3
+$status
+size:0 capacity:3
+$end
+<<<<<<<<
+
+
+>>>>>>>> 05 add !%
+init 5
+show
+add 3 4 5 1
+show
+end
+========
+$init 5
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 06 tentar estourar !%
+init 5
+show
+add 3 4 5 1
+show
+add 7 3 2 1
+show
+end
+========
+$init 5
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$add 7 3 2 1
+$show
+[ 3 4 5 1 7 ]
+$end
+<<<<<<<<
+
+
+>>>>>>>> 07 add mais !%
+show
+add 3 4 5 1
+show
+show
+end
+========
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]$add 7
+$show
+[ 3 4 5 1 7 ]
+$end
+<<<<<<<<
