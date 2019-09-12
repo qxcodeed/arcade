@@ -1,4 +1,4 @@
-## 01.1 Princesa V1                            #done
+## 01.1 Princesa V1                       #done
 ## @qxcode
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

@@ -1,2 +1,2 @@
-## 08.4 Sort Quick Sort                        #todo
+## 08.4 Sort Quick Sort                   #todo
 ## @qxcode
