@@ -1,4 +1,4 @@
-## @008 04.2 Labirinto Resolvendo com recursão      #todo
+## 04.2 Labirinto Resolvendo com recursão      #todo
 ## @qxcode
 
 fazer os testes.

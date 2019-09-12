@@ -1,4 +1,4 @@
-## @007 03.3 Queimada V2 Busca em profundidade #doing
+## 03.3 Queimada V2 Busca em profundidade #doing
 ## @qxcode
 
 Busca em profundidade

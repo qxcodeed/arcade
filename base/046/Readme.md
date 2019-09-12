@@ -1,4 +1,4 @@
-## @046 10.2 Tree Soma e Menor               #done
+## 10.2 Tree Soma e Menor               #done
 ## @qxcode
 
 - Entrada
