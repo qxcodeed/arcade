@@ -8,7 +8,7 @@ Vamos trabalhar com implementações de listas simples e duplamente encadeadas, 
 Compreender o funcionamento das **listas simples** é muito importante para nos preparar para trabalhar com árvores.
 
 1. Listas Simples
-----------------
+_______________-
 Implemente uma _Lista Encadeada Simples_ com os seguintes métodos e teste o funcionamento da sua implementação.
 
 - criar
@@ -63,7 +63,7 @@ Implemente uma _Lista Encadeada Simples_ com os seguintes métodos e teste o fun
         bool equals(list_other)
 
 2. Lista Simples Ordenada
------------------------
+_____________________--
 Listas Ordenadas são muito práticas por facilitar a busca de elementos na lista.
 
 Construa uma ListaSimplesOrdenada com os métodos da ListaSimples e as seguintes
@@ -80,7 +80,7 @@ modificações.
 Nossa lista deve aceitar valores repetidos.
 
 3. Lista Simples Circular
------------------------
+_____________________--
 
 Listas circulares são extremamente úteis. Leia mais sobre Ring Buffer quando puder.
 Fica mais fácil se você usar um node sentinela para o início da lista.
@@ -107,6 +107,6 @@ o sentinela.
         int size()
 
 4. Listas Simples Recursiva
-----------------
+_______________-
 
 Adapte os métodos da lista simples para trabalhar apenas com recursão.

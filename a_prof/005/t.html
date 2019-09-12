@@ -80,57 +80,128 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <![endif]-->
 </head>
 <body>
-<h2 id="tree-caminhos-para-o-nó-doing"><span class="citation" data-cites="047">@047</span> 10.4 Tree Caminhos para o nó #doing</h2>
+<h2 id="rec-operações-básicas-done"><span class="citation" data-cites="005">@005</span> 02.1 Rec Operações básicas #done</h2>
 <h2 id="qxcode"><span class="citation" data-cites="qxcode">@qxcode</span></h2>
+<p>Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. Você pode utilizar laço para ler os elementos do vetor.</p>
+<hr />
 <ul>
 <li>Entrada
 <ul>
-<li>linha 1: o serial de uma árvore binária</li>
-<li>linha 2: um valor de nó</li>
+<li>um vetor de inteiros. O vetor tem no mínimo 1 elemento.</li>
 </ul></li>
 <li>Saída
 <ul>
-<li>para nó da árvore que tenha o valor procurado, mostre o caminho da raiz até o nó, indicando ‘l’ ou ‘r’ se o caminho é pelo filho da esquerda ou da direita.</li>
-<li>Inicio com um ‘&gt;’ para o root e ponha um ‘x’ quando achar o nó.</li>
-<li>Se o valor não existir na árvore, imprima valor não encontrado.</li>
-</ul></li>
-<li>Limitação
-<ul>
-<li>Você deve percorrer a árvore uma única vez para obter os caminhos.</li>
+<li>vet: o vetor</li>
+<li>rvet: o vetor impresso ao contrário</li>
+<li>sum: a soma dos elementos</li>
+<li>mult: a multiplicação dos elementos</li>
+<li>min: o menor elemento</li>
+<li>inv: inverte o vetor, depois imprime ele invertido</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">struct</span> Node{</span>
-<span id="cb1-2"><a href="#cb1-2"></a>    <span class="dt">int</span> value;</span>
-<span id="cb1-3"><a href="#cb1-3"></a>    Node * left, * right;</span>
-<span id="cb1-4"><a href="#cb1-4"></a>};</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>string find_path(Node * root, <span class="dt">int</span> value);</span></code></pre></div>
-<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01 um
-4 # #
+<hr />
+<h2 id="help">Help</h2>
+<p>Em C e C++, pode ler a entrada de dados dessa forma. Ele vai ler inteiros até chegar ao final do arquivo de entrada. Se tiver digitando os valores utilize:</p>
+<ul>
+<li>Linux(Enter + Ctrl D)</li>
+<li>Windows (Ctrl Z)</li>
+</ul>
+<p>para enviar um sinal de fim de arquivo.</p>
+<h3 id="c">C</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">//c</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">int</span> vet[<span class="dv">1000</span>];</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="dt">int</span> size = <span class="dv">0</span>;</span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="dt">int</span> value = <span class="dv">0</span>;</span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co">//enquanto conseguir ler valores antes de chegar no fim do arquivo</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="cf">while</span>(scanf(<span class="st">&quot;%d&quot;</span>, &amp;value) &gt; <span class="dv">0</span>) </span>
+<span id="cb1-7"><a href="#cb1-7"></a>    vet[size++] = value;</span></code></pre></div>
+<h3 id="c-1">C++</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1"></a><span class="pp">#include </span><span class="im">&lt;sstream&gt;</span><span class="pp"> </span><span class="co">//stringstream</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>string line;</span>
+<span id="cb2-4"><a href="#cb2-4"></a>getline(cin, line);</span>
+<span id="cb2-5"><a href="#cb2-5"></a>stringstream ss(line);</span>
+<span id="cb2-6"><a href="#cb2-6"></a>vector&lt;<span class="dt">int</span>&gt; vet;</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="dt">int</span> value;</span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="cf">while</span>(ss &gt;&gt; value)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>    vet.push_back(value);</span></code></pre></div>
+<hr />
+<h2 id="testes">Testes</h2>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
 4
 ========
-&gt;x
+vet : [ 4 ]
+rvet: [ 4 ]
+sum : 4
+mult: 4
+min : 4
+inv : [ 4 ]
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02 dois
-1 # 0 # # 
-0
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02
+3 4 2
 ========
-&gt;rx
+vet : [ 3 4 2 ]
+rvet: [ 2 4 3 ]
+sum : 9
+mult: 24
+min : 2
+inv : [ 2 4 3 ]
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03 tres
-4 # 8 2 # # # 
-2
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03
+1 2 3 4
 ========
-&gt;rlx
+vet : [ 1 2 3 4 ]
+rvet: [ 4 3 2 1 ]
+sum : 10
+mult: 24
+min : 1
+inv : [ 4 3 2 1 ]
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04 not found
-0 9 4 # # # 5 # # 
-7
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04
+1 2 3 4 0
 ========
-value not fount
+vet : [ 1 2 3 4 0 ]
+rvet: [ 0 4 3 2 1 ]
+sum : 10
+mult: 0
+min : 0
+inv : [ 0 4 3 2 1 ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 05
+1 2 3 4 2 3
+========
+vet : [ 1 2 3 4 2 3 ]
+rvet: [ 3 2 4 3 2 1 ]
+sum : 15
+mult: 144
+min : 1
+inv : [ 3 2 4 3 2 1 ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 06
+1 2 3 4 7 2 9
+========
+vet : [ 1 2 3 4 7 2 9 ]
+rvet: [ 9 2 7 4 3 2 1 ]
+sum : 28
+mult: 3024
+min : 1
+inv : [ 9 2 7 4 3 2 1 ]
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 07
+0 1 2 3 -4 -7 -2
+========
+vet : [ 0 1 2 3 -4 -7 -2 ]
+rvet: [ -2 -7 -4 3 2 1 0 ]
+sum : -7
+mult: 0
+min : -7
+inv : [ -2 -7 -4 3 2 1 0 ]
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 </code></pre>
 </body>

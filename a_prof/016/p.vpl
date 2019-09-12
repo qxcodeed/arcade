@@ -1,4 +1,4 @@
-case=01 create
+case=00 create
 input=init 3
 status
 end
@@ -9,7 +9,7 @@ $end
 "
 
 
-case=02 add
+case=01 add
 input=init 5
 show
 add 3 4 5 1
@@ -25,7 +25,7 @@ $end
 "
 
 
-case=03 tentar estourar
+case=02 tentar estourar
 input=init 5
 show
 add 3 4 5 1

@@ -1,11 +1,11 @@
-case=01 um
+case=00 um
 input=4 # # 
 output="4
 "
 grade reduction=100%
 
 
-case=02 dois
+case=01 dois
 input=1 # 0 # # 
 output="1
 .#
@@ -14,7 +14,7 @@ output="1
 grade reduction=100%
 
 
-case=03 tres
+case=02 tres
 input=4 # 8 2 # # # 
 output="4
 .#
@@ -25,7 +25,7 @@ output="4
 grade reduction=100%
 
 
-case=04 quatro
+case=03 quatro
 input=0 9 4 # # # 5 # # 
 output="0
 .9
@@ -36,7 +36,7 @@ output="0
 grade reduction=100%
 
 
-case=05 cinco
+case=04 cinco
 input=0 4 # # 2 0 # # 3 # # 
 output="0
 .4
@@ -47,7 +47,7 @@ output="0
 grade reduction=100%
 
 
-case=06 seis
+case=05 seis
 input=2 0 0 # # # 3 # 7 # 9 # # 
 output="2
 .0
@@ -62,7 +62,7 @@ output="2
 grade reduction=100%
 
 
-case=07 dez
+case=06 dez
 input=1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
 output="1
 .8

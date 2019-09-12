@@ -1,4 +1,4 @@
-case=01
+case=00
 input=4
 output="vet : [ 4 ]
 rvet: [ 4 ]
@@ -10,7 +10,7 @@ inv : [ 4 ]
 grade reduction=100%
 
 
-case=02
+case=01
 input=3 4 2
 output="vet : [ 3 4 2 ]
 rvet: [ 2 4 3 ]
@@ -22,7 +22,7 @@ inv : [ 2 4 3 ]
 grade reduction=100%
 
 
-case=03
+case=02
 input=1 2 3 4
 output="vet : [ 1 2 3 4 ]
 rvet: [ 4 3 2 1 ]
@@ -34,7 +34,7 @@ inv : [ 4 3 2 1 ]
 grade reduction=100%
 
 
-case=04
+case=03
 input=1 2 3 4 0
 output="vet : [ 1 2 3 4 0 ]
 rvet: [ 0 4 3 2 1 ]
@@ -46,7 +46,7 @@ inv : [ 0 4 3 2 1 ]
 grade reduction=100%
 
 
-case=05
+case=04
 input=1 2 3 4 2 3
 output="vet : [ 1 2 3 4 2 3 ]
 rvet: [ 3 2 4 3 2 1 ]
@@ -58,7 +58,7 @@ inv : [ 3 2 4 3 2 1 ]
 grade reduction=100%
 
 
-case=06
+case=05
 input=1 2 3 4 7 2 9
 output="vet : [ 1 2 3 4 7 2 9 ]
 rvet: [ 9 2 7 4 3 2 1 ]
@@ -70,7 +70,7 @@ inv : [ 9 2 7 4 3 2 1 ]
 grade reduction=100%
 
 
-case=07
+case=06
 input=0 1 2 3 -4 -7 -2
 output="vet : [ 0 1 2 3 -4 -7 -2 ]
 rvet: [ -2 -7 -4 3 2 1 0 ]

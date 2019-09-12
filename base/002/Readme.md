@@ -7,7 +7,7 @@
 Esse jogo é equivalente ao V2 porém com duas diferenças.
 - Após matar, a espada salta um número de vezes igual ao último que utilizou a espada. Se o elemento que matou é positivo, a espada salta para direita, se não, salta para esquerda.
 
----
+___
 - Entrada:
     - Os valores de **N** e **E** e **F** na primeira linha.
 - Saída:
@@ -15,7 +15,7 @@ Esse jogo é equivalente ao V2 porém com duas diferenças.
         - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
 
 
----
+___
 ## Implementação com lista
 
 Resolva novamente o problema cabeças vão rolar V3 utilizando uma lista ligada circular no lugar do vetor.
@@ -29,7 +29,7 @@ struct Node{
 
 ```
 
----
+___
 ## Testes:
 
 ```

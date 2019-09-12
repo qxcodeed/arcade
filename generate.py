@@ -10,8 +10,9 @@ from shutil import rmtree
 from subprocess import run, PIPE
 import unicodedata
 import string
+import argparse
 
-REMOTE_DATABASE = "https://raw.githubusercontent.com/qxcodeed/arcade/master/base"
+REMOTE_DATABASE = "https://raw.githubusercontent.com/qxcodefup/arcade/master/base"
 
 BASE    = "base"
 PROF    = "a_prof"
@@ -46,20 +47,20 @@ def extract_name(hook):
     with open(BASE + os.sep + hook + os.sep + "Readme.md") as f:
         words = f.readlines()[0].split(" ")
         name = " ".join(words[1:])[:-1] #retirando apenas o ##
-        return name
+        return "@" + hook + " " + name
 
 def replace_references_on_figures(text, remote_server):
     return text.replace('<img src="__', '<img src="' + remote_server + "/" + "__")
 
 def generate_link(hook, name):
-    print("link", hook)
-    print(name)
+    #print("link", hook)
+    #print(name)
     with open(LINKS + os.sep + name + ".md", "w") as f:
         f.write("[LINK](.." + os.sep + BASE + os.sep + hook + os.sep + "Readme.md)\n")
 
 def generate_json(hook, name, description, cases, fdict):
     moodle = {}
-    moodle["name"] = name
+    moodle["title"] = name
     moodle["description"] = description
     moodle["executionFiles"] = [{"name":"vpl_evaluate.cases", "contents": cases}]
 
@@ -197,9 +198,9 @@ def generate_html(title, infile):
     try:
         p = subprocess.Popen(cmd, stdout=PIPE, stderr=PIPE, universal_newlines=True)
         stdout, stderr = p.communicate()
-        #if(stdout != "" or stderr != ""):
-        #    print(stdout)
-        #    print(stderr)
+        if(stdout != "" or stderr != ""):
+            print(stdout)
+            print(stderr)
         with open(outfile) as f:
             return f.read()
     except Exception as e:
@@ -220,5 +221,36 @@ def main():
         if not os.path.exists(target) or (os.path.getmtime(source) > os.path.getmtime(target)):
             update_all(hook, name)
 
+def showTests():
+    files = os.listdir(BASE)
+    files.sort()
+    folders = [x for x in files if os.path.isdir(BASE + os.sep + x)]
+    for hook in folders:
+        #source = BASE + os.sep + hook + os.sep + "Readme.md"
+        tests = os.listdir(BASE + os.sep + hook)
+        tests = [x for x in tests if os.path.isfile(BASE + os.sep + hook + os.sep + x)]
+        tests = [x for x in tests if x.endswith(".tio") or x.endswith("Readme.md") ]
+        tests = [BASE + os.sep + hook + os.sep + x for x in tests]
+        cmd = ["th", "list", '-s'] + tests
+        subprocess.run(cmd)
+
+
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(prog='th.py')
+    parser.add_argument('--tests', action='store_true', help='show tests')
+    parser.add_argument('-r', action='store_true', help='rebuild')
+    args = parser.parse_args()
+
+    if args.r:
+        rmtree(MOODLE, ignore_errors=True)
+        os.mkdir(MOODLE)
+        rmtree(PROF, ignore_errors=True)
+        os.mkdir(PROF)
+        rmtree(STUDENT, ignore_errors=True)
+        os.mkdir(STUDENT)
+        
+        
+    if args.tests:
+        showTests()
+    else:
+        main()

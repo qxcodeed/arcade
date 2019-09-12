@@ -4,7 +4,7 @@
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
 Você pode utilizar laço para ler os elementos do vetor.
 
----
+___
 
 - Entrada
     - um vetor de inteiros. O vetor tem no mínimo 1 elemento.
@@ -17,7 +17,7 @@ Você pode utilizar laço para ler os elementos do vetor.
     - inv: inverte o vetor, depois imprime ele invertido
 
 
----
+___
 ## Help
 
 Em C e C++, pode ler a entrada de dados dessa forma. Ele vai ler inteiros até chegar ao final do arquivo de entrada. Se tiver digitando os valores utilize:
@@ -51,7 +51,8 @@ while(ss >> value)
     vet.push_back(value);
 ```
 
----
+___
+
 ## Testes
 
 ```

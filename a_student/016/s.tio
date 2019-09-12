@@ -1,4 +1,4 @@
->>>>>>>> 01 create !%
+>>>>>>>> 00 create !%
 init 3
 status
 end
@@ -10,7 +10,7 @@ $end
 <<<<<<<<
 
 
->>>>>>>> 02 add !%
+>>>>>>>> 01 add !%
 init 5
 show
 add 3 4 5 1
@@ -27,7 +27,7 @@ $end
 <<<<<<<<
 
 
->>>>>>>> 03 tentar estourar !%
+>>>>>>>> 02 tentar estourar !%
 init 5
 show
 add 3 4 5 1

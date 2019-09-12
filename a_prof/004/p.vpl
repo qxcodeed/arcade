@@ -1,4 +1,4 @@
-case=01
+case=00
 input=1 2 3
 output="[ 8 ]
 [ 3 5 ]
@@ -7,7 +7,7 @@ output="[ 8 ]
 grade reduction=100%
 
 
-case=02
+case=01
 input=3 2 1
 output="[ 8 ]
 [ 5 3 ]
@@ -16,7 +16,7 @@ output="[ 8 ]
 grade reduction=100%
 
 
-case=03
+case=02
 input=4 3 2 1
 output="[ 20 ]
 [ 12 8 ]
@@ -26,7 +26,7 @@ output="[ 20 ]
 grade reduction=100%
 
 
-case=04
+case=03
 input=1 1 2 3 5 8
 output="[ 89 ]
 [ 34 55 ]
@@ -38,7 +38,7 @@ output="[ 89 ]
 grade reduction=100%
 
 
-case=05
+case=04
 input=1 2 4 8 16 32 64
 output="[ 729 ]
 [ 243 486 ]

@@ -1,4 +1,4 @@
-case=01 one
+case=00 one
 input=init 3
 show
 in Ai 4 6

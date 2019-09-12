@@ -10,14 +10,14 @@ Esse jogo é equivalente ao V1 porém com duas diferenças.
     - O valor de F, denominado fase, poderá ter os valor 1 ou -1 e indica se o primeiro participante será positivo ou negativo.
 - Se a espada estiver com um participante com número negativo, ele deverá matar o participantes à sua esquerda. Se a espada estiver com um participante de número positivo, deverá matar o participante à sua direita no vetor.
 
----
+___
 - Entrada:
     - Os valores de **N** e **E** e **F** na primeira linha.
 - Saída:
     - Etapa a etapa, os elementos que estão vivos na fila circular.
         - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
 
----
+___
 
 - Implemente esse problemas utilizando as seguintes abordagens:
     - utilizando um vetor
