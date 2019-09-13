@@ -1,4 +1,4 @@
-## @04_list  1. Build Lista Simples                    #doing
+## $04_list  1. Build Lista Simples                    #doing
 ## @qxcode
 
 Implementações de Lista Encadeada

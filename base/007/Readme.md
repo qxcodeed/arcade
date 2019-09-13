@@ -1,4 +1,4 @@
-## @03_maze  2. Queimada V2 Busca em profundidade      #doing
+## $03_maze  2. Queimada V2 Busca em profundidade      #doing
 ## @qxcode
 
 Busca em profundidade

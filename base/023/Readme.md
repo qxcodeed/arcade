@@ -1,4 +1,4 @@
-## @04_list  2. Lista Editor de texto                  #doing
+## $04_list  2. Lista Editor de texto                  #doing
 ## @qxcode
 
 Implementar um editor de texto simplificado que receba os seguintes valores como

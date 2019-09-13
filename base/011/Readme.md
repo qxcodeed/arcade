@@ -1,4 +1,4 @@
-## @03_maze  3. Queimada V3 Busca em largura           #todo
+## $03_maze  3. Queimada V3 Busca em largura           #todo
 ## @qxcode
 
 Refaça o problema da queimada utilizando fila no lugar da recursão.

@@ -1,4 +1,4 @@
-## @04_list  2. Lista Simulação Fila Bancária          #doing
+## $04_list  2. Lista Simulação Fila Bancária          #doing
 ## @qxcode
 
 

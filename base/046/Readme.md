@@ -1,4 +1,4 @@
-## @06_tree  2. Tree Soma e Menor                      #done
+## $06_tree  2. Tree Soma e Menor                      #done
 ## @qxcode
 
 - Entrada

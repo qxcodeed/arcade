@@ -1,4 +1,4 @@
-## @06_tree  1. Tree Serialize and Show                #done
+## $06_tree  1. Tree Serialize and Show                #done
 ## @qxcode
 
 - Leia a string que representa a árvore serializada e mostre a árvore.
