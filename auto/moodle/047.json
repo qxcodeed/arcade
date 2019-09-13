@@ -7,14 +7,6 @@
       "contents": "case=00 um\ninput=4 # #\n4\noutput=\">x\n\"\ngrade reduction=100%\n\n\ncase=01 dois\ninput=1 # 0 # # \n0\noutput=\">rx\n\"\ngrade reduction=100%\n\n\ncase=02 tres\ninput=4 # 8 2 # # # \n2\noutput=\">rlx\n\"\ngrade reduction=100%\n\n\ncase=03 not found\ninput=0 9 4 # # # 5 # # \n7\noutput=\"value not fount\n\"\ngrade reduction=100%\n"
     },
     {
-      "name": ".ignore",
-      "contents": "\u001b[0m\u001b[01;32mmain\u001b[0m\n\u001b[01;32msolver\u001b[0m\nsolver.cpp\n"
-    },
-    {
-      "name": ".student",
-      "contents": "lib.cpp\n"
-    },
-    {
       "name": "main.cpp",
       "contents": "\n#include <iostream>\n#include <sstream>\n#include \"lib.hpp\"\nusing namespace std;\n\nstruct BTree{\n    Node * root;\n    BTree(){\n        this->root = nullptr;\n    }\n\n    void clone(stringstream& ss, Node ** elo){\n        string value;\n        ss >> value;\n        if(value == \"#\")\n            return;\n        int num;\n        stringstream(value) >> num;\n        *elo =  new Node(num);\n        clone(ss, &(*elo)->left);\n        clone(ss, &(*elo)->right);\n    }\n\n    BTree(string serial){\n        stringstream ss(serial);\n        clone(ss, &root);\n    }\n\n    void _destroy(Node * node){\n        if(node == nullptr)\n            return;\n        _destroy(node->left);\n        _destroy(node->right);\n        delete node;\n    }\n\n    ~BTree(){\n        _destroy(this->root);\n    }\n};\n\nint main(){\n    string line;\n    getline(cin, line);\n    BTree bt(line);\n    int value;\n    cin >> value;\n    auto path = find(bt.root, value);\n    cout << path << endl;\n}"
     },
