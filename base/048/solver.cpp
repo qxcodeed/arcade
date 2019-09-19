@@ -1,81 +1,48 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
-class SinglyLinkedListNode {
-    public:
-        int data;
-        SinglyLinkedListNode *next;
-
-        SinglyLinkedListNode(int node_data) {
-            this->data = node_data;
-            this->next = nullptr;
-        }
+struct Node{
+    Node * next;
+    int value;
 };
 
-class SinglyLinkedList {
-    public:
-        SinglyLinkedListNode *head;
-        SinglyLinkedListNode *tail;
-
-        SinglyLinkedList() {
-            this->head = nullptr;
-            this->tail = nullptr;
-        }
-
+struct List{
+    Node * head;
 };
 
-void print_singly_linked_list(SinglyLinkedListNode* node, string sep) {
-    while (node) {
-        cout << node->data;
-
-        node = node->next;
-
-        if (node) {
-            cout << sep;
-        }
-    }
-}
-
-void free_singly_linked_list(SinglyLinkedListNode* node) {
-    while (node) {
-        SinglyLinkedListNode* temp = node;
-        node = node->next;
-
-        free(temp);
-    }
-}
-
-SinglyLinkedListNode* insertNodeAtHead(SinglyLinkedListNode* llist, int data) {
-
-    SinglyLinkedListNode* node = new SinglyLinkedListNode(data);
-    node->next = llist;
-
+Node * list_push_front(Node * head, int value){
+    Node * node = new Node();
+    node->value = value;
+    node->next = head;
     return node;
 }
 
-int main()
-{
 
-    SinglyLinkedList* llist = new SinglyLinkedList();
-
-    int llist_count;
-    cin >> llist_count;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    for (int i = 0; i < llist_count; i++) {
-        int llist_item;
-        cin >> llist_item;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-    
-      	SinglyLinkedListNode* llist_head = insertNodeAtHead(llist->head, llist_item);
-        llist->head = llist_head;
+List * list_create();
+void   list_show(List * ll);
+int main(){
+    List * ll = list_create();
+    int size;
+    cin >> size;
+    while(size--){
+        int value;
+        cin >> value;
+        ll->head = list_push_front(ll->head, value);
     }
+    list_show(ll);
+}
 
-    print_singly_linked_list(llist->head, "\n");
-    cout << "\n";
+List * list_create(){
+    List * ll = new List();
+    ll->head = nullptr;
+    return ll;
+}
 
-    free_singly_linked_list(llist->head);
-
-    return 0;
+void list_show(List * ll){
+    Node * node = ll->head;
+    cout << "[ ";
+    while(node != nullptr){
+        cout << node->value << " ";
+        node = node->next;
+    }
+    cout << "]\n";
 }
