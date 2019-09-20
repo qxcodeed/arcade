@@ -1,4 +1,6 @@
-# Detecção de ciclo
+## Detecção de ciclo
+
+![](__capa.jpg)
 
 Diz-se que uma lista vinculada contém um *ciclo* se algum nó for visitado mais de uma vez enquanto estiver percorrendo a lista.
 
@@ -18,7 +20,7 @@ Se a lista contiver um ciclo, sua função deverá retornar *true* . Se a lista 
 
 As seguintes listas vinculadas são passadas como argumentos para sua função:
 
-![Entradas de amostra](https://s3.amazonaws.com/hr-challenge-images/1163/1463778594-900a0ae522-inputs.png)
+![Exemplo](__exemplo.png)
 
 **Saída de amostra**
 

@@ -9,6 +9,8 @@
 - Saída
     - Para cada nó da lista, um nó por linha, altura e profundidade do nó ou -1 se o nó não for encontrado
 
+![](__altura.jpg)
+
 ```
 >>>>>>>> 01 um
 4 # # 

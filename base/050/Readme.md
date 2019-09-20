@@ -1,4 +1,4 @@
-# Match Strings
+## Match Strings
 
 Há um vector de strings de entrada e um vector de strings de consulta. Para cada sequência de consultas, determine quantas vezes isso ocorre na lista de sequências de entrada.
 
