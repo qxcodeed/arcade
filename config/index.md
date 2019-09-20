@@ -40,7 +40,7 @@
 - [3. Tree Altura e Nível](../base/045/Readme.md#06tree-3-tree-altura-e-nível-done)
 - [4. Tree Caminhos para o nó](../base/047/Readme.md#06tree-4-tree-caminhos-para-o-nó-doing)
 
-### -
+### Sem Categoria
 
 - [Detecção de ciclo](../base/049/Readme.md#detecção-de-ciclo)
 - [Inserir um nó no início de uma lista ligada](../base/048/Readme.md#inserir-um-nó-no-início-de-uma-lista-ligada)

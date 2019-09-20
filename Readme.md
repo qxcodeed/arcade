@@ -49,7 +49,7 @@
 
 
 
-### -
+### Sem Categoria
 
 [![](config/thumb/049.jpg)](base/049/Readme.md)|[![](config/thumb/048.jpg)](base/048/Readme.md)|[![](config/thumb/050.jpg)](base/050/Readme.md)|-
 -|-|-|-

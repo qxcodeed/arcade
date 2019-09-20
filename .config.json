@@ -6,7 +6,7 @@
     "index": "config/index.md",
     "board": "config/board.md",
     "summary": "config/summary.md",
-    "orphan_cat": "-",
+    "orphan_cat": "Sem Categoria",
 
     "symbols":{
         "tag": "#",
