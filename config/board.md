@@ -19,5 +19,6 @@
 [](../base/047/Readme.md) : 047 : $06_tree 4. Tree Caminhos para o nó #doing
 [](../base/051/Readme.md) : 051 : Copa do mundo
 [](../base/049/Readme.md) : 049 : Detecção de ciclo
+[](../base/052/Readme.md) : 052 : Fila de ingressos
 [](../base/048/Readme.md) : 048 : Inserir um nó no início de uma lista ligada
 [](../base/050/Readme.md) : 050 : Match Strings

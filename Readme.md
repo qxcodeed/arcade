@@ -51,8 +51,13 @@
 
 ### Sem Categoria
 
-[![](config/thumb/051.jpg)](base/051/Readme.md)|[![](config/thumb/049.jpg)](base/049/Readme.md)|[![](config/thumb/048.jpg)](base/048/Readme.md)|[![](config/thumb/050.jpg)](base/050/Readme.md)
+[![](config/thumb/051.jpg)](base/051/Readme.md)|[![](config/thumb/049.jpg)](base/049/Readme.md)|[![](config/thumb/052.jpg)](base/052/Readme.md)|[![](config/thumb/048.jpg)](base/048/Readme.md)
 -|-|-|-
-@051<br>Copa do mundo|@049<br>Detecção de ciclo|@048<br>Inserir um nó no início de uma lista ligada|@050<br>Match Strings
+@051<br>Copa do mundo|@049<br>Detecção de ciclo|@052<br>Fila de ingressos|@048<br>Inserir um nó no início de uma lista ligada
+
+
+[![](config/thumb/050.jpg)](base/050/Readme.md)|![](config/empty.png)|![](config/empty.png)|![](config/empty.png)
+-|-|-|-
+@050<br>Match Strings| | | 
 
 
