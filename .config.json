@@ -19,7 +19,7 @@
     "view": "Readme.md",
     "posts_per_row": 4,
     "reverse_sort": false,
-    "empty_fig": null,
+    "empty_fig": "config/empty.png",
 
     "moodle_dir": "auto/moodle",
     "student_dir": "auto/student",

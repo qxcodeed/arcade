@@ -3,7 +3,7 @@
 
 ### 01_rec
 
-[![](config/thumb/005.jpg)](base/005/Readme.md)|[![](config/thumb/004.jpg)](base/004/Readme.md)|-|-
+[![](config/thumb/005.jpg)](base/005/Readme.md)|[![](config/thumb/004.jpg)](base/004/Readme.md)|![](config/empty.png)|![](config/empty.png)
 -|-|-|-
 @005<br>1. Rec Operações básicas|@004<br>2. Rec Triângulo da soma|-|-
 
@@ -27,7 +27,7 @@
 
 ### 04_list
 
-[![](config/thumb/017.jpg)](base/017/Readme.md)|[![](config/thumb/023.jpg)](base/023/Readme.md)|[![](config/thumb/024.jpg)](base/024/Readme.md)|-
+[![](config/thumb/017.jpg)](base/017/Readme.md)|[![](config/thumb/023.jpg)](base/023/Readme.md)|[![](config/thumb/024.jpg)](base/024/Readme.md)|![](config/empty.png)
 -|-|-|-
 @017<br>1. Build Lista Simples|@023<br>2. Lista Editor de texto|@024<br>2. Lista Simulação Fila Bancária|-
 
@@ -35,7 +35,7 @@
 
 ### 05_sort
 
-[![](config/thumb/027.jpg)](base/027/Readme.md)|[![](config/thumb/028.jpg)](base/028/Readme.md)|-|-
+[![](config/thumb/027.jpg)](base/027/Readme.md)|[![](config/thumb/028.jpg)](base/028/Readme.md)|![](config/empty.png)|![](config/empty.png)
 -|-|-|-
 @027<br>1. Sort Bubble Selection Insertion|@028<br>2. Sort Quick Sort|-|-
 
@@ -51,7 +51,7 @@
 
 ### Sem Categoria
 
-[![](config/thumb/049.jpg)](base/049/Readme.md)|[![](config/thumb/048.jpg)](base/048/Readme.md)|[![](config/thumb/050.jpg)](base/050/Readme.md)|-
+[![](config/thumb/049.jpg)](base/049/Readme.md)|[![](config/thumb/048.jpg)](base/048/Readme.md)|[![](config/thumb/050.jpg)](base/050/Readme.md)|![](config/empty.png)
 -|-|-|-
 @049<br>Detecção de ciclo|@048<br>Inserir um nó no início de uma lista ligada|@050<br>Match Strings|-
 
