@@ -42,6 +42,7 @@
 
 ### Sem Categoria
 
+- [Copa do mundo](../base/051/Readme.md#copa-do-mundo)
 - [Detecção de ciclo](../base/049/Readme.md#detecção-de-ciclo)
 - [Inserir um nó no início de uma lista ligada](../base/048/Readme.md#inserir-um-nó-no-início-de-uma-lista-ligada)
 - [Match Strings](../base/050/Readme.md#match-strings)

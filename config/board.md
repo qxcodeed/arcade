@@ -17,6 +17,7 @@
 [](../base/046/Readme.md) : 046 : $06_tree 2. Tree Soma e Menor #done
 [](../base/045/Readme.md) : 045 : $06_tree 3. Tree Altura e Nível #done
 [](../base/047/Readme.md) : 047 : $06_tree 4. Tree Caminhos para o nó #doing
+[](../base/051/Readme.md) : 051 : Copa do mundo
 [](../base/049/Readme.md) : 049 : Detecção de ciclo
 [](../base/048/Readme.md) : 048 : Inserir um nó no início de uma lista ligada
 [](../base/050/Readme.md) : 050 : Match Strings
