@@ -15,7 +15,7 @@
         "orphan" : "-",
         "empty_fig": "config/empty.png",
         "posts_per_row": 5,
-        "reverse_sort": true
+        "reverse_sort": false
     },
     "symbols":{
         "tag": "#",
