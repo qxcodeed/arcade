@@ -1,5 +1,7 @@
 ## Match Strings
 
+![](__capa.jpg)
+
 Há um vector de strings de entrada e um vector de strings de consulta. Para cada sequência de consultas, determine quantas vezes isso ocorre na lista de sequências de entrada.
 
 Por exemplo, dada  **entrada = ['ab','ab','abc' ]** e **consultas = ['ab','abc','bc']**, encontramos 2 instâncias de **'ab'** , 1 de **'abc'** e 0 de **'bc'**. Para cada consulta, adicionamos um elemento ao nosso vector de retorno. 

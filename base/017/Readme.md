@@ -1,6 +1,8 @@
 ## $04_list  1. Build Lista Simples                    #doing
 ## @qxcode
 
+![](__capa.jpg)
+
 Implementações de Lista Encadeada
 ==============================
 Vamos trabalhar com implementações de listas simples e duplamente encadeadas, listas circulares. 

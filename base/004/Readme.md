@@ -1,6 +1,10 @@
 ## $01_rec   2. Rec Triângulo da soma                  #done
 ## @qxcode
 
+![](__capa.jpg)
+
+
+
 Dado um vetor de inteiros A, imprima um triângulo de números
 tal que na base do triângulo estejam todos os elementos do
 vetor original, e tal que, a cada i-ésimo nível acima da base, o

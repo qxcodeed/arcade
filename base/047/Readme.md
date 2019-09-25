@@ -1,6 +1,8 @@
 ## $06_tree  4. Tree Caminhos para o nó                #doing
 ## @qxcode
 
+![](__capa.jpg)
+
 - Entrada
     - linha 1: o serial de uma árvore binária
     - linha 2: um valor de nó

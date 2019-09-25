@@ -1,6 +1,8 @@
 ## $06_tree  2. Tree Soma e Menor                      #done
 ## @qxcode
 
+![](__capa.jpg)
+
 - Entrada
     - linha 1: o serial de uma árvore
 - Saída

@@ -1,6 +1,8 @@
 ## $04_list  2. Lista Editor de texto                  #doing
 ## @qxcode
 
+![](__capa.jpg)
+
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.
 

@@ -1,5 +1,6 @@
 ## Inserir um nó no início de uma lista ligada
 
+![](__capa.jpg)
 
 Você recebe o ponteiro para o nó principal de uma lista ligada e um número inteiro para adicionar à lista. Crie um novo nó com o número inteiro especificado, insira esse nó no início da lista ligada e retorne o novo nó principal. O ponteiro do cabeçalho fornecido pode ser nulo, o que significa que a lista inicial está vazia.
 

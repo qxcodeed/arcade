@@ -1,6 +1,7 @@
 ## $04_list  2. Lista Simulação Fila Bancária          #doing
 ## @qxcode
 
+![](__capa.jpg)
 
 ```cpp
 struct Client{

@@ -1,6 +1,8 @@
 ## $03_maze  1. Queimada V1 chamada recursiva          #done
 ## @qxcode
 
+![](__capa.jpg)
+
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas.
 
 A matriz está codificada assim.

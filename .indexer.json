@@ -1,0 +1,32 @@
+{
+    "base": "base",
+    "config": ".indexer",
+    "cat": {
+        "summary" : ".indexer/cat_summary.md",
+        "index"   : ".indexer/cat_index.md",
+        "view"    : "Readme.md"
+    },
+    "tag":{
+        "summary" : ".indexer/tag_summary.md",
+        "index"   : ".indexer/tag_index.md",
+        "view"    : ".indexer/tag_view.md"
+    },
+    "extra":{
+        "orphan" : "-",
+        "empty_fig": "config/empty.png",
+        "posts_per_row": 5,
+        "reverse_sort": true
+    },
+    "symbols":{
+        "tag": "#",
+        "category": "$",
+        "date": "¢",
+        "author": "£",
+        "subtitle": "&"
+    },
+
+    "moodle_dir": "auto/moodle",
+    "student_dir": "auto/student",
+    "prof_dir": "auto/prof", 
+    "remote": "https://raw.githubusercontent.com/qxcodeed/arcade/master/base"
+}

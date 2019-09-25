@@ -1,7 +1,5 @@
 ## @qxcode
 
-## Categorias
-
 
 ### 01_rec
 
@@ -40,7 +38,7 @@
 - [3. Tree Altura e Nível](../base/045/Readme.md#06tree-3-tree-altura-e-nível-done)
 - [4. Tree Caminhos para o nó](../base/047/Readme.md#06tree-4-tree-caminhos-para-o-nó-doing)
 
-### Sem Categoria
+### -
 
 - [Copa do mundo](../base/051/Readme.md#copa-do-mundo)
 - [Detecção de ciclo](../base/049/Readme.md#detecção-de-ciclo)

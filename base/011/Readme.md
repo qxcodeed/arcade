@@ -1,6 +1,8 @@
 ## $03_maze  3. Queimada V3 Busca em largura           #todo
 ## @qxcode
 
+![](__capa.jpg)
+
 Refaça o problema da queimada utilizando fila no lugar da recursão.
 
 

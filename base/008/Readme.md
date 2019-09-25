@@ -1,6 +1,9 @@
 ## $03_maze  4. Labirinto Resolvendo com recursão      #todo
 ## @qxcode
 
+
+![](__capa.jpg)
+
 fazer os testes.
 Usa  o modelo do flood fill para passar início e fim
 - pedir um vetor com os pontos do caminho

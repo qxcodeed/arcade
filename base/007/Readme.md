@@ -1,6 +1,8 @@
 ## $03_maze  2. Queimada V2 Busca em profundidade      #doing
 ## @qxcode
 
+![](__capa.jpg)
+
 Busca em profundidade
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.

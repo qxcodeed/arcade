@@ -1,6 +1,8 @@
 ## $01_rec   1. Rec Operações básicas                  #done
 ## @qxcode
 
+![](__capa.jpg)
+
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
 Você pode utilizar laço para ler os elementos do vetor.
 

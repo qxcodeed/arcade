@@ -1,6 +1,7 @@
 ## $02_array 4. Build Vetor dinâmico                   #doing
 ## @qxcode
 
+![](__capa.jpg)
 
 implemente as seguintes funções do vetor dinamico
 ```bash
