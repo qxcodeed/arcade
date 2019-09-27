@@ -1,4 +1,4 @@
-## $06_tree  1. Tree Serialize and Show                #done
+## $06_tree_ 1. Tree Serialize and Show #done
 ## @qxcode
 
 ![](__capa.jpg)

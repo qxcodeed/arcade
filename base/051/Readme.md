@@ -1,12 +1,11 @@
-## Copa do mundo
+## $05_stack Copa do mundo
 
-![](__capa.jpg)
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 
 Na Copa do Mundo, depois de uma fase de grupos, dezesseis equipes disputam a Fase Final, composta de quinze jogos eliminatórios. A figura abaixo mostra a tabela de jogos da Fase Final:
 
-![90%](https://neps.academy/image/151.png)
+![](__capa.jpg)
 
 Dados os resultados dos quinze jogos da Fase Final, escreva um programa que determine a equipe campeã.
 

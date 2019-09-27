@@ -1,4 +1,4 @@
-## $04_list  2. Lista Editor de texto                  #doing
+## $04_list_ 2. Lista Editor de texto #doing
 ## @qxcode
 
 ![](__capa.jpg)

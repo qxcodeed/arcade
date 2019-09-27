@@ -1,4 +1,4 @@
-## $01_rec   1. Rec Operações básicas                  #done
+## $01_rec__ 1. Rec Operações básicas #done
 ## @qxcode
 
 ![](__capa.jpg)
