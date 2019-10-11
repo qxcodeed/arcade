@@ -1,66 +1,43 @@
 
-## 01_rec__
+## __orphan__
 
-[![](.indexer/thumbs/005/Readme.jpg)](base/005/Readme.md#-01_rec__-1-rec-operações-básicas-done)|[![](.indexer/thumbs/004/Readme.jpg)](base/004/Readme.md#-01_rec__-2-rec-triângulo-da-soma-done)|![](config/empty.png)|![](config/empty.png)
--|-|-|-
-@005<br>1. Rec Operações básicas|@004<br>2. Rec Triângulo da soma| | 
-
-
-
-## 02_array
-
-[![](.indexer/thumbs/000/Readme.jpg)](base/000/Readme.md#-02_array-1-princesa-v1--implementação-em-vetor-done)|[![](.indexer/thumbs/001/Readme.jpg)](base/001/Readme.md#-02_array-2-princesa-v2-done)|[![](.indexer/thumbs/002/Readme.jpg)](base/002/Readme.md#-02_array-3-princesa-v3-done)|[![](.indexer/thumbs/016/Readme.jpg)](base/016/Readme.md#-02_array-4-build-vetor-dinâmico-doing)
--|-|-|-
-@000<br>1. Princesa V1 & Implementação em vetor|@001<br>2. Princesa V2|@002<br>3. Princesa V3|@016<br>4. Build Vetor dinâmico
+[![](base/.thumb/005/Readme.jpg)](base/005/Readme.md#01_rec__-1-rec-operações-básicas-done)|[![](base/.thumb/004/Readme.jpg)](base/004/Readme.md#01_rec__-2-rec-triângulo-da-soma-done)|[![](base/.thumb/000/Readme.jpg)](base/000/Readme.md#02_array-1-princesa-v1--implementação-em-vetor-done)
+-|-|-
+@005<br>$01_rec__ 1. Rec Operações básicas|@004<br>$01_rec__ 2. Rec Triângulo da soma|@000<br>$02_array 1. Princesa V1 & Implementação em vetor
 
 
-[![](.indexer/thumbs/052/Readme.jpg)](base/052/Readme.md#-02_array-fila-de-ingressos)|[![](.indexer/thumbs/050/Readme.jpg)](base/050/Readme.md#-02_array-match-strings)|![](config/empty.png)|![](config/empty.png)
--|-|-|-
-@052<br>Fila de ingressos|@050<br>Match Strings| | 
+[![](base/.thumb/001/Readme.jpg)](base/001/Readme.md#02_array-2-princesa-v2-done)|[![](base/.thumb/002/Readme.jpg)](base/002/Readme.md#02_array-3-princesa-v3-done)|[![](base/.thumb/016/Readme.jpg)](base/016/Readme.md#02_array-4-build-vetor-dinâmico-doing)
+-|-|-
+@001<br>$02_array 2. Princesa V2|@002<br>$02_array 3. Princesa V3|@016<br>$02_array 4. Build Vetor dinâmico
 
 
-
-## 03_maze_
-
-[![](.indexer/thumbs/003/Readme.jpg)](base/003/Readme.md#-03_maze_-1-queimada-v1-chamada-recursiva-done)|[![](.indexer/thumbs/007/Readme.jpg)](base/007/Readme.md#-03_maze_-2-queimada-v2-busca-em-profundidade-doing)|[![](.indexer/thumbs/011/Readme.jpg)](base/011/Readme.md#-03_maze_-3-queimada-v3-busca-em-largura-todo)|[![](.indexer/thumbs/008/Readme.jpg)](base/008/Readme.md#-03_maze_-4-labirinto-resolvendo-com-recursão-todo)
--|-|-|-
-@003<br>1. Queimada V1 chamada recursiva|@007<br>2. Queimada V2 Busca em profundidade|@011<br>3. Queimada V3 Busca em largura|@008<br>4. Labirinto Resolvendo com recursão
+[![](base/.thumb/052/Readme.jpg)](base/052/Readme.md#02_array-fila-de-ingressos)|[![](base/.thumb/050/Readme.jpg)](base/050/Readme.md#02_array-match-strings)|[![](base/.thumb/003/Readme.jpg)](base/003/Readme.md#03_maze_-1-queimada-v1-chamada-recursiva-done)
+-|-|-
+@052<br>$02_array Fila de ingressos|@050<br>$02_array Match Strings|@003<br>$03_maze_ 1. Queimada V1 chamada recursiva
 
 
-
-## 04_list_
-
-[![](.indexer/thumbs/017/Readme.jpg)](base/017/Readme.md#-04_list_-1-build-lista-simples-doing)|[![](.indexer/thumbs/023/Readme.jpg)](base/023/Readme.md#-04_list_-2-lista-editor-de-texto-doing)|[![](.indexer/thumbs/024/Readme.jpg)](base/024/Readme.md#-04_list_-2-lista-simulação-fila-bancária-doing)|[![](.indexer/thumbs/049/Readme.jpg)](base/049/Readme.md#-04_list_-detecção-de-ciclo)
--|-|-|-
-@017<br>1. Build Lista Simples|@023<br>2. Lista Editor de texto|@024<br>2. Lista Simulação Fila Bancária|@049<br>Detecção de ciclo
+[![](base/.thumb/007/Readme.jpg)](base/007/Readme.md#03_maze_-2-queimada-v2-busca-em-profundidade-doing)|[![](base/.thumb/011/Readme.jpg)](base/011/Readme.md#03_maze_-3-queimada-v3-busca-em-largura-todo)|[![](base/.thumb/008/Readme.jpg)](base/008/Readme.md#03_maze_-4-labirinto-resolvendo-com-recursão-todo)
+-|-|-
+@007<br>$03_maze_ 2. Queimada V2 Busca em profundidade|@011<br>$03_maze_ 3. Queimada V3 Busca em largura|@008<br>$03_maze_ 4. Labirinto Resolvendo com recursão
 
 
-[![](.indexer/thumbs/048/Readme.jpg)](base/048/Readme.md#-04_list_-inserir-um-nó-no-início-de-uma-lista-ligada)|![](config/empty.png)|![](config/empty.png)|![](config/empty.png)
--|-|-|-
-@048<br>Inserir um nó no início de uma lista ligada| | | 
+[![](base/.thumb/017/Readme.jpg)](base/017/Readme.md#04_list_-1-build-lista-simples-doing)|[![](base/.thumb/023/Readme.jpg)](base/023/Readme.md#04_list_-2-lista-editor-de-texto-doing)|[![](base/.thumb/024/Readme.jpg)](base/024/Readme.md#04_list_-2-lista-simulação-fila-bancária-doing)
+-|-|-
+@017<br>$04_list_ 1. Build Lista Simples|@023<br>$04_list_ 2. Lista Editor de texto|@024<br>$04_list_ 2. Lista Simulação Fila Bancária
 
 
-
-## 05_sort_
-
-[![](.indexer/thumbs/027/Readme.jpg)](base/027/Readme.md#-05_sort_-1-sort-bubble-selection-insertion-todo-empty)|[![](.indexer/thumbs/028/Readme.jpg)](base/028/Readme.md#-05_sort_-2-sort-quick-sort-todo-empty)|![](config/empty.png)|![](config/empty.png)
--|-|-|-
-@027<br>1. Sort Bubble Selection Insertion|@028<br>2. Sort Quick Sort| | 
+[![](base/.thumb/049/Readme.jpg)](base/049/Readme.md#04_list_-detecção-de-ciclo)|[![](base/.thumb/048/Readme.jpg)](base/048/Readme.md#04_list_-inserir-um-nó-no-início-de-uma-lista-ligada)|[![](base/.thumb/027/Readme.jpg)](base/027/Readme.md#05_sort_-1-sort-bubble-selection-insertion-todo-empty)
+-|-|-
+@049<br>$04_list_ Detecção de ciclo|@048<br>$04_list_ Inserir um nó no início de uma lista ligada|@027<br>$05_sort_ 1. Sort Bubble Selection Insertion
 
 
-
-## 05_stack
-
-[![](.indexer/thumbs/051/Readme.jpg)](base/051/Readme.md#-05_stack-copa-do-mundo)|![](config/empty.png)|![](config/empty.png)|![](config/empty.png)
--|-|-|-
-@051<br>Copa do mundo| | | 
+[![](base/.thumb/028/Readme.jpg)](base/028/Readme.md#05_sort_-2-sort-quick-sort-todo-empty)|[![](base/.thumb/051/Readme.jpg)](base/051/Readme.md#05_stack-copa-do-mundo)|[![](base/.thumb/044/Readme.jpg)](base/044/Readme.md#06_tree_-1-tree-serialize-and-show-done)
+-|-|-
+@028<br>$05_sort_ 2. Sort Quick Sort|@051<br>$05_stack Copa do mundo|@044<br>$06_tree_ 1. Tree Serialize and Show
 
 
-
-## 06_tree_
-
-[![](.indexer/thumbs/044/Readme.jpg)](base/044/Readme.md#-06_tree_-1-tree-serialize-and-show-done)|[![](.indexer/thumbs/046/Readme.jpg)](base/046/Readme.md#-06_tree_-2-tree-soma-e-menor-done)|[![](.indexer/thumbs/045/Readme.jpg)](base/045/Readme.md#-06_tree_-3-tree-altura-e-nível-done)|[![](.indexer/thumbs/047/Readme.jpg)](base/047/Readme.md#-06_tree_-4-tree-caminhos-para-o-nó-doing)
--|-|-|-
-@044<br>1. Tree Serialize and Show|@046<br>2. Tree Soma e Menor|@045<br>3. Tree Altura e Nível|@047<br>4. Tree Caminhos para o nó
+[![](base/.thumb/046/Readme.jpg)](base/046/Readme.md#06_tree_-2-tree-soma-e-menor-done)|[![](base/.thumb/045/Readme.jpg)](base/045/Readme.md#06_tree_-3-tree-altura-e-nível-done)|[![](base/.thumb/047/Readme.jpg)](base/047/Readme.md#06_tree_-4-tree-caminhos-para-o-nó-doing)
+-|-|-
+@046<br>$06_tree_ 2. Tree Soma e Menor|@045<br>$06_tree_ 3. Tree Altura e Nível|@047<br>$06_tree_ 4. Tree Caminhos para o nó
 
 
