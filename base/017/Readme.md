@@ -1,4 +1,4 @@
-## $04_list_ 1. Build Lista Simples #doing
+## ©04_list_ 1. Build Lista Simples #doing
 ## @qxcode
 
 ![](__capa.jpg)

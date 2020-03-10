@@ -1,4 +1,4 @@
-## $02_array 2. Princesa V2 #done
+## ©02_array 2. Princesa V2 #done
 ## @qxcode
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)

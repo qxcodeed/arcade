@@ -1,4 +1,4 @@
-## $02_array 4. Build Vetor dinâmico #doing
+## ©02_array 4. Build Vetor dinâmico #doing
 ## @qxcode
 
 ![](__capa.jpg)

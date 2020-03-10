@@ -1,4 +1,4 @@
-## $03_maze_ 3. Queimada V3 Busca em largura #todo
+## ©03_maze_ 3. Queimada V3 Busca em largura #todo
 ## @qxcode
 
 ![](__capa.jpg)

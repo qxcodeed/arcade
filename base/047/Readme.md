@@ -1,4 +1,4 @@
-## $06_tree_ 4. Tree Caminhos para o nó #doing
+## ©06_tree_ 4. Tree Caminhos para o nó #doing
 ## @qxcode
 
 ![](__capa.jpg)

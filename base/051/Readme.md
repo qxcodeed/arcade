@@ -1,4 +1,4 @@
-## $05_stack Copa do mundo
+## ©05_stack Copa do mundo
 
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
