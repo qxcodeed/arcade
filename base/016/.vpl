@@ -1,0 +1,106 @@
+case=00 create
+input=init 3
+status
+end
+output="$init 3
+$status
+size:0 capacity:3
+$end
+"
+
+
+case=01 add
+input=init 5
+show
+add 3 4 5 1
+show
+end
+output="$init 5
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$end
+"
+
+
+case=02 tentar estourar
+input=init 5
+show
+add 3 4 5 1
+show
+add 7 3 2 1
+show
+end
+output="$init 5
+$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$add 7 3 2 1
+$show
+[ 3 4 5 1 7 ]
+$end
+"
+
+
+case=03 init vazio
+input=show
+end
+output="$show
+[ ]
+$end
+"
+grade reduction=10%
+
+
+case=04 add
+input=show
+add 3 4 5 1
+show
+end
+output="$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$end
+"
+
+
+case=05 add mais
+input=show
+add 3 4 5 1
+show
+add 7
+show
+end
+output="$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]
+$add 7
+$show
+[ 3 4 5 1 7 ]
+$end
+"
+
+
+case=06 add mais
+input=show
+add 3 4 5 1
+show
+show
+end
+output="$show
+[ ]
+$add 3 4 5 1
+$show
+[ 3 4 5 1 ]$add 7
+$show
+[ 3 4 5 1 7 ]
+$end
+"

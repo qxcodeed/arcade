@@ -1,0 +1,62 @@
+case=00 um
+input=4 # #
+4
+output=">x
+"
+grade reduction=100%
+
+
+case=01 dois
+input=1 # 0 # # 
+0
+output=">rx
+"
+grade reduction=100%
+
+
+case=02 tres
+input=4 # 8 2 # # # 
+2
+output=">rlx
+"
+grade reduction=100%
+
+
+case=03 not found
+input=0 9 4 # # # 5 # # 
+7
+output="value not fount
+"
+grade reduction=100%
+
+
+case=04 quatro
+input=0 9 4 # # # 5 # # 
+5
+output=">rx
+"
+grade reduction=100%
+
+
+case=05 cinco
+input=0 4 # # 2 0 # # 1 # # 
+4
+output=">lx
+"
+grade reduction=100%
+
+
+case=06 seis
+input=2 1 5 # # # 9 # 7 # 8 # # 
+9
+output=">rx
+"
+grade reduction=100%
+
+
+case=07 dez
+input=1 8 7 # # 5 # 6 # # 3 0 # # 9 # 4 2 # # # 
+2
+output=">rrrlx
+"
+grade reduction=100%

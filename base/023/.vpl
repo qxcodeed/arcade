@@ -1,0 +1,22 @@
+case=00
+input=euRteRamo
+output=""
+grade reduction=100%
+
+
+case=01
+input=euRamo<<<
+output=""
+grade reduction=100%
+
+
+case=02
+input=euRamo<<<<<<<como-
+output=""
+grade reduction=100%
+
+
+case=03
+input=euRemo<<Ba>>>>>>
+output=""
+grade reduction=100%

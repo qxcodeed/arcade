@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@049 $04_list_ Detecção de ciclo</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="section"><span class="citation" data-cites="049">@049</span></h2>
+<h2 id="list_-detecção-de-ciclo">$04_list_ Detecção de ciclo</h2>
+<p><img src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/049/__capa.jpg" /></p>
+<p>Diz-se que uma lista vinculada contém um <em>ciclo</em> se algum nó for visitado mais de uma vez enquanto estiver percorrendo a lista.</p>
+<p>Complete a função fornecida em seu editor. Ele tem um parâmetro: um ponteiro para um objeto <em>Node</em> chamado que aponta para o início de uma lista vinculada. Sua função deve retornar um booleano indicando se existe ou não um ciclo na lista. Se não <em>é</em> um ciclo, volte <em>verdade</em> ; caso contrário, retorne <em>false</em> .</p>
+<p><strong>Nota:</strong> Se a lista estiver vazia, será <em>nulo</em> .</p>
+<p><strong>Formato de entrada</strong></p>
+<p>Nosso verificador de código oculto passa o argumento apropriado para sua função. Você não é responsável por ler nenhuma entrada do stdin.</p>
+<p><strong>Formato de saída</strong></p>
+<p>Se a lista contiver um ciclo, sua função deverá retornar <em>true</em> . Se a lista <em>não</em> contiver um ciclo, ela deverá retornar <em>false</em> . O número inteiro binário correspondente ao valor booleano retornado por sua função é impresso em stdout pelo nosso verificador de código oculto.</p>
+<p><strong>Entrada de amostra</strong></p>
+<p>As seguintes listas vinculadas são passadas como argumentos para sua função:</p>
+<figure>
+<img src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/049/__exemplo.png" alt="" /><figcaption>Exemplo</figcaption>
+</figure>
+<p><strong>Saída de amostra</strong></p>
+<pre><code>0
+1</code></pre>
+<p><strong>Explicação</strong></p>
+<ol type="1">
+<li>A primeira lista não possui ciclo, portanto, retornamos <em>false</em>.</li>
+<li>A segunda lista possui um ciclo, portanto, retornamos <em>true</em>.</li>
+</ol>
+</body>
+</html>
