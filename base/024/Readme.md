@@ -146,7 +146,7 @@ out:{ }
 # que desistiram
 $finish
 received: 16
-lost: 6
+lost: 5
 tics: 6
 
 # end termina a simulacao

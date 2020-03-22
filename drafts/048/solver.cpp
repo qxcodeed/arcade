@@ -18,7 +18,9 @@ Node * list_push_front(Node * head, int value){
 
 
 List * list_create();
+
 void   list_show(List * ll);
+
 int main(){
     List * ll = list_create();
     int size;

@@ -38,13 +38,13 @@ void tocar_fogo(int nl, int nc, char * mat, int l, int c){
 int main(){
     int nl = 0;
     int nc = 0;
-    int l = 0;
-    int c = 0;
-    scanf("%d %d %d %d\n", &nl, &nc, &l, &c);
+    int _l = 0;
+    int _c = 0;
+    scanf("%d %d %d %d\n", &nl, &nc, &_l, &_c);
     char mat[nl][nc];
     for(int l = 0; l < nl; l++)
         for(int c = 0; c < nc; c++)
             scanf(" %c", &mat[l][c]);
-    tocar_fogo(nl, nc, &mat[0][0], l, c);
+    tocar_fogo(nl, nc, &mat[0][0], _l, _c);
     show(nl, nc, &mat[0][0]);
 }

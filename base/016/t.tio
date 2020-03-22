@@ -9,11 +9,13 @@ $end
 
 
 >>>>>>>> 02 add !%
+init 10
 show
 add 3 4 5 1
 show
 end
 ========
+$init 10
 $show
 [ ]
 $add 3 4 5 1
@@ -24,6 +26,7 @@ $end
 
 
 >>>>>>>> 03 add mais !%
+init 10
 show
 add 3 4 5 1
 show
@@ -31,6 +34,7 @@ add 7
 show
 end
 ========
+$init 10
 $show
 [ ]
 $add 3 4 5 1
@@ -95,17 +99,21 @@ $end
 
 
 >>>>>>>> 07 add mais !%
+init 5
 show
 add 3 4 5 1
 show
+add 7
 show
 end
 ========
+$init 5
 $show
 [ ]
 $add 3 4 5 1
 $show
-[ 3 4 5 1 ]$add 7
+[ 3 4 5 1 ]
+$add 7
 $show
 [ 3 4 5 1 7 ]
 $end

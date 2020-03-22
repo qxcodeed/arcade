@@ -25,7 +25,8 @@ void mostrar_vetor(int vet[], int size, int e){
             printf(" ");
             if((i == e) && (vet[i] < 0))
                 printf("<");
-                printf("%d", vet[i]);
+            printf("%d", vet[i]);
+            
             if((i == e) && (vet[i] > 0))
                 printf(">");
         }

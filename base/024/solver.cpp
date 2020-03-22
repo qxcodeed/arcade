@@ -8,10 +8,10 @@ struct Client{
     string name;
     int actions;
     int patience;
-    Client(string name, int actions, int patience){
-        this->name = name;
-        this->actions = actions;
-        this->patience = patience;
+    Client(string _name, int _actions, int _patience){
+        this->name = _name;
+        this->actions = _actions;
+        this->patience = _patience;
     }
     string toString(){
         return name + ":" + to_string(actions) + ":" + to_string(patience);

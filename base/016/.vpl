@@ -57,11 +57,13 @@ grade reduction=10%
 
 
 case=04 add
-input=show
+input=init 10
+show
 add 3 4 5 1
 show
 end
-output="$show
+output="$init 10
+$show
 [ ]
 $add 3 4 5 1
 $show
@@ -71,13 +73,15 @@ $end
 
 
 case=05 add mais
-input=show
+input=init 10
+show
 add 3 4 5 1
 show
 add 7
 show
 end
-output="$show
+output="$init 10
+$show
 [ ]
 $add 3 4 5 1
 $show
@@ -90,16 +94,20 @@ $end
 
 
 case=06 add mais
-input=show
+input=init 5
+show
 add 3 4 5 1
 show
+add 7
 show
 end
-output="$show
+output="$init 5
+$show
 [ ]
 $add 3 4 5 1
 $show
-[ 3 4 5 1 ]$add 7
+[ 3 4 5 1 ]
+$add 7
 $show
 [ 3 4 5 1 7 ]
 $end

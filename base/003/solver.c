@@ -39,9 +39,9 @@ int main(){
     int c = 0;
     scanf("%d %d %d %d\n", &nl, &nc, &l, &c);
     char mat[nl][nc];
-    for(int l = 0; l < nl; l++)
-        for(int c = 0; c < nc; c++)
-            scanf(" %c", &mat[l][c]);
+    for(int _l = 0; _l < nl; _l++)
+        for(int _c = 0; _c < nc; _c++)
+            scanf(" %c", &mat[_l][_c]);
     tocar_fogo(nl, nc, mat, l, c);
     show(nl, nc, mat);
 }

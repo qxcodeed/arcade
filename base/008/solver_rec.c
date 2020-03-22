@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>//srand e rand
 #include <time.h>
+#include <memory.h>
 
 typedef struct{
     int l, c;
