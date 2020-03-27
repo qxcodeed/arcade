@@ -29,7 +29,6 @@
 
 ## list
 
-- [@023 2. Lista Editor de texto](base/023/Readme.md#04_list_-2-lista-editor-de-texto-doing)
 - [@024 2. Lista Simulação Fila Bancária](base/024/Readme.md#04_list_-2-lista-simulação-fila-bancária-doing)
 - [@049 Detecção de ciclo](base/049/Readme.md#04_list_-detecção-de-ciclo)
 

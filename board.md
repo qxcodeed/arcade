@@ -9,7 +9,6 @@
 [](base/003/Readme.md) : ## ©03_maze_ 1. Queimada V1 chamada recursiva #done
 [](base/007/Readme.md) : ## ©03_maze_ 2. Queimada V2 Busca em profundidade #doing
 [](base/008/Readme.md) : ## ©03_maze_ 4. Labirinto Resolvendo com recursão #todo
-[](base/023/Readme.md) : ## ©04_list_ 2. Lista Editor de texto #doing
 [](base/024/Readme.md) : ## ©04_list_ 2. Lista Simulação Fila Bancária #doing
 [](base/049/Readme.md) : ## ©04_list_ Detecção de ciclo
 [](base/051/Readme.md) : ## ©05_stack Copa do mundo
