@@ -7,11 +7,12 @@
 [](base/052/Readme.md) : ## ©02_array Fila de ingressos
 [](base/050/Readme.md) : ## ©02_array Match Strings
 [](base/003/Readme.md) : ## ©03_maze_ 1. Queimada V1 chamada recursiva #done
-[](base/007/Readme.md) : ## ©03_maze_ 2. Queimada V2 Busca em profundidade #doing
-[](base/008/Readme.md) : ## ©03_maze_ 4. Labirinto Resolvendo com recursão #todo
+[](base/008/Readme.md) : ## ©03_maze_ 2. Labirinto resolvendo com recursão
+[](base/007/Readme.md) : ## ©03_maze_ 3. Queimada V2 Busca em profundidade #doing
 [](base/024/Readme.md) : ## ©04_list_ 2. Lista Simulação Fila Bancária #doing
 [](base/049/Readme.md) : ## ©04_list_ Detecção de ciclo
 [](base/051/Readme.md) : ## ©05_stack Copa do mundo
 [](base/044/Readme.md) : ## ©06_tree_ 1. Tree Serialize and Show #done
 [](base/046/Readme.md) : ## ©06_tree_ 2. Tree Soma e Menor #done
 [](base/045/Readme.md) : ## ©06_tree_ 3. Tree Altura e Nível #done
+[](base/060/Readme.md) : ## Rotação à direira em array ©array

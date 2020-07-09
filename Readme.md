@@ -6,6 +6,7 @@
 - [list](#list)
 - [stack](#stack)
 - [tree](#tree)
+- [array](#array)
 
 ## rec
 
@@ -24,8 +25,8 @@
 ## maze
 
 - [@003 1. Queimada V1 chamada recursiva](base/003/Readme.md#03_maze_-1-queimada-v1-chamada-recursiva-done)
-- [@007 2. Queimada V2 Busca em profundidade](base/007/Readme.md#03_maze_-2-queimada-v2-busca-em-profundidade-doing)
-- [@008 4. Labirinto Resolvendo com recursão](base/008/Readme.md#03_maze_-4-labirinto-resolvendo-com-recursão-todo)
+- [@008 2. Labirinto resolvendo com recursão](base/008/Readme.md#03_maze_-2-labirinto-resolvendo-com-recursão)
+- [@007 3. Queimada V2 Busca em profundidade](base/007/Readme.md#03_maze_-3-queimada-v2-busca-em-profundidade-doing)
 
 ## list
 
@@ -41,3 +42,7 @@
 - [@044 1. Tree Serialize and Show](base/044/Readme.md#06_tree_-1-tree-serialize-and-show-done)
 - [@046 2. Tree Soma e Menor](base/046/Readme.md#06_tree_-2-tree-soma-e-menor-done)
 - [@045 3. Tree Altura e Nível](base/045/Readme.md#06_tree_-3-tree-altura-e-nível-done)
+
+## array
+
+- [@060 Rotação à direira em array](base/060/Readme.md#rotação-à-direira-em-array-array)
