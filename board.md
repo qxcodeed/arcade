@@ -1,3 +1,7 @@
+[](base/010/Readme.md) : ## ©01_Queue__ DownToZero
+[](base/006/Readme.md) : ## ©01_Queue__ OneQueueWith2Stack
+[](base/012/Readme.md) : ## ©01_Queue__ Queries with Fixed Length
+[](base/011/Readme.md) : ## ©01_Queue__ Truck Tour
 [](base/005/Readme.md) : ## ©01_rec__ 1. Rec Operações básicas
 [](base/004/Readme.md) : ## ©01_rec__ 2. Rec Triângulo da soma
 [](base/000/Readme.md) : ## ©02_array 1. Princesa V1 & Implementação em vetor #done
@@ -9,6 +13,7 @@
 [](base/003/Readme.md) : ## ©03_maze_ 1. Queimada V1 chamada recursiva #done
 [](base/008/Readme.md) : ## ©03_maze_ 2. Labirinto resolvendo com recursão
 [](base/007/Readme.md) : ## ©03_maze_ 3. Queimada V2 Busca em profundidade #doing
+[](base/009/Readme.md) : ## ©03_maze_ CasteloGrade
 [](base/024/Readme.md) : ## ©04_list_ 2. Lista Simulação Fila Bancária #doing
 [](base/049/Readme.md) : ## ©04_list_ Detecção de ciclo
 [](base/051/Readme.md) : ## ©05_stack Copa do mundo
