@@ -1,20 +1,13 @@
 
 ## Links
-- [Queue](#queue)
 - [rec](#rec)
 - [array](#array)
 - [maze](#maze)
 - [list](#list)
 - [stack](#stack)
+- [Queue](#queue)
 - [tree](#tree)
 - [array](#array)
-
-## Queue
-
-- [@010 DownToZero](base/010/Readme.md#01_queue__-downtozero)
-- [@006 OneQueueWith2Stack](base/006/Readme.md#01_queue__-onequeuewith2stack)
-- [@012 Queries with Fixed Length](base/012/Readme.md#01_queue__-queries-with-fixed-length)
-- [@011 Truck Tour](base/011/Readme.md#01_queue__-truck-tour)
 
 ## rec
 
@@ -46,11 +39,26 @@
 
 - [@051 Copa do mundo](base/051/Readme.md#05_stack-copa-do-mundo)
 
+## Queue
+
+- [@010 DownToZero](base/010/Readme.md#06_queue__-downtozero)
+- [@006 OneQueueWith2Stack](base/006/Readme.md#06_queue__-onequeuewith2stack)
+- [@012 Queries with Fixed Length](base/012/Readme.md#06_queue__-queries-with-fixed-length)
+- [@011 Truck Tour](base/011/Readme.md#06_queue__-truck-tour)
+
 ## tree
 
-- [@044 1. Tree Serialize and Show](base/044/Readme.md#06_tree_-1-tree-serialize-and-show-done)
-- [@046 2. Tree Soma e Menor](base/046/Readme.md#06_tree_-2-tree-soma-e-menor-done)
-- [@045 3. Tree Altura e Nível](base/045/Readme.md#06_tree_-3-tree-altura-e-nível-done)
+- [@044 1. Tree Serialize and Show](base/044/Readme.md#07_tree_-1-tree-serialize-and-show-done)
+- [@046 2. Tree Soma e Menor](base/046/Readme.md#07_tree_-2-tree-soma-e-menor-done)
+- [@045 3. Tree Altura e Nível](base/045/Readme.md#07_tree_-3-tree-altura-e-nível-done)
+- [@017 AlturaArvore](base/017/Readme.md#07_tree_-alturaarvore)
+- [@020 Inserir](base/020/Readme.md#07_tree_-inserir)
+- [@019 Level_Order_Traversal](base/019/Readme.md#07_tree_-level_order_traversal)
+- [@021 Level_Order_Traversal](base/021/Readme.md#07_tree_-level_order_traversal)
+- [@018 TopView](base/018/Readme.md#07_tree_-topview)
+- [@015 inOrdem](base/015/Readme.md#07_tree_-inordem)
+- [@014 postOrdem](base/014/Readme.md#07_tree_-postordem)
+- [@013 preOrdem](base/013/Readme.md#07_tree_-preordem)
 
 ## array
 
