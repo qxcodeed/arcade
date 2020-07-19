@@ -1,4 +1,4 @@
-## ©01_Queue__ OneQueueWith2Stack
+## ©06_Queue__ OneQueueWith2Stack
 
 ![](__capa.jpg)
 **Descrição da função**
