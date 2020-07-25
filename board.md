@@ -10,6 +10,11 @@
 [](base/003/Readme.md) : ## #maze 1. Queimada V1 chamada recursiva
 [](base/008/Readme.md) : ## #maze 2. Labirinto resolvendo com recursão
 [](base/007/Readme.md) : ## #maze 3. Queimada V2 Busca em profundidade
+[](base/009/Readme.md) : ## #maze CasteloGrade
+[](base/010/Readme.md) : ## #queue DownToZero
+[](base/006/Readme.md) : ## #queue OneQueueWith2Stack
+[](base/012/Readme.md) : ## #queue Queries with Fixed Length
+[](base/011/Readme.md) : ## #queue Truck Tour
 [](base/005/Readme.md) : ## #rec 1. Rec Operações básicas
 [](base/004/Readme.md) : ## #rec 2. Rec Triângulo da soma
 [](base/051/Readme.md) : ## #stack Copa do mundo

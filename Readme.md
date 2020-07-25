@@ -3,7 +3,8 @@
 
 ## Links []()
 <!--TOC_BEGIN-->
-- [array](#array)
+- [queue](#queue)
+- [rec](#rec)
 - [list](#list)
 - [maze](#maze)
 - [rec](#rec)
@@ -11,7 +12,14 @@
 - [tree](#tree)
 
 <!--TOC_END-->
-## array
+## queue
+
+- [@010 DownToZero](base/010/Readme.md#queue-downtozero)  [](#queue)
+- [@006 OneQueueWith2Stack](base/006/Readme.md#queue-onequeuewith2stack)  [](#queue)
+- [@012 Queries with Fixed Length](base/012/Readme.md#queue-queries-with-fixed-length)  [](#queue)
+- [@011 Truck Tour](base/011/Readme.md#queue-truck-tour)  [](#queue)
+
+## rec
 
 - [@000 1. Princesa V1 & Implementação em vetor](base/000/Readme.md#array-1-princesa-v1--implementação-em-vetor)  [](#array)
 - [@001 2. Princesa V2](base/001/Readme.md#array-2-princesa-v2)  [](#array)
@@ -31,6 +39,7 @@
 - [@003 1. Queimada V1 chamada recursiva](base/003/Readme.md#maze-1-queimada-v1-chamada-recursiva)  [](#maze)
 - [@008 2. Labirinto resolvendo com recursão](base/008/Readme.md#maze-2-labirinto-resolvendo-com-recursão)  [](#maze)
 - [@007 3. Queimada V2 Busca em profundidade](base/007/Readme.md#maze-3-queimada-v2-busca-em-profundidade)  [](#maze)
+- [@009 CasteloGrade](base/009/Readme.md#maze-castelograde)  [](#maze)
 
 ## rec
 
