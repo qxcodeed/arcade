@@ -1,4 +1,4 @@
-## Rotação à direira em array ©array
+## #array Rotação à direira em array
 
 A left rotation operation on an array of size _**n**_ shifts each of the array's elements unit to the left. For example, if left rotations are performed on array _**[1,2,3,4,5]**_, then the array would become
 

@@ -1,4 +1,4 @@
-## ©02_array Match Strings
+## #array Match Strings
 
 ![](__capa.jpg)
 

@@ -1,4 +1,4 @@
-## ©06_tree_ 2. Tree Soma e Menor #done
+## #tree 2. Tree Soma e Menor
 ## @qxcode
 
 ![](__capa.jpg)

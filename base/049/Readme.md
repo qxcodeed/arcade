@@ -1,4 +1,4 @@
-## ©04_list_ Detecção de ciclo
+## #list Detecção de ciclo
 
 ![](__capa.jpg)
 

@@ -1,18 +1,18 @@
-[](base/005/Readme.md) : ## ©01_rec__ 1. Rec Operações básicas
-[](base/004/Readme.md) : ## ©01_rec__ 2. Rec Triângulo da soma
-[](base/000/Readme.md) : ## ©02_array 1. Princesa V1 & Implementação em vetor #done
-[](base/001/Readme.md) : ## ©02_array 2. Princesa V2 #done
-[](base/002/Readme.md) : ## ©02_array 3. Princesa V3 #done
-[](base/016/Readme.md) : ## ©02_array 4. Build Vetor dinâmico #doing
-[](base/052/Readme.md) : ## ©02_array Fila de ingressos
-[](base/050/Readme.md) : ## ©02_array Match Strings
-[](base/003/Readme.md) : ## ©03_maze_ 1. Queimada V1 chamada recursiva #done
-[](base/008/Readme.md) : ## ©03_maze_ 2. Labirinto resolvendo com recursão
-[](base/007/Readme.md) : ## ©03_maze_ 3. Queimada V2 Busca em profundidade #doing
-[](base/024/Readme.md) : ## ©04_list_ 2. Lista Simulação Fila Bancária #doing
-[](base/049/Readme.md) : ## ©04_list_ Detecção de ciclo
-[](base/051/Readme.md) : ## ©05_stack Copa do mundo
-[](base/044/Readme.md) : ## ©06_tree_ 1. Tree Serialize and Show #done
-[](base/046/Readme.md) : ## ©06_tree_ 2. Tree Soma e Menor #done
-[](base/045/Readme.md) : ## ©06_tree_ 3. Tree Altura e Nível #done
-[](base/060/Readme.md) : ## Rotação à direira em array ©array
+[](base/000/Readme.md) : ## #array 1. Princesa V1 & Implementação em vetor
+[](base/001/Readme.md) : ## #array 2. Princesa V2
+[](base/002/Readme.md) : ## #array 3. Princesa V3
+[](base/016/Readme.md) : ## #array 4. Build Vetor dinâmico
+[](base/052/Readme.md) : ## #array Fila de ingressos
+[](base/050/Readme.md) : ## #array Match Strings
+[](base/060/Readme.md) : ## #array Rotação à direira em array
+[](base/024/Readme.md) : ## #list 2. Lista Simulação Fila Bancária
+[](base/049/Readme.md) : ## #list Detecção de ciclo
+[](base/003/Readme.md) : ## #maze 1. Queimada V1 chamada recursiva
+[](base/008/Readme.md) : ## #maze 2. Labirinto resolvendo com recursão
+[](base/007/Readme.md) : ## #maze 3. Queimada V2 Busca em profundidade
+[](base/005/Readme.md) : ## #rec 1. Rec Operações básicas
+[](base/004/Readme.md) : ## #rec 2. Rec Triângulo da soma
+[](base/051/Readme.md) : ## #stack Copa do mundo
+[](base/044/Readme.md) : ## #tree 1. Tree Serialize and Show
+[](base/046/Readme.md) : ## #tree 2. Tree Soma e Menor
+[](base/045/Readme.md) : ## #tree 3. Tree Altura e Nível

@@ -1,4 +1,4 @@
-## ©02_array Fila de ingressos
+## #array Fila de ingressos
 
 ![](__capa.jpg)
 

@@ -1,4 +1,4 @@
-## ©03_maze_ 1. Queimada V1 chamada recursiva #done
+## #maze 1. Queimada V1 chamada recursiva
 ## @qxcode
 
 ![](__capa.jpg)

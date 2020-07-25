@@ -1,4 +1,4 @@
-## ©03_maze_ 2. Labirinto resolvendo com recursão
+## #maze 2. Labirinto resolvendo com recursão
 ## @qxcode
 
 

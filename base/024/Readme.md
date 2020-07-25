@@ -1,4 +1,4 @@
-## ©04_list_ 2. Lista Simulação Fila Bancária #doing
+## #list 2. Lista Simulação Fila Bancária
 ## @qxcode
 
 ![](__capa.jpg)

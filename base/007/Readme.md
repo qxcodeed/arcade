@@ -1,4 +1,4 @@
-## ©03_maze_ 3. Queimada V2 Busca em profundidade #doing
+## #maze 3. Queimada V2 Busca em profundidade
 ## @qxcode
 
 ![](__capa.jpg)
