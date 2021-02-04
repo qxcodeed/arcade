@@ -1,26 +1,9 @@
-## L2 - Queimada V2 - Pilha
+## TODO: Queimada V3 - FloodFill
 ## @qxcode
 
 ![](__capa.jpg)
 
-Refaça o problema da queimada utilizando pilha no lugar da recursão.
-
-Você pode utilizar esse algoritmo.
-
-```
-verifique a primeira posição e queime-o
-inicie a fila com esse elemento
-enquanto a fila não estiver vazia faça
-    pegue topo da fila
-
-    faça uma lista com todos os vizinhos de topo que podem ser queimados
-    se lista eh vazia
-        desempilhe
-    senão
-        escolha um dos vizinhos
-        queime
-        empilhe
-```
+Refaça o problema da queimada utilizando fila no lugar da recursão.
 
 
 ```

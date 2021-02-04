@@ -1,4 +1,4 @@
-## L2 - Princesa V2 - Implementação em vetor
+## L2 - Princesa V2 - Implementação utilizando std::list
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
@@ -17,7 +17,7 @@ ___
         - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
 
 ___
-Implemente utilizando o algoritmo que preferir.
+Implemente utilizando o algoritmo utilizando a estrutura list do c++.
 
 
 Testes:

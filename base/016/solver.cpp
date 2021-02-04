@@ -17,6 +17,7 @@ Vector * vector_create(int capacity){
     v->data = new int[capacity];
     return v;
 }
+
 void vector_destroy(Vector * vector){
     delete [] vector->data;
     delete vector;
@@ -44,32 +45,29 @@ string vector_show(Vector * vector){
 /* NAO MEXA DAQUI PRA BAIXO */
 int main(){
     string line, cmd;
+    int value;
     Vector * v = vector_create(0);
     while(true){
         getline(cin, line);
         cout << "$" << line << endl;
         stringstream ss(line);
         ss >> cmd;
-        if(cmd == "end")
+        if(cmd == "end"){
             break;
-        else if(cmd == "init"){
-            int value;
+        } else if(cmd == "init"){
             ss >> value;
             if(v != nullptr)
                 vector_destroy(v);
             v = vector_create(value);
-        }
-        else if(cmd == "status"){
+        } else if(cmd == "status"){
             cout << "size:" << v->size << " capacity:" << v->capacity << "\n";
-        }
-        else if(cmd == "add"){
-            int value;
-            while(ss >> value){
+        } else if(cmd == "add"){
+            while(ss >> value)
                 vector_add(v, value);
-            }
-        }
-        else if(cmd == "show"){
+        } else if(cmd == "show"){
             cout << vector_show(v) << endl;
+        } else {
+            cout << "fail: comando invalido\n";
         }
     }
     vector_destroy(v);

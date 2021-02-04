@@ -1,9 +1,8 @@
-## #maze 1. Queimada V1 chamada recursiva
-## @qxcode
+## L1 - Queimada V1 - Recursão
 
 ![](__capa.jpg)
 
-Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas.
+Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
 
 A matriz está codificada assim.
 1a linha: `nl, nc, l, c` respectivamente
@@ -60,37 +59,45 @@ oooo..o
 
 ```
 
-## Ponto de partida
+## Ajuda
+
+Você pode utilizar um vetor de strings para representar uma matriz de caracteres. Uma string é um vetor de caracteres. Dessa forma um `vector<string> mat` é uma vetor bidimensional. O exemplo a seguir já carrega a matriz na `main` e já faz um método capaz de imprimir a matriz. Você só precisa implementar o método `tocar_fogo`.
+
+Utilize as seguintes regras para recursão.
+- Se a posição for fora da matriz, retorne.
+- Se a posição não for uma arvore retorne.
+- Queime a arvore.
+- Chame a recursão para todos os vizinhos.
 
 ```cpp
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+using namespace std;
 
-void show(int nl, int nc, char * mat){
-    for(int l = 0; l < nl; l++){
-        for(int c = 0; c < nc; c++)
-            printf("%c", mat[l * nc + c]);
-        puts("");
-    }
+
+void show(vector<string> mat){
+    for(int l = 0; l < (int) mat.size(); l++)
+        cout << mat[l] << "\n";
 }
-/*
-para acessar a posicao l, c da matriz voce deve utilizar
-mat[l * nc + c]
-*/
-void tocar_fogo(int nl, int nc, char * mat, int l, int c){
+
+void tocar_fogo(vector<string> &mat, int l, int c){
+    int nl = mat.size();
+    int nc = mat[0].size();
     //TODO faca seu codigo aqui
 }
 
 int main(){
-    int nl = 0;
-    int nc = 0;
-    int l = 0;
-    int c = 0;
-    scanf("%d %d %d %d\n", &nl, &nc, &l, &c);
-    char mat[nl][nc];
-    for(int l = 0; l < nl; l++)
-        for(int c = 0; c < nc; c++)
-            scanf(" %c", &mat[l][c]);
-    tocar_fogo(nl, nc, &mat[0][0], l, c);
-    show(nl, nc, &mat[0][0]);
+    int nl = 0, nc = 0, lfire = 0, cfire = 0;
+    scanf("%d %d %d %d\n", &nl, &nc, &lfire, &cfire);
+    vector<string> mat;
+    for(int l = 0; l < nl; l++){
+        string line;
+        cin >> line;
+        mat.push_back(line);
+    }
+    tocar_fogo(mat, lfire, cfire);
+    show(mat);
 }
+
+
 ```

@@ -1,23 +1,45 @@
-## #maze CasteloGrade
+## L3 - Empurrando blocos escorregadios
 
 ![](__capa.jpg)
+
 **Descrição da função**
 
-Você recebe uma grade quadrada com algumas células abertas (.) e outras bloqueadas (X). Sua peça de jogo pode se mover ao longo de qualquer linha ou coluna até atingir a borda da grade ou uma célula bloqueada. Dada uma grade, uma posição inicial e uma posição final, determine o número de movimentos necessários para chegar à posição final.<br>
+Você já jogou aqueles joguinhos que você empurra blocos por vários obstáculos para que ele chegue em uma determinada posição? Cada vez que você chuta um bloco, ele desliza em linha reta até parar em um obstáculo ou chegar à meta.
 
-Por examplo, você recebe uma grade com os lados n = 3 descritos a seguir:<br>
+Nesse problema, você recebe uma grade quadrada com algumas células abertas (.) e outras bloqueadas (X).
 
-...<br>
-.X.<br>
-...<br>
+Sua peça de jogo pode se mover ao longo de qualquer linha ou coluna até atingir a borda da grade ou uma célula bloqueada. 
 
-Sua posição inicial para começar no canto superior esquerdo é (startX,startY)=(0,0). A posição final é (goalX,goalY)=(1,2). O caminho é (0,0)->(0,2)->(1,2). É preciso 2 movimentos para chegar ao objetivo.<br>
+Ela não pode parar no meio do caminho, ela deverá seguir em linha reta até encontrar um obstáculo OU encontrar o objetivo.
+
+Dada uma grade, uma posição inicial e uma posição final, determine o número de movimentos necessários para chegar à posição final.
+
+Por exemplo, você recebe uma grade com os lados n = 3 descritos a seguir:
+
+```
+...
+.X.
+...
+```
+- As posições são pares linha e coluna no formato (l,c).
+- Se posição inicial para começar no canto superior esquerdo é (startL,startC)=(0,0) e posição final é (goalL,goalC)=(1,2).
+- Teríamos essa configuração sendo `s` para start e `g` para goal, as seguintes posições de linha e coluna. 
+```
+s..
+.Xg
+...
+```
+- O caminho é (0,0)->(0,2)->(1,2). É preciso 2 movimentos para chegar ao objetivo.
+- Lembre que a peça não move as posições uma a uma, mas salta até o limite.
 
 **Formato de entrada**
 
-A primeira linha contém um inteiro n, o tamanho do vetor grade.<br>
-Cada uma das seguintes n linhas contém uma string de tamanho n.<br>
-A última linha contém quatro números inteiros separados por espaço, startX, startY, goalX, goalY.<br>
+A primeira linha contém um inteiro n, o tamanho do vetor grade.
+
+Cada uma das seguintes n linhas contém uma string de tamanho n.
+
+A última linha contém quatro números inteiros separados por espaço, startL, startC, goalL, goalC.
+
 
 **Formato de saída**
 

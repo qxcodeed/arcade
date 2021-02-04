@@ -3,55 +3,57 @@
 
 ## Links []()
 <!--TOC_BEGIN-->
-- [queue](#queue)
-- [rec](#rec)
-- [list](#list)
-- [maze](#maze)
-- [rec](#rec)
-- [stack](#stack)
-- [tree](#tree)
-
+- [01. Recursão](#01-recursão)
+- [02. Arrays](#02-arrays)
+- [03. Linked List](#03-linked-list)
+- [04. Stack](#04-stack)
+- [05. Queue](#05-queue)
+- [06. Sort](#06-sort)
+- [07. Hash](#07-hash)
+- [08. Tree](#08-tree)
 <!--TOC_END-->
-## queue
 
-- [@010 DownToZero](base/010/Readme.md#queue-downtozero)  [](#queue)
-- [@006 OneQueueWith2Stack](base/006/Readme.md#queue-onequeuewith2stack)  [](#queue)
-- [@012 Queries with Fixed Length](base/012/Readme.md#queue-queries-with-fixed-length)  [](#queue)
-- [@011 Truck Tour](base/011/Readme.md#queue-truck-tour)  [](#queue)
+## 01. Recursão
+- [@005 L1 - Operações básicas](base/005/Readme.md) 
+- [@003 L1 - Queimada V1 - Recursão](base/003/Readme.md) 
+- [@004 L2 - Triângulo da soma](base/004/Readme.md) 
+- [@008 TODO: L2 - Labirinto I - Fuga recursiva](base/008/Readme.md) 
 
-## rec
+## 02. Arrays
+- [@050 L1 - Vetor de consulta](base/050/Readme.md) 
+- [@060 L1 - Rotação à direira](base/060/Readme.md) 
+- [@052 L2 - Fila de ingressos](base/052/Readme.md) 
+- [@016 L2 - Construa um Vetor dinâmico I - Procedural](base/016/Readme.md) 
+- [@017 L2 - Construa um Vetor dinâmico I - Orientado a Objetos](base/017/Readme.md) 
+- [@000 L2 - Princesa V1 - Implementação em vetor](base/000/Readme.md) 
+- [@001 L2 - Princesa V2 - Implementação em vetor](base/001/Readme.md) 
 
-- [@000 1. Princesa V1 & Implementação em vetor](base/000/Readme.md#array-1-princesa-v1--implementação-em-vetor)  [](#array)
-- [@001 2. Princesa V2](base/001/Readme.md#array-2-princesa-v2)  [](#array)
-- [@002 3. Princesa V3](base/002/Readme.md#array-3-princesa-v3)  [](#array)
-- [@016 4. Build Vetor dinâmico](base/016/Readme.md#array-4-build-vetor-dinâmico)  [](#array)
-- [@052 Fila de ingressos](base/052/Readme.md#array-fila-de-ingressos)  [](#array)
-- [@050 Match Strings](base/050/Readme.md#array-match-strings)  [](#array)
-- [@060 Rotação à direira em array](base/060/Readme.md#array-rotação-à-direira-em-array)  [](#array)
+## 03. Linked List
+- [@013 L2 - Princesa V1 - Implementação usando o std::list](base/013/Readme.md) 
+- [@014 L2 - Princesa V2 - Implementação utilizando std::list](base/014/Readme.md) 
+- [@024 L3 - Simulação Fila Bancária](base/024/Readme.md) 
+- [@015 Lista Editor de texto I](base/015/Readme.md) 
+- [@018 TODO: Build Lista Simples](base/018/Readme.md) 
+- [@023 TODO: Lista Editor de texto II - Undo e Redo](base/023/Readme.md) 
 
-## list
+## 04. Stack
+- [@006 L1 - Implementando Fila com duas Pilhas](base/006/Readme.md) 
+- [@007 L2 - Queimada V2 - Pilha](base/007/Readme.md) 
+- [@009 L3 - Empurrando blocos escorregadios](base/009/Readme.md) 
 
-- [@024 2. Lista Simulação Fila Bancária](base/024/Readme.md#list-2-lista-simulação-fila-bancária)  [](#list)
-- [@049 Detecção de ciclo](base/049/Readme.md#list-detecção-de-ciclo)  [](#list)
+## 05. Queue
+- [@051 L1 - Copa do mundo](base/051/Readme.md) 
+- [@011 L2 - Passeio de caminhão](base/011/Readme.md) 
+- [@019 TODO: Queimada V3 - FloodFill](base/019/Readme.md) 
 
-## maze
+## 06. Sort
+- [@021 TODO: Sort Quick Sort](base/021/Readme.md)  [](#todo #empty)
+- [@020 TODO: Sort Bubble Selection Insertion](base/020/Readme.md)  [](#todo #empty)
 
-- [@003 1. Queimada V1 chamada recursiva](base/003/Readme.md#maze-1-queimada-v1-chamada-recursiva)  [](#maze)
-- [@008 2. Labirinto resolvendo com recursão](base/008/Readme.md#maze-2-labirinto-resolvendo-com-recursão)  [](#maze)
-- [@007 3. Queimada V2 Busca em profundidade](base/007/Readme.md#maze-3-queimada-v2-busca-em-profundidade)  [](#maze)
-- [@009 CasteloGrade](base/009/Readme.md#maze-castelograde)  [](#maze)
+## 07. Hash
 
-## rec
-
-- [@005 1. Rec Operações básicas](base/005/Readme.md#rec-1-rec-operações-básicas)  [](#rec)
-- [@004 2. Rec Triângulo da soma](base/004/Readme.md#rec-2-rec-triângulo-da-soma)  [](#rec)
-
-## stack
-
-- [@051 Copa do mundo](base/051/Readme.md#stack-copa-do-mundo)  [](#stack)
-
-## tree
-
-- [@044 1. Tree Serialize and Show](base/044/Readme.md#tree-1-tree-serialize-and-show)  [](#tree)
-- [@046 2. Tree Soma e Menor](base/046/Readme.md#tree-2-tree-soma-e-menor)  [](#tree)
-- [@045 3. Tree Altura e Nível](base/045/Readme.md#tree-3-tree-altura-e-nível)  [](#tree)
+## 08. Tree
+- [@044 1. Tree Serialize and Show](base/044/Readme.md)  [](#tree)
+- [@046 2. Tree Soma e Menor](base/046/Readme.md)  [](#tree)
+- [@045 3. Tree Altura e Nível](base/045/Readme.md)  [](#tree)
+- [@022 TODO: Tree Caminhos para o nó](base/022/Readme.md) 

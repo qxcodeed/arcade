@@ -1,4 +1,4 @@
-## L2 - Princesa V1 - Implementação em vetor
+## L2 - Princesa V1 - Implementação usando o std::list
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
@@ -17,51 +17,47 @@ ___
     - Etapa a etapa, os elementos que estão vivos na fila circular, indicando com um > quem está com a espada.
 
 ___
-## Implementação usando vetor
-### Abordagem I
-- marcando os elementos que morrem.
-    - crie um vetor auxiliar de bool
-    - toda vez que alguém morrer, marque no vetor
-    - procure pelo próximo elemento vivo
-```c
-int elementos[size];
-int vivos[bool];
-//matar equivale a fazer
-vivos[pos] = false;
-//o próximo vivo seria uma busca pelo próximo vivo depois de pos
-int prox = procurar_vivo(elementos, vivos, size, pos);
-```
-
-
-### Abordagem II
-- retirando os elementos que morrem e diminuindo o tamanho do vetor.
-    - reposicione os elementos "puxando" todos os que estiverem à frente
-
-```c
-//faça a funcao matar que remove o elemento do vetor
-//perceba que TUDO após pos, vai diminuir em 1
-int elementos[size];
-matar(elementos, size, pos);
-size -= 1;
-pos = pos % size; //se ele era o último agora é o zero
-```
-
-### Comparação
-
-- Qual dos algoritmos você acha que é mais eficiente?
-- Implemente os dois e vá aumentando a instância do problema e veja o resultado.
-
-___
 ## Implementação usando listas
 
-Resolva novamente o problema utilizando uma lista ligada no lugar do vetor.
+Resolva novamente o problema utilizando
+- a lista do c++ para colocar os elementos
+- um iterator para rastrear a posição da espada
+- o método erase da lista para matar os elementos
 
-```c
-struct Node{
-    int value;
-    Node * next;
-};
+## Ajuda
+```cpp
+//uma lista de inteiros pode ser criada com
+list<int> lista;
 
+//a lista possui funções para inserir ou remover do começo ou do fim
+lista.push_front(4);
+lista.push_back(5);
+lista.pop_front();
+lista.pop_back();
+
+//containers em c++ possui iteradores que são classes 
+//que servem pra percorrer as estrururas de dados
+//elas funcionam com uma sintaxe parecida com ponteiros
+
+//it aponta para o primeiro elemento válido da lista
+//list<list>::iterator é o tipo de dado
+list<list>::iterator it = lista.begin();
+
+//andar para o próximo elemento da lista pode ser feito com
+it++;
+//andar pra trás com 
+it--;
+
+//lista.end() aponta para o nó de marcação no fim da lista, 
+//que é um nó depois do último válido
+//Dá pra percorrer imprimindo usando iteradores também
+for(auto it = lista.begin(); it != lista.end(); ++it)
+    cout << *it;
+
+//para remover um elemento voce usa a operação erase
+//ela apaga o nó que está sob o iterador e retorna o nó
+//que ficou no lugar dele
+it = lista.erase(it);
 ```
 
 ___

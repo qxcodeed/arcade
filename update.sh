@@ -1,3 +1,2 @@
-indexer board
-indexer manual Readme.md
-indexer links
+toc Readme.md
+kkmanual Readme.md

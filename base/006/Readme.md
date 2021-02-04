@@ -1,13 +1,17 @@
-## #queue OneQueueWith2Stack
+## L1 - Implementando Fila com duas Pilhas
 
 ![](__capa.jpg)
 **Descrição da função**
 
-Uma fila é um tipo de dados abstrato que mantém a ordem na qual os elementos foram adicionados a ela, permitindo que os elementos mais antigos sejam removidos da frente e os novos elementos sejam adicionados na parte traseira. Isso é chamado de estrutura de dados FIFO (Primeiro a entrar, primeiro a sair), porque o primeiro elemento adicionado à fila (ou seja, aquele que está esperando há mais tempo) é sempre o primeiro a ser removido.
-Nesse  desafio, você deve primeiro implementar uma fila usando duas pilhas. Em seguida, processe q consultas, em que cada consulta é um dos seguintes 3 tipos:
-1 x: Enfileirar o elemento x no final da fila.
-2: Retirar da fila o elemento na frente da fila.
-3: Mostre o elemento na frente da fila.
+Uma fila é um tipo de dados abstrato que mantém a ordem na qual os elementos foram adicionados a ela, permitindo que os elementos mais antigos sejam removidos da frente e os novos elementos sejam adicionados na parte traseira. 
+
+Isso é chamado de estrutura de dados FIFO (Primeiro a entrar, primeiro a sair), porque o primeiro elemento adicionado à fila (ou seja, aquele que está esperando há mais tempo) é sempre o primeiro a ser removido.
+
+Nesse desafio, você deve primeiro implementar uma fila usando duas pilhas. Em seguida, processe a consultas, em que cada consulta é um dos seguintes 3 tipos:
+
+- 1 x: Enfileirar o elemento x no final da fila.
+- 2: Retirar da fila o elemento na frente da fila.
+- 3: Mostre o elemento na frente da fila.
 
 **Formato de entrada**
 
@@ -19,9 +23,35 @@ Cada linha i das q linhas subsequentes contém uma única consulta no padrão de
 Para cada consulta do tipo 3, imprima o valor do elemento na frente da fila em uma nova linha. As consultas de tipo 1 e 2 não necessitam imprimir nada.
 
 
+## Ajuda
+- Você pode utilizar duas pilhas. 
+- Vamos chamar a primeira pilha de "deposito" e a segunda de "prateleira".
+- Se precisar colocar algo, você coloca no deposito.
+- Se precisar pegar algo você pega da prateleira.
+- Se a prateleira estiver vazia, você retira tudo do deposito para a prateleira.
+    - Observe que agora o depósito foi invertido e a primeira a ser inserida no depósito é a última da prateleira.
+
+
 ## Testes
 
 ```
+>>>>>>>>
+9
+1 1
+1 2
+1 3
+3
+2
+3
+2
+3
+2
+========
+1
+2
+3
+<<<<<<<<
+
 >>>>>>>> 01
 10
 1 42

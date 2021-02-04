@@ -1,5 +1,4 @@
-## #stack Copa do mundo
-
+## L1 - Copa do mundo
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 
@@ -9,11 +8,11 @@ Na Copa do Mundo, depois de uma fase de grupos, dezesseis equipes disputam a Fas
 
 Dados os resultados dos quinze jogos da Fase Final, escreva um programa que determine a equipe campeã.
 
-#### Entrada
+### Entrada
 
 A entrada é composta de quinze linhas, cada uma contendo o resultado de um jogo. A primeira linha contém o resultado do jogo de número 1, a segunda linha o resultado do jogo de número 2, e assim por diante. O resultado de um jogo é representado por dois números inteiros MM e NN separados por um espaço em branco, indicando respectivamente o número de gols da equipe representada à esquerda e à direita na tabela de jogos.
 
-#### Saída
+### Saída
 
 Seu programa deve imprimir uma única linha, contendo a letra identificadora da equipe campeã.
 
@@ -61,3 +60,10 @@ A
 <<<<<<<<
 ```
 
+## Dica
+- Coloque as 16 letras em uma fila
+- Pegue as duas primeiras
+    - que no caso seriam A e B
+    - leia os gols
+    - decida quem você coloca de novo na fila
+- Continue até que só existe um elemento na fila

@@ -1,5 +1,4 @@
-## #rec 1. Rec Operações básicas
-## @qxcode
+## L1 - Operações básicas
 
 ![](__capa.jpg)
 

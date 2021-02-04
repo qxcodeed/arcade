@@ -1,8 +1,41 @@
-## #list 2. Lista Simulação Fila Bancária
-## @qxcode
+## L3 - Simulação Fila Bancária
 
 ![](__capa.jpg)
 
+Neste trabalho, nós simularemos uma fila de banco. O nosso banco tem clientes que estão sendo atendidos no caixa e clientes em espera na fila. Cada cliente tem um nível de paciência (quantidade de tempo que ele pode esperar na fila) e uma quantidade de documentos a serem processados no caixa.
+
+As variáveis que definem a execução são:
+
+- Número de caixas
+- Quantidade de clientes que chega por minuto
+- Paciência dos clientes
+- Quantidade de documentos que o cliente trás
+- Limite máximo de pessoas no banco
+
+Cada iteração representa um minuto passado no banco. Em cada iteração, cada `tic`, deve ser executado o seguinte pseudocódigo:
+
+```
+para todos os clientes na fila de saida
+    remova cliente da fila
+para todos os caixas
+    se existe um cliente nesse caixa
+        se o cliente tem documentos a serem processados
+            processe um documento desse cliente
+        senãdo
+            mova cliente para fila de saída
+    senão
+        se houver clientes na fila de entrada
+            pegue um cliente da fila de entrada e coloque nesse caixa
+para cada cliente da fila de entrada
+    se paciência desse cliente for maior que zero
+        decremente um na paciência
+    senão
+        ponha esse cliente na fila de saída
+```
+
+## Guia
+
+Você deve utilizar as seguintes estruturas para controlar o banco:
 ```cpp
 struct Client{
     string id;
@@ -15,41 +48,22 @@ struct Banco{
     list<Client*> fila_entrada;
     queue<Client*> fila_saida;
 };
-
 ```
 
-```
-para todos os clientes na fila de saida
-    remova cliente do banco
-para todos os caixas
-    se existe um cliente
-        se o cliente tem documentos
-            processe um documento desse cliente
-        senao
-            mova cliente para fila de saida
-    senao
-        se houver clientes na fila de entrada
-            pegue um cliente da fila de entrada
-para todos os clientes da fila de entrada
-    se paciencia maior que zero
-        decremente um na paciencia
-    senao
-        ponha na fila de saida
-```
-
+## Testes
 
 ```bash
 #__case one
 # inicia a quantidade de caixas 
 $init 3
 
-# mostra os caixas, a fila de entrada e a filha de saída
+# mostra os caixas, a fila de entrada e a fila de saída
 $show
 [][][]
 in :{ }
 out:{ }
 
-# O comando 'in' aciona um cliente na fila
+# O comando 'in' adiciona um cliente na fila
 # in _nome _acoes _paciencia
 $in Ai 4 6
 $in Bo 2 3
@@ -62,7 +76,7 @@ $show
 in :{ Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2 }
 out:{ }
 
-# O comando 'tic' faz passar um intervalo de tempo. 
+# O comando 'tic' faz passar um intervalo de tempo
 $tic
 
 $show
@@ -149,16 +163,9 @@ received: 16
 lost: 5
 tics: 6
 
-# end termina a simulacao
+# end termina a simulação
 $end
 ```
-
-
-# Parte 2
-
-- Dado o valor de um dia de trabalho do caixa
-- Calcule a quantidade ideal de caixas para maximizar o lucro.
-- documentos_recebidos - total_caixas * 100
 
 
 

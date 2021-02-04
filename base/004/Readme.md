@@ -1,5 +1,4 @@
-## #rec 2. Rec Triângulo da soma
-## @qxcode
+## L2 - Triângulo da soma
 
 ![](__capa.jpg)
 
