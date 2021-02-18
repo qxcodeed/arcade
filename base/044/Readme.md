@@ -1,4 +1,4 @@
-# L2 - Carregando Árvore a partir de String
+# L2 - Carregando árvore a partir de String
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)

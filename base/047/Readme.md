@@ -4,6 +4,7 @@
 - [Descrição](#descrição)
 - [Testes](#testes)
 - [Ajuda](#ajuda)
+- [Código base](#código-base)
 <!--TOC_END-->
 
 ![](__capa.jpg)
@@ -141,6 +142,8 @@ Para o caso da árvore do último teste, temos essa saída.
 Para simplificar, estou utilizando a convenção `__` para expressar quais são os métodos privados, própria do python.
 
 Os locais onde você deve colocar seu código estão marcados com //TODO. Como estamos lidando com árvores, você deverá criar também os métodos recursivos para realizar a operação de construção da árvore.
+
+## Código base
 
 ```cpp
 #include <iostream>

@@ -1,4 +1,4 @@
-# L2 - Soma e Menor
+# L2 - Soma dos nós e Menor valor
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Testes](#testes)

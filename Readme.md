@@ -58,9 +58,9 @@
 - [@019 L3 - Labirinto III - Fuga pelo menor caminho](base/019/Readme.md) 
 
 ### 06. Tree
-- [@044 L2 - Carregando Árvore a partir de String](base/044/Readme.md) 
+- [@044 L2 - Carregando árvore a partir de String](base/044/Readme.md) 
 - [@047 L2 - Mostrando árvore tabulada](base/047/Readme.md) 
-- [@046 L2 - Soma e Menor](base/046/Readme.md) 
+- [@046 L2 - Soma dos nós e Menor valor](base/046/Readme.md) 
 - [@045 L2 - Find, Altura e Profundidade](base/045/Readme.md) 
 - [@022 L2 - Caminhos para o nó](base/022/Readme.md) 
 
