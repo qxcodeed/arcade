@@ -1,0 +1,5 @@
+banana 5
+manga 4
+uva 3
+tangerina 6
+minhoca 9

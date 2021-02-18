@@ -1,25 +1,124 @@
-## TODO: L2 - Labirinto I - Fuga recursiva
+L2 - Labirinto I - Fuga recursiva
 
 ![](__capa.jpg)
 
-fazer os testes.
-Usa  o modelo do flood fill para passar início e fim
-- pedir um vetor com os pontos do caminho
-- pedir pedir matriz marcada com a saída
-- sugerir função que retorne uma lista com o caminho
-    - no algoritmo de pilha, a pilha já é o caminho
-    - na recursão, a pilha recursiva já é o caminho
-- pedir o vetor de pontos, para forçar retornar a lista
-- dar estrutura básica de 
-    - carregar matriz
-    - função de gerar os vizinhos
-    - struct LC com construtor
-- Colocar testes
-- Pode ser resolvido
-    - recursivo
-    - pilha
-    - fila
+Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.
+Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.
 
-```c
-list<LC> find_path(bool * mat, int nl, int nc, LC first, LC last;
+- Entrada
+    - Linha 1: número de linhas e das colunas da matriz
+    - Linhas subsequentes: matriz composta por 4 caracteres
+        - `#` representa uma parede
+        - ` ` representa um corredor por onde se pode andar
+        - `I` representa o início
+        - `F` representa o fim
+
+- Saída
+    - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
+
+
+```
+>>>>>>>>
+10 20
+####################
+#   # # # #   # ## #
+### #     ###      #
+##  ## ##   # ### ##
+# I##   ### ###    #
+# ##### #   #   ## #
+# #     ## ### ##  #
+# ## ####   #  #  ##
+#   F#    #   ## ###
+####################
+========
+####################
+#   # # # #   # ## #
+### #     ###      #
+##  ## ##   # ### ##
+#..##   ### ###    #
+#.##### #   #   ## #
+#.#     ## ### ##  #
+#.## ####   #  #  ##
+#....#    #   ## ###
+####################
+<<<<<<<<
+
+
+>>>>>>>>
+10 30
+##############################
+#  #        ## # # ##       ##
+## # ## ## ##    # #  ## ##  #
+## ###  #I    ##   ####   ## #
+#  ##  ###########   #  #  # #
+# ##  ## F # #   ### ####### #
+# ## ### ###   #   # ##   #  #
+#  # # # #   ##### # #  # # ##
+##   #     #     #     ##    #
+##############################
+========
+##############################
+#  #        ## # # ##       ##
+## # ## ## ##....# #  ## ##  #
+## ###  #.....##...####   ## #
+#  ##  ###########...#  #  # #
+# ##  ##.. # #...###.####### #
+# ## ###.###...#...#.##   #  #
+#  # # #.#...#####.#.#  # # ##
+##   #  ...#     #...  ##    #
+##############################
+<<<<<<<<
+```
+
+## Help
+
+Você pode usar esse código como ajuda. Ele carrega a matriz e mostra. O método `get_vizinhos` é bem útil para iterar nos vizinhos de um ponto.
+
+```c++
+#include <iostream>
+#include <vector>
+using namespace std;
+
+struct Pos{
+    int l;
+    int c;
+};
+
+//retorna um vetor com todos os vizinhos da posição p
+vector<Pos> get_vizinhos(Pos p){
+    return {{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}};
+}
+
+
+int main(){
+    int nl = 0, nc = 0;
+    cin >> nl >> nc;
+    vector<string> mat(nl, ""); //começa com nl strings ""
+    getchar();//remove \n after nc
+    Pos inicio, fim;
+
+    //carregando matriz
+    for(int i = 0; i < nl; i++)
+        getline(cin, mat[i]);
+
+    //procurando inicio e fim e colocando ' ' nas posições iniciais
+    for(int l = 0; l < nl; l++){
+        for(int c = 0; c < nc; c++){
+            if(mat[l][c] == 'I'){
+                mat[l][c] = ' ';
+                inicio = Pos {l, c};
+            }
+            if(mat[l][c] == 'F'){
+                mat[l][c] = ' ';
+                fim = Pos {l, c};
+            }
+        }
+    }
+
+    for(string line : mat)
+        cout << line << endl;
+    cout << "       nl=" << nl << " nc=" << nc << "\n";
+    cout << "inicio: l=" << inicio.l << " , c=" << inicio.c << endl;
+    cout << "   fim: l=" << fim.l << " , c=" << fim.c << endl;
+}
 ```

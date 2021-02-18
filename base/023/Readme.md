@@ -1,6 +1,6 @@
-## TODO: Lista Editor de texto II - Undo e Redo
+## L4 - Lista Editor de texto II - Undo e Redo
 
-![](__capa.jpg)
+![](capa.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.
@@ -90,36 +90,44 @@ eu-te-abraco|mo
 <<<<<<<<
 
 >>>>>>>>
-eu-te-amoBZ<<mato
+abcZZd
 ========
-eu-te-a|mo
+ad|
+<<<<<<<<
+
+>>>>>>>>
+abcZZYd
+========
+abd|
+<<<<<<<<
+
+>>>>>>>>
+abcBZ
+========
+abc|
+<<<<<<<<
+
+>>>>>>>>
+abcBZZZZ
+========
+|
 <<<<<<<<
 
 
 >>>>>>>>
-eu-te-amoB<ZZYYm>to
+abcBZZZZZZZZZZZZY
 ========
-eu-te-mato|
+a|
 <<<<<<<<
+
+>>>>>>>>
+abcBZZZZZZZZZZZZYbYYYYY
+========
+ab|
+<<<<<<<<
+
+
 ```
 
 Perceba que como no seu editor, se você der C-Z e depois escrever algo, você
 perderá o que tinha escrito e não poderá mais dar redo.
-
-
-```cpp
-
-struct Ambient{
-    list<char> texto;
-    list<char>::iterator cursor;
-};
-
-struct Editor{
-    list<Ambient> linha_temporal;
-    list<Ambient>::iterator estado_atual;
-};
-
-
-
-
-```

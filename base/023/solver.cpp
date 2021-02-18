@@ -64,19 +64,23 @@ struct Ambient{
         if(itc != prev(states.end()))
             itc++;
     }
-    void insertChar(char c){
+    void pushState(){
         auto prox = itc;
         states.erase(++prox, states.end());
         states.push_back(*itc);
         itc = --states.end();
-
+    }
+    void insertChar(char c){
+        pushState();
         itc->text.insert(itc->cursor, c);
     }
     void sendBackspace(){
+        pushState();
         if(itc->cursor != itc->text.begin())
             itc->cursor = itc->text.erase(--itc->cursor);
     }
     void sendDelete(){
+        pushState();
         if(itc->cursor != itc->text.end())
             itc->cursor = itc->text.erase(itc->cursor);
     }

@@ -28,16 +28,16 @@ struct BTree{
         clone(ss, &root);
     }
 
-    void _destroy(Node * node){
+    void __destroy(Node * node){
         if(node == nullptr)
             return;
-        _destroy(node->left);
-        _destroy(node->right);
+        __destroy(node->left);
+        __destroy(node->right);
         delete node;
     }
 
     ~BTree(){
-        _destroy(this->root);
+        __destroy(this->root);
     }
 
     Node * find(Node * node, int value){
@@ -55,15 +55,15 @@ struct BTree{
         return find(this->root, value);
     }
 
-    int getHeight(Node * node){
+    int getAltura(Node * node){
         if(node == nullptr)
             return 0;
-        int max = std::max(getHeight(node->left), getHeight(node->right));
+        int max = std::max(getAltura(node->left), getAltura(node->right));
         return max + 1;
     }
 
     int getHeight(){
-        return getHeight(root);
+        return getAltura(root);
     }
 
     int getNivel(Node * node, int nivel, int value){
@@ -77,7 +77,7 @@ struct BTree{
         return getNivel(node->right, nivel + 1, value);
     }
 
-    int getNivel(int value){
+    int getProfundidade(int value){
         return getNivel(this->root, 1, value);
     }
     
@@ -90,10 +90,12 @@ int main(){
     getline(cin, line);
     stringstream ss(line);
     int value;
-    while(ss >> value){
+        while(ss >> value){ //enquanto houver elementos no buffer
         Node * node = bt.find(value);
-        cout << bt.getHeight(node) << " " << bt.getNivel(value) << "\n";
-
+        if(node != nullptr)
+            cout << bt.getAltura(node) << " " << bt.getProfundidade(value) << "\n";
+        else
+            cout << "-1\n";
     }
 }
 

@@ -1,8 +1,18 @@
 
 #include <iostream>
 #include <sstream>
-#include "lib.hpp"
 using namespace std;
+
+struct Node{
+    int value;
+    Node * left;
+    Node * right;
+    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){
+        this->value = value;
+        this->left = left;
+        this->right = right;
+    }
+};
 
 struct BTree{
     Node * root;
@@ -27,16 +37,30 @@ struct BTree{
         clone(ss, &root);
     }
 
-    void _destroy(Node * node){
+    void __destroy(Node * node){
         if(node == nullptr)
             return;
-        _destroy(node->left);
-        _destroy(node->right);
+        __destroy(node->left);
+        __destroy(node->right);
         delete node;
     }
 
     ~BTree(){
-        _destroy(this->root);
+        __destroy(this->root);
+    }
+
+    string find_path(Node * node, int value){
+        if(node == nullptr)
+            return "!";
+        if(node->value == value)
+            return "x";
+        string left = find_path(node->left, value);
+        if(left.back() == 'x')
+            return "l" + left;
+        string right = find_path(node->right, value);
+        if(right.back() == 'x')
+            return "r" + right;
+        return "!";
     }
 };
 
@@ -46,6 +70,6 @@ int main(){
     BTree bt(line);
     int value;
     cin >> value;
-    auto path = find(bt.root, value);
-    cout << path << endl;
+    string path = bt.find_path(bt.root, value);
+    cout << path << "\n";
 }

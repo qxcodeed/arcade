@@ -9,9 +9,9 @@ Você pode utilizar esse algoritmo.
 
 ```
 verifique a primeira posição e queime-o
-inicie a fila com esse elemento
-enquanto a fila não estiver vazia faça
-    pegue topo da fila
+inicie a pilha com esse elemento
+enquanto a pilha não estiver vazia faça
+    pegue topo da pilha
 
     faça uma lista com todos os vizinhos de topo que podem ser queimados
     se lista eh vazia

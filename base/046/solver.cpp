@@ -38,16 +38,16 @@ struct BTree{
         clone(ss, &root);
     }
 
-    void _destroy(Node * node){
+    void __destroy(Node * node){
         if(node == nullptr)
             return;
-        _destroy(node->left);
-        _destroy(node->right);
+        __destroy(node->left);
+        __destroy(node->right);
         delete node;
     }
 
     ~BTree(){
-        _destroy(this->root);
+        __destroy(this->root);
     }
 
     int getMin(Node * node){
@@ -61,7 +61,7 @@ struct BTree{
         return v;
     }
 
-    int getMin(){
+    int min(){
         return getMin(root);
     }
 
@@ -71,7 +71,7 @@ struct BTree{
         return node->value + getSum(node->left) + getSum(node->right);
     }
 
-    int getSum(){
+    int sum(){
         return getSum(root);
     }
 };
@@ -81,5 +81,5 @@ int main(){
     getline(cin, line);
     BTree bt(line);
     getline(cin, line);
-    cout << bt.getSum() << " " << bt.getMin() << "\n";
+    cout << bt.sum() << " " << bt.min() << "\n";
 }

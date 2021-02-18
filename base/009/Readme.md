@@ -1,6 +1,6 @@
 ## L3 - Empurrando blocos escorregadios
 
-![](__capa.jpg)
+![](capa.jpg)
 
 **Descrição da função**
 

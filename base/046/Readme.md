@@ -1,16 +1,27 @@
-## #tree 2. Tree Soma e Menor
-## @qxcode
+# L2 - Soma e Menor
+<!--TOC_BEGIN-->
+- [Descrição](#descrição)
+- [Testes](#testes)
+- [Código base](#código-base)
+<!--TOC_END-->
 
 ![](__capa.jpg)
 
-- Entrada
-    - linha 1: o serial de uma árvore
-- Saída
-    - soma dos valores da árvore, menor valor da árvore
+## Descrição
+Leia a árvore a partir do serial utilizando o método da atividade `@044` e implemente os seguintes métodos para calcular a soma de todos os elementos e o valor do menor elemento.
 
+```cpp
 int sum(Node * root);
 
 int min(Node * root);
+```
+
+- Entrada
+    - Serial de uma árvore
+- Saída
+    - Soma dos valores da árvore, menor valor da árvore.
+
+## Testes
 
 ```
 >>>>>>>> 01 um
@@ -54,5 +65,18 @@ int min(Node * root);
 ========
 45 0
 <<<<<<<<
+```
 
+## Código base
+
+Utilize a árvore dos exercícios anteriores
+
+```cpp
+int main(){
+    string line;
+    getline(cin, line);
+    BTree bt(line);
+    getline(cin, line);
+    cout << bt.sum() << " " << bt.min() << "\n";
+}
 ```

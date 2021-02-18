@@ -1,7 +1,21 @@
-## #tree 3. Tree Altura e Nível
-## @qxcode
+# L2 - Find, Altura e Profundidade
+<!--TOC_BEGIN-->
+- [Descrição](#descrição)
+- [Código base](#código-base)
+- [Testes](#testes)
+<!--TOC_END-->
 
 ![](__capa.jpg)
+
+## Descrição
+
+Dado o modelo de árvore utilizado nas questões anteriores, implemente os seguintes métodos.
+
+```cpp
+Node * find(int value); //retorna o nó dado o valor ou retorna null
+int getAltura(Node * node);
+int getProfundidade(Node * node);
+```
 
 - Entrada
     - linha 1: o serial de uma árvore
@@ -11,6 +25,28 @@
 
 ![](__altura.jpg)
 
+
+## Código base
+
+```cpp 
+int main(){
+    string line;
+    getline(cin, line);
+    BTree bt(line);
+    getline(cin, line);
+    stringstream ss(line);
+    int value;
+        while(ss >> value){ //enquanto houver elementos no buffer
+        Node * node = bt.find(value);
+        if(node != nullptr)
+            cout << bt.getAltura(node) << " " << bt.getProfundidade(value) << "\n";
+        else
+            cout << "-1\n";
+    }
+}
+```
+
+## Testes
 ```
 >>>>>>>> 01 um
 4 # # 
@@ -42,7 +78,7 @@
 ========
 1 2
 1 3
-0 0
+-1
 3 1
 2 2
 <<<<<<<<
@@ -56,7 +92,7 @@
 3 1
 2 2
 1 3
-0 0
+-1
 <<<<<<<<
 
 >>>>>>>> 06 seis
@@ -66,7 +102,7 @@
 1 4
 2 3
 3 2
-0 0
+-1
 2 2
 4 1
 1 3

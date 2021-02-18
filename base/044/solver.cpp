@@ -1,6 +1,5 @@
 
 #include <iostream>
-#include <cstdlib>
 #include <sstream>
 using namespace std;
 
@@ -8,17 +7,16 @@ struct Node{
     int value;
     Node * left;
     Node * right;
-    Node(int _value = 0, Node * _left = nullptr, Node * _right = nullptr){
-        this->value = _value;
-        this->left = _left;
-        this->right = _right;
+    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){
+        this->value = value;
+        this->left = left;
+        this->right = right;
     }
 };
 
 struct BTree{
-    Node * root;
+    Node * root {nullptr};
     BTree(){
-        this->root = nullptr;
     }
 
     void clone(stringstream& ss, Node ** elo){
@@ -38,37 +36,68 @@ struct BTree{
         clone(ss, &root);
     }
 
-    void _destroy(Node * node){
+    void __destroy(Node * node){
         if(node == nullptr)
             return;
-        _destroy(node->left);
-        _destroy(node->right);
+        __destroy(node->left);
+        __destroy(node->right);
         delete node;
     }
 
     ~BTree(){
-        _destroy(this->root);
+        __destroy(this->root);
     }
-    
-
-
-
 
     void show(Node * node, int nivel){
         if(node == nullptr){
             cout << string(nivel, '.') << "#\n";
             return;
         }
+        show(node->left, nivel + 1);
         cout << string(nivel, '.') << node->value << "\n";
         if(node->left == nullptr && node->right == nullptr)
             return;
-        show(node->left, nivel + 1);
         show(node->right, nivel + 1);
     }
 
     void show(){
         show(root, 0);
     }
+
+    void bshow(){
+        __bshow(this->root);
+    }
+    
+    void __bshow(Node * node, string heranca = ""){
+        if(node != nullptr && (node->left != nullptr || node->right != nullptr))
+            __bshow(node->left , heranca + "l");
+        for(int i = 0; i < (int) heranca.size() - 1; i++)
+            cout << (heranca[i] != heranca[i + 1] ? "│   " : "    ");
+        if(heranca != "")
+            cout << (heranca.back() == 'l' ? "┌───" : "└───");
+        if(node == nullptr){
+            cout << "#" << endl;
+            return;
+        }
+        cout << node->value << endl;
+        if(node != nullptr && (node->left != nullptr || node->right != nullptr))
+            __bshow(node->right, heranca + "r");
+    }
+
+    void __show_in_order(Node * node){
+        if(node == nullptr)
+            return;
+        __show_in_order(node->left);
+        cout << node->value << " ";
+        __show_in_order(node->right);
+    }
+
+    void show_in_order(){
+        cout << "[ ";
+        __show_in_order(root);
+        cout << "]\n";
+    }
+
 };
 
 
@@ -78,27 +107,6 @@ int main(){
     string line;
     getline(cin, line);
     BTree bt(line);
-    bt.show();
-/* 
-    {
-        stringstream ss;
-        ss << "hoje, dia " << 13 << " estou pesando " << 85.10 << "kilos\n";
-        cout << ss.str();
-    }
-    {
-        stringstream ss("banana 1 bananeira goiaba 4 goiabeira uva 6 parreira");
-        string fruta;
-        int qtd;
-        string fruteira;
-        while(ss >> fruta >> qtd >> fruteira){
-            cout << fruta << qtd << fruteira << "\n";
-        }
-
-        float valor;
-        stringstream("5.42") >> valor;
-    }     
- */
-
-
-
+    //bt.show();
+    bt.show_in_order();
 }
