@@ -63,6 +63,7 @@
 - [@046 L2 - Soma dos nós e Menor valor](base/046/Readme.md) 
 - [@045 L2 - Find, Altura e Profundidade](base/045/Readme.md) 
 - [@022 L2 - Caminhos para o nó](base/022/Readme.md) 
+- [@048 L2 - Carregando árvore a partir de String - Splitted files](base/048/Readme.md) 
 
 ### 07. Sort
 - [@021 TODO: Sort Quick Sort](base/021/Readme.md)  [](#todo #empty)
