@@ -1,0 +1,8 @@
+{
+    "keep": [
+        "solver.cpp",
+        "lib.hpp"
+    ],
+    "system": null,
+    "required": "student.cpp"
+}
