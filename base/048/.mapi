@@ -1,8 +1,10 @@
 {
     "keep": [
-        "solver.cpp",
+        "main.cpp",
         "lib.hpp"
     ],
-    "system": null,
+    "upload": [
+        "solver.cpp"
+    ],
     "required": "student.cpp"
 }
