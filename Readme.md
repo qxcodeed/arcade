@@ -44,6 +44,7 @@
 - [@024 L3 - Simulação Fila Bancária](base/024/Readme.md) 
 - [@015 L3 - Lista Editor de texto I](base/015/Readme.md) 
 - [@023 L4 - Lista Editor de texto II - Undo e Redo](base/023/Readme.md) 
+- [@026 Build Linked List - push and pop](base/026/Readme.md) 
 - [@018 TODO: Build Lista Simples](base/018/Readme.md) 
 
 ### 04. Stack

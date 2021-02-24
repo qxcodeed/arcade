@@ -1,2 +1,3 @@
 kkmanual Readme.md
-toc Readme.md
+mdpp Readme.md
+mdpp base/* -q

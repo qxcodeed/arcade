@@ -1,0 +1,10 @@
+{
+    "keep": [
+        "lib.hpp",
+        "main.cpp"
+    ],
+    "upload": [
+        "solver.cpp"
+    ],
+    "required": "student.cpp"
+}

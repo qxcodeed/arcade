@@ -22,24 +22,21 @@
 ## Arquivos
 ### Código do Estudante
 <!--ADD student.cpp cpp-->
-<!--BEGIN-->
 ```cpp
 #include <sstream>
 #include <iostream>
 #include "lib.hpp"
 using namespace std;
 
-
 BTree::BTree(string serial){
     //TODO
 }
 ```
-<!---END--->
+<!--ADD_END-->
 
 
 ### lib.hpp
 <!--ADD lib.hpp cpp-->
-<!--BEGIN-->
 ```cpp
 #pragma once
 #include <iostream>
@@ -70,12 +67,11 @@ private: //recursive
     void show_in_order(Node * node);
 };
 ```
-<!---END--->
+<!--ADD_END-->
 
 
 ### main.cpp
 <!--ADD main.cpp cpp-->
-<!--BEGIN-->
 ```cpp
 #include <iostream>
 #include <sstream>
@@ -117,7 +113,7 @@ void BTree::show_in_order(Node * node){
     show_in_order(node->right);
 }
 ```
-<!---END--->
+<!--ADD_END-->
 
 
 
