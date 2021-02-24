@@ -1,40 +1,23 @@
-
-#include <iostream>
+//tk main.cpp
 #include <sstream>
+#include <iostream>
 #include "lib.hpp"
-
 using namespace std;
 
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    bt.show_in_order();
-}
-
-BTree::~BTree(){
-    destroy(this->root);
-}
-
-void BTree::show_in_order(){
-    cout << "[ ";
-    show_in_order(root);
-    cout << "]\n";
-}
-
-void BTree::destroy(Node * node){
-    if(node == nullptr)
+void clone(stringstream& ss, Node ** elo){
+    string value;
+    ss >> value;
+    if(value == "#")
         return;
-    destroy(node->left);
-    destroy(node->right);
-    delete node;
+    int num;
+    stringstream(value) >> num;
+    *elo =  new Node(num);
+    clone(ss, &(**elo).left);
+    clone(ss, &(*elo)->right);
 }
-    
 
-void BTree::show_in_order(Node * node){
-    if(node == nullptr)
-        return;
-    show_in_order(node->left);
-    cout << node->value << " ";
-    show_in_order(node->right);
+BTree::BTree(string serial){
+    stringstream ss(serial);
+    clone(ss, &root);
 }
+
