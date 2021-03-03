@@ -2,10 +2,8 @@
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
+- [lib](#lib)
 - [Arquivos](#arquivos)
-    - [Código do Estudante](#código-do-estudante)
-    - [lib.hpp](#libhpp)
-    - [main.cpp](#maincpp)
 - [Testes](#testes)
 <!--TOC_END-->
 
@@ -19,23 +17,8 @@
 - A saída é a árvore percorrida in-order, mas já está implementado.
 
 
-## Arquivos
-### Código do Estudante
-<!--ADD student.cpp cpp-->
-```cpp
-#include <sstream>
-#include <iostream>
-#include "lib.hpp"
-using namespace std;
-
-BTree::BTree(string serial){
-    //TODO
-}
-```
-<!--ADD_END-->
-
-
-### lib.hpp
+## lib
+- lib.hpp
 <!--ADD lib.hpp cpp-->
 ```cpp
 #pragma once
@@ -69,52 +52,10 @@ private: //recursive
 ```
 <!--ADD_END-->
 
-
-### main.cpp
-<!--ADD main.cpp cpp-->
-```cpp
-#include <iostream>
-#include <sstream>
-#include "lib.hpp"
-
-using namespace std;
-
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    bt.show_in_order();
-}
-
-BTree::~BTree(){
-    destroy(this->root);
-}
-
-void BTree::show_in_order(){
-    cout << "[ ";
-    show_in_order(root);
-    cout << "]\n";
-}
-
-void BTree::destroy(Node * node){
-    if(node == nullptr)
-        return;
-    destroy(node->left);
-    destroy(node->right);
-    delete node;
-}
-    
-
-void BTree::show_in_order(Node * node){
-    if(node == nullptr)
-        return;
-    show_in_order(node->left);
-    cout << node->value << " ";
-    show_in_order(node->right);
-}
-```
-<!--ADD_END-->
-
+## Arquivos
+- [main.cpp](main.cpp)
+- [student.cpp](student.cpp)
+- [lib.h](lib.h)
 
 
 ## Testes
