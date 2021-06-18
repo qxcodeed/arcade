@@ -28,6 +28,7 @@
 - [@003 L1 - Queimada V1 - Recursão](base/003/Readme.md) 
 - [@004 L2 - Triângulo da soma](base/004/Readme.md) 
 - [@008 L2 - Labirinto I - Fuga recursiva](base/008/Readme.md) 
+- [@002 L3 - Backtracking](base/002/Readme.md) 
 
 ### 02. Arrays
 - [@050 L1 - Vetor de consulta](base/050/Readme.md) 
@@ -72,7 +73,6 @@
 
 ### 08. Hash
 
-
 ## Trabalhos
 
 ### 01. Vector and List
@@ -102,4 +102,3 @@
 - [@141 Estrutura de Dados e Algoritmos Ementa    ](base/141/Readme.md)  [](#ready)
 - [@140 Apostilas de ED da Puc Rio  ](base/140/Readme.md) 
 - [@143 Exemplos  Lista dupla com shared_ptr](base/143/Readme.md) 
-- [@002 Backtracking](base/002/Readme.md) 

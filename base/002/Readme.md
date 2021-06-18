@@ -1,8 +1,8 @@
-## Backtracking
+## L3 - Backtracking
 
 Para treinar nossa técnica de backtracking, vamos fazer um exercício simples.
 
-Seja uma linha contendo uma string onde cada char da string pode ter dois valores:
+Seja uma linha de dados contendo uma string onde cada char da string pode ter duas possibilidades:
 - um dígito entre 0 e 9.
 - um .
 
