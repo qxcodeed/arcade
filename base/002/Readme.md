@@ -32,8 +32,6 @@ Se nosso valor de proximidade for 1, basta que os elementos ao lado não sejam i
 - Proximidade p, 0 > p > 100
 
 
-```
-
 ___
 Testes:
 
