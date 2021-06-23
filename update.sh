@@ -10,7 +10,7 @@ cd ..
 cp arcade/Readme.md moodle
 
 #updating
-kkmirror arcade moodle qxcodefup moodle
+kkmirror arcade moodle qxcodeed moodle
 
 cd moodle
 kkmanual --root Readme.md
