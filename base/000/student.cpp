@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 const int MORTO = 0;
-#ifndef PROF
+
 //acha o proximo elemento vivo a partir de inicio + 1
 int achar_vivo(int vet[], int size, int inicio){
     int pos = (inicio + 1) % size;
@@ -10,8 +10,6 @@ int achar_vivo(int vet[], int size, int inicio){
         pos = (pos + 1) % size;
     return pos;
 }
-#else
-#endif
 
 void mostrar_vetor(int vet[], int size, int e){
     printf("[");
@@ -24,7 +22,6 @@ void mostrar_vetor(int vet[], int size, int e){
     printf(" ]\n");
 }
 
-#ifndef PROF
 int main(){
     int size = 0;
     scanf("%d", &size);
@@ -43,6 +40,4 @@ int main(){
         mostrar_vetor(vet, size, esc);
     }
 }
-#else
 
-#endif

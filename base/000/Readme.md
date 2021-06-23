@@ -20,16 +20,14 @@ ___
 ## Implementação usando vetor
 ### Abordagem I
 - marcando os elementos que morrem.
-    - crie um vetor auxiliar de bool
-    - toda vez que alguém morrer, marque no vetor
-    - procure pelo próximo elemento vivo
+    - toda vez que alguém morrer, marque 0 no vetor
+    - procure pelo próximo elemento vivo a diretia
 ```c
 int elementos[size];
-int vivos[bool];
 //matar equivale a fazer
 vivos[pos] = false;
 //o próximo vivo seria uma busca pelo próximo vivo depois de pos
-int prox = procurar_vivo(elementos, vivos, size, pos);
+int prox = procurar_vivo(elementos, size, pos);
 ```
 
 
