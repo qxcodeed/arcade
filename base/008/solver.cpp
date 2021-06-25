@@ -18,7 +18,7 @@ bool procurar_saida(vector<string> &mat, Pos atual, Pos fim){
         get(mat, atual) = '.';
         return true;
     }
-    if(get(mat, atual) != ' ')
+    if(get(mat, atual) != '_')
         return false; //parede ou ja foi visitado
     get(mat, atual) = '.';
     for(Pos viz : get_vizinhos(atual)){
@@ -35,7 +35,7 @@ void remover_erros(vector<string> &mat){
     for(int l = 0; l < nl; l++)
         for(int c = 0; c < nc; c++)
             if(mat[l][c] == 'x')
-                mat[l][c] = ' ';
+                mat[l][c] = '_';
 }
 
 int main(){
@@ -53,11 +53,11 @@ int main(){
     for(int l = 0; l < nl; l++){
         for(int c = 0; c < nc; c++){
             if(mat[l][c] == 'I'){
-                mat[l][c] = ' ';
+                mat[l][c] = '_';
                 inicio = Pos {l, c};
             }
             if(mat[l][c] == 'F'){
-                mat[l][c] = ' ';
+                mat[l][c] = '_';
                 fim = Pos {l, c};
             }
         }
