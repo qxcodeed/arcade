@@ -25,6 +25,10 @@ parser.add_argument("-q", "--question", action='store_true')
 parser.add_argument("-i", "--info", action='store_true')
 args = parser.parse_args()
 
+if args.question is False and args.info is False:
+    print("use -q or -i")
+    exit(1)
+
 if args.question:
     main(0)
 if args.info:

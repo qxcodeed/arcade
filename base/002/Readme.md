@@ -13,13 +13,20 @@ Nosso problema tem 2 parâmetros: a linha com os valores e o valor de `proximida
 
 Se nosso valor de proximidade for 1, basta que os elementos ao lado não sejam iguais. Se a proximidade for 2, os elementos até duas casas de distância não podem ser iguais. 
 
-- Seja a string "..0", com proximidade 1 e os números [0, 1] é possível resolver esse problema, sendo a resposta "010".
+- Seja a string "..0", com proximidade 1.
+    - Para N igual a 1 a resposta será "010".
 
-- Seja a string "1.0", com proximidade 1 e os números [0, 1] não é possível resolver esse problema. Sendo necessário os N == 2, para ter como resposta "120".
+- Seja a string "1.0", com proximidade 1.
+    - Para N igual a 1 não é não é possível resolver esse problema.
+    - Para N igual a 2, a resposta será "120".
 
-- Seja a string "..0..", com proximidade 2. Isso significa que nenhum dos valores a ser preenchidos, pode ter valor 0. Possibilidade de solução seriam "12012" ou "21021", o que faz N == 2 a resposta.
+- Seja a string "..0..", com proximidade 2. 
+    - Isso significa que nenhum dos valores a ser preenchidos, pode ter valor 0. 
+    - Para N igual a 2 temos várias possibilidades de solução:
+        - "12012" ou "21021".
 
-- Para a string "0...1.30..2" e proximidade 3, N == 4 é o menor N e "02341230142" uma possível solução.
+- Seja a string "0...1.30..2" e proximidade 3. 
+    - N == 4 é o menor N e "02341230142" uma possível solução.
 
 ## Entrada e Saída
 - Entrada

@@ -25,7 +25,7 @@
 #include <iostream>
 using namespace std;
 
-struct Node{
+struct Node {
     int value;
     Node * left;
     Node * right;
@@ -36,18 +36,13 @@ struct Node{
     }
 };
 
-class BTree{
+class BTree {
 public:
     Node * root {nullptr};
-    BTree(string serial); //lib.hpp
+    BTree(string serial);
     ~BTree();
-    void bshow();
-    void show_in_order();
-
-private: //recursive
-    void destroy(Node * node);
-    void bshow(Node * node, string heranca);
-    void show_in_order(Node * node);
+    std::string format();
+    std::string in_order();
 };
 ```
 <!--ADD_END-->
@@ -56,6 +51,7 @@ private: //recursive
 - [main.cpp](main.cpp)
 - [student.cpp](student.cpp)
 - [lib.h](lib.h)
+- [lib.cpp](lib.cpp)
 
 
 ## Testes

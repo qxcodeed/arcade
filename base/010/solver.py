@@ -46,11 +46,11 @@ def destroy(line, lim, prox):
             line = [v for v in line2]
     return line
 
-# code = generate(3, 3, 7)
-# print(code)
-# line = destroy([c for c in code], 3, 3)
-# print(line)
-# exit(1)
+code = generate(3, 3, 7)
+print(code)
+line = destroy([c for c in code], 3, 3)
+print(line)
+exit(1)
 
 line = input()
 line = [c for c in line]
@@ -60,6 +60,6 @@ for lim in range(1, 10):
     answers = solver(line, 0, lim, prox)
     if len(answers) > 0:
         print(lim)
-        # print("\n".join(answers))
+        print("\n".join(answers))
         break
 

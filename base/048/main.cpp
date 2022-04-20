@@ -2,11 +2,9 @@
 #include <sstream>
 #include "lib.hpp"
 
-using namespace std;
-
 int main(){
-    string line;
-    getline(cin, line);
+    std::string line;
+    std::getline(cin, line);
     BTree bt(line);
-    bt.show_in_order();
+    std::cout << bt.in_order() << '\n';
 }

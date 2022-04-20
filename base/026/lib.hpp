@@ -7,7 +7,7 @@ using namespace std;
 struct Node{
     int value;
     Node * next;
-    Node(int value = 0, Node * next = nullptr){
+    Node(int value = 0, Node * next = nullptr) {
         this->value = value;
         this->next = next;
     }

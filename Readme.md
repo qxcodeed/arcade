@@ -102,3 +102,4 @@
 - [@141 Estrutura de Dados e Algoritmos Ementa    ](base/141/Readme.md)  [](#ready)
 - [@140 Apostilas de ED da Puc Rio  ](base/140/Readme.md) 
 - [@143 Exemplos  Lista dupla com shared_ptr](base/143/Readme.md) 
+- [@010]

@@ -1,9 +1,9 @@
 #include <sstream>
 #include <iostream>
 #include "lib.hpp"
-using namespace std;
 
-BTree::BTree(string serial){
+BTree::BTree(string serial) {
+    (void) serial;
     //TODO
 }
 

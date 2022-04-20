@@ -1,23 +1,24 @@
-//tk main.cpp
 #include <sstream>
 #include <iostream>
+#include <functional>
 #include "lib.hpp"
-using namespace std;
 
-void clone(stringstream& ss, Node ** elo){
-    string value;
-    ss >> value;
-    if(value == "#")
-        return;
-    int num;
-    stringstream(value) >> num;
-    *elo =  new Node(num);
-    clone(ss, &(**elo).left);
-    clone(ss, &(*elo)->right);
-}
+BTree::BTree(std::string serial) {
+    std::stringstream ss(serial);
+    
+    std::function <void (Node **)>
+    clone = [&clone, &ss](auto ** elo) {
+        string value;
+        ss >> value;
+        if(value == "#")
+            return;
+        int num;
+        stringstream(value) >> num;
+        *elo =  new Node(num);
+        clone(&(**elo).left);
+        clone(&(*elo)->right);
+    };
 
-BTree::BTree(string serial){
-    stringstream ss(serial);
-    clone(ss, &root);
+    clone(&root);
 }
 
