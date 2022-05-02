@@ -37,6 +37,8 @@ $end
 #include <sstream>
 using namespace std;
 
+//double free corruption
+
 struct Vector{
     int capacity {0}; //esse {} é o modo de inicializar default do c++ a partir do c++11
     int size {0};
