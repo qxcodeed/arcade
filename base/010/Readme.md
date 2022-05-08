@@ -1,5 +1,7 @@
 ## L2 - {onlinejudge} Proximidade - achar resposta
 
+![](__capa.jpg)
+
 - Seja uma sequencia inicial com uma string formada por dígitos de 0 a 9 e _
 - Seja um número de proximidade P.
 

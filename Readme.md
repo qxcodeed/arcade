@@ -3,11 +3,11 @@
 
 ## Links []()
 <!--TOC_BEGIN-->
-- [Moodle](#moodle)
-    - [Recursão](#recursão)
-    - [Backtracking](#backtracking)
+- [Aquecimento](#aquecimento)
+- [Recursão](#recursão)
+- [Backtracking](#backtracking)
     - [Arrays](#arrays)
-    - [03. List](#03-list)
+    - [List](#list)
     - [04. Stack](#04-stack)
     - [05. Queue](#05-queue)
     - [06. Tree](#06-tree)
@@ -22,26 +22,29 @@
     - [06. Informativo](#06-informativo)
 <!--TOC_END-->
 
-## Moodle
 
-### Recursão
+## Aquecimento
+\________________________ | \_______________________________________________
+------------------------- | ------------------------------------------------
+![](base/106/.thumb.jpg) | [@106 L1 - {interactive} Random matriz](base/106/Readme.md)
+![](base/115/.thumb.jpg) | [@115 L1 - {interactive} Visualizando mat com xpaint {optional}](base/115/Readme.md)
+
+## Recursão
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/005/.thumb.jpg) | [@005 L1 - {onlinejudge} Operações básicas](base/005/Readme.md)
 ![](base/003/.thumb.jpg) | [@003 L1 - {onlinejudge} Queimada](base/003/Readme.md)
 ![](base/004/.thumb.jpg) | [@004 L2 - {onlinejudge} Triângulo da soma](base/004/Readme.md)
-![](base/106/.thumb.jpg) | [@106 L1 - {interactive} Random matriz](base/106/Readme.md)
-![](base/115/.thumb.jpg) | [@115 L1 - {interactive} Visualizando mat com xpaint {optional}](base/115/Readme.md)
 ![](base/122/.thumb.jpg) | [@122 L2 - {interactive} Desenhando Fractais com xpaint {optional}](base/122/Readme.md)
 
 
-### Backtracking
+## Backtracking
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/110/.thumb.jpg) | [@110 L2 - {interactive} Criando labirinto](base/110/Readme.md)
 ![](base/137/.thumb.jpg) | [@137 L3 - {interactive} Criando labirinto sem quinas {optional}](base/137/Readme.md)
 ![](base/008/.thumb.jpg) | [@008 L2 - {onlinejudge} Fuga do labirinto](base/008/Readme.md)
-![](base/010/.thumb.jpg) | [@010 L3 - {onlinejudge} Proximidade - achar resposta](base/010/Readme.md)
+![](base/010/.thumb.jpg) | [@010 L2 - {onlinejudge} Proximidade - achar resposta](base/010/Readme.md)
 ![](base/002/.thumb.jpg) | [@002 L3 - {onlinejudge} Proximidade - menor P](base/002/Readme.md)
 ![](base/028/.thumb.jpg) | [@028 L2 - {onlinejudge} Sudoku](base/028/Readme.md)
 
@@ -57,15 +60,15 @@
 ![](base/000/.thumb.jpg) | [@000 L2 - {onlinejudge} Princesa V1 - Implementação em vetor](base/000/Readme.md)
 ![](base/001/.thumb.jpg) | [@001 L2 - {onlinejudge} Princesa V2 - Implementação em vetor](base/001/Readme.md)
 
-### 03. List
+### List
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/013/.thumb.jpg) | [@013 L2 - Princesa V1 - Implementação usando o std::list](base/013/Readme.md)
-![](base/014/.thumb.jpg) | [@014 L2 - Princesa V2 - Implementação utilizando std::list](base/014/Readme.md)
-![](base/024/.thumb.jpg) | [@024 L3 - Simulação Fila Bancária](base/024/Readme.md)
-![](base/015/.thumb.jpg) | [@015 L3 - Lista Editor de texto I](base/015/Readme.md)
-![](base/023/.thumb.jpg) | [@023 L4 - Lista Editor de texto II - Undo e Redo](base/023/Readme.md)
-![](base/026/.thumb.jpg) | [@026 Build Linked List - push and pop](base/026/Readme.md)
+![](base/013/.thumb.jpg) | [@013 L2 - {onlinejudge} Princesa V1 - Implementação usando o std::list](base/013/Readme.md)
+![](base/014/.thumb.jpg) | [@014 L2 - {onlinejudge} Princesa V2 - Implementação usando std::list](base/014/Readme.md)
+![](base/024/.thumb.jpg) | [@024 L3 - {onlinejudge} Simulação Fila Bancária](base/024/Readme.md)
+![](base/015/.thumb.jpg) | [@015 L3 - {onlinejudge} Lista Editor de texto I](base/015/Readme.md)
+![](base/023/.thumb.jpg) | [@023 L4 - {onlinejudge} Lista Editor de texto II - Undo e Redo](base/023/Readme.md)
+![](base/026/.thumb.jpg) | [@026 L1 - {onlinejudge} Build Linked List - push and pop](base/026/Readme.md)
 ![](base/018/.thumb.jpg) | [@018 TODO: Build Lista Simples](base/018/Readme.md)
 
 ### 04. Stack
