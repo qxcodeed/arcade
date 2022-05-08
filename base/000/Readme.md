@@ -1,7 +1,8 @@
-## L2 - Princesa V1 - Implementação em vetor
+## L2 - {onlinejudge} Princesa V1 - Implementação em vetor
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
+[](solver.cpp)
 Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.
 
 Nosso objetivo aqui será apenas implementar seu funcionamento.

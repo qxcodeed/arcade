@@ -38,7 +38,7 @@ struct List{
     }
 
     void remove(int value){
-        for(auto node = head->next; node != tail; node = node->next){
+        for (auto node = head->next; node != tail; node = node->next){
             if(node->value == value){
                 node->prev.lock()->next = node->next;
                 node->next->prev = node->prev;

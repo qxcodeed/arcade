@@ -1,4 +1,4 @@
-## L2 - Triângulo da soma
+## L2 - {onlinejudge} Triângulo da soma
 
 ![](__capa.jpg)
 

@@ -1,9 +1,10 @@
-## L2 - Construa um Vetor dinâmico I - Orientado a Objetos
+## L2 - {onlinejudge} Construa um Vetor dinâmico I - Orientado a Objetos
 
 ![](__capa.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 - Ele deve ser iniciado utilizando alocação dinâmica e conter além do vetor de dados, `size` e `capacity` que definem o tamanho atual e a capacidade do vetor.
+- Utilize o valgrind ao final para verificar se você desalocou corretamente todos os blocos de memória.
 
 ```bash
 #__case create

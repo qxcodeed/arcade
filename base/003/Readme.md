@@ -1,4 +1,4 @@
-## L1 - Queimada V1 - Recursão
+## L1 - {onlinejudge} Queimada
 
 ![](__capa.jpg)
 

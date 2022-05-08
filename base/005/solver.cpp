@@ -10,7 +10,8 @@ std::string fmt(std::vector<int> vet) {
 #ifdef PROF
     std::stringstream ss;
 
-    std::function<void(vet_it, vet_it)>
+    std::function<void(vet_it, vet_it)> fn;
+    
     fn = [&fn, &ss](vet_it inicio, vet_it fim) {
         if (inicio == fim)
             return;
@@ -31,7 +32,8 @@ std::string fmt_rev(std::vector<int> vet) {
 #ifdef PROF
     std::stringstream ss;
 
-    std::function<void(vet_it, vet_it)>
+    std::function<void(vet_it, vet_it)> fn;
+
     fn = [&fn, &ss](vet_it inicio, vet_it fim) {
         if (inicio == fim)
             return;

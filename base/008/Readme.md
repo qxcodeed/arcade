@@ -1,4 +1,4 @@
-L2 - Labirinto I - Fuga recursiva
+L2 - {onlinejudge} Fuga do labirinto
 
 ![](__capa.jpg)
 

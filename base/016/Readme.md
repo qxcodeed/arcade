@@ -1,9 +1,10 @@
-## L2 - Construa um Vetor dinâmico I - Procedural
+## L2 - {onlinejudge} Construa um Vetor dinâmico I - Procedural
 
 ![](__capa.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 - Ele deve ser iniciado utilizando alocação dinâmica e conter além do vetor de dados, `size` e `capacity` que definem o tamanho atual e a capacidade do vetor.
+- Verifique no final utilizando o valgrind se você desalocou corrretamente todos os blocos de memória.
 
 ```bash
 #__case create
