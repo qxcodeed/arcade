@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Proximidade - achar resposta
+## L2 - ⚖ {onlinejudge} Proximidade - achar resposta
 
 ![](__capa.jpg)
 

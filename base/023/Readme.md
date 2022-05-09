@@ -1,4 +1,4 @@
-## L4 - {onlinejudge} Lista Editor de texto II - Undo e Redo
+## L4 - ⚖ {onlinejudge} Lista Editor de texto II - Undo e Redo
 
 ![](capa.jpg)
 

@@ -23,7 +23,7 @@ int main() {
     x_open(854, 480, "img_tree");
     x_pen_set_angle(90);
     x_pen_set_pos(428, 470);
-    draw_tree(130);
+    draw_tree(120);
     x_save();
     x_close();
 }

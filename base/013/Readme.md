@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Princesa V1 - Implementação usando o std::list
+## L2 - ⚖ {onlinejudge} Princesa V1 - Implementação usando o std::list
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

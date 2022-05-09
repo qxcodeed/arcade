@@ -1,4 +1,4 @@
-## L3 - {onlinejudge} Proximidade - menor P
+## L3 - ⚖ {onlinejudge} Proximidade - menor P
 
 Para treinar nossa técnica de backtracking, vamos fazer um exercício simples.
 

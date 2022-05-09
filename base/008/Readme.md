@@ -1,4 +1,4 @@
-L2 - {onlinejudge} Fuga do labirinto
+L2 - ⚖ {onlinejudge} Fuga do labirinto
 
 ![](__capa.jpg)
 

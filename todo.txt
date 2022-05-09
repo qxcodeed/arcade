@@ -1,10 +1,5 @@
-Labirinto Resolvendo com pilha
-Build Fila em vetor (Buffer)  
-5.3 build lista dupla
-Hash com linear probing
-Build Hash com Lista
-build bstree
-fila floodfill
-fila pathfinding
-merge sort
-insertion sort em lista
+colocar símbolos em unicode ao invés de interactive e onlinejudge
+colocar símbolos para explicação em vídeo e resolução em vídeo
+
+testar vetor de referencias e vetor de ponteiros
+vetor de referencias com [pos, ref]

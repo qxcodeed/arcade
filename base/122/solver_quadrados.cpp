@@ -31,8 +31,8 @@ void quadrados(int x, int y, float lado){
 
 
 int main() {
-    x_open(600, 600, "img_quadrados");
-    quadrados(160, 160, 300);
+    x_open(854, 480, "img_quadrados");
+    quadrados(300, 125, 250);
     x_save();
     x_close();
 }

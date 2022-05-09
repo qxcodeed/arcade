@@ -1,4 +1,4 @@
-## L3 - {onlinejudge} Simulação Fila Bancária
+## L3 - ⚖ {onlinejudge} Simulação Fila Bancária
 
 ![](capa.png)
 
