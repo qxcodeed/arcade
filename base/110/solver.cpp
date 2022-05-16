@@ -40,26 +40,26 @@ struct Mapa {
 
 
 void destroy(Mapa& mat, Pos pos, Pos from) {
-    if (!mat.check(pos, '#'))
+    // is possible solution
+    if (!mat.check(pos, '#'))              // nao eh parede
         return;
-
+    
     for (auto neib : pos.get_neib())
-        if (neib != from && mat.check(neib, '#'))
+        if (neib != from && !mat.check(neib, '#')) //tem algum vizinho que não seja a origem que esteja furado
             return;
-
-    // auto exists = [](auto vet, auto value) { return std::find(begin(vet), end(vet), value) != end(vet); };
-    // for (auto neib : pos.get_diag())
-    //     if (!exists(from.get_neib(), neib) && !mat.check(neib, '#'))
-    //         return;
     
     mat[pos] = ' ';
     for (Pos neib : shuffle(pos.get_neib()))
         destroy(mat, neib, pos);
 }
 
-int main() {
-    Mapa mat(15, 80, '#');
+int main(int argc, char * argv[]) {
+    int nl {15}, nc {80};
+    if (argc > 2) {
+        std::istringstream(argv[1]) >> nl;
+        std::istringstream(argv[2]) >> nc;
+    }
+    Mapa mat(nl, nc, '#');
     destroy(mat, Pos(1, 1), Pos(1, 1));
     std::cout << mat.str();
-
 }

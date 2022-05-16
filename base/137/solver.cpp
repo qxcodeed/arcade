@@ -3,6 +3,9 @@
 #include <sstream>
 #include <vector>
 
+// char WALL = '█';
+char WALL = '#';
+
 struct Pos {
     int l, c;
     Pos(int l, int c): l(l), c(c){}
@@ -32,44 +35,45 @@ struct Mapa {
     bool check(Pos pos, char value) { return inside(pos) && (*this)[pos] == value; }
     std::string str() {
         std::stringstream ss;
-        for (int l = 0; l < nl; l++)
-            ss << data[l] << '\n';
+        for (int l = 0; l < nl; l++) {
+            for (int c = 0; c < nc; c++)
+                ss << (data[l][c] == WALL ? "█" : std::string(1, data[l][c]));
+            ss << '\n';
+        }
         return ss.str();
     }
 };
 
+auto exists = [](auto vet, auto value) { 
+    return std::find(begin(vet), end(vet), value) != end(vet); 
+};
 
 void destroy(Mapa& mat, Pos pos, Pos from) {
-    if (!mat.check(pos, '#'))
+    // is possible solution
+    if (!mat.check(pos, WALL))              // nao eh parede
         return;
-
+    
     for (auto neib : pos.get_neib())
-        if (neib != from && mat.check(neib, '#'))
+        if (neib != from && !mat.check(neib, WALL)) //tem algum vizinho que não seja a origem que esteja furado
             return;
 
-    // auto exists = [](auto vet, auto value) { return std::find(begin(vet), end(vet), value) != end(vet); };
-    // for (auto neib : pos.get_diag())
-    //     if (!exists(from.get_neib(), neib) && !mat.check(neib, '#'))
-    //         return;
+    //tem alguma diagonal, que não seja vizinha da origem, que esteja aberta
+    for (auto neib : pos.get_diag())
+        if (!exists(from.get_neib(), neib) && !mat.check(neib, WALL))
+            return;
     
     mat[pos] = ' ';
     for (Pos neib : shuffle(pos.get_neib()))
         destroy(mat, neib, pos);
 }
 
-//./solver.out nl nc
 int main(int argc, char * argv[]) {
-    if (argc < 3) {
-        puts("./solver.out nl nc");
-        return 1;
+    int nl {15}, nc {80};
+    if (argc > 2) {
+        std::istringstream(argv[1]) >> nl;
+        std::istringstream(argv[2]) >> nc;
     }
-    int nl { }, nc { };
-    std::istringstream(argv[1]) >> nl;
-    std::istringstream(argv[2]) >> nc;
-
-    std::cout << nl << ' ' << nc << '\n';
-    Mapa mat(15, 80, '#');
+    Mapa mat(nl, nc, WALL);
     destroy(mat, Pos(1, 1), Pos(1, 1));
     std::cout << mat.str();
-
 }

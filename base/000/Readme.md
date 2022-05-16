@@ -1,4 +1,4 @@
-## L2 - ⚖ {onlinejudge} Princesa V1 - Implementação em vetor
+## L2 - {onlinejudge} Princesa V1 - Implementação em vetor
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

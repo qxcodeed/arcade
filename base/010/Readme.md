@@ -1,35 +1,36 @@
-## L2 - ⚖ {onlinejudge} Proximidade - achar resposta
+## L2 - {onlinejudge} Distância: resolução
 
 ![](__capa.jpg)
 
-- Seja uma sequencia inicial com uma string formada por dígitos de 0 a 9 e _
-- Seja um número de proximidade P.
+- Seja uma sequencia inicial uma string formada por dígitos e underlines `_`.
+- Seja um valor de distância D.
 
 Objetivos:
 - Você deve substituir todos os _ por dígitos seguindo as seguintes regras.
-    - Só pode utilizar dígitos de 0 até P, incluindo P.
-    - Qualquer dígito precisa estar a uma distância mínina de P casas de outra ocorrência dele mesmo.
+    - Só pode utilizar dígitos de 0 até D, incluindo D.
+    - Qualquer dígito precisa estar a uma distância mínima de D casas de outra ocorrência dele mesmo, tanto à esquerda como à direita.
 
-- Para cada problema existe uma única solução que resolve o problema e você deve encontrá-la.
+- Para cada problema, existe uma e somente uma solução.
 
 ## Entrada e Saída
 - Entrada
-    - 1a linha com a string de dados
-    - 2a linha com um inteiro contendo o valor de proximidade.
+    - 1a linha: sequência.
+    - 2a linha: valor de D.
 - Saída
     - A string solução do problema
 
 
 ## Limites
-- String de dados de tamanho t, 0 > t > 100
-- Proximidade p, 0 > p > 100
-
+- sequência de tamanho t, 0 > t > 100
+- 0 > D > 100
 
 ___
 Testes:
 
 ```
->>>>>>>> 02
+
+
+>>>>>>>>
 01_2_
 3
 ========
@@ -42,14 +43,14 @@ Testes:
 _0__231__5
 5
 ========
-2
+1045231045
 <<<<<<<<
 
 >>>>>>>> 01
 2__0______________3___________
 3
 ========
-1
+213021302130213021302130213021
 <<<<<<<<
 
 
@@ -57,7 +58,7 @@ _0__231__5
 0__32__41_
 5
 ========
-4
+0413250413
 <<<<<<<<
 
 

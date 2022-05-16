@@ -1,4 +1,4 @@
-## L2 - {interactive} Criando labirinto
+## L2 - {interactive} Labirinto: criação
 
 
 Crie um labirinto perfeito. Em um labirinto perfeito, entre dois pontos quaisquer existem apenas um caminho.

@@ -1,4 +1,4 @@
-# L1 - ⚖ {onlinejudge} Build Linked List - push and pop
+# L1 - {onlinejudge} Build Linked List - push and pop
 
 ![](capa.jpg)
 

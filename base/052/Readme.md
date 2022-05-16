@@ -1,4 +1,4 @@
-## L2 - ⚖ {onlinejudge} Fila de ingressos
+## L2 - {onlinejudge} Fila de ingressos
 
 ![](__capa.jpg)
 

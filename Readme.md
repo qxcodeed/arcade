@@ -32,44 +32,43 @@
 ## Recursão
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/005/.thumb.jpg) | [@005 L1 - ⚖ {onlinejudge} Operações básicas](base/005/Readme.md)
-![](base/003/.thumb.jpg) | [@003 L1 - ⚖ {onlinejudge} Queimada](base/003/Readme.md)
-![](base/004/.thumb.jpg) | [@004 L2 - ⚖ {onlinejudge} Triângulo da soma](base/004/Readme.md)
+![](base/005/.thumb.jpg) | [@005 L1 - {onlinejudge} Operações básicas](base/005/Readme.md)
+![](base/003/.thumb.jpg) | [@003 L1 - {onlinejudge} Queimada](base/003/Readme.md)
+![](base/004/.thumb.jpg) | [@004 L2 - {onlinejudge} Triângulo da soma](base/004/Readme.md)
 ![](base/122/.thumb.jpg) | [@122 L2 - {interactive} Desenhando Fractais com xpaint {optional}](base/122/Readme.md)
 
 
 ## Backtracking
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/110/.thumb.jpg) | [@110 L2 - {interactive} Criando labirinto](base/110/Readme.md)
-![](base/137/.thumb.jpg) | [@137 L3 - {interactive} Criando labirinto sem quinas {optional}](base/137/Readme.md)
-![](base/008/.thumb.jpg) | [@008 L2 - ⚖ {onlinejudge} Fuga do labirinto](base/008/Readme.md)
-![](base/010/.thumb.jpg) | [@010 L2 - ⚖ {onlinejudge} Proximidade - achar resposta](base/010/Readme.md)
-![](base/002/.thumb.jpg) | [@002 L3 - ⚖ {onlinejudge} Proximidade - menor P](base/002/Readme.md)
-![](base/028/.thumb.jpg) | [@028 L2 - ⚖ {onlinejudge} Sudoku](base/028/Readme.md)
+![](base/008/.thumb.jpg) | [@008 L2 - {onlinejudge} Labirinto: fuga](base/008/Readme.md)
+![](base/110/.thumb.jpg) | [@110 L2 - {interactive} Labirinto: criação](base/110/Readme.md)
+![](base/137/.thumb.jpg) | [@137 L3 - {interactive} Labirinto: criação sem quinas {optional}](base/137/Readme.md)
+![](base/010/.thumb.jpg) | [@010 L2 - {onlinejudge} Distância: resolução](base/010/Readme.md)
+![](base/002/.thumb.jpg) | [@002 L2 - {interactive} Distância: criação](base/002/Readme.md)
+![](base/028/.thumb.jpg) | [@028 L2 - {onlinejudge} Sudoku](base/028/Readme.md)
 
 
 ### Arrays
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/050/.thumb.jpg) | [@050 L1 - ⚖ {onlinejudge} Vetor de consulta](base/050/Readme.md)
-![](base/060/.thumb.jpg) | [@060 L1 - ⚖ {onlinejudge} Rotação à direira](base/060/Readme.md)
-![](base/052/.thumb.jpg) | [@052 L2 - ⚖ {onlinejudge} Fila de ingressos](base/052/Readme.md)
-![](base/016/.thumb.jpg) | [@016 L2 - ⚖ {onlinejudge} Construa um Vetor dinâmico I - Procedural](base/016/Readme.md)
-![](base/017/.thumb.jpg) | [@017 L2 - ⚖ {onlinejudge} Construa um Vetor dinâmico I - Orientado a Objetos](base/017/Readme.md)
-![](base/000/.thumb.jpg) | [@000 L2 - ⚖ {onlinejudge} Princesa V1 - Implementação em vetor](base/000/Readme.md)
-![](base/001/.thumb.jpg) | [@001 L2 - ⚖ {onlinejudge} Princesa V2 - Implementação em vetor](base/001/Readme.md)
+![](base/050/.thumb.jpg) | [@050 L1 - {onlinejudge} Vetor de consulta](base/050/Readme.md)
+![](base/060/.thumb.jpg) | [@060 L1 - {onlinejudge} Rotação à direira](base/060/Readme.md)
+![](base/052/.thumb.jpg) | [@052 L2 - {onlinejudge} Fila de ingressos](base/052/Readme.md)
+![](base/016/.thumb.jpg) | [@016 L2 - {onlinejudge} Construa um Vetor dinâmico I - Procedural](base/016/Readme.md)
+![](base/017/.thumb.jpg) | [@017 L2 - {onlinejudge} Construa um Vetor dinâmico I - Orientado a Objetos](base/017/Readme.md)
+![](base/000/.thumb.jpg) | [@000 L2 - {onlinejudge} Princesa V1 - Implementação em vetor](base/000/Readme.md)
+![](base/001/.thumb.jpg) | [@001 L2 - {onlinejudge} Princesa V2 - Implementação em vetor](base/001/Readme.md)
 
 ### List
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/013/.thumb.jpg) | [@013 L2 - ⚖ {onlinejudge} Princesa V1 - Implementação usando o std::list](base/013/Readme.md)
-![](base/014/.thumb.jpg) | [@014 L2 - ⚖ {onlinejudge} Princesa V2 - Implementação usando std::list](base/014/Readme.md)
-![](base/024/.thumb.jpg) | [@024 L3 - ⚖ {onlinejudge} Simulação Fila Bancária](base/024/Readme.md)
-![](base/015/.thumb.jpg) | [@015 L3 - ⚖ {onlinejudge} Lista Editor de texto I](base/015/Readme.md)
-![](base/023/.thumb.jpg) | [@023 L4 - ⚖ {onlinejudge} Lista Editor de texto II - Undo e Redo](base/023/Readme.md)
-![](base/026/.thumb.jpg) | [@026 L1 - ⚖ {onlinejudge} Build Linked List - push and pop](base/026/Readme.md)
-![](base/018/.thumb.jpg) | [@018 TODO: Build Lista Simples](base/018/Readme.md)
+![](base/013/.thumb.jpg) | [@013 L2 - {onlinejudge} Princesa V1 - Implementação usando o std::list](base/013/Readme.md)
+![](base/014/.thumb.jpg) | [@014 L2 - {onlinejudge} Princesa V2 - Implementação usando std::list](base/014/Readme.md)
+![](base/024/.thumb.jpg) | [@024 L3 - {onlinejudge} Simulação Fila Bancária](base/024/Readme.md)
+![](base/015/.thumb.jpg) | [@015 L3 - {onlinejudge} Lista Editor de texto I](base/015/Readme.md)
+![](base/023/.thumb.jpg) | [@023 L4 - {onlinejudge} Lista Editor de texto II - Undo e Redo](base/023/Readme.md)
+![](base/026/.thumb.jpg) | [@026 L1 - {onlinejudge} Build Linked List - push and pop](base/026/Readme.md)
 
 ### 04. Stack
 \________________________ | \_______________________________________________

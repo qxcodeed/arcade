@@ -1,4 +1,4 @@
-## L1 - ⚖ {onlinejudge} Queimada
+## L1 - {onlinejudge} Queimada
 
 ![](__capa.jpg)
 

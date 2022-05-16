@@ -1,6 +1,6 @@
-## L3 - ⚖ {onlinejudge} Simulação Fila Bancária
+## L3 - {onlinejudge} Simulação Fila Bancária
 
-![](capa.png)
+![](__capa.jpg)
 
 Neste trabalho, nós simularemos uma fila de banco. O nosso banco tem clientes que estão sendo atendidos no caixa e clientes em espera na fila. Cada cliente tem um nível de paciência (quantidade de tempo que ele pode esperar na fila) e uma quantidade de documentos a serem processados no caixa.
 

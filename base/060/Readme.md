@@ -1,4 +1,4 @@
-## L1 - ⚖ {onlinejudge} Rotação à direira
+## L1 - {onlinejudge} Rotação à direira
 
 Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserí-lo na primeira posição.
 

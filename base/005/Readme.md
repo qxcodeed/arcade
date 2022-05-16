@@ -1,4 +1,4 @@
-## L1 - ⚖ {onlinejudge} Operações básicas
+## L1 - {onlinejudge} Operações básicas
 
 ![](__capa.jpg)
 
