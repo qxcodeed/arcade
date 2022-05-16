@@ -1,10 +1,10 @@
-## L2 - {interactive} Distância: criação
+## L2 - {interactive} Limite: criação
 
 ![](__capa.jpg)
 
-Tente criar um gerador de problemas Distância. Você pode seguir a seguinte sequência:
+Tente criar um gerador de problemas Limite. Você pode seguir a seguinte sequência:
 
-- Utilize argc e argv para receber o tamanho da string e o valor de distância desejado.
+- Utilize argc e argv para receber o tamanho da string e o valor de limite desejado.
 
 ```
 ./solver 8 4

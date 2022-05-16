@@ -44,8 +44,8 @@
 ![](base/008/.thumb.jpg) | [@008 L2 - {onlinejudge} Labirinto: fuga](base/008/Readme.md)
 ![](base/110/.thumb.jpg) | [@110 L2 - {interactive} Labirinto: criação](base/110/Readme.md)
 ![](base/137/.thumb.jpg) | [@137 L3 - {interactive} Labirinto: criação sem quinas {optional}](base/137/Readme.md)
-![](base/010/.thumb.jpg) | [@010 L2 - {onlinejudge} Distância: resolução](base/010/Readme.md)
-![](base/002/.thumb.jpg) | [@002 L2 - {interactive} Distância: criação](base/002/Readme.md)
+![](base/010/.thumb.jpg) | [@010 L2 - {onlinejudge} Limite: resolução](base/010/Readme.md)
+![](base/002/.thumb.jpg) | [@002 L2 - {interactive} Limite: criação](base/002/Readme.md)
 ![](base/028/.thumb.jpg) | [@028 L2 - {onlinejudge} Sudoku](base/028/Readme.md)
 
 
