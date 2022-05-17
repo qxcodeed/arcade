@@ -5,7 +5,7 @@
 
 
 void square (float x, float y, float lado){
-    x_color_set(rand() % 256, rand() % 256, rand() % 256, 255);
+    //x_color_set(rand() % 256, rand() % 256, rand() % 256, 255);
 
     x_pen_set_pos(x, y);
     x_pen_set_angle(0);
