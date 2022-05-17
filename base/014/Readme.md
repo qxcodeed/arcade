@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Princesa V2 - std::list
+## L2 - {robot} princess v2 list
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

@@ -1,4 +1,4 @@
-L2 - {onlinejudge} Labirinto II - Fuga com pilha
+L2 - {robot} stack lab escape
 
 ![](__capa.jpg)
 

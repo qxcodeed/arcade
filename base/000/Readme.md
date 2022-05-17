@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Princesa V1 - vetor
+## L2 - {robot} princess v1
 
 [![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

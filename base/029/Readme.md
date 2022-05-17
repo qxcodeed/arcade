@@ -1,4 +1,4 @@
-## L2 - {interactive} Classe matrix
+## L2 - {human} matrix
 
 ![](__capa.jpg)
 

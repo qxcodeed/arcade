@@ -1,4 +1,4 @@
-## L1 - {onlinejudge} Queimada
+## L1 - {robot} burn
 
 ![](__capa.jpg)
 

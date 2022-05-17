@@ -1,4 +1,4 @@
-## L2 - {interactive} Desenhando Fractais com xpaint {optional}
+## L2 - {human} fractals {optional}
 
 
 - Utilize o exemplo do embuá ou da árvore e faça seus próprios fractais.

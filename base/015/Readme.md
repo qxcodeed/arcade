@@ -1,4 +1,4 @@
-## L3 - {onlinejudge} Editor I
+## L3 - {robot} editor
 ## @qxcode
 
 ![](__capa.jpg)

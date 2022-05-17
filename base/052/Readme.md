@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Fila de ingressos
+## L2 - {robot} erase all
 
 ![](__capa.jpg)
 

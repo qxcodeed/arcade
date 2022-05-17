@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Queimada V2 - Pilha
+## L2 - {robot} stack burn
 ## @qxcode
 
 ![](__capa.jpg)

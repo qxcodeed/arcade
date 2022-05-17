@@ -1,4 +1,4 @@
-## L1 - {interactive} Random matrix
+## L1 - {human} rand args
 
 Vamos preencher uma matriz aleatoriamente com árvores `#` e espaços vazios `.`.
 

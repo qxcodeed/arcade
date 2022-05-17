@@ -1,4 +1,4 @@
-L2 - {onlinejudge} Labirinto: fuga
+L2 - {robot} lab escape
 
 ![](__capa.jpg)
 

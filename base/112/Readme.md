@@ -1,4 +1,4 @@
-## L2 - {interactive} Algoritmo de criação de labirinto com pilha
+## L2 - {human} stack lab create
 ## @qxcode
 
 

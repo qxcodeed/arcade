@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Sudoku
+## L2 - {robot} sudoku
 
 ![](__capa.jpg)
 

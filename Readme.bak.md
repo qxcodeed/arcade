@@ -81,9 +81,9 @@
 ![](base/135/.thumb.jpg) | [@135 TODO (testar sfml e sdl) Lista Editor de texto interativo com sfml](base/135/Readme.md)
 
 ### 02. Recursion
-![](base/106/.thumb.jpg) | [@106 {interactive} L1 - argc, argv, rand: Gerando um matriz aleatória ](base/106/Readme.md)
-![](base/110/.thumb.jpg) | [@110 {interactive} L2 - Labirinto Criando com Recursão](base/110/Readme.md)
-![](base/137/.thumb.jpg) | [@137 {interactive} L3 - Criando labirinto sem quinas (desafio)](base/137/Readme.md)
+![](base/106/.thumb.jpg) | [@106 {human} L1 - argc, argv, rand: Gerando um matriz aleatória ](base/106/Readme.md)
+![](base/110/.thumb.jpg) | [@110 {human} L2 - Labirinto Criando com Recursão](base/110/Readme.md)
+![](base/137/.thumb.jpg) | [@137 {human} L3 - Criando labirinto sem quinas (desafio)](base/137/Readme.md)
 ![](base/111/.thumb.jpg) | [@111 TODO (colocar exemplo de loop com enter) Queimada V2 aleatória recursiva](base/111/Readme.md)
 ![](base/138/.thumb.jpg) | [@138 TODO (update xpaint) Labirinto Criando com Recursão video](base/138/Readme.md)
 ![](base/115/.thumb.jpg) | [@115 TODO (update xpaint) Visualizando mat com xpaint](base/115/Readme.md)

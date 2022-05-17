@@ -1,4 +1,4 @@
-## L1 - {onlinejudge} Implementando Fila com duas Pilhas
+## L1 - {robot} double stack
 
 ![](__capa.jpg)
 **Descrição da função**

@@ -1,4 +1,4 @@
-## L1 - {onlinejudge} Vetor de consulta
+## L1 - {robot} query
 
 ![](__capa.jpg)
 

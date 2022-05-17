@@ -1,13 +1,12 @@
-## L2 - {onlinejudge} Passeio de caminhão
-
+## L2 - {robot} truck
 ![](__capa.jpg)
+
+[](solver.cpp)
 **Descrição da função**
 
 - Um bomba de gasolina é um lugar onde você pode abastecer seu veículo. 
 - Cada bomba possui uma quantidade limitada de gasolina.
 - As bombas estão espalhada em alguns lugares de uma lista circular de tamanho `N` numeradas com índice de `0` a `N - 1`.
-- 
-
 
 Você tem duas informações correspondentes a cada uma das bombas de gasolina: 
 - a quantidade de gasolina que determinada bomba de gasolina fornecerá e 

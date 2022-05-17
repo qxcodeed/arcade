@@ -1,4 +1,4 @@
-## L2 - {interactive} Proximidade - criar problema
+## L2 - {human} Proximidade - criar problema
 
 ![](__capa.jpg)
 

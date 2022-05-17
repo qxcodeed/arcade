@@ -1,4 +1,4 @@
-# L2 - Soma dos nós e Menor valor
+# L2 - {robot} tree sum
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Testes](#testes)

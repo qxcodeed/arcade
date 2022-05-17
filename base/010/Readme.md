@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Limite: resolução
+## L2 - {robot} distance
 
 ![](__capa.jpg)
 

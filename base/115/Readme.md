@@ -1,4 +1,4 @@
-## L1 - {interactive} Visualizando mat com xpaint {optional}
+## L1 - {human} png lab {optional}
 ## @qxcode
 
 Você pode utilizar esse código para gerar a visualização do seu labirinto com o utilizando a biblioteca de desenho que já está nessa pasta.
