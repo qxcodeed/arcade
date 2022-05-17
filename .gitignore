@@ -5,3 +5,4 @@ main
 .html
 .vpl
 xpaint.h
+*.out

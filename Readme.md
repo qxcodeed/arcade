@@ -17,8 +17,8 @@
 ## Aquecimento
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/106/.thumb.jpg) | [@106 L1 - {interactive} Random matriz](base/106/Readme.md)
-![](base/029/.thumb.jpg) | [@029 L2 - {interactive} classe matrix](base/029/Readme.md)
+![](base/106/.thumb.jpg) | [@106 L1 - {interactive} Random matrix](base/106/Readme.md)
+![](base/029/.thumb.jpg) | [@029 L2 - {interactive} Classe matrix](base/029/Readme.md)
 ![](base/115/.thumb.jpg) | [@115 L1 - {interactive} Visualizando mat com xpaint {optional}](base/115/Readme.md)
 
 ## Recursão
