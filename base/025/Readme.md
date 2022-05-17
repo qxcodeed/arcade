@@ -1,4 +1,4 @@
-L2 - Labirinto II - Fuga com pilha
+L2 - {onlinejudge} Labirinto II - Fuga com pilha
 
 ![](__capa.jpg)
 

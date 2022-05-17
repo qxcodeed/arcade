@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Construa um Vetor dinâmico I - Procedural
+## L2 - {onlinejudge} Vector - Procedural
 
 ![](__capa.jpg)
 

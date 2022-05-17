@@ -1,4 +1,4 @@
-## L2 - {onlinejudge} Construa um Vetor dinâmico I - Orientado a Objetos
+## L2 - {onlinejudge} Vector - POO
 
 ![](__capa.jpg)
 

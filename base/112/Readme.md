@@ -1,4 +1,4 @@
-## L2 - Algoritmo de criação de labirinto com pilha
+## L2 - {interactive} Algoritmo de criação de labirinto com pilha
 ## @qxcode
 
 

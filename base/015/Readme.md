@@ -1,4 +1,4 @@
-## L3 - {onlinejudge} Lista Editor de texto I
+## L3 - {onlinejudge} Editor I
 ## @qxcode
 
 ![](__capa.jpg)

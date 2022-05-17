@@ -1,4 +1,4 @@
-L3 - Labirinto III - Fuga pelo menor caminho
+L3 - {onlinejudge} Labirinto III - Fuga pelo menor caminho
 
 ![](__capa.jpg)
 

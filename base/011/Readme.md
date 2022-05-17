@@ -1,4 +1,4 @@
-## L2 - Passeio de caminhão
+## L2 - {onlinejudge} Passeio de caminhão
 
 ![](__capa.jpg)
 **Descrição da função**
