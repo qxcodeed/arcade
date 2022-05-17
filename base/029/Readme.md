@@ -1,4 +1,6 @@
-## L2 - {interactive} classe matrix
+## L2 - {interactive} Classe matrix
+
+![](__capa.jpg)
 
 O c++ padrão não tem uma classe Matriz. Mas nós podemos criar a nossa. Ela será muito útil para alguns exercícios desse repositório.
 
@@ -32,25 +34,35 @@ template <class T>
 class matrix {
     int nl{0}, nc{0};
     std::vector<std::vector<T>> data;
+
 public:
     // construtor com todos os valores default nulos
     matrix(int nl, int nc) { ... } 
+
     // construtor passando o valor default de cada elemento
     matrix(int nl, int nc, T def) { ... } 
+
     //return number of lines
     int nlines() { ... }
+
     //return number of columns
     int ncols() { ... }
+
     // retorna elemento se passar posicão
     T& at(Pos pos) { ... }
+
     // retorna elemento se passar posicão
     T& operator[](Pos pos) { ... }
+
     // retorna linha
     std::vector<T> &operator[](int l) { ... }
+
     // retorna se posição está dentro da matrix
     bool inside(Pos pos) { ... }
+
     // retorna se essa posição existe e eh esse valor
     bool is_value(Pos pos, char value) { ... }
+
     //retorna string com valores separados por espaço
     std::string str() { ... }
 };

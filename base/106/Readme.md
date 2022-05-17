@@ -1,4 +1,4 @@
-## L1 - {interactive} Random matriz
+## L1 - {interactive} Random matrix
 
 Vamos preencher uma matriz aleatoriamente com árvores `#` e espaços vazios `.`.
 
