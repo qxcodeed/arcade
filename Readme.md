@@ -3,25 +3,25 @@
 
 ## Links []()
 <!--TOC_BEGIN-->
-    - [Aquecimento](#aquecimento)
-    - [Recursão](#recursão)
-    - [Backtracking](#backtracking)
-    - [Arrays](#arrays)
-    - [List](#list)
-    - [Stack](#stack)
-    - [Queue](#queue)
-    - [Tree](#tree)
+- [Aquecimento](#aquecimento)
+- [Recursão](#recursão)
+- [Backtracking](#backtracking)
+- [Arrays](#arrays)
+- [List](#list)
+- [Stack](#stack)
+- [Queue](#queue)
+- [Tree](#tree)
 <!--TOC_END-->
 
 
-### Aquecimento
+## Aquecimento
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/106/.thumb.jpg) | [@106 L1 - {interactive} Random matriz](base/106/Readme.md)
 ![](base/029/.thumb.jpg) | [@029 L2 - {interactive} classe matrix](base/029/Readme.md)
 ![](base/115/.thumb.jpg) | [@115 L1 - {interactive} Visualizando mat com xpaint {optional}](base/115/Readme.md)
 
-### Recursão
+## Recursão
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/005/.thumb.jpg) | [@005 L1 - {onlinejudge} Operações básicas](base/005/Readme.md)
@@ -30,7 +30,7 @@
 ![](base/122/.thumb.jpg) | [@122 L2 - {interactive} Desenhando Fractais com xpaint {optional}](base/122/Readme.md)
 
 
-### Backtracking
+## Backtracking
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/008/.thumb.jpg) | [@008 L2 - {onlinejudge} Labirinto: fuga](base/008/Readme.md)
@@ -41,7 +41,7 @@
 ![](base/028/.thumb.jpg) | [@028 L2 - {onlinejudge} Sudoku](base/028/Readme.md)
 
 
-### Arrays
+## Arrays
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/050/.thumb.jpg) | [@050 L1 - {onlinejudge} Vetor de consulta](base/050/Readme.md)
@@ -52,7 +52,7 @@
 ![](base/000/.thumb.jpg) | [@000 L2 - {onlinejudge} Princesa V1 - vetor](base/000/Readme.md)
 ![](base/001/.thumb.jpg) | [@001 L2 - {onlinejudge} Princesa V2 - vetor](base/001/Readme.md)
 
-### List
+## List
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/013/.thumb.jpg) | [@013 L2 - {onlinejudge} Princesa V1 - std::list](base/013/Readme.md)
@@ -62,7 +62,7 @@
 ![](base/023/.thumb.jpg) | [@023 L4 - {onlinejudge} Editor II {optional}](base/023/Readme.md)
 ![](base/026/.thumb.jpg) | [@026 L1 - {onlinejudge} Build Linked List - push and pop](base/026/Readme.md)
 
-### Stack
+## Stack
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/006/.thumb.jpg) | [@006 L1 - {onlinejudge} Implementando Fila com duas Pilhas](base/006/Readme.md)
@@ -71,14 +71,14 @@
 ![](base/009/.thumb.jpg) | [@009 L3 - {onlinejudge} Empurrando blocos escorregadios](base/009/Readme.md)
 ![](base/112/.thumb.jpg) | [@112 L2 - {interactive} Algoritmo de criação de labirinto com pilha](base/112/Readme.md)
 
-### Queue
+## Queue
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/051/.thumb.jpg) | [@051 L1 - {onlinejudge} Copa do mundo](base/051/Readme.md)
 ![](base/011/.thumb.jpg) | [@011 L2 - {onlinejudge} Passeio de caminhão](base/011/Readme.md)
 ![](base/019/.thumb.jpg) | [@019 L3 - {onlinejudge} Labirinto III - Fuga pelo menor caminho](base/019/Readme.md)
 
-### Tree
+## Tree
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
 ![](base/044/.thumb.jpg) | [@044 L2 - Carregando árvore a partir de String](base/044/Readme.md)
