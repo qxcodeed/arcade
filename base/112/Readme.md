@@ -1,6 +1,7 @@
 ## L2 - {human} stack lab create
 ## @qxcode
 
+![](__capa.jpg)
 
 ## Criando um labirinto com pilha
 ```

@@ -1,10 +1,8 @@
 ## L3 - {robot} slide
 
-![](capa.jpg)
+![](__capa.jpg)
 
 **Descrição da função**
-
-Você já jogou aqueles joguinhos que você empurra blocos por vários obstáculos para que ele chegue em uma determinada posição? Cada vez que você chuta um bloco, ele desliza em linha reta até parar em um obstáculo ou chegar à meta.
 
 Nesse problema, você recebe uma grade quadrada com algumas células abertas (.) e outras bloqueadas (X).
 

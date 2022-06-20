@@ -1,5 +1,7 @@
 ## L1 - {robot} rotation
 
+![](__capa.jpg)
+
 Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserí-lo na primeira posição.
 
 Implemente a operação de rotação. Observe que calculando as posições finais corretamente você fará uma única operação de transposição das posições do vetor.
