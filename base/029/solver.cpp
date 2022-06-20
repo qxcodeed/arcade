@@ -73,7 +73,7 @@ public:
     }
 
     // retorna se essa posição existe e eh esse valor
-    bool is_value(Pos pos, char value) {
+    bool is_value(Pos pos, T value) {
         return inside(pos) && at[pos] == value;
     }
 

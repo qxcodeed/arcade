@@ -10,7 +10,7 @@ Você pode usar o modelo a seguir. Vai precisar estudar sobre:
 - classes com template.
 - especialização de template.
 
-As sobrecargas do ostream já estão implementados. Os métodos de classe demarcados por { ... } ainda não. Comente tudo e vá descomentando e implementando aos pouquinhos. Teste seu código a cada método para ter certeza de que ele faz o que deve fazer.
+As sobrecargas do `ostream` já estão implementados. Os métodos de classe demarcados por { ... } ainda não. Comente tudo e vá descomentando e implementando aos pouquinhos. Teste seu código a cada método para ter certeza de que ele faz o que deve fazer.
 
 <!--FILTER solver.cpp cpp-->
 ```cpp
@@ -61,7 +61,7 @@ public:
     bool inside(Pos pos) { ... }
 
     // retorna se essa posição existe e eh esse valor
-    bool is_value(Pos pos, char value) { ... }
+    bool is_value(Pos pos, T value) { ... }
 
     //retorna string com valores separados por espaço
     std::string str() { ... }
