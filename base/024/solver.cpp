@@ -128,7 +128,7 @@ int main(){
             while(!banco.empty())
                 banco.tic();
             cout << "received: " << banco.received << endl;
-            cout << "lost: " << banco.lost - 1<< endl;
+            cout << "lost: " << banco.lost << endl;
             cout << "tics: " << banco.tics << endl;
         }else{
             cout << "fail: command not found\n";

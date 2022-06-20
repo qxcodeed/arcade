@@ -20,7 +20,6 @@ para acessar a posicao l, c da matriz voce deve utilizar
 mat[l * nc + c]
 */
 void tocar_fogo(int nl, int nc, char * mat, int l, int c){
-#ifdef PROF
     if((l < 0) || (l >= nl) || (c < 0) || (c >= nc))
         return;
     if(mat[l * nc + c] != TREE)
@@ -30,9 +29,6 @@ void tocar_fogo(int nl, int nc, char * mat, int l, int c){
     tocar_fogo(nl, nc, mat, l, c - 1);
     tocar_fogo(nl, nc, mat, l - 1, c);
     tocar_fogo(nl, nc, mat, l + 1, c);
-#else
-    //TODO faca seu codigo aqui
-#endif
 }
 
 int main(){

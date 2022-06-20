@@ -56,17 +56,16 @@
 ## List
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
+![](base/026/.thumb.jpg) | [@026 L1 - {robot} build list](base/026/Readme.md)
 ![](base/013/.thumb.jpg) | [@013 L2 - {robot} princess v1 list](base/013/Readme.md)
 ![](base/014/.thumb.jpg) | [@014 L2 - {robot} princess v2 list](base/014/Readme.md)
 ![](base/024/.thumb.jpg) | [@024 L3 - {robot} bank](base/024/Readme.md)
 ![](base/015/.thumb.jpg) | [@015 L3 - {robot} editor](base/015/Readme.md)
 ![](base/023/.thumb.jpg) | [@023 L4 - {robot} undo redo](base/023/Readme.md)
-![](base/026/.thumb.jpg) | [@026 L1 - {robot} build list](base/026/Readme.md)
 
 ## Stack
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![](base/006/.thumb.jpg) | [@006 L1 - {robot} double stack](base/006/Readme.md)
 ![](base/007/.thumb.jpg) | [@007 L2 - {robot} stack burn](base/007/Readme.md)
 ![](base/025/.thumb.jpg) | [@025 L2 - {robot} stack lab escape](base/025/Readme.md)
 ![](base/112/.thumb.jpg) | [@112 L2 - {human} stack lab create](base/112/Readme.md)
@@ -75,6 +74,7 @@
 ## Queue
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
+![](base/006/.thumb.jpg) | [@006 L1 - {robot} double stack](base/006/Readme.md)
 ![](base/051/.thumb.jpg) | [@051 L1 - {robot} crosses](base/051/Readme.md)
 ![](base/011/.thumb.jpg) | [@011 L2 - {robot} truck](base/011/Readme.md)
 ![](base/019/.thumb.jpg) | [@019 L3 - {robot} pathfinding](base/019/Readme.md)

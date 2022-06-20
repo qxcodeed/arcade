@@ -10,14 +10,6 @@
 
 const char EMPTY = '.';
 
-//gera um vector de char de [beg, end[
-template <class T>
-std::vector<T> range(T _beg, T _end) {
-    std::vector<T> output;
-    for (char c = _beg; c < _end; c++)
-        output.push_back(c);
-    return output;
-}
 
 struct Problem {
     std::string data;
@@ -33,29 +25,33 @@ struct Problem {
     }
 
     bool fit(int index, char value) {
-        int size = data.size();
         int inicio = std::max(index - lim    , 0);
-        int final  = std::min(index + lim + 1, size);
-        for(int i = inicio; i < final; i++)
-            if(data[i] == value)
+        int final  = std::min(index + lim    ,  (int) data.size());
+        for (int i = inicio; i <= final; i++)
+            if (this->data[i] == value)
                 return false;
         return true;
+        // return std::find(data.begin() + inicio, data.begin() + final, value) == data.end();
     }
+
+
+    solve()
+        todas = gere todas as solucoes [0..lim]
+        deram_certo = filtra as que retornam true
+        head deram_certo
 
     bool solve(int hindex) {
         if (hindex == (int) holes.size()) //se cheguei no fim, então preenchi tudo
             return true; //deu certo
 
         auto index = holes[hindex];
-
-        for (char value : range<char>('0', '0' + lim + 1)) {
+        for (char value = '0'; value <=  '0' + lim; value++) {
             if (this->fit(index, value)) { //consigo colocar esse valor nesse indice
                 this->data[index] = value; //coloco o valor
                 if (this->solve(hindex + 1)) //tento ir pro proximo
                     return true; //se algum proximo resolveu o problema, então deu certo
             }
         }
-        this->data[index] = EMPTY; //se chegou aqui, não achou resposta, desfaz qualquer mudança
         return false; //deu ruim
     }
 };

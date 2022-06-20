@@ -27,7 +27,7 @@ bool procurar_saida(vector<string> &mat, Pos inicio, Pos fim){
     enquanto a fila não estiver vazia
         pegue a posição da frente
         para cada vizinho 'viz' de frente
-            se ele eh caminho a ser percorrido
+            se ele não eh parede a ser percorrido
                 marque esse vizinho na matriz
                 na matriz de distância, coloque 1 a mais que a posição de 'frente'
                 se esse 'viz' for o destino
@@ -39,6 +39,30 @@ bool procurar_saida(vector<string> &mat, Pos inicio, Pos fim){
 
 ```
 Após encontrar a saída, refaça o caminho usando a matriz de distância para chegar no elemento início.
+
+
+
+
+## Dica
+- inicializar a matriz de distancia
+```cpp
+    vector<vector<int>> mat(nl, vector<int>(nc, -1));
+```
+- inicializar a fila
+```cpp
+    queue<Pos> fila;
+```
+
+- algoritmo de retorno
+
+```cpp
+    ponto = destino
+    enquanto nao chegar na origem
+        pega os vizinho de ponto
+            se mat[viz] == mat[ponto] - 1
+                ponto = viz
+                break
+```
 
 
 ## Testes
