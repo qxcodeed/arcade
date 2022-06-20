@@ -60,7 +60,7 @@
 ![](base/013/.thumb.jpg) | [@013 L2 - {robot} princess v1 list](base/013/Readme.md)
 ![](base/014/.thumb.jpg) | [@014 L2 - {robot} princess v2 list](base/014/Readme.md)
 ![](base/024/.thumb.jpg) | [@024 L3 - {robot} bank](base/024/Readme.md)
-![](base/015/.thumb.jpg) | [@015 L3 - {robot} editor](base/015/Readme.md)
+![](base/015/.thumb.jpg) | [@015 L2 - {robot} editor](base/015/Readme.md)
 ![](base/023/.thumb.jpg) | [@023 L4 - {robot} undo redo](base/023/Readme.md)
 
 ## Stack
