@@ -1,9 +1,0 @@
-{
-    "markdown": "Readme.md",
-    "tests": null,
-    "upload": [],
-    "keep": [],
-    "required": [
-        "student.cpp"
-    ]
-}

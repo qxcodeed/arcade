@@ -1,20 +1,11 @@
-kkmanual Readme.md -t .thumb.jpg
+make_thumbs base/*
+indexer Readme.md -t .thumb.jpg
 mdpp Readme.md
 mdpp base/* -q
-git add .
-git commit -m "updating"
-git push origin master
 
-# #copy missing or changed files
+#copy missing or changed files
+cp Readme.md ../moodle
+
+#making mirror
 cd ..
-cp arcade/Readme.md moodle
-
-# #updating
-kkmirror arcade moodle qxcodeed moodle
-
-cd moodle
-kkmanual --root Readme.md
-# # pushing moodle
-git add .
-git commit -m "updating"
-git push origin master
+mirror_rep arcade moodle qxcodefup moodle

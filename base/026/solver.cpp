@@ -1,4 +1,3 @@
-//tk main.cpp
 #include "lib.hpp"
 #include <iostream>
 #include <functional>

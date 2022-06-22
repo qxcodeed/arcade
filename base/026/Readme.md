@@ -1,6 +1,6 @@
 # L1 - {robot} build list
 
-![](capa.jpg)
+![](__capa.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)

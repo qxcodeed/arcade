@@ -34,12 +34,6 @@ struct Problem {
         // return std::find(data.begin() + inicio, data.begin() + final, value) == data.end();
     }
 
-
-    solve()
-        todas = gere todas as solucoes [0..lim]
-        deram_certo = filtra as que retornam true
-        head deram_certo
-
     bool solve(int hindex) {
         if (hindex == (int) holes.size()) //se cheguei no fim, então preenchi tudo
             return true; //deu certo

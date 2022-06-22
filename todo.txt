@@ -1,5 +1,0 @@
-colocar símbolos em unicode ao invés de interactive e onlinejudge
-colocar símbolos para explicação em vídeo e resolução em vídeo
-
-testar vetor de referencias e vetor de ponteiros
-vetor de referencias com [pos, ref]
