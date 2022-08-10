@@ -1,6 +1,6 @@
 ## L3 - {robot} slide
 
-![](__capa.jpg)
+![](cover.jpg)
 
 **Descrição da função**
 

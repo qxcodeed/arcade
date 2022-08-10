@@ -7,7 +7,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](__capa.jpg)
+![](cover.jpg)
 
 ## Descrição
 

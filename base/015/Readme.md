@@ -1,7 +1,7 @@
 ## L2 - {robot} editor
 ## @qxcode
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

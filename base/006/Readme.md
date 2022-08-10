@@ -1,6 +1,6 @@
 ## L1 - {robot} double stack
 
-![](__capa.jpg)
+![](cover.jpg)
 **Descrição da função**
 
 Uma fila é um tipo de dados abstrato que mantém a ordem na qual os elementos foram adicionados a ela, permitindo que os elementos mais antigos sejam removidos da frente e os novos elementos sejam adicionados na parte traseira. 

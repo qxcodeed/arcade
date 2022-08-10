@@ -5,7 +5,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](__capa.jpg)
+![](cover.jpg)
 
 ## Descrição
 Leia a árvore a partir do serial utilizando o método da atividade `@044` e implemente os seguintes métodos para calcular a soma de todos os elementos e o valor do menor elemento.

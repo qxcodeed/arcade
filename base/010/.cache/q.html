@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@010 L2 - {robot} distance</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/tmp/tmp1vprwsd2.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="l2---robot-distance"><span class="citation"
+data-cites="010">@010</span> L2 - {robot} distance</h2>
+<p><img
+src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg" /></p>
+<ul>
+<li>Seja uma string formada por dígitos e underlines
+<code>.</code>.</li>
+<li>Seja um valor de limite L.</li>
+</ul>
+<p>Objetivos: - Você deve substituir todos os <code>.</code> por dígitos
+seguindo as seguintes regras. - Só pode utilizar dígitos de 0 até L,
+incluindo L. - Qualquer dígito precisa estar a uma distância mínima de L
+casas de outra ocorrência dele mesmo, tanto à esquerda como à
+direita.</p>
+<ul>
+<li>Para cada problema, existe uma e somente uma solução.</li>
+</ul>
+<h2 id="entrada-e-saída">Entrada e Saída</h2>
+<ul>
+<li>Entrada
+<ul>
+<li>1a linha: sequência.</li>
+<li>2a linha: valor de L.</li>
+</ul></li>
+<li>Saída
+<ul>
+<li>A string solução do problema.</li>
+</ul></li>
+</ul>
+<h2 id="limites">Limites</h2>
+<ul>
+<li>sequência de tamanho t, 0 &gt; t &gt; 100</li>
+<li>0 &gt; L &gt; 100</li>
+</ul>
+<hr />
+<p>Testes:</p>
+<pre><code>
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+01.2.
+3
+========
+01320
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02
+.0..231..5
+5
+========
+1045231045
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
+2..0..............3...........
+3
+========
+213021302130213021302130213021
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03
+0..32..41.
+5
+========
+0413250413
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03
+9....7.620.5318.....
+9
+========
+95318746209531874620
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+12.3...0
+4
+========
+12034120
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+0.76.14..2..5..
+7
+========
+027651430276514
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre>
+</body>
+</html>

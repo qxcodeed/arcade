@@ -2,7 +2,7 @@
 # Repositório de exercícios para Estrutura de Dados
 
 ## Links []()
-<!--TOC_BEGIN-->
+[](toc)
 - [Aquecimento](#aquecimento)
 - [Recursão](#recursão)
 - [Backtracking](#backtracking)
@@ -11,7 +11,7 @@
 - [Stack](#stack)
 - [Queue](#queue)
 - [Tree](#tree)
-<!--TOC_END-->
+[](toc)
 
 
 ## Aquecimento

@@ -1,6 +1,6 @@
 ## L1 - {robot} vector rec
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
 

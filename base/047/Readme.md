@@ -7,7 +7,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](__capa.jpg)
+![](cover.jpg)
 
 ## Descrição
 

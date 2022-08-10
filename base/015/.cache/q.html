@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@015 L2 - {robot} editor</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/tmp/tmpq1hgftu3.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="l2---robot-editor"><span class="citation"
+data-cites="015">@015</span> L2 - {robot} editor</h2>
+<h2 id="qxcode"><span class="citation"
+data-cites="qxcode">@qxcode</span></h2>
+<p><img
+src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/015/cover.jpg" /></p>
+<p>Implementar um editor de texto simplificado que receba os seguintes
+valores como entrada.</p>
+<ul>
+<li>Os caracteres minúsculos “abc…z” e “-” são compreendidas como
+texto.</li>
+<li>O cursor deve ser mostrado com o char |</li>
+<li>Os seguintes caracteres serão comandos.
+<ul>
+<li><strong>Parte 1</strong> - Movimentação de Cursor
+<ul>
+<li>“R” return, insere o Enter.</li>
+<li>“B” backspace, apaga o caractere atrás do cursor, se houver.</li>
+<li>“D” delete, apaga o caractere na frente do cursor, se houver.</li>
+<li>“&gt;” move o cursor para direita, se for possível.</li>
+<li>“&lt;” move o cursor para esquerda, se for possível.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="testes">Testes</h2>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+abc
+========
+abc|
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+euRteRamo
+========
+eu
+te
+amo|
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+euRamo&lt;&lt;&lt;
+========
+eu
+|amo
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+euRamo&lt;&lt;&lt;&lt;&lt;&lt;&lt;como-
+========
+como-|eu
+amo
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+euRemo&lt;&lt;Ba&gt;&gt;&gt;&gt;&gt;&gt;
+========
+eu
+amo|
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+voc-ae&lt;&lt;v&lt;&lt;e&gt;&gt;&gt;Di&gt;
+========
+voce-vai|
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code></pre>
+</body>
+</html>

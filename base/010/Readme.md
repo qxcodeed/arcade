@@ -1,6 +1,6 @@
 ## L2 - {robot} distance
 
-![](__capa.jpg)
+![](cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.

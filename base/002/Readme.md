@@ -1,6 +1,6 @@
 ## L2 - {human} distance create
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Tente criar um gerador de problemas Limite. Você pode seguir a seguinte sequência:
 

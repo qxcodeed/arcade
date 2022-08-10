@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@050 L1 - {robot} query</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="/tmp/tmpn_g6cyxs.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="l1---robot-query"><span class="citation"
+data-cites="050">@050</span> L1 - {robot} query</h2>
+<p><img
+src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/050/cover.jpg" /></p>
+<p>Há um vetor de strings de entrada e um vetor de strings de consulta.
+Para cada sequência de consultas, determine quantas vezes ela ocorre na
+lista de sequências de entrada.</p>
+<p>Por exemplo, dada - <strong>entrada = [‘ab’,‘ab’,‘abc’ ]</strong> e -
+<strong>consultas = [‘ab’,‘abc’,‘bc’]</strong>, encontramos - 2
+instâncias de <strong>‘ab’</strong> , - 1 de <strong>‘abc’</strong> e -
+0 de <strong>‘bc’</strong>. Para cada consulta, adicionamos um elemento
+ao nosso vetor de retorno.</p>
+<p><strong>Descrição da função</strong></p>
+<p>Complete a função <em>matchingStrings</em>. A função deve retornar um
+vetor de números inteiros representando a frequência de ocorrência de
+cada sequência de consultas em <em>sequências</em> .</p>
+<p>matchingStrings possui os seguintes parâmetros:</p>
+<ul>
+<li><em>strings</em> - uma matriz de strings para pesquisar</li>
+<li><em>consultas</em> - uma matriz de cadeias de consulta</li>
+</ul>
+<p><strong>Formato de entrada</strong></p>
+<ul>
+<li>Linha 1: tamanho do vetor de consultas</li>
+<li>Linha 2: vetor de consultas</li>
+<li>Linha 3: tamanho do vetor de buscas</li>
+<li>Linha 4: vetor de buscas</li>
+</ul>
+<p><strong>Formato de saída</strong></p>
+<p>Retorne um vetor inteiro dos resultados de todas as consultas em
+ordem.</p>
+<p><strong>Entrada de amostra</strong></p>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
+4 
+aba baba aba xzxb 
+3
+aba xzxb ab
+========
+2 1 0
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code></pre>
+</body>
+</html>

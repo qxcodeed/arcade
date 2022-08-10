@@ -1,7 +1,7 @@
 ## L2 - {robot} stack burn
 ## @qxcode
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.
 

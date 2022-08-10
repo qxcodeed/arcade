@@ -1,6 +1,6 @@
 ## L2 - {robot} princess v2 list
 
-[![](__capa.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.

@@ -1,8 +1,7 @@
 .vscode
 package.json
-solver
-main
-.html
-.vpl
+solver*
+Solver*
 xpaint.h
 *.out
+drafts

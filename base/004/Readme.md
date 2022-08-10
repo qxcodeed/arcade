@@ -1,6 +1,6 @@
 ## L2 - {robot} triangle
 
-![](__capa.jpg)
+![](cover.jpg)
 
 
 

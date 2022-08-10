@@ -1,6 +1,6 @@
 L2 - {robot} stack lab escape
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.
 Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.

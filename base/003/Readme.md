@@ -1,6 +1,6 @@
 ## L1 - {robot} burn
 
-![](__capa.jpg)
+![](cover.jpg)
 
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
 

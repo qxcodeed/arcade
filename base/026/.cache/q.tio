@@ -1,0 +1,122 @@
+>>>>>>>>
+show
+push_back 1
+show
+size
+end
+========
+$show
+[ ]
+$push_back 1
+$show
+[ 1 ]
+$size
+1
+$end
+<<<<<<<<
+
+>>>>>>>>
+show
+push_back 1
+show
+push_back 2 3 5 6 7
+show
+end
+========
+$show
+[ ]
+$push_back 1
+$show
+[ 1 ]
+$push_back 2 3 5 6 7
+$show
+[ 1 2 3 5 6 7 ]
+$end
+<<<<<<<<
+
+>>>>>>>>
+show
+push_back 2 1
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+end
+========
+$show
+[ ]
+$push_back 2 1
+$show
+[ 2 1 ]
+$pop_back
+$show
+[ 2 1 ]
+$pop_back
+$show
+[ 2 1 ]
+$pop_back
+$show
+[ 2 1 ]
+$end
+<<<<<<<<
+
+>>>>>>>>
+show
+push_front 1 2 3 4 5
+show
+end
+========
+$show
+[ ]
+$push_front 1 2 3 4 5
+$show
+[ 5 4 3 2 1 ]
+$end
+<<<<<<<<
+
+>>>>>>>>
+show
+push_front 1 2 3 4
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+end
+========
+$show
+[ ]
+$push_front 1 2 3 4
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$pop_front
+$show
+[ 4 3 2 1 ]
+$end
+<<<<<<<<

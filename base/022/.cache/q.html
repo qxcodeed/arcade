@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>@022 L2 - {robot} tree path</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="/tmp/tmp8phvuf9j.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="l2---robot-tree-path"><span class="citation"
+data-cites="022">@022</span> L2 - {robot} tree path</h2>
+<!--TOC_BEGIN-->
+<ul>
+<li><a href="#descrição">Descrição</a></li>
+<li><a href="#exemplo">Exemplo</a></li>
+<li><a href="#testes">Testes</a></li>
+<li><a href="#código-base">Código base</a> <!--TOC_END--></li>
+</ul>
+<p><img
+src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/022/cover.jpg" /></p>
+<h2 id="descrição">Descrição</h2>
+<ul>
+<li>Entrada
+<ul>
+<li>linha 1: o serial de uma árvore binária</li>
+<li>linha 2: um valor de nó</li>
+</ul></li>
+<li>Saída
+<ul>
+<li>se o valor existe:
+<ul>
+<li>mostre o caminho da raiz até o nó,</li>
+<li>indicando ‘l’ ou ‘r’ se o caminho é pelo filho da esquerda ou da
+direita.</li>
+<li>ponha um ‘x’ para quando achar o nó.</li>
+</ul></li>
+<li>Se o valor não existir na árvore
+<ul>
+<li>imprima “!”</li>
+</ul></li>
+</ul></li>
+<li>Limitação
+<ul>
+<li>Você deve percorrer a árvore UMA única vez para obter os caminhos e
+montar o caminho através do retorno da função.</li>
+</ul></li>
+</ul>
+<h2 id="exemplo">Exemplo</h2>
+<p>Para encontrar o 2 na árvore abaixo, seguimos o caminho
+<code>rrrlx</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">//serial</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="dv">8</span> <span class="dv">7</span> # # <span class="dv">4</span> # <span class="dv">6</span> # # <span class="dv">5</span> <span class="dv">0</span> # # <span class="dv">9</span> # <span class="dv">3</span> <span class="dv">2</span> # # #</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">//bshow()</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    ┌───<span class="dv">7</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>┌───<span class="dv">8</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>│   │   ┌───#</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>│   └───<span class="dv">4</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>│       └───<span class="dv">6</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>│   ┌───<span class="dv">0</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>└───<span class="dv">5</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    │   ┌───#</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    └───<span class="dv">9</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        │   ┌───<span class="dv">2</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        └───<span class="dv">3</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            └───#</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">//a função recursiva find deve retornar uma sequencia o path até o destino com x no final</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>string find_path<span class="op">(</span>Node <span class="op">*</span> root<span class="op">,</span> <span class="dt">int</span> value<span class="op">);</span></span></code></pre></div>
+<h2 id="testes">Testes</h2>
+<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01 um
+4 # #
+4
+========
+x
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02 dois
+1 # 0 # # 
+0
+========
+rx
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03 tres
+4 # 8 2 # # # 
+2
+========
+rlx
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04 not found
+0 9 4 # # # 5 # # 
+7
+========
+!
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # #
+2
+========
+rrrlx
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre>
+<h2 id="código-base">Código base</h2>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;sstream&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">using</span> <span class="kw">namespace</span> std<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> Node<span class="op">{</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> value<span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    Node <span class="op">*</span> left<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    Node <span class="op">*</span> right<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    Node<span class="op">(</span><span class="dt">int</span> value <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> Node <span class="op">*</span> left <span class="op">=</span> <span class="kw">nullptr</span><span class="op">,</span> Node <span class="op">*</span> right <span class="op">=</span> <span class="kw">nullptr</span><span class="op">){</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">-&gt;</span>value <span class="op">=</span> value<span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">-&gt;</span>left <span class="op">=</span> left<span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">-&gt;</span>right <span class="op">=</span> right<span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> BTree<span class="op">{</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    Node <span class="op">*</span> root<span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    BTree<span class="op">(){</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">-&gt;</span>root <span class="op">=</span> <span class="kw">nullptr</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> clone<span class="op">(</span>stringstream<span class="op">&amp;</span> ss<span class="op">,</span> Node <span class="op">**</span> elo<span class="op">){</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        string value<span class="op">;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        ss <span class="op">&gt;&gt;</span> value<span class="op">;</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span><span class="op">(</span>value <span class="op">==</span> <span class="st">&quot;#&quot;</span><span class="op">)</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> num<span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>        stringstream<span class="op">(</span>value<span class="op">)</span> <span class="op">&gt;&gt;</span> num<span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        <span class="op">*</span>elo <span class="op">=</span>  <span class="kw">new</span> Node<span class="op">(</span>num<span class="op">);</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        clone<span class="op">(</span>ss<span class="op">,</span> <span class="op">&amp;(*</span>elo<span class="op">)-&gt;</span>left<span class="op">);</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        clone<span class="op">(</span>ss<span class="op">,</span> <span class="op">&amp;(*</span>elo<span class="op">)-&gt;</span>right<span class="op">);</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    BTree<span class="op">(</span>string serial<span class="op">){</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>        stringstream ss<span class="op">(</span>serial<span class="op">);</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>        clone<span class="op">(</span>ss<span class="op">,</span> <span class="op">&amp;</span>root<span class="op">);</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> __destroy<span class="op">(</span>Node <span class="op">*</span> node<span class="op">){</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span><span class="op">(</span>node <span class="op">==</span> <span class="kw">nullptr</span><span class="op">)</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>        __destroy<span class="op">(</span>node<span class="op">-&gt;</span>left<span class="op">);</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>        __destroy<span class="op">(</span>node<span class="op">-&gt;</span>right<span class="op">);</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>        <span class="kw">delete</span> node<span class="op">;</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    <span class="op">~</span>BTree<span class="op">(){</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>        __destroy<span class="op">(</span><span class="kw">this</span><span class="op">-&gt;</span>root<span class="op">);</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    string find_path<span class="op">(</span>Node <span class="op">*</span> node<span class="op">,</span> <span class="dt">int</span> value<span class="op">){</span></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>        <span class="co">//</span><span class="al">TODO</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(){</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    string line<span class="op">;</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    getline<span class="op">(</span>cin<span class="op">,</span> line<span class="op">);</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    BTree bt<span class="op">(</span>line<span class="op">);</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> value<span class="op">;</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>    cin <span class="op">&gt;&gt;</span> value<span class="op">;</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>    string path <span class="op">=</span> bt<span class="op">.</span>find_path<span class="op">(</span>bt<span class="op">.</span>root<span class="op">,</span> value<span class="op">);</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>    cout <span class="op">&lt;&lt;</span> path <span class="op">&lt;&lt;</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">;</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+</body>
+</html>

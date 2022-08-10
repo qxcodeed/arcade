@@ -1,10 +1,8 @@
-test:
-	@ g++ -Wall main.cpp solver.cpp -o solver.out
-	@ tk run solver.out Readme.md
-	@ rm -f solver.out
+run: student
 
-student:
-	g++ -Wall main.cpp student.cpp -o solver.out
-	tk run solver.out Readme.md
-	rm -f solver.out
+extra = main.cpp
 
+% : %.cpp
+	g++ -Wall $@.cpp $(extra) -o $@.out
+	tk run $@.out Readme.md
+	rm -f $@.out

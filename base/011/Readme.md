@@ -1,5 +1,5 @@
 ## L2 - {robot} truck
-![](__capa.jpg)
+![](cover.jpg)
 
 [](solver.cpp)
 **Descrição da função**

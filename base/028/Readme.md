@@ -1,6 +1,6 @@
 ## L2 - {robot} sudoku
 
-![](__capa.jpg)
+![](cover.jpg)
 
 O Sudoku tem várias versões para diferentes dificuldades. O mais conhecido é o modelo 9x9.
 
