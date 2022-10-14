@@ -1,0 +1,9 @@
+Readme.md
+solver_lista.cpp
+cover.jpg
+t.vpl
+solver_vector.cpp
+solv_marcacao.cpp
+solver_lista2.cpp
+student.cpp
+

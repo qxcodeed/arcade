@@ -1,6 +1,6 @@
 ## @016 L2 - {robot} vector fup
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/016/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/016/cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 - Ele deve ser iniciado utilizando alocação dinâmica e conter além do vetor de dados, `size` e `capacity` que definem o tamanho atual e a capacidade do vetor.

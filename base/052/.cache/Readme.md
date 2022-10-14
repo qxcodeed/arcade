@@ -1,6 +1,6 @@
 ## @052 L2 - {robot} erase all
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/052/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/052/cover.jpg)
 
 Com a proximidade da Copa do Mundo, o fluxo de pessoas nas filas para compra de ingressos aumentou consideravelmente. Como as filas estão cada vez maiores, pessoas menos pacientes tendem a desistir da compra de ingressos e acabam deixando as filas, liberando assim vaga para outras pessoas. Quando uma pessoa deixa a fila, todas as pessoas que estavam atrás dela dão um passo a frente, sendo assim nunca existe um espaço vago entre duas pessoas. A fila inicialmente contém N pessoas, cada uma com um identificador diferente.
 

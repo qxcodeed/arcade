@@ -1,7 +1,7 @@
 ## @112 L2 - {human} stack lab create
 ## @qxcode
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/112/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/112/cover.jpg)
 
 ## Criando um labirinto com pilha
 ```

@@ -1,6 +1,6 @@
 ## @004 L2 - {robot} triangle
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/004/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/004/cover.jpg)
 
 
 

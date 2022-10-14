@@ -1,6 +1,6 @@
 ## @006 L1 - {robot} double stack
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/006/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/006/cover.jpg)
 **Descrição da função**
 
 Uma fila é um tipo de dados abstrato que mantém a ordem na qual os elementos foram adicionados a ela, permitindo que os elementos mais antigos sejam removidos da frente e os novos elementos sejam adicionados na parte traseira. 

@@ -1,6 +1,6 @@
 ## @003 L1 - {robot} burn
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/003/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/cover.jpg)
 
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
 

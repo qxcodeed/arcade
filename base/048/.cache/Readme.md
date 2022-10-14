@@ -7,7 +7,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/048/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/cover.jpg)
 
 ## Descrição
 
@@ -48,10 +48,10 @@ public:
 <!--ADD_END-->
 
 ## Arquivos
-- [main.cpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/048/main.cpp)
-- [student.cpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/048/student.cpp)
-- [lib.h](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/048/lib.h)
-- [lib.cpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/048/lib.cpp)
+- [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/main.cpp)
+- [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/student.cpp)
+- [lib.h](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/lib.h)
+- [lib.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/lib.cpp)
 
 
 ## Testes

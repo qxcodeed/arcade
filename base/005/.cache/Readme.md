@@ -1,6 +1,6 @@
 ## @005 L1 - {robot} vector rec
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/005/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
 

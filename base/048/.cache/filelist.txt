@@ -1,0 +1,8 @@
+Readme.md
+cover.jpg
+lib.cpp
+main.cpp
+lib.hpp
+Makefile
+student.cpp
+

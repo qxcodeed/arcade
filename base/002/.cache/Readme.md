@@ -1,6 +1,6 @@
 ## @002 L2 - {human} distance create
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/002/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/cover.jpg)
 
 Tente criar um gerador de problemas Limite. Você pode seguir a seguinte sequência:
 

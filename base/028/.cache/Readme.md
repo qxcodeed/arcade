@@ -1,12 +1,12 @@
 ## @028 L2 - {robot} sudoku
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/028/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/028/cover.jpg)
 
 O Sudoku tem várias versões para diferentes dificuldades. O mais conhecido é o modelo 9x9.
 
 O site [sudoku](https://www.sudokuonline.io/pt/criancas) tem versões simplificadas para crianças com versões 4x4 e 6x6.
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/028/__exemplos.png)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/028/__exemplos.png)
 
 Seu objetivo é resolver um sudoku NxN com números de 1 a N.
 

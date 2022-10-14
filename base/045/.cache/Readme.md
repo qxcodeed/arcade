@@ -5,7 +5,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/045/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/cover.jpg)
 
 ## Descrição
 
@@ -23,7 +23,7 @@ int getProfundidade(Node * node);
 - Saída
     - Para cada nó da lista, um nó por linha, altura e profundidade do nó ou -1 se o nó não for encontrado
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/045/__altura.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/__altura.jpg)
 
 
 ## Código base

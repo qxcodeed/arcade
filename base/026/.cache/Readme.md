@@ -1,6 +1,6 @@
 ## @026 L1 - {robot} build list
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/026/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/cover.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
@@ -17,9 +17,9 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 - empty
 
 ## Arquivos
-- [student.cpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/026/student.cpp)
-- [main.cpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/026/main.cpp)
-- [lib.hpp](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/026/lib.hpp)
+- [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/student.cpp)
+- [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/main.cpp)
+- [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/lib.hpp)
 
 ## Header
 <!--ADD lib.hpp cpp-->

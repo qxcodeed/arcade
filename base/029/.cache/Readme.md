@@ -1,6 +1,6 @@
 ## @029 L2 - {human} matrix
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/029/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/029/cover.jpg)
 
 O c++ padrão não tem uma classe Matriz. Mas nós podemos criar a nossa. Ela será muito útil para alguns exercícios desse repositório.
 
@@ -12,8 +12,8 @@ Você pode usar o modelo a seguir. Vai precisar estudar sobre:
 As sobrecargas do `ostream` já estão implementados. Os métodos de classe demarcados por { ... } ainda não. Comente tudo e vá descomentando e implementando aos pouquinhos. Teste seu código a cada método para ter certeza de que ele faz o que deve fazer.
 
 Arquivos
-- [biblioteca](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/029/mat.h)
-- [main](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/029/main.cpp)
+- [biblioteca](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/029/mat.h)
+- [main](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/029/main.cpp)
 
 ```txt
 >>>>>>>>

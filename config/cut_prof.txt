@@ -1,5 +1,0 @@
-adicionar essa linha no .bashrc
-
-function cut_prof {
-    cat $1 | sed -e "/#ifdef PROF/,/#else/d" | sed -e "/^#endif/d" | sed -e "/#define PROF/d"
-}

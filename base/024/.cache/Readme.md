@@ -1,6 +1,6 @@
 ## @024 L3 - {robot} bank
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/024/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/024/cover.jpg)
 
 Neste trabalho, nós simularemos o atendimento em um banco. O nosso banco tem clientes que estão sendo atendidos no caixa, clientes na espera na fila e clientes na fila de saída. Cada cliente tem um nível de paciência (quantidade de tempo que ele pode esperar na fila) e uma quantidade de documentos a serem processados no caixa.
 

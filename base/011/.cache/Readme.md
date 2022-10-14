@@ -1,5 +1,5 @@
 ## @011 L2 - {robot} truck
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/011/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/011/cover.jpg)
 
 [](solver.cpp)
 **Descrição da função**

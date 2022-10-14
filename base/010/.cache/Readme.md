@@ -1,6 +1,6 @@
 ## @010 L2 - {robot} distance
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/010/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.

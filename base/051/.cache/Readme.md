@@ -4,7 +4,7 @@ Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe
 
 Na Copa do Mundo, depois de uma fase de grupos, dezesseis equipes disputam a Fase Final, composta de quinze jogos eliminatórios. A figura abaixo mostra a tabela de jogos da Fase Final:
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/051/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/051/cover.jpg)
 
 Dados os resultados dos quinze jogos da Fase Final, escreva um programa que determine a equipe campeã.
 

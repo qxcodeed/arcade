@@ -1,7 +1,7 @@
 ## @015 L2 - {robot} editor
 ## @qxcode
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/015/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/015/cover.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

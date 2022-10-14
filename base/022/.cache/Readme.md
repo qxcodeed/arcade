@@ -7,7 +7,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodefup/arcade/master/base/022/cover.jpg)
+![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/022/cover.jpg)
 
 ## Descrição
 
