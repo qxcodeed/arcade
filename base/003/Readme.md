@@ -2,29 +2,37 @@
 
 ![_](cover.jpg)
 
-Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
+- Seja uma matriz de caracteres que representa um mapa de uma floresta.
+- Cada caractere representa um espaço vazio ou uma árvore.
+- O espaço vazio é representado por um ponto `.` e a árvore por uma hastag `#`.
+- O fogo começa em um ponto inicial e se espalha para os vizinhos até que não haja mais árvores para queimar.
 
-A matriz está codificada assim.
-1a linha: `nl, nc, l, c` respectivamente
+Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvores. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
 
-- número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
-- Nas linhas subsequentes:
+## Entrada
+
+- 1a linha: `nl, nc, l, c`:
+  - Número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
+- Nas linhas subsequentes a matriz da floresta sendo que
   - '\#' representa uma árvore
   - '.' representa um espaço vazio
-  - 'o' representa uma árvore queimada
 
-Saída esperada:
+## Saída
 
-- Imprima a matriz após a queimada acontecer.
-
+- A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
 
 ## Arquivos
 
-- required:
+- Você deve implementar:
   - [student.cpp](student.cpp)
-- fixed:
+    - escrever a função tocar_fogo.
+- Já está implementado:
   - [main.cpp](main.cpp)
+    - Faz a leitura da matriz e do ponto inicial
+    - Chama a função tocar_fogo para o ponto inicial.
+    - Imprime a matriz após a queimada.
   - [lib.hpp](lib.hpp)
+    - Apenas o cabeçalho da função tocar_fogo.
 
 ## Testes
 
@@ -81,35 +89,3 @@ Utilize as seguintes regras para recursão.
 - Queime a arvore.
 - Chame a recursão para todos os vizinhos.
 
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-
-void show(vector<string> mat){
-    for(int l = 0; l < (int) mat.size(); l++)
-        cout << mat[l] << "\n";
-}
-
-void tocar_fogo(vector<string> &mat, int l, int c){
-    int nl = mat.size();
-    int nc = mat[0].size();
-    //TODO faca seu codigo aqui
-}
-
-int main(){
-    int nl = 0, nc = 0, lfire = 0, cfire = 0;
-    scanf("%d %d %d %d\n", &nl, &nc, &lfire, &cfire);
-    vector<string> mat;
-    for(int l = 0; l < nl; l++){
-        string line;
-        cin >> line;
-        mat.push_back(line);
-    }
-    tocar_fogo(mat, lfire, cfire);
-    show(mat);
-}
-
-
-```
