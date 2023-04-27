@@ -19,14 +19,14 @@ ___
 Todas as funções devem ser recursivas e estão escritas da seguinte forma:
 
 ```cpp
-// init aponta para o primeiro elemento do vetor
-// end aponta para uma posição depois do último elemento do vetor
+// init: aponta para o primeiro elemento do vetor
+// end: aponta para uma posição depois do último elemento do vetor
 void show(int * init, int * end) {
 
 }
 
 // Exemplo de chamada
-int vet[4] = {1, 2, 3, 4};
+int vet[4] = {5, 6, 7, 2};
 show(vet, vet + 4);
 ```
 

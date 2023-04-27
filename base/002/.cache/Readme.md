@@ -1,6 +1,6 @@
 ## @002 L2 - triangle
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/002/cover.jpg)
 
 Dado um vetor de inteiros A, imprima um triângulo de números
 tal que na base do triângulo estejam todos os elementos do
@@ -10,19 +10,19 @@ cada elemento do i-ésimo nível seja a soma de dois elementos
 consecutivos do nível inferior.
 
 - Entrada
-  - Os elementos da base
+  - Os elementos da base.
 - Saída
-  - O triângulo
+  - O triângulo.
 
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/002/student.cpp)
     - escrever a função que processa uma linha do triângulo, chama a recursão e imprime.
 - Já está implementado:
-  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/002/main.cpp)
     - Faz a leitura do vetor inicial e chama a função recursiva.
-  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/002/lib.hpp)
     - Apenas o cabeçalho.
 
 ## Testes

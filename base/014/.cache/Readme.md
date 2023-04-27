@@ -1,6 +1,6 @@
 ## @014 L2 - princess v2 list
 
-[![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/014/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![](https://github.com/qxcodeed/arcade/blob/master/base/014/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.

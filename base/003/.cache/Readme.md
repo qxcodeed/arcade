@@ -1,6 +1,6 @@
 ## @003 L1 - burn
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/003/cover.jpg)
 
 - Seja uma matriz de caracteres que representa um mapa de uma floresta.
 - Cada caractere representa um espaço vazio ou uma árvore.
@@ -24,14 +24,14 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/003/student.cpp)
     - escrever a função tocar_fogo.
 - Já está implementado:
-  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/003/main.cpp)
     - Faz a leitura da matriz e do ponto inicial
     - Chama a função tocar_fogo para o ponto inicial.
     - Imprime a matriz após a queimada.
-  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/003/lib.hpp)
     - Apenas o cabeçalho da função tocar_fogo.
 
 ## Testes

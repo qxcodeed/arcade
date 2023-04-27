@@ -1,6 +1,6 @@
 ## @005 L1 - vector rec
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/005/cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos.
 
@@ -19,26 +19,26 @@ ___
 Todas as funções devem ser recursivas e estão escritas da seguinte forma:
 
 ```cpp
-// init aponta para o primeiro elemento do vetor
-// end aponta para uma posição depois do último elemento do vetor
+// init: aponta para o primeiro elemento do vetor
+// end: aponta para uma posição depois do último elemento do vetor
 void show(int * init, int * end) {
 
 }
 
 // Exemplo de chamada
-int vet[4] = {1, 2, 3, 4};
+int vet[4] = {5, 6, 7, 2};
 show(vet, vet + 4);
 ```
 
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/005/student.cpp)
     - As funções a serem implementadas.
 - Já está implementado:
-  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/005/main.cpp)
     - Faz a leitura do vetor inicial e chama as funções.
-  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/005/lib.hpp)
     - Apenas os cabeçalhos.
 
 ___

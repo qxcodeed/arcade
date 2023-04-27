@@ -1,6 +1,6 @@
 ## @060 L1 - rotation
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/060/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/060/cover.jpg)
 
 Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserir na primeira posição.
 

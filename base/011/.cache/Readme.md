@@ -1,6 +1,6 @@
 ## @011 L2 - truck
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/011/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/011/cover.jpg)
 
 [](solver.cpp)
 

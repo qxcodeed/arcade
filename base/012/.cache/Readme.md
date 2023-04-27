@@ -2,7 +2,7 @@
 
 ## Guide
 
-- [draft.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/012/draft.cpp)
+- [draft.cpp](https://github.com/qxcodeed/arcade/blob/master/base/012/draft.cpp)
 
 ## Shell
 

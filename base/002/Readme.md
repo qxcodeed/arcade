@@ -10,9 +10,9 @@ cada elemento do i-ésimo nível seja a soma de dois elementos
 consecutivos do nível inferior.
 
 - Entrada
-  - Os elementos da base
+  - Os elementos da base.
 - Saída
-  - O triângulo
+  - O triângulo.
 
 ## Arquivos
 

@@ -1,6 +1,6 @@
 ## @008 L2 - lab escape
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/008/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/008/cover.jpg)
 
 Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.
 Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.

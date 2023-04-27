@@ -1,6 +1,6 @@
 ## @019 L3 - pathfinding
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/019/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/019/cover.jpg)
 
 Dessa vez, o labirinto não é perfeito e existem múltiplos caminhos que podem levar ao destino. Seu objetivo é implementar o algoritmo de floodfill pathfinding.
 

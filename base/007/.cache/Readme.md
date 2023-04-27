@@ -1,6 +1,6 @@
 ## @007 L2 - stack burn
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/007/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/007/cover.jpg)
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.
 

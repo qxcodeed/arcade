@@ -1,6 +1,6 @@
 ## @050 L1 - query
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/050/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/050/cover.jpg)
 
 Há um vetor de strings de entrada e um vetor de strings de consulta. Para cada sequência de consultas, determine quantas vezes ela ocorre na lista de sequências de entrada.
 

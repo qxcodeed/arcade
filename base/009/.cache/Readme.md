@@ -1,6 +1,6 @@
 ## @009 L3 - slide
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/009/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/009/cover.jpg)
 
 ## Descrição da função
 

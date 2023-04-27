@@ -1,6 +1,6 @@
 ## @026 L1 - build list
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/cover.jpg)
+![_](https://github.com/qxcodeed/arcade/blob/master/base/026/cover.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
@@ -18,9 +18,9 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 
 ## Arquivos
 
-- [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/student.cpp)
-- [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/main.cpp)
-- [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/lib.hpp)
+- [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/026/student.cpp)
+- [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/026/main.cpp)
+- [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/026/lib.hpp)
 
 ## Header
 <!--ADD lib.hpp cpp-->
