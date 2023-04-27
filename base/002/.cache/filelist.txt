@@ -1,0 +1,7 @@
+Readme.md
+cover.jpg
+main.cpp
+lib.hpp
+local.sh
+student.cpp
+
