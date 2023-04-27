@@ -16,12 +16,15 @@ consecutivos do nível inferior.
 
 ## Arquivos
 
-- required:
+- Você deve implementar:
   - [student.cpp](student.cpp)
-- fixed:
+    - escrever a função que processa uma linha do triângulo, chama a recursão e imprime.
+- Já está implementado:
   - [main.cpp](main.cpp)
+    - Faz a leitura do vetor inicial e chama a função recursiva.
   - [lib.hpp](lib.hpp)
-  
+    - Apenas o cabeçalho.
+
 ## Testes
 
 ```txt

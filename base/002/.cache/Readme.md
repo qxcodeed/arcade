@@ -16,12 +16,15 @@ consecutivos do nível inferior.
 
 ## Arquivos
 
-- required:
+- Você deve implementar:
   - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/student.cpp)
-- fixed:
+    - escrever a função que processa uma linha do triângulo, chama a recursão e imprime.
+- Já está implementado:
   - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/main.cpp)
+    - Faz a leitura do vetor inicial e chama a função recursiva.
   - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/lib.hpp)
-  
+    - Apenas o cabeçalho.
+
 ## Testes
 
 ```txt
