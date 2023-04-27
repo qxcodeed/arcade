@@ -1,55 +1,43 @@
-#include <iostream>
-#include <vector>
-#include <sstream>
-#include <functional>
-using vet_it = std::vector<int>::iterator;
+#pragma once
+#include "lib.hpp"
+namespace alu {
 
+    //imprime recursivamente os elementos de um vetor
+    void __show(int * init, int * end) {
+        //todo: implement
+    }
 
-std::string fmt(std::vector<int> vet) {
-    return "";
-}
+    void show(int * init, int * end) {
+        std::cout << "[ ";
+        __show(init, end);
+        std::cout << "]";
+    }
 
-std::string fmt_rev(std::vector<int> vet) {
-    return "";
-}
+    //imprime recursivamente os elementos de um vetor de trás pra frente
+    void __show_rev(int * init, int * end) {
+        //todo: implement
+    }
 
-void reverse(vet_it inicio, vet_it fim) {
-}
+    void show_rev(int * init, int * end) {
+        std::cout << "[ ";
+        __show_rev(init, end);
+        std::cout << "]";
+    }
 
+    void reverse(int * init, int * end) {
+        //todo: implement
+    }
 
-int sum(vet_it inicio, vet_it fim) {
-    return 0;
-};
+    int sum(int * init, int * end) {
+        //todo: implement
+    };
 
-int mult(vet_it inicio, vet_it fim) {
-    return 0;
-};
+    int mult(int * init, int * end) {
+        //todo: implement
+    };
 
-int menor(vet_it inicio, vet_it fim) {
-    return 0;
-};
+    int menor(int * init, int * end) {
+        //todo: implement
+    };
 
-std::vector<int> parse_vet() {
-    std::string line;
-    std::getline(std::cin, line);
-    std::stringstream ss(line);
-    std::vector<int> vet;
-    int value { };
-    while (ss >> value)
-        vet.push_back(value);
-    return vet;
-}
-
-int main() {
-
-    auto vet = parse_vet();
-    std::cout << "vet : " << fmt(vet) << "\n";
-    std::cout << "rvet: " << fmt_rev(vet) << "\n";
-    std::cout << "sum : " << sum(vet.begin(), vet.end()) << "\n";
-    std::cout << "mult: " << mult(vet.begin(), vet.end()) << "\n";
-    std::cout << "min : " << menor(vet.begin(), vet.end()) << "\n";
-    reverse(vet.begin(), vet.end());
-    std::cout << "inv : " << fmt(vet) << "\n";
-
-}
-
+} // namespace alu

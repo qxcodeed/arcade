@@ -1,5 +1,8 @@
 Readme.md
 cover.jpg
+main.cpp
+lib.hpp
 q.tio
+local.sh
 student.cpp
 

@@ -2,9 +2,7 @@
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
 
-Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
-
-Você pode utilizar laço para ler os elementos do vetor.
+Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos.
 
 ___
 
@@ -18,48 +16,36 @@ ___
   - min: o menor elemento
   - inv: inverte o vetor, depois imprime ele invertido
 
-___
-
-## Help
-
-Em C e C++, pode ler a entrada de dados dessa forma. Ele vai ler inteiros até chegar ao final do arquivo de entrada. Se tiver digitando os valores utilize:
-
-- Linux(Enter + Ctrl D)
-- Windows (Ctrl Z)
-
-para enviar um sinal de fim de arquivo. 
-
-### C
-
-```c
-//c
-int vet[1000];
-int size = 0;
-int value = 0;
-//enquanto conseguir ler valores antes de chegar no fim do arquivo
-while(scanf("%d", &value) > 0) 
-    vet[size++] = value;
-```
-
-### C++
+Todas as funções devem ser recursivas e estão escritas da seguinte forma:
 
 ```cpp
-#include <sstream> //stringstream
+// init aponta para o primeiro elemento do vetor
+// end aponta para uma posição depois do último elemento do vetor
+void show(int * init, int * end) {
 
-string line;
-getline(cin, line);
-stringstream ss(line);
-vector<int> vet;
-int value;
-while(ss >> value)
-    vet.push_back(value);
+}
+
+// Exemplo de chamada
+int vet[4] = {1, 2, 3, 4};
+show(vet, vet + 4);
 ```
+
+## Arquivos
+
+- Você deve implementar:
+  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/student.cpp)
+    - As funções a serem implementadas.
+- Já está implementado:
+  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/main.cpp)
+    - Faz a leitura do vetor inicial e chama as funções.
+  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/lib.hpp)
+    - Apenas os cabeçalhos.
 
 ___
 
 ## Testes
 
-```py
+```txt
 >>>>>>>> 01
 4
 ========
