@@ -14,6 +14,14 @@ consecutivos do nível inferior.
 - Saída
   - O triângulo
 
+## Arquivos
+
+- required:
+  - [student.cpp](student.cpp)
+- fixed:
+  - [main.cpp](main.cpp)
+  - [lib.hpp](lib.hpp)
+  
 ## Testes
 
 ```txt

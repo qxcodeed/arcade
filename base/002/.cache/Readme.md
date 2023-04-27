@@ -14,6 +14,14 @@ consecutivos do nível inferior.
 - Saída
   - O triângulo
 
+## Arquivos
+
+- required:
+  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/student.cpp)
+- fixed:
+  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/main.cpp)
+  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/lib.hpp)
+  
 ## Testes
 
 ```txt
