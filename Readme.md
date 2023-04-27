@@ -33,7 +33,7 @@
 ------------------------- | ------------------------------------------------
 ![_](.thumbs/008.jpg) | [@008 L2 - lab escape](base/008/Readme.md#l2---lab-escape)
 ![_](.thumbs/010.jpg) | [@010 L2 - distance](base/010/Readme.md#l2---distance)
-![_](.thumbs/028.jpg) | [@028 L2 - sudoku](base/028/Readme.md#l2---sudoku)
+![_](.thumbs/028.jpg) | [@028 L3 - sudoku](base/028/Readme.md#l3---sudoku)
 
 ## Arrays
 

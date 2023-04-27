@@ -7,25 +7,25 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](cover.jpg)
+![_](cover.jpg)
 
 ## Descrição
 
 - Entrada
-    - linha 1: o serial de uma árvore binária
-    - linha 2: um valor de nó
+  - linha 1: o serial de uma árvore binária
+  - linha 2: um valor de nó
 - Saída
-    - se o valor existe:
-        - mostre o caminho da raiz até o nó, 
-        - indicando 'l' ou 'r' se o caminho é pelo filho da esquerda ou da direita. 
-        - ponha um 'x' para quando achar o nó.
-    - Se o valor não existir na árvore
-        - imprima "!"
+  - se o valor existe:
+    - mostre o caminho da raiz até o nó, 
+    - indicando 'l' ou 'r' se o caminho é pelo filho da esquerda ou da direita. 
+    - ponha um 'x' para quando achar o nó.
+  - Se o valor não existir na árvore
+    - imprima "!"
 - Limitação
-    - Você deve percorrer a árvore UMA única vez para obter os caminhos e montar o caminho através do retorno da função.
-
+  - Você deve percorrer a árvore UMA única vez para obter os caminhos e montar o caminho através do retorno da função.
 
 ## Exemplo
+
 Para encontrar o 2 na árvore abaixo, seguimos o caminho `rrrlx`
 
 ```c
@@ -48,7 +48,6 @@ Para encontrar o 2 na árvore abaixo, seguimos o caminho `rrrlx`
             └───#
 ```
 
-
 ```cpp
 //a função recursiva find deve retornar uma sequencia o path até o destino com x no final
 string find_path(Node * root, int value);
@@ -56,7 +55,7 @@ string find_path(Node * root, int value);
 
 ## Testes
 
-```
+```txt
 >>>>>>>> 01 um
 4 # #
 4
@@ -94,8 +93,8 @@ rrrlx
 
 ```
 
-
 ## Código base
+
 ```cpp
 #include <iostream>
 #include <sstream>

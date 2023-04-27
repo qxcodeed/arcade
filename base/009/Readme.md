@@ -1,8 +1,8 @@
-## L3 - slide
+# L3 - slide
 
-![](cover.jpg)
+![_](cover.jpg)
 
-**Descrição da função**
+## Descrição da função
 
 Nesse problema, você recebe uma grade quadrada com algumas células abertas (.) e outras bloqueadas (X).
 
@@ -14,23 +14,26 @@ Dada uma grade, uma posição inicial e uma posição final, determine o número
 
 Por exemplo, você recebe uma grade com os lados n = 3 descritos a seguir:
 
-```
+```txt
 ...
 .X.
 ...
 ```
+
 - As posições são pares linha e coluna no formato (l,c).
 - Se posição inicial para começar no canto superior esquerdo é (startL,startC)=(0,0) e posição final é (goalL,goalC)=(1,2).
-- Teríamos essa configuração sendo `s` para start e `g` para goal, as seguintes posições de linha e coluna. 
-```
+- Teríamos essa configuração sendo `s` para start e `g` para goal, as seguintes posições de linha e coluna.
+
+```txt
 s..
 .Xg
 ...
 ```
+
 - O caminho é (0,0)->(0,2)->(1,2). É preciso 2 movimentos para chegar ao objetivo.
 - Lembre que a peça não move as posições uma a uma, mas salta até o limite.
 
-**Formato de entrada**
+## Formato de entrada
 
 A primeira linha contém um inteiro n, o tamanho do vetor grade.
 
@@ -38,15 +41,13 @@ Cada uma das seguintes n linhas contém uma string de tamanho n.
 
 A última linha contém quatro números inteiros separados por espaço, startL, startC, goalL, goalC.
 
-
-**Formato de saída**
+## Formato de saída
 
 Imprima um número inteiro indicando o número mínimo de etapas necessárias para mover o castelo para a posição do objetivo.
 
-
 ## Testes
 
-```
+```txt
 >>>>>>>> 01
 3
 .X.

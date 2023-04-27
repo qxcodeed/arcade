@@ -1,8 +1,9 @@
 ## @016 L2 - vector fup
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/016/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/016/cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
+
 - Ele deve ser iniciado utilizando alocação dinâmica e conter além do vetor de dados, `size` e `capacity` que definem o tamanho atual e a capacidade do vetor.
 - Verifique no final utilizando o valgrind se você desalocou corrretamente todos os blocos de memória.
 
@@ -29,7 +30,6 @@ $show
 [ 3 4 5 1 7 ]
 $end
 ```
-
 
 ## Código Base
 

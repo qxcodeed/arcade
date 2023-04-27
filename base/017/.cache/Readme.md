@@ -1,8 +1,9 @@
 ## @017 L2 - vector poo
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/017/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/017/cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
+
 - Ele deve ser iniciado utilizando alocação dinâmica e conter além do vetor de dados, `size` e `capacity` que definem o tamanho atual e a capacidade do vetor.
 - Utilize o valgrind ao final para verificar se você desalocou corretamente todos os blocos de memória.
 
@@ -29,7 +30,6 @@ $show
 [ 3 4 5 1 7 ]
 $end
 ```
-
 
 ## Código Base
 

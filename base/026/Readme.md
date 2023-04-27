@@ -1,6 +1,6 @@
 # L1 - build list
 
-![](cover.jpg)
+![_](cover.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
@@ -17,6 +17,7 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 - empty
 
 ## Arquivos
+
 - [student.cpp](student.cpp)
 - [main.cpp](main.cpp)
 - [lib.hpp](lib.hpp)
@@ -58,8 +59,10 @@ struct LinkedList{
 <!--ADD_END-->
 
 ***
+
 ## Testes
-```
+
+```txt
 >>>>>>>>
 show
 push_back 1

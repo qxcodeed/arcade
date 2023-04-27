@@ -1,18 +1,18 @@
 ## @060 L1 - rotation
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/060/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/060/cover.jpg)
 
-Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserí-lo na primeira posição.
+Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserir na primeira posição.
 
 Implemente a operação de rotação. Observe que calculando as posições finais corretamente você fará uma única operação de transposição das posições do vetor.
 
 - Entrada
-    - Linha 1: tamanho do vetor `T` e número de elementos rotacionados `R`
-    - Linha 2: elementos do vetor
+  - Linha 1: tamanho do vetor `T` e número de elementos rotacionados `R`
+  - Linha 2: elementos do vetor
 - Saída
-    - Vetor rotacionado
+  - Vetor rotacionado
 
-```
+```txt
 >>>>>>>>
 5 0
 1 2 3 4 5
@@ -40,8 +40,6 @@ Implemente a operação de rotação. Observe que calculando as posições finai
 ========
 [ 2 3 4 5 1 ]
 <<<<<<<<
-
-
 
 
 ```

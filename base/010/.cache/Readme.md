@@ -1,33 +1,36 @@
 ## @010 L2 - distance
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.
 
 Objetivos:
+
 - Você deve substituir todos os `.` por dígitos seguindo as seguintes regras.
-    - Só pode utilizar dígitos de 0 até L, incluindo L.
-    - Qualquer dígito precisa estar a uma distância mínima de L casas de outra ocorrência dele mesmo, tanto à esquerda como à direita.
+  - Só pode utilizar dígitos de 0 até L, incluindo L.
+  - Qualquer dígito precisa estar a uma distância mínima de L casas de outra ocorrência dele mesmo, tanto à esquerda como à direita.
 
 - Para cada problema, existe uma e somente uma solução.
 
 ## Entrada e Saída
-- Entrada
-    - 1a linha: sequência.
-    - 2a linha: valor de L.
-- Saída
-    - A string solução do problema.
 
+- Entrada
+  - 1a linha: sequência.
+  - 2a linha: valor de L.
+- Saída
+  - A string solução do problema.
 
 ## Limites
+
 - sequência de tamanho t, 0 > t > 100
 - 0 > L > 100
 
 ___
-Testes:
 
-```
+## Testes
+
+```txt
 
 
 >>>>>>>>

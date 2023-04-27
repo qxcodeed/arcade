@@ -7,7 +7,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](cover.jpg)
+![_](cover.jpg)
 
 ## Descrição
 
@@ -18,7 +18,7 @@
 
 ## Testes
 
-```
+```txt
 >>>>>>>> um
 4 # # 
 ========

@@ -1,24 +1,24 @@
-## L2 - sudoku
+# L3 - sudoku
 
-![](cover.jpg)
+![_](cover.jpg)
 
 O Sudoku tem várias versões para diferentes dificuldades. O mais conhecido é o modelo 9x9.
 
 O site [sudoku](https://www.sudokuonline.io/pt/criancas) tem versões simplificadas para crianças com versões 4x4 e 6x6.
 
-![](__exemplos.png)
+![_](__exemplos.png)
 
 Seu objetivo é resolver um sudoku NxN com números de 1 a N.
 
 N pode ser 4 ou 9
 
 - Entrada
-    - Valor de N
-    - Uma matriz N x N composta por números de 1 a N e pontos para os valores faltantes.
+  - Valor de N
+  - Uma matriz N x N composta por números de 1 a N e pontos para os valores faltantes.
 - Saída
-    - O problema resolvido.
+  - O problema resolvido.
 
-```
+```txt
 >>>>>>>>
 4
 1.3.
@@ -97,7 +97,6 @@ N pode ser 4 ou 9
 
 
 ```
-
 
 ## Ajuda
 

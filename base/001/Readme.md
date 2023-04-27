@@ -1,28 +1,29 @@
-## L2 - princess v2
+# L2 - princess v2
 
-[![](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![_](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.
+
 - Números positivos e negativos se alternam. Se tivermos 5 participantes e o primeiro for negativo, então nosso vetor será:
-    - `[ -1 2 -3 4 -5 ]`
-    - O valor de F, denominado fase, poderá ter os valor 1 ou -1 e indica se o primeiro participante será positivo ou negativo.
+  - `[ -1 2 -3 4 -5 ]`
+  - O valor de F, denominado fase, poderá ter os valor 1 ou -1 e indica se o primeiro participante será positivo ou negativo.
 - Se a espada estiver com um participante com número negativo, ele deverá matar o participantes à sua esquerda. Se a espada estiver com um participante de número positivo, deverá matar o participante à sua direita no vetor.
 
 ___
+
 - Entrada:
-    - Os valores de **N** e **E** e **F** na primeira linha.
+  - Os valores de **N** e **E** e **F** na primeira linha.
 - Saída:
-    - Etapa a etapa, os elementos que estão vivos na fila circular.
-        - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
+  - Etapa a etapa, os elementos que estão vivos na fila circular.
+    - Indicando com um > ou < quem está com a espada dependendo se é positivo ou negativo.
 
 ___
 Implemente utilizando o algoritmo que preferir.
 
+## Testes:
 
-Testes:
-
-```
+```txt
 >>>>>>>> 01
 3 1 1
 ========
@@ -160,5 +161,3 @@ Testes:
 
 
 ```
-
-

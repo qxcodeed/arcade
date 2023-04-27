@@ -7,7 +7,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](cover.jpg)
+![_](cover.jpg)
 
 ## Descrição
 
@@ -16,9 +16,10 @@
 - Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
 - A saída é a árvore percorrida in-order, mas já está implementado.
 
-
 ## lib
+
 - lib.hpp
+
 <!--ADD lib.hpp cpp-->
 ```cpp
 #pragma once
@@ -48,15 +49,15 @@ public:
 <!--ADD_END-->
 
 ## Arquivos
+
 - [main.cpp](main.cpp)
 - [student.cpp](student.cpp)
 - [lib.h](lib.h)
 - [lib.cpp](lib.cpp)
 
-
 ## Testes
 
-```
+```txt
 >>>>>>>> um
 4 # # 
 ========

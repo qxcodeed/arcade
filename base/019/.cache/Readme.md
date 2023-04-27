@@ -1,21 +1,21 @@
-## @019 - pathfinding
+## @019 L3 - pathfinding
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/019/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/019/cover.jpg)
 
 Dessa vez, o labirinto não é perfeito e existem múltiplos caminhos que podem levar ao destino. Seu objetivo é implementar o algoritmo de floodfill pathfinding.
 
 Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.
 
 - Entrada
-    - Linha 1: número de linhas e das colunas da matriz
-    - Linhas subsequentes: matriz composta por 4 caracteres
-        - `#` representa uma parede
-        - ` ` representa um corredor por onde se pode andar
-        - `I` representa o início
-        - `F` representa o fim
+  - Linha 1: número de linhas e das colunas da matriz
+  - Linhas subsequentes: matriz composta por 4 caracteres
+    - `#` representa uma parede
+    - ` ` representa um corredor por onde se pode andar
+    - `I` representa o início
+    - `F` representa o fim
 
 - Saída
-    - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
+  - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
 
 ## Sugestão do algoritmo
 
@@ -38,17 +38,19 @@ bool procurar_saida(vector<string> &mat, Pos inicio, Pos fim){
 }
 
 ```
+
 Após encontrar a saída, refaça o caminho usando a matriz de distância para chegar no elemento início.
 
-
-
-
 ## Dica
+
 - inicializar a matriz de distancia
+
 ```cpp
     vector<vector<int>> mat(nl, vector<int>(nc, -1));
 ```
+
 - inicializar a fila
+
 ```cpp
     queue<Pos> fila;
 ```
@@ -64,9 +66,9 @@ Após encontrar a saída, refaça o caminho usando a matriz de distância para c
                 break
 ```
 
-
 ## Testes
-```
+
+```txt
 >>>>>>>>
 10 20
 ####################

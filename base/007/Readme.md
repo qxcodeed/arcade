@@ -1,13 +1,12 @@
-## L2 - stack burn
-## @qxcode
+# L2 - stack burn
 
-![](cover.jpg)
+![_](cover.jpg)
 
 Refaça o problema da queimada utilizando pilha no lugar da recursão.
 
 Você pode utilizar esse algoritmo.
 
-```
+```txt
 verifique a primeira posição e queime-o
 inicie a pilha com esse elemento
 enquanto a pilha não estiver vazia faça
@@ -22,8 +21,9 @@ enquanto a pilha não estiver vazia faça
         empilhe
 ```
 
+## Testes
 
-```
+```txt
 >>>>>>>> 01
 2 3 1 1
 #.#

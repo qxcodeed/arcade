@@ -1,6 +1,6 @@
 ## @000 L2 - princess v1
 
-[![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/000/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/000/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 [](solver.cpp)
 Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.
@@ -12,17 +12,22 @@ ___
 No problema, **N** pessoas se colocam numa fila circular e assumem valores de 1 até **N**. Um número **E** é escolhido para iniciar o jogo. **E** pega a espada, mata o elemento à sua frente e passa a espada uma posição à frente. O jogo continua até que um único elemento permaneça vivo.
 
 ___
+
 - Entrada:
-    - Os valores de **N** e **E** na primeira linha.
+  - Os valores de **N** e **E** na primeira linha.
 - Saída:
-    - Etapa a etapa, os elementos que estão vivos na fila circular, indicando com um > quem está com a espada.
+  - Etapa a etapa, os elementos que estão vivos na fila circular, indicando com um > quem está com a espada.
 
 ___
+
 ## Implementação usando vetor
+
 ### Abordagem I
+
 - marcando os elementos que morrem.
-    - toda vez que alguém morrer, marque 0 no vetor
-    - procure pelo próximo elemento vivo a diretia
+  - toda vez que alguém morrer, marque 0 no vetor
+  - procure pelo próximo elemento vivo a direita
+
 ```c
 int elementos[size];
 //matar equivale a fazer
@@ -31,10 +36,10 @@ vivos[pos] = false;
 int prox = procurar_vivo(elementos, size, pos);
 ```
 
-
 ### Abordagem II
+
 - retirando os elementos que morrem e diminuindo o tamanho do vetor.
-    - reposicione os elementos "puxando" todos os que estiverem à frente
+  - reposicione os elementos "puxando" todos os que estiverem à frente
 
 ```c
 //faça a funcao matar que remove o elemento do vetor
@@ -51,6 +56,7 @@ pos = pos % size; //se ele era o último agora é o zero
 - Implemente os dois e vá aumentando a instância do problema e veja o resultado.
 
 ___
+
 ## Implementação usando listas
 
 Resolva novamente o problema utilizando uma lista ligada no lugar do vetor.
@@ -66,7 +72,7 @@ struct Node{
 ___
 Testes:
 
-```
+```txt
 >>>>>>>> 01
 3 1
 ========
@@ -142,7 +148,4 @@ Testes:
 <<<<<<<<
 
 
-
 ```
-
-

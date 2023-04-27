@@ -1,6 +1,6 @@
 ## @005 L1 - vector rec
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos. 
 
@@ -9,17 +9,17 @@ Você pode utilizar laço para ler os elementos do vetor.
 ___
 
 - Entrada
-    - um vetor de inteiros. O vetor tem no mínimo 1 elemento.
+  - um vetor de inteiros. O vetor tem no mínimo 1 elemento.
 - Saída
-    - vet: o vetor
-    - rvet: o vetor impresso ao contrário
-    - sum: a soma dos elementos
-    - mult: a multiplicação dos elementos
-    - min: o menor elemento
-    - inv: inverte o vetor, depois imprime ele invertido
-
+  - vet: o vetor
+  - rvet: o vetor impresso ao contrário
+  - sum: a soma dos elementos
+  - mult: a multiplicação dos elementos
+  - min: o menor elemento
+  - inv: inverte o vetor, depois imprime ele invertido
 
 ___
+
 ## Help
 
 Em C e C++, pode ler a entrada de dados dessa forma. Ele vai ler inteiros até chegar ao final do arquivo de entrada. Se tiver digitando os valores utilize:
@@ -30,6 +30,7 @@ Em C e C++, pode ler a entrada de dados dessa forma. Ele vai ler inteiros até c
 para enviar um sinal de fim de arquivo. 
 
 ### C
+
 ```c
 //c
 int vet[1000];
@@ -41,6 +42,7 @@ while(scanf("%d", &value) > 0)
 ```
 
 ### C++
+
 ```cpp
 #include <sstream> //stringstream
 
@@ -57,7 +59,7 @@ ___
 
 ## Testes
 
-```
+```py
 >>>>>>>> 01
 4
 ========

@@ -7,7 +7,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/cover.jpg)
 
 ## Descrição
 
@@ -16,9 +16,10 @@
 - Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
 - A saída é a árvore percorrida in-order, mas já está implementado.
 
-
 ## lib
+
 - lib.hpp
+
 <!--ADD lib.hpp cpp-->
 ```cpp
 #pragma once
@@ -48,15 +49,15 @@ public:
 <!--ADD_END-->
 
 ## Arquivos
+
 - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/main.cpp)
 - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/student.cpp)
 - [lib.h](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/lib.h)
 - [lib.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/lib.cpp)
 
-
 ## Testes
 
-```
+```txt
 >>>>>>>> um
 4 # # 
 ========

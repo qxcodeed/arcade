@@ -1,23 +1,25 @@
-## L1 - burn
+# L1 - burn
 
-![](cover.jpg)
+![_](cover.jpg)
 
 Dado uma matriz que representa espaços vazios e árvores e um ponto inicial onde começa o fogo, retorne a matriz com as árvores queimadas. O fogo se não se espalha nas diagonais, apenas nas 4 direções cardeais.
 
 A matriz está codificada assim.
 1a linha: `nl, nc, l, c` respectivamente
--  número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
+
+- número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
 - Nas linhas subsequentes:
-    - '\#' representa uma árvore
-    - '.' representa um espaço vazio
-    - 'o' representa uma árvore queimada
+  - '\#' representa uma árvore
+  - '.' representa um espaço vazio
+  - 'o' representa uma árvore queimada
 
 Saída esperada:
+
 - Imprima a matriz após a queimada acontecer.
 
 ## Testes
 
-```
+```txt
 >>>>>>>> 01
 2 3 1 1
 #.#
@@ -64,6 +66,7 @@ oooo..o
 Você pode utilizar um vetor de strings para representar uma matriz de caracteres. Uma string é um vetor de caracteres. Dessa forma um `vector<string> mat` é uma vetor bidimensional. O exemplo a seguir já carrega a matriz na `main` e já faz um método capaz de imprimir a matriz. Você só precisa implementar o método `tocar_fogo`.
 
 Utilize as seguintes regras para recursão.
+
 - Se a posição for fora da matriz, retorne.
 - Se a posição não for uma arvore retorne.
 - Queime a arvore.

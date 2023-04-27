@@ -1,7 +1,8 @@
-## L1 - double stack
+# L1 - double stack
 
-![](cover.jpg)
-**Descrição da função**
+![_](cover.jpg)
+
+## Descrição da função
 
 Uma fila é um tipo de dados abstrato que mantém a ordem na qual os elementos foram adicionados a ela, permitindo que os elementos mais antigos sejam removidos da frente e os novos elementos sejam adicionados na parte traseira. 
 
@@ -13,28 +14,28 @@ Nesse desafio, você deve primeiro implementar uma fila usando duas pilhas. Em s
 - 2: Retirar da fila o elemento na frente da fila.
 - 3: Mostre o elemento na frente da fila.
 
-**Formato de entrada**
+## Formato de entrada
 
 A primeira linha contém um único número inteiro, q, denotando o número de consultas.
 Cada linha i das q linhas subsequentes contém uma única consulta no padrão descrito acima no problema. Todas as três consultas começam com um número inteiro que indica o tipo da consulta, mas apenas a primeira consulta é seguida por um valor adicional x separado por espaço, indicando o valor a ser enfileirado.
 
-**Formato de saída**
+## Formato de saída
 
 Para cada consulta do tipo 3, imprima o valor do elemento na frente da fila em uma nova linha. As consultas de tipo 1 e 2 não necessitam imprimir nada.
 
 
 ## Ajuda
+
 - Você pode utilizar duas pilhas. 
 - Vamos chamar a primeira pilha de "deposito" e a segunda de "prateleira".
 - Se precisar colocar algo, você coloca no deposito.
 - Se precisar pegar algo você pega da prateleira.
 - Se a prateleira estiver vazia, você retira tudo do deposito para a prateleira.
-    - Observe que agora o depósito foi invertido e a primeira a ser inserida no depósito é a última da prateleira.
-
+  - Observe que agora o depósito foi invertido e a primeira a ser inserida no depósito é a última da prateleira.
 
 ## Testes
 
-```
+```txt
 >>>>>>>>
 9
 1 1

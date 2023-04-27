@@ -5,9 +5,10 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/046/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/046/cover.jpg)
 
 ## Descrição
+
 Leia a árvore a partir do serial utilizando o método da atividade `@044` e implemente os seguintes métodos para calcular a soma de todos os elementos e o valor do menor elemento.
 
 ```cpp
@@ -17,13 +18,13 @@ int min(Node * root);
 ```
 
 - Entrada
-    - Serial de uma árvore
+  - Serial de uma árvore
 - Saída
-    - Soma dos valores da árvore, menor valor da árvore.
+  - Soma dos valores da árvore, menor valor da árvore.
 
 ## Testes
 
-```
+```txt
 >>>>>>>> 01 um
 4 # # 
 ========

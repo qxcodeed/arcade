@@ -1,11 +1,12 @@
 ## @045 L2 - tree high deep
+
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Código base](#código-base)
 - [Testes](#testes)
 <!--TOC_END-->
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/cover.jpg)
 
 ## Descrição
 
@@ -18,13 +19,12 @@ int getProfundidade(Node * node);
 ```
 
 - Entrada
-    - linha 1: o serial de uma árvore
-    - linha 2: uma lista de valores de nó
+  - linha 1: o serial de uma árvore
+  - linha 2: uma lista de valores de nó
 - Saída
-    - Para cada nó da lista, um nó por linha, altura e profundidade do nó ou -1 se o nó não for encontrado
+  - Para cada nó da lista, um nó por linha, altura e profundidade do nó ou -1 se o nó não for encontrado
 
-![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/__altura.jpg)
-
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/045/__altura.jpg)
 
 ## Código base
 
@@ -47,7 +47,8 @@ int main(){
 ```
 
 ## Testes
-```
+
+```txt
 >>>>>>>> 01 um
 4 # # 
 4
