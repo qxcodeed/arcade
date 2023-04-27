@@ -23,10 +23,10 @@
 
 \________________________ | \_______________________________________________
 ------------------------- | ------------------------------------------------
-![_](.thumbs/002.jpg) | [@002 L2 - triangle integrado](base/002/Readme.md#l2---triangle-integrado)
 ![_](.thumbs/005.jpg) | [@005 L1 - vector rec](base/005/Readme.md#l1---vector-rec)
 ![_](.thumbs/003.jpg) | [@003 L1 - burn](base/003/Readme.md#l1---burn)
-![_](.thumbs/004.jpg) | [@004 L2 - triangle](base/004/Readme.md#l2---triangle)
+![_](.thumbs/002.jpg) | [@002 L2 - triangle](base/002/Readme.md#l2---triangle)
+
 
 ## Backtracking
 

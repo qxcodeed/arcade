@@ -1,4 +1,4 @@
-# L2 - triangle integrado
+# L2 - triangle
 
 ![_](cover.jpg)
 
