@@ -1,4 +1,4 @@
-## L1 - {robot} double stack
+## L1 - double stack
 
 ![](cover.jpg)
 **Descrição da função**

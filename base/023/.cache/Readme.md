@@ -1,4 +1,4 @@
-## @023 L4 - {robot} undo redo
+## @023 L4 - undo redo
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/023/capa.jpg)
 

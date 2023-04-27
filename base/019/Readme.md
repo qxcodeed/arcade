@@ -1,4 +1,4 @@
-L3 - {robot} pathfinding
+L3 - pathfinding
 
 ![](cover.jpg)
 

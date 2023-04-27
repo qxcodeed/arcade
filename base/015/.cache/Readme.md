@@ -1,4 +1,4 @@
-## @015 L2 - {robot} editor
+## @015 L2 - editor
 ## @qxcode
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/015/cover.jpg)

@@ -1,4 +1,4 @@
-## L2 - {robot} vector poo
+## L2 - vector poo
 
 ![](cover.jpg)
 

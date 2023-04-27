@@ -1,4 +1,4 @@
-## @024 L3 - {robot} bank
+## @024 L3 - bank
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/024/cover.jpg)
 

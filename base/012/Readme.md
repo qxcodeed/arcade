@@ -1,4 +1,7 @@
-# Matriz Soma e Multiplicação
+# L2 - Matriz Soma e Multiplicação
+
+## Guide
+- [draft.cpp](draft.cpp)
 
 ## Shell
 

@@ -1,4 +1,4 @@
-## L1 - {robot} burn
+## L1 - burn
 
 ![](cover.jpg)
 

@@ -1,4 +1,4 @@
-## L4 - {robot} undo redo
+## L4 - undo redo
 
 ![](capa.jpg)
 

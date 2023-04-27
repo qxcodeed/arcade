@@ -1,4 +1,4 @@
-## @046 L2 - {robot} tree sum
+## @046 L2 - tree sum
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Testes](#testes)

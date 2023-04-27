@@ -1,4 +1,4 @@
-L2 - {robot} lab escape
+L2 - lab escape
 
 ![](cover.jpg)
 

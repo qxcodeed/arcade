@@ -1,4 +1,4 @@
-## L2 - {robot} stack burn
+## L2 - stack burn
 ## @qxcode
 
 ![](cover.jpg)

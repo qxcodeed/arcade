@@ -1,4 +1,4 @@
-# L2 - {robot} tree high deep
+# L2 - tree high deep
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Código base](#código-base)

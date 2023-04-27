@@ -1,4 +1,4 @@
-## @001 L2 - {robot} princess v2
+## @001 L2 - princess v2
 
 [![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/001/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

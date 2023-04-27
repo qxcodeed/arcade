@@ -1,4 +1,4 @@
-## @010 L2 - {robot} distance
+## @010 L2 - distance
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg)
 

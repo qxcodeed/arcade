@@ -1,4 +1,4 @@
-# L2 - {robot} tree path
+# L2 - tree path
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)

@@ -1,4 +1,4 @@
-## L2 - {robot} distance
+## L2 - distance
 
 ![](cover.jpg)
 

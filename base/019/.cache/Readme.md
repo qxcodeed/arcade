@@ -1,4 +1,4 @@
-## @019 - {robot} pathfinding
+## @019 - pathfinding
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/019/cover.jpg)
 

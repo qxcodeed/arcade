@@ -1,4 +1,4 @@
-## L1 - {robot} query
+## L1 - query
 
 ![](cover.jpg)
 

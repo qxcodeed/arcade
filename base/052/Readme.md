@@ -1,4 +1,4 @@
-## L2 - {robot} erase all
+## L2 - erase all
 
 ![](cover.jpg)
 

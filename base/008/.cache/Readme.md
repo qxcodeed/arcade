@@ -1,4 +1,4 @@
-## @008 - {robot} lab escape
+## @008 - lab escape
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/008/cover.jpg)
 

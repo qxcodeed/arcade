@@ -1,4 +1,4 @@
-## @028 L2 - {robot} sudoku
+## @028 L2 - sudoku
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/028/cover.jpg)
 

@@ -1,4 +1,4 @@
-## L1 - {robot} rotation
+## L1 - rotation
 
 ![](cover.jpg)
 

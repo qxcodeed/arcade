@@ -1,4 +1,4 @@
-## L2 - {robot} truck
+## L2 - truck
 ![](cover.jpg)
 
 [](solver.cpp)

@@ -1,4 +1,7 @@
-## @012 Matriz Soma e Multiplicação
+## @012 L2 - Matriz Soma e Multiplicação
+
+## Guide
+- [draft.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/012/draft.cpp)
 
 ## Shell
 

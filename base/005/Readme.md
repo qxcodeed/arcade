@@ -1,4 +1,4 @@
-## L1 - {robot} vector rec
+## L1 - vector rec
 
 ![](cover.jpg)
 

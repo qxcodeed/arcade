@@ -1,4 +1,4 @@
-## @016 L2 - {robot} vector fup
+## @016 L2 - vector fup
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/016/cover.jpg)
 

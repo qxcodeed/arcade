@@ -1,4 +1,4 @@
-## L2 - {robot} princess v1 list
+## L2 - princess v1 list
 
 [![](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 

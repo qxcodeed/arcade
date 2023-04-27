@@ -1,4 +1,4 @@
-## L3 - {robot} slide
+## L3 - slide
 
 ![](cover.jpg)
 

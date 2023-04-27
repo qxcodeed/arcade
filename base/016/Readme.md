@@ -1,4 +1,4 @@
-## L2 - {robot} vector fup
+## L2 - vector fup
 
 ![](cover.jpg)
 

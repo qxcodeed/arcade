@@ -1,4 +1,4 @@
-## @047 L2 - {robot} tree show
+## @047 L2 - tree show
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)

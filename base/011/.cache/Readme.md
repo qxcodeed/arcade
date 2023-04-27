@@ -1,4 +1,4 @@
-## @011 L2 - {robot} truck
+## @011 L2 - truck
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/011/cover.jpg)
 
 [](solver.cpp)

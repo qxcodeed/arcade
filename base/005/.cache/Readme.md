@@ -1,4 +1,4 @@
-## @005 L1 - {robot} vector rec
+## @005 L1 - vector rec
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
 

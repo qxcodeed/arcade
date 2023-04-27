@@ -1,4 +1,4 @@
-# L1 - {robot} build list
+# L1 - build list
 
 ![](cover.jpg)
 

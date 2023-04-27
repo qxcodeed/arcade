@@ -1,4 +1,4 @@
-## @017 L2 - {robot} vector poo
+## @017 L2 - vector poo
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/017/cover.jpg)
 

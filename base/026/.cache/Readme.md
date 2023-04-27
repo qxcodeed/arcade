@@ -1,4 +1,4 @@
-## @026 L1 - {robot} build list
+## @026 L1 - build list
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/cover.jpg)
 

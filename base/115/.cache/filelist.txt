@@ -1,9 +1,0 @@
-xmat.h
-xpaint.h
-Readme.md
-cover.jpg
-make_img.out
-lab.png
-main.cpp
-lab_50_70.txt
-

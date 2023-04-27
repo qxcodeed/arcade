@@ -1,4 +1,4 @@
-## @003 L1 - {robot} burn
+## @003 L1 - burn
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/cover.jpg)
 

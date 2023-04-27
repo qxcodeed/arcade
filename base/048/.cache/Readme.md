@@ -1,4 +1,4 @@
-## @048 L2 - {robot} tree serialize
+## @048 L2 - tree serialize
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)

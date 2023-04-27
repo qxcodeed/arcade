@@ -1,4 +1,4 @@
-## L2 - {robot} sudoku
+## L2 - sudoku
 
 ![](cover.jpg)
 

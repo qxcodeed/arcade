@@ -1,4 +1,4 @@
-## L2 - {robot} editor
+## L2 - editor
 ## @qxcode
 
 ![](cover.jpg)

@@ -1,4 +1,4 @@
-## L1 - {robot} crosses
+## L1 - crosses
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 

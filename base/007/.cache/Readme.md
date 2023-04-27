@@ -1,4 +1,4 @@
-## @007 L2 - {robot} stack burn
+## @007 L2 - stack burn
 ## @qxcode
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/007/cover.jpg)

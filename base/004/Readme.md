@@ -1,4 +1,4 @@
-## L2 - {robot} triangle
+## L2 - triangle
 
 ![](cover.jpg)
 

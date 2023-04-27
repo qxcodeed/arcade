@@ -1,4 +1,4 @@
-## @052 L2 - {robot} erase all
+## @052 L2 - erase all
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/052/cover.jpg)
 

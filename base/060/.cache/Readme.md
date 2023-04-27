@@ -1,4 +1,4 @@
-## @060 L1 - {robot} rotation
+## @060 L1 - rotation
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/060/cover.jpg)
 

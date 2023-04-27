@@ -1,4 +1,4 @@
-## @009 L3 - {robot} slide
+## @009 L3 - slide
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/009/cover.jpg)
 

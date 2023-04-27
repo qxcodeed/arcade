@@ -1,4 +1,4 @@
-## @004 L2 - {robot} triangle
+## @004 L2 - triangle
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/004/cover.jpg)
 

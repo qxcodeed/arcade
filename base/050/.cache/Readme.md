@@ -1,4 +1,4 @@
-## @050 L1 - {robot} query
+## @050 L1 - query
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/050/cover.jpg)
 

@@ -1,4 +1,4 @@
-## L3 - {robot} bank
+## L3 - bank
 
 ![](cover.jpg)
 

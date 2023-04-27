@@ -1,4 +1,4 @@
-# L2 - {robot} tree load
+# L2 - tree load
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)

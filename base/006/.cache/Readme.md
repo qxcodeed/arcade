@@ -1,4 +1,4 @@
-## @006 L1 - {robot} double stack
+## @006 L1 - double stack
 
 ![](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/006/cover.jpg)
 **Descrição da função**
