@@ -17,6 +17,15 @@ Saída esperada:
 
 - Imprima a matriz após a queimada acontecer.
 
+
+## Arquivos
+
+- required:
+  - [student.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/student.cpp)
+- fixed:
+  - [main.cpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/main.cpp)
+  - [lib.hpp](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/003/lib.hpp)
+
 ## Testes
 
 ```txt

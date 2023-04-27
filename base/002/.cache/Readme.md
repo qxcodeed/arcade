@@ -1,4 +1,4 @@
-## @002 L2 - triangle
+## @002 L2 - triangle integrado
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/cover.jpg)
 

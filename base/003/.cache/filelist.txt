@@ -1,7 +1,12 @@
 Readme.md
 cover.jpg
-solver2.cpp
+main.cpp
+lib.hpp
 t.tio
+temp/solver2.cpp
+temp/student.cpp
+temp
+local.sh
 student.cpp
 .comments/fig.xml
 .comments/fig.jpg.xml

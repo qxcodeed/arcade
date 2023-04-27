@@ -17,6 +17,15 @@ Saída esperada:
 
 - Imprima a matriz após a queimada acontecer.
 
+
+## Arquivos
+
+- required:
+  - [student.cpp](student.cpp)
+- fixed:
+  - [main.cpp](main.cpp)
+  - [lib.hpp](lib.hpp)
+
 ## Testes
 
 ```txt
