@@ -1,6 +1,8 @@
-## @005 L1 - vector rec
+# @005 L1 - vector rec
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/005/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/005/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/005/cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos.
 

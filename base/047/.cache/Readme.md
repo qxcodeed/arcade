@@ -1,4 +1,6 @@
-## @047 L2 - tree show
+# @047 L2 - tree show
+
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/047/Readme.md)
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
@@ -7,7 +9,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/047/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/047/cover.jpg)
 
 ## Descrição
 

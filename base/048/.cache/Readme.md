@@ -1,4 +1,6 @@
-## @048 L2 - tree serialize
+# @048 L2 - tree serialize
+
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/048/Readme.md)
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
@@ -7,7 +9,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/048/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/048/cover.jpg)
 
 ## Descrição
 

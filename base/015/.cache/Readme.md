@@ -1,6 +1,8 @@
-## @015 L2 - editor
+# @015 L2 - editor
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/015/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/015/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/015/cover.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

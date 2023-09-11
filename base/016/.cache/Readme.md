@@ -1,6 +1,8 @@
-## @016 L2 - vector fup
+# @016 L2 - vector fup
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/016/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/016/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/016/cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 

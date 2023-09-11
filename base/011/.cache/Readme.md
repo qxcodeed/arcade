@@ -1,6 +1,8 @@
-## @011 L2 - truck
+# @011 L2 - truck
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/011/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/011/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/011/cover.jpg)
 
 [](solver.cpp)
 

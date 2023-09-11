@@ -1,6 +1,8 @@
-## @026 L1 - build list
+# @026 L1 - build list
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/026/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/026/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/026/cover.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)

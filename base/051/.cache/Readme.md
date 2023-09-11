@@ -1,10 +1,12 @@
-## @051 L1 - crosses
+# @051 L1 - crosses
+
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/051/Readme.md)
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 
 Na Copa do Mundo, depois de uma fase de grupos, dezesseis equipes disputam a Fase Final, composta de quinze jogos eliminatórios. A figura abaixo mostra a tabela de jogos da Fase Final:
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/051/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/051/cover.jpg)
 
 Dados os resultados dos quinze jogos da Fase Final, escreva um programa que determine a equipe campeã.
 

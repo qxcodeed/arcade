@@ -1,6 +1,8 @@
-## @006 L1 - double stack
+# @006 L1 - double stack
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/006/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/006/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/006/cover.jpg)
 
 ## Descrição da função
 

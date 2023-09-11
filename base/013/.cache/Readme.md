@@ -1,6 +1,8 @@
-## @013 L2 - princess v1 list
+# @013 L2 - princess v1 list
 
-[![_](https://github.com/qxcodeed/arcade/blob/master/base/013/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/013/Readme.md)
+
+[![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/013/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 Um problema bem interessante e antigo da matemática é conhecido como Josephus Problem. No link da imagem você pode, por curiosidades aprender bastantes sobre ele e o modelo matemático que se propõe a modelá-lo.
 

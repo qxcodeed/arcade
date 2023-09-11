@@ -1,6 +1,8 @@
-## @017 L2 - vector poo
+# @017 L2 - vector poo
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/017/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/017/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/017/cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 

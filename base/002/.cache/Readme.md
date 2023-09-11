@@ -1,18 +1,19 @@
-## @002 L2 - triangle
+# @002 L2 - triangle
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/002/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/002/Readme.md)
 
-Dado um vetor de inteiros A, imprima um triângulo de números
-tal que na base do triângulo estejam todos os elementos do
-vetor original, e tal que, a cada i-ésimo nível acima da base, o
-número de elementos seja um a menos que no nível inferior e
-cada elemento do i-ésimo nível seja a soma de dois elementos
-consecutivos do nível inferior.
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/002/cover.jpg)
+
+Dado um vetor de inteiros A, imprima um triângulo de números tal que na base do triângulo estejam todos os elementos do vetor original, e tal que, a cada i-ésimo nível acima da base, o número de elementos seja um a menos que no nível inferior e cada elemento do i-ésimo nível seja a soma de dois elementos consecutivos do nível inferior.
 
 - Entrada
   - Os elementos da base.
 - Saída
   - O triângulo.
+
+## Dica
+
+Veja a resolução da atividade "Empilhamento da Recursão" para entender como funciona a impressão de trás pra frente.
 
 ## Arquivos
 
@@ -76,6 +77,5 @@ consecutivos do nível inferior.
 [ 3 6 12 24 48 96 ]
 [ 1 2 4 8 16 32 64 ]
 <<<<<<<<
-
 
 ```

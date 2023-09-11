@@ -1,6 +1,8 @@
-## @023 L4 - undo redo
+# @023 L4 - undo redo
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/023/capa.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/023/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/023/capa.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

@@ -1,6 +1,8 @@
-## @010 L2 - distance
+# @010 L2 - distance
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/010/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/010/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/010/cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.

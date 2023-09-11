@@ -1,41 +1,40 @@
-## @025 L2 - stack lab escape
+# @025 L2 - stack lab escape
 
-![_](https://github.com/qxcodeed/arcade/blob/master/base/025/cover.jpg)
+Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/025/Readme.md)
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/025/cover.jpg)
 
 Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.
 Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.
 
 - Entrada
+
   - Linha 1: número de linhas e das colunas da matriz
   - Linhas subsequentes: matriz composta por 4 caracteres
     - `#` representa uma parede
-    - ` ` representa um corredor por onde se pode andar
+    - ` ` (espaço vazio) representa um corredor por onde se pode andar
     - `I` representa o início
     - `F` representa o fim
 
 - Saída
   - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
 
+## Arquivos
+
+- Você deve implementar:
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/025/student.cpp)
+    - escrever a função procurar_saida e get_vizinhos.
+- Já está implementado:
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/025/main.cpp)
+    - Faz a leitura do numero de linhas, numero de colunas e da matriz com os pontos de início e final marcados
+    - Chama a função procurar_saida.
+    - Imprime a matriz com o caminho marcado.
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/025/lib.hpp)
+    - Apenas o cabeçalho da função procurar_saida e get_vizinhos.
+
 ## OBS
 
 - Para resolver, você deve utilizar uma pilha no lugar da recursão.
-
-```txt
-marque e empilhe a posição inicio
-inicie a pilha com esse elemento
-enquanto a pilha não estiver vazia faça
-    pegue topo da fila
-    se ele for o destino
-        retorne
-
-    faça uma lista com todos os vizinhos de topo que ainda não foram percorridos
-    se lista eh vazia
-        desempilhe
-    senão
-        escolha um dos vizinhos
-        marque
-        empilhe
-```
 
 ## Testes
 

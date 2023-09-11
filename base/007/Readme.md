@@ -2,24 +2,37 @@
 
 ![_](cover.jpg)
 
-Refaça o problema da queimada utilizando pilha no lugar da recursão.
+- Seja uma matriz de caracteres que representa um mapa de uma floresta.
+- Cada caractere representa um espaço vazio ou uma árvore.
+- O espaço vazio é representado por um ponto `.` e a árvore por uma hashtag `#`.
+- O fogo começa em um ponto inicial e se espalha para os vizinhos até que não haja mais árvores para queimar.
 
-Você pode utilizar esse algoritmo.
+Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvores. O fogo não se espalha nas diagonais, apenas nas 4 direções cardeais.
 
-```txt
-verifique a primeira posição e queime-o
-inicie a pilha com esse elemento
-enquanto a pilha não estiver vazia faça
-    pegue topo da pilha
+## Entrada
 
-    faça uma lista com todos os vizinhos de topo que podem ser queimados
-    se lista eh vazia
-        desempilhe
-    senão
-        escolha um dos vizinhos
-        queime
-        empilhe
-```
+- 1a linha: `nl, nc, l, c`:
+  - Número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
+- Nas linhas subsequentes a matriz da floresta sendo que
+  - '\#' representa uma árvore
+  - '.' representa um espaço vazio
+
+## Saída
+
+- A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
+
+## Arquivos
+
+- Você deve implementar:
+  - [student.cpp](student.cpp)
+    - escrever a função queimar, inside e get_neib.
+- Já está implementado:
+  - [main.cpp](main.cpp)
+    - Faz a leitura da matriz e do ponto inicial
+    - Chama a função queimar para o ponto inicial.
+    - Imprime a matriz após a queimada.
+  - [lib.h](lib.h)
+    - Apenas o cabeçalho da função queimar, inside e get_neib.
 
 ## Testes
 

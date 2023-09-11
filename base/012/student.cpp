@@ -12,24 +12,18 @@ public:
     std::vector<std::vector<int>> data;   // utilizando vector como matriz
     
     // Construtor: aloca matriz com m linhas e n colunas
-    Matriz(int nl, int nc) { //todo 
-    }
+    Matriz(int nl, int nc): 
 
     // atribui os dados do vetor para linhas e colunas
     // ex: matrix de 2 linhas por 3 colunas
     // [1,2,3,4,5,6] -> {[1,2,3], [4,5,6]}
-    void set(std::vector<int> data) {
-    }
+    void set(std::vector<int> data);
 
     // Retorna o numero de linhas da matriz
-    std::pair<int, int> size() {
-        return {}; // todo
-    }
+    std::pair<int, int> size();
 
     // Retorna o vetor posição i
-    std::vector<int>& operator[](int i) {
-        return {}; // todo
-    }
+    std::vector<int>& operator[](int i);
 
     // matriz no formato {[1, 2, 3, 4], [5, 6, 7, 8]}
     std::string serial();
