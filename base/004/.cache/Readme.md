@@ -1,4 +1,4 @@
-# @004 Empilhamento na recursão
+# @004 L1 - Empilhamento
 
 Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/004/Readme.md)
 

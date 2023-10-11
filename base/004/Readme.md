@@ -1,4 +1,4 @@
-# Empilhamento na recursão
+# L1 - Empilhamento
 
 ![_](cover.jpg)
 
