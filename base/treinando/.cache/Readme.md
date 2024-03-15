@@ -1,4 +1,4 @@
-# L1 - @treinando recursão com vetores (student
+# L1 - @treinando recursão com vetores | student
 
 Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/treinando/Readme.md)
 
