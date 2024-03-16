@@ -1,6 +1,11 @@
 # L2 - @apagando elementos de forma eficiente
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/apagando/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/apagando/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed apagando`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/apagando/cover.jpg)
 

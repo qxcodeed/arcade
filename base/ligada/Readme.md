@@ -1,6 +1,13 @@
 # L1 - implementando lista @ligada simples sem cabeça e rabo
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/ligada/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed ligada`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/ligada/cover.jpg)
 
 <!--TOC_BEGIN-->
 - [Arquivos](#arquivos)
@@ -18,9 +25,9 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 
 ## Arquivos
 
-- [student.cpp](student.cpp)
-- [main.cpp](main.cpp)
-- [lib.hpp](lib.hpp)
+- [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/student.cpp)
+- [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/main.cpp)
+- [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/lib.hpp)
 
 ## Header
 <!--ADD lib.hpp cpp-->

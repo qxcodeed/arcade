@@ -1,6 +1,11 @@
 # L2 - escapando do @labirinto
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/labirinto/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/labirinto/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed labirinto`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/labirinto/cover.jpg)
 

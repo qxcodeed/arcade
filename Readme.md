@@ -31,19 +31,19 @@
 
 ## Arrays
 
-- [L1 - @busca de strings](base/buscas/Readme.md)
+- [L1 - @buscas de strings](base/buscas/Readme.md)
 - [L1 - @rotacoes em uma lista](base/rotacoes/Readme.md)
 - [L2 - @apagando elementos de forma eficiente](base/apagando/Readme.md)
 - [L2 - implementando vector com @ponteiros](base/ponteiros/Readme.md)
 - [L2 - implementando vector com @classes](base/classes/Readme.md)
 - [L2 - @princesa v1](base/princesa/Readme.md)
-- [L2 - @princesa2 alterna](base/princesa2/Readme.md)
+- [L2 - princesa @alternando](base/alternando/Readme.md)
 
 ## List
 
 - [L1 - implementando lista @ligada simples sem cabeça e rabo](base/ligada/Readme.md)
 - [L2 - @princesa-lista](base/princesa-lista/Readme.md)
-- [L2 - princesa-lista2](base/princesa-lista-2/Readme.md)
+- [L2 - @princesa-lista-2 princesa alternando com lista](base/princesa-lista-2/Readme.md)
 - [L3 - Gerenciando a fila do @banco](base/banco/Readme.md)
 - [L2 - @editor de texto](base/editor/Readme.md)
 - [L4 - editor com @controlz](base/controlz/Readme.md)

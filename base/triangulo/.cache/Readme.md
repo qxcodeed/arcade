@@ -1,6 +1,11 @@
 # L2 - @triangulo | student
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed triangulo`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg)
 

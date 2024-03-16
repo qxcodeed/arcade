@@ -1,6 +1,13 @@
 # L1 - @treinando recursão com vetores | student
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/treinando/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed treinando`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/treinando/cover.jpg)
 
 Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos.
 
@@ -33,12 +40,12 @@ show(vet, vet + 4);
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/student.cpp)
     - As funções a serem implementadas.
 - Já está implementado:
-  - [main.cpp](main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/main.cpp)
     - Faz a leitura do vetor inicial e chama as funções.
-  - [lib.hpp](lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/lib.hpp)
     - Apenas os cabeçalhos.
 
 ___

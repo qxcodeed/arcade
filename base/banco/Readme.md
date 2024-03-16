@@ -1,6 +1,13 @@
 # L3 - Gerenciando a fila do @banco
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/banco/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed banco`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/banco/cover.jpg)
 
 Neste trabalho, nós simularemos o atendimento em um banco. O nosso banco tem clientes que estão sendo atendidos no caixa, clientes na espera na fila e clientes na fila de saída. Cada cliente tem um nível de paciência (quantidade de tempo que ele pode esperar na fila) e uma quantidade de documentos a serem processados no caixa.
 

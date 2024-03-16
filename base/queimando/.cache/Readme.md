@@ -1,6 +1,11 @@
 # L2 - @queimando árvores usando pilha
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/queimando/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/queimando/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed queimando`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/queimando/cover.jpg)
 

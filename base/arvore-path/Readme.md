@@ -1,5 +1,12 @@
 # L2 - @arvore-path
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/arvore-path/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed arvore-path`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Exemplo](#exemplo)
@@ -7,7 +14,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![_](cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/arvore-path/cover.jpg)
 
 ## Descrição
 

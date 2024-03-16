@@ -1,6 +1,13 @@
 # L2 - @distancia
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/distancia/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed distancia`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/distancia/cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.

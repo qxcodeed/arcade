@@ -1,6 +1,13 @@
 # L1 - @queimada | student
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/queimada/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed queimada`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/queimada/cover.jpg)
 
 - Seja uma matriz de caracteres que representa um mapa de uma floresta.
 - Cada caractere representa um espaço vazio ou uma árvore.
@@ -24,14 +31,14 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/student.cpp)
     - escrever a função tocar_fogo.
 - Já está implementado:
-  - [main.cpp](main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/main.cpp)
     - Faz a leitura da matriz e do ponto inicial
     - Chama a função tocar_fogo para o ponto inicial.
     - Imprime a matriz após a queimada.
-  - [lib.hpp](lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/lib.hpp)
     - Apenas o cabeçalho da função tocar_fogo.
 
 ## Testes

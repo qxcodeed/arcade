@@ -1,6 +1,11 @@
 # L3 - menor @caminho entre dois pontos - floodfill pathfinding
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/caminho/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/caminho/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed caminho`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/caminho/cover.jpg)
 

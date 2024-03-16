@@ -1,6 +1,11 @@
-# L1 - @busca de strings
+# L1 - @buscas de strings
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/buscas/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/buscas/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed buscas`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/buscas/cover.jpg)
 

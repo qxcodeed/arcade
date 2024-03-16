@@ -1,5 +1,12 @@
 # L2 - serialização @dividido
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/dividido/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed dividido`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [lib](#lib)
@@ -7,7 +14,7 @@
 - [Testes](#testes)
 <!--TOC_END-->
 
-![_](cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/dividido/cover.jpg)
 
 ## Descrição
 
@@ -50,10 +57,10 @@ public:
 
 ## Arquivos
 
-- [main.cpp](main.cpp)
-- [student.cpp](student.cpp)
-- [lib.h](lib.hpp)
-- [lib.cpp](lib.cpp)
+- [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/dividido/main.cpp)
+- [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/dividido/student.cpp)
+- [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/dividido/lib.hpp)
+- [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/dividido/lib.cpp)
 
 ## Testes
 

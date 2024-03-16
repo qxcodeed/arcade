@@ -1,6 +1,13 @@
 # L2 - @queimando árvores usando pilha
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/queimando/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed queimando`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/queimando/cover.jpg)
 
 - Seja uma matriz de caracteres que representa um mapa de uma floresta.
 - Cada caractere representa um espaço vazio ou uma árvore.
@@ -24,14 +31,14 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimando/student.cpp)
     - escrever a função queimar, inside e get_neib.
 - Já está implementado:
-  - [main.cpp](main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimando/main.cpp)
     - Faz a leitura da matriz e do ponto inicial
     - Chama a função queimar para o ponto inicial.
     - Imprime a matriz após a queimada.
-  - [lib.h](lib.h)
+  - [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/queimando/lib.h)
     - Apenas o cabeçalho da função queimar, inside e get_neib.
 
 ## Testes

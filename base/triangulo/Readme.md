@@ -1,6 +1,13 @@
 # L2 - @triangulo | student
 
-![_](cover.jpg)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed triangulo`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg)
 
 Dado um vetor de inteiros A, imprima um triângulo de números tal que na base do triângulo estejam todos os elementos do vetor original, e tal que, a cada i-ésimo nível acima da base, o número de elementos seja um a menos que no nível inferior e cada elemento do i-ésimo nível seja a soma de dois elementos consecutivos do nível inferior.
 
@@ -16,12 +23,12 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](student.cpp)
+  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/student.cpp)
     - escrever a função que processa uma linha do triângulo, chama a recursão e imprime.
 - Já está implementado:
-  - [main.cpp](main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/main.cpp)
     - Faz a leitura do vetor inicial e chama a função recursiva.
-  - [lib.hpp](lib.hpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/lib.hpp)
     - Apenas o cabeçalho.
 
 ## Testes

@@ -1,6 +1,11 @@
 # L3 - Gerenciando a fila do @banco
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/banco/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/banco/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed banco`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/banco/cover.jpg)
 

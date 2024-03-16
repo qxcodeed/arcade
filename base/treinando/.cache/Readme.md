@@ -1,6 +1,11 @@
 # L1 - @treinando recursão com vetores | student
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/treinando/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/treinando/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed treinando`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/treinando/cover.jpg)
 

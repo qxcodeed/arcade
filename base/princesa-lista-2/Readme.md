@@ -1,6 +1,13 @@
-# L2 - princesa-lista2
+# L2 - @princesa-lista-2 princesa alternando com lista
 
-[![_](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/princesa-lista-2/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed princesa-lista-2`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
+[![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/princesa-lista-2/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.
 

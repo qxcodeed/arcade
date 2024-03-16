@@ -1,6 +1,11 @@
 # L1 - implementando lista @ligada simples sem cabeça e rabo
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/ligada/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/ligada/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed ligada`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/ligada/cover.jpg)
 

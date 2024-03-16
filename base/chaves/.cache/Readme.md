@@ -1,6 +1,11 @@
 # L1 - Gerenciando @chaves de disputas usando uma fila
 
-Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/chaves/Readme.md)
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/chaves/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed chaves`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 
