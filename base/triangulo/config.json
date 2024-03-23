@@ -1,0 +1,4 @@
+{
+    "keep": ["./src/cpp/lib.hpp", "./src/cpp/main.cpp"],
+    "required": ["./src/cpp/lib.cpp"]
+}

@@ -1,7 +1,0 @@
-Readme.md
-cover.jpg
-main.cpp
-lib.h
-t.tio
-student.cpp
-

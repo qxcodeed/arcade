@@ -1,6 +1,0 @@
-Readme.md
-cover.jpg
-.__student.cpp.out
-t.tio
-student.cpp
-

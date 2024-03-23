@@ -1,12 +1,5 @@
 # L2 - @altura e profundidade da árvore
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/altura/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed altura`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [Código base](#código-base)

@@ -1,5 +1,0 @@
-Readme.md
-solver_lista.cpp
-cover.jpg
-solver_vector.cpp
-

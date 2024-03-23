@@ -1,12 +1,5 @@
 # L1 - @empilhamento de divisões | draft
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed empilhamento`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/empilhamento/cover.jpg)
 
 Para trabalhar essa técnica, vamos resolver o seguinte problema.
@@ -37,7 +30,13 @@ Imprimindo ao contrário, temos:
 
 ## Draft
 
-[draft.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/draft.cpp)
+<!-- draft -->
+- cpp
+  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/lib.cpp)
+  - [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/lib.h)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/main.cpp)
+
+<!-- draft -->
 
 ## Resolução
 

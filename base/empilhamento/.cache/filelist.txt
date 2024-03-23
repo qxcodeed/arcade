@@ -1,5 +1,0 @@
-draft.cpp
-Readme.md
-cover.jpg
-local.sh
-

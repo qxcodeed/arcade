@@ -1,12 +1,5 @@
 # L2 - @triangulo | student
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed triangulo`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg)
 
 Dado um vetor de inteiros A, imprima um triângulo de números tal que na base do triângulo estejam todos os elementos do vetor original, e tal que, a cada i-ésimo nível acima da base, o número de elementos seja um a menos que no nível inferior e cada elemento do i-ésimo nível seja a soma de dois elementos consecutivos do nível inferior.
@@ -22,14 +15,14 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 
 ## Arquivos
 
-- Você deve implementar:
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/student.cpp)
-    - escrever a função que processa uma linha do triângulo, chama a recursão e imprime.
-- Já está implementado:
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/main.cpp)
-    - Faz a leitura do vetor inicial e chama a função recursiva.
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/lib.hpp)
-    - Apenas o cabeçalho.
+<!-- draft -->
+- cpp
+  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/lang/cpp/lib.cpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/lang/cpp/lib.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/lang/cpp/main.cpp)
+
+<!-- draft -->
+
 
 ## Testes
 
@@ -69,18 +62,6 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 [ 5 8 13 21 ]
 [ 2 3 5 8 13 ]
 [ 1 1 2 3 5 8 ]
-<<<<<<<<
-
->>>>>>>> 05
-1 2 4 8 16 32 64
-========
-[ 729 ]
-[ 243 486 ]
-[ 81 162 324 ]
-[ 27 54 108 216 ]
-[ 9 18 36 72 144 ]
-[ 3 6 12 24 48 96 ]
-[ 1 2 4 8 16 32 64 ]
 <<<<<<<<
 
 ```

@@ -1,12 +1,5 @@
 # L1 - @rotacoes em uma lista
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/rotacoes/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed rotacoes`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/rotacoes/cover.jpg)
 
 Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserir na primeira posição.

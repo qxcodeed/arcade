@@ -1,133 +1,223 @@
 # L1 - @treinando recursão com vetores | student
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/treinando/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed treinando`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
+<!-- toch -->
+[Intro](#intro) | [Atenção](#atenção) | [Draft](#draft) | [Shell](#shell)
+-- | -- | -- | --
+<!-- toch -->
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/treinando/cover.jpg)
 
-Leia um vetor de inteiros e implemente as funções sem utilizar laço para iterar sobre os elementos.
+## Intro
 
-___
+- Dado um vetor de inteiros, implemente funções recursivas para as seguintes operações.
+- `lib.cpp`: onde você fará a implementação dos métodos.
+- `lib.hpp`: A descrição dos métodos a ser implementados.
+- `fn.hpp`: arquivo auxiliar para realizar leitura e escrita de dados.
+- `main.cpp`: arquivo que faz a leitura das solicitações, invoca as funções e imprime as respostas.
 
-- Entrada
-  - um vetor de inteiros. O vetor tem no mínimo 1 elemento.
-- Saída
-  - vet: o vetor
-  - rvet: o vetor impresso ao contrário
-  - sum: a soma dos elementos
-  - mult: a multiplicação dos elementos
-  - min: o menor elemento
-  - inv: inverte o vetor, depois imprime ele invertido
+## Atenção
 
-Todas as funções devem ser recursivas e estão escritas da seguinte forma:
+- Algumas funções vão precisar que você crie funções recursivas auxiliares.
+- Ao terminar de implentar uma função execute os testes e só vá para próxima após passar nos testes.
+- Na seção Shell, você pode ver os testes que serão executados.
+- Na seção Draft, você pode baixar manualmente os arquivos. Mas é mais prático utilizar o `tko`.
+- No arquivo `lib.cpp`, o método `tostr` está implmentado como modelo.
+- A seguir, o arquivo `lib.hpp` para consulta:
+
+<!-- load src/cpp/lib.hpp fenced:cpp -->
 
 ```cpp
-// init: aponta para o primeiro elemento do vetor
-// end: aponta para uma posição depois do último elemento do vetor
-void show(int * init, int * end) {
+//lib.hpp
+#pragma once
+#include <iostream>
 
-}
+namespace alu {
+    // init: aponta para o primeiro elemento do vetor
+    // end: aponta para uma posição depois do último elemento do vetor
+    // converte o vetor para texto no formato [1, 2, 3, 4]
+    std::string tostr(int * init, int * end);
 
-// Exemplo de chamada
-int vet[4] = {5, 6, 7, 2};
-show(vet, vet + 4);
+    // converte o vetor para texto, porém ao contrário
+    std::string torev(int * init, int * end);
+
+    // inverte os elementos do vetor inplace
+    void reverse(int * init, int * end);
+
+    // soma os elementos do vetor
+    int sum(int * init, int * end);
+
+    // multiplica os elementos do vetor
+    // retorne 1, se o vetor estiver vazio
+    int mult(int * init, int * end);
+
+    // DESAFIO
+    // retorne a posição do menor elemento do vetor
+    int min(int * init, int * end);
+
+} // namespace alu
 ```
 
-## Arquivos
+<!-- load -->
 
-- Você deve implementar:
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/student.cpp)
-    - As funções a serem implementadas.
-- Já está implementado:
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/main.cpp)
-    - Faz a leitura do vetor inicial e chama as funções.
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/lib.hpp)
-    - Apenas os cabeçalhos.
+## Draft
+
+<!-- draft -->
+- cpp
+  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/fn.hpp)
+  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/lib.cpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/lib.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/main.cpp)
+
+<!-- draft -->
 
 ___
 
-## Testes
+## Shell
+  
+```bash
+#__case tostr
 
-```txt
->>>>>>>> 01
+$read
+$tostr
+[]
+
+$read 4
+$tostr
+[4]
+
+$read 4 5
+$tostr
+[4, 5]
+
+$read 4 5 6
+$tostr
+[4, 5, 6]
+$end
+```
+
+```bash
+#__case torev
+
+$read
+$torev
+[]
+
+$read 4
+$torev
+[4]
+
+$read 4 5
+$torev
+[5, 4]
+
+$read 4 5 6
+$torev
+[6, 5, 4]
+
+$end
+```
+
+```bash
+#__case reverse
+
+$read
+$reverse
+$tostr
+[]
+
+$read 4
+$reverse
+$tostr
+[4]
+
+$read 4 5
+$reverse
+$tostr
+[5, 4]
+
+$read 4 5 6
+$reverse
+$tostr
+[6, 5, 4]
+
+$end
+```
+
+```bash
+#__case sum
+$read
+$sum
+0
+
+$read 4
+$sum
 4
-========
-vet : [ 4 ]
-rvet: [ 4 ]
-sum : 4
-mult: 4
-min : 4
-inv : [ 4 ]
-<<<<<<<<
 
->>>>>>>> 02
-3 4 2
-========
-vet : [ 3 4 2 ]
-rvet: [ 2 4 3 ]
-sum : 9
-mult: 24
-min : 2
-inv : [ 2 4 3 ]
-<<<<<<<<
+$read 4 5
+$sum
+9
 
->>>>>>>> 03
-1 2 3 4
-========
-vet : [ 1 2 3 4 ]
-rvet: [ 4 3 2 1 ]
-sum : 10
-mult: 24
-min : 1
-inv : [ 4 3 2 1 ]
-<<<<<<<<
+$read 4 5 6
+$sum
+15
 
->>>>>>>> 04
-1 2 3 4 0
-========
-vet : [ 1 2 3 4 0 ]
-rvet: [ 0 4 3 2 1 ]
-sum : 10
-mult: 0
-min : 0
-inv : [ 0 4 3 2 1 ]
-<<<<<<<<
+$end
+```
 
->>>>>>>> 05
-1 2 3 4 2 3
-========
-vet : [ 1 2 3 4 2 3 ]
-rvet: [ 3 2 4 3 2 1 ]
-sum : 15
-mult: 144
-min : 1
-inv : [ 3 2 4 3 2 1 ]
-<<<<<<<<
+```bash
+#__case mult
+$read
+$mult
+1
 
->>>>>>>> 06
-1 2 3 4 7 2 9
-========
-vet : [ 1 2 3 4 7 2 9 ]
-rvet: [ 9 2 7 4 3 2 1 ]
-sum : 28
-mult: 3024
-min : 1
-inv : [ 9 2 7 4 3 2 1 ]
-<<<<<<<<
+$read 4
+$mult
+4
 
->>>>>>>> 07
-0 1 2 3 -4 -7 -2
-========
-vet : [ 0 1 2 3 -4 -7 -2 ]
-rvet: [ -2 -7 -4 3 2 1 0 ]
-sum : -7
-mult: 0
-min : -7
-inv : [ -2 -7 -4 3 2 1 0 ]
-<<<<<<<<
+$read 4 5
+$mult
+20
 
+$read 4 5 6
+$mult
+120
+
+$end
+```
+
+```bash
+#__case min
+$read
+$min
+-1
+
+$read 4
+$min
+0
+
+$read 4 5
+$min
+0
+
+$read 5 4
+$min
+1
+
+$read 4 5 6
+$min
+0
+
+$read 5 4 6
+$min
+1
+
+$read 5 6 4
+$min
+2
+
+$read 4 3 5 1 9 4 5
+$min
+3
+
+$end
 ```
