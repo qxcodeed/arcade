@@ -20,3 +20,5 @@ Solver*
 solver*
 *.out
 __*
+local.sh
+config.json
