@@ -1,5 +1,12 @@
 # L2 - fugindo do labirinto @pilhado
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/pilhado/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed pilhado`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/pilhado/cover.jpg)
 
 Você vai tentar fugir do labirinto usando uma pilha no lugar da recursão.

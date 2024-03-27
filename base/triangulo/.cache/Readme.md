@@ -1,5 +1,12 @@
 # L2 - @triangulo | student
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed triangulo`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg)
 
 Dado um vetor de inteiros A, imprima um triângulo de números tal que na base do triângulo estejam todos os elementos do vetor original, e tal que, a cada i-ésimo nível acima da base, o número de elementos seja um a menos que no nível inferior e cada elemento do i-ésimo nível seja a soma de dois elementos consecutivos do nível inferior.

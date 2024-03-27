@@ -1,5 +1,12 @@
 # L2 - @editor de texto
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/editor/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed editor`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/editor/cover.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como

@@ -1,5 +1,12 @@
 # L3 - @escorrega blocos
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/escorrega/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed escorrega`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/escorrega/cover.jpg)
 
 ## Descrição da função

@@ -1,5 +1,12 @@
 # L2 - serialização @dividido
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/dividido/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed dividido`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
 - [lib](#lib)
