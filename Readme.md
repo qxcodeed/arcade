@@ -18,6 +18,18 @@
 
 ## Recursão
 
+- [Coeficientes @binomiais](base/binomiais/Readme.md)
+- [Imprimindo @diagonal](base/diagonal/Readme.md)
+- [@padroes1](base/padroes1/Readme.md)
+- [@padroes2](base/padroes2/Readme.md)
+- [@santo Jota Marcelo](base/santo/Readme.md)
+- [Imprimindo @sufixos de uma Palavra](base/sufixos/Readme.md)
+- [@fibonacci](base/fibonacci/Readme.md)
+- [@quadrado](base/quadrado/Readme.md)
+- [@fibonacci2](base/fibonacci2/Readme.md)
+- [@padroes3](base/padroes3/Readme.md)
+- [@escada](base/escada/Readme.md)
+- [@bitcoin](base/bitcoin/Readme.md)
 - [L1 - @empilhamento de divisões | draft](base/empilhamento/Readme.md)
 - [L1 - @treinando recursão com vetores | student](base/treinando/Readme.md)
 - [L1 - @queimada | student](base/queimada/Readme.md)
