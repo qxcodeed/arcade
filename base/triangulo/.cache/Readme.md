@@ -1,4 +1,4 @@
-# L2 - @triangulo - Imprimindo ao contrário $required
+# L1 - @triangulo - Imprimindo ao contrário $required
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
 - Para programar na sua máquina (local/virtual) use:

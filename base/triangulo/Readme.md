@@ -1,4 +1,4 @@
-# L2 - @triangulo - Imprimindo ao contrário $required
+# L1 - @triangulo - Imprimindo ao contrário $required
 
 ![_](cover.jpg)
 

@@ -14,22 +14,30 @@
 
 ## Recursão
 
-- [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
-- [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
-- [L1 - @diagonal - Imprimindo um char por linha](base/diagonal/Readme.md)
-- [L1 - @padroes1 - Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
-- [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
-- [L1 - @empilhamento de divisões](base/empilhamento/Readme.md)
-- [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
-- [L1 - @treinando recursão com vetores](base/treinando/Readme.md)
-- [L2 - @padroes2 - Descobrindo quantas pecinhas](base/padroes2/Readme.md)
-- [L2 - @santo JM - O milagre de ficar pobre](base/santo/Readme.md)
-- [L2 - @fibonacci - Procriando coelhos](base/fibonacci/Readme.md)
-- [L2 - @quadrado - Aragão calculando n ao quadrado](base/quadrado/Readme.md)
-- [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
-- [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
-- [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
-- [L2 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
+- Wladimir
+  - [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
+  - [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
+  - [L1 - @diagonal - Imprimindo um char por linha](base/diagonal/Readme.md)
+  - [L1 - @padroes1 - Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
+  - [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+  - [L1 - @empilhamento de divisões](base/empilhamento/Readme.md)
+  - [L2 - @padroes2 - Descobrindo quantas pecinhas](base/padroes2/Readme.md)
+  - [L2 - @santo JM - O milagre de ficar pobre](base/santo/Readme.md)
+  - [L2 - @fibonacci - Procriando coelhos](base/fibonacci/Readme.md)
+  - [L2 - @quadrado - Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+  - [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
+  - [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
+  - [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
+- David
+  - [L2 - @treinando recursão com vetores](base/treinando/Readme.md)
+  - [L1 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
+  - [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
+- Ricardo
+  - [L1 - @eh-primo: Retorna se é ou não é](base/eh_primo/Readme.md)
+  - [L2 - @enesimo - Gere o enesimo primo](base/enesimo/Readme.md)
+  - [L1 - @priminhos - Carrega a lista de primos](base/priminhos/Readme.md)
+  - [L2 - @ponto - Implemente a classe ponto](base/ponto/Readme.md)
+  - [L3 - @fracao - Implemente a classe fração reduzida](base/fracao/Readme.md)
 
 ## Backtracking
 
