@@ -1,4 +1,4 @@
-# L1 - Imprimindo @diagonal
+# L1 - @diagonal - Imprimindo um char por linha
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/diagonal/Readme.md)
 - Para programar na sua máquina (local/virtual) use:

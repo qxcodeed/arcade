@@ -2,7 +2,6 @@
 # Repositório de exercícios para Estrutura de Dados
 
 <!-- toc -->
-- [Aquecimento](#aquecimento)
 - [Recursão](#recursão)
 - [Backtracking](#backtracking)
 - [Arrays](#arrays)
@@ -10,13 +9,14 @@
 - [Stack](#stack)
 - [Queue](#queue)
 - [Tree](#tree)
+- [Em manutenção](#em-manutenção)
 <!-- toc -->
 
 ## Recursão
 
 - [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
 - [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
-- [L1 - Imprimindo @diagonal](base/diagonal/Readme.md)
+- [L1 - @diagonal - Imprimindo um char por linha](base/diagonal/Readme.md)
 - [L1 - @padroes1 - Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
 - [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
 - [L1 - @empilhamento de divisões](base/empilhamento/Readme.md)
