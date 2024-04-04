@@ -1,10 +1,8 @@
-# @padroes2
+# L2 - @padroes2 - Descobrindo quantas pecinhas
 
 Considere a seguinte sequência de imagem:
 
-
-![Padrões](https://github.com/WladimirTavares/ED2024.1/raw/main/Padr%C3%B5es%20II/seq1.png)
-
+![Padrões](seq1.png)
 
 Cada imagem na sequência é formada por um número de peças (uma peça pode ser um quadrado ou triângulo).
 
@@ -14,27 +12,24 @@ A tabela seguinte apresenta uma relação entre a ordem da imagem na sequência 
 |----------------------|---|---|----|
 | número de peças      | 3 | 8 | 15 |
 
-
-
 Faça um programa que recebe um inteiro `n` e devolve o número total de peças da n-ésima imagem da sequência.
 
-
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo um inteiro `n` representando a posição de um padrão na sequência.
 
-**Saída**
+## Saída
 
 A saída é composta por uma única linha contendo o total de peças da n-ésima imagem da sequência.
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 3
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 15
 ```
-
-

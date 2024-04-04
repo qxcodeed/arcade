@@ -12,28 +12,24 @@
 - [Tree](#tree)
 <!-- toc -->
 
-## Aquecimento
-
-- [L2 - @matriz Soma e Multiplicação (em manutenção) | draft](base/matriz/Readme.md)
-
 ## Recursão
 
-- [Coeficientes @binomiais](base/binomiais/Readme.md)
-- [Imprimindo @diagonal](base/diagonal/Readme.md)
-- [@padroes1](base/padroes1/Readme.md)
-- [@padroes2](base/padroes2/Readme.md)
-- [@santo Jota Marcelo](base/santo/Readme.md)
-- [Imprimindo @sufixos de uma Palavra](base/sufixos/Readme.md)
-- [@fibonacci](base/fibonacci/Readme.md)
-- [@quadrado](base/quadrado/Readme.md)
-- [@fibonacci2](base/fibonacci2/Readme.md)
-- [@padroes3](base/padroes3/Readme.md)
-- [@escada](base/escada/Readme.md)
-- [@bitcoin](base/bitcoin/Readme.md)
-- [L1 - @empilhamento de divisões | draft](base/empilhamento/Readme.md)
-- [L1 - @treinando recursão com vetores | student](base/treinando/Readme.md)
-- [L1 - @queimada | student](base/queimada/Readme.md)
-- [L2 - @triangulo | student](base/triangulo/Readme.md)
+- [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
+- [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
+- [L1 - Imprimindo @diagonal](base/diagonal/Readme.md)
+- [L1 - @padroes1 - Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
+- [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+- [L1 - @empilhamento de divisões](base/empilhamento/Readme.md)
+- [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
+- [L1 - @treinando recursão com vetores](base/treinando/Readme.md)
+- [L2 - @padroes2 - Descobrindo quantas pecinhas](base/padroes2/Readme.md)
+- [L2 - @santo JM - O milagre de ficar pobre](base/santo/Readme.md)
+- [L2 - @fibonacci - Procriando coelhos](base/fibonacci/Readme.md)
+- [L2 - @quadrado - Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+- [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
+- [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
+- [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
+- [L2 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
 
 ## Backtracking
 
@@ -81,3 +77,7 @@
 - [L2 - @altura e profundidade da árvore](base/altura/Readme.md)
 - [L2 - @arvore-path](base/arvore-path/Readme.md)
 - [L2 - serialização @dividido](base/dividido/Readme.md)
+
+## Em manutenção
+
+- [L2 - @matriz Soma e Multiplicação (em manutenção) | draft](base/matriz/Readme.md)

@@ -1,4 +1,4 @@
-# @escada
+# L0 - @escada - De quantas maneiras podemos subir
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/escada/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -24,29 +24,28 @@ A recorrência para $x_n$ será:
 $$
 x_n = \begin{cases}
 1 & n = 1\\
-1 & n = 2\\ 
+1 & n = 2\\
 2 & n = 3\\
 x_{n-1} + x_{n-3} & n > 3\\
 \end{cases}
 $$
 
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo um inteiro $n$ representando o número de degraus da escada
 
-**Saída**
+## Saída
 
 A saída é composta por uma única linha contendo o número de maneiras que uma escada com $n$ degraus pode ser subida saltando 1 ou 3 degraus por vez.
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 4
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 3
 ```
-
-
-

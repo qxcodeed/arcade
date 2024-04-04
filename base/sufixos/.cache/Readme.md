@@ -1,4 +1,4 @@
-# Imprimindo @sufixos de uma Palavra
+# L1 - @sufixos - Imprimindo palavra em pedaços
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/sufixos/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -15,7 +15,7 @@ Você precisa responder algumas questões fundamentais antes de começar o desen
 
 Considere o seguinte padrão impressão:
 
-```
+```txt
 4
 3
 2
@@ -25,19 +25,18 @@ Considere o seguinte padrão impressão:
 No exemplo acima, estamos imprimindo todos os números em ordem decrescente de 4 até 1. Neste exemplo, vamos considerar que o caso base acontece quando o valor de n é igual a 0. A ação fundamental será imprimir um número e depois resolver o mesmo problema para o número anterior.
 
 ```c
-void countDown(int n){
-	if(n == 0){
-		return ;
-	}else{
-		cout << n << endl;
-		countDown(n-1);
-	}
-}	
-``` 
+void countDown(int n) {
+    if (n == 0) {
+        return ;
+    }
+    cout << n << endl;
+    countDown(n-1);
+}
+```
 
 Considere agora o seguinte padrão de impressão:
 
-```
+```txt
 4
 3
 2
@@ -51,21 +50,19 @@ Considere agora o seguinte padrão de impressão:
 Esse padrão pode ser reproduzido pelo seguinte programa:
 
 ```c
-void countDownUp(int n){
-	if(n == 0){
-		return ;
-	}else{
-		cout << n << endl;
-		countDownUp(n-1);
-		cout << n << endl;
-	}
+void countDownUp(int n) {
+    if (n == 0) {
+        return ;
+    }
+    cout << n << endl;
+    countDownUp(n-1);
+    cout << n << endl;
 }
 ```
 
-
 Já o padrão de impressão:
 
-```
+```txt
 wladimir
 ladimir
 adimir
@@ -78,36 +75,35 @@ r
 
 O padrão pode ser reproduzido pelo seguinte programa:
 
-
 ```c
-void printTower(char * s){
-	if(*s == '\0'){
-		return;
-	}else{
-		printf("%s\n", s);
-		printTower(s+1);
-	}
+void printTower(char * s) {
+    if (*s == '\0') {
+        return;
+    }
+    printf("%s\n", s);
+    printTower(s+1);
 }
 ```
 
 Faça um program que imprima todos os sufixos de uma palavra do menor sufixo até o maior.
 
-
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo uma palavra com até 100 caracteres.
 
-**Saída**
+## Saída
 
-A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida. 
+A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida.
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 wladimir
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 r
 ir
 mir
@@ -117,4 +113,3 @@ adimir
 ladimir
 wladimir
 ```
-

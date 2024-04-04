@@ -1,4 +1,4 @@
-# L1 - @empilhamento de divisões | draft
+# L1 - @empilhamento de divisões
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/Readme.md)
 - Para programar na sua máquina (local/virtual) use:

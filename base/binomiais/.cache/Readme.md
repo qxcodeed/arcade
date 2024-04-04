@@ -1,4 +1,4 @@
-# Coeficientes @binomiais
+# L0 - @binomiais - Calculando coeficientes
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/binomiais/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -20,34 +20,22 @@ Os coeficientes binomiais podem ser definidos usando a seguinte recursão:
 
 Sua tarefa é dado dois inteiros n e k, calcula C(n,k).
 
-**Entrada**
+## Entrada
 
 A primeira linha contendo dois inteiros n e k.
 
-**Saída**
+## Saída
 
 Imprima uma linha contendo C(n,k).
 
+## Exemplo de Entrada
 
-**Exemplo de Entrada**
-```
+```txt
 8 4
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 70
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

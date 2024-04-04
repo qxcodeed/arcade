@@ -1,4 +1,4 @@
-# Coeficientes @binomiais
+# L0 - @binomiais - Calculando coeficientes
 
 Os coeficientes binomiais são muito importantes para a resolução de vários problemas de contagem. Por exemplo,
 
@@ -13,34 +13,22 @@ Os coeficientes binomiais podem ser definidos usando a seguinte recursão:
 
 Sua tarefa é dado dois inteiros n e k, calcula C(n,k).
 
-**Entrada**
+## Entrada
 
 A primeira linha contendo dois inteiros n e k.
 
-**Saída**
+## Saída
 
 Imprima uma linha contendo C(n,k).
 
+## Exemplo de Entrada
 
-**Exemplo de Entrada**
-```
+```txt
 8 4
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 70
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

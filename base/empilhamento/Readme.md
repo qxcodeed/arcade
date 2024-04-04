@@ -1,4 +1,4 @@
-# L1 - @empilhamento de divisões | draft
+# L1 - @empilhamento de divisões
 
 ![_](cover.jpg)
 

@@ -1,4 +1,4 @@
-# L2 - @triangulo | student
+# L2 - @triangulo - Imprimindo ao contrário $required
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -22,6 +22,8 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 
 ## Arquivos
 
+Você deve implementar a função `processa` no arquivo `lib.cpp`.
+
 <!-- draft -->
 - cpp
   - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/lang/cpp/lib.cpp)
@@ -29,7 +31,6 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/lang/cpp/main.cpp)
 
 <!-- draft -->
-
 
 ## Testes
 

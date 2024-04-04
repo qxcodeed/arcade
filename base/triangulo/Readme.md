@@ -1,4 +1,4 @@
-# L2 - @triangulo | student
+# L2 - @triangulo - Imprimindo ao contrário $required
 
 ![_](cover.jpg)
 
@@ -15,6 +15,8 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 
 ## Arquivos
 
+Você deve implementar a função `processa` no arquivo `lib.cpp`.
+
 <!-- draft -->
 - cpp
   - [lib.cpp](.cache/lang/cpp/lib.cpp)
@@ -22,7 +24,6 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
   - [main.cpp](.cache/lang/cpp/main.cpp)
 
 <!-- draft -->
-
 
 ## Testes
 

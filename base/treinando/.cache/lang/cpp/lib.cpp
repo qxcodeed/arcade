@@ -21,32 +21,18 @@ namespace alu {
         return "[" + output + "]";
     }
     std::string torev(int * init, int * end) {
-        (void) init;
-        (void) end;
-        return "";
     }
 
     void reverse(int * init, int * end) {
-        (void) init;
-        (void) end;
     }
 
     int sum(int * init, int * end) {
-        (void) init;
-        (void) end;
-        return 0;
     };
 
     int mult(int * init, int * end) {
-        (void) init;
-        (void) end;
-        return 0;
     };
 
     int min(int * init, int * end) {
-        (void) init;
-        (void) end;
-        return -1;
     };
 
 } // namespace alu

@@ -1,4 +1,4 @@
-# @escada
+# L0 - @escada - De quantas maneiras podemos subir
 
 Ao subir a escada de seu prédio, José às vezes sobe três degraus de uma vez e às vezes sobe um de cada vez. Dado uma escada com n degraus de quantas maneiras diferentes José pode subir essa escada. Para resolver esse problema, vamos pensar nos casos menores:
 
@@ -17,29 +17,28 @@ A recorrência para $x_n$ será:
 $$
 x_n = \begin{cases}
 1 & n = 1\\
-1 & n = 2\\ 
+1 & n = 2\\
 2 & n = 3\\
 x_{n-1} + x_{n-3} & n > 3\\
 \end{cases}
 $$
 
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo um inteiro $n$ representando o número de degraus da escada
 
-**Saída**
+## Saída
 
 A saída é composta por uma única linha contendo o número de maneiras que uma escada com $n$ degraus pode ser subida saltando 1 ou 3 degraus por vez.
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 4
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 3
 ```
-
-
-

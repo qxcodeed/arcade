@@ -1,4 +1,4 @@
-# Imprimindo @diagonal
+# L1 - Imprimindo @diagonal
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/diagonal/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -9,21 +9,23 @@
 
 Faça um programa que recebe uma palavra com até 100 caracteres e imprime a palavra em diagonal.
 
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo uma palavra com até 100 caracteres.
 
-**Saída**
+## Saída
 
 A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida. 
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 wladimir
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 w
  l
   a
@@ -37,15 +39,13 @@ w
 Dica:
 
 ```c
-void diagonal(char * s, int k){
-	if(*s == '\0'){
-		return;
-	}else{
-		//imprima k caracteres
-		//imprima o primeiro caractere de s e pule a linha
-		//faça a chamada recursiva
-	}
+void diagonal(char * s, int k) {
+  if (*s == '\0') {
+    return;
+  }
+  //imprima k caracteres
+  //imprima o primeiro caractere de s e pule a linha
+  //faça a chamada recursiva
+  }
 }
 ```
-
-

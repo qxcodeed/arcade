@@ -1,13 +1,6 @@
-# L1 - @queimada | student
+# L2 - @queimada - Tocando fogo na floresta | Modelo student
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/queimada/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed queimada`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/queimada/cover.jpg)
+![_](cover.jpg)
 
 - Seja uma matriz de caracteres que representa um mapa de uma floresta.
 - Cada caractere representa um espaço vazio ou uma árvore.
@@ -28,18 +21,17 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 - A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
 
-## Arquivos
+## Draft
 
-- Você deve implementar:
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/student.cpp)
-    - escrever a função tocar_fogo.
-- Já está implementado:
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/main.cpp)
-    - Faz a leitura da matriz e do ponto inicial
-    - Chama a função tocar_fogo para o ponto inicial.
-    - Imprime a matriz após a queimada.
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/lib.hpp)
-    - Apenas o cabeçalho da função tocar_fogo.
+- No arquivo `fogo.cpp`, você deve implementar a função `tocar_fogo`.
+
+<!-- draft -->
+- cpp
+  - [lib.cpp](.cache/lang/cpp/lib.cpp)
+  - [lib.hpp](.cache/lang/cpp/lib.hpp)
+  - [main.cpp](.cache/lang/cpp/main.cpp)
+
+<!-- draft -->
 
 ## Testes
 
@@ -84,14 +76,3 @@ oooo..o
 <<<<<<<<
 
 ```
-
-## Ajuda
-
-Você pode utilizar um vetor de strings para representar uma matriz de caracteres. Uma string é um vetor de caracteres. Dessa forma um `vector<string> mat` é uma vetor bidimensional. O exemplo a seguir já carrega a matriz na `main` e já faz um método capaz de imprimir a matriz. Você só precisa implementar o método `tocar_fogo`.
-
-Utilize as seguintes regras para recursão.
-
-- Se a posição for fora da matriz, retorne.
-- Se a posição não for uma arvore retorne.
-- Queime a arvore.
-- Chame a recursão para todos os vizinhos.

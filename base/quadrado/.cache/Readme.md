@@ -1,4 +1,4 @@
-# @quadrado
+# L2 - @quadrado - Aragão calculando n ao quadrado
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/quadrado/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -11,25 +11,23 @@ Aragão está profundamente envolvido em seu aprendizado sobre recursão. Recent
 
 Empolgado com essa revelação, Aragão deseja desenvolver um algoritmo recursivo que não apenas calcule $n^2$, mas também mostre cada passo do processo. No entanto, ele enfrenta algumas dificuldades para elaborar tal algoritmo. É aí que entra a sua ajuda.
 
-
-
-
-
-**Entrada**
+## Entrada
 
 A entrada é composta por uma única linha contendo um inteiro $n$
 
-**Saída**
+## Saída
 
 A saída é composta por várias linhas mostrando o passo-a-passo do algoritmo recursivo.
 
-**Exemplo de Entrada**
-```
+## Exemplo de Entrada
+
+```txt
 10
 ```
 
-**Exemplo de Saída**
-```
+## Exemplo de Saída
+
+```txt
 10^2 = 9^2 + 2*9 + 1 = ?
 9^2 = 8^2 + 2*8 + 1 = ?
 8^2 = 7^2 + 2*7 + 1 = ?
@@ -50,4 +48,3 @@ A saída é composta por várias linhas mostrando o passo-a-passo do algoritmo r
 9^2 = 8^2 + 2*8 + 1 = 81
 10^2 = 9^2 + 2*9 + 1 = 100
 ```
-
