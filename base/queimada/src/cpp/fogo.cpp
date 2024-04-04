@@ -17,6 +17,12 @@ void tocar_fogo(std::vector<std::string> &mat, int l, int c) {
     tocar_fogo(mat, l - 1, c);
     tocar_fogo(mat, l + 1, c);
 
+    // $$
+    // (void) mat;
+    // (void) l;
+    // (void) c;
+    // (void) nl;
+    // (void) nc;
     // ==
     // se estiver fora da matriz, retorne
     // se o elemento atual não for uma arvore, retorne

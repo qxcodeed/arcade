@@ -27,8 +27,8 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 <!-- draft -->
 - cpp
-  - [lib.cpp](.cache/lang/cpp/lib.cpp)
-  - [lib.hpp](.cache/lang/cpp/lib.hpp)
+  - [fogo.cpp](.cache/lang/cpp/fogo.cpp)
+  - [fogo.hpp](.cache/lang/cpp/fogo.hpp)
   - [main.cpp](.cache/lang/cpp/main.cpp)
 
 <!-- draft -->

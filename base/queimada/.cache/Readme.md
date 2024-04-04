@@ -34,8 +34,8 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 <!-- draft -->
 - cpp
-  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/.cache/lang/cpp/lib.cpp)
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/.cache/lang/cpp/lib.hpp)
+  - [fogo.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/.cache/lang/cpp/fogo.cpp)
+  - [fogo.hpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/.cache/lang/cpp/fogo.hpp)
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimada/.cache/lang/cpp/main.cpp)
 
 <!-- draft -->

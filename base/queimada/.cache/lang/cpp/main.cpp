@@ -3,13 +3,13 @@
 #include "fogo.hpp"
 
 void show_mat(std::vector<std::string> mat);
-void read_mat(std::vector<std::string> &mat, int nl, int nc);
+void read_mat(std::vector<std::string> &mat, int nl);
 
 int main(){
     int nl = 0, nc = 0, lfire = 0, cfire = 0;
     std::cin >> nl >> nc >> lfire >> cfire;
     std::vector<std::string> mat;
-    read_mat(mat, nl, nc);
+    read_mat(mat, nl);
 
     tocar_fogo(mat, lfire, cfire);
     
@@ -22,7 +22,7 @@ void show_mat(std::vector<std::string> mat){
     }
 }
 
-void read_mat(std::vector<std::string> &mat, int nl, int nc){
+void read_mat(std::vector<std::string> &mat, int nl){
     for(int l = 0; l < nl; l++) {
         std::string linha;
         std::cin >> linha;
