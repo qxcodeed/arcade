@@ -12,26 +12,31 @@ class Frac {
    int num;
    int den;
 
-    // Métodos privados para você implementar
+    //========== TODO =====================
+    // calcula o mdc
     static int mdc(int a, int b); //TODO
-    void reduce(); //TODO realiza a redução da fração
+    // realiza a redução da fração
+    void reduce();                //TODO 
 
 public:
+    //========== TODO =====================
+    bool operator>(const Frac& other) const;  // TODO
+    bool operator==(const Frac& other) const; // TODO
+    Frac operator+(const Frac& other) const;  // TODO
 
+    //========== FEITO ====================
     // TODOS OS CONSTRUTORES ESTÃO IMPLEMENTADOS
-    
     // Construtor principal
     // Ele copia os valores de n e d para num e den
     // e chama o método reduce
     Frac(int n = 0, int d = 1): num(n), den(d) {
         this->reduce();
     }
-
     // Construtor de cópia
     // Ele está encaminhando a chamada para o construtor principal
     Frac(const Frac& other) : Frac(other.num, other.den){
     }
-
+    
     // Só por curiosidade, esse é o operador de atribuição
     // Ele permite fazer a = b = c
     // Diferente do construtor, ele não cria um novo objeto, 
@@ -42,11 +47,6 @@ public:
         this->reduce();
         return *this;
     }
-
-    // Operadores para você implementar
-    bool operator>(const Frac& other) const;  // TODO
-    bool operator==(const Frac& other) const; // TODO
-    Frac operator+(const Frac& other) const;  // TODO
 
     // Só por curiosidade, esse é o método canônico de comparação
     // Ele é menor, se não for maior e nem igual
@@ -69,6 +69,8 @@ public:
     }
 };
 
-
-// Função que ordena um vetor de frações em ordem crescente
+//========== TODO =====================
+// função que ordena uma fração
+// você pode usar a função std::sort
+// ou implementar um algoritmo de ordenação
 void ordena_frac(std::vector<Frac>& vet); //TODO
