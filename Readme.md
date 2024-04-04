@@ -25,17 +25,17 @@
   - [L2 - @santo JM - O milagre de ficar pobre](base/santo/Readme.md)
   - [L2 - @fibonacci - Procriando coelhos](base/fibonacci/Readme.md)
   - [L2 - @quadrado - Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+  - [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
   - [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
   - [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
-  - [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
 - David
-  - [L2 - @treinando recursão com vetores](base/treinando/Readme.md)
   - [L1 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
   - [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
+  - [L2 - @treinando recursão com vetores](base/treinando/Readme.md)
 - Ricardo
   - [L1 - @eh-primo: Retorna se é ou não é](base/eh_primo/Readme.md)
   - [L2 - @enesimo - Gere o enesimo primo](base/enesimo/Readme.md)
-  - [L1 - @priminhos - Carrega a lista de primos](base/priminhos/Readme.md)
+  - [L2 - @priminhos - Carrega a lista de primos](base/priminhos/Readme.md)
   - [L2 - @ponto - Implemente a classe ponto](base/ponto/Readme.md)
   - [L3 - @fracao - Implemente a classe fração reduzida](base/fracao/Readme.md)
 

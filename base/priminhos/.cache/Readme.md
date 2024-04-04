@@ -1,4 +1,4 @@
-# L1 - @priminhos - Carrega a lista de primos
+# L2 - @priminhos - Carrega a lista de primos
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/priminhos/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
