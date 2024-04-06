@@ -1,8 +1,6 @@
 #include <iostream>
 
 int mdc(int a, int b) {
-    //todo
-    return 0;
 }
 
 int main() {
