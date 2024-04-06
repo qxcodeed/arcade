@@ -9,7 +9,7 @@ int Frac::mdc(int a, int b) {
 void Frac::reduce() {
 }
 
-bool Frac::operator>(const Frac& other) const {
+bool Frac::operator<(const Frac& other) const {
     (void) other;
     return false;
 }
@@ -24,6 +24,9 @@ Frac Frac::operator+(const Frac& other) const {
     return Frac();
 }
 
+// função que ordena uma fração
+// você pode usar a função std::sort
+// ou implementar um algoritmo de ordenação
 void ordena_frac(std::vector<Frac>& vet) {
     (void) vet;
 }

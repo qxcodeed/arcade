@@ -3,74 +3,61 @@
 #include <vector>
 #include <algorithm>
 
-/*
-Representa uma fração reduzida, ou seja, numerador e denominador são primos entre si.  
-*/
-
+//=============================================================================
+// Representa uma fração reduzida, numerador e denominador são primos entre si.  
+//=============================================================================
 
 class Frac {
    int num;
    int den;
 
-    //========== TODO =====================
-    // calcula o mdc
-    static int mdc(int a, int b); //TODO
-    // realiza a redução da fração
-    void reduce();                //TODO 
-
+//=============================================================================
+//========  MÉTODOS AUXILIARES QUE JÁ ESTÃO IMPLEMENTADOS
+//=============================================================================
 public:
-    //========== TODO =====================
-    bool operator>(const Frac& other) const;  // TODO
-    bool operator==(const Frac& other) const; // TODO
-    Frac operator+(const Frac& other) const;  // TODO
-
-    //========== FEITO ====================
-    // TODOS OS CONSTRUTORES ESTÃO IMPLEMENTADOS
-    // Construtor principal
-    // Ele copia os valores de n e d para num e den
-    // e chama o método reduce
-    Frac(int n = 0, int d = 1): num(n), den(d) {
-        this->reduce();
-    }
-    // Construtor de cópia
-    // Ele está encaminhando a chamada para o construtor principal
-    Frac(const Frac& other) : Frac(other.num, other.den){
-    }
-    
-    // Só por curiosidade, esse é o operador de atribuição
-    // Ele permite fazer a = b = c
-    // Diferente do construtor, ele não cria um novo objeto, 
-    // mas sim modifica o objeto existente
-    Frac& operator=(const Frac& other) {
-        this->num = other.num;
-        this->den = other.den;
-        this->reduce();
-        return *this;
-    }
-
-    // Só por curiosidade, esse é o método canônico de comparação
-    // Ele é menor, se não for maior e nem igual
-    bool operator<(const Frac& other) const {
-        return !(*this > other || *this == other);
-    }
+    Frac(int n = 0, int d = 1);               // Construtor
+    std::string str() const;                  // toString
     int getNum() const { return num; }    
     int getDen() const { return den; } 
 
-    std::string str() const {
-        return std::to_string(num) + "/" + std::to_string(den);
-    }
-
-    // Operador de saída
-    // Escreve a fração no formato num/den
-    // Permite escrever a fração diretamente em um stream de saída
-    // Ex: std::cout << Frac(1, 2) << std::endl;
-    friend std::ostream& operator<<(std::ostream& os, const Frac& f) {
-        return os << f.str();
-    }
+//=============================================================================
+//===== MÉTODOS PARA VOCÊ IMPLEMENTAR NO ARQUIVO .cpp ===================
+//=============================================================================
+private:
+    static int mdc(int a, int b);             //TODO - calcula o mdc
+    void reduce();                            //TODO - realiza a redução da fração
+public:
+    bool operator<(const Frac& other) const;  // TODO - operador menor que
+    bool operator==(const Frac& other) const; // TODO - operador igualdade
+    Frac operator+(const Frac& other) const;  // TODO - operador de soma
 };
+void ordena_frac(std::vector<Frac>& vet);     //TODO - ordena um vector de fracoes
 
-//========== TODO =====================
-// função que ordena uma fração
-// você pode usar a função std::sort
-// ou implementar um algoritmo de ordenação
-void ordena_frac(std::vector<Frac>& vet); //TODO
+//=============================================================================
+//======== IMPLEMENTAÇÕES QUE JÁ VIERAM FEITAS
+//=============================================================================
+
+// OBS IMPORTANTE: sempre que escrevemos uma função ou método no .h,
+// ou ela deve estar dentro da classe, tal como foi feito com os
+// métodos getNum e getDen, ou ela deve ser declarada como inline
+// para não ter conflito no carregamento da lib por módulos diferentes.
+
+
+// Construtor principal
+// Ele copia os valores de n e d para num e den
+// e chama o método reduce
+inline Frac::Frac(int n, int d): num(n), den(d) {
+    this->reduce();
+}
+
+// Gera uma string no formato num/den
+inline std::string Frac::str() const {
+    return std::to_string(num) + "/" + std::to_string(den);
+}
+
+// Operador de saída
+// Permite escrever a fração diretamente em um stream de saída
+// Ex: std::cout << Frac(1, 2) << std::endl;
+inline std::ostream& operator<<(std::ostream& os, const Frac& f) {
+    return os << f.str();
+}

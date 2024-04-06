@@ -25,8 +25,8 @@ void Frac::reduce() {
     den = den/_mdc;
 }
 
-bool Frac::operator>(const Frac& other) const {
-    return (double)this->num / this->den > (double) other.num / other.den;
+bool Frac::operator<(const Frac& other) const {
+    return (double)this->num / this->den < (double) other.num / other.den;
     // $$
     // (void) other;
     // return false;
@@ -48,6 +48,9 @@ Frac Frac::operator+(const Frac& other) const {
     // return Frac();
 }
 
+// função que ordena uma fração
+// você pode usar a função std::sort
+// ou implementar um algoritmo de ordenação
 void ordena_frac(std::vector<Frac>& vet) {
     std::sort(vet.begin(), vet.end(), [](auto a, auto b) {
         return a < b;

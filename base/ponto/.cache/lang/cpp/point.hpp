@@ -6,13 +6,12 @@ class Ponto {
     double y; // ordenada
 public:
     // Construtor 
-    Ponto(int x = 0, int y = 0); // TODO
+    Ponto(int x = 0, int y = 0);       // TODO
     // Calcula a distância entre dois pontos
     double dist(const Ponto& p) const; //TODO
 
     //-----------------------------------------
 
-    // JÁ ESTÁ FEITO
     // acesso por referência
     double& X() { return x; }
     double& Y() { return y; }

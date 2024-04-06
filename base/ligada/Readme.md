@@ -1,19 +1,11 @@
 # L1 - implementando lista @ligada simples sem cabeça e rabo
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/ligada/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed ligada`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+![_](cover.jpg)
 
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/ligada/cover.jpg)
-
-<!--TOC_BEGIN-->
-- [Arquivos](#arquivos)
-- [Header](#header)
-- [Testes](#testes)
-<!--TOC_END-->
+<!-- toc -->
+- [Draft](#draft)
+- [Shell](#shell)
+<!-- toc -->
 
 Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 
@@ -21,176 +13,139 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 - push_front
 - pop_back
 - pop_front
-- empty
+- size
+- clear
 
-## Arquivos
+## Draft
 
-- [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/student.cpp)
-- [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/main.cpp)
-- [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/lib.hpp)
+- Você deve implementar os métodos no arquivo `list.cpp`.
+- Crie os métodos auxiliares que precisar dentro do `list.cpp`.
+- O arquivo `list.hpp` contém as estruturas e métodos já implementados.
+- A `main.cpp` já faz a leitura dos testes e invoca os métodos adequados da classe.
+- A `fn.hpp` é uma biblioteca auxiliar de processamento de string em c++.
 
-## Header
-<!--ADD lib.hpp cpp-->
-```cpp
-//lib.hpp
-#pragma once
-#include <iostream>
-#include <sstream>
-using namespace std;
+<!-- draft -->
+- cpp
+  - [fn.hpp](.cache/lang/cpp/fn.hpp)
+  - [list.cpp](.cache/lang/cpp/list.cpp)
+  - [list.hpp](.cache/lang/cpp/list.hpp)
+  - [main.cpp](.cache/lang/cpp/main.cpp)
 
-struct Node{
-    int value;
-    Node * next;
-    Node(int value = 0, Node * next = nullptr) {
-        this->value = value;
-        this->next = next;
-    }
-};
+<!-- draft -->
 
-struct LinkedList{
-    Node * head {nullptr};
+## Shell
 
-    //esses métodos aqui são pra você implementar no arquivo student.cpp
-    void push_back(int value);
-    void push_front(int value);
-    void pop_back();
-    void pop_front();
-    int  size();
+```bash
 
-    //Os métodos abaixo já estão implementados abaixo da main
-    LinkedList();
-    ~LinkedList();
-    friend ostream& operator<<(ostream& os, LinkedList& lista);
-};
+#TEST_CASE init
+$show
+[]
+$end
+
 ```
-<!--ADD_END-->
 
-***
-
-## Testes
-
-```txt
->>>>>>>>
-show
-push_back 1
-show
-size
-end
-========
-$show
-[ ]
-$push_back 1
-$show
-[ 1 ]
-$size
-1
-$end
-<<<<<<<<
-
->>>>>>>>
-show
-push_back 1
-show
-push_back 2 3 5 6 7
-show
-end
-========
-$show
-[ ]
-$push_back 1
-$show
-[ 1 ]
-$push_back 2 3 5 6 7
-$show
-[ 1 2 3 5 6 7 ]
-$end
-<<<<<<<<
-
->>>>>>>>
-show
-push_back 2 1
-show
-pop_back
-show
-pop_back
-show
-pop_back
-show
-end
-========
-$show
-[ ]
-$push_back 2 1
-$show
-[ 2 1 ]
-$pop_back
-$show
-[ 2 1 ]
-$pop_back
-$show
-[ 2 1 ]
-$pop_back
-$show
-[ 2 1 ]
-$end
-<<<<<<<<
-
->>>>>>>>
-show
-push_front 1 2 3 4 5
-show
-end
-========
-$show
-[ ]
-$push_front 1 2 3 4 5
-$show
-[ 5 4 3 2 1 ]
-$end
-<<<<<<<<
-
->>>>>>>>
-show
-push_front 1 2 3 4
-show
-pop_front
-show
-pop_front
-show
-pop_front
-show
-pop_front
-show
-pop_front
-show
-pop_front
-show
-end
-========
-$show
-[ ]
+```bash
+#TEST_CASE push_front
 $push_front 1 2 3 4
 $show
-[ 4 3 2 1 ]
-$pop_front
+[4, 3, 2, 1]
+$push_front 9 6
 $show
-[ 4 3 2 1 ]
-$pop_front
-$show
-[ 4 3 2 1 ]
-$pop_front
-$show
-[ 4 3 2 1 ]
-$pop_front
-$show
-[ 4 3 2 1 ]
-$pop_front
-$show
-[ 4 3 2 1 ]
-$pop_front
-$show
-[ 4 3 2 1 ]
+[6, 9, 4, 3, 2, 1]
 $end
-<<<<<<<<
+```
 
+```bash
+#TEST_CASE size
+$size
+0
+$push_front 4
+$show
+[4]
+$size
+1
+$push_front 3 2 1
+$show
+[1, 2, 3, 4]
+$size
+4
+$end
+```
+
+```bash
+#TEST_CASE clear
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$clear
+$show
+[]
+$clear
+$show
+[]
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$end
+```
+
+```bash
+#TEST_CASE push_back
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4]
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4, 1, 2, 3, 4]
+$push_front 0 3
+$show
+[3, 0, 1, 2, 3, 4, 1, 2, 3, 4]
+$end
+
+```
+
+```bash
+#TEST_CASE pop_front
+$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_front
+$show
+[3, 4, 5]
+$pop_front
+$show
+[4, 5]
+$pop_front
+$show
+[5]
+$pop_front
+$show
+[]
+$pop_front
+$show
+[]
+$end
+```
+
+```bash
+#TEST_CASE pop_back
+$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_back
+$show
+[1, 3, 4]
+$pop_back
+$show
+[1, 3]
+$pop_back
+$show
+[1]
+$pop_back
+$show
+[]
+$pop_back
+$show
+[]
+$end
 ```
