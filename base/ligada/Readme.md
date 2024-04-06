@@ -1,11 +1,13 @@
 # L1 - implementando lista @ligada simples sem cabeça e rabo
 
+<!-- toch -->
+[Intro](#intro) | [Guide](#guide) | [Draft](#draft) | [Shell](#shell)
+-- | -- | -- | --
+<!-- toch -->
+
 ![_](cover.jpg)
 
-<!-- toc -->
-- [Draft](#draft)
-- [Shell](#shell)
-<!-- toc -->
+## Intro
 
 Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 
@@ -15,6 +17,38 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
 - pop_front
 - size
 - clear
+
+## Guide
+
+- Faça os métodos um a um na ordem dos testes.
+- Não tente passar para o próximo teste sem que o atual esteja passando.
+- Se quiser comentar um teste, use `//` no início da linha correspondente na main do arquivo `main.cpp`.
+- Se um teste falhar, corrija o método correspondente e siga para o próximo teste.
+- Para rodar os testes, passe os arquivos main.cpp e list.cpp para o `tko`.
+
+```bash
+tko run main.cpp list.cpp cases.tio
+```
+
+- Se quiser rodar sua própria main, use o `tko` com o arquivo `list.cpp` e sua main.
+
+```bash
+tko run list.cpp aluno.cpp cases.tio
+```
+
+Sendo a sua main algo como:
+
+```cpp
+#include "list.hpp"
+using namespace std;
+
+int main() {
+    LinkedList ll;
+    ll.push_back(1);
+    std::cout << ll << std::endl;
+}
+```
+
 
 ## Draft
 
@@ -30,6 +64,7 @@ Seja a uma lista ligada sem cabeça e sem rabo. Implemente as funções de:
   - [list.cpp](.cache/lang/cpp/list.cpp)
   - [list.hpp](.cache/lang/cpp/list.hpp)
   - [main.cpp](.cache/lang/cpp/main.cpp)
+  - [student.cpp](.cache/lang/cpp/student.cpp)
 
 <!-- draft -->
 
