@@ -71,7 +71,6 @@ int main() {
   - [list.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/list.cpp)
   - [list.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/list.hpp)
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/main.cpp)
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/student.cpp)
 
 <!-- draft -->
 

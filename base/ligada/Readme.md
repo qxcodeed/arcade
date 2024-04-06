@@ -64,7 +64,6 @@ int main() {
   - [list.cpp](.cache/lang/cpp/list.cpp)
   - [list.hpp](.cache/lang/cpp/list.hpp)
   - [main.cpp](.cache/lang/cpp/main.cpp)
-  - [student.cpp](.cache/lang/cpp/student.cpp)
 
 <!-- draft -->
 
