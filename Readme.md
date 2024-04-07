@@ -4,6 +4,7 @@
 <!-- toc -->
 - [Recursão](#recursão)
 - [Backtracking](#backtracking)
+- [Ordenação](#ordenação)
 - [Arrays](#arrays)
 - [List](#list)
 - [Stack](#stack)
@@ -44,6 +45,10 @@
 - [L2 - escapando do @labirinto](base/labirinto/Readme.md)
 - [L2 - @distancia](base/distancia/Readme.md)
 - [L3 - @sudoku](base/sudoku/Readme.md)
+
+## Ordenação
+
+- [L2 - @mergevet: Criando um vetor simples e fazendo um merge $alpha](base/mergevet/Readme.md)
 
 ## Arrays
 
