@@ -1,140 +1,95 @@
 #include <iostream>
+#include "lib.hpp"
 
-class Vetor {
-    int *u;  // ponteiro para dados
-    int size; // tamanho do vetor
-public:
-    // construtor base
-    Vetor(int n) {
-        (void) n;
-        // inicie u com n posições usando new
-        // size deve ser 0
-    }
-   ~Vetor() { 
-        // deletar o vetor u
-
-    }
-    int operator[] (int k) {
-        (void) k;
-        return 0;
-        // retornar o elemento k do vetor
-    } 
-
-    int len() { return size; }
-
-    // ####################################
-    // metodos para você fazer
-    // ####################################
-
-    // permite inicializar assim Vetor V = {1,2,3};
-    // Uma lista de inicialização é um conjunto de elementos entre chaves
-    // ele tem um método size() que retorna o tamanho da lista
-    // e também pode ser percorrido com um for(int elem : v)
-    Vetor(std::initializer_list<int> v) {
-        (void) v;
-        // inicie o vetor com o tamanho da lista
-        // e copie os elementos da lista para o vetor
-        // inicialize size adequadamente
-    }
-
-    // se não tiver o construtor de cópia para estruturas dinâmicas
-    // quando fazemos uma atribuição, o ponteiro é copiado e não o conteúdo
-    // e você terá um erro de double free
-    Vetor(const Vetor& V) {
-        (void) V;
-        // inicie u com o tamanho de V
-        // inicie size com o tamanho de V
-        // copie os elementos de V para u
-    }
-
-    bool empty() {
-        return 0;
-        // retorne se o vetor está vazio
-    } 
-    int back() {
-        return 0;
-        // retorne o valor do último elemento valido
-    }
-    void pop_back() {
-        // diminua o tamanho do vetor
-    }
-    void push_back(int x) {
-        (void) x;
-        // adicione x no final do vetor
-        // aumente o tamanho do vetor
-    }
-
-    // vai lhe ajudar se você quiser fazer debug e imprimir o vetor
-    std::string str() {
-        return "";
-    }
-
-    // verificar se dois vetores são iguais
-    bool operator==(Vetor& V) {
-        (void) V;
-        return false;
-    }
-};
-
-
-//####################################
-// METODOS DO ALUNO
-//####################################
-// retorna o índice do vetor que tem o menor último elemento
-int ind_menor_ultimo(Vetor U[], int n) {
-    (void) U;
-    (void) n;
-    return -1;
+// implementar construtor padrão
+// implementar o destrutor
+// implementar o len
+void teste1() {
+    std::cout << "Criando vetor com capacidade 4" << '\n';
+    Vetor v(4);
+    std::cout << "size: " << v.len() << '\n';
 }
 
-// junta todos os vetores em um só utilizando a seguinte lógica
-// enquanto houver elementos em algum vetor
-//     pegue o índice do vetor com o menor último elemento
-//     adicione o último elemento desse vetor no resultado
+// implementar o operador []
+// implementar o push_back
+// implementar o str
+void teste2(){
+    Vetor v(4);
+    std::cout << "Adicionando 1,2,3,0 usando push back" << '\n';
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(0);
 
-Vetor mergeAll(Vetor U[], int n) {
+    std::cout << "Esperado: [1,2,3,0]" << '\n';
+    std::cout << "Recebido: " << v.str() << '\n';
 
-    (void) U;
-    (void) n;
-    return Vetor(0);
+    std::cout << "Elemento 2: " << v[2] << '\n';
+    std::cout << "Mudando elemento 2 para 5" << '\n';
+    v[2] = 5;
+    std::cout << "Esperado: [1,2,5,0]" << '\n';
+    std::cout << "Recebido: " << v.str() << '\n';
 }
 
-/*
-Exemplo
+// implementar o construtor de lista de inicialização
+// implementar o construtor de cópia
+void teste3(){
+    std::cout << "Criando vetor com lista de inicialização {1,2,3}" << '\n';
+    Vetor v = {1,2,3};
+    std::cout << "Esperado: [1,2,3]" << '\n';
+    std::cout << "Recebido: " << v.str() << '\n';
 
-U = { [6,8,5], [3,2,1], [4,0,9] }
+    std::cout << "Criando vetor com cópia do anterior" << '\n';
+    Vetor v2 = v;
+    std::cout << "Esperado: [1,2,3]" << '\n';
+    std::cout << "Recebido: " << v2.str() << '\n';
+}
 
-{ [6,8,5], [3,2], [4,0,9] } => {1}
-{ [6,8,5], [3], [4,0,9] } => {1,2}
-{ [6,8,5], [], [4,0,9] } => {1,2,3}
-{ [6,8], [], [4,0,9] } => {1,2,3,5}
-{ [6], [], [4,0,9] } => {1,2,3,5,8}
-{ [], [], [4,0,9] } => {1,2,3,5,8,6}
-{ [], [], [] } => {1,2,3,5,8,6,9,0,4}
+// testando ==
+// testando pop_back
+void teste4() {
+    std::cout << "Criando vetor v1 {4,5,1}" << '\n';
+    Vetor v1 = {4,5,1};
+    std::cout << "Criando vetor v2 {4,5,1,7}" << '\n';
+    Vetor v2 = {4,5,1,7};
+    std::cout << "Fazendo v1 == v2" << '\n';
+    std::cout << "Esperado: 0" << '\n';
+    std::cout << "Recebido: " << (v1 == v2) << '\n';
+    std::cout << "Fazendo pop_back em v2" << '\n';
+    v2.pop_back();
+    std::cout << "Fazendo v1 == v2" << '\n';
+    std::cout << "Esperado: 1" << '\n';
+    std::cout << "Recebido: " << (v1 == v2) << '\n';
+}
 
-*/
-
-// #############################################
-// MAIN COM O TESTE
-// #############################################
-int main() {
-    Vetor U1 = {6,8,5}; // utilizando o construtor da lista de inicialização
-    Vetor U2 = {3,2,1};
-    Vetor U3 = {4,0,9};
-    Vetor U[3] = {U1, U2, U3};
+void teste5() {
+    std::cout << "Inicializando vetores va, vb e vc" << '\n';
+    std::cout << "va = {6,8,5}, vb = {3,2,1}, vc = {4,0,9}" << '\n';
+    Vetor va = {6,8,5}; // utilizando o construtor da lista de inicialização
+    Vetor vb = {3,2,1};
+    Vetor vc = {4,0,9};
+    Vetor vall[] = {va, vb, vc};
 
     // na hora que o mergeAll devolve o vetor, ele chama o construtor de cópia
-    Vetor received = mergeAll(U, 3); 
+    Vetor received = mergeAll(vall, 3); 
     Vetor expected = {1,2,3,5,8,6,9,0,4};
 
-    // para comparar, estamos utilizando o operador de igualdade
-    if (received == expected) {
-        std::cout << "Teste passou" << std::endl;
-    } else {
-        std::cout << "Teste falhou" << std::endl;
-        // se falhou, vamos imprimir o que era esperado e o que foi recebido
-        std::cout << "Esperado: " << expected.str() << std::endl;
-        std::cout << "Recebido: " << received.str() << std::endl;
-    }
-    return 0;
+    std::cout << "Fazendo merge" << '\n';
+    std::cout << "Esperado: [1,2,3,5,8,6,9,0,4]" << '\n';
+    std::cout << "Recebido: " << received.str() << '\n';
+
 }
+
+
+int main() {
+    int teste_index {};
+    std::cin >> teste_index;
+    switch (teste_index) {
+        case 1: teste1(); break;
+        case 2: teste2(); break;
+        case 3: teste3(); break;
+        case 4: teste4(); break;
+        case 5: teste5(); break;
+    }
+}
+
