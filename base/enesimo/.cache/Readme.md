@@ -17,11 +17,10 @@ O primeiro primo da lista é o número 2.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/enesimo/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/enesimo/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Teste
 

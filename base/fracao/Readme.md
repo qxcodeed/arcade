@@ -12,14 +12,13 @@ Implemente a classe fração e os métodos orientados no arquivo `fracao.hpp`.
 - A classe `main.cpp` já está implementada e você não deve alterá-la.
 - A classe `fn.hpp` contém funções auxiliares para ajudar na implementação dos testes.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](.cache/lang/cpp/fn.hpp)
-  - [fracao.cpp](.cache/lang/cpp/fracao.cpp)
-  - [fracao.hpp](.cache/lang/cpp/fracao.hpp)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [fn.hpp](.cache/draft/cpp/fn.hpp)
+  - [fracao.cpp](.cache/draft/cpp/fracao.cpp)
+  - [fracao.hpp](.cache/draft/cpp/fracao.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Tests
 

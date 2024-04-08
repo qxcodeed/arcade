@@ -30,13 +30,12 @@ Imprimindo ao contrário, temos:
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [lib.cpp](.cache/lang/cpp/lib.cpp)
-  - [lib.h](.cache/lang/cpp/lib.h)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [lib.cpp](.cache/draft/cpp/lib.cpp)
+  - [lib.h](.cache/draft/cpp/lib.h)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Resolução
 

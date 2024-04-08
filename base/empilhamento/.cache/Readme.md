@@ -37,13 +37,12 @@ Imprimindo ao contrário, temos:
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/lib.cpp)
-  - [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/lib.h)
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/draft/cpp/lib.cpp)
+  - [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/draft/cpp/lib.h)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/empilhamento/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Resolução
 

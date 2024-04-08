@@ -19,14 +19,13 @@ Implemente a classe ponto e faça a equação da reta.
 - O arquivo `main.cpp` contém o código que lê os pontos e chama os métodos da classe ponto, além de imprimir os resultados.
 - O arquivo `fn.hpp` contém funções auxiliares para ler e imprimir pontos.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/lang/cpp/fn.hpp)
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/lang/cpp/main.cpp)
-  - [point.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/lang/cpp/point.cpp)
-  - [point.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/lang/cpp/point.hpp)
-
-<!-- draft -->
+  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/draft/cpp/fn.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/draft/cpp/main.cpp)
+  - [point.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/draft/cpp/point.cpp)
+  - [point.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ponto/.cache/draft/cpp/point.hpp)
+<!-- links -->
 
 ## Testes
 

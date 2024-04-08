@@ -23,11 +23,10 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/mdc/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/mdc/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Shell
 

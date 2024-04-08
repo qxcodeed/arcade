@@ -1,4 +1,4 @@
-# L1 - @eh-primo: Retorna se é ou não é
+# L1 - @eh_primo - Retorna se é ou não é
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/eh_primo/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -11,11 +11,10 @@ Seja um número inteiro, retorne se ele é primo ou não.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/eh_primo/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/eh_primo/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Testes
 

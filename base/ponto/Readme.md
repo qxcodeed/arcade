@@ -12,14 +12,13 @@ Implemente a classe ponto e faça a equação da reta.
 - O arquivo `main.cpp` contém o código que lê os pontos e chama os métodos da classe ponto, além de imprimir os resultados.
 - O arquivo `fn.hpp` contém funções auxiliares para ler e imprimir pontos.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](.cache/lang/cpp/fn.hpp)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-  - [point.cpp](.cache/lang/cpp/point.cpp)
-  - [point.hpp](.cache/lang/cpp/point.hpp)
-
-<!-- draft -->
+  - [fn.hpp](.cache/draft/cpp/fn.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [point.cpp](.cache/draft/cpp/point.cpp)
+  - [point.hpp](.cache/draft/cpp/point.hpp)
+<!-- links -->
 
 ## Testes
 

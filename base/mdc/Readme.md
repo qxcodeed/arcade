@@ -16,11 +16,10 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Shell
 

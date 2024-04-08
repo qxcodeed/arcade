@@ -1,14 +1,13 @@
-# L1 - @eh-primo: Retorna se é ou não é
+# L1 - @eh_primo - Retorna se é ou não é
 
 Seja um número inteiro, retorne se ele é primo ou não.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Testes
 

@@ -10,11 +10,10 @@ O primeiro primo da lista é o número 2.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Teste
 

@@ -58,14 +58,13 @@ int main() {
 - A `main.cpp` já faz a leitura dos testes e invoca os métodos adequados da classe.
 - A `fn.hpp` é uma biblioteca auxiliar de processamento de string em c++.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](.cache/lang/cpp/fn.hpp)
-  - [list.cpp](.cache/lang/cpp/list.cpp)
-  - [list.hpp](.cache/lang/cpp/list.hpp)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [fn.hpp](.cache/draft/cpp/fn.hpp)
+  - [list.cpp](.cache/draft/cpp/list.cpp)
+  - [list.hpp](.cache/draft/cpp/list.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Shell
 

@@ -68,14 +68,13 @@ namespace alu {
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/fn.hpp)
-  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/lib.cpp)
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/lib.hpp)
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/draft/cpp/fn.hpp)
+  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/draft/cpp/lib.cpp)
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/draft/cpp/lib.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/treinando/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ___
 

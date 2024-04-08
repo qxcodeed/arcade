@@ -17,13 +17,12 @@ Veja a resolução da atividade "Empilhamento da Recursão" para entender como f
 
 Você deve implementar a função `processa` no arquivo `lib.cpp`.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [lib.cpp](.cache/lang/cpp/lib.cpp)
-  - [lib.hpp](.cache/lang/cpp/lib.hpp)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [lib.cpp](.cache/draft/cpp/lib.cpp)
+  - [lib.hpp](.cache/draft/cpp/lib.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Testes
 

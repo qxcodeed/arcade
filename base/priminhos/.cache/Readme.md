@@ -13,11 +13,10 @@ Gere um vetor com os `n` primeiros números primos.
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/priminhos/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/priminhos/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Testes
 

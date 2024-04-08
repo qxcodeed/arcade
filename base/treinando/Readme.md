@@ -61,14 +61,13 @@ namespace alu {
 
 ## Draft
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](.cache/lang/cpp/fn.hpp)
-  - [lib.cpp](.cache/lang/cpp/lib.cpp)
-  - [lib.hpp](.cache/lang/cpp/lib.hpp)
-  - [main.cpp](.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [fn.hpp](.cache/draft/cpp/fn.hpp)
+  - [lib.cpp](.cache/draft/cpp/lib.cpp)
+  - [lib.hpp](.cache/draft/cpp/lib.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ___
 

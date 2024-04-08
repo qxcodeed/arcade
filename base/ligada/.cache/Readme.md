@@ -65,14 +65,13 @@ int main() {
 - A `main.cpp` já faz a leitura dos testes e invoca os métodos adequados da classe.
 - A `fn.hpp` é uma biblioteca auxiliar de processamento de string em c++.
 
-<!-- draft -->
+<!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/fn.hpp)
-  - [list.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/list.cpp)
-  - [list.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/list.hpp)
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/lang/cpp/main.cpp)
-
-<!-- draft -->
+  - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/draft/cpp/fn.hpp)
+  - [list.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/draft/cpp/list.cpp)
+  - [list.hpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/draft/cpp/list.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/ligada/.cache/draft/cpp/main.cpp)
+<!-- links -->
 
 ## Shell
 
