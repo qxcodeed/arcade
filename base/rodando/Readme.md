@@ -1,4 +1,4 @@
-# L1 - @treinando recursão com vetores | student
+# L1 - @rodando recursão com vetores | student
 
 <!-- toch -->
 [Intro](#intro) | [Atenção](#atenção) | [Draft](#draft) | [Shell](#shell)

@@ -94,3 +94,8 @@
 ## Em manutenção
 
 - [L2 - @matriz Soma e Multiplicação (em manutenção) | draft](base/matriz/Readme.md)
+- [@subconjuntos](base/subconjuntos/Readme.md)
+- [L1 - @rodando recursão com vetores | student](base/rodando/Readme.md)
+- [@escada2](base/escada2/Readme.md)
+- [Implemente o @mdc recursivo](base/mdc/Readme.md)
+
