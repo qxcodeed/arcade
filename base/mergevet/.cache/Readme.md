@@ -76,10 +76,12 @@ Recebido: 1
 5
 ========
 Inicializando vetores va, vb e vc
-va = {6,8,5}, vb = {3,2,1}, vc = {4,0,9}
+Criando vetor va {6,8,5}
+Criando vetor vb {3,2,1}
+Criando vetor vc {4,0,9}
 Fazendo merge
-Esperado: [1,2,3,5,8,6,9,0,4]
-Recebido: [1,2,3,5,8,6,9,0,4]
+Esperado: [3,2,1,4,0,6,8,5,9]
+Recebido: [3,2,1,4,0,6,8,5,9]
 <<<<<<<<
 
 ```

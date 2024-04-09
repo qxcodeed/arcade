@@ -64,18 +64,22 @@ void teste4() {
 
 void teste5() {
     std::cout << "Inicializando vetores va, vb e vc" << '\n';
-    std::cout << "va = {6,8,5}, vb = {3,2,1}, vc = {4,0,9}" << '\n';
-    Vetor va = {6,8,5}; // utilizando o construtor da lista de inicialização
+    // U = { [6,8,5], [3,2,1], [4,0,9] }
+    std::cout << "Criando vetor va {6,8,5}" << '\n';
+    std::cout << "Criando vetor vb {3,2,1}" << '\n';
+    std::cout << "Criando vetor vc {4,0,9}" << '\n';
+    Vetor va = {6,8,5};
     Vetor vb = {3,2,1};
     Vetor vc = {4,0,9};
+
     Vetor vall[] = {va, vb, vc};
 
     // na hora que o mergeAll devolve o vetor, ele chama o construtor de cópia
     Vetor received = mergeAll(vall, 3); 
-    Vetor expected = {1,2,3,5,8,6,9,0,4};
+    Vetor expected = {3,2,1,4,0,6,8,5,9};
 
     std::cout << "Fazendo merge" << '\n';
-    std::cout << "Esperado: [1,2,3,5,8,6,9,0,4]" << '\n';
+    std::cout << "Esperado: [3,2,1,4,0,6,8,5,9]" << '\n';
     std::cout << "Recebido: " << received.str() << '\n';
 
 }
