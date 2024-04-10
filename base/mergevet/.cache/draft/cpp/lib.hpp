@@ -1,8 +1,8 @@
 #include <iostream>
 
 class Vetor {
-    int *u;  // ponteiro para dados
-    int size; // tamanho do vetor
+    int *u {nullptr};  // ponteiro para dados
+    int size {0}; // tamanho do vetor
 public:
     // construtor base
     Vetor(int n) {
@@ -16,7 +16,8 @@ public:
     }
     int& operator[] (int k) {
         (void) k;
-        return (int){0};
+        static int dummy = 0;
+        return dummy;
         // retornar o elemento k do vetor
     } 
 
@@ -125,12 +126,9 @@ inline int ind_menor_primeiro(Vetor U[], int n, Vetor ind) {
 }
 
 inline Vetor mergeAll(Vetor U[], int n) {
-
-
     (void) U;
     (void) n;
     return Vetor(0);
-
     // calcule o tamanho do vetor final e inicie ele
     // inicie um vetor de indices com o para guardar o indice de cada vetor
     // enquanto houver elementos

@@ -2,8 +2,8 @@
 
     // ++
 class Vetor {
-    int *u;  // ponteiro para dados
-    int size; // tamanho do vetor
+    int *u {nullptr};  // ponteiro para dados
+    int size {0}; // tamanho do vetor
 public:
     // construtor base
     Vetor(int n) {
@@ -25,7 +25,8 @@ public:
         return u[k];
         // $$
         // (void) k;
-        // return (int){0};
+        // static int dummy = 0;
+        // return dummy;
         // ==
         // retornar o elemento k do vetor
     } 
@@ -195,13 +196,11 @@ inline Vetor mergeAll(Vetor U[], int n) {
         total += U[i].len();
     }
     Vetor result(total);
-
     // inicializando vetor de indices
     Vetor ind(n);
     for (int i = 0; i < n; i++) {
         ind.push_back(0);
     }
-    
     // enquanto houver elementos
     while (true) {
         int index = ind_menor_primeiro(U, n, ind);
@@ -211,13 +210,11 @@ inline Vetor mergeAll(Vetor U[], int n) {
         result.push_back(U[index][ind[index]]);
         ind[index]++;
     }
-
     return result; 
     // $$
     // (void) U;
     // (void) n;
     // return Vetor(0);
-
     // ==
     // calcule o tamanho do vetor final e inicie ele
     // inicie um vetor de indices com o para guardar o indice de cada vetor
