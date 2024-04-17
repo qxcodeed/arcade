@@ -15,7 +15,7 @@
 
 ## Recursão
 
-- Wladimir
+- Wladimir Tavares
   - [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
   - [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
   - [L1 - @diagonal - Imprimindo um char por linha](base/diagonal/Readme.md)
@@ -29,11 +29,11 @@
   - [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
   - [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
   - [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
-- David
+- David Sena
   - [L1 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
   - [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
   - [L2 - @treinando recursão com vetores](base/treinando/Readme.md)
-- Ricardo
+- Ricardo Reis
   - [L1 - @eh_primo - Retorna se é ou não é](base/eh_primo/Readme.md)
   - [L2 - @enesimo - Gere o enesimo primo](base/enesimo/Readme.md)
   - [L2 - @priminhos - Carrega a lista de primos](base/priminhos/Readme.md)
@@ -48,7 +48,8 @@
 
 ## Ordenação
 
-- [L2 - @mergevet - Criando um vetor simples e fazendo um merge $alpha](base/mergevet/Readme.md)
+- Ricardo Reis
+  - [L2 - @mergevet - Criando um vetor simples e fazendo um merge $alpha](base/mergevet/Readme.md)
 
 ## Arrays
 
@@ -71,9 +72,12 @@
 
 ## Stack
 
-- [L2 - @queimando árvores usando pilha](base/queimando/Readme.md)
-- [L2 - fugindo do labirinto @pilhado](base/pilhado/Readme.md)
-- [L3 - @escorrega blocos](base/escorrega/Readme.md)
+- David Sena
+  - [L2 - @queimando árvores usando pilha](base/queimando/Readme.md)
+  - [L2 - fugindo do labirinto @pilhado](base/pilhado/Readme.md)
+- Ricardo Reis
+  - [L1 - @polonesa - Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
+
 
 ## Queue
 
