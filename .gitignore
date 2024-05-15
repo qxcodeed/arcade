@@ -18,6 +18,7 @@ trash
 .config.ini
 Solver*
 solver*
+src/
 *.out
 __*
 local.sh
