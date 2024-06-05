@@ -1,12 +1,5 @@
 # L0 - @binomiais - Calculando coeficientes
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/binomiais/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed binomiais`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 Os coeficientes binomiais são muito importantes para a resolução de vários problemas de contagem. Por exemplo,
 
 `C(n,k)` representa o número de maneiras de escolher `k` elementos de um conjunto de n elementos.

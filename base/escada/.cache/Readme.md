@@ -1,12 +1,5 @@
 # L0 - @escada - De quantas maneiras podemos subir
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/escada/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed escada`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
 Ao subir a escada de seu prédio, José às vezes sobe três degraus de uma vez e às vezes sobe um de cada vez. Dado uma escada com n degraus de quantas maneiras diferentes José pode subir essa escada. Para resolver esse problema, vamos pensar nos casos menores:
 
 * Uma escada de 1 degrau, podemos subir as escadas de 1 maneira (1).

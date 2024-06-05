@@ -2,18 +2,26 @@
 # Repositório de exercícios para Estrutura de Dados
 
 <!-- toc -->
-- [Recursão](#recursão)
-- [Backtracking](#backtracking)
-- [Ordenação](#ordenação)
-- [Arrays](#arrays)
-- [List](#list)
-- [Stack](#stack)
-- [Queue](#queue)
-- [Tree](#tree)
-- [Em manutenção](#em-manutenção)
+- [Recursão ](#recursão-)
+  - [Recursão Básico](#recursão-básico)
+  - [Backtracking](#backtracking)
+- [Ordenação ](#ordenação-)
+  - [Ordenação Básico](#ordenação-básico)
+- [Estruturas Lineares ](#estruturas-lineares-)
+  - [Arrays](#arrays)
+  - [List](#list)
+  - [Stack](#stack)
+  - [Queue](#queue)
+- [Árvores ](#árvores-)
+  - [Tree](#tree)
+- [Futuro  ](#futuro--)
+  - [Em manutenção](#em-manutenção)
 <!-- toc -->
 
-## Recursão
+
+## Recursão <!-- group -->
+
+### Recursão Básico
 
 - Wladimir Tavares
   - [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
@@ -40,18 +48,22 @@
   - [L2 - @ponto - Implemente a classe ponto](base/ponto/Readme.md)
   - [L3 - @fracao - Implemente a classe fração reduzida](base/fracao/Readme.md)
 
-## Backtracking
+### Backtracking
 
 - [L2 - escapando do @labirinto](base/labirinto/Readme.md)
 - [L2 - @distancia](base/distancia/Readme.md)
 - [L3 - @sudoku](base/sudoku/Readme.md)
 
-## Ordenação
+## Ordenação <!-- group -->
+
+### Ordenação Básico
 
 - Ricardo Reis
   - [L2 - @mergevet - Criando um vetor simples e fazendo um merge $alpha](base/mergevet/Readme.md)
 
-## Arrays
+## Estruturas Lineares <!-- group -->
+
+### Arrays
 
 - [L1 - @buscas de strings](base/buscas/Readme.md)
 - [L1 - @rotacoes em uma lista](base/rotacoes/Readme.md)
@@ -61,7 +73,7 @@
 - [L2 - @princesa v1](base/princesa/Readme.md)
 - [L2 - princesa @alternando](base/alternando/Readme.md)
 
-## List
+### List
 
 - [L1 - implementando lista @ligada simples sem cabeça e rabo](base/ligada/Readme.md)
 - [L2 - @princesa-lista](base/princesa-lista/Readme.md)
@@ -70,7 +82,7 @@
 - [L2 - @editor de texto](base/editor/Readme.md)
 - [L4 - editor com @controlz](base/controlz/Readme.md)
 
-## Stack
+### Stack
 
 - David Sena
   - [L2 - @queimando árvores usando pilha](base/queimando/Readme.md)
@@ -79,14 +91,16 @@
   - [L1 - @polonesa - Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
 
 
-## Queue
+### Queue
 
 - [L1 - @fila como duas pilhas](base/fila/Readme.md)
 - [L1 - Gerenciando @chaves de disputas usando uma fila](base/chaves/Readme.md)
 - [L2 - @caminhao abastecendo](base/caminhao/Readme.md)
 - [L3 - menor @caminho entre dois pontos - floodfill pathfinding](base/caminho/Readme.md)
 
-## Tree
+## Árvores <!-- group -->
+
+### Tree
 
 - [L2 - lendo uma árvore a partir de um @serial](base/serial/Readme.md)
 - [L2 - mostrando a árvore @formatada](base/formatada/Readme.md)
@@ -95,7 +109,9 @@
 - [L2 - @arvore-path](base/arvore-path/Readme.md)
 - [L2 - serialização @dividido](base/dividido/Readme.md)
 
-## Em manutenção
+## Futuro  <!-- group -->
+
+### Em manutenção
 
 - [L2 - @matriz Soma e Multiplicação (em manutenção) | draft](base/matriz/Readme.md)
 - [@subconjuntos](base/subconjuntos/Readme.md)
