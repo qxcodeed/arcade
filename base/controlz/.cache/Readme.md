@@ -1,4 +1,4 @@
-# L4 - editor com @controlz
+# L4 - @controlz - editor2
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/controlz/Readme.md)
 - Para programar na sua máquina (local/virtual) use:

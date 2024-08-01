@@ -1,4 +1,4 @@
-# L3 - Gerenciando a fila do @banco
+# L3 - @banco - Gerenciando a fila
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/banco/Readme.md)
 - Para programar na sua máquina (local/virtual) use:

@@ -1,4 +1,4 @@
-# L2 - @mergevet - Criando um vetor simples e fazendo um merge $alpha
+# L2 - @mergevet - Criando um vetor simples e fazendo um merge
 
 - Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/mergevet/Readme.md)
 - Para programar na sua máquina (local/virtual) use:
@@ -22,7 +22,10 @@ Essa atividade ainda não tem os testes, você pode rodar o único caso de teste
 - Na classe `main.cpp` estão todos os casos de teste.
 - Sugiro implementar os métodos na ordem sugerida no `main.cpp`.
 
-<!-- links .cache/lang -->
+<!-- links .cache/draft -->
+- cpp
+  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/mergevet/.cache/draft/cpp/lib.hpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/mergevet/.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Testes

@@ -14,6 +14,15 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
 
 [LINK](https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm)
 
+## O Algoritmo
+
+- O Algoritmo Euclidiano para encontrar o MDC(A,B) é dado por:
+
+- Se A = 0, então MDC(A,B)=B, uma vez que MDC(0,B)=B, e podemos parar a verificação.  
+- Se B = 0, então MDC(A,B)=A, uma vez que o MDC(A,0)=A, e podemos parar a verificação.  
+- Escreva A na forma do resto do quociente (A = B⋅Q + R), ou seja R = A % B.
+- Encontre o MDC(B,R) usando o Algoritmo Euclidiano, já que MDC(A,B) = MDC(B,R)
+
 ## I/O
 
 - Entrada

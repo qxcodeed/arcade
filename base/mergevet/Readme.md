@@ -1,4 +1,4 @@
-# L2 - @mergevet - Criando um vetor simples e fazendo um merge $alpha
+# L2 - @mergevet - Criando um vetor simples e fazendo um merge
 
 - Nessa atividade você vai aprender sobre
 
@@ -15,7 +15,10 @@ Essa atividade ainda não tem os testes, você pode rodar o único caso de teste
 - Na classe `main.cpp` estão todos os casos de teste.
 - Sugiro implementar os métodos na ordem sugerida no `main.cpp`.
 
-<!-- links .cache/lang -->
+<!-- links .cache/draft -->
+- cpp
+  - [lib.hpp](.cache/draft/cpp/lib.hpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Testes

@@ -1,13 +1,6 @@
-# L4 - editor com @controlz
+# L4 - @controlz - editor2
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/controlz/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed controlz`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/controlz/capa.jpg)
+![_](capa.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.
