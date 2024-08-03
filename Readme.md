@@ -28,7 +28,7 @@ Bom trabalho.
 
 Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da linguagem C++.
 
-- [ ] [Vídeo - Objetivos Introdução](wiki/video_intro.md)
+- [ ] [Objetivos Introdução](wiki/video_intro.md)
 - [ ] [Vídeo - Qual a diferença entre ponteiros e referências](https://youtu.be/uz_sTcNdguY?si=YznFcnV6sisot_Sc)
 - [ ] [Vídeo - Introdução a OOP in C++](https://youtu.be/w7F587dNwqA?si=2UMhfS9_DcAh-gjF)
 - [ ] [Vídeo - Modificadores de Acesso com exemplos](https://youtu.be/n1RfuPbzG-M?si=kwaSjo9Ng1g4waOK)
@@ -37,9 +37,9 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 
 A implementação de Orientação a Objetos em C++ tem várias peculiaridades como a forma de fazer o "toString" ou a sobrecarga de operadores e métodos.
 
-- [ ] [Leitura - Como fazer sobre carga de cópia e referencia](wiki/tad/sobrecarga.md)
+- [ ] [Como fazer sobre carga de cópia e referencia](wiki/tad/sobrecarga.md)
 - [ ] [L2 - @ponto - Implemente a classe ponto](base/ponto/Readme.md)
-- [ ] [Leitura - Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
+- [ ] [Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
 - [ ] [L3 - @fracao - Implemente a classe fração reduzida](base/fracao/Readme.md)
 
 ### Análise de Algoritmos <!-- @analise r:intro -->
@@ -48,7 +48,7 @@ A análise de algoritmos é essencial para entender e avaliar a eficiência das 
 
 Estudar análise de algoritmos também revela os limites e aplicabilidades de cada solução, evitando o uso inadequado e promovendo a criação de algoritmos mais eficientes e inovadores. Esse conhecimento é crucial não apenas para a resolução de problemas reais, mas também para o desenvolvimento de software otimizado e para a preparação em entrevistas técnicas, onde a análise de algoritmos é frequentemente testada.
 
-- [ ] [Leitura - Análise de Algoritmos](wiki/analise/analise.md)
+- [ ] [Análise de Algoritmos](wiki/analise/analise.md)
 
 ## Recursão<!-- group -->
 
@@ -57,7 +57,7 @@ Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programaç
 ### Recursão: Estudo <!-- @rec_intro r:intro -->
 
 - [ ] [Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
-- [ ] [Leitura - Recursividade](wiki/recursao/recursao.md)
+- [ ] [Recursividade](wiki/recursao/recursao.md)
 
 ### Recursão: Treinando conceitos I<!-- @con_rec r:rec_intro -->
 
