@@ -1,5 +1,12 @@
 # L3 - @tapioca Sort
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/tapioca/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed tapioca`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)
 -- | -- | --
@@ -39,7 +46,7 @@ Observe que a pilha de tapiocas pode ser ordenada utilizando duas operações de
 
 <!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/tapioca/.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

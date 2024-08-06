@@ -1,5 +1,12 @@
 # L1 - @indices do vetor
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/indices/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed indices`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)
 -- | -- | --
@@ -23,7 +30,7 @@ A saída deve ser os índices originais dos elementos do vetor ordenado: `4 2 0 
 
 <!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/indices/.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

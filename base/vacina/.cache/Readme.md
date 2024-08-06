@@ -1,5 +1,12 @@
 # L0 - @vacina
 
+- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/vacina/Readme.md)
+- Para programar na sua máquina (local/virtual) use:
+  - `tko down ed vacina`
+- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
+
+---
+
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)
 -- | -- | --
@@ -17,7 +24,7 @@ Um médico recebe um conjunto de relatórios contendo a contagem de células T d
 
 <!-- links .cache/draft -->
 - cpp
-  - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/vacina/.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests
