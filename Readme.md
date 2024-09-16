@@ -1,4 +1,3 @@
-
 # Repositório de exercícios para Estrutura de Dados
 
 Esse é um repositório que integra o conteúdo das atividades de Estrutura de Dados (ES) para os cursos:
@@ -144,8 +143,8 @@ Treinando o uso da classe vector e seus métodos na resolução de problemas bá
 Os exercícios desse bloco podem ser resolvidos com vectors, porém a maioria das atividades precisa de atenção para a manipulação eficiente dos elementos. Estruturas como map, set, list e stack podem ser mais eficientes para resolver os problemas propostos.
 
 - [ ] [L2 - @apagando elementos de forma eficiente](base/apagando/Readme.md)
-- [ ] [Utilizando a stl para manipulação](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
-- [ ] [Utilizando map e set](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
+- [ ] [L2 - @manipulacao - Utilizando a stl](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
+- [ ] [L2 - @especiais - Utilizando map e set](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
 
 ## Listas <!-- group -->
 
@@ -158,6 +157,7 @@ Agora estudaremos as listas encadeadas, estruturas de dados flexíveis e eficien
 
 - [ ] [Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
 - [ ] [L1 - implementando lista @ligada simples sem cabeça e rabo](base/ligada/Readme.md)
+- [ ] [@lista_simples - Lista Simplesmente Encadeada](base/lista_simples/Readme.md)
 
 ### Lista: Resolvendo Problemas Simples <!-- @list_basic r:list_build -->
 

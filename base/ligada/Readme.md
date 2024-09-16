@@ -49,7 +49,6 @@ int main() {
 }
 ```
 
-
 ## Draft
 
 - Você deve implementar os métodos no arquivo `list.cpp`.

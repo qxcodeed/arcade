@@ -22,6 +22,9 @@ Você deve implementar a função `processa` no arquivo `lib.cpp`.
   - [lib.cpp](.cache/draft/cpp/lib.cpp)
   - [lib.hpp](.cache/draft/cpp/lib.hpp)
   - [main.cpp](.cache/draft/cpp/main.cpp)
+- py
+  - [lib.py](.cache/draft/py/lib.py)
+  - [main.py](.cache/draft/py/main.py)
 <!-- links -->
 
 ## Testes

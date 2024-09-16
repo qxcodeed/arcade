@@ -29,6 +29,9 @@ Você deve implementar a função `processa` no arquivo `lib.cpp`.
   - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/lib.cpp)
   - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/lib.hpp)
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/main.cpp)
+- py
+  - [lib.py](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/py/lib.py)
+  - [main.py](https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/py/main.py)
 <!-- links -->
 
 ## Testes
