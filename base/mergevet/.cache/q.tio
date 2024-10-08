@@ -1,0 +1,55 @@
+>>>>>>>> INSERT
+1
+======== EXPECT
+Criando vetor com capacidade 4
+size: 0
+<<<<<<<< FINISH
+
+>>>>>>>> INSERT
+2
+======== EXPECT
+Adicionando 1,2,3,0 usando push back
+Esperado: [1,2,3,0]
+Recebido: [1,2,3,0]
+Elemento 2: 3
+Mudando elemento 2 para 5
+Esperado: [1,2,5,0]
+Recebido: [1,2,5,0]
+<<<<<<<< FINISH
+
+>>>>>>>> INSERT
+3
+======== EXPECT
+Criando vetor com lista de inicialização {1,2,3}
+Esperado: [1,2,3]
+Recebido: [1,2,3]
+Criando vetor com cópia do anterior
+Esperado: [1,2,3]
+Recebido: [1,2,3]
+<<<<<<<< FINISH
+
+>>>>>>>> INSERT
+4
+======== EXPECT
+Criando vetor v1 {4,5,1}
+Criando vetor v2 {4,5,1,7}
+Fazendo v1 == v2
+Esperado: 0
+Recebido: 0
+Fazendo pop_back em v2
+Fazendo v1 == v2
+Esperado: 1
+Recebido: 1
+<<<<<<<< FINISH
+
+>>>>>>>> INSERT
+5
+======== EXPECT
+Inicializando vetores va, vb e vc
+Criando vetor va {6,8,5}
+Criando vetor vb {3,2,1}
+Criando vetor vc {4,0,9}
+Fazendo merge
+Esperado: [3,2,1,4,0,6,8,5,9]
+Recebido: [3,2,1,4,0,6,8,5,9]
+<<<<<<<< FINISH

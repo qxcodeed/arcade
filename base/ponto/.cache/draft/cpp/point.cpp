@@ -3,6 +3,7 @@
 #include <cmath>
 
 #include "point.hpp"
+
 Ponto::Ponto(int x, int y) {  
     (void) x;
     (void) y;
@@ -21,6 +22,7 @@ double reta(const Ponto& p, const Ponto& q) {
 
 
 int min_dist(const Ponto& p, std::vector<Ponto> vet) {
+   return best_i;
     (void) p;
     (void) vet;
     return 0;

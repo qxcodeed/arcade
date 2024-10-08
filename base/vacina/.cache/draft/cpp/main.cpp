@@ -7,7 +7,6 @@ void ordenar(std::vector<int>& arr) {
 }
 
 void vacinou(std::vector<int>& vacinas, std::vector<int>& pacientes){
-
     (void) vacinas;
     (void) pacientes;
 }

@@ -1,9 +1,8 @@
-#include "flow.hpp"
+#include "fn.hpp"
 #include <stack>
 #include <unordered_map>
 
 using namespace std;
-using namespace fw;
 
 bool isdigit(const string& s) {
     (void) s;
@@ -11,12 +10,12 @@ bool isdigit(const string& s) {
 }
 
 vector<string> shunting_yard(vector<string> tokens) {
-
-
     (void) tokens;
     return {};
 }
 
 int main() {
+    vector<string> data = fn::input() | fn::SPLIT(' ');
+    shunting_yard(data) | fn::JOIN(" ") | fn::WRITE();
+    return 0;
 }
-

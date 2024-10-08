@@ -15,8 +15,6 @@ int findMax(std::vector<int>& tapiocas, int n) {
 }
 
 std::vector<int> tapiocaSort(std::vector<int>& tapiocas, int n) {
-
-
     (void) tapiocas;
     (void) n;
     return std::vector<int> {};

@@ -46,8 +46,6 @@ struct SLinkedList {
     // index: posicao do elemento
     bool hasInfo(int info){
         // TODO: Complexidade O(n)
-        (void) info;
-        return false;
 
     }
     // Exemplo:
@@ -60,8 +58,6 @@ struct SLinkedList {
     int get(int index){
         // TODO: Complexidade O(n)
         
-        (void) index;
-        return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -85,7 +81,6 @@ struct SLinkedList {
         head = newNode;
         // Ou simplesmente
         // head = new Node(info, head);
-        (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -144,7 +139,6 @@ struct SLinkedList {
     int length(){
         // TODO: Complexidade O(n)
 
-        return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50

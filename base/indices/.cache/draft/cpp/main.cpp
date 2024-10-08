@@ -3,13 +3,11 @@
 
 //Escolha e implemente um algoritmo de ordenação
 std::vector<int> ordenar(std::vector<int> arr) {
-
     (void) arr;
     return arr;
 }
 
 std::vector<int> originalIndices(std::vector<int>& arr, std::vector<int>& arrOrdenado) {
-
     (void) arr;
     (void) arrOrdenado;
     return std::vector<int> {};

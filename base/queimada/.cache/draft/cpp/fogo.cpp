@@ -14,4 +14,3 @@ void tocar_fogo(std::vector<std::string> &mat, int l, int c) {
     // queime a arvore colocando o caractere 'o' na posição atual
     // chame a recursão para todos os 4 vizinhos
 }
-

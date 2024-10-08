@@ -6,63 +6,67 @@ class Vetor {
 public:
     // construtor base
     Vetor(int n) {
-        (void) n;
-        // inicie u com n posições usando new
-        // size deve ser 0
+        u = new int[n];
+        size = 0;
     }
-   ~Vetor() { 
-        // deletar o vetor u
 
+    // deletar o vetor u
+   ~Vetor() {
+        delete [] u; 
     }
+
+    // retornar o elemento k do vetor
     int& operator[] (int k) {
-        (void) k;
-        static int dummy = 0;
-        return dummy;
-        // retornar o elemento k do vetor
+        return u[k];
     } 
 
     int len() { return size; }
 
     // ####################################
-    // metodos para você fazer
+    // Métodos para você fazer
     // ####################################
 
     // permite inicializar assim Vetor V = {1,2,3};
-    // Uma lista de inicialização é um conjunto de elementos entre chaves
+    // uma lista de inicialização é um conjunto de elementos entre chaves
     // ele tem um método size() que retorna o tamanho da lista
     // e também pode ser percorrido com um for(int elem : v)
+    //
+    // inicie o vetor com o tamanho da lista
+    // e copie os elementos da lista para o vetor
+    // inicialize size adequadamente
     Vetor(std::initializer_list<int> v) {
         (void) v;
-        // inicie o vetor com o tamanho da lista
-        // e copie os elementos da lista para o vetor
-        // inicialize size adequadamente
     }
 
     // se não tiver o construtor de cópia para estruturas dinâmicas
     // quando fazemos uma atribuição, o ponteiro é copiado e não o conteúdo
     // e você terá um erro de double free
+    //
+    // inicie u com o tamanho de V
+    // inicie size com o tamanho de V
+    // copie os elementos de V para u
     Vetor(const Vetor& V) {
         (void) V;
-        // inicie u com o tamanho de V
-        // inicie size com o tamanho de V
-        // copie os elementos de V para u
     }
 
     bool empty() {
-        return 0;
-        // retorne se o vetor está vazio
+        // retorne se o vetor está vazio 
+        return false;
     } 
+
+    // retorne o valor do último elemento valido
     int back() {
         return 0;
-        // retorne o valor do último elemento valido
     }
+    
+    // diminua o tamanho do vetor
     void pop_back() {
-        // diminua o tamanho do vetor
     }
+
+    // adicione x no final do vetor
+    // aumente o tamanho do vetor
     void push_back(int x) {
         (void) x;
-        // adicione x no final do vetor
-        // aumente o tamanho do vetor
     }
 
     // vai lhe ajudar se você quiser fazer debug e imprimir o vetor
@@ -125,16 +129,14 @@ inline int ind_menor_primeiro(Vetor U[], int n, Vetor ind) {
     return -1;
 }
 
+// calcule o tamanho do vetor final e inicie ele
+// inicie um vetor de indices com o para guardar o indice de cada vetor
+// enquanto houver elementos
+//     ache o menor elemento entre os vetores
+//     adicione o menor elemento no vetor final
+//     incremente o indice do vetor que tinha o menor elemento
 inline Vetor mergeAll(Vetor U[], int n) {
     (void) U;
     (void) n;
     return Vetor(0);
-    // calcule o tamanho do vetor final e inicie ele
-    // inicie um vetor de indices com o para guardar o indice de cada vetor
-    // enquanto houver elementos
-    //     ache o menor elemento entre os vetores
-    //     adicione o menor elemento no vetor final
-    //     incremente o indice do vetor que tinha o menor elemento
 }
-
-

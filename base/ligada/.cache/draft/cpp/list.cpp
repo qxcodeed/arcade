@@ -12,7 +12,6 @@ void LinkedList::push_front(int value) {
     (void) value;
 }
 
-
 void LinkedList::pop_back() {
 }
 

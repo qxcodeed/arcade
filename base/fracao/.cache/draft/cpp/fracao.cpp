@@ -30,5 +30,3 @@ Frac Frac::operator+(const Frac& other) const {
 void ordena_frac(std::vector<Frac>& vet) {
     (void) vet;
 }
-
-
