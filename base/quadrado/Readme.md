@@ -1,4 +1,4 @@
-# L2 - @quadrado - Aragão calculando n ao quadrado
+# Aragão calculando n ao quadrado
 
 Aragão está profundamente envolvido em seu aprendizado sobre recursão. Recentemente, ele fez uma descoberta fascinante: o cálculo de $n^2$ pode ser expresso de maneira recursiva por meio da seguinte fórmula iterativa: $(n+1)^2 = n^2 + 2n + 1$, começando com $1^2 = 1$ como caso base.
 

@@ -1,4 +1,4 @@
-# L2 - @ponto - Implemente a classe ponto
+# Implemente a classe ponto
 
 ## Intro
 

@@ -1,4 +1,4 @@
-# L2 - @queimada - Tocando fogo na floresta | Modelo student
+# Tocando fogo na floresta
 
 ![_](cover.jpg)
 
@@ -30,6 +30,7 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
   - [fogo.cpp](.cache/draft/cpp/fogo.cpp)
   - [fogo.hpp](.cache/draft/cpp/fogo.hpp)
   - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [teste.cpp](.cache/draft/cpp/teste.cpp)
 <!-- links -->
 
 ## Testes

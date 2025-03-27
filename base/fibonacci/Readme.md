@@ -1,4 +1,4 @@
-# L2 - @fibonacci - Procriando coelhos
+# Procriando coelhos
 
 Uma relação de recorrência é uma forma de definir os termos de uma sequência em relação aos valores dos termos anteriores. No caso dos coelhos de Fibonacci, qualquer mês conterá os coelhos que estavam vivos no mês anterior além de sua nova prole. Uma observação importante é que o número de descendentes em qualquer mês é igual ao número de coelhos que estavam vivos dois meses antes.
 

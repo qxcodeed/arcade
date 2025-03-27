@@ -1,4 +1,4 @@
-# L1 - @padroes1 - Descobrindo quantos bloquinhos
+# Descobrindo quantos bloquinhos
 
 O diagrama mostra os três primeiros padrões em uma sequência em que cada padrão possui um buraco quadrado no meio.
 

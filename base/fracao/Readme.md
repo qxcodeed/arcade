@@ -1,4 +1,4 @@
-# L3 - @fracao - Implemente a classe fração reduzida
+# Implemente a classe fração reduzida
 
 ## Intro
 

@@ -1,4 +1,4 @@
-# Implemente o @mdc recursivo
+# Implemente o mdc recursivo
 
 Implemente a função que calcula o mdc de dois números de forma recursiva.
 

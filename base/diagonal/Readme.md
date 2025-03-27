@@ -1,4 +1,4 @@
-# L1 - @diagonal - Imprimindo um char por linha
+# Imprimindo um char por linha
 
 Faça um programa que recebe uma palavra com até 100 caracteres e imprime a palavra em diagonal.
 

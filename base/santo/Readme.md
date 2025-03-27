@@ -1,4 +1,4 @@
-# L2 - @santo JM - O milagre de ficar pobre
+# O milagre de ficar pobre
 
 Jota Marcelo estava pensando em um método para ficar rico. Ele entrou na igreja de Santo Antônio e disse:
 

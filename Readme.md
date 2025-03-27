@@ -21,25 +21,34 @@ O próprio aplicativo vai orientar a sequência sugerida na qual as atividades d
 
 Bom trabalho.
 
-## Introdução ao C++ e ED <!-- group -->
+## Introdução ao C++ e ED
 
-### Conceitos Básicos de C++ <!-- @intro q:30 -->
+Significado das tags nas questões:
+
+| marcador  | significado
+| --------- | -----------
+| test      | Problema de código com testes
+| open      | Problema de programação abertos sem testes
+| info      | Conteúdo informativo de leitura ou vídeo
+| task      | Outras atividades
+
+### Conceitos Básicos de C++
 
 Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da linguagem C++.
 
-- [ ] [Objetivos Introdução](wiki/video_intro.md)
-- [ ] [Vídeo - Qual a diferença entre ponteiros e referências](https://youtu.be/uz_sTcNdguY?si=YznFcnV6sisot_Sc)
-- [ ] [Vídeo - Introdução a OOP in C++](https://youtu.be/w7F587dNwqA?si=2UMhfS9_DcAh-gjF)
-- [ ] [Vídeo - Modificadores de Acesso com exemplos](https://youtu.be/n1RfuPbzG-M?si=kwaSjo9Ng1g4waOK)
+- [ ] `#cpp_intro   :info`[Objetivos Introdução](wiki/video_intro.md)
+- [ ] `#cpp_pointer :info`[Vídeo - Qual a diferença entre ponteiros e referências](https://youtu.be/uz_sTcNdguY?si=YznFcnV6sisot_Sc)
+- [ ] `#cpp_oop     :info`[Vídeo - Introdução a OOP in C++](https://youtu.be/w7F587dNwqA?si=2UMhfS9_DcAh-gjF)
+- [ ] `#cpp_acesso  :info`[Vídeo - Modificadores de Acesso com exemplos](https://youtu.be/n1RfuPbzG-M?si=kwaSjo9Ng1g4waOK)
 
 ### Aprendendo um pouco sobre OOP em C++ <!-- @tad r:intro -->
 
 A implementação de Orientação a Objetos em C++ tem várias peculiaridades como a forma de fazer o "toString" ou a sobrecarga de operadores e métodos.
 
-- [ ] [Como fazer sobre carga de cópia e referencia](wiki/tad/sobrecarga.md)
-- [ ] [L2 - @ponto - Implemente a classe ponto](base/ponto/Readme.md)
-- [ ] [Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
-- [ ] [L3 - @fracao - Implemente a classe fração reduzida](base/fracao/Readme.md)
+- [ ] `#cpp_cpref  :info`[Como fazer sobrecarga de cópia e referencia](wiki/tad/sobrecarga.md)
+- [ ] `#cpp_oper   :info`[Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
+- [ ] `L2 @ponto   :test`[Implemente a classe ponto](base/ponto/Readme.md)
+- [ ] `L2 @fracao  :test`[Implemente a classe fração reduzida](base/fracao/Readme.md)
 
 ### Análise de Algoritmos <!-- @analise r:intro -->
 
@@ -47,42 +56,42 @@ A análise de algoritmos é essencial para entender e avaliar a eficiência das 
 
 Estudar análise de algoritmos também revela os limites e aplicabilidades de cada solução, evitando o uso inadequado e promovendo a criação de algoritmos mais eficientes e inovadores. Esse conhecimento é crucial não apenas para a resolução de problemas reais, mas também para o desenvolvimento de software otimizado e para a preparação em entrevistas técnicas, onde a análise de algoritmos é frequentemente testada.
 
-- [ ] [Análise de Algoritmos](wiki/analise/analise.md)
+- [ ] `#analise    :info`[Análise de Algoritmos](wiki/analise/analise.md)
 
-## Recursão<!-- group -->
+## Recursão
 
 Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programação que permite que uma função chame a si mesma para resolver problemas de forma mais elegante e eficiente. Entender recursividade pode ajudar a simplificar problemas complicados e tornar a programação mais fácil e eficaz.
 
 ### Recursão: Estudo <!-- @rec_intro r:intro -->
 
-- [ ] [Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
-- [ ] [Recursividade](wiki/recursao/recursao.md)
+- [ ] `#cpp_rec_view :info`[Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
+- [ ] `#cpp_rec_read :info`[Recursividade](wiki/recursao/recursao.md)
 
 ### Recursão: Treinando conceitos I<!-- @con_rec r:rec_intro -->
 
-- [ ] [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
-- [ ] [L0 - @escada - De quantas maneiras podemos subir](base/escada/Readme.md)
-- [ ] [L1 - @diagonal - Imprimindo um char por linha](base/diagonal/Readme.md)
-- [ ] [L1 - @padroes1 - Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
-- [ ] [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
-- [ ] [L1 - @empilhamento de divisões](base/empilhamento/Readme.md)
-- [ ] [Implemente o @mdc recursivo](base/mdc/Readme.md)
+- [ ] `#cpp_intro       :info` [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
+- [ ] `L0 @escada       :test` [De quantas maneiras podemos subir](base/escada/Readme.md)
+- [ ] `L1 @diagonal     :test` [Imprimindo um char por linha](base/diagonal/Readme.md)
+- [ ] `L1 @padroes1     :test` [Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
+- [ ] `L1 @sufixos      :test` [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+- [ ] `L1 @empilhamento :test` [Empilhamento de divisões](base/empilhamento/Readme.md)
+- [ ] `L2 @mdc          :test` [Implemente o mdc recursivo](base/mdc/Readme.md)
 
 ### Recursão: Treinando conceitos II <!-- @rec_basic r:con_rec -->
 
-- [ ] [L2 - @padroes2 - Descobrindo quantas pecinhas](base/padroes2/Readme.md)
-- [ ] [L2 - @santo JM - O milagre de ficar pobre](base/santo/Readme.md)
-- [ ] [L2 - @fibonacci - Procriando coelhos](base/fibonacci/Readme.md)
-- [ ] [L2 - @quadrado - Aragão calculando n ao quadrado](base/quadrado/Readme.md)
-- [ ] [L2 - @bitcoin - Investindo em ativos digitais](base/bitcoin/Readme.md)
+- [ ] `L2 @padroes2     :test`[Descobrindo quantas pecinhas](base/padroes2/Readme.md)
+- [ ] `L2 @santo JM     :test`[O milagre de ficar pobre](base/santo/Readme.md)
+- [ ] `L2 @fibonacci    :test`[Procriando coelhos](base/fibonacci/Readme.md)
+- [ ] `L2 @quadrado     :test`[Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+- [ ] `L2 @bitcoin      :test`[Investindo em ativos digitais](base/bitcoin/Readme.md)
 
 ### Recursão: Desafios <!-- @rec_desafios r:rec_basic t:7 -->
 
-- [ ] [L1 - @triangulo - Imprimindo ao contrário $required](base/triangulo/Readme.md)
-- [ ] [L3 - @fibonacci2 - Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
-- [ ] [L3 - @padroes3 - Contando pontos](base/padroes3/Readme.md)
-- [ ] [L2 - @queimada - Tocando fogo na floresta | Modelo student](base/queimada/Readme.md)
-- [ ] [L2 - @treinando recursão com vetores](base/treinando/Readme.md)
+- [ ] `L1 @triangulo   :test`[Imprimindo ao contrário](base/triangulo/Readme.md)
+- [ ] `L3 @fibonacci2  :test`[Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
+- [ ] `L3 @padroes3    :test`[Contando pontos](base/padroes3/Readme.md)
+- [ ] `L2 @queimada    :test`[Tocando fogo na floresta](base/queimada/Readme.md)
+- [ ] `L2 @treinando   :test`[Treinando recursão com vetores](base/treinando/Readme.md)
 
 ### Recursão: Exercícios com matemática <!-- @rec_primos r:rec_basic -->
 
@@ -96,16 +105,16 @@ Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programaç
 - [ ] [L2 - @distancia](base/distancia/Readme.md)
 - [ ] [L3 - @sudoku](base/sudoku/Readme.md)
 
-## Ordenação <!-- group -->
+## Ordenação
 
 Nesse bloco, abordaremos os algoritmos de busca e ordenação, duas técnicas essenciais na programação. Os algoritmos de busca são usados para encontrar elementos específicos dentro de uma estrutura de dados (localizar um nome específico em uma lista de contatos, por exemplo), enquanto os algoritmos de ordenação organizam esses elementos em uma sequência desejada (como organizar uma lista de livros por título em ordem alfabética). Compreender essas técnicas é crucial para manipular e acessar dados de forma eficiente em seus programas.
 
 ### Ordenação: Estudo <!-- @sort_intro r:analise -->
 
-- [ ] [Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
-- [ ] [Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
-- [ ] [Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
-- [ ] [Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
+- [ ] `#alg_ord_video` [Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
+- [ ] `#alg_ord_leitura` [Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
+- [ ] `#alg_ord_simples`[Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
+- [ ] `#alg_ord_recurs`[Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
 
 ### Ordenação: Construindo algoritmos <!-- @sort_build r:sort_intro -->
 
@@ -155,7 +164,7 @@ Agora estudaremos as listas encadeadas, estruturas de dados flexíveis e eficien
 
 ### Lista: Construindo <!-- @list_build r:array_intro -->
 
-- [ ] [Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
+- [ ] `#lista_video`[Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
 - [ ] [L1 - implementando lista @ligada simples sem cabeça e rabo](base/ligada/Readme.md)
 - [ ] [@lista_simples - Lista Simplesmente Encadeada](base/lista_simples/Readme.md)
 

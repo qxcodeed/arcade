@@ -1,13 +1,17 @@
 #include <iostream>
 
+//++0
 int mdc(int a, int b) {
   if (b == 0) {
+    return a;
   }
   return mdc(b, a % b);
-  todo
-  return 0;
+  //ACT!
+  // todo
+  // return 0;
 }
 
+//==
 int main() {
   int a, b;
   std::cin >> a >> b;

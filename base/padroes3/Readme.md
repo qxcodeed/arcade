@@ -1,4 +1,4 @@
-# L3 - @padroes3 - Contando pontos
+# Contando pontos
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

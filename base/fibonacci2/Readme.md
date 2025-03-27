@@ -1,4 +1,4 @@
-# L3 - @fibonacci2 - Fazendo filhos e morrendo
+# Fazendo filhos e morrendo
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

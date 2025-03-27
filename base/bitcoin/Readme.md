@@ -1,4 +1,4 @@
-# L2 - @bitcoin - Investindo em ativos digitais
+# Investindo em ativos digitais
 
 Suarez conheceu o maravilhoso mundo dos ativos digitais. Seu patrimônio cresceu bastante usando a seguinte estratégia de investimento.
 

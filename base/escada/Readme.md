@@ -1,4 +1,4 @@
-# L0 - @escada - De quantas maneiras podemos subir
+# De quantas maneiras podemos subir
 
 Ao subir a escada de seu prédio, José às vezes sobe três degraus de uma vez e às vezes sobe um de cada vez. Dado uma escada com n degraus de quantas maneiras diferentes José pode subir essa escada. Para resolver esse problema, vamos pensar nos casos menores:
 

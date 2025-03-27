@@ -1,4 +1,4 @@
-# L1 - @empilhamento de divisões
+# Empilhamento de divisões
 
 ![_](cover.jpg)
 

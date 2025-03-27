@@ -1,4 +1,4 @@
-# L2 - @padroes2 - Descobrindo quantas pecinhas
+# Descobrindo quantas pecinhas
 
 Considere a seguinte sequência de imagem:
 
