@@ -1,11 +1,4 @@
-# L2 - mostrando a árvore @formatada
-
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/formatada/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed formatada`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
+# Mostrando a árvore formatada
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
@@ -14,7 +7,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/formatada/cover.jpg)
+![_](cover.jpg)
 
 ## Descrição
 

@@ -1,13 +1,6 @@
-# L2 - fugindo do labirinto @pilhado
+# Fugindo do labirinto
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/pilhado/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed pilhado`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/pilhado/cover.jpg)
+![_](cover.jpg)
 
 Você vai tentar fugir do labirinto usando uma pilha no lugar da recursão.
 
@@ -30,14 +23,14 @@ Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim 
 ## Arquivos
 
 - Você deve implementar:
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/pilhado/student.cpp)
+  - [student.cpp](student.cpp)
     - escrever a função procurar_saida e get_vizinhos.
 - Já está implementado:
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/pilhado/main.cpp)
+  - [main.cpp](main.cpp)
     - Faz a leitura do numero de linhas, numero de colunas e da matriz com os pontos de início e final marcados
     - Chama a função procurar_saida.
     - Imprime a matriz com o caminho marcado.
-  - [lib.hpp](https://github.com/qxcodeed/arcade/blob/master/base/pilhado/lib.h)
+  - [lib.hpp](lib.h)
     - Apenas o cabeçalho da função procurar_saida e get_vizinhos.
 
 ## Testes

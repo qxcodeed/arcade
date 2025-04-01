@@ -1,4 +1,4 @@
-# L1 - @eh_primo - Retorna se é ou não é
+# Retorna se é ou não é
 
 Seja um número inteiro, retorne se ele é primo ou não.
 

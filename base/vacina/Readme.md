@@ -1,4 +1,4 @@
-# L0 - @vacina
+# Otimizando vacinas
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

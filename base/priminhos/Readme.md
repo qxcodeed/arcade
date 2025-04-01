@@ -1,4 +1,4 @@
-# L2 - @priminhos - Carrega a lista de primos
+# Carrega a lista de primos
 
 ## Intro
 

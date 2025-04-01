@@ -1,0 +1,34 @@
+Case = Teste 1
+Input =1
+1
+Output =unico
+
+Case = Teste 2
+Input =2
+1 1
+Output =repete
+
+Case = Teste 3
+Input =6
+1 2 4 8 16 32
+Output =unico
+
+Case = Teste 4
+Input =6
+2 3 1 6 5 4
+Output =unico
+
+Case = Teste 5
+Input =7
+2 3 1 6 5 4 4
+Output =repete
+
+Case = Teste 6
+Input =10
+54 21 32 11 45 84 38 11 43 99
+Output =repete
+
+Case = Teste 7
+Input =10
+54 21 32 11 45 84 38 111 43 99
+Output =unico

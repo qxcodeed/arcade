@@ -1,4 +1,4 @@
-# L4 - @controlz - editor2
+# Editor com Control Z
 
 ![_](capa.jpg)
 

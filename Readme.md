@@ -70,40 +70,40 @@ Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programaç
 ### Recursão: Treinando conceitos I<!-- @con_rec r:rec_intro -->
 
 - [ ] `#cpp_intro       :info` [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
-- [ ] `L0 @escada       :test` [De quantas maneiras podemos subir](base/escada/Readme.md)
-- [ ] `L1 @diagonal     :test` [Imprimindo um char por linha](base/diagonal/Readme.md)
-- [ ] `L1 @padroes1     :test` [Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
-- [ ] `L1 @sufixos      :test` [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
-- [ ] `L1 @empilhamento :test` [Empilhamento de divisões](base/empilhamento/Readme.md)
-- [ ] `L2 @mdc          :test` [Implemente o mdc recursivo](base/mdc/Readme.md)
+- [ ] `@escada       L0 :test` [De quantas maneiras podemos subir](base/escada/Readme.md)
+- [ ] `@diagonal     L1 :test` [Imprimindo um char por linha](base/diagonal/Readme.md)
+- [ ] `@padroes1     L1 :test` [Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
+- [ ] `@sufixos      L1 :test` [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+- [ ] `@empilhamento L1 :test` [Empilhamento de divisões](base/empilhamento/Readme.md)
+- [ ] `@mdc          L2 :test` [Implemente o mdc recursivo](base/mdc/Readme.md)
 
 ### Recursão: Treinando conceitos II <!-- @rec_basic r:con_rec -->
 
-- [ ] `L2 @padroes2     :test`[Descobrindo quantas pecinhas](base/padroes2/Readme.md)
-- [ ] `L2 @santo JM     :test`[O milagre de ficar pobre](base/santo/Readme.md)
-- [ ] `L2 @fibonacci    :test`[Procriando coelhos](base/fibonacci/Readme.md)
-- [ ] `L2 @quadrado     :test`[Aragão calculando n ao quadrado](base/quadrado/Readme.md)
-- [ ] `L2 @bitcoin      :test`[Investindo em ativos digitais](base/bitcoin/Readme.md)
+- [ ] `@padroes2  L2 :test`[Descobrindo quantas pecinhas](base/padroes2/Readme.md)
+- [ ] `@santo JM  L2 :test`[O milagre de ficar pobre](base/santo/Readme.md)
+- [ ] `@fibonacci L2 :test`[Procriando coelhos](base/fibonacci/Readme.md)
+- [ ] `@quadrado  L2 :test`[Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+- [ ] `@bitcoin   L2 :test`[Investindo em ativos digitais](base/bitcoin/Readme.md)
 
 ### Recursão: Desafios <!-- @rec_desafios r:rec_basic t:7 -->
 
-- [ ] `L1 @triangulo   :test`[Imprimindo ao contrário](base/triangulo/Readme.md)
-- [ ] `L3 @fibonacci2  :test`[Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
-- [ ] `L3 @padroes3    :test`[Contando pontos](base/padroes3/Readme.md)
-- [ ] `L2 @queimada    :test`[Tocando fogo na floresta](base/queimada/Readme.md)
-- [ ] `L2 @treinando   :test`[Treinando recursão com vetores](base/treinando/Readme.md)
+- [ ] `@triangulo  L1 :test`[Imprimindo ao contrário](base/triangulo/Readme.md)
+- [ ] `@fibonacci2 L3 :test`[Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
+- [ ] `@padroes3   L3 :test`[Contando pontos](base/padroes3/Readme.md)
+- [ ] `@queimada   L2 :test`[Tocando fogo na floresta](base/queimada/Readme.md)
+- [ ] `@treinando  L2 :test`[Treinando recursão com vetores](base/treinando/Readme.md)
 
 ### Recursão: Exercícios com matemática <!-- @rec_primos r:rec_basic -->
 
-- [ ] [L1 - @eh_primo - Retorna se é ou não é](base/eh_primo/Readme.md)
-- [ ] [L2 - @enesimo - Gere o enesimo primo](base/enesimo/Readme.md)
-- [ ] [L2 - @priminhos - Carrega a lista de primos](base/priminhos/Readme.md)
+- [ ] `@eh_primo  L1 :test`[Retorna se é ou não é](base/eh_primo/Readme.md)
+- [ ] `@enesimo   L2 :test`[Gere o enesimo primo](base/enesimo/Readme.md)
+- [ ] `@priminhos L2 :test`[Carrega a lista de primos](base/priminhos/Readme.md)
 
 ### Recursão: Backtracking <!-- @backtracking r:rec_desafios -->
 
-- [ ] [L2 - escapando do @labirinto](base/labirinto/Readme.md)
-- [ ] [L2 - @distancia](base/distancia/Readme.md)
-- [ ] [L3 - @sudoku](base/sudoku/Readme.md)
+- [ ] `@labirinto L2  :test`[Escapando do labirinto](base/labirinto/Readme.md)
+- [ ] `@distancia L2  :test`[Colocando os números no lugar certo](base/distancia/Readme.md)
+- [ ] `@sudoku    L3  :test`[L3 - @sudoku](base/sudoku/Readme.md)
 
 ## Ordenação
 
@@ -111,99 +111,132 @@ Nesse bloco, abordaremos os algoritmos de busca e ordenação, duas técnicas es
 
 ### Ordenação: Estudo <!-- @sort_intro r:analise -->
 
-- [ ] `#alg_ord_video` [Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
-- [ ] `#alg_ord_leitura` [Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
-- [ ] `#alg_ord_simples`[Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
-- [ ] `#alg_ord_recurs`[Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
+- [ ] `#alg_ord_video   :info` [Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
+- [ ] `#alg_ord_leitura :info` [Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
+- [ ] `#alg_ord_simples :info`[Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
+- [ ] `#alg_ord_recurs  :info`[Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
 
 ### Ordenação: Construindo algoritmos <!-- @sort_build r:sort_intro -->
 
-- [ ] [L3 - @tapioca Sort](base/tapioca/Readme.md)
-- [ ] [L2 - @mergevet - Criando um vetor simples e fazendo um merge](base/mergevet/Readme.md)
+- [ ] `@tapioca  L2 :test`[Tapioca Sort](base/tapioca/Readme.md)
+- [ ] `@mergevet L2 :test`[Criando um vetor simples e fazendo um merge](base/mergevet/Readme.md)
 
 ### Ordenação: Resolvendo exercícios simples <!-- @sort_basic r:sort_intro -->
 
-- [ ] [L0 - @vacina](base/vacina/Readme.md)
-- [ ] [L1 - @indices do vetor](base/indices/Readme.md)
+- [ ] `@vacina  L0 :test`[Otimizando vacinas](base/vacina/Readme.md)
+- [ ] `@indices L1 :test`[Índices originais](base/indices/Readme.md)
 
-## Vetores <!-- group -->
+## Vetores
 
-Os vetores são estruturas de dados fundamentais que permitem acesso direto e rápido a qualquer elemento, tornando operações de leitura e escrita extremamente eficientes. Compreender como os vetores gerenciam a memória e os custos associados ao redimensionamento é essencial para tomar decisões informadas sobre seu uso. Além disso, os vetores são amplamente utilizados em diversas aplicações e são nativamente suportados por muitas linguagens de programação, o que facilita sua integração com outras partes do sistema. Para entender melhor o funcionamento da estrutura vamos trabalhar sua:
-
-- Construção
-- Utilização
+Os vetores são estruturas de dados fundamentais que permitem acesso direto e rápido a qualquer elemento, tornando operações de leitura e escrita extremamente eficientes. Compreender como os vetores gerenciam a memória e os custos associados ao redimensionamento é essencial para tomar decisões informadas sobre seu uso. Além disso, os vetores são amplamente utilizados em diversas aplicações e são nativamente suportados por muitas linguagens de programação, o que facilita sua integração com outras partes do sistema.
 
 ### Vetores: Construindo <!-- @array_intro r:intro q:4 -->
 
-- [ ] [L2 - implementando vector com @ponteiros](base/ponteiros/Readme.md)
-- [ ] [L2 - implementando vector com @classes](base/classes/Readme.md)
+- [ ] `@ponteiros L2 :test`[Implementando vector com ponteiros](base/ponteiros/Readme.md)
+- [ ] `@classes   L2 :test`[Implementando vector com @classes](base/classes/Readme.md)
+- [ ] `@inteiros  L0 :test`[Lista Sequencial de Inteiros](base/inteiros/Readme.md)
+- [ ] `@ordenada  L0 :test`[Lista Sequencial Ordenada](base/ordenada/Readme.md)
+- [ ] `@circular  L0 :test`[Lista Sequencial Circular](base/circular/Readme.md)
 
 ### Vetores: Resolvendo Problemas Simples <!-- @array_basic r:array_intro -->
 
 Treinando o uso da classe vector e seus métodos na resolução de problemas básicos.
 
-- [ ] [L1 - @buscas de strings](base/buscas/Readme.md)
-- [ ] [L1 - @rotacoes em uma lista](base/rotacoes/Readme.md)
-- [ ] [L2 - @princesa v1](base/princesa/Readme.md)
-- [ ] [L2 - princesa @alternando](base/alternando/Readme.md)
+- [ ] `@minmax     L0 :test`[MinMax](base/minmax/Readme.md)
+- [ ] `@palindromo L0 :test`[Palíndromo](base/palindromo/Readme.md)
+- [ ] `@repetido   L0 :test`[Verifique se algum elemento do vetor se repete](base/repetido/Readme.md)
+- [ ] `@buscas     L1 :test`[Buscas de strings](base/buscas/Readme.md)
+- [ ] `@rotacoes   L1 :test`[Rotacoes em uma lista](base/rotacoes/Readme.md)
+- [ ] `@princesa   L2 :test`[Princesa v1](base/princesa/Readme.md)
+- [ ] `@alternando L2 :test`[Princesa v2](base/alternando/Readme.md)
 
 ### Vetores: Otimizando problemas com maps e sets <!-- @array_struct r:array_basic -->
 
 Os exercícios desse bloco podem ser resolvidos com vectors, porém a maioria das atividades precisa de atenção para a manipulação eficiente dos elementos. Estruturas como map, set, list e stack podem ser mais eficientes para resolver os problemas propostos.
 
-- [ ] [L2 - @apagando elementos de forma eficiente](base/apagando/Readme.md)
-- [ ] [L2 - @manipulacao - Utilizando a stl](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
-- [ ] [L2 - @especiais - Utilizando map e set](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
+- [ ] `@apagando    L2 :test`[Apagando elementos de forma eficiente](base/apagando/Readme.md)
+- [ ] `@manipulacao L2 :test`[Utilizando a biblioteca algorithm](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/Readme.md)
+- [ ] `@especiais   L2 :test`[Utilizando map e set](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/Readme.md)
 
-## Listas <!-- group -->
+## Listas Encadeadas
 
-Agora estudaremos as listas encadeadas, estruturas de dados flexíveis e eficientes que podem crescer e diminuir de tamanho facilmente, adaptando-se às necessidades de armazenamento dos elementos. Diferentemente dos vetores, que têm um tamanho fixo ou precisam ser redimensionados de forma custosa, as listas encadeadas não utilizam um espaço de armazenamento contínuo na memória. Elas são representadas por uma sequência de elementos ligados entre si, podendo ser simplesmente ou duplamente encadeadas, lineares ou circulares. Além disso, as listas encadeadas servem como base para a implementação de diversas outras estruturas de dados, como pilhas, filas e grafos. Para entender melhor o funcionamento da estrutura vamos trabalhar sua:
-
-- Construção
-- Utilização
+Agora estudaremos as listas encadeadas, estruturas de dados flexíveis e eficientes que podem crescer e diminuir de tamanho facilmente, adaptando-se às necessidades de armazenamento dos elementos. Diferentemente dos vetores, que têm um tamanho fixo ou precisam ser redimensionados de forma custosa, as listas encadeadas não utilizam um espaço de armazenamento contínuo na memória. Elas são representadas por uma sequência de elementos ligados entre si, podendo ser simplesmente ou duplamente encadeadas, lineares ou circulares. Além disso, as listas encadeadas servem como base para a implementação de diversas outras estruturas de dados, como pilhas, filas e grafos.
 
 ### Lista: Construindo <!-- @list_build r:array_intro -->
 
-- [ ] `#lista_video`[Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
-- [ ] [L1 - implementando lista @ligada simples sem cabeça e rabo](base/ligada/Readme.md)
-- [ ] [@lista_simples - Lista Simplesmente Encadeada](base/lista_simples/Readme.md)
+- [ ] `#lista_video   :info`[Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
+- [ ] `@ligada L2     :test`[Lista simples sem cabeça e rabo](base/ligada/Readme.md)
+- [ ] `@lista_simples :test`[Lista Simplesmente Encadeada - CPP](base/lista_simples/Readme.md)
 
 ### Lista: Resolvendo Problemas Simples <!-- @list_basic r:list_build -->
 
-- [ ] [L2 - @princesa-lista](base/princesa-lista/Readme.md)
-- [ ] [L2 - @princesa-lista-2 princesa alternando com lista](base/princesa-lista-2/Readme.md)
+- [ ] `@princesa-lista   :test`[Princesa com lista ligada](base/princesa-lista/Readme.md)
+- [ ] `@princesa-lista-2 :test`[Princesa2 com lista ligada](base/princesa-lista-2/Readme.md)
 
 ### Lista: Resolvendo Problemas Avançados <!-- @list_advanced r:list_basic -->
 
-- [ ] [L3 - @banco - Gerenciando a fila](base/banco/Readme.md)
-- [ ] [L2 - @editor de texto](base/editor/Readme.md)
-- [ ] [L4 - @controlz - editor2](base/controlz/Readme.md)
+- [ ] `@banco L3    :test`[Gerenciando a fila do banco](base/banco/Readme.md)
+- [ ] `@editor L2   :test`[Editor de texto](base/editor/Readme.md)
+- [ ] `@controlz L3 :test`[Editor com Control Z](base/controlz/Readme.md)
 
-## Pilha e Fila <!-- group -->
+### Lista: Variações de Listas Encadeadas
+
+- [ ] `@cauda       :test`[Lista Simplesmente Encadeada com Cauda](base/cauda/Readme.md)
+- [ ] `@duplamente  :test`[Lista Duplamente Encadeada](base/duplamente/Readme.md)
+- [ ] `@invertendo  :test`[Inversão usando next e previous](base/invertendo/Readme.md)
+- [ ] `@invertendo2 :test`[Pilha - invertendo com pilhas auxiliares](base/invertendo2/Readme.md)
+- [ ] `@concatenar  :test`[Concatenar duas listas duplamente encadeadas](base/concatenar/Readme.md)
+- [ ] `@converte    :test`[Converte simples em dupla](base/converte/Readme.md)
+
+## Pilha e Fila
+
+A próxima estrutura estudada é a Pilha, uma estrutura de dados eficiente e simples, baseada na política LIFO (Last-In First-Out), onde o último elemento inserido é o primeiro a ser removido. As operações básicas dessa estrutura incluem "empilha", que adiciona um elemento no topo, e "desempilha", que remove o elemento do topo. Essa estrutura é vantajosa em situações que exigem um controle de acesso restrito, como em editores de texto para desfazer ações ou no gerenciamento de chamadas de função em programas. Diferente de vetores, que permitem acesso direto a qualquer elemento, a Pilha limita as operações ao topo, o que a torna mais simples e eficiente em certos contextos. Comparada às listas encadeadas, a Pilha é mais restritiva, mas sua simplicidade pode ser benéfica para o desempenho de operações específicas.
+
+### Pilha: Construindo <!-- @pilha_build r:list_build -->
+
+- [ ] `@pilha-encadeada  :test`[Construindo Pilha com Lista Encadeada - CPP](base/pilha-encadeada/Readme.md)
+- [ ] `@pilha-sequencial :test`[Construindo uma Pilha com Lista Sequencial CPP](base/pilha-sequencial/Readme.md)
+- [ ] `@pilha-dupla      :test`[Pilha Dupla - CPP](base/pilha-dupla/Readme.md)
+
+### Pilha - Resolvendo problemas <!-- @pilha r:pilha_build -->
+
+- [ ] `@queimando L2  :test`[Queimando árvores usando pilha](base/queimando/Readme.md)
+- [ ] `@pilhado   L2  :test`[Fugindo do labirinto](base/pilhado/Readme.md)
+- [ ] `@polonesa  L1  :test`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
+- [ ] `@minmax-pilha  :test`[MinMax Pilha CPP](base/minmax-pilha/Readme.md)
+- [ ] `@balanceada L2 :test`[Fórmula balanceada](base/balanceada/Readme.md)
+
+## Fila
+
+Agora estudaremos a estrutura de dados Fila, uma lista linear que adota a política FIFO (First-In First-Out) para a manipulação de elementos. Isso significa que o primeiro elemento inserido é o primeiro a ser removido, como uma fila de atendimento em um banco, onde as pessoas são atendidas na ordem em que chegaram. As operações principais dessa estrutura são "enqueue", que adiciona um elemento no final da fila, e "dequeue", que remove o elemento do início. Isso é essencial em aplicações como filas de impressão ou sistemas que gerenciam tarefas em sequência, garantindo que a ordem de chegada seja mantida. Em comparação com vetores, que oferecem acesso aleatório, a Fila é mais limitada, mas sua estrutura é ideal para o processamento sequencial. Embora listas encadeadas possam ser usadas para implementar Filas, a estrutura da Fila se destaca por sua organização que prioriza a ordem cronológica, essencial em sistemas de tempo real.
 
 ### Fila: Construindo <!-- @fila_build r:list_build -->
 
-- [ ] [L1 - @fila como duas pilhas](base/fila/Readme.md)
-
-### Pilha - Resolvendo problemas <!-- @pilha r:fila_build -->
-
-- [ ] [L2 - @queimando árvores usando pilha](base/queimando/Readme.md)
-- [ ] [L2 - fugindo do labirinto @pilhado](base/pilhado/Readme.md)
-- [ ] [L1 - @polonesa - Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
+- [ ] `@fila            :test`[Fila como duas pilhas](base/fila/Readme.md)
+- [ ] `@fila-encadeada  :test`[Fila encadeada CPP](base/fila-encadeada/Readme.md)
+- [ ] `@fila-sequencial :test`[Fila sequencial CPP](base/fila-sequencial/Readme.md)
+- [ ] `@fila-empilhada  :test`[Utilizando Pilhas para a Criação de uma Fila CPP](base/fila-empilhada/Readme.md)
 
 ### Fila - Resolvendo problemas <!-- @fila_solver r:fila_build -->
 
-- [ ] [L1 - Gerenciando @chaves de disputas usando uma fila](base/chaves/Readme.md)
-- [ ] [L2 - @caminhao abastecendo](base/caminhao/Readme.md)
-- [ ] [L3 - menor @caminho entre dois pontos - floodfill pathfinding](base/caminho/Readme.md)
+- [ ] `@chaves   L1 :test`[Chaves de disputa](base/chaves/Readme.md)
+- [ ] `@caminhao L2 :test`[Caminhao abastecendo](base/caminhao/Readme.md)
+- [ ] `@caminho  L3 :test`[Menor caminho entre dois pontos](base/caminho/Readme.md)
 
 ## Árvores <!-- group -->
 
+Agora vamos estudar as árvores, estruturas de dados que são especialmente adequadas para a representação de hierarquias. Diferente de listas e vetores, que são lineares, uma árvore é uma estrutura de dados bidimensional não-linear, permitindo organizar informações de maneira mais flexível e eficiente para cenários que exigem relações hierárquicas. Um tipo comum de árvore é a árvore binária, na qual cada nó pode ter no máximo dois filhos. As árvores são fundamentais em várias aplicações de computação, como na organização de expressões matemáticas, nos sistemas de arquivos de computadores, e em algoritmos de busca e ordenação. Além disso, árvores servem como base para outras estruturas de dados importantes. Para entender o funcionamento dessa estrutura de dados, exploraremos sua:
+
+- Construção
+
 ### Árvore - Construindo <!-- @tree r:list_build -->
 
-- [ ] [L2 - lendo uma árvore a partir de um @serial](base/serial/Readme.md)
-- [ ] [L2 - mostrando a árvore @formatada](base/formatada/Readme.md)
-- [ ] [L2 - @soma dos nós da árvore](base/soma/Readme.md)
-- [ ] [L2 - @altura e profundidade da árvore](base/altura/Readme.md)
-- [ ] [L2 - @arvore-path](base/arvore-path/Readme.md)
-- [ ] [L2 - serialização @dividido](base/dividido/Readme.md)
+- [ ] `@serial      L2 :test`[Lendo uma árvore a partir de um serial](base/serial/Readme.md)
+- [ ] `@formatada   L2 :test`[Mostrando a árvore formatada](base/formatada/Readme.md)
+- [ ] `@soma        L2 :test`[Soma dos nós da árvore](base/soma/Readme.md)
+- [ ] `@altura      L2 :test`[Altura e profundidade da árvore](base/altura/Readme.md)
+- [ ] `@arvore-path L2 :test`[Caminho até o nó](base/arvore-path/Readme.md)
+- [ ] `@dividido    L2 :test`[Percorrer in-order](base/dividido/Readme.md)
+- [ ] `@arvore      L2 :test`[Construir árvore binaria CPP](base/arvore/Readme.md)
+- [ ] `@incompleta  L3 :test`[Arvore incompleta](base/incompleta/Readme.md)
+- [ ] `@abb         L3 :test`[Árvore Binária de Busca](base/abb/Readme.md)

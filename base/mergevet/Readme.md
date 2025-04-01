@@ -1,4 +1,4 @@
-# L2 - @mergevet - Criando um vetor simples e fazendo um merge
+# Criando um vetor simples e fazendo um merge
 
 - Nessa atividade você vai aprender sobre
 

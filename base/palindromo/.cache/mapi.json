@@ -1,0 +1,22 @@
+{
+    "title": "@palindromo: Pal\u00edndromo",
+    "description": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n        <head>\n            <meta charset=\"UTF-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <title>@palindromo: Pal\u00edndromo</title>\n            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n        </head>\n        <body>\n            <h1>@palindromo: Pal\u00edndromo</h1>\n            <h1 id=\"palindromo\">Pal\u00edndromo</h1>\n<p>Uma palavra \u00e9 um pal\u00edndromo se ela\u00a0pode ser lida da mesma maneira da esquerda para a direita ou da direita para a esquerda (ex.: sopapos \u00e9 um pal\u00edndromo).</p>\n<p>Receba uma string W, e imprima \"palindromo\" se W for pal\u00edndromo. Caso contr\u00e1rio imprima \"nao palindromo\".</p>\n<h2 id=\"entrada\">Entrada</h2>\n<ul>\n<li>Linha 1: string W</li>\n</ul>\n<h2 id=\"saida\">Sa\u00edda</h2>\n<ul>\n<li>\"palindromo\" se W \u00e9 pal\u00edndromo.</li>\n<li>\"nao palindromo\" caso contr\u00e1rio.</li>\n</ul>\n            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n            <script>hljs.highlightAll();</script>\n        </body>\n        </html>\n        ",
+    "upload": [
+        {
+            "name": "vpl_evaluate.cases",
+            "contents": ">>>>>>>> INSERT Teste 1\npalindromo\n======== EXPECT\nnao palindromo\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 2\nabccba\n======== EXPECT\npalindromo\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 3\nabaa\n======== EXPECT\nnao palindromo\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 4\nreviver\n======== EXPECT\npalindromo\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 5\ncomputador\n======== EXPECT\nnao palindromo\n<<<<<<<< FINISH\n\n",
+            "encoding": 0
+        }
+    ],
+    "keep": [],
+    "required": [],
+    "draft": {
+        "cpp": [
+            {
+                "name": "main.cpp",
+                "contents": "// Arquivo de execucao\n#include <iostream>\nusing std::string;\n\nbool isPalindrome(string word){\n    // TODO\n    //DEL!\n    int n = word.length();\n    for(int i = 0; i < n / 2; i++){\n        if(word[i] != word[n - i - 1]){\n            return false;\n        }\n    }\n    return true;\n    //ACT!\n    //(void) word;\n    //return false;\n}\n\nint main(){\n    string w;\n    std::cin >> w;\n    if(isPalindrome(w)){\n        std::cout << \"palindromo\" << std::endl;\n    }else{\n        std::cout << \"nao palindromo\" << std::endl;\n    }\n}\n",
+                "encoding": 0
+            }
+        ]
+    }
+}

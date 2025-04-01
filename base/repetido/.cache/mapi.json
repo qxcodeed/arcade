@@ -1,0 +1,22 @@
+{
+    "title": "@repetido: Verifique se algum elemento do vetor se repete",
+    "description": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n        <head>\n            <meta charset=\"UTF-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <title>@repetido: Verifique se algum elemento do vetor se repete</title>\n            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n        </head>\n        <body>\n            <h1>@repetido: Verifique se algum elemento do vetor se repete</h1>\n            <h1 id=\"verifique-se-algum-elemento-do-vetor-se-repete\">Verifique se algum elemento do vetor se repete</h1>\n<p>Dado um vetor, verifique se algum elemento do vetor se repete.</p>\n<h2 id=\"entrada\">Entrada</h2>\n<ul>\n<li>Linha 1: Tamanho do vetor</li>\n<li>Linha 2: Elementos do vetor</li>\n</ul>\n<h2 id=\"saida\">Sa\u00edda</h2>\n<ul>\n<li>\"repete\" se algum elemento do vetor se repete.</li>\n<li>\"unico\" caso contr\u00e1rio.</li>\n</ul>\n            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n            <script>hljs.highlightAll();</script>\n        </body>\n        </html>\n        ",
+    "upload": [
+        {
+            "name": "vpl_evaluate.cases",
+            "contents": ">>>>>>>> INSERT Teste 1\n1\n1\n======== EXPECT\nunico\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 2\n2\n1 1\n======== EXPECT\nrepete\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 3\n6\n1 2 4 8 16 32\n======== EXPECT\nunico\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 4\n6\n2 3 1 6 5 4\n======== EXPECT\nunico\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 5\n7\n2 3 1 6 5 4 4\n======== EXPECT\nrepete\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 6\n10\n54 21 32 11 45 84 38 11 43 99\n======== EXPECT\nrepete\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT Teste 7\n10\n54 21 32 11 45 84 38 111 43 99\n======== EXPECT\nunico\n<<<<<<<< FINISH\n\n",
+            "encoding": 0
+        }
+    ],
+    "keep": [],
+    "required": [],
+    "draft": {
+        "cpp": [
+            {
+                "name": "main.cpp",
+                "contents": "// Arquivo de execucao\n#include <iostream>\n\nbool repetido(int V[], int n){\n    //TODO\n    //DEL!\n    for(int i = 0; i < n; i++){\n        for(int j = i + 1; j < n; j++){\n            if(V[i] == V[j]){\n                return true;\n            }\n        }\n    }\n    return false;\n    //ACT!\n    //(void) V;\n    //(void) n;\n    //return false;\n}\n\nint main(){\n    int *V = new int[100];\n    int n;\n\n    std::cin >> n;\n    for(int i = 0; i < n; i++){\n        std::cin >> V[i];\n    }\n    \n    if(repetido(V, n)){\n        std::cout << \"repete\" << std::endl;\n    } else {\n        std::cout << \"unico\" << std::endl;\n    }\n}\n",
+                "encoding": 0
+            }
+        ]
+    }
+}

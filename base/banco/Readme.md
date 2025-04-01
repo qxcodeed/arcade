@@ -1,4 +1,4 @@
-# L3 - @banco - Gerenciando a fila
+# Gerenciando a fila do banco
 
 ![_](cover.jpg)
 
@@ -246,4 +246,3 @@ gain:16 lost:3
 # end termina a simulação
 $end
 ```
-

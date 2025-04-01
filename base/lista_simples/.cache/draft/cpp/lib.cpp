@@ -35,17 +35,31 @@ struct SLinkedList {
     Node *head;   // Ponteiro para a cabeca da lista (primeiro No)
 
     SLinkedList(){
+        // --
+        this->head = nullptr;
     }
 
     ~SLinkedList(){ // Destrutor
         // TODO
         // dica: implemente o metodo clear e apenas o chame
+        // --
+        this->clear();
     }
 
     // Retorna true se uma informacao pertence a lista, false caso contrario
     // index: posicao do elemento
     bool hasInfo(int info){
         // TODO: Complexidade O(n)
+        // --
+        for(Node* node = head; node != nullptr; node = node->next){
+            if(node->info == info){
+                return true;
+            }
+        }
+        return false;
+        //ACT!
+        // (void) info;
+        // return false;
 
     }
     // Exemplo:
@@ -58,6 +72,18 @@ struct SLinkedList {
     int get(int index){
         // TODO: Complexidade O(n)
         
+        // --
+        int i = 0;
+        for(Node* node = head; node != nullptr; node = node->next){
+            if(i == index){
+                return node->info;
+            }
+            i++;
+        }
+        return -1;
+        //ACT!
+        // (void) index;
+        // return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -81,6 +107,10 @@ struct SLinkedList {
         head = newNode;
         // Ou simplesmente
         // head = new Node(info, head);
+        // --
+        newNode->info = info;
+        //ACT!
+        // (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -93,8 +123,20 @@ struct SLinkedList {
     void push_back(int info){
         // TODO: Complexidade O(n)
         
+        // --
+        Node* newNode = new Node(info, nullptr);
+        if(head == nullptr){
+            head = newNode;
+            return;
+        }
+        Node* last = head;
+        while(last->next != nullptr){
+            last = last->next;
+        }
+        last->next = newNode;
 
-        (void) info;
+        //ACT!
+        // (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -106,6 +148,13 @@ struct SLinkedList {
     // Nao faz nada se a lista esta vazia
     void pop_front(){
         // TODO: Complexidade O(1)
+        // --
+        if(head == nullptr){
+            return;
+        }
+        Node* node = head;
+        head = head->next;
+        delete node;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -117,6 +166,21 @@ struct SLinkedList {
     // Nao faz nada se a lista esta vazia
     void pop_back(){
         // TODO: Complexidade O(n)
+        // --
+        if(head == nullptr){
+            return;
+        }
+        if(head->next == nullptr){
+            delete head;
+            head = nullptr;
+            return;
+        }
+        Node* last = head;
+        while(last->next->next != nullptr){
+            last = last->next;
+        }
+        delete last->next;
+        last->next = nullptr;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -128,6 +192,10 @@ struct SLinkedList {
     void clear(){
         // TODO: Complexidade O(n)
         // dica: voce pode usar os metodos pop_front e empty
+        // --
+        while(!empty()){
+            pop_front();
+        }
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -139,6 +207,14 @@ struct SLinkedList {
     int length(){
         // TODO: Complexidade O(n)
 
+        // --
+        int len = 0;
+        for(Node* node = head; node != nullptr; node = node->next){
+            len++;
+        }
+        return len;
+        //ACT!
+        // return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -148,8 +224,11 @@ struct SLinkedList {
     // Devolve true se cheia e false caso contrario
     bool empty(){
         // TODO
+        // --
+        return head == nullptr;
 
-        return false;
+        //ACT!
+        // return false;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -183,8 +262,9 @@ struct SLinkedList {
             }
         }
         return nullptr;
-        (void) node;
-        return nullptr;
+        //ACT!
+        // (void) node;
+        // return nullptr;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50

@@ -1,13 +1,6 @@
-# L1 - @buscas de strings
+# Buscas de strings
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/buscas/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed buscas`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/buscas/cover.jpg)
+![_](cover.jpg)
 
 Há um vetor de strings de entrada e um vetor de strings de consulta. Para cada sequência de consultas, determine quantas vezes ela ocorre na lista de sequências de entrada.
 

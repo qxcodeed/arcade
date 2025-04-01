@@ -1,4 +1,4 @@
-# L2 - @enesimo - Gere o enesimo primo
+# Gere o enesimo primo
 
 ## Intro
 

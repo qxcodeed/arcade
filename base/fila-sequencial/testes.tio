@@ -1,0 +1,108 @@
+>>>>>>>> Teste do peek
+test_peek
+========
+TESTE peek
+[]
+push 10
+peek == 10
+push 15
+peek == 10
+push 20
+peek == 10
+<<<<<<<<
+
+>>>>>>>> Teste do push
+test_push
+========
+TESTE push
+push 10
+push 15
+push 20
+push 25
+Esperado: [10, 15, 20, 25]
+Fila: [10, 15, 20, 25]
+<<<<<<<<
+
+>>>>>>>> Teste do pop
+test_pop
+========
+TESTE pop
+Fila: [10, 15, 20, 25, 30]
+pop
+Fila: [15, 20, 25, 30]
+pop
+Fila: [20, 25, 30]
+pop
+Fila: [25, 30]
+pop
+Fila: [30]
+pop
+Fila: []
+<<<<<<<<
+
+>>>>>>>> Teste completo
+test_all
+========
+TESTE todos (push, pop, peek, size), capacity = 6
+push 1
+Fila: [1]
+push 2
+Fila: [1, 2]
+push 3
+Fila: [1, 2, 3]
+pop
+Fila: [2, 3]
+pop
+Fila: [3]
+push 4
+Fila: [3, 4]
+push 5
+Fila: [3, 4, 5]
+pop
+Fila: [4, 5]
+pop
+Fila: [5]
+push 6
+Fila: [5, 6]
+push 7
+Fila: [5, 6, 7]
+push 8
+Fila: [5, 6, 7, 8]
+pop
+Fila: [6, 7, 8]
+pop
+Fila: [7, 8]
+pop
+Fila: [8]
+pop
+Fila: []
+push 9
+Fila: [9]
+push 10
+Fila: [9, 10]
+push 11
+Fila: [9, 10, 11]
+push 12
+Fila: [9, 10, 11, 12]
+push 13
+Fila: [9, 10, 11, 12, 13]
+push 14
+Fila: [9, 10, 11, 12, 13, 14]
+push 15
+Fila: [9, 10, 11, 12, 13, 14]
+push 16
+Fila: [9, 10, 11, 12, 13, 14]
+push 17
+Fila: [9, 10, 11, 12, 13, 14]
+push 18
+Fila: [9, 10, 11, 12, 13, 14]
+pop
+Fila: [10, 11, 12, 13, 14]
+pop
+Fila: [11, 12, 13, 14]
+Lista: [11, 12, 13, 14]
+size: 4
+clear
+Fila: []
+size: 0
+<<<<<<<<

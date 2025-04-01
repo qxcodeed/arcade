@@ -1,4 +1,4 @@
-# @lista_simples - Lista Simplesmente Encadeada
+# Lista Simplesmente Encadeada - CPP
 
 Nesse exercício, implementaremos nossa primeira estrutura encadeada: Lista Simplesmente Encadeada.
 

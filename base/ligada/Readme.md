@@ -1,4 +1,4 @@
-# L1 - implementando lista @ligada simples sem cabeça e rabo
+# Lista simples sem cabeça e rabo
 
 <!-- toch -->
 [Intro](#intro) | [Guide](#guide) | [Draft](#draft) | [Shell](#shell)

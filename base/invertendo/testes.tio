@@ -1,0 +1,9 @@
+>>>>>>>> INSERT Teste 1
+ main
+======== EXPECT
+[ azul branco cinza dourado escarlate ]
+[ escarlate dourado cinza branco azul ]
+[ azul branco cinza dourado escarlate ]
+[ escarlate dourado cinza branco azul ]
+<<<<<<<< FINISH
+

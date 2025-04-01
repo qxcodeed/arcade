@@ -5,13 +5,42 @@
 using namespace std;
 
 bool isdigit(const string& s) {
-    (void) s;
-    return false;
+    //DEL!
+    return s.find_first_not_of("0123456789") == string::npos;
+    //ACT!
+    // (void) s;
+    // return false;
 }
 
 vector<string> shunting_yard(vector<string> tokens) {
-    (void) tokens;
-    return {};
+    //DEL!
+    unordered_map<string, int> precedencia = {{"+", 1}, {"-", 1}, {"*", 2}, {"/", 2}, {"^", 3}};
+    stack<string> pilha;
+    string token;
+
+    vector<string> postfix;
+    
+    for (const string& token : tokens) {
+        if (isdigit(token)) {
+            postfix.push_back(token);
+            continue;
+        }
+        while (!pilha.empty() && precedencia[pilha.top()] >= precedencia[token]) {
+            postfix.push_back(pilha.top());
+            pilha.pop();
+        }
+        pilha.push(token);
+    }
+
+    while (!pilha.empty()) {
+        postfix.push_back(pilha.top());
+        pilha.pop();
+    }
+    
+    return postfix;
+    //ACT!
+    // (void) tokens;
+    // return {};
 }
 
 int main() {

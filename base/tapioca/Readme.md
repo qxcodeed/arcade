@@ -1,4 +1,4 @@
-# L3 - @tapioca Sort
+# Tapioca Sort
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

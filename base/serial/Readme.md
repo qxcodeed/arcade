@@ -1,11 +1,4 @@
-# L2 - lendo uma árvore a partir de um @serial
-
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/serial/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed serial`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
+# Lendo uma árvore a partir de um serial
 
 <!--TOC_BEGIN-->
 - [Descrição](#descrição)
@@ -14,7 +7,7 @@
 - [Código base](#código-base)
 <!--TOC_END-->
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/serial/cover.jpg)
+![_](cover.jpg)
 
 ## Descrição
 

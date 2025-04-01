@@ -1,0 +1,18 @@
+>>>>>>>> INSERT Teste
+teste
+======== EXPECT
+10
+20
+30
+40
+10
+20
+30
+40
+10
+20
+30
+40
+SequentialCircularList deleted
+<<<<<<<< FINISH
+

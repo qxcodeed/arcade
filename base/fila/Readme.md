@@ -1,13 +1,6 @@
-# L1 - @fila como duas pilhas
+# Fila como duas pilhas
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/fila/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed fila`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/fila/cover.jpg)
+![_](cover.jpg)
 
 ## Descrição da função
 
@@ -30,10 +23,9 @@ Cada linha i das q linhas subsequentes contém uma única consulta no padrão de
 
 Para cada consulta do tipo 3, imprima o valor do elemento na frente da fila em uma nova linha. As consultas de tipo 1 e 2 não necessitam imprimir nada.
 
-
 ## Ajuda
 
-- Você pode utilizar duas pilhas. 
+- Você pode utilizar duas pilhas.
 - Vamos chamar a primeira pilha de "deposito" e a segunda de "prateleira".
 - Se precisar colocar algo, você coloca no deposito.
 - Se precisar pegar algo você pega da prateleira.

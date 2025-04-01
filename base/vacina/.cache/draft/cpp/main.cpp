@@ -3,12 +3,31 @@
 
 //Escolha e implemente um algoritmo de ordenação
 void ordenar(std::vector<int>& arr) {
-    (void) arr;
+    //DEL!
+    for (int i = 0; i < (int) arr.size(); i++) {
+        for (int j = 0; j < (int) arr.size() - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                std::swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+    //ACT!
+    // (void) arr;
 }
 
 void vacinou(std::vector<int>& vacinas, std::vector<int>& pacientes){
-    (void) vacinas;
-    (void) pacientes;
+    //DEL!
+    for (int i = 0; i < (int) vacinas.size(); i++) {
+        if (vacinas[i] < pacientes[i]) {
+            std::cout << "No" << std::endl;
+            return;
+        }
+    }
+
+    std::cout << "Yes" << std::endl;
+    //ACT!
+    // (void) vacinas;
+    // (void) pacientes;
 }
 
 int main(){

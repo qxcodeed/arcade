@@ -1,13 +1,6 @@
-# L2 - implementando vector com @classes
+# Implementando vector com @classes
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/classes/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed classes`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/classes/cover.jpg)
+![_](cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 

@@ -1,0 +1,62 @@
+>>>>>>>> Teste do insert
+test_insert
+========
+TESTE insert
+insert 32
+insert 45
+insert 12
+insert 10
+insert 37
+BinaryTree: Node-32{(Node-45{(Node-10{(, )}, Node-37{(, )})}, Node-12{(, )})}
+<<<<<<<<
+
+>>>>>>>> Teste do search
+test_search
+========
+TESTE search
+BinaryTree: Node-55{(Node-12{(Node-76{(Node-33{(, )}, )}, Node-4{(, )})}, Node-110{(Node-762{(Node-77{(, )}, Node--20{(, Node-19{(, )})})}, Node-1267{(Node--665{(, )}, Node--221{(, Node-9{(, )})})})})}
+search 55: Node(55)
+search 9: Node(9)
+search 77: Node(77)
+search -665: Node(-665)
+search 110: Node(110)
+search -29: Node(empty)
+search 1000: Node(empty)
+search 45: Node(empty)
+search 25: Node(empty)
+search 35: Node(empty)
+search 65: Node(empty)
+<<<<<<<<
+
+>>>>>>>> Teste do size
+test_size
+========
+TESTE size
+insert 32
+size 1
+insert 45
+size 2
+insert 12
+size 3
+insert 10
+size 3
+insert 37
+BinaryTree: Node-32{(Node-45{(, )}, Node-12{(, )})}
+size 3
+<<<<<<<<
+
+>>>>>>>> Teste do min_max
+test_min_max
+========
+TESTE min max
+min -1
+max -1
+insert 32
+insert 45
+insert 12
+insert 10
+insert 37
+BinaryTree: Node-32{(Node-45{(Node-10{(, )}, Node-37{(, )})}, Node-12{(, )})}
+min 10
+max 45
+<<<<<<<<

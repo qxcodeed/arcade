@@ -1,4 +1,4 @@
-# L1 - @polonesa - Transforme da notação padrão para polonesa reversa
+# Transforme da notação padrão para polonesa reversa
 
 ## Descrição
 
@@ -7,7 +7,6 @@
 - Precedência 1(menor): `+` e `-`
 - Precedência 2: `*` e `/`
 - Precedência 3(maior): `^`
-
 
 ## Drafts
 
@@ -18,6 +17,7 @@
 <!-- links -->
 
 ## Testes
+
 ```bash
 
 >>>>>>>>
@@ -52,4 +52,3 @@
 <<<<<<<<
 
 ```
-

@@ -1,13 +1,6 @@
-# L2 - implementando vector com @ponteiros
+# Implementando vector com ponteiros
 
-- Veja a versão online: [aqui.](https://github.com/qxcodeed/arcade/blob/master/base/ponteiros/Readme.md)
-- Para programar na sua máquina (local/virtual) use:
-  - `tko down ed ponteiros`
-- Se não tem o `tko`, instale pelo [LINK](https://github.com/senapk/tko#tko).
-
----
-
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/ponteiros/cover.jpg)
+![_](cover.jpg)
 
 Implemente as seguintes funções do vetor dinâmico.
 

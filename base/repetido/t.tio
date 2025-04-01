@@ -1,0 +1,55 @@
+>>>>>>>> INSERT Teste 1
+1
+1
+======== EXPECT
+unico
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 2
+2
+1 1
+======== EXPECT
+repete
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 3
+6
+1 2 4 8 16 32
+======== EXPECT
+unico
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 4
+6
+2 3 1 6 5 4
+======== EXPECT
+unico
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 5
+7
+2 3 1 6 5 4 4
+======== EXPECT
+repete
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 6
+10
+54 21 32 11 45 84 38 11 43 99
+======== EXPECT
+repete
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste 7
+10
+54 21 32 11 45 84 38 111 43 99
+======== EXPECT
+unico
+<<<<<<<< FINISH
+
