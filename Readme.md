@@ -21,7 +21,7 @@ O próprio aplicativo vai orientar a sequência sugerida na qual as atividades d
 
 Bom trabalho.
 
-## Introdução ao C++ e ED
+## Introdução
 
 Significado das tags nas questões:
 
@@ -31,6 +31,16 @@ Significado das tags nas questões:
 | open      | Problema de programação abertos sem testes
 | info      | Conteúdo informativo de leitura ou vídeo
 | task      | Outras atividades
+
+### Aquecimento com FUP
+
+- [ ] `@pintando :test`[Pintando a casa](https://github.com/qxcodefup/arcade/blob/master/base/pintando/Readme.md)
+- [ ] `@mumia    :test`[Criança, jovem, adulto](https://github.com/qxcodefup/arcade/blob/master/base/mumia/Readme.md)
+- [ ] `@fuga     :test`[Fuga de helicóptero](https://github.com/qxcodefup/arcade/blob/master/base/fuga/Readme.md)
+- [ ] `@pedra    :test`[Pedra na lua](https://github.com/qxcodefup/arcade/blob/master/base/pedra/Readme.md)
+- [ ] `@casais   :test`[Casais na arca](https://github.com/qxcodefup/arcade/blob/master/base/casais/Readme.md)
+- [ ] `@baruel   :test`[Figurinhas repetidas](https://github.com/qxcodefup/arcade/blob/master/base/baruel/Readme.md)
+- [ ] `@gomos    :test`[Gomos da cobra](https://github.com/qxcodefup/arcade/blob/master/base/gomos/Readme.md)
 
 ### Conceitos Básicos de C++
 
