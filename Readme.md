@@ -42,7 +42,12 @@ Significado das tags nas questões:
 - [ ] `@baruel   :test`[Figurinhas repetidas](https://github.com/qxcodefup/arcade/blob/master/base/baruel/Readme.md)
 - [ ] `@gomos    :test`[Gomos da cobra](https://github.com/qxcodefup/arcade/blob/master/base/gomos/Readme.md)
 
-### Conceitos Básicos de C++
+### Revisão de POO
+
+- [ ] `@budega   :test`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/Readme.md)
+- [ ] `@agenda   :test`[Gerencie contatos e telefones](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
+
+### Conceitos Básicos de C++ <!-- l:cpp -->
 
 Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da linguagem C++.
 
@@ -51,9 +56,7 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `#cpp_oop     :info`[Vídeo - Introdução a OOP in C++](https://youtu.be/w7F587dNwqA?si=2UMhfS9_DcAh-gjF)
 - [ ] `#cpp_acesso  :info`[Vídeo - Modificadores de Acesso com exemplos](https://youtu.be/n1RfuPbzG-M?si=kwaSjo9Ng1g4waOK)
 
-### Aprendendo um pouco sobre OOP em C++ <!-- @tad r:intro -->
-
-A implementação de Orientação a Objetos em C++ tem várias peculiaridades como a forma de fazer o "toString" ou a sobrecarga de operadores e métodos.
+### Primeiros Tipos Abstratos de Dados em C++ <!-- l:cpp -->
 
 - [ ] `#cpp_cpref  :info`[Como fazer sobrecarga de cópia e referencia](wiki/tad/sobrecarga.md)
 - [ ] `#cpp_oper   :info`[Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
@@ -152,9 +155,7 @@ Os vetores são estruturas de dados fundamentais que permitem acesso direto e r�
 
 Treinando o uso da classe vector e seus métodos na resolução de problemas básicos.
 
-- [ ] `@minmax     L0 :test`[MinMax](base/minmax/Readme.md)
 - [ ] `@palindromo L0 :test`[Palíndromo](base/palindromo/Readme.md)
-- [ ] `@repetido   L0 :test`[Verifique se algum elemento do vetor se repete](base/repetido/Readme.md)
 - [ ] `@buscas     L1 :test`[Buscas de strings](base/buscas/Readme.md)
 - [ ] `@rotacoes   L1 :test`[Rotacoes em uma lista](base/rotacoes/Readme.md)
 - [ ] `@princesa   L2 :test`[Princesa v1](base/princesa/Readme.md)
@@ -237,8 +238,6 @@ Agora estudaremos a estrutura de dados Fila, uma lista linear que adota a polít
 
 Agora vamos estudar as árvores, estruturas de dados que são especialmente adequadas para a representação de hierarquias. Diferente de listas e vetores, que são lineares, uma árvore é uma estrutura de dados bidimensional não-linear, permitindo organizar informações de maneira mais flexível e eficiente para cenários que exigem relações hierárquicas. Um tipo comum de árvore é a árvore binária, na qual cada nó pode ter no máximo dois filhos. As árvores são fundamentais em várias aplicações de computação, como na organização de expressões matemáticas, nos sistemas de arquivos de computadores, e em algoritmos de busca e ordenação. Além disso, árvores servem como base para outras estruturas de dados importantes. Para entender o funcionamento dessa estrutura de dados, exploraremos sua:
 
-- Construção
-
 ### Árvore - Construindo <!-- @tree r:list_build -->
 
 - [ ] `@serial      L2 :test`[Lendo uma árvore a partir de um serial](base/serial/Readme.md)
@@ -250,3 +249,10 @@ Agora vamos estudar as árvores, estruturas de dados que são especialmente adeq
 - [ ] `@arvore      L2 :test`[Construir árvore binaria CPP](base/arvore/Readme.md)
 - [ ] `@incompleta  L3 :test`[Arvore incompleta](base/incompleta/Readme.md)
 - [ ] `@abb         L3 :test`[Árvore Binária de Busca](base/abb/Readme.md)
+
+## TODO
+
+### Primeiros Tipos Abstratos de Dados em Go <!-- l:todo -->
+
+- [ ] `L2 @pontoGo   :test`[Implemente a classe ponto](base/pontoGo/Readme.md)
+- [ ] `L2 @fracaoGo  :test`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
