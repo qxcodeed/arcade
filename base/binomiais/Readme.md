@@ -1,4 +1,4 @@
-# L0 - @binomiais - Calculando coeficientes
+# Calculando coeficientes
 
 Os coeficientes binomiais são muito importantes para a resolução de vários problemas de contagem. Por exemplo,
 
@@ -8,8 +8,9 @@ Os coeficientes binomiais são muito importantes para a resolução de vários p
 
 Os coeficientes binomiais podem ser definidos usando a seguinte recursão:
 
-<img src="https://latex.codecogs.com/svg.latex?C(n,k) = \begin{cases}1& ,k=0\\
-1 & ,k=n\\ C(n-1,k-1) + C(n-1, k)&,   1\leq k \leq n-1\end{cases}">
+```math
+C(n,k) = \begin{cases}1& ,k=0\\1 & ,k=n\\ C(n-1,k-1) + C(n-1, k)&,   1\leq k \leq n-1\end{cases}
+```
 
 Sua tarefa é dado dois inteiros n e k, calcula C(n,k).
 

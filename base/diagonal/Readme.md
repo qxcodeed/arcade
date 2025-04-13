@@ -8,7 +8,7 @@ A entrada é composta por uma única linha contendo uma palavra com até 100 car
 
 ## Saída
 
-A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida. 
+A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida.
 
 ## Exemplo de Entrada
 
@@ -40,5 +40,16 @@ void diagonal(char * s, int k) {
   //imprima o primeiro caractere de s e pule a linha
   //faça a chamada recursiva
   }
+}
+```
+
+```go
+func diagonal(s string, k int) {
+  if len(s) == 0 {
+    return
+  }
+  // imprima k caracteres
+  // imprima o primeiro caractere de s e pule a linha
+  // faça a chamada recursiva
 }
 ```

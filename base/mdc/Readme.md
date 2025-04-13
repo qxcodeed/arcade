@@ -23,13 +23,6 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
 - Saída
   - A saída consiste de um número inteiro positivo que representa o mdc dos dois números.
 
-## Draft
-
-<!-- links .cache/draft -->
-- cpp
-  - [main.cpp](.cache/draft/cpp/main.cpp)
-<!-- links -->
-
 ## Shell
 
 ```bash

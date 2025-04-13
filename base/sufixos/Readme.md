@@ -1,4 +1,4 @@
-# L1 - @sufixos - Imprimindo palavra em pedaços
+# Imprimindo palavra em pedaços
 
 Você precisa responder algumas questões fundamentais antes de começar o desenvolvimento de um algoritmo recursivo. Entre elas, temos:
 

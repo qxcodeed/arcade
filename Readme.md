@@ -82,11 +82,11 @@ Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programaç
 
 ### Recursão: Treinando conceitos I<!-- @con_rec r:rec_intro -->
 
-- [ ] `#cpp_intro       :info` [L0 - @binomiais - Calculando coeficientes](base/binomiais/Readme.md)
+- [ ] `@binomiais    L0 :test` [Calculando coeficientes](base/binomiais/Readme.md)
 - [ ] `@escada       L0 :test` [De quantas maneiras podemos subir](base/escada/Readme.md)
 - [ ] `@diagonal     L1 :test` [Imprimindo um char por linha](base/diagonal/Readme.md)
 - [ ] `@padroes1     L1 :test` [Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
-- [ ] `@sufixos      L1 :test` [L1 - @sufixos - Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+- [ ] `@sufixos      L1 :test` [Imprimindo palavra em pedaços](base/sufixos/Readme.md)
 - [ ] `@empilhamento L1 :test` [Empilhamento de divisões](base/empilhamento/Readme.md)
 - [ ] `@mdc          L2 :test` [Implemente o mdc recursivo](base/mdc/Readme.md)
 

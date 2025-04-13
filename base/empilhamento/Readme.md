@@ -28,15 +28,6 @@ Imprimindo ao contrário, temos:
 50 0
 ```
 
-## Draft
-
-<!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [lib.h](.cache/draft/cpp/lib.h)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
-<!-- links -->
-
 ## Resolução
 
 [![imagem](https://user-images.githubusercontent.com/4747652/267033420-04b92b31-5905-45ea-9cb6-f903681e7e20.png)](https://youtu.be/2n8w2yju6Sc)
