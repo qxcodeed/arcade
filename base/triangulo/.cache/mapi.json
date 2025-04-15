@@ -1,6 +1,6 @@
 {
     "title": "@triangulo: Imprimindo ao contr\u00e1rio",
-    "description": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n        <head>\n            <meta charset=\"UTF-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <title>@triangulo: Imprimindo ao contr\u00e1rio</title>\n            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n        </head>\n        <body>\n            <h1>@triangulo: Imprimindo ao contr\u00e1rio</h1>\n            <h1 id=\"imprimindo-ao-contrario\">Imprimindo ao contr\u00e1rio</h1>\n<p><img alt=\"_\" src=\"https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg\" /></p>\n<p>Dado um vetor de inteiros A, imprima um tri\u00e2ngulo de n\u00fameros tal que na base do tri\u00e2ngulo estejam todos os elementos do vetor original, e tal que, a cada i-\u00e9simo n\u00edvel acima da base, o n\u00famero de elementos seja um a menos que no n\u00edvel inferior e cada elemento do i-\u00e9simo n\u00edvel seja a soma de dois elementos consecutivos do n\u00edvel inferior.</p>\n<ul>\n<li>Entrada</li>\n<li>Os elementos da base.</li>\n<li>Sa\u00edda</li>\n<li>O tri\u00e2ngulo.</li>\n</ul>\n<h2 id=\"dica\">Dica</h2>\n<p>Veja a resolu\u00e7\u00e3o da atividade \"Empilhamento da Recurs\u00e3o\" para entender como funciona a impress\u00e3o de tr\u00e1s pra frente.</p>\n<h2 id=\"arquivos\">Arquivos</h2>\n<p>Voc\u00ea deve implementar a fun\u00e7\u00e3o <code>processa</code> no arquivo <code>lib.cpp</code>.</p>\n<!-- links .cache/draft -->\n<ul>\n<li>cpp</li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/lib.cpp\">lib.cpp</a></li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/lib.hpp\">lib.hpp</a></li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/main.cpp\">main.cpp</a></li>\n<li>py</li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/py/lib.py\">lib.py</a></li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/py/main.py\">main.py</a></li>\n</ul>\n<!-- links -->\n\n<h2 id=\"testes\">Testes</h2>\n<div class=\"codehilite\"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01\n1 2 3\n========\n[ 8 ]\n[ 3 5 ]\n[ 1 2 3 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02\n3 2 1\n========\n[ 8 ]\n[ 5 3 ]\n[ 3 2 1 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03\n4 3 2 1\n========\n[ 20 ]\n[ 12 8 ]\n[ 7 5 3 ]\n[ 4 3 2 1 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04\n1 1 2 3 5 8\n========\n[ 89 ]\n[ 34 55 ]\n[ 13 21 34 ]\n[ 5 8 13 21 ]\n[ 2 3 5 8 13 ]\n[ 1 1 2 3 5 8 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n</code></pre></div>\n            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n            <script>hljs.highlightAll();</script>\n        </body>\n        </html>\n        ",
+    "description": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n        <head>\n            <meta charset=\"UTF-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <title>@triangulo: Imprimindo ao contr\u00e1rio</title>\n            <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n        </head>\n        <body>\n            <h1>@triangulo: Imprimindo ao contr\u00e1rio</h1>\n            <h1 id=\"imprimindo-ao-contrario\">Imprimindo ao contr\u00e1rio</h1>\n<p><img alt=\"_\" src=\"https://raw.githubusercontent.com/qxcodeed/arcade/master/base/triangulo/cover.jpg\" /></p>\n<p>Dado um vetor de inteiros A, imprima um tri\u00e2ngulo de n\u00fameros tal que na base do tri\u00e2ngulo estejam todos os elementos do vetor original, e tal que, a cada i-\u00e9simo n\u00edvel acima da base, o n\u00famero de elementos seja um a menos que no n\u00edvel inferior e cada elemento do i-\u00e9simo n\u00edvel seja a soma de dois elementos consecutivos do n\u00edvel inferior.</p>\n<ul>\n<li>Entrada</li>\n<li>Os elementos da base.</li>\n<li>Sa\u00edda</li>\n<li>O tri\u00e2ngulo.</li>\n</ul>\n<h2 id=\"dica\">Dica</h2>\n<p>Veja a resolu\u00e7\u00e3o da atividade \"Empilhamento da Recurs\u00e3o\" para entender como funciona a impress\u00e3o de tr\u00e1s pra frente.</p>\n<h2 id=\"arquivos\">Arquivos</h2>\n<p>Voc\u00ea deve implementar a fun\u00e7\u00e3o <code>processa</code> no arquivo <code>lib.cpp</code>.</p>\n<!-- links .cache/draft -->\n<ul>\n<li>cpp</li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/cpp/main.cpp\">main.cpp</a></li>\n<li>go</li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/go/main.go\">main.go</a></li>\n<li>py</li>\n<li><a href=\"https://github.com/qxcodeed/arcade/blob/master/base/triangulo/.cache/draft/py/main.py\">main.py</a></li>\n</ul>\n<!-- links -->\n\n<h2 id=\"testes\">Testes</h2>\n<pre class=\"codehilite\"><code class=\"language-txt\">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01\n1 2 3\n========\n[ 8 ]\n[ 3 5 ]\n[ 1 2 3 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02\n3 2 1\n========\n[ 8 ]\n[ 5 3 ]\n[ 3 2 1 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03\n4 3 2 1\n========\n[ 20 ]\n[ 12 8 ]\n[ 7 5 3 ]\n[ 4 3 2 1 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04\n1 1 2 3 5 8\n========\n[ 89 ]\n[ 34 55 ]\n[ 13 21 34 ]\n[ 5 8 13 21 ]\n[ 2 3 5 8 13 ]\n[ 1 1 2 3 5 8 ]\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n</code></pre>\n            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n            <script>hljs.highlightAll();</script>\n        </body>\n        </html>\n        ",
     "upload": [
         {
             "name": "vpl_evaluate.cases",
@@ -8,52 +8,27 @@
             "encoding": 0
         }
     ],
-    "keep": [
-        {
-            "name": "lib.hpp",
-            "contents": "#pragma once\n#include <iostream>\n#include <vector>\n\nvoid processa(std::vector<int> vet);\n",
-            "encoding": 0
-        },
-        {
-            "name": "main.cpp",
-            "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n#include \"lib.hpp\"\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}",
-            "encoding": 0
-        }
-    ],
-    "required": [
-        {
-            "name": "lib.cpp",
-            "contents": "#include <iostream>\n#include <vector>\n#include \"lib.hpp\"\n\nvoid processa(std::vector<int> vet){\n    //DEL!\n    if(vet.size() == 0) {\n        return;\n    }\n    std::vector<int> aux;\n    for(u_int i = 0; i < vet.size() - 1; i++) {\n        aux.push_back(vet[i] + vet[i + 1]);\n    }\n    processa(aux);\n    std::cout << \"[\";\n    for(auto x : vet) {\n        std::cout << \" \" << x;\n    }\n    std::cout << \" ]\\n\";\n\n    //ACT!\n    // (void) vet;\n    //ADD!\n    // 1. defina o ponto de parada\n    // 2. monte o vetor auxiliar com os resultados das somas\n    // 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    // 4. imprima o vetor original\n}\n",
-            "encoding": 0
-        }
-    ],
+    "keep": [],
+    "required": [],
     "draft": {
-        "py": [
+        "cpp": [
             {
-                "name": "main.py",
-                "contents": "#!/usr/bin/env python3\nfrom lib import processa\n\ndef main():\n    line = input().split(\" \")\n    vet = [int(x) for x in line]\n    processa(vet)\n\nif __name__ == \"__main__\":\n    main()\n",
-                "encoding": 0
-            },
-            {
-                "name": "lib.py",
-                "contents": "from typing import List\n\n# ++\ndef processa(vet: List[int]) -> None:\n    if len(vet) == 0:\n        return\n    aux: List[int] = []\n    for i in range(len(vet) - 1):\n        aux.append(vet[i] + vet[i + 1])\n    processa(aux)\n    out = [str(x) for x in vet]\n    print(\"[ {} ]\".format(\" \".join(out)))\n    # $$\n    # pass\n    # ==\n    # 1. defina o ponto de parada\n    # 2. monte o vetor auxiliar com os resultados das somas\n    # 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    # 4. imprima o vetor original\n",
+                "name": "main.cpp",
+                "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n\n\nvoid processa(std::vector<int> vet){\n    (void) vet;\n    // 1. defina o ponto de parada\n    // 2. monte o vetor auxiliar com os resultados das somas\n    // 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    // 4. imprima o vetor original\n}\n\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}\n",
                 "encoding": 0
             }
         ],
-        "cpp": [
+        "go": [
             {
-                "name": "lib.cpp",
-                "contents": "#include <iostream>\n#include <vector>\n#include \"lib.hpp\"\n\nvoid processa(std::vector<int> vet){\n    //DEL!\n    if(vet.size() == 0) {\n        return;\n    }\n    std::vector<int> aux;\n    for(u_int i = 0; i < vet.size() - 1; i++) {\n        aux.push_back(vet[i] + vet[i + 1]);\n    }\n    processa(aux);\n    std::cout << \"[\";\n    for(auto x : vet) {\n        std::cout << \" \" << x;\n    }\n    std::cout << \" ]\\n\";\n\n    //ACT!\n    // (void) vet;\n    //ADD!\n    // 1. defina o ponto de parada\n    // 2. monte o vetor auxiliar com os resultados das somas\n    // 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    // 4. imprima o vetor original\n}\n",
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\t_ = vet;\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
                 "encoding": 0
-            },
+            }
+        ],
+        "py": [
             {
-                "name": "main.cpp",
-                "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n#include \"lib.hpp\"\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}\n",
-                "encoding": 0
-            },
-            {
-                "name": "lib.hpp",
-                "contents": "#pragma once\n#include <iostream>\n#include <vector>\n\nvoid processa(std::vector<int> vet);\n",
+                "name": "main.py",
+                "contents": "#!/usr/bin/env python3\nfrom typing import List\n\ndef processa(vet: List[int]) -> None:\n    if len(vet) == 0:\n        return\n    aux: List[int] = []\n    for i in range(len(vet) - 1):\n        aux.append(vet[i] + vet[i + 1])\n    processa(aux)\n    out = [str(x) for x in vet]\n    print(\"[ {} ]\".format(\" \".join(out)))\n    # $$\n    # pass\n    # ==\n    # 1. defina o ponto de parada\n    # 2. monte o vetor auxiliar com os resultados das somas\n    # 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    # 4. imprima o vetor original\n\n\ndef main():\n    line = input().split(\" \")\n    vet = [int(x) for x in line]\n    processa(vet)\n\nif __name__ == \"__main__\":\n    main()\n",
                 "encoding": 0
             }
         ]

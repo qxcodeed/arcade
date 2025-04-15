@@ -67,6 +67,8 @@ namespace alu {
   - [lib.cpp](.cache/draft/cpp/lib.cpp)
   - [lib.hpp](.cache/draft/cpp/lib.hpp)
   - [main.cpp](.cache/draft/cpp/main.cpp)
+- go
+  - [main.go](.cache/draft/go/main.go)
 <!-- links -->
 
 ___
