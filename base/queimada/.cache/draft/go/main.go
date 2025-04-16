@@ -17,10 +17,18 @@ func tocarFogo(mat [][]rune, l, c int) {
 }
 
 func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	line := scanner.Text()
 	var nl, nc, lfire, cfire int
-	fmt.Scan(&nl, &nc, &lfire, &cfire)
+	fmt.Sscanf(line, "%d %d %d %d", &nl, &nc, &lfire, &cfire)
 
-	mat := readMat(nl)
+	mat := make([][]rune, 0, nl)
+	for range nl {
+		scanner.Scan()
+		linha := []rune(scanner.Text())
+		mat = append(mat, linha)
+	}
 	tocarFogo(mat, lfire, cfire)
 	showMat(mat)
 }
@@ -29,15 +37,4 @@ func showMat(mat [][]rune) {
 	for _, linha := range mat {
 		fmt.Println(string(linha))
 	}
-}
-
-func readMat(nl int) [][]rune {
-	scanner := bufio.NewScanner(os.Stdin)
-	mat := make([][]rune, 0, nl)
-	for range nl {
-		scanner.Scan()
-		linha := []rune(scanner.Text())
-		mat = append(mat, linha)
-	}
-	return mat
 }
