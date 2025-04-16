@@ -1,7 +1,5 @@
 #include <iostream>
 
-// ADD!0
-
 void process(int value) {
     if (value == 0) {
         return;

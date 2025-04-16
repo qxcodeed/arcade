@@ -58,6 +58,6 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
 192
 276
 ========
-6
+12
 <<<<<<<<
 ```

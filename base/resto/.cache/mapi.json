@@ -14,7 +14,7 @@
         "cpp": [
             {
                 "name": "lib.cpp",
-                "contents": "#include <iostream>\n\n// ADD!0\n\nvoid process(int value) {\n    if (value == 0) {\n        return;\n    }\n    int div = value / 2;\n    int resto = value % 2;\n    process(div);\n    std::cout << div << \" \" << resto << std::endl;\n    (void) value;\n    if (/* ponto de parada */) {\n    ____return;\n    }\n    faz os calculos de div e resto\n    chama a recurs\u00e3o para div\n    imprime os valores depois da chamada recursiva\n}\n",
+                "contents": "#include <iostream>\n\nvoid process(int value) {\n    if (value == 0) {\n        return;\n    }\n    int div = value / 2;\n    int resto = value % 2;\n    process(div);\n    std::cout << div << \" \" << resto << std::endl;\n    (void) value;\n    if (/* ponto de parada */) {\n    ____return;\n    }\n    faz os calculos de div e resto\n    chama a recurs\u00e3o para div\n    imprime os valores depois da chamada recursiva\n}\n",
                 "encoding": 0
             },
             {

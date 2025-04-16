@@ -7,6 +7,8 @@ Seja um número inteiro, retorne se ele é primo ou não.
 <!-- links .cache/draft -->
 - cpp
   - [main.cpp](.cache/draft/cpp/main.cpp)
+- go
+  - [main.go](.cache/draft/go/main.go)
 <!-- links -->
 
 ## Testes
@@ -16,7 +18,7 @@ Seja um número inteiro, retorne se ele é primo ou não.
 >>>>>>>>
 1
 ========
-true
+false
 <<<<<<<<
 
 >>>>>>>>
