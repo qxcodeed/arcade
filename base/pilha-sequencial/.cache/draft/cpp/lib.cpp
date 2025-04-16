@@ -21,13 +21,7 @@ struct Stack {
     // info: informacao do elemento a ser inserido
     void push(int info) {
         // TODO
-        //DEL!
-        if(this->full()) return;
-        this->Arr[this->size] = info;
-        this->size++;
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
 
 
@@ -35,10 +29,6 @@ struct Stack {
     // Nao faz nada caso a pilha esteja vazia.
     void pop() {
         // TODO
-        //DEL!
-        if(this->empty()) return;
-        this->size--;
-        //ADD!
     }
 
 
@@ -46,44 +36,26 @@ struct Stack {
     // Retorna -1, caso a pilha esteja vazia.
     int peek() {
         // TODO
-        //DEL!
-        if(this->empty()) return -1;
-        return this->Arr[this->size-1];
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Remove todos os elementos da pilha
     void clear() {
         // TODO
-        //DEL!
-        while(!this->empty()){
-            this->pop();
-        }
-        //ADD!
     }
 
 
     // Devolve true se cheia e false caso contrario
     bool empty() {
         // TODO
-        //DEL!
-        return this->size == 0;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     }
 
     // Devolve true se vazia e false caso contrario
     bool full() {
         // TODO
-        //DEL!
-        return this->size == this->capacity;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     } 
 
     // Printa as informacoes da lista
@@ -98,4 +70,3 @@ struct Stack {
         std::cout << "]" << std::endl;
     }    
 };
-

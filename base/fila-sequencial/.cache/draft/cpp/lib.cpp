@@ -24,15 +24,7 @@ struct SequentialQueue {
     // info: informacao do elemento a ser inserido
     void push(int info) {
         // TODO
-        //DEL!
-        if(this->full()) return;
-
-        int back = (this->front + this->size) % this->capacity;
-        this->Arr[back] = info;
-        this->size++;
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
 
 
@@ -40,12 +32,6 @@ struct SequentialQueue {
     // Nao faz nada caso a fila esteja vazia.
     void pop(){
         // TODO
-        //DEL!
-        if(this->empty()) return;
-
-        this->front = (this->front + 1) % this->capacity;
-        this->size--;
-        //ADD!
     }
 
 
@@ -53,44 +39,26 @@ struct SequentialQueue {
     // Retorna -1, caso a fila esteja vazia.
     int peek(){
         // TODO
-        //DEL!
-        if(this->empty()) return -1;
-
-        return this->Arr[this->front];
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Remove todos os elementos da fila
     void clear(){
         // TODO
-        //DEL!
-        while(!this->empty())
-            this->pop();
-        //ADD!
     }
 
 
     // Devolve true se cheia e false caso contrario
     bool empty(){
         // TODO
-        //DEL!
-        return this->size == 0;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     }
 
     // Devolve true se vazia e false caso contrario
     bool full(){
         // TODO
-        //DEL!
-        return this->size == this->capacity;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     }
 
     // Printa as informacoes da lista
@@ -105,4 +73,3 @@ struct SequentialQueue {
         std::cout << "]" << std::endl;
     }    
 };
-

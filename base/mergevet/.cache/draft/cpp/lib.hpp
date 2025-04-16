@@ -35,14 +35,7 @@ public:
     // e copie os elementos da lista para o vetor
     // inicialize size adequadamente
     Vetor(std::initializer_list<int> v) {
-        //DEL!
-        u = new int[v.size()];
-        size = 0;
-        for (int x : v) {
-            this->push_back(x);
-        }
-        //ACT!
-        // (void) v;
+        (void) v;
     }
 
     // se não tiver o construtor de cópia para estruturas dinâmicas
@@ -53,77 +46,38 @@ public:
     // inicie size com o tamanho de V
     // copie os elementos de V para u
     Vetor(const Vetor& V) {
-        //DEL!
-        u = new int[V.size];
-        size = V.size;
-        for (int i = 0; i < size; i++) {
-            u[i] = V.u[i];
-        }
-        //ACT!
-        // (void) V;
+        (void) V;
     }
 
     bool empty() {
-        //DEL!
-        return size == 0;
-        //ACT!
-        // retorne se o vetor está vazio //ADD!
-        // return false;
+        // retorne se o vetor está vazio 
+        return false;
     } 
 
     // retorne o valor do último elemento valido
     int back() {
-        //DEL!
-        return u[size - 1];
-        //ACT!
-        // return 0;
+        return 0;
     }
     
     // diminua o tamanho do vetor
     void pop_back() {
-        //DEL!
-        size--;
     }
 
     // adicione x no final do vetor
     // aumente o tamanho do vetor
     void push_back(int x) {
-        //DEL!
-        u[size] = x;
-        size++;
-        //ACT!
-        // (void) x;
+        (void) x;
     }
 
     // vai lhe ajudar se você quiser fazer debug e imprimir o vetor
     std::string str() {
-        //DEL!
-        std::string s = "[";
-        for (int i = 0; i < size; i++) {
-            s += i == 0 ? "" : ",";
-            s += std::to_string(u[i]);
-        }
-        s += "]";
-        return s;
-        //ACT!
-        // return "";
+        return "";
     }
 
     // verificar se dois vetores são iguais
     bool operator==(Vetor& V) {
-        //DEL!
-        if (size != V.size) {
-            return false;
-        }
-        for (int i = 0; i < size; i++) {
-            if (u[i] != V.u[i]) {
-                return false;
-            }
-        }
-        return true;
-        //ACT!
-        // (void) V;
-        // return false;
+        (void) V;
+        return false;
     }
 };
 
@@ -169,21 +123,10 @@ public:
 // qual dos vetores tem o menor elemento na posicao ind
 // se ind == tamanho do vetor, então o vetor está vazio
 inline int ind_menor_primeiro(Vetor U[], int n, Vetor ind) {
-    //DEL!
-    int menor = -1;
-    for (int i = 0; i < n; i++) {
-        if (ind[i] < U[i].len()) {
-            if (menor == -1 || U[i][ind[i]] < U[menor][ind[menor]]) {
-                menor = i;
-            }
-        }
-    }
-    return menor;
-    //ACT!
-    // (void) U;
-    // (void) n;
-    // (void) ind;
-    // return -1;
+    (void) U;
+    (void) n;
+    (void) ind;
+    return -1;
 }
 
 // calcule o tamanho do vetor final e inicie ele
@@ -193,29 +136,7 @@ inline int ind_menor_primeiro(Vetor U[], int n, Vetor ind) {
 //     adicione o menor elemento no vetor final
 //     incremente o indice do vetor que tinha o menor elemento
 inline Vetor mergeAll(Vetor U[], int n) {
-    //DEL!
-    int total = 0;
-    for (int i = 0; i < n; i++) {
-        total += U[i].len();
-    }
-    Vetor result(total);
-    // inicializando vetor de indices
-    Vetor ind(n);
-    for (int i = 0; i < n; i++) {
-        ind.push_back(0);
-    }
-    // enquanto houver elementos
-    while (true) {
-        int index = ind_menor_primeiro(U, n, ind);
-        if (index == -1) {
-            break;
-        }
-        result.push_back(U[index][ind[index]]);
-        ind[index]++;
-    }
-    return result; 
-    //ACT!
-    // (void) U;
-    // (void) n;
-    // return Vetor(0);
+    (void) U;
+    (void) n;
+    return Vetor(0);
 }

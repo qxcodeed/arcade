@@ -34,19 +34,7 @@ struct LinkedQueue {
     // info: informacao do elemento a ser inserido
     void push(int info) {
         // TODO
-        //DEL!
-        Node* newNode = new Node(info, nullptr);
-        if(this->empty()) {
-            this->front = newNode;
-            this->back = newNode;
-        } else {
-            this->back->next = newNode;
-            this->back = newNode;
-        }
-        this->size++;
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
 
 
@@ -54,13 +42,6 @@ struct LinkedQueue {
     // Nao faz nada caso a fila esteja vazia.
     void pop(){
         // TODO
-        //DEL!
-        if(this->empty()) return;
-        Node* aux = this->front;
-        this->front = this->front->next;
-        delete aux;
-        this->size--;
-        //ADD!
     }
 
 
@@ -68,22 +49,13 @@ struct LinkedQueue {
     // Retorna -1, caso a fila esteja vazia.
     int peek(){
         // TODO
-        //DEL!
-        if(this->empty()) return -1;
-        return this->front->info;
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Remove todos os elementos da fila
     void clear(){
         // TODO
-        //DEL!
-        while(!this->empty())
-            this->pop();
-        //ADD!
     }
 
 
@@ -104,4 +76,3 @@ struct LinkedQueue {
         std::cout << "]" << std::endl;
     }    
 };
-

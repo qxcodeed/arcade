@@ -57,9 +57,8 @@ struct SLinkedList {
             }
         }
         return false;
-        //ACT!
-        // (void) info;
-        // return false;
+        (void) info;
+        return false;
 
     }
     // Exemplo:
@@ -81,9 +80,8 @@ struct SLinkedList {
             i++;
         }
         return -1;
-        //ACT!
-        // (void) index;
-        // return 0;
+        (void) index;
+        return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -109,8 +107,7 @@ struct SLinkedList {
         // head = new Node(info, head);
         // --
         newNode->info = info;
-        //ACT!
-        // (void) info;
+        (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -135,8 +132,7 @@ struct SLinkedList {
         }
         last->next = newNode;
 
-        //ACT!
-        // (void) info;
+        (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -213,8 +209,7 @@ struct SLinkedList {
             len++;
         }
         return len;
-        //ACT!
-        // return 0;
+        return 0;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -227,8 +222,7 @@ struct SLinkedList {
         // --
         return head == nullptr;
 
-        //ACT!
-        // return false;
+        return false;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -262,9 +256,8 @@ struct SLinkedList {
             }
         }
         return nullptr;
-        //ACT!
-        // (void) node;
-        // return nullptr;
+        (void) node;
+        return nullptr;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50

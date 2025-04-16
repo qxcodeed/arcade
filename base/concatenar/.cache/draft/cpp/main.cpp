@@ -38,17 +38,8 @@ void printNodesFromTail(Node* current){
 // Pode assumir que nenhuma das duas listas esta vazia
 void concatenate(Node *headA, Node *headB){
     // TODO
-    //DEL!
-    Node *current = headA;
-    while(current->next != nullptr){
-        current = current->next;
-    }
-    current->next = headB;
-    headB->previous = current;
-
-    //ACT!
-    // (void) headA;
-    // (void) headB;
+    (void) headA;
+    (void) headB;
 }
 // Exemplo:
 // LA == "A" <-> "B" <-> "C"

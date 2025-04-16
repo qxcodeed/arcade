@@ -1,4 +1,4 @@
-# Contando pontos
+# Descobrindo quantos pontos
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

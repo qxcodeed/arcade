@@ -48,16 +48,8 @@ struct SLinkedList {
     // index: posicao do elemento
     bool hasInfo(int info){
         // TODO: Complexidade O(n)
-        //DEL!
-        for(Node* node = head; node != nullptr; node = node->next){
-            if(node->info == info)
-                return true;
-        }
+        (void) info;
         return false;
-
-        //ACT!
-        // (void) info;
-        // return false;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -68,15 +60,7 @@ struct SLinkedList {
     // info: informacao do elemento a ser inserido
     void push_front(int info){
         // TODO: Complexidade O(1)
-        //DEL!
-        if(head == nullptr){ // lista vazia
-            head = tail = new Node(info, head);
-        }else{
-            head = new Node(info, head);
-        }
-
-        //ACT!
-        // (void) info;
+        (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -88,16 +72,7 @@ struct SLinkedList {
     // info: informacao do elemento a ser inserido
     void push_back(int info){
         // TODO: Complexidade O(1)
-        //DEL!
-        if(head == nullptr){ // lista vazia
-            head = tail = new Node(info, head);
-        }else{
-            tail->next = new Node(info);
-            tail = tail->next;
-        }
-
-        //ACT!
-        // (void) info;
+        (void) info;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -109,16 +84,6 @@ struct SLinkedList {
     // Nao faz nada se a lista esta vazia
     void pop_front(){
         // TODO: Complexidade O(1)
-        //DEL!
-        if(head == nullptr) return;
-        if(head == tail){
-            delete head;
-            head = tail = nullptr;
-            return;
-        }
-        Node* temp = head;
-        head = head->next;
-        delete temp;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -130,20 +95,6 @@ struct SLinkedList {
     // Nao faz nada se a lista esta vazia
     void pop_back(){
         // TODO: Complexidade O(n)
-        //DEL!
-        if(head == nullptr) return;
-        if(head == tail){
-            delete head;
-            head = tail = nullptr;
-            return;
-        }
-        Node* temp = head;
-        while(temp->next != tail){
-            temp = temp->next;
-        }
-        delete tail;
-        tail = temp;
-        tail->next = nullptr;
     }
     // Exemplo:
     // L == 10 -> 20 -> 15 -> 50
@@ -196,4 +147,3 @@ struct SLinkedList {
         std::cout << "]" << std::endl;
     }
 };
-

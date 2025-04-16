@@ -14,24 +14,8 @@ using std::string;
 // e os simbolos estao corretamente aninhados.
 bool isBalanced(string word){
     // TODO: complexidade O(n)
-    //DEL!
-    stack<char> pilha;
-    
-    for (char c : word) {
-        if (c == '(' || c == '[') {
-            pilha.push(c);
-        } else if (c == ')' || c == ']') {
-            if (pilha.empty() || pilha.top() != (c == ')' ? '(' : '[')) {
-                return false;
-            }
-            pilha.pop();
-        }
-    }
-    return pilha.empty();
-    //ACT!
-    // (void) word;
-    // return false;
-    //ADD!
+    (void) word;
+    return false;
 }
 
 // Exemplos:

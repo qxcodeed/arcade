@@ -14,7 +14,7 @@
         "cpp": [
             {
                 "name": "main.cpp",
-                "contents": "// Arquivo de execucao\n#include <iostream>\nusing std::string;\n\nbool isPalindrome(string word){\n    // TODO\n    //DEL!\n    int n = word.length();\n    for(int i = 0; i < n / 2; i++){\n        if(word[i] != word[n - i - 1]){\n            return false;\n        }\n    }\n    return true;\n    //ACT!\n    //(void) word;\n    //return false;\n}\n\nint main(){\n    string w;\n    std::cin >> w;\n    if(isPalindrome(w)){\n        std::cout << \"palindromo\" << std::endl;\n    }else{\n        std::cout << \"nao palindromo\" << std::endl;\n    }\n}\n",
+                "contents": "// Arquivo de execucao\n#include <iostream>\nusing std::string;\n\nbool isPalindrome(string word){\n    // TODO\n    (void) word;\n    return false;\n}\n\nint main(){\n    string w;\n    std::cin >> w;\n    if(isPalindrome(w)){\n        std::cout << \"palindromo\" << std::endl;\n    }else{\n        std::cout << \"nao palindromo\" << std::endl;\n    }\n}\n",
                 "encoding": 0
             }
         ]

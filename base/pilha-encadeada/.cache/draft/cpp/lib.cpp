@@ -32,13 +32,7 @@ struct Stack {
     // info: informacao do elemento a ser inserido
     void push(int info){
         // TODO
-        //DEL!
-        Node* newNode = new Node(info, this->top);
-        this->top = newNode;
-        this->size++;
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
 
 
@@ -46,13 +40,6 @@ struct Stack {
     // Nao faz nada caso a pilha esteja vazia.
     void pop(){
         // TODO
-        //DEL!
-        if(this->empty()) return;
-        Node* node = this->top;
-        this->top = this->top->next;
-        delete node;
-        this->size--;
-        //ADD!
     }
 
 
@@ -60,23 +47,13 @@ struct Stack {
     // Retorna -1, caso a pilha esteja vazia.
     int peek(){
         // TODO
-        //DEL!
-        if(this->empty()) return -1;
-        return this->top->info;
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Remove todos os elementos da pilha
     void clear(){
         // TODO
-        //DEL!
-        while(!this->empty()){
-            this->pop();
-        }
-        //ADD!
     }
 
 
@@ -97,4 +74,3 @@ struct Stack {
         std::cout << "]" << std::endl;
     }    
 };
-

@@ -14,7 +14,7 @@
         "cpp": [
             {
                 "name": "main.cpp",
-                "contents": "#include <iostream>\n\n//++0\nint mdc(int a, int b) {\n  if (b == 0) {\n    return a;\n  }\n  return mdc(b, a % b);\n  //ACT!\n  // todo\n  // return 0;\n}\n\n//==\nint main() {\n  int a, b;\n  std::cin >> a >> b;\n  std::cout << mdc(a, b) << std::endl;\n  return 0;\n}\n",
+                "contents": "#include <iostream>\n\n// ADD!0\nint mdc(int a, int b) {\n  if (b == 0) {\n    return a;\n  }\n  return mdc(b, a % b);\n  todo\n  return 0;\n}\n\n//\nint main() {\n  int a, b;\n  std::cin >> a >> b;\n  std::cout << mdc(a, b) << std::endl;\n  return 0;\n}\n",
                 "encoding": 0
             }
         ]

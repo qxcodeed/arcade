@@ -23,29 +23,9 @@ void invertStack(stack<int> &pilhaA, stack<int> &pilhaB, stack<int> &pilhaC){
     // pilha.pop();       // remove do topo da pilha
     // pilha.empty();     // retorna se a pilha esta vazia
     // pilha.clear();     // remove todos os elementos da pilha
-    //DEL!
-    while(!pilhaA.empty()) {
-        int n = pilhaA.top();
-        pilhaA.pop();
-        pilhaB.push(n);
-    }
-
-    while(!pilhaB.empty()) {
-        int n = pilhaB.top();
-        pilhaB.pop();
-        pilhaC.push(n);
-    }
-
-    while(!pilhaC.empty()) {
-        int n = pilhaC.top();
-        pilhaC.pop();
-        pilhaA.push(n);
-    }
-    //ACT!
-    // (void) pilhaA;
-    // (void) pilhaB;
-    // (void) pilhaC;
-    //ADD!
+    (void) pilhaA;
+    (void) pilhaB;
+    (void) pilhaC;
 
 }
 // Exemplo:

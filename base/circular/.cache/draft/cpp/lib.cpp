@@ -25,12 +25,8 @@ struct SequentialCircularList {
     // de 'index'.
     int get(int index){
         // TODO
-        //DEL!
-        return arrayList[index % size];
-
-        //ACT!
-        //(void) index;
-        //return -1;
+        (void) index;
+        return -1;
     }
     // Exemplos para a 'arrayList' = [1,2,3]
     // get(0) == 1

@@ -14,11 +14,7 @@ struct StackedQueue {
     void push(int info) {
         // TODO: complexidade O(1)
         // Utilize somente a pilha 'stack'
-        //DEL!
-        this->stack.push(info);
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
 
 
@@ -31,19 +27,6 @@ struct StackedQueue {
         std::stack<int> aux; // Pilha auxiliar para acessar o elemento do 'fundo' da pilha
         // TODO: complexidade O(n)
         // Utilize a pilha 'stack' e a pilha 'aux'
-        //DEL!
-        while(!this->stack.empty()) {
-            aux.push(this->stack.top());
-            this->stack.pop();
-        }
-
-        aux.pop();
-
-        while(!aux.empty()) {
-            this->stack.push(aux.top());
-            aux.pop();
-        }
-        //ADD!
     }
 
 
@@ -56,34 +39,13 @@ struct StackedQueue {
         std::stack<int> aux; // Pilha auxiliar para acessar o elemento do 'fundo' da pilha
         // TODO: complexidade O(n)
         // Utilize a pilha 'stack' e a pilha 'aux'
-        //DEL!
-        while(!this->stack.empty()) {
-            aux.push(this->stack.top());
-            this->stack.pop();
-        }
-
-        int top = aux.top();
-
-        while(!aux.empty()) {
-            this->stack.push(aux.top());
-            aux.pop();
-        }
-
-        return top;
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Remove todos os elementos da fila
     void clear() {
         // TODO: complexidade O(n)
-        //DEL!
-        while(!this->stack.empty()) {
-            this->stack.pop();
-        }
-        //ADD!
     }
 
 
@@ -113,4 +75,3 @@ struct StackedQueue {
         std::cout << "]" << std::endl;
     }    
 };
-

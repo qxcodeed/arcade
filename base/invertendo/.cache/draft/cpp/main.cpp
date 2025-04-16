@@ -30,19 +30,7 @@ void printNodes(Node* head){
 // os valores de 'next' e 'previous' de cada No.
 void invert(Node* head){
     // TODO
-    //DEL!
-    Node *temp = head;
-    Node *aux = nullptr;
-    while(temp != nullptr){
-        aux = temp->previous;
-        temp->previous = temp->next;
-        temp->next = aux;
-        temp = temp->previous;
-    }
-    head = aux->previous;
-
-    //ACT!
-    // (void) head;
+    (void) head;
 }
 // Exemplo:
 // L == "1" <-> "2" <-> "4" <-> "8" <-> "16"

@@ -43,65 +43,32 @@ struct BinaryTree {
         // fill_level(root, 1);
         // fill_height(root);
         // Mas sinta-se a vontade para alterar os metodos auxiliares.
-        //DEL!
-        fill_parent(root, NULL);
-        fill_size(root);
-        fill_level(root, 1);
-        fill_height(root);
-        //ADD!
     }
 
     void fill_parent(Node* current, Node* parent) {
         // TODO: Complexidade O(n)
-        //DEL!
-        if (current == NULL) return;
-        current->parent = parent;
-
-        fill_parent(current->left, current);
-        fill_parent(current->right, current);
-        //ACT!
-        // (void) parent;
-        // (void) current;
-        //ADD!
+        (void) parent;
+        (void) current;
     }
 
     int fill_size(Node* current) {
         // TODO: Complexidade O(n)
-        //DEL!
-        if (current == NULL) return 0;
-        current->size = fill_size(current->left) + fill_size(current->right) + 1;
-        return current->size;
-        //ACT!
-        // (void) current;
-        // return 0;
-        //ADD!
+        (void) current;
+        return 0;
     }
 
 
     void fill_level(Node* current, int level) {
         // TODO: Complexidade O(n)
-        //DEL!
-        if (current == NULL) return;
-        current->level = level;
-        fill_level(current->left, level + 1);
-        fill_level(current->right, level + 1);
-        //ACT!
-        // (void) current;
-        // (void) level;
-        //ADD!
+        (void) current;
+        (void) level;
     }
 
 
     int fill_height(Node* current) {
         // TODO: Complexidade O(n)
-        //DEL!
-        if (current == NULL) return 0;
-        current->height = std::max(fill_height(current->left), fill_height(current->right)) + 1;
-        return current->height;
-        //ACT!
-        // (void) current;
-        // return 0;
-        //ADD!
+        (void) current;
+        return 0;
     }
 
 

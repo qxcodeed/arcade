@@ -33,24 +33,8 @@ struct BSTree {
     // ou retorna um No vazio (NULL) caso a arvore nao possua tal 'info'.
     Node* search(int info) {
         // TODO: Complexidade O(h), onde h = altura da arvore
-        //DEL!
-        Node* current = this->root;
-
-        while(current != nullptr) {
-            if(current->info == info) {
-                return current;
-            } else if(current->info > info) {
-                current = current->left;
-            } else {
-                current = current->right;
-            }
-        }
-
+        (void) info;
         return nullptr;
-        //ACT!
-        // (void) info;
-        // return nullptr;
-        //ADD!
     }
 
     // Adiciona um elemento na arvore.
@@ -60,34 +44,8 @@ struct BSTree {
     // info: informacao do elemento a ser inserido
     void insert(int info) {
         // TODO: Complexidade O(h), onde h = altura da arvore
-        //DEL!
-        if(this->empty()) {
-            this->root = new Node(info);
-        }
-
-        Node* current = this->root;
-        Node* parent = nullptr;
-
-        while(current != nullptr) {
-            parent = current;
-            if(current->info > info) {
-                current = current->left;
-            } else if(current->info < info) {
-                current = current->right;
-            } else {
-                return;
-            }
-        }
-
-        if(parent->info > info) {
-            parent->left = new Node(info);
-        } else {
-            parent->right = new Node(info);
-        }
-        //ACT!
-        // (void) info;
-        // return;
-        //ADD!
+        (void) info;
+        return;
     }
     /*
         Exemplo:
@@ -111,54 +69,19 @@ struct BSTree {
     // Retorna a quantidade de elementos da arvore.
     int size() {
         // TODO: Complexidade O(n)
-        //DEL!
-        if (this->empty()) return 0;
-        return _size(this->root);
-        //ACT!
-        // return 0;
-        //ADD!
+        return 0;
     }
-    //DEL!
-    int _size(Node* current) {
-        if(current == nullptr) return 0;
-        return _size(current->left) + _size(current->right) + 1;
-    }
-    //ADD!
     // Retorna o menor elemento da arvore, ou -1 caso nao exista
     int min() {
         // TODO: Complexidade O(h), onde h = altura da arvore
-        //DEL!
-        if(this->empty()) return -1;
-
-        Node* current = this->root;
-
-        while (current->left != nullptr) {
-            current = current->left;
-        }
-
-        return current->info;
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
 
     // Retorna o maior elemento da arvore, ou -1 caso nao exista
     int max() {
         // TODO: Complexidade O(h), onde h = altura da arvore
-        //DEL!
-        if(this->empty()) return -1;
-
-        Node* current = this->root;
-
-        while(current->right != nullptr) {
-            current = current->right;
-        }
-
-        return current->info;
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
 
     // Deixa a lista vazia, com zero elementos
@@ -196,4 +119,3 @@ struct BSTree {
         }
     }
 };
-

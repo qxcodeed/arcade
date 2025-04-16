@@ -75,48 +75,44 @@ Estudar análise de algoritmos também revela os limites e aplicabilidades de ca
 
 Nesse bloco, abordaremos o conceito de recursividade, uma técnica de programação que permite que uma função chame a si mesma para resolver problemas de forma mais elegante e eficiente. Entender recursividade pode ajudar a simplificar problemas complicados e tornar a programação mais fácil e eficaz.
 
-### Recursão: Estudo <!-- @rec_intro r:intro -->
+### Recursão: Estudo <!-- @rec_intro r:intro l:cpp -->
 
 - [ ] `#cpp_rec_view :info`[Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
 - [ ] `#cpp_rec_read :info`[Recursividade](wiki/recursao/recursao.md)
 
-### Recursão: Treinando conceitos I<!-- @con_rec r:rec_intro -->
 
-- [ ] `@binomiais    L0 :test` [Calculando coeficientes](base/binomiais/Readme.md)
-- [ ] `@escada       L0 :test` [De quantas maneiras podemos subir](base/escada/Readme.md)
-- [ ] `@diagonal     L1 :test` [Imprimindo um char por linha](base/diagonal/Readme.md)
-- [ ] `@padroes1     L1 :test` [Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
-- [ ] `@sufixos      L1 :test` [Imprimindo palavra em pedaços](base/sufixos/Readme.md)
-- [ ] `@empilhamento L1 :test` [Empilhamento de divisões](base/empilhamento/Readme.md)
-- [ ] `@mdc          L2 :test` [Implemente o mdc recursivo](base/mdc/Readme.md)
+### Recursão: Padrões e conceitos<!-- @con_rec r:rec_intro -->
 
-### Recursão: Treinando conceitos II <!-- @rec_basic r:con_rec -->
+- [ ] `@escada     L0 :test`[De quantas maneiras podemos subir](base/escada/Readme.md)
+- [ ] `@binomiais  L0 :test`[Calculando coeficientes](base/binomiais/Readme.md)
+- [ ] `@diagonal   L1 :test`[Imprimindo um char por linha](base/diagonal/Readme.md)
+- [ ] `@sufixos    L1 :test`[Imprimindo palavra em pedaços](base/sufixos/Readme.md)
+- [ ] `@padroes1   L1 :test`[Descobrindo quantos bloquinhos](base/padroes1/Readme.md)
+- [ ] `@padroes2   L2 :test`[Descobrindo quantas pecinhas](base/padroes2/Readme.md)
+- [ ] `@padroes3   L3 :test`[Descobrindo quantos pontos](base/padroes3/Readme.md)
+- [ ] `@quadrado   L2 :test`[Aragão calculando n ao quadrado](base/quadrado/Readme.md)
+- [ ] `@fib1       L2 :test`[Coelhos procriando](base/fib1/Readme.md)
+- [ ] `@fib2       L3 :test`[Coelhos procriando e morrendo](base/fib2/Readme.md)
+- [ ] `@santo JM   L3 :test`[O milagre de ficar pobre](base/santo/Readme.md)
+- [ ] `@bitcoin    L3 :test`[Investindo em ativos digitais](base/bitcoin/Readme.md)
 
-- [ ] `@padroes2  L2 :test`[Descobrindo quantas pecinhas](base/padroes2/Readme.md)
-- [ ] `@santo JM  L2 :test`[O milagre de ficar pobre](base/santo/Readme.md)
-- [ ] `@fibonacci L2 :test`[Procriando coelhos](base/fibonacci/Readme.md)
-- [ ] `@quadrado  L2 :test`[Aragão calculando n ao quadrado](base/quadrado/Readme.md)
-- [ ] `@bitcoin   L2 :test`[Investindo em ativos digitais](base/bitcoin/Readme.md)
-
-### Recursão: Desafios <!-- @rec_desafios r:rec_basic t:7 -->
+### Recursão: Vetores e Matrizes<!-- @rec_desafios r:rec_basic t:7 -->
 
 - [ ] `@triangulo  L1 :test`[Imprimindo ao contrário](base/triangulo/Readme.md)
-- [ ] `@fibonacci2 L3 :test`[Fazendo filhos e morrendo](base/fibonacci2/Readme.md)
-- [ ] `@padroes3   L3 :test`[Contando pontos](base/padroes3/Readme.md)
-- [ ] `@queimada   L2 :test`[Tocando fogo na floresta](base/queimada/Readme.md)
+- [ ] `@queimada   L1 :test`[Tocando fogo na floresta](base/queimada/Readme.md)
 - [ ] `@treinando  L2 :test`[Treinando recursão com vetores](base/treinando/Readme.md)
+- [ ] `@labirinto  L3 :test`[Escapando do labirinto](base/labirinto/Readme.md)
+- [ ] `@distancia  L3 :test`[Colocando os números no lugar certo](base/distancia/Readme.md)
+- [ ] `@sudoku     L3 :test`[Sudoku](base/sudoku/Readme.md)
 
-### Recursão: Exercícios com matemática <!-- @rec_primos r:rec_basic -->
 
-- [ ] `@eh_primo  L1 :test`[Retorna se é ou não é](base/eh_primo/Readme.md)
-- [ ] `@enesimo   L2 :test`[Gere o enesimo primo](base/enesimo/Readme.md)
-- [ ] `@priminhos L2 :test`[Carrega a lista de primos](base/priminhos/Readme.md)
+### Recursão: Exercícios com matemática <!-- r:rec_basic -->
 
-### Recursão: Backtracking <!-- @backtracking r:rec_desafios -->
-
-- [ ] `@labirinto L2  :test`[Escapando do labirinto](base/labirinto/Readme.md)
-- [ ] `@distancia L2  :test`[Colocando os números no lugar certo](base/distancia/Readme.md)
-- [ ] `@sudoku    L3  :test`[L3 - @sudoku](base/sudoku/Readme.md)
+- [ ] `@resto      L1 :test`[Divisão e Resto](base/resto/Readme.md)
+- [ ] `@mdc        L1 :test`[Implemente o mdc recursivo](base/mdc/Readme.md)
+- [ ] `@eh_primo   L1 :test`[Retorna se é ou não é](base/eh_primo/Readme.md)
+- [ ] `@enesimo    L2 :test`[Gere o enesimo primo](base/enesimo/Readme.md)
+- [ ] `@priminhos  L2 :test`[Carrega a lista de primos](base/priminhos/Readme.md)
 
 ## Ordenação
 

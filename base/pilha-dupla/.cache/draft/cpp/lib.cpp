@@ -50,10 +50,6 @@ struct DoubleStack {
     // Nao faz nada caso a pilha esteja vazia.
     void popA() {
         // TODO: Complexidade O(1)
-        //DEL!
-        if(this->emptyA()) return;
-        this->sizeA--;
-        //ADD!
     }
     // Exemplo:
     // Pilha A:[1,2,3]
@@ -67,12 +63,7 @@ struct DoubleStack {
     // Retorna -1, caso a pilha A esteja vazia.
     int peekA() {
         // TODO: Complexidade O(1)
-        //DEL!
-        if(this->emptyA()) return -1;
-        return this->Arr[this->sizeA-1];
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
 
     }
     // Exemplo:
@@ -84,9 +75,6 @@ struct DoubleStack {
     // Remove todos os elementos da pilha
     void clearA() {
         // TODO: Complexidade O(1)
-        //DEL!
-        this->sizeA = 0;
-        //ADD!
     }
     // Exemplo:
     // Pilha A:[]
@@ -97,11 +85,7 @@ struct DoubleStack {
     // Devolve true se vazia e false caso contrario
     bool emptyA() {
         // TODO: Complexidade O(1)
-        //DEL!
-        return this->sizeA == 0;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     }
     // Exemplo:
     // Pilha A:[]
@@ -119,14 +103,7 @@ struct DoubleStack {
     // info: informacao do elemento a ser inserido
     void pushB(int info) {
         // TODO: Complexidade O(1)
-        //DEL!
-        if(!this->full()) {
-            this->Arr[this->capacity - this->sizeB - 1] = info;
-            this->sizeB++;
-        }
-        //ACT!
-        // (void) info;
-        //ADD!
+        (void) info;
     }
     // Exemplo:
     // Pilha A:[1,2,3]
@@ -140,11 +117,6 @@ struct DoubleStack {
     // Nao faz nada caso a pilha esteja vazia.
     void popB() {
         // TODO: Complexidade O(1)
-        //DEL!
-        if(!this->emptyB()){
-            this->sizeB--;
-        }
-        //ADD!
 
     }
     // Exemplo:
@@ -159,12 +131,7 @@ struct DoubleStack {
     // Retorna -1, caso a pilha A esteja vazia.
     int peekB() {
         // TODO: Complexidade O(1)
-        //DEL!
-        if (this->emptyB()) return -1;
-        return this->Arr[this->capacity - this->sizeB];
-        //ACT!
-        // return -1;
-        //ADD!
+        return -1;
     }
     // Exemplo:
     // Pilha A:[1,2,3]
@@ -175,9 +142,6 @@ struct DoubleStack {
     // Remove todos os elementos da pilha
     void clearB() {
         // TODO: Complexidade O(1)
-        //DEL!
-        this->sizeB = 0;
-        //ADD!
     }
     // Exemplo:
     // Pilha A:[1,2,3]
@@ -190,11 +154,7 @@ struct DoubleStack {
     // Devolve true se vazia e false caso contrario
     bool emptyB() {
         // TODO: Complexidade O(1)
-        //DEL!
-        return this->sizeB == 0;
-        //ACT!
-        // return false;
-        //ADD!
+        return false;
     }
 
 
@@ -217,4 +177,3 @@ struct DoubleStack {
 
 
 };
-

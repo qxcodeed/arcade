@@ -23,12 +23,8 @@ struct SequentialListInt {
     // Retorna o valor do elemento na posicao 'index'
     int get(int index){//O(1)
         // TODO: Retornar elemento na posicao 'index'
-        //DEL!
-        return arrayList[index];
-
-        //ACT!
-        //(void) index;
-        //return -1;
+        (void) index;
+        return -1;
     }
 
     // Retorna a posicao do primeiro elemento com valor igual a 'item'.
@@ -38,31 +34,14 @@ struct SequentialListInt {
         //       um elemento igual a 'item'.
         
         // TODO: Retornar -1 caso nao encontre o elemento.
-        //DEL!
-        for(int i = 0; i < size; i++){
-            if(arrayList[i] == item){
-                return i;
-            }
-        }
+        (void) item;
         return -1;
-
-        //ACT!
-        //(void) item;
-        //return -1;
     }
 
     // Se houver espaco na lista, insere o
     // elemento 'item' no final da lista.
     void insertBack(int item){ // O(1)
-        //DEL!
-        if(size == maxSize)
-            return;
-
-        arrayList[size] = item;
-        size++;
-
-        //ACT!
-        //(void) item;
+        (void) item;
     }
 
     // Se houver espaco na lista, insere o
@@ -78,28 +57,13 @@ struct SequentialListInt {
         //       na posicao 'index'.
         
         // TODO: Atualize o 'size'
-        //DEL!
-        if(size == maxSize){
-            return;
-        }
-        for(int i = size; i > index; i--){
-            arrayList[i] = arrayList[i - 1];
-        }
-        
-        arrayList[index] = item;
-        size++;
-
-        //ACT!
-        //(void) item;
-        //(void) index;
+        (void) item;
+        (void) index;
     }
 
     // Se a lista nao estiver vazia,
     // remove o ultimo elemento.
     void removeBack(){ // O(1)
-        //DEL!
-        if(size == 0) return;
-        size--;
     }
 
     // Se a lista nao estiver vazia,
@@ -112,58 +76,27 @@ struct SequentialListInt {
         //       'index' uma posicao para esquerda.
         
         // TODO: Atualize o 'size'.
-        //DEL!
-        if(size == 0){
-            return;
-        }
-        for(int i = index; i < size; i++){
-            arrayList[i] = arrayList[i + 1];
-        }
-        size--;
-
-        //ACT!
-        //(void) index;
+        (void) index;
     }
 
     // Remove elementos da lista
     void clear(){
         // TODO: Atualize o 'size'.
-        //DEL!
-        size = 0;
     }
 
     // Retorna o tamanho da lista
     int lenght(){
-        //DEL!
-        return size;
-
-        //ACT!
-        //return -1;
+        return -1;
     }
 
     bool isEmpty(){
         // TODO: Retorne true quando a lista nao possui elementos.
-        //DEL!
-        if(size == 0){
-            return true;
-        }
         return false;
-
-        //ACT!
-        //return false;
     }
 
     bool isFull(){
         // TODO: Retorne true quando a quantidade de elementos esta no maximo.
-        //DEL!
-        if(size == maxSize){
-            return true;
-        }
-        
         return false;
-
-        //ACT!
-        //return false;
     }
 
     // Printa elementos da lista

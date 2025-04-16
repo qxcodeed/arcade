@@ -49,14 +49,6 @@ struct DLinkedList {
     // index: posicao do elemento
     bool hasInfo(int info){
         // TODO: Complexidade O(n)
-        //DEL!
-        for(Node *temp = head; temp != NULL; temp = temp->next){
-            if(temp->info == info)
-                return true;
-        }
-        return false;
-        
-        //ACT!
         (void)info;
         return false;
     }
@@ -94,16 +86,6 @@ struct DLinkedList {
         // TODO: Complexidade O(1)
         // dica: utilize o 'tail' para realizar
         //       a operacao em O(1)
-        //DEL!
-        if(tail == NULL){
-            head = tail = new Node(info, NULL, NULL);
-        }else{
-            Node* newNode = new Node(info, NULL, tail);
-            tail->next = newNode;
-            tail = newNode;
-        }
-
-        //ACT!
         (void)info;
     }
     // Exemplo:
@@ -117,17 +99,6 @@ struct DLinkedList {
     void pop_front(){
         // TODO: Complexidade O(1)
         // dica: separe em 3 casos: lista vazia, somente 1 No, mais de 1 No
-        //DEL!
-        if(head == NULL) return;
-        if(head == tail){
-            delete head;
-            head = tail = NULL;
-        }else{
-            Node* temp = head;
-            head = head->next;
-            head->previous = NULL;
-            delete temp;
-        }
     }
     // Exemplo:
     // L == 10 <-> 20 <-> 15 <-> 50
@@ -141,17 +112,6 @@ struct DLinkedList {
         // TODO: Complexidade O(1)
         // dica: utilize o 'tail->previous' para realizar
         //       a operacao em O(1)
-        //DEL!
-        if(tail == NULL) return;
-        if(head == tail){
-            delete head;
-            head = tail = NULL;
-        }else{
-            Node* temp = tail;
-            tail = tail->previous;
-            tail->next = NULL;
-            delete temp;
-        }
     }
     // Exemplo:
     // L == 10 <-> 20 <-> 15 <-> 50
@@ -164,23 +124,6 @@ struct DLinkedList {
     // info: informacao do No a ser removido.
     void remove_one(int info){
         //TODO: Complexidade O(n)
-        //DEL!
-        for(Node *temp = head; temp != NULL; temp = temp->next){
-            if(temp->info == info){
-                if(temp == head){
-                    pop_front();
-                }else if(temp == tail){
-                    pop_back();
-                }else{
-                    temp->previous->next = temp->next;
-                    temp->next->previous = temp->previous;
-                    delete temp;
-                }
-                return;
-            }
-        }
-
-        //ACT!
         (void)info;
     }
     // Exemplo:
@@ -250,4 +193,3 @@ struct DLinkedList {
         std::cout << "]" << std::endl;
     }    
 };
-

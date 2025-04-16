@@ -14,23 +14,8 @@ int minStack(stack<int> pilha){
     // pilha.push(info);  // adiciona info no topo da pilha
     // pilha.pop();       // remove do topo da pilha
     // pilha.empty();     // retorna se a pilha esta vazia
-    //DEL!
-    if(pilha.empty()) return -1;
-
-    int min = pilha.top();
-    while(!pilha.empty()) {
-        if(pilha.top() < min) {
-            min = pilha.top();
-        } 
-
-        pilha.pop();
-    }
-
-    return min;
-    //ACT!
-    // ( void ) pilha;
-    // return -1;
-    //ADD!
+    ( void ) pilha;
+    return -1;
 }
 
 
@@ -39,24 +24,8 @@ int minStack(stack<int> pilha){
 // Pode assumir que a pilha possui pelo menos um elemento
 int maxStack(stack<int> pilha) {
     //TODO: Complexidade O(n), onde n = tamanho da pilha
-    //DEL!
-    if(pilha.empty()) return -1;
-    
-    int max = pilha.top();
-
-    while(!pilha.empty()) {
-        if(pilha.top() > max) {
-            max = pilha.top();
-        }
-
-        pilha.pop();
-    }
-
-    return max;
-    //ACT!
-    // ( void ) pilha;
-    // return -1;
-    //ADD!
+    ( void ) pilha;
+    return -1;
 }
 
 

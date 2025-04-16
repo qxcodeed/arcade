@@ -1,4 +1,4 @@
-# Empilhamento de divisões
+# Divisão e Resto
 
 ![_](cover.jpg)
 

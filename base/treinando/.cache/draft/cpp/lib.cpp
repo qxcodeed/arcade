@@ -3,7 +3,7 @@
 
 namespace alu {
 
-//==
+//=
     std::string __tostr(int * init, int * end) {
         if (init == end) {
             return "";
@@ -30,17 +30,16 @@ namespace alu {
         return __torev(init + 1, end) + ", " + std::to_string(*init);
     }
 
-//++1
+// ADD!1
     std::string torev(int * init, int * end) {
         std::string output = __torev(init, end);
         if (output.size() > 0) { //se tiver pelo menos um elemento
             output = output.substr(2); //remove os dois primeiros caracteres
         }
         return "[" + output + "]";
-        //ACT!
-        // (void) init;
-        // (void) end;
-        // return "";
+        (void) init;
+        (void) end;
+        return "";
     }
 
     void reverse(int * init, int * end) {
@@ -49,9 +48,8 @@ namespace alu {
         }
         std::swap(*init, *(end - 1));
         reverse(init + 1, end - 1);
-        //ACT!
-        // (void) init;
-        // (void) end;
+        (void) init;
+        (void) end;
     }
 
     int sum(int * init, int * end) {
@@ -59,10 +57,9 @@ namespace alu {
             return 0;
         }
         return *init + sum(init + 1, end);
-        //ACT!
-        // (void) init;
-        // (void) end;
-        // return 0;
+        (void) init;
+        (void) end;
+        return 0;
     };
 
     int mult(int * init, int * end) {
@@ -70,10 +67,9 @@ namespace alu {
             return 1;
         }
         return *init * mult(init + 1, end);
-        //ACT!
-        // (void) init;
-        // (void) end;
-        // return 0;
+        (void) init;
+        (void) end;
+        return 0;
     };
 
 //--
@@ -96,14 +92,13 @@ namespace alu {
         return {0, *init};
 
     };
-//++1
+// ADD!1
     int min(int * init, int * end) {
         auto [ind, value] = __min(init, end);
         return ind;
-        //ACT!
-        // (void) init;
-        // (void) end;
-        // return -1;
+        (void) init;
+        (void) end;
+        return -1;
     };
 
 } // namespace alu

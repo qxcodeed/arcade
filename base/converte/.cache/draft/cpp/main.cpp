@@ -73,20 +73,7 @@ DLinkedList::Node* convertToDouble(SLinkedList::Node *head){
         return newHead;
     } else { // lista com mais de um No
         // TODO: complete a funcao aqui
-        //DEL!
-        DLinkedList::Node* newHead = new DLinkedList::Node(head->info, nullptr, nullptr);
-        DLinkedList::Node* current = newHead;
-        SLinkedList::Node* currentS = head->next;
-        while(currentS != nullptr){
-            DLinkedList::Node* newNode = new DLinkedList::Node(currentS->info, nullptr, current);
-            current->next = newNode;
-            current = newNode;
-            currentS = currentS->next;
-        }
-        return newHead;
-
-        //ACT!
-        // return new DLinkedList::Node("", nullptr, nullptr);
+        return new DLinkedList::Node("", nullptr, nullptr);
     }
 }
 // Exemplo:
