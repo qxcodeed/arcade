@@ -35,24 +35,21 @@ Significado das tags nas questões:
 - [ ] `@rotacoes    +03 :leet`[Rotacoes em uma lista](base/rotacoes/Readme.md)
 - [ ] `@alternando  +04 :leet`[Princesa v2](base/alternando/Readme.md)
 
-### Recursão: Vetores e Matrizes
+### Recursão
 
-- [ ] `#c_rec_view  +03  :info`[Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
-- [ ] `#rec_read    +01  :info`[Recursividade](wiki/recursao/recursao.md)
-- [ ] `@triangulo   *02  :leet`[Imprimindo ao contrário](base/triangulo/Readme.md)
-- [ ] `@queimada    *02  :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
-- [ ] `@treinando   *04  :leet`[Treinando recursão com vetores](base/treinando/Readme.md)
-- [ ] `@labirinto   *04  :leet`[Escapando do labirinto](base/labirinto/Readme.md)
-- [ ] `@distancia   +05  :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
-- [ ] `@sudoku      +10  :leet`[Sudoku](base/sudoku/Readme.md)
-
-### Recursão: Matemática
-
-- [ ] `@resto       *01 :leet`[Divisão e Resto](base/resto/Readme.md)
-- [ ] `@mdc         *01 :leet`[Implemente o mdc recursivo](base/mdc/Readme.md)
-- [ ] `@eh_primo    +02 :leet`[Retorna se é ou não é](base/eh_primo/Readme.md)
-- [ ] `@enesimo     +02 :leet`[Gere o enesimo primo](base/enesimo/Readme.md)
-- [ ] `@priminhos   +03 :leet`[Carrega a lista de primos](base/priminhos/Readme.md)
+- [ ] `#crec_view vídeo      +03  :info`[Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
+- [ ] `#rec_read  leitura    +01  :info`[Recursividade](wiki/recursao/recursao.md)
+- [ ] `@triangulo vetores    *02  :leet`[Imprimindo ao contrário](base/triangulo/Readme.md)
+- [ ] `@treinando vetores    *04  :leet`[Treinando recursão com vetores](base/treinando/Readme.md)
+- [ ] `@queimada  vetores    *02  :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
+- [ ] `@resto     matemática *01  :leet`[Divisão e Resto](base/resto/Readme.md)
+- [ ] `@mdc       matemática *01  :leet`[Implemente o mdc recursivo](base/mdc/Readme.md)
+- [ ] `@eh_primo  matemática +02  :leet`[Retorna se é ou não é](base/eh_primo/Readme.md)
+- [ ] `@enesimo   matemática +02  :leet`[Gere o enesimo primo](base/enesimo/Readme.md)
+- [ ] `@priminhos matemática +03  :leet`[Carrega a lista de primos](base/priminhos/Readme.md)
+- [ ] `@labirinto retrocesso *04  :leet`[Escapando do labirinto](base/labirinto/Readme.md)
+- [ ] `@distancia retrocesso +05  :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
+- [ ] `@sudoku    retrocesso +10  :leet`[Sudoku](base/sudoku/Readme.md)
 
 ### Vetor
 
