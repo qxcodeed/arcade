@@ -39,9 +39,6 @@ Os métodos riscados já estão implementados; você deve implementar os demais 
 ## Draft
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

@@ -14,8 +14,6 @@ A pilha é uma **estrutura de dados linear** que segue o princípio **LIFO (Last
 ## Draft
 
 <!-- links .cache/draft -->
-- cpp
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

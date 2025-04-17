@@ -15,7 +15,7 @@ encontramos
 - 1 de **'abc'** e
 - 0 de **'bc'**.
 
-Para cada consulta, adicionamos um elemento ao nosso vetor de retorno. 
+Para cada consulta, adicionamos um elemento ao nosso vetor de retorno.
 
 ## Descrição da função
 
@@ -25,6 +25,12 @@ matchingStrings possui os seguintes parâmetros:
 
 - *strings* - uma matriz de strings para pesquisar
 - *consultas* - uma matriz de cadeias de consulta
+
+## Como fazer
+
+- Utilize um mapa para preprocessar a matriz de strings guardando antecipadamente quais elementos existem e em que quantidade.
+- Depois faça um laço com as consultas, consultando pela chave do mapa.
+
 
 ## Formato de entrada
 
@@ -39,13 +45,31 @@ Retorne um vetor inteiro dos resultados de todas as consultas em ordem.
 
 ## Testes
 
-```txt
->>>>>>>> 01
+```py
+>>>>>>>> 00
 4 
 aba baba aba xzxb 
 3
 aba xzxb ab
 ========
 2 1 0
+<<<<<<<<
+
+>>>>>>>> 01
+3
+c c mpikv
+8
+f c o uplbd o zl xoi mpikv
+========
+0 2 0 0 0 0 0 1
+<<<<<<<<
+
+>>>>>>>> 02
+7
+qu qu pg qu qu cjyrx y
+6
+o qu sxsse b pd yuv
+========
+0 4 0 0 0 0
 <<<<<<<<
 ```

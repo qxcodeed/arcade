@@ -35,9 +35,6 @@ Os métodos riscados estão prontos. Você precisará implementar os métodos `p
 - Implemente os métodos faltantes no arquivo `lib.cpp` usando a lógica apropriada para uma pilha baseada em array.
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

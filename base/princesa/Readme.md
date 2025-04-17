@@ -22,7 +22,7 @@ ___
 
 ## Implementação usando vetor
 
-### Abordagem I
+### Abordagem I - Custo O(N * LogN)
 
 - marcando os elementos que morrem.
   - toda vez que alguém morrer, marque 0 no vetor
@@ -36,7 +36,7 @@ vivos[pos] = false;
 int prox = procurar_vivo(elementos, size, pos);
 ```
 
-### Abordagem II
+### Abordagem II - Custo O(N^2)
 
 - retirando os elementos que morrem e diminuindo o tamanho do vetor.
   - reposicione os elementos "puxando" todos os que estiverem à frente
@@ -54,23 +54,6 @@ pos = pos % size; //se ele era o último agora é o zero
 
 - Qual dos algoritmos você acha que é mais eficiente?
 - Implemente os dois e vá aumentando a instância do problema e veja o resultado.
-
-___
-
-## Implementação usando listas
-
-Resolva novamente o problema utilizando uma lista ligada no lugar do vetor.
-
-```c
-struct Node{
-    int value;
-    Node * next;
-};
-
-```
-
-___
-Testes:
 
 ```txt
 >>>>>>>> 01

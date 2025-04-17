@@ -1,6 +1,6 @@
 # Princesa2 com lista ligada
 
-[![_](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![_](../princesa-lista-2/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.
 

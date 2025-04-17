@@ -12,6 +12,8 @@ Implemente a operação de rotação. Observe que calculando as posições finai
 - Saída
   - Vetor rotacionado
 
+O custo do algorítmo deve ser O(N).
+
 ```txt
 >>>>>>>>
 5 0

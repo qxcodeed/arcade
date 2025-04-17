@@ -1,5 +1,9 @@
 # Análise de Algoritmos
 
+A análise de algoritmos é essencial para entender e avaliar a eficiência das soluções computacionais. Ela permite medir o desempenho dos algoritmos em termos de tempo e espaço, facilitando a comparação entre diferentes abordagens para a mesma tarefa. Compreender a complexidade computacional ajuda a tomar decisões informadas sobre qual algoritmo utilizar, otimizando recursos e melhorando a performance do sistema.
+
+Estudar análise de algoritmos também revela os limites e aplicabilidades de cada solução, evitando o uso inadequado e promovendo a criação de algoritmos mais eficientes e inovadores. Esse conhecimento é crucial não apenas para a resolução de problemas reais, mas também para o desenvolvimento de software otimizado e para a preparação em entrevistas técnicas, onde a análise de algoritmos é frequentemente testada.
+
 ## Introdução e Definição
 
 A análise de algoritmos é uma área fundamental da ciência da computação que se concentra em entender a eficiência dos algoritmos, tanto em termos de tempo quanto de espaço (memória) utilizados. Um algoritmo é uma sequência finita de passos que resolve um problema específico. Avaliar a eficiência dos algoritmos nos ajuda a escolher a melhor solução para um problema dado, especialmente quando lidamos com grandes quantidades de dados. Um bom algoritmo pode superar um algoritmo ruim, mesmo em um hardware inferior, especialmente em instâncias grandes do problema.

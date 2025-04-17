@@ -32,7 +32,4 @@ OBS.: Não altere os métodos já implementados.
 OBS.2: Não precisa escrever a main() nem alterar o arquivo main.cpp.
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->

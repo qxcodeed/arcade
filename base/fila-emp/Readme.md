@@ -37,9 +37,6 @@ Os métodos riscados já estão implementados; você deverá implementar os dema
 ## Draft
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Test
