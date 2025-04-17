@@ -36,9 +36,12 @@ func mult(vet []int) int {
 }
 
 // min: retorna o índice e valor do menor valor
-func min(vet []int) (int, int) {
+// crie uma função recursiva interna do modelo
+// var rec func(v []int) (int, int)
+// para fazer uma recursão que retorna valor e índice
+func min(vet []int) int {
 	_ = vet
-	return 0, 0
+	return 0
 }
 
 func main() {
@@ -73,8 +76,7 @@ func main() {
 		case "mult":
 			fmt.Println(mult(vet))
 		case "min":
-			_, index := min(vet)
-			fmt.Println(index)
+			fmt.Println(min(vet))
 		default:
 			fmt.Println("fail: comando invalido")
 		}

@@ -41,6 +41,9 @@ int mult(int * init, int * end) {
 
 // DESAFIO
 // retorne a posição do menor elemento do vetor
+// crie uma função auxiliar __min
+// que retorne a posição e o valor do menor elemento
+// se o vetor estiver vazio, retorne -1
 int min(int * init, int * end) {
     (void) init;
     (void) end;
