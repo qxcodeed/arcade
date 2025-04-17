@@ -1,6 +1,6 @@
 # Fila como duas pilhas
 
-![_](cover.jpg)
+![_](../fila/cover.jpg)
 
 ## Descrição da função
 
