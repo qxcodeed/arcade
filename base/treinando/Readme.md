@@ -1,71 +1,24 @@
 # Treinando recursão com vetores
 
 <!-- toch -->
-[Intro](#intro) | [Atenção](#atenção) | [Draft](#draft) | [Shell](#shell)
--- | -- | -- | --
+[Intro](#intro) | [Draft](#draft) | [Shell](#shell)
+-- | -- | --
 <!-- toch -->
 
 ![_](cover.jpg)
 
 ## Intro
 
-- Dado um vetor de inteiros, implemente funções recursivas para as seguintes operações.
-- `lib.cpp`: onde você fará a implementação dos métodos.
-- `lib.hpp`: A descrição dos métodos a ser implementados.
-- `fn.hpp`: arquivo auxiliar para realizar leitura e escrita de dados.
-- `main.cpp`: arquivo que faz a leitura das solicitações, invoca as funções e imprime as respostas.
-
-## Atenção
-
+- Dado um vetor de inteiros, implemente funções recursivas para todas as operações solicitadas.
 - Algumas funções vão precisar que você crie funções recursivas auxiliares.
-- Ao terminar de implentar uma função execute os testes e só vá para próxima após passar nos testes.
+- Ao terminar de implentar uma função, execute os testes e só vá para próxima após passar nos testes.
 - Na seção Shell, você pode ver os testes que serão executados.
 - Na seção Draft, você pode baixar manualmente os arquivos. Mas é mais prático utilizar o `tko`.
-- No arquivo `lib.cpp`, o método `tostr` está implmentado como modelo.
-- A seguir, o arquivo `lib.hpp` para consulta:
-
-<!-- load src/cpp/lib.hpp fenced:cpp -->
-
-```cpp
-//lib.hpp
-#pragma once
-#include <iostream>
-
-namespace alu {
-    // init: aponta para o primeiro elemento do vetor
-    // end: aponta para uma posição depois do último elemento do vetor
-    // converte o vetor para texto no formato [1, 2, 3, 4]
-    std::string tostr(int * init, int * end);
-
-    // converte o vetor para texto, porém ao contrário
-    std::string torev(int * init, int * end);
-
-    // inverte os elementos do vetor inplace
-    void reverse(int * init, int * end);
-
-    // soma os elementos do vetor
-    int sum(int * init, int * end);
-
-    // multiplica os elementos do vetor
-    // retorne 1, se o vetor estiver vazio
-    int mult(int * init, int * end);
-
-    // DESAFIO
-    // retorne a posição do menor elemento do vetor
-    int min(int * init, int * end);
-
-} // namespace alu
-```
-
-<!-- load -->
 
 ## Draft
 
 <!-- links .cache/draft -->
 - cpp
-  - [fn.hpp](.cache/draft/cpp/fn.hpp)
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [lib.hpp](.cache/draft/cpp/lib.hpp)
   - [main.cpp](.cache/draft/cpp/main.cpp)
 - go
   - [main.go](.cache/draft/go/main.go)
