@@ -53,6 +53,7 @@ Significado das tags nas questões:
 
 ### Vetor
 
+- [ ] `@vetbuild    *10 :make`[Implementando lista sequencial dinâmica](base/vetbuild/Readme.md)
 - [ ] `@ponteiros   *01 :make`[Implementando vector com ponteiros](base/ponteiros/Readme.md)
 - [ ] `@classes     *01 :make`[Implementando vector com @classes](base/classes/Readme.md)
 - [ ] `@inteiros    *01 :make`[Lista Sequencial de Inteiros](base/inteiros/Readme.md)
@@ -83,7 +84,7 @@ Significado das tags nas questões:
 
 ### Fila
 
-- [ ] `@fila_2p       *01 :make`[Fila como duas pilhas](base/fila_2p/Readme.md)
+- [ ] `@fila_2p     *01 :make`[Fila como duas pilhas](base/fila_2p/Readme.md)
 - [ ] `@fila_enc    *01 :make`[Fila encadeada CPP](base/fila_enc/Readme.md)
 - [ ] `@fila_seq    *01 :make`[Fila sequencial CPP](base/fila_seq/Readme.md)
 - [ ] `@fila_emp    *01 :make`[Utilizando Pilhas para a Criação de uma Fila CPP](base/fila_emp/Readme.md)
@@ -146,10 +147,10 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `@agenda      *00 :leet`[Gerencie contatos e telefones](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
 - [ ] `#cpp_cpref   *00 :info`[Como fazer sobrecarga de cópia e referencia](wiki/tad/sobrecarga.md)
 - [ ] `#cpp_oper    *00 :info`[Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
-- [ ] `L2 @ponto    *00 :leet`[Implemente a classe ponto](base/ponto/Readme.md)
-- [ ] `L2 @fracao   *00 :leet`[Implemente a classe fração reduzida](base/fracao/Readme.md)
-- [ ] `L2 @pontoGo  *00 :make`[Implemente a classe ponto](base/pontoGo/Readme.md)
-- [ ] `L2 @fracaoGo *00 :make`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
+- [ ] `@ponto       *00 :leet`[Implemente a classe ponto](base/ponto/Readme.md)
+- [ ] `@fracao      *00 :leet`[Implemente a classe fração reduzida](base/fracao/Readme.md)
+- [ ] `@pontoGo     *00 :make`[Implemente a classe ponto](base/pontoGo/Readme.md)
+- [ ] `@fracaoGo    *00 :make`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
 
 ### Listas: extra
 
