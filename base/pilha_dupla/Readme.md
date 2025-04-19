@@ -38,6 +38,9 @@ A estrutura de dados será uma **Lista Sequencial** onde os elementos são armaz
 - Implemente os métodos faltantes no arquivo `lib.cpp` com base nas descrições fornecidas para cada operação.
 
 <!-- links .cache/draft -->
+- cpp
+  - [lib.cpp](.cache/draft/cpp/lib.cpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests

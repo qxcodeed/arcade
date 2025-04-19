@@ -33,6 +33,9 @@ Os métodos riscados já estão implementados. Você deve completar os métodos 
 - Implemente os métodos faltantes no arquivo `lib.cpp` conforme as instruções fornecidas.
 
 <!-- links .cache/draft -->
+- cpp
+  - [lib.cpp](.cache/draft/cpp/lib.cpp)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
 <!-- links -->
 
 ## Tests
