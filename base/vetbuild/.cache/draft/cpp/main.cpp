@@ -1,36 +1,36 @@
 /*
-Vector representa um array dinâmico que pode crescer conforme necessário.
-Ele fornece métodos para manipular o array, como adicionar, remover e acessar elementos.
-
 class Vector {
-- int* data;          // Guarda os elementos do vetor
-- int size;           // Guarda o número atual de elementos
-- int capacity;       // Guarda a capacidade atual do vetor
-__
-+ Vector(int capacity);                // Cria um novo vetor com a capacidade inicial especificada
-+ void reserve(int newCapacity);      // Redimensiona a capacidade do vetor para pelo menos o valor especificado
-+ void pushBack(int value);           // Adiciona um valor ao final do vetor, redimensionando se necessário
-+ int getSize();                      // Retorna o número atual de elementos no vetor
-__
-+ bool popBack();                     // Remove o último elemento do vetor. Retorna false se o vetor estiver vazio
-+ int getCapacity();                  // Retorna a capacidade atual do vetor
-+ std::string status();              // Retorna o tamanho e a capacidade do vetor
-+ std::string str();                 // Retorna uma representação em string dos elementos do vetor
-__
-+ int get(int index);                         // Retorna o elemento no índice especificado sem verificação de limites
-+ std::pair<int, bool> at(int index);        // Retorna o elemento no índice especificado com verificação de limites. Retorna false se o índice estiver fora dos limites
-+ bool set(int index, int value);            // Define o valor no índice especificado. Retorna false se o índice estiver fora dos limites
-+ void clear();                              // Limpa todos os elementos do vetor
-__
-+ bool insert(int index, int value);         // Insere um valor no índice especificado, deslocando os elementos conforme necessário. Retorna false se o índice estiver fora dos limites
-+ bool erase(int index);                     // Remove o elemento no índice especificado, deslocando os elementos conforme necessário. Retorna false se o índice estiver fora dos limites
-__
-+ int indexOf(int value);                    // Retorna o índice da primeira ocorrência do valor especificado, ou -1 se não for encontrado
-+ bool contains(int value);                  // Verifica se o valor especificado existe no vetor
-+ void reverse();                            // Inverte a ordem dos elementos no vetor
-+ void sort();                               // Ordena os elementos do vetor em ordem crescente
-+ std::vector<int> sorted();                 // Retorna uma cópia ordenada dos elementos do vetor
-};
+    - data: int*                              ' Guarda os elementos do vetor
+    - size: int                               ' Guarda o número atual de elementos
+    - capacity: int                           ' Guarda a capacidade atual do vetor
+    __
+    + Vector(capacity: int)                   ' Cria um novo vetor com a capacidade inicial especificada
+    + reserve(newCapacity: int): void         ' Redimensiona a capacidade do vetor para pelo menos o valor especificado
+    + pushBack(value: int): void              ' Adiciona um valor ao final do vetor, redimensionando se necessário
+    + getSize(): int                          ' Retorna o número atual de elementos no vetor
+    __
+    + popBack(): bool                         ' Remove o último elemento do vetor. Retorna false se o vetor estiver vazio
+    + getCapacity(): int                      ' Retorna a capacidade atual do vetor
+    + status(): std::string                   ' Retorna o tamanho e a capacidade do vetor
+    + str(): std::string                      ' Retorna uma representação em string dos elementos do vetor
+    __
+    + get(index: int): int                    ' Retorna o elemento no índice especificado sem verificação de limites
+    + at(index: int): std::pair<int, bool>    ' Retorna o elemento no índice especificado com verificação de limites.
+                                              ' Retorna false se o índice estiver fora dos limites
+    + set(index: int, value: int): bool       ' Define o valor no índice especificado.
+                                              ' Retorna false se o índice estiver fora dos limites
+    + clear(): void                           ' Limpa todos os elementos do vetor
+    __
+    + insert(index: int, value: int): bool    ' Insere um valor no índice especificado, deslocando os elementos conforme necessário.
+                                              ' Retorna false se o índice estiver fora dos limites
+    + erase(index: int): bool                 ' Remove o elemento no índice especificado, deslocando os elementos conforme necessário.
+                                              ' Retorna false se o índice estiver fora dos limites
+    + indexOf(value: int): int                ' Retorna o índice da primeira ocorrência do valor especificado, ou -1 se não for encontrado
+    + contains(value: int): bool              ' Verifica se o valor especificado existe no vetor
+    + reverse(): void                         ' Inverte a ordem dos elementos no vetor
+    + sort(): void                            ' Ordena os elementos do vetor em ordem crescente
+    + sorted(): std::vector<int>              ' Retorna uma cópia ordenada dos elementos do vetor
+}
 */
 
 

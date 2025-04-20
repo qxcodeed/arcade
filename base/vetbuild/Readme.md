@@ -1,8 +1,28 @@
 # Implementando lista sequencial dinâmica
 
+- O vetor dinâmico é uma lista sequencial que pode crescer ou diminuir de tamanho conforme necessário.
+- Ele é implementado com diferentes nomes dependendo da linguagem.
+  - c++ usa `Vector`
+  - go usa `slice`
+  - python usa `list`
+  - rust usa `Vec`
+  - java usa `ArrayList`
+  - javascript usa `Array`
+
 ![_](cover.jpg)
 
-Implemente as seguintes funções do vetor dinâmico.
+Implemente a classe do vetor dinâmico.
+
+- Cada linguagem vai ter um arquivo `extra.md` com orientações sobre a implementação.
+- Você deve criar a classe e implementar os métodos conforme as orientações.
+- Depois de implementar um método, descomente e ajuste a entrada do método na função main.
+- Implemente apenas os métodos necessários para passar no primeiro teste.
+- Depois de passar no primeiro teste, implemente os métodos necessários para passar no segundo teste.
+- Continue assim até passar em todos os testes.
+
+- Os seguintes testes mostrar o comportamento esperado da classe para cada invocação de método.
+
+## Testes
 
 ```bash
 #__case create
