@@ -1,6 +1,9 @@
 package main
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func randInt(min, max int) int {
 	return min + rand.Intn(max-min+1)
@@ -35,4 +38,5 @@ func main() {
 	pen.SetHeading(90)
 	tree(pen, 100)
 	pen.SaveToFile("tree.svg")
+	fmt.Println("SVG file created successfully.")
 }
