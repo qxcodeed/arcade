@@ -13,11 +13,11 @@ class Vector {
     __
     + popBack(): bool                         ' Remove o último elemento do vetor. Retorna false se o vetor estiver vazio
     + getCapacity(): int                      ' Retorna a capacidade atual do vetor
-    + status(): std::string                   ' Retorna o tamanho e a capacidade do vetor
-    + str(): std::string                      ' Retorna uma representação em string dos elementos do vetor
+    + status(): string                        ' Retorna o tamanho e a capacidade do vetor
+    + str(): string                           ' Retorna uma representação em string dos elementos do vetor
     __
     + get(index: int): int                    ' Retorna o elemento no índice especificado sem verificação de limites
-    + at(index: int): std::pair<int, bool>    ' Retorna o elemento no índice especificado com verificação de limites.
+    + at(index: int): pair<int, bool>         ' Retorna o elemento no índice especificado com verificação de limites.
                                               ' Retorna false se o índice estiver fora dos limites
     + set(index: int, value: int): bool       ' Define o valor no índice especificado.
                                               ' Retorna false se o índice estiver fora dos limites
@@ -31,6 +31,6 @@ class Vector {
     + contains(value: int): bool              ' Verifica se o valor especificado existe no vetor
     + reverse(): void                         ' Inverte a ordem dos elementos no vetor
     + sort(): void                            ' Ordena os elementos do vetor em ordem crescente
-    + sorted(): std::vector<int>              ' Retorna uma cópia ordenada dos elementos do vetor
+    + sorted(): vector<int>                   ' Retorna uma cópia ordenada dos elementos do vetor
 }
 ```

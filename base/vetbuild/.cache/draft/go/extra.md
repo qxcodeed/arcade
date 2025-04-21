@@ -2,9 +2,9 @@
 
 ```ts
 class Vector {
-  - data: []int                ' Guarda os elementos do vetor
-  - size: int                  ' Guarda o número atual de elementos
-  - capacity: int              ' Guarda a capacidade atual do vetor
+  - data: []int                             ' Guarda os elementos do vetor
+  - size: int                               ' Guarda o número atual de elementos
+  - capacity: int                           ' Guarda a capacidade atual do vetor
   --
   + NewVector(capacity: int): *Vector       ' Cria um novo vetor com a capacidade inicial especificada
   + Reserve(newCapacity: int): void         ' Redimensiona a capacidade do vetor para pelo menos o valor especificado

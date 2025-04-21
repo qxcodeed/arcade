@@ -50,17 +50,16 @@ func removerErros(mat [][]rune) {
 }
 
 func main() {
-	var nl, nc int
-	fmt.Scan(&nl, &nc)
-
 	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	nl_nc := scanner.Text()
+	var nl, nc int
+	fmt.Sscanf(nl_nc, "%d %d", &nl, &nc)
 	mat := make([][]rune, nl)
 
 	// Lê a matriz
 	for i := range nl {
-		if !scanner.Scan() {
-			break
-		}
+		scanner.Scan()
 		mat[i] = []rune(scanner.Text())
 	}
 
