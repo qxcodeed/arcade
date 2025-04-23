@@ -50,7 +50,8 @@ Significado das tags nas questões:
 - [ ] `@labirinto retrocesso *04  :leet`[Escapando do labirinto](base/labirinto/Readme.md)
 - [ ] `@distancia retrocesso +05  :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
 - [ ] `@sudoku    retrocesso +10  :leet`[Sudoku](base/sudoku/Readme.md)
-- [ ] `@fractais             +10  :open`[Desenhando Fractais](base/fractais/Readme.md)
+- [ ] `@fractais             *10  :open`[Desenhando Fractais](base/fractais/Readme.md)
+- [ ] `@fractais_png         +10  :open`[Desenhando Fractais](base/fractais_png/Readme.md)
 - [ ] `@hex                  +10  :open`[Desenhando labirinto perfeito](base/hex/Readme.md)
 
 
