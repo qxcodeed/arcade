@@ -1,6 +1,6 @@
 # Desenhando Fractais
 
-- Veja o arquivo extra.png para detalhes de como instalar a biblioteca para desenhar pngs.
+- Veja o arquivo `extra.md` para detalhes de como instalar a biblioteca para desenhar pngs.
 - Após isso, vamos treinar o desenho de alguns fractais.
 
 ![_](./desenhos/arvore.png)

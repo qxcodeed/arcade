@@ -1,7 +1,8 @@
-# Implementando lista sequencial dinâmica
+# Lista Sequencial Dinâmica
 
 - O vetor dinâmico é uma lista sequencial que pode crescer ou diminuir de tamanho conforme necessário.
 - Ele é implementado com diferentes nomes dependendo da linguagem.
+  - c não possui vetor dinâmico, mas pode ser implementado com ponteiros.
   - c++ usa `Vector`
   - go usa `slice`
   - python usa `list`

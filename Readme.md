@@ -54,15 +54,13 @@ Significado das tags nas questões:
 - [ ] `@fractais_png         +10  :open`[Desenhando Fractais](base/fractais_png/Readme.md)
 - [ ] `@hex                  +10  :open`[Desenhando labirinto perfeito](base/hex/Readme.md)
 
-
 ### Vetor
 
-- [ ] `@vetbuild    *10 :make`[Implementando lista sequencial dinâmica](base/vetbuild/Readme.md)
-- [ ] `@ponteiros   *01 :make`[Implementando vector com ponteiros](base/ponteiros/Readme.md)
-- [ ] `@classes     *01 :make`[Implementando vector com @classes](base/classes/Readme.md)
-- [ ] `@inteiros    *01 :make`[Lista Sequencial de Inteiros](base/inteiros/Readme.md)
-- [ ] `@ordenada    *01 :make`[Lista Sequencial Ordenada](base/ordenada/Readme.md)
-- [ ] `@circular    *01 :make`[Lista Sequencial Circular](base/circular/Readme.md)
+- [ ] `@vetbuild    *10 :make`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
+- [ ] `@setbuild    *10 :make`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
+- [ ] `@magicsearch *05 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
+- [ ] `@multiset    *10 :make`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
+- [ ] `@iterador    *05 :make`[Criando um iterador](base/iterador/Readme.md)
 
 ### Lista
 
