@@ -42,7 +42,7 @@ def main() -> None:
                 # v.clear()
                 pass
             elif cmd == "capacity":
-                # print(v.capacity_())
+                # print(v.capacity())
                 pass
             elif cmd == "get":
                 # print(v.at(int(args[1])))
