@@ -12,11 +12,8 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	// v := NewSet(0)
-	for {
+	for scanner.Scan() {
 		fmt.Print("$")
-		if !scanner.Scan() {
-			break
-		}
 		line = scanner.Text()
 		fmt.Println(line)
 		parts := strings.Fields(line)
@@ -34,25 +31,13 @@ func main() {
 		case "insert":
 			// for _, part := range parts[1:] {
 			// 	value, _ := strconv.Atoi(part)
-			// 	v.Insert(value)
 			// }
 		case "show":
-			// fmt.Println(v)
 		case "erase":
 			// value, _ := strconv.Atoi(parts[1])
-			// err := v.Erase(value)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
 		case "contains":
 			// value, _ := strconv.Atoi(parts[1])
-			// if v.Contains(value) {
-			// 	fmt.Println("true")
-			// } else {
-			// 	fmt.Println("false")
-			// }
 		case "clear":
-			// v.Clear()
 		default:
 			fmt.Println("fail: comando invalido")
 		}
