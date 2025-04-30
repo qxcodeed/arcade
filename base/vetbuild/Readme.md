@@ -210,31 +210,3 @@ $contains 12
 true
 $end
 ```
-
-```bash
-#__case reverse e sort
-$init 10
-$push 10 2 8 12 8 6
-$show
-[10, 2, 8, 12, 8, 6]
-$reverse
-$show
-[6, 8, 12, 8, 2, 10]
-$sort
-$show
-[2, 6, 8, 8, 10, 12]
-$end
-```
-
-```bash
-#__case sorted
-$init 10
-$push 10 2 8 12 8 6
-$show
-[10, 2, 8, 12, 8, 6]
-$sorted
-[2, 6, 8, 8, 10, 12]
-$show
-[10, 2, 8, 12, 8, 6]
-$end
-```

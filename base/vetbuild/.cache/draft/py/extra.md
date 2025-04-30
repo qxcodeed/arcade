@@ -22,9 +22,6 @@ class Vector {
   + at(index: int): int                        ' Acesso ao índice com verificação de limites
   + set(index: int, value: int): None          ' Altera o valor no índice especificado
   + clear(): None                              ' Remove todos os elementos do vetor
-  + reverse(): None                            ' Inverte a ordem dos elementos
-  + sort(): None                               ' Ordena os elementos da lista
-  + sorted(): Vector                           ' Retorna uma nova lista ordenada
 }
 
 ```

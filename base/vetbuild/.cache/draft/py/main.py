@@ -53,15 +53,6 @@ def main() -> None:
             elif cmd == "reserve":
                 # v.reserve(int(args[1]))
                 pass
-            elif cmd == "sort":
-                # v.sort()
-                pass
-            elif cmd == "sorted":
-                # print("[" + ", ".join(str(x) for x in v.sorted_()) + "]")
-                pass
-            elif cmd == "reverse":
-                # v.reverse()
-                pass
             else:
                 print("fail: comando invalido")
         except Exception as e:

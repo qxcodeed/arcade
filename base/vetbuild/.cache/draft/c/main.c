@@ -109,29 +109,6 @@ void vector_clear(Vector* v) {
     (void) v;
 }
 
-
-void vector_reverse(Vector* v) {
-    (void) v;
-}
-
-
-int cmp_int(const void* a, const void* b) {
-    return (*(int*)a - *(int*)b);
-}
-
-
-void vector_sort(Vector* v) {
-    (void) v;
-    // use a função qsort para ordenar o vetor
-}
-
-
-void vector_sorted(Vector* v) {
-    (void) v;
-    // faça uma cópia do vetor com malloc, ordene a cópia, imprima os dados ordenados e apague a cópia
-}
-
-
 int main() {
     char line[100];
     Vector* v = vector_create(0);
@@ -196,12 +173,6 @@ int main() {
         } else if (strcmp(cmd, "reserve") == 0) {
             int newCap = atoi(strtok(NULL, " "));
             vector_reserve(v, newCap);
-        } else if (strcmp(cmd, "sort") == 0) {
-            vector_sort(v);
-        } else if (strcmp(cmd, "sorted") == 0) {
-            vector_sorted(v);
-        } else if (strcmp(cmd, "reverse") == 0) {
-            vector_reverse(v);
         } else {
             printf("comando invalido\n");
         }

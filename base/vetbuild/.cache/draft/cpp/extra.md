@@ -29,8 +29,5 @@ class Vector {
                                               ' Retorna false se o índice estiver fora dos limites
     + indexOf(value: int): int                ' Retorna o índice da primeira ocorrência do valor especificado, ou -1 se não for encontrado
     + contains(value: int): bool              ' Verifica se o valor especificado existe no vetor
-    + reverse(): void                         ' Inverte a ordem dos elementos no vetor
-    + sort(): void                            ' Ordena os elementos do vetor em ordem crescente
-    + sorted(): vector<int>                   ' Retorna uma cópia ordenada dos elementos do vetor
 }
 ```

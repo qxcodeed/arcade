@@ -3,9 +3,20 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"os"
 	"strings"
 )
+
+
+func Join(slice []int, sep string) string {
+	if len(slice) == 0 {
+		return ""
+	}
+	result := fmt.Sprintf("%d", slice[0])
+	for _, value := range slice[1:] {
+		result += sep + fmt.Sprintf("%d", value)
+	}
+	return result
+}
 
 func main() {
 	var line, cmd string
@@ -92,12 +103,6 @@ func main() {
 		case "reserve":
 			// newCapacity, _ := strconv.Atoi(parts[1])
 			// v.Reserve(newCapacity)
-		case "sort":
-			// v.Sort()
-		case "sorted":
-			// fmt.Println("[" + Join(v.Sorted(), ", ") + "]")
-		case "reverse":
-			// v.Reverse()
 		default:
 			fmt.Println("fail: comando invalido")
 		}
