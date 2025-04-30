@@ -20,3 +20,29 @@ Você vai receber implementado um iterador que percorre a estrutura do início a
 
 - ReverseIterator: percorre a estrutura do fim para o início.
 - CyclicIterator: percorre a estrutura como se fosse uma lista cíclica infinita.
+
+## Shell
+
+```py
+#TEST_CASE show
+$read 1 4 2 3 5 6 9 7
+$show
+[ 1 4 2 3 5 6 9 7 ]
+$end
+```
+
+```py
+#TEST_CASE show
+$read 1 4 2 3 5 6 9 7
+$reverse
+[ 7 9 6 5 3 2 4 1 ]
+$end
+```
+
+```py
+#TEST_CASE show
+$read 1 2 3
+$cyclic 10
+[ 1 2 3 1 2 3 1 2 3 1 ]
+$end
+```

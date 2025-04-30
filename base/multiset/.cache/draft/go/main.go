@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strconv"
 	"strings"
 )
 
@@ -24,51 +23,37 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	// ms := NewMultiSet(0)
 
-	for {
+	for scanner.Scan() {
 		fmt.Print("$")
-		if !scanner.Scan() {
-			break
-		}
 		line = scanner.Text()
+		args := strings.Fields(line)
 		fmt.Println(line)
-		parts := strings.Fields(line)
-		if len(parts) == 0 {
+		if len(args) == 0 {
 			continue
 		}
-		cmd = parts[0]
+		cmd = args[0]
 
 		switch cmd {
 		case "end":
 			return
 		case "init":
-			// value, _ := strconv.Atoi(parts[1])
+			// value, _ := strconv.Atoi(args[1])
 			// ms = NewMultiSet(value)
 		case "magic":
-			// value, _ := strconv.Atoi(parts[1])
-			// fmt.Println(ms.MagicSearch(value))
+			// value, _ := strconv.Atoi(args[1])
 		case "insert":
-			// for _, part := range parts[1:] {
+			// for _, part := range args[1:] {
 			// 	value, _ := strconv.Atoi(part)
-			// 	ms.Insert(value)
 			// }
 		case "show":
-			// fmt.Println(ms)
 		case "erase":
-			// value, _ := strconv.Atoi(parts[1])
-			// err := ms.Erase(value)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// }
+			// value, _ := strconv.Atoi(args[1])
 		case "contains":
-			// value, _ := strconv.Atoi(parts[1])
-			// fmt.Println(ms.Contains(value))
+			// value, _ := strconv.Atoi(args[1])
 		case "count":
-			// value, _ := strconv.Atoi(parts[1])
-			// fmt.Println(ms.Count(value))
+			// value, _ := strconv.Atoi(args[1])
 		case "unique":
-			// fmt.Println(ms.Unique())
 		case "clear":
-			// ms.Clear()
 		default:
 			fmt.Println("fail: comando invalido")
 		}

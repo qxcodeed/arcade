@@ -22,11 +22,11 @@ func NewMyList(values []int) *MyList {
 }
 
 func (l *MyList) Iterator() *Iterator {
-	return &Iterator{data: l.data, index: 0}
+	return &Iterator{data: l.data, index: -1}
 }
 
 func (i *Iterator) HasNext() bool {
-	return i.index < len(i.data)
+	return i.index < len(i.data)-1
 }
 
 func (i *Iterator) Next() int {
@@ -34,7 +34,7 @@ func (i *Iterator) Next() int {
 		panic(fmt.Errorf("No more elements"))
 	}
 	i.index += 1
-	return i.data[i.index-1]
+	return i.data[i.index]
 }
 
 func main() {
@@ -56,22 +56,24 @@ func main() {
 				}
 				mylist = NewMyList(slice)
 			}
-		case "print":
+		case "show":
 			fmt.Print("[ ")
 			for it := mylist.Iterator(); it.HasNext(); {
-				fmt.Println(it.Next())
+				fmt.Printf("%v ", it.Next())
 			}
 			fmt.Println("]")
 		case "reverse":
 			// fmt.Print("[ ")
 			// for it := mylist.ReverseIterator(); it.HasNext(); {
-			// 	fmt.Println(it.Next())
+			// 	fmt.Printf("%v ", it.Next())
 			// }
 			// fmt.Println("]")
 		case "cyclic":
+			// qtd, _ := strconv.Atoi(args[1])
 			// fmt.Print("[ ")
-			// for it := mylist.CyclicIterator(); it.HasNext(); {
-			// 	fmt.Println(it.Next())
+			// it := mylist.CyclicIterator()
+			// for range qtd {
+			// 	fmt.Printf("%v ", it.Next())
 			// }
 			// fmt.Println("]")
 		}
