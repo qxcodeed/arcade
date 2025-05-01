@@ -1,3 +1,4 @@
+import java.util.*;
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -28,7 +29,7 @@ public class Main {
                 // int valCheck = Integer.parseInt(parts[1]);
             } else if (cmd.equals("clear")) {
             } else {
-                System.out.println("fail: comando invalido");
+                System.out.println("comando invalido");
             }
         }
     }
