@@ -25,6 +25,26 @@ Implemente a classe do vetor dinâmico.
 - Cada linha que começa com `$` equivale a uma chamada de método.
 - Cada #TEST_CASE separa um caso de teste diferente.
 
+## Drafts
+
+<!-- links .cache/draft -->
+- c
+  - [main.c](.cache/draft/c/main.c)
+- cpp
+  - [extra.md](.cache/draft/cpp/extra.md)
+  - [main.cpp](.cache/draft/cpp/main.cpp)
+- go
+  - [extra.md](.cache/draft/go/extra.md)
+  - [main.go](.cache/draft/go/main.go)
+- java
+  - [Shell.java](.cache/draft/java/Shell.java)
+  - [extra.md](.cache/draft/java/extra.md)
+- py
+  - [extra.md](.cache/draft/py/extra.md)
+  - [main.py](.cache/draft/py/main.py)
+<!-- links -->
+
+
 ## Testes
 
 ```bash

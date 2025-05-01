@@ -11,6 +11,18 @@
     "keep": [],
     "required": [],
     "draft": {
+        "java": [
+            {
+                "name": "Main.java",
+                "contents": "public class Main {\n    static Scanner scanner = new Scanner(System.in);\n    public static void main(String[] args) {\n        // Set set = new Set(0);\n\n        while (true) {\n            System.out.print(\"$\");\n            String line = scanner.nextLine();\n            System.out.println(line);\n            String[] parts = line.trim().split(\"\\\\s+\");\n            if (parts.length == 0) continue;\n\n            String cmd = parts[0];\n\n            if (cmd.equals(\"end\")) {\n                break;\n            } else if (cmd.equals(\"init\")) {\n                // int capacity = Integer.parseInt(parts[1]);\n                // set = new Set(capacity);\n            } else if (cmd.equals(\"insert\")) {\n                // for (int i = 1; i < parts.length; i++) {\n                //     int val = Integer.parseInt(parts[i]);\n                // }\n            } else if (cmd.equals(\"show\")) {\n            } else if (cmd.equals(\"erase\")) {\n                // int valErase = Integer.parseInt(parts[1]);\n            } else if (cmd.equals(\"contains\")) {\n                // int valCheck = Integer.parseInt(parts[1]);\n            } else if (cmd.equals(\"clear\")) {\n            } else {\n                System.out.println(\"fail: comando invalido\");\n            }\n        }\n    }\n}\n",
+                "encoding": 0
+            },
+            {
+                "name": "extra.md",
+                "contents": "# Java Set\n\n```ts\nclass Set {\n  - data: int[]                            ' Armazena os elementos da lista ordenada\n  - size: int                              ' N\u00famero atual de elementos na lista\n  - capacity: int                          ' Capacidade alocada da lista (tamanho de data)\n  --\n  + Set(): Set                             ' Construtor: cria nova lista com capacidade inicial padr\u00e3o\n  - reserve(newCapacity: int): void        ' Redimensiona a capacidade da lista se necess\u00e1rio (interno)\n  - binarySearch(value: int): int          ' Busca bin\u00e1ria: retorna \u00edndice ou -1 se n\u00e3o encontrado\n  - insertAt(value: int, index: int): void ' Insere value na posi\u00e7\u00e3o indicada, deslocando \u00e0 direita\n  - eraseAt(index: int): void              ' Remove o valor na posi\u00e7\u00e3o indicada, deslocando os demais\n  --\n  + insert(value: int): boolean            ' Insere valor mantendo ordem e sem duplicatas\n  + contains(value: int): boolean          ' Retorna true se o valor existir na lista\n  + erase(value: int): boolean             ' Remove valor se existir e retorna true, sen\u00e3o false\n  + toString(): String                     ' Representa\u00e7\u00e3o em string dos elementos da lista\n}\n```\n",
+                "encoding": 0
+            }
+        ],
         "go": [
             {
                 "name": "extra.md",
