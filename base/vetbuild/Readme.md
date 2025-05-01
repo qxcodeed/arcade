@@ -8,7 +8,7 @@
   - python usa `list`
   - rust usa `Vec`
   - java usa `ArrayList`
-  - javascript usa `Array`
+  - javascript e typescript usam `Array`
 
 ![_](cover.jpg)
 
@@ -22,11 +22,13 @@ Implemente a classe do vetor dinâmico.
 - Continue assim até passar em todos os testes.
 
 - Os seguintes testes mostrar o comportamento esperado da classe para cada invocação de método.
+- Cada linha que começa com `$` equivale a uma chamada de método.
+- Cada #TEST_CASE separa um caso de teste diferente.
 
 ## Testes
 
 ```bash
-#__case create
+#TEST_CASE create
 $init 3
 $status
 size:0 capacity:3
@@ -36,7 +38,7 @@ $end
 ```
 
 ```bash
-#__case push
+#TEST_CASE push
 $init 1
 $status
 size:0 capacity:1
@@ -71,7 +73,7 @@ $end
 ```
 
 ```bash
-#__case get e set
+#TEST_CASE get e set
 $init 10
 $push 10 2 8 12 8 6
 $show
@@ -91,7 +93,7 @@ $end
 ```
 
 ```bash
-#__case clear
+#TEST_CASE clear
 $init 6
 $push 1 2 3 4 5 6
 $clear
@@ -103,7 +105,7 @@ $end
 ```
 
 ```bash
-#__case reserve
+#TEST_CASE reserve
 $init 6
 $push 1 2 3 4 5 6
 $show
@@ -117,7 +119,7 @@ $end
 ```
 
 ```bash
-#__case pop
+#TEST_CASE pop
 $init 5
 $push 1 2 3 4 5
 $show
@@ -143,7 +145,7 @@ $end
 ```
 
 ```bash
-#__case insert
+#TEST_CASE insert
 $init 6
 $push 1 2 3 4 5
 $insert 2 10
@@ -160,7 +162,7 @@ $end
 ```
 
 ```bash
-#__case insert_resize
+#TEST_CASE insert_resize
 $init 6
 $push 1 2 3 4 5 6
 $insert 2 10
@@ -172,7 +174,7 @@ $end
 ```
 
 ```bash
-#__case erase
+#TEST_CASE erase
 $init 6
 $push 1 2 3 4 5 6
 $show
@@ -197,7 +199,7 @@ $end
 ```
 
 ```bash
-#__case indexOf e contains
+#TEST_CASE indexOf e contains
 $init 10
 $push 10 2 8 12 8 6
 $indexOf 12
