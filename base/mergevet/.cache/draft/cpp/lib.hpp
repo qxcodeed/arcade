@@ -50,7 +50,7 @@ public:
     }
 
     bool empty() {
-        // retorne se o vetor está vazio 
+        // retorne se o vetor está vazio
         return false;
     } 
 
