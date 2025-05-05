@@ -21,7 +21,7 @@ Implemente a classe do vetor dinâmico.
 - Depois de passar no primeiro teste, implemente os métodos necessários para passar no segundo teste.
 - Continue assim até passar em todos os testes.
 
-- Os seguintes testes mostrar o comportamento esperado da classe para cada invocação de método.
+- Os seguintes testes mostram o comportamento esperado da classe para cada invocação de método.
 - Cada linha que começa com `$` equivale a uma chamada de método.
 - Cada #TEST_CASE separa um caso de teste diferente.
 
