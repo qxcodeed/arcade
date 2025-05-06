@@ -1,4 +1,0 @@
-Case = Teste 1
-input= main
-Output=Lista simplesmente ligada: A -> B -> C -> D
-Lista duplamente ligada: A <-> B <-> C <-> D
