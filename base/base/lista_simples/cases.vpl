@@ -1,0 +1,125 @@
+case = Teste do Construtor
+input=test_constructor
+output=TESTE Construtor
+Ok
+
+case = Teste do has_info
+input=test_has_info
+output=TESTE has_info
+[30 -> 20 -> 15 -> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+
+case=Teste do get
+input=test_get
+output=TESTE get
+[30 -> 20 -> 15 -> 10]
+get 0 == 30
+get 1 == 20
+get 2 == 15
+get 3 == 10
+
+case=Teste do push_front
+input=test_push_front
+output=TESTE push_front
+push_front 10
+push_front 15
+push_front 20
+push_front 30
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+4 Nos alocados
+
+case=Teste do push_back
+input=test_push_back
+output=TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Expected: [10 -> 15 -> 20 -> 30]
+[10 -> 15 -> 20 -> 30]
+
+case=Teste do pop_front
+input=test_pop_front
+output=TESTE pop_front
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_front
+Esperado: [20 -> 15 -> 10]
+[20 -> 15 -> 10]
+pop_front
+Esperado: [15 -> 10]
+[15 -> 10]
+pop_front
+Esperado: [10]
+[10]
+pop_front
+Esperado: []
+[]
+pop_front
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+
+case=Teste do pop_back
+input=test_pop_back
+output=TESTE pop_back
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_back
+Esperado: [30 -> 20 -> 15]
+[30 -> 20 -> 15]
+pop_back
+Esperado: [30 -> 20]
+[30 -> 20]
+pop_back
+Esperado: [30]
+[30]
+pop_back
+Esperado: []
+[]
+pop_back
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+
+
+case= Teste do clear
+input=test_clear
+output=TESTE clear
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+clear
+Esperado: []
+[]
+clear
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+
+case= Teste do length
+input=test_length
+output=TESTE length
+[]
+length  == 0
+[42]
+length  == 1
+[42 -> 42]
+length  == 2
+
+case=Teste do empty
+input=test_empty
+output=TESTE empty
+[]
+empty  == 1
+[42]
+empty  == 0
+
+case=Teste do destrutor
+input=test_destructor
+output=TESTE destructor
+Existem Nos nao foram liberados na memoria

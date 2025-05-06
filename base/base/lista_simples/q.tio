@@ -1,0 +1,146 @@
+>>>>>>>> Teste do Construtor
+test_constructor
+========
+TESTE Construtor
+Ok
+<<<<<<<<
+
+>>>>>>>> Teste do has_info
+test_has_info
+========
+TESTE has_info
+[30 -> 20 -> 15 -> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+<<<<<<<<
+
+>>>>>>>> Teste do get
+test_get
+========
+TESTE get
+[30 -> 20 -> 15 -> 10]
+get 0 == 30
+get 1 == 20
+get 2 == 15
+get 3 == 10
+<<<<<<<<
+
+>>>>>>>> Teste do push_front
+test_push_front
+========
+TESTE push_front
+push_front 10
+push_front 15
+push_front 20
+push_front 30
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+4 Nos alocados
+<<<<<<<<
+
+>>>>>>>> Teste do push_back
+test_push_back
+========
+TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Expected: [10 -> 15 -> 20 -> 30]
+[10 -> 15 -> 20 -> 30]
+<<<<<<<<
+
+>>>>>>>> Teste do pop_front
+test_pop_front
+========
+TESTE pop_front
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_front
+Esperado: [20 -> 15 -> 10]
+[20 -> 15 -> 10]
+pop_front
+Esperado: [15 -> 10]
+[15 -> 10]
+pop_front
+Esperado: [10]
+[10]
+pop_front
+Esperado: []
+[]
+pop_front
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+<<<<<<<<
+
+>>>>>>>> Teste do pop_back
+test_pop_back
+========
+TESTE pop_back
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_back
+Esperado: [30 -> 20 -> 15]
+[30 -> 20 -> 15]
+pop_back
+Esperado: [30 -> 20]
+[30 -> 20]
+pop_back
+Esperado: [30]
+[30]
+pop_back
+Esperado: []
+[]
+pop_back
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+<<<<<<<<
+
+>>>>>>>> Teste do clear
+test_clear
+========
+TESTE clear
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+clear
+Esperado: []
+[]
+clear
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+<<<<<<<<
+
+>>>>>>>> Teste do length
+test_length
+========
+TESTE length
+[]
+length  == 0
+[42]
+length  == 1
+[42 -> 42]
+length  == 2
+<<<<<<<<
+
+>>>>>>>> Teste do empty
+test_empty
+========
+TESTE empty
+[]
+empty  == 1
+[42]
+empty  == 0
+<<<<<<<<
+
+>>>>>>>> Teste do destrutor
+test_destructor
+========
+TESTE destructor
+Existem Nos nao foram liberados na memoria
+<<<<<<<<

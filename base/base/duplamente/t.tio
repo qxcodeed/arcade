@@ -1,0 +1,105 @@
+>>>>>>>> INSERT Teste has_info 
+test_has_info
+======== EXPECT
+TESTE has_info
+Lista: [30 <-> 20 <-> 15 <-> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste push_back
+test_push_back
+======== EXPECT
+TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Lista: [10 <-> 15 <-> 20 <-> 30]
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste pop_front
+test_pop_front
+======== EXPECT
+TESTE pop_front
+Esperado: [30 <-> 20 <-> 15 <-> 10]
+Lista: [30 <-> 20 <-> 15 <-> 10]
+pop_front
+Esperado: [20 <-> 15 <-> 10]
+Lista: [20 <-> 15 <-> 10]
+pop_front
+Esperado: [15 <-> 10]
+Lista: [15 <-> 10]
+pop_front
+Esperado: [10]
+Lista: [10]
+pop_front
+Esperado: []
+Lista: []
+pop_front
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste pop_back
+test_pop_back
+======== EXPECT
+TESTE pop_back
+Esperado: [30 <-> 20 <-> 15 <-> 10]
+Lista: [30 <-> 20 <-> 15 <-> 10]
+pop_back
+Esperado: [30 <-> 20 <-> 15]
+Lista: [30 <-> 20 <-> 15]
+pop_back
+Esperado: [30 <-> 20]
+Lista: [30 <-> 20]
+pop_back
+Esperado: [30]
+Lista: [30]
+pop_back
+Esperado: []
+Lista: []
+pop_back
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste remove_one
+test_remove_one
+======== EXPECT
+TESTE remove_one
+Esperado: [10 <-> 20 <-> 30 <-> 10 <-> 20 <-> 30]
+Lista: [10 <-> 20 <-> 30 <-> 10 <-> 20 <-> 30]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20 <-> 30]
+Lista: [10 <-> 20 <-> 10 <-> 20 <-> 30]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20]
+Lista: [10 <-> 20 <-> 10 <-> 20]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20]
+Lista: [10 <-> 20 <-> 10 <-> 20]
+remove_one 20
+Esperado: [10 <-> 10 <-> 20]
+Lista: [10 <-> 10 <-> 20]
+remove_one 20
+Esperado: [10 <-> 10]
+Lista: [10 <-> 10]
+remove_one 10
+Esperado: [10]
+Lista: [10]
+remove_one 10
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+<<<<<<<< FINISH
+
