@@ -1,6 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from typing import List, Tuple
 from random import sample
-import argparse
+
 one_solution_board = [
             [7,8,0,4,0,0,1,2,0],
             [6,0,0,0,7,5,0,0,9],
@@ -28,7 +30,7 @@ two_solution_board = [
         ]
 
 class Board:
-    def __init__(self, board):
+    def __init__(self, board: List[List[int]]):
         self.board = board
         self.places = self.find_empty_places()
         self.solutions = 0
@@ -43,28 +45,28 @@ class Board:
                 print("", self.board[l][c], end="")
             print("")
         
-    def get_lin(self, index) -> List[int]:
+    def get_lin(self, index: int) -> List[int]:
         return self.board[index]
     
-    def get_col(self, index) -> List[int]:
+    def get_col(self, index: int) -> List[int]:
         return [self.board[l][index] for l in range(9)]
 
-    def get_box(self, lin, col) -> List[int]:
+    def get_box(self, lin: int, col: int) -> List[int]:
         l = (lin // 3) * 3# divisão inteira
         c = (col // 3) * 3
         return self.board[l][c:c + 3] + self.board[l + 1][c:c+3] + self.board[l + 2][c:c+3]
 
-    def allowed(self, l, c, value) -> bool:
+    def allowed(self, l: int, c: int, value: int) -> bool:
         return (not value in self.get_lin(l)) and (not value in self.get_col(c)) and (not value in self.get_box(l, c))
 
     # retorna uma tupla com todas as posições com 0
     def find_empty_places(self) -> List[Tuple[int, int]]:
         return  sum([[(l, c) for c in range(9) if self.board[l][c] == 0] for l in range(9)], [])
 
-    def print_stack(self, end = "\n"):
+    def print_stack(self, end : str = "\n"):
         print(" ".join(map(str, [self.board[l][c] for l, c in self.places if self.board[l][c] != 0])), end = end) 
     
-    def solve(self, index = 0):
+    def solve(self, index: int = 0):
         if index == len(self.places): # se preenchi todas as posições então deu certo
             return True
         l, c = self.places[index]     # pego as coordenadas dessa posição
@@ -76,7 +78,7 @@ class Board:
         self.board[l][c] = 0               # se nenhum valor deu certo, coloco 0 e retorno false
         return False
 
-    def debug(self, index = 0):
+    def debug(self, index: int = 0):
         if index == len(self.places): 
             self.solutions += 1          #incrementa número de soluções encontradas
             self.print_stack(" <---\n")  #mostrando a solução que resolve
@@ -90,7 +92,7 @@ class Board:
         self.board[l][c] = 0
         return False
 
-    def create(self, index = 0):
+    def create(self, index: int = 0):
         if index == len(self.places): 
             return True
         l, c = self.places[index]
@@ -124,4 +126,3 @@ print("solutions found: ", board.solutions)
 board = Board([[0 for _ in range(9)] for _ in range(9)])
 board.create()
 board.print_board()
-

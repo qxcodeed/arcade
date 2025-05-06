@@ -4,7 +4,7 @@
     "upload": [
         {
             "name": "vpl_evaluate.cases",
-            "contents": ">>>>>>>> INSERT\n5 20\n======== EXPECT\n17.5\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT\n6 20\n======== EXPECT\n19.69\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT\n6 10\n======== EXPECT\n9.84\n<<<<<<<< FINISH\n\n",
+            "contents": ">>>>>>>> INSERT\n3 20\n======== EXPECT\n17.50\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT\n6 20\n======== EXPECT\n19.69\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT\n6 10\n======== EXPECT\n9.84\n<<<<<<<< FINISH\n\n\n>>>>>>>> INSERT\n5 20\n======== EXPECT\n19.38\n<<<<<<<< FINISH\n\n",
             "encoding": 0
         }
     ],
