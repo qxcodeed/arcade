@@ -12,6 +12,9 @@ Seu objetivo é resolver um sudoku NxN com números de 1 a N.
 
 N pode ser 4 ou 9
 
+- Se for 4, um número de 1 a 4 deve aparecer em cada linha, coluna e quadrante 2x2.
+- Se for 9, um número de 1 a 9 deve aparecer em cada linha, coluna e quadrante 3x3.
+
 - Entrada
   - Valor de N
   - Uma matriz N x N composta por números de 1 a N e pontos para os valores faltantes.
@@ -100,47 +103,52 @@ N pode ser 4 ou 9
 
 ## Ajuda
 
-Você pode utilizar o seguinte modelo para simplificar a lógica do sudoku
+Use a mesma lógica do problema distância para percorrer a matriz. Você pode usar um índice progressivo e converter esse valor para linha e coluna como no exemplo abaixo:
 
-```cpp
-struct Problem {
-    vector<string> data;          //vetor de dados
-    int size { 9 };               //normalmente 4 ou 9
-    int dim { 3 };                //2 ou 3
-    vector<pair<int, int>> holes; //posicoes para serem preenchidas
+- Crie funções diferentes para verificar se o número já existe na linha, coluna e quadrante.
+- Para calcular o quadrante, você pode usar a divisão inteira e o resto da divisão.
+- A função abaixo retorna uma lista com todos os valores do quadrante do elemento.
+- A função é feita propositalmente feia para você entender como ela funciona.
 
-    Problem(vector<string> data) {
-        this->data = data;
-        this->size = data.size();
-        this->dim = sqrt(this->size);
+```go
+func quadrante(matriz [][]rune, lin, col int) []rune {
+    dim := len(matriz)
+    l := (lin // dim) * dim
+    c := (col // dim) * dim
 
-        for (int l = 0; l < size; l++)      //percorre todas as posições e guarda as que são .
-            for (int c = 0; c < size; c++)
-                if (data[l][c] == '.')
-                    holes.push_back(make_pair(l, c));
+    if dim == 4 {
+        return []rune{
+            matriz[l+0][c], matriz[l+0][c+1],
+            matriz[l+1][c], matriz[l+1][c+1],
+        }
     }
 
-    //verifica se pode colocar esse valor nessa posição
-    //pode colocar se não encontrar na linha, na coluna ou no quadrante
-    bool fit(int hindex, char value) {
-        auto [pl, pc] = holes[hindex];  //acha a posicao no vetor de posições
-        
-        for (int l = 0; l < size; l++) //olhando todas as linhas dessa coluna
-            if (data[l][pc] == value) 
-                return false;
-        
-        for (int c = 0; c < size; c++) //olhando todas as colunas dessa linha
-            if (data[pl][c] == value)
-                return false;
-        
-        int lh = pl - pl % dim; //achando a cabeça do quadrante removendo a sobra
-        int ch = pc - pc % dim;
-        for (int l = lh; l < lh + dim; l++)
-            for (int c = ch; c < ch + dim; c++)
-                if (data[l][c] == value)
-                    return false;
-
-        return true;
+    if dim == 9 {
+        return []rune{
+            matriz[l+0][c], matriz[l+0][c+1], matriz[l+0][c+2],
+            matriz[l+1][c], matriz[l+1][c+1], matriz[l+1][c+2],
+            matriz[l+2][c], matriz[l+2][c+1], matriz[l+2][c+2],
+        }
     }
+    return nil
+}
+```
+
+```go
+func resolver(matriz [][]rune, index int) bool {
+    nl := len(matriz)
+    l := index / nl
+    c := index % nl
+    if index == nl * nl {
+        return True
+    }
+    // se não for ponto, continue
+    // para todos os números de [1 a N]
+    //     se o número não estiver na linha, coluna e quadrante
+    //         coloque o número na matriz
+    //         se resolver(matriz, index + 1):
+    //             return True
+    //         matriz[l][c] = '.' // desfaz a tentativa
+    // return False
 }
 ```

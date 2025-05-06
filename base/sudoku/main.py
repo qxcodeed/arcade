@@ -1,41 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from typing import List, Tuple
 from random import sample
 
-one_solution_board = [
-            [7,8,0,4,0,0,1,2,0],
-            [6,0,0,0,7,5,0,0,9],
-            [0,0,0,6,0,1,0,7,8],
-            [0,0,7,0,4,0,2,6,0],
-            [0,0,1,0,5,0,9,3,0],
-            [9,0,4,0,6,0,0,0,5],
-            [0,7,0,3,0,0,0,1,2],
-            [1,2,0,0,0,7,4,0,0],
-            [0,4,9,2,0,6,0,0,7]
-        ]
-
-
-# board com 2 soluções
-two_solution_board = [
-            [0,0,0,4,0,0,1,2,0],
-            [0,0,0,0,7,5,0,0,9],
-            [0,0,0,6,0,1,0,7,8],
-            [0,0,7,0,4,0,2,6,0],
-            [0,0,1,0,5,0,9,3,0],
-            [9,0,4,0,6,0,0,0,5],
-            [0,7,0,3,0,0,0,1,2],
-            [1,2,0,0,0,7,4,0,0],
-            [0,4,9,2,0,6,0,0,7]
-        ]
-
 class Board:
-    def __init__(self, board: List[List[int]]):
-        self.board = board
-        self.places = self.find_empty_places()
-        self.solutions = 0
+    def __init__(self):
+        self.board = [[0 for _ in range(9)] for _ in range(9)]
+
+    def init_from_list(self, board: list[list[int]]):
+        self.board = [row.copy() for row in board]
+        return self
+
+    def clone(self):
+        return Board().init_from_list(self.board)
 
     def print_board(self):
+        print("---------------------------------------")
         for l in range(9):
             if(l % 3 == 0 and l != 0):
                 print(23 * "-")
@@ -45,31 +24,27 @@ class Board:
                 print("", self.board[l][c], end="")
             print("")
         
-    def get_lin(self, index: int) -> List[int]:
+    def get_lin(self, index: int) -> list[int]:
         return self.board[index]
     
-    def get_col(self, index: int) -> List[int]:
+    def get_col(self, index: int) -> list[int]:
         return [self.board[l][index] for l in range(9)]
 
-    def get_box(self, lin: int, col: int) -> List[int]:
+    def get_box(self, lin: int, col: int) -> list[int]:
         l = (lin // 3) * 3# divisão inteira
         c = (col // 3) * 3
         return self.board[l][c:c + 3] + self.board[l + 1][c:c+3] + self.board[l + 2][c:c+3]
 
     def allowed(self, l: int, c: int, value: int) -> bool:
         return (not value in self.get_lin(l)) and (not value in self.get_col(c)) and (not value in self.get_box(l, c))
-
-    # retorna uma tupla com todas as posições com 0
-    def find_empty_places(self) -> List[Tuple[int, int]]:
-        return  sum([[(l, c) for c in range(9) if self.board[l][c] == 0] for l in range(9)], [])
-
-    def print_stack(self, end : str = "\n"):
-        print(" ".join(map(str, [self.board[l][c] for l, c in self.places if self.board[l][c] != 0])), end = end) 
     
-    def solve(self, index: int = 0):
-        if index == len(self.places): # se preenchi todas as posições então deu certo
+    def solve(self, index: int = 0) -> bool:
+        l = index // 9
+        c = index % 9
+        if index == 81: 
             return True
-        l, c = self.places[index]     # pego as coordenadas dessa posição
+        if self.board[l][c] != 0:
+            return self.solve(index + 1)
         for i in range(1,10):         # de 1 ate 9
             if(self.allowed(l, c, i)):  # se posso colocar esse numero nessa posicao
                 self.board[l][c] = i    # coloco o número
@@ -78,51 +53,53 @@ class Board:
         self.board[l][c] = 0               # se nenhum valor deu certo, coloco 0 e retorno false
         return False
 
-    def debug(self, index: int = 0):
-        if index == len(self.places): 
-            self.solutions += 1          #incrementa número de soluções encontradas
-            self.print_stack(" <---\n")  #mostrando a solução que resolve
-            return True
-        l, c = self.places[index]     
+    def count_solutions(self, index: int = 0, solutions: int = 0) -> int:
+        l = index // 9
+        c = index % 9
+        if index == 81: 
+            return solutions + 1
+        if self.board[l][c] != 0:
+            return self.count_solutions(index + 1, solutions)
         for i in range(1,10):         
             if(self.allowed(l, c, i)):  
                 self.board[l][c] = i    
-                #self.print_stack()       #imprime a pilha a cada alteração
-                self.debug(index + 1)    # continua mesmo encontrando solução, não retorna true  
+                solutions = self.count_solutions(index + 1, solutions)    # continua mesmo encontrando solução, não retorna true  
         self.board[l][c] = 0
-        return False
+        return solutions
 
-    def create(self, index: int = 0):
-        if index == len(self.places): 
+    def create(self, index: int = 0) -> bool:
+        l = index // 9
+        c = index % 9
+        if index == 81: 
             return True
-        l, c = self.places[index]
+        if self.board[l][c] != 0:
+            return self.create(index + 1)
         for i in sample(range(1,10), 9):         # cria uma lista aleatória de números de 1 a 9
             if(self.allowed(l, c, i)):  
                 self.board[l][c] = i   
-                #self.print_stack()
                 if self.create(index + 1):  
                     return True            
         self.board[l][c] = 0              
         return False
 
 
-# simple solve
-board = Board(one_solution_board)
-board.print_board()
-board.solve()
-print("\n\n")
-board.print_board()
-print("\n\n")
-
-# two solutions solve
-board = Board(two_solution_board)
-board.print_board()
-board.debug()
-print("\n\n")
-board.print_board()
-print("solutions found: ", board.solutions)
 
 # create mode
-board = Board([[0 for _ in range(9)] for _ in range(9)])
+board = Board()
 board.create()
 board.print_board()
+print(board.count_solutions())
+
+posicoes = sample(list(range(81)), 81)
+
+for i in range(81):
+    l = posicoes[i] // 9
+    c = posicoes[i] % 9
+    clone = board.clone()
+    clone.board[l][c] = 0
+    if clone.count_solutions() == 1:
+        board.board[l][c] = 0
+        print("removendo linha", l, "coluna", c)
+
+board.print_board()
+print(board.count_solutions())
