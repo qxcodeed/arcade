@@ -27,6 +27,13 @@
                 "contents": "#pragma once\n\nvoid process(int);\n",
                 "encoding": 0
             }
+        ],
+        "go": [
+            {
+                "name": "draft.go",
+                "contents": "\n",
+                "encoding": 0
+            }
         ]
     }
 }

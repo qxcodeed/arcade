@@ -1,0 +1,138 @@
+>>>>>>>> INSERT insert and show with repetitions
+init 2
+insert 3 1 2 2 3 4 3
+show
+end
+======== EXPECT
+$init 2
+$insert 3 1 2 2 3 4 3
+$show
+[1, 2, 2, 3, 3, 3, 4]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT contains true and false
+init 5
+insert 5 1 5 3
+show
+contains 3
+contains 5
+contains 2
+end
+======== EXPECT
+$init 5
+$insert 5 1 5 3
+$show
+[1, 3, 5, 5]
+$contains 3
+true
+$contains 5
+true
+$contains 2
+false
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT erase one occurrence at a time
+init 5
+insert 2 2 2 3
+show
+erase 2
+show
+erase 2
+show
+erase 2
+show
+erase 2
+end
+======== EXPECT
+$init 5
+$insert 2 2 2 3
+$show
+[2, 2, 2, 3]
+$erase 2
+$show
+[2, 2, 3]
+$erase 2
+$show
+[2, 3]
+$erase 2
+$show
+[3]
+$erase 2
+value not found
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT count
+init 5
+insert 1 2 2 2 3 3 4
+count 2
+count 3
+count 4
+count 5
+end
+======== EXPECT
+$init 5
+$insert 1 2 2 2 3 3 4
+$count 2
+3
+$count 3
+2
+$count 4
+1
+$count 5
+0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT unique
+init 10
+insert 5 5 5 1 2 2 3 3 3 3
+show
+unique
+insert 4
+unique
+end
+======== EXPECT
+$init 10
+$insert 5 5 5 1 2 2 3 3 3 3
+$show
+[1, 2, 2, 3, 3, 3, 3, 5, 5, 5]
+$unique
+4
+$insert 4
+$unique
+5
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT clear
+init 3
+insert 1 1 2 3
+show
+clear
+show
+count 1
+unique
+end
+======== EXPECT
+$init 3
+$insert 1 1 2 3
+$show
+[1, 1, 2, 3]
+$clear
+$show
+[]
+$count 1
+0
+$unique
+0
+$end
+<<<<<<<< FINISH
+

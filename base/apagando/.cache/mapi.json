@@ -10,5 +10,13 @@
     ],
     "keep": [],
     "required": [],
-    "draft": {}
+    "draft": {
+        "go": [
+            {
+                "name": "draft.go",
+                "contents": "package main\nimport \"fmt\"\nfunc main() {\n}\n",
+                "encoding": 0
+            }
+        ]
+    }
 }

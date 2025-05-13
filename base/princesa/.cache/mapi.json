@@ -10,5 +10,13 @@
     ],
     "keep": [],
     "required": [],
-    "draft": {}
+    "draft": {
+        "go": [
+            {
+                "name": "draft.go",
+                "contents": "\n",
+                "encoding": 0
+            }
+        ]
+    }
 }

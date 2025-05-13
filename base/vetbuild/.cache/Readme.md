@@ -10,7 +10,7 @@
   - java usa `ArrayList`
   - javascript e typescript usam `Array`
 
-![_](cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/vetbuild/cover.jpg)
 
 Implemente a classe do vetor dinâmico.
 
@@ -29,19 +29,19 @@ Implemente a classe do vetor dinâmico.
 
 <!-- links .cache/draft -->
 - c
-  - [main.c](.cache/draft/c/main.c)
+  - [main.c](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/c/main.c)
 - cpp
-  - [extra.md](.cache/draft/cpp/extra.md)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/cpp/extra.md)
+  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/cpp/main.cpp)
 - go
-  - [extra.md](.cache/draft/go/extra.md)
-  - [main.go](.cache/draft/go/main.go)
+  - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/go/extra.md)
+  - [main.go](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/go/main.go)
 - java
-  - [Shell.java](.cache/draft/java/Shell.java)
-  - [extra.md](.cache/draft/java/extra.md)
+  - [Shell.java](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/java/Shell.java)
+  - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/java/extra.md)
 - py
-  - [extra.md](.cache/draft/py/extra.md)
-  - [main.py](.cache/draft/py/main.py)
+  - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/py/extra.md)
+  - [main.py](https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/py/main.py)
 <!-- links -->
 
 ## Testes

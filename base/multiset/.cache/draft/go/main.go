@@ -39,8 +39,6 @@ func main() {
 		case "init":
 			// value, _ := strconv.Atoi(args[1])
 			// ms = NewMultiSet(value)
-		case "magic":
-			// value, _ := strconv.Atoi(args[1])
 		case "insert":
 			// for _, part := range args[1:] {
 			// 	value, _ := strconv.Atoi(part)
