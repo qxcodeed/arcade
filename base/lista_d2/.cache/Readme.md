@@ -61,7 +61,6 @@ for e := lista.Front(); e != nil; e = e.Next() {
 Vamos partir do código da atividade anterior, a @lista_d1, e implementar um modelo de iterador para deixar nossa lista mais usável. O resultado final dessa estrutura de dados deve ser algo parecido o código de percorrimento para Go usando o modelo de iterador.
 
 - Para isso, vamos mudar a estrutura do Nó para que ele se comporte como iterador.
-- Normalmente, também existe um campo size na lista, mas apenas para evitar redundância, vamos calcular o tamanho da lista toda vez que for necessário.
 
 ```ts
 class Node {
@@ -75,6 +74,7 @@ class Node {
 
 class LList {
     - root: * Node                  // Nó sentinela que marca o começo e o fim da lista
+    - size: int                     // tamanho da lista
     + Size()                        // retorna o tamanho da lista
     + Clear()                       // apaga todos os nós da lista
     + PushFront(value int)          // adiciona um novo nó com esse valor no início da lista

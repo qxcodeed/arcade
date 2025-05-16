@@ -1,4 +1,4 @@
-# Lista Dupla com Nó Iterador
+# Lista Dupla - Extra
 
 <!-- toch -->
 [Intro](#intro) | [Shell](#shell)

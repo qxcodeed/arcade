@@ -67,7 +67,7 @@ Significado das tags nas questões:
 
 - [ ] `@lista_d1      *03 :make`[Lista Dupla com Nó Sentinela](base/lista_d1/Readme.md)
 - [ ] `@lista_d2      *04 :make`[Lista Dupla com Nó Iterador](base/lista_d2/Readme.md)
-- [ ] `@lista_d3      *05 :make`[Lista Dupla com Nó Iterador](base/lista_d3/Readme.md)
+- [ ] `@lista_d3      *05 :make`[Lista Dupla - Extra](base/lista_d3/Readme.md)
 - [ ] `@prin_list1    *02 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
 - [ ] `@editor        *04 :leet`[Editor de texto](base/editor/Readme.md)
 - [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)

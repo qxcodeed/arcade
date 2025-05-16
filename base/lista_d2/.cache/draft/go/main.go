@@ -34,7 +34,7 @@ type LList struct {
 }
 
 func NewLList() *LList {
-	list := &LList{}
+	list := &LList{size: 0}
 	list.root = &Node{root: nil}
 	list.root.next = list.root
 	list.root.prev = list.root
