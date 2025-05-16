@@ -53,7 +53,7 @@ Significado das tags nas questões:
 - [ ] `@fractais             *10  :open`[Desenhando Fractais](base/fractais/Readme.md)
 - [ ] `@fractais_png         +10  :open`[Desenhando Fractais](base/fractais_png/Readme.md)
 - [ ] `@hex                  +10  :open`[Desenhando labirinto perfeito](base/hex/Readme.md)
-- [ ] `@vetequals`           +01  :leet`[Verifique se dois vetores são iguais recursivamente](base/vetequals/Readme.md)
+- [ ] `@vetequals            +01  :leet`[Verifique se dois vetores são iguais recursivamente](base/vetequals/Readme.md)
 
 ### Vetor
 
@@ -65,15 +65,14 @@ Significado das tags nas questões:
 
 ### Lista
 
-- [ ] `#list_video  *01 :info`[Vídeo - Implementando Lista Ligada Dupla](https://youtu.be/gA4YAtXnnKw?si=cC2aea_5N4cFUxJY)
-- [ ] `@ligada L2   *01 :make`[Lista simples sem cabeça e rabo](base/ligada/Readme.md)
-- [ ] `@list_basic  *01 :make`[Lista Simplesmente Encadeada - CPP](base/list_basic/Readme.md)
-- [ ] `@prin_list1  *01 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
-- [ ] `@prin_list2  *01 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)
-- [ ] `@banco       *01 :leet`[Gerenciando a fila do banco](base/banco/Readme.md)
-- [ ] `@editor      *01 :leet`[Editor de texto](base/editor/Readme.md)
-- [ ] `@controlz    *01 :leet`[Editor com Control Z](base/controlz/Readme.md)
-- [ ] `@lista_simples` +05  :leet`[Lista simples](base/lista_simples/Readme.md)
+- [ ] `@lista_d1      *03 :make`[Lista Dupla com Nó Sentinela](base/lista_d1/Readme.md)
+- [ ] `@lista_d2      *04 :make`[Lista Dupla com Nó Iterador](base/lista_d2/Readme.md)
+- [ ] `@lista_d3      *05 :make`[Lista Dupla com Nó Iterador](base/lista_d3/Readme.md)
+- [ ] `@prin_list1    *02 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
+- [ ] `@editor        *04 :leet`[Editor de texto](base/editor/Readme.md)
+- [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)
+- [ ] `@banco         +03 :leet`[Gerenciando a fila do banco](base/banco/Readme.md)
+- [ ] `@controlz      +03 :leet`[Editor com Control Z](base/controlz/Readme.md)
 
 ### Pilha
 
@@ -145,7 +144,7 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `#cpp_oop     *00 :info`[Vídeo - Introdução a OOP in C++](https://youtu.be/w7F587dNwqA?si=2UMhfS9_DcAh-gjF)
 - [ ] `#cpp_acesso  *00 :info`[Vídeo - Modificadores de Acesso com exemplos](https://youtu.be/n1RfuPbzG-M?si=kwaSjo9Ng1g4waOK)
 
-### TADs e OOP<!-- l:cpp -->
+### A consertar<!-- l:cpp -->
 
 - [ ] `@budega      *00 :leet`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/Readme.md)
 - [ ] `@agenda      *00 :leet`[Gerencie contatos e telefones](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
@@ -155,11 +154,10 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `@fracao      *00 :leet`[Implemente a classe fração reduzida](base/fracao/Readme.md)
 - [ ] `@pontoGo     *00 :make`[Implemente a classe ponto](base/pontoGo/Readme.md)
 - [ ] `@fracaoGo    *00 :make`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
-
-### Listas: extra
-
+- [ ] `@lista_simples +05 :make`[Lista simples 1](base/lista_simples/Readme.md)
+- [ ] `@list_basic    *01 :make`[Lista Simplesmente Encadeada - CPP](base/list_basic/Readme.md)
 - [ ] `@cauda       *00 :leet`[Lista Simplesmente Encadeada com Cauda](base/cauda/Readme.md)
-- [ ] `@duplamente  *00 :leet`[Lista Duplamente Encadeada](base/duplamente/Readme.md)
+- [ ] `@duplamente  *00 :leet`[Lista Dupla - Algoritmos](base/duplamente/Readme.md)
 - [ ] `@invertendo  *00 :leet`[Inversão usando next e previous](base/invertendo/Readme.md)
 - [ ] `@invertendo2 *00 :leet`[Pilha - invertendo com pilhas auxiliares](base/invertendo2/Readme.md)
 - [ ] `@concatenar  *00 :leet`[Concatenar duas listas duplamente encadeadas](base/concatenar/Readme.md)

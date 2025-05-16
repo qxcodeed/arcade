@@ -1,0 +1,136 @@
+>>>>>>>> INSERT push_back <value ...>
+push_back 1 2 3 4
+show
+push_back 1 2 3 4
+show
+push_front 0 3
+show
+end
+======== EXPECT
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4]
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4, 1, 2, 3, 4]
+$push_front 0 3
+$show
+[3, 0, 1, 2, 3, 4, 1, 2, 3, 4]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT walking
+push_back 1 2 3 4 5 6
+walk
+clear
+walk
+end
+======== EXPECT
+$push_back 1 2 3 4 5 6
+$walk
+[ 1 2 3 4 5 6 ]
+[ 6 5 4 3 2 1 ]
+$clear
+$walk
+[ ]
+[ ]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and replace
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 3 7
+show
+end
+======== EXPECT
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 3 7
+fail: not found
+$show
+[8, 2, 9, 4, 5]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and insert
+push_back 1 2 3 4 5
+show
+insert 3 9
+show
+insert 1 8
+show
+insert 5 7
+show
+insert 7 6
+show
+insert 1 7
+show
+insert 10 7
+show
+end
+======== EXPECT
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$insert 3 9
+$show
+[1, 2, 9, 3, 4, 5]
+$insert 1 8
+$show
+[8, 1, 2, 9, 3, 4, 5]
+$insert 5 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 5]
+$insert 7 6
+$show
+[8, 1, 2, 9, 3, 4, 6, 7, 5]
+$insert 1 7
+$show
+[8, 7, 1, 2, 9, 3, 4, 6, 7, 5]
+$insert 10 7
+fail: not found
+$show
+[8, 7, 1, 2, 9, 3, 4, 6, 7, 5]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and remove
+push_back 1 2 3 4 5
+show
+remove 3
+show
+remove 1
+show
+remove 7
+show
+end
+======== EXPECT
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$remove 3
+$show
+[1, 2, 4, 5]
+$remove 1
+$show
+[2, 4, 5]
+$remove 7
+fail: not found
+$show
+[2, 4, 5]
+$end
+<<<<<<<< FINISH
+

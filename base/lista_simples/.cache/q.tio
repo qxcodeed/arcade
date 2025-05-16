@@ -1,3 +1,398 @@
+>>>>>>>> INSERT init e empty show
+show
+end
+======== EXPECT
+$show
+[]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT push_front <value ...>
+push_front 1 2 3 4
+show
+push_front 9 6
+show
+end
+======== EXPECT
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$push_front 9 6
+$show
+[6, 9, 4, 3, 2, 1]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT size
+size
+push_front 4
+show
+size
+push_front 3 2 1
+show
+size
+end
+======== EXPECT
+$size
+0
+$push_front 4
+$show
+[4]
+$size
+1
+$push_front 3 2 1
+$show
+[1, 2, 3, 4]
+$size
+4
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT clear
+push_front 1 2 3 4
+show
+clear
+show
+clear
+show
+push_front 1 2 3 4
+show
+end
+======== EXPECT
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$clear
+$show
+[]
+$clear
+$show
+[]
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT push_back <value ...>
+push_back 1 2 3 4
+show
+push_back 1 2 3 4
+show
+push_front 0 3
+show
+end
+======== EXPECT
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4]
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4, 1, 2, 3, 4]
+$push_front 0 3
+$show
+[3, 0, 1, 2, 3, 4, 1, 2, 3, 4]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT pop_front
+push_back 1 3 4 5
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+end
+======== EXPECT
+$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_front
+$show
+[3, 4, 5]
+$pop_front
+$show
+[4, 5]
+$pop_front
+$show
+[5]
+$pop_front
+$show
+[]
+$pop_front
+$show
+[]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT pop_back
+push_back 1 3 4 5
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+end
+======== EXPECT
+$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_back
+$show
+[1, 3, 4]
+$pop_back
+$show
+[1, 3]
+$pop_back
+$show
+[1]
+$pop_back
+$show
+[]
+$pop_back
+$show
+[]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT walking
+push_back 1 2 3 4 5 6
+walk
+clear
+walk
+end
+======== EXPECT
+$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and replace
+push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+end
+======== EXPECT
+$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and insert
+push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+push_back 1 2 3 4 5
+show
+insert 3 9
+show
+insert 1 8
+show
+insert 5 7
+show
+insert 6 7
+show
+insert 1 7
+show
+insert 10 7
+show
+end
+======== EXPECT
+$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$insert 3 9
+$show
+[1, 2, 9, 3, 4, 5]
+$insert 1 8
+$show
+[8, 1, 2, 9, 3, 4, 5]
+$insert 5 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 5]
+$insert 6 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 1 7
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 10 7
+fail: not found
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT search and remove
+push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+push_back 1 2 3 4 5
+show
+insert 3 9
+show
+insert 1 8
+show
+insert 5 7
+show
+insert 6 7
+show
+insert 1 7
+show
+insert 10 7
+show
+push_back 1 2 3 4 5
+show
+remove 3
+show
+remove 1
+show
+remove 7
+show
+======== EXPECT
+$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$insert 3 9
+$show
+[1, 2, 9, 3, 4, 5]
+$insert 1 8
+$show
+[8, 1, 2, 9, 3, 4, 5]
+$insert 5 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 5]
+$insert 6 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 1 7
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 10 7
+fail: not found
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$remove 3
+$show
+[1, 2, 4, 5]
+$remove 1
+$show
+[2, 4, 5]
+$remove 7
+fail: not found
+$show
+[2, 4, 5]
+------------------------------------------   LISTA DUPLA 2 ----------------------------------------------------------
+<<<<<<<< FINISH
+
+
 >>>>>>>> INSERT Teste do Construtor
 test_constructor
 ======== EXPECT
