@@ -51,7 +51,7 @@ func str2list(serial string) *LList {
 	if serial == "" {
 		return ll
 	}
-	for p := range strings.SplitSeq(serial, ",") {
+	for _, p := range strings.Split(serial, ",") {
 		value, _ := strconv.Atoi(p)
 		ll.PushBack(value)
 	}
