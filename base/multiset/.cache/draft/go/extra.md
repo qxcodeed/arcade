@@ -9,8 +9,8 @@ class MultiSet {
   + NewMultiSet(capacity: int): *MultiSet   ' Cria um novo multiconjunto com a capacidade especificada
   - expand(): void                          ' Aumenta a capacidade do vetor quando necessário (dobrando ou iniciando)
   --
-  + magicSearch(value: int): int            ' Retorna o índice da última ocorrência de value ou onde deve ser inserido
-  - match(index: int, value: int): bool     ' Verifica se o valor no índice corresponde ao valor dado
+  + search(value: int): (bool, int)         ' Se o elemento value estiver presente, retorna true e o índice da última ocorrência
+  --                                        ' Se não estiver, retorna false e o índice onde ele deve ser inserido
   --
   + Insert(value: int): void                ' Insere o valor na posição correta, mantendo a ordem e permitindo repetições
   - insert(value: int, index: int): error   ' Insere value no índice indicado, deslocando os elementos à direita

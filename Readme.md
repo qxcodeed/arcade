@@ -57,17 +57,19 @@ Significado das tags nas questões:
 
 ### Vetor
 
-- [ ] `@vetbuild    *10 :make`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
-- [ ] `@setbuild    *10 :make`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
-- [ ] `@magicsearch *05 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
-- [ ] `@multiset    *10 :make`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
-- [ ] `@iterador    *05 :make`[Criando um iterador](base/iterador/Readme.md)
+- [ ] `@vetbuild     *10 :make`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
+- [ ] `@setbuild     *10 :make`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
+- [ ] `@bettersearch *00 :make`[Better Search com busca binária](base/bettersearch/Readme.md)
+- [ ] `@magicsearch  *05 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
+- [ ] `@multiset     *10 :make`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
+- [ ] `@iterador     *05 :make`[Criando um iterador](base/iterador/Readme.md)
 
 ### Lista
 
 - [ ] `@lista_d1      *03 :make`[Lista Dupla com Nó Sentinela](base/lista_d1/Readme.md)
 - [ ] `@lista_d2      *04 :make`[Lista Dupla com Nó Iterador](base/lista_d2/Readme.md)
 - [ ] `@lista_d3      *05 :make`[Lista Dupla - Extra](base/lista_d3/Readme.md)
+- [ ] `@lista_d4      *05 :make`[Lista Circular utilizando Template](base/lista_d4/Readme.md)
 - [ ] `@prin_list1    *02 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
 - [ ] `@editor        *04 :leet`[Editor de texto](base/editor/Readme.md)
 - [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)

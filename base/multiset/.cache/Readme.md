@@ -25,7 +25,7 @@
   - Percorre a lista uma única vez e conta os elementos diferentes.
   - Observe que podemos utilizar o fato de o vetor estar ordenado para contar os elementos diferentes.
 
-![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/multiset/cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/multiset/cover.png)
 
 Implemente a classe do vetor dinâmico.
 

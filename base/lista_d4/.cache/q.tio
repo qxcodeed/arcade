@@ -1,0 +1,44 @@
+>>>>>>>> INSERT forward
+push_back 1 2 3 4 5
+show
+forward 3 9
+end
+======== EXPECT
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$forward 3 9
+[ 3 4 5 1 2 3 4 5 1 ]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT forward
+push_back 1
+show
+forward 1 9
+end
+======== EXPECT
+$push_back 1
+$show
+[1]
+$forward 1 9
+[ 1 1 1 1 1 1 1 1 1 ]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT backward
+push_back 1 2 3 4 5
+show
+backward 3 9
+end
+======== EXPECT
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$backward 3 9
+[ 3 2 1 5 4 3 2 1 5 ]
+$end
+<<<<<<<< FINISH
+
