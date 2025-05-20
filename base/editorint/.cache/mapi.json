@@ -1,0 +1,37 @@
+{
+    "title": "@editorint: Editor de texto interativo utilizando o curses",
+    "description": "<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"\" xml:lang=\"\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"generator\" content=\"pandoc\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=yes\" />\n  <title>@editorint: Editor de texto interativo utilizando o\ncurses</title>\n  <style>\n    code{white-space: pre-wrap;}\n    span.smallcaps{font-variant: small-caps;}\n    div.columns{display: flex; gap: min(4vw, 1.5em);}\n    div.column{flex: auto; overflow-x: auto;}\n    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}\n    /* The extra [class] is a hack that increases specificity enough to\n       override a similar rule in reveal.js */\n    ul.task-list[class]{list-style: none;}\n    ul.task-list li input[type=\"checkbox\"] {\n      font-size: inherit;\n      width: 0.8em;\n      margin: 0 0.8em 0.2em -1.6em;\n      vertical-align: middle;\n    }\n  </style>\n</head>\n<body>\n<h1 id=\"editor-de-texto-interativo-utilizando-o-curses\">Editor de texto\ninterativo utilizando o curses</h1>\n</body>\n</html>",
+    "upload": [
+        {
+            "name": "vpl_evaluate.cases",
+            "contents": "",
+            "encoding": 0
+        }
+    ],
+    "keep": [],
+    "required": [],
+    "draft": {
+        "go": [
+            {
+                "name": "lista.go",
+                "contents": "package main\n\nimport (\n\t\"strings\"\n)\n\ntype Node[T any] struct {\n\tValue T\n\tnext  *Node[T]\n\tprev  *Node[T]\n\troot  *Node[T]\n}\n\ntype List[T any] struct {\n\troot *Node[T]\n\tsize int\n}\n\nfunc NewList[T any]() *List[T] {\n\troot := &Node[T]{}\n\troot.next = root\n\troot.prev = root\n\troot.root = root\n\treturn &List[T]{root: root, size: 0}\n}\n\nfunc (n *Node[T]) Next() *Node[T] {\n\treturn n.next\n}\n\nfunc (l *List[T]) PushBack(value T) {\n\tl.Insert(l.root, value)\n}\n\nfunc (l *List[T]) Insert(mark *Node[T], value T) *Node[T] {\n\tn := &Node[T]{Value: value, root: l.root}\n\tn.prev = mark.prev\n\tn.next = mark\n\tmark.prev.next = n\n\tmark.prev = n\n\tl.size++\n\treturn n\n}\n\nfunc (l *List[T]) String() string {\n\tvalues := []string{}\n\tfor n := l.root.next; n != l.root; n = n.next {\n\t\tvalues = append(values, fmt.Sprint(n.Value))\n\t}\n\treturn \"[\" + strings.Join(values, \", \") + \"]\"\n}\n\nfunc (n *Node[T]) Prev() *Node[T] {\n\treturn n.prev\n}\n\nfunc (l *List[T]) Size() int {\n\treturn l.size\n}\n\nfunc (l *List[T]) Clear() {\n\tl.root.next = l.root\n\tl.root.prev = l.root\n\tl.size = 0\n}\n\nfunc (l *List[T]) End() *Node[T] {\n\treturn l.root\n}\n\nfunc (l *List[T]) Front() *Node[T] {\n\tif l.size == 0 {\n\t\treturn l.root\n\t}\n\treturn l.root.next\n}\n\nfunc (l *List[T]) Back() *Node[T] {\n\tif l.size == 0 {\n\t\treturn l.root\n\t}\n\treturn l.root.prev\n}\n\nfunc (l *List[T]) Remove(n *Node[T]) *Node[T] {\n\tif n == l.root {\n\t\treturn l.root\n\t}\n\tn.prev.next = n.next\n\tn.next.prev = n.prev\n\tl.size--\n\treturn n.next\n}\n\nfunc (l *List[T]) IndexOf(n *Node[T]) int {\n\tif n == l.root {\n\t\treturn l.size\n\t}\n\tif n.root != l.root {\n\t\treturn -1\n\t}\n\ti := 0\n\tfor it := l.root.next; it != n; it = it.next {\n\t\ti++\n\t\tif i >= l.size {\n\t\t\treturn -1\n\t\t}\n\t}\n\treturn i\n}\n",
+                "encoding": 0
+            },
+            {
+                "name": "extra.md",
+                "contents": "# Go\n\n- Install tcell\n- `go get github.com/gdamore/tcell/v2`\n",
+                "encoding": 0
+            },
+            {
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"fmt\"\n\n\t\"github.com/gdamore/tcell/v2\"\n)\n\ntype Editor struct {\n\tlines  *List[*List[rune]]\n\tline   *Node[*List[rune]]\n\tcursor *Node[rune]\n\tscreen tcell.Screen\n\tstyle  tcell.Style\n}\n\nfunc (e *Editor) InsertChar(r rune) {\n\te.cursor = e.line.Value.Insert(e.cursor, r)\n\te.cursor = e.cursor.Next()\n}\n\nfunc (e *Editor) KeyLeft() {\n\tif e.cursor != e.line.Value.Front() {\n\t\te.cursor = e.cursor.Prev()\n\t\treturn\n\t}\n\tif e.line != e.lines.Front() {\n\t\te.line = e.line.Prev()\n\t\te.cursor = e.line.Value.End()\n\t}\n}\n\nfunc (e *Editor) KeyEnter() {\n}\n\nfunc (e *Editor) KeyRight() {\n}\n\nfunc (e *Editor) KeyUp() {\n}\n\nfunc (e *Editor) KeyDown() {\n}\n\nfunc (e *Editor) KeyBackspace() {\n}\n\nfunc (e *Editor) KeyDelete() {\n}\n\nfunc main() {\n\t// Texto inicial e posi\u00e7\u00e3o do cursor\n\teditor := NewEditor()\n\teditor.Draw()\n\teditor.MainLoop()\n\tdefer editor.screen.Fini() // Encerra a tela ao sair\n}\n\nfunc (e *Editor) MainLoop() {\n\tfor {\n\t\tev := e.screen.PollEvent()\n\t\tswitch ev := ev.(type) {\n\t\tcase *tcell.EventKey:\n\t\t\tswitch ev.Key() {\n\t\t\tcase tcell.KeyEsc, tcell.KeyCtrlC:\n\t\t\t\treturn\n\t\t\tcase tcell.KeyEnter:\n\t\t\t\te.KeyEnter()\n\t\t\tcase tcell.KeyLeft:\n\t\t\t\te.KeyLeft()\n\t\t\tcase tcell.KeyRight:\n\t\t\t\te.KeyRight()\n\t\t\tcase tcell.KeyUp:\n\t\t\t\te.KeyUp()\n\t\t\tcase tcell.KeyDown:\n\t\t\t\te.KeyDown()\n\t\t\tcase tcell.KeyBackspace, tcell.KeyBackspace2:\n\t\t\t\te.KeyBackspace()\n\t\t\tcase tcell.KeyDelete:\n\t\t\t\te.KeyDelete()\n\t\t\tdefault:\n\t\t\t\tif ev.Rune() != 0 {\n\t\t\t\t\te.InsertChar(ev.Rune())\n\t\t\t\t}\n\t\t\t}\n\t\t\te.Draw()\n\t\tcase *tcell.EventResize:\n\t\t\te.screen.Sync()\n\t\t\te.Draw()\n\t\t}\n\t}\n}\n\nfunc NewEditor() *Editor {\n\te := &Editor{}\n\t// Inicializa a tela\n\tscreen, err := tcell.NewScreen()\n\tif err != nil {\n\t\tfmt.Printf(\"erro ao criar a tela: %v\", err)\n\t}\n\tif err := screen.Init(); err != nil {\n\t\tfmt.Printf(\"erro ao iniciar a tela: %v\", err)\n\t}\n\te.screen = screen\n\te.lines = NewList[*List[rune]]()\n\te.lines.PushBack(NewList[rune]())\n\te.line = e.lines.Front()\n\te.cursor = e.line.Value.Back()\n\t// Define o estilo do texto (branco com fundo preto)\n\te.style = tcell.StyleDefault.Foreground(tcell.ColorWhite).Background(tcell.ColorBlack)\n\n\t// Limpa a tela e define o estilo base\n\te.screen.SetStyle(e.style)\n\te.screen.Clear()\n\treturn e\n}\n\nfunc (e *Editor) Draw() {\n\te.screen.Clear()\n\tx := 0\n\ty := 0\n\tfor line := e.lines.Front(); line != e.lines.End(); line = line.Next() {\n\t\tfor char := line.Value.Front(); ; char = char.Next() {\n\t\t\tdata := char.Value\n\t\t\tif char == line.Value.End() {\n\t\t\t\tdata = '\u2936'\n\t\t\t}\n\t\t\tif data == ' ' {\n\t\t\t\tdata = '\u00b7'\n\t\t\t}\n\t\t\tif char == e.cursor {\n\t\t\t\te.screen.SetContent(x, y, data, nil, e.style.Reverse(true))\n\t\t\t} else {\n\t\t\t\te.screen.SetContent(x, y, data, nil, e.style)\n\t\t\t}\n\t\t\tx++\n\t\t\tif char == line.Value.End() {\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\t\ty++\n\t\tx = 0\n\t}\n\te.screen.Show()\n}\n",
+                "encoding": 0
+            },
+            {
+                "name": "go.mod",
+                "contents": "module editor\n\ngo 1.24.3\n\nrequire (\n\tgithub.com/gdamore/encoding v1.0.1 // indirect\n\tgithub.com/gdamore/tcell/v2 v2.8.1 // indirect\n\tgithub.com/lucasb-eyer/go-colorful v1.2.0 // indirect\n\tgithub.com/mattn/go-runewidth v0.0.16 // indirect\n\tgithub.com/rivo/uniseg v0.4.3 // indirect\n\tgolang.org/x/sys v0.29.0 // indirect\n\tgolang.org/x/term v0.28.0 // indirect\n\tgolang.org/x/text v0.21.0 // indirect\n)\n",
+                "encoding": 0
+            }
+        ]
+    }
+}

@@ -72,6 +72,7 @@ Significado das tags nas questões:
 - [ ] `@lista_d4      *05 :make`[Lista Circular utilizando Template](base/lista_d4/Readme.md)
 - [ ] `@prin_list1    *02 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
 - [ ] `@editor        *04 :leet`[Editor de texto](base/editor/Readme.md)
+- [ ] `@editorint     *08 :leet`[Editor de texto interativo utilizando o curses](base/editorint/Readme.md)
 - [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)
 - [ ] `@banco         +03 :leet`[Gerenciando a fila do banco](base/banco/Readme.md)
 - [ ] `@controlz      +03 :leet`[Editor com Control Z](base/controlz/Readme.md)
