@@ -20,13 +20,14 @@ func (e *Editor) InsertChar(r rune) {
 }
 
 func (e *Editor) KeyLeft() {
-	if e.cursor != e.line.Value.Front() {
-		e.cursor = e.cursor.Prev()
+	if e.cursor != e.line.Value.Front() { // Se o cursor não está no início da linha
+		e.cursor = e.cursor.Prev() // Move o cursor para a esquerda
 		return
 	}
-	if e.line != e.lines.Front() {
-		e.line = e.line.Prev()
-		e.cursor = e.line.Value.End()
+	// Estamos no início da linha
+	if e.line != e.lines.Front() { // Se não está na primeira linha
+		e.line = e.line.Prev()        // Move para a linha anterior
+		e.cursor = e.line.Value.End() // Move o cursor para o final da linha
 	}
 }
 
