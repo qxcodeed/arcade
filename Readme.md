@@ -73,8 +73,8 @@ Significado das tags nas questões:
 - [ ] `@prin_list1    *03 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
 - [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)
 - [ ] `@editor        +04 :leet`[Editor de texto](base/editor/Readme.md)
-- [ ] `@controlz      +02 :leet`[Editor com Control Z](base/controlz/Readme.md)
-- [ ] `@editorint     *05 :open`[Editor de texto interativo](base/editorint/Readme.md)
+- [ ] `@controlz      +04 :leet`[Editor com Control Z](base/controlz/Readme.md)
+- [ ] `@editorint     *08 :open`[Editor de texto interativo](base/editorint/Readme.md)
 
 ### Deque
 
