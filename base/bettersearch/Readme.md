@@ -6,33 +6,12 @@ Vamos utilizar a busca binária para buscar elementos em uma lista ordenada sem 
 
 ```py
 # python
-def better_search(arr: list[int], value: int) -> tuple[bool, int]:
+def better_search(arr: list[int], value: int) -> tuple[bool, int]
 ```
 
 ```go
 // go
-func BetterSearch(arr []int, value int) (bool, int) {
-```
-
-```java
-// java
-public class BetterSearch {
-    public static Tuple<Boolean, Integer> betterSearch(int[] arr, int value) {
-        int low = 0;
-        int high = arr.length;
-        while (low < high) {
-            int mid = (low + high) / 2;
-            if (arr[mid] == value) {
-                return new Tuple<>(true, mid);
-            } else if (arr[mid] < value) {
-                low = mid + 1;
-            } else {
-                high = mid;
-            }
-        }
-        return new Tuple<>(false, low);
-    }
-}
+func BetterSearch(arr []int, value int) (bool, int) 
 ```
 
 - Faça a implementação da busca binária usando o intervalo [low, high[.

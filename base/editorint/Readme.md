@@ -1,4 +1,4 @@
-# Editor de texto interativo utilizando o curses
+# Editor de texto interativo
 
 - O editor de texto interativo utiliza uma uma lista ligada de linhas para armazenar o texto.
 - Cada linha é uma lista ligada de caracteres.
