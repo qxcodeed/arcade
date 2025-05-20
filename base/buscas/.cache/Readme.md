@@ -1,6 +1,6 @@
 # Buscas de strings
 
-![_](cover.jpg)
+![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/buscas/cover.jpg)
 
 Há um vetor de strings de entrada e um vetor de strings de consulta. Para cada sequência de consultas, determine quantas vezes ela ocorre na lista de sequências de entrada.
 

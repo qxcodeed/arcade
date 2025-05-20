@@ -1,0 +1,89 @@
+>>>>>>>> INSERT 00
+4 
+aba baba aba xzxb
+3
+aba xzxb ab
+======== EXPECT
+2 1 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 01
+3
+c c mpikv
+8
+f c o uplbd o zl xoi mpikv
+======== EXPECT
+0 2 0 0 0 0 0 1
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 02
+7
+qu qu pg qu qu cjyrx y
+6
+o qu sxsse b pd yuv
+======== EXPECT
+0 4 0 0 0 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 00
+2
+rw rw 
+3 
+y rw iowz
+======== EXPECT
+0 2 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 03
+4
+jphjf urx xs ijn
+7
+fzsjg u hb daldh mgzd hgv jmqh
+======== EXPECT
+0 0 0 0 0 0 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 04
+5
+sdurp tnl himf tnl tnl
+6
+y sdurp tvaez tnl undx u
+======== EXPECT
+0 1 0 3 0 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 05
+7
+axx svw xhac svw svw wfsy svw
+5
+ms axx svw svw svw
+======== EXPECT
+0 1 4 4 4
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 06
+3
+yakwy hkfx hkfx
+10
+v uqojw hkfx mo o qzb yakwy fsl evhb b
+======== EXPECT
+0 0 2 0 0 0 1 0 0 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 07
+5
+odbor aeoow dbpak hwsh pwkr
+7
+wqtmc vpje ia vn kajln dwe zi
+======== EXPECT
+0 0 0 0 0 0 0
+<<<<<<<< FINISH
+
