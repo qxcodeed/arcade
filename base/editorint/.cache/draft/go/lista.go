@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -9,6 +10,16 @@ type Node[T any] struct {
 	next  *Node[T]
 	prev  *Node[T]
 	root  *Node[T]
+}
+
+// Retorna o próximo nó
+func (n *Node[T]) Next() *Node[T] {
+	return n.next
+}
+
+// Retorna o nó anterior
+func (n *Node[T]) Prev() *Node[T] {
+	return n.prev
 }
 
 type List[T any] struct {
@@ -24,10 +35,6 @@ func NewList[T any]() *List[T] {
 	return &List[T]{root: root, size: 0}
 }
 
-func (n *Node[T]) Next() *Node[T] {
-	return n.next
-}
-
 func (l *List[T]) PushBack(value T) {
 	l.Insert(l.root, value)
 }
@@ -40,18 +47,6 @@ func (l *List[T]) Insert(mark *Node[T], value T) *Node[T] {
 	mark.prev = n
 	l.size++
 	return n
-}
-
-func (l *List[T]) String() string {
-	values := []string{}
-	for n := l.root.next; n != l.root; n = n.next {
-		values = append(values, fmt.Sprint(n.Value))
-	}
-	return "[" + strings.Join(values, ", ") + "]"
-}
-
-func (n *Node[T]) Prev() *Node[T] {
-	return n.prev
 }
 
 func (l *List[T]) Size() int {
@@ -107,4 +102,12 @@ func (l *List[T]) IndexOf(n *Node[T]) int {
 		}
 	}
 	return i
+}
+
+func (l *List[T]) String() string {
+	values := []string{}
+	for n := l.root.next; n != l.root; n = n.next {
+		values = append(values, fmt.Sprint(n.Value))
+	}
+	return "[" + strings.Join(values, ", ") + "]"
 }
