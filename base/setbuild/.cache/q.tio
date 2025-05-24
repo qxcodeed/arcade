@@ -1,0 +1,91 @@
+>>>>>>>> INSERT insert
+init 1
+show
+insert 3
+show
+insert 4
+show
+insert 5
+show
+insert 1
+show
+insert 2
+show
+insert 3
+show
+end
+======== EXPECT
+$init 1
+$show
+[]
+$insert 3
+$show
+[3]
+$insert 4
+$show
+[3, 4]
+$insert 5
+$show
+[3, 4, 5]
+$insert 1
+$show
+[1, 3, 4, 5]
+$insert 2
+$show
+[1, 2, 3, 4, 5]
+$insert 3
+$show
+[1, 2, 3, 4, 5]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT contains
+init 10
+insert 10 2 8 12 6
+show
+contains 10
+contains 3
+end
+======== EXPECT
+$init 10
+$insert 10 2 8 12 6
+$show
+[2, 6, 8, 10, 12]
+$contains 10
+true
+$contains 3
+false
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT erase
+init 6
+insert 1 2 3 4 5 6
+show
+erase 3
+show
+erase 1
+show
+erase 8
+show
+end
+======== EXPECT
+$init 6
+$insert 1 2 3 4 5 6
+$show
+[1, 2, 3, 4, 5, 6]
+$erase 3
+$show
+[1, 2, 4, 5, 6]
+$erase 1
+$show
+[2, 4, 5, 6]
+$erase 8
+value not found
+$show
+[2, 4, 5, 6]
+$end
+<<<<<<<< FINISH
+

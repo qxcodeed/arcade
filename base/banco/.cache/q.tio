@@ -1,0 +1,390 @@
+>>>>>>>> INSERT init
+init 3
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT in
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT tic
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:4:6][Bo:2:3][Ce:3:8]
+in  :{Di:3:4 Em:3:1}
+out :{}
+gain:0 lost:0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT tic2
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+tic
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:4:6][Bo:2:3][Ce:3:8]
+in  :{Di:3:4 Em:3:1}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:3:6][Bo:1:3][Ce:2:8]
+in  :{Di:3:3 Em:3:0}
+out :{}
+gain:3 lost:0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT tic 3
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+tic
+show
+tic
+in Fa 4 5
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:4:6][Bo:2:3][Ce:3:8]
+in  :{Di:3:4 Em:3:1}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:3:6][Bo:1:3][Ce:2:8]
+in  :{Di:3:3 Em:3:0}
+out :{}
+gain:3 lost:0
+$tic
+$in Fa 4 5
+$show
+[Ai:2:6][Bo:0:3][Ce:1:8]
+in  :{Di:3:2 Fa:4:5}
+out :{Em:3:0}
+gain:6 lost:0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT tic 4
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+tic
+show
+tic
+in Fa 4 5
+show
+tic
+show
+tic
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:4:6][Bo:2:3][Ce:3:8]
+in  :{Di:3:4 Em:3:1}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:3:6][Bo:1:3][Ce:2:8]
+in  :{Di:3:3 Em:3:0}
+out :{}
+gain:3 lost:0
+$tic
+$in Fa 4 5
+$show
+[Ai:2:6][Bo:0:3][Ce:1:8]
+in  :{Di:3:2 Fa:4:5}
+out :{Em:3:0}
+gain:6 lost:0
+$tic
+$show
+[Ai:1:6][][Ce:0:8]
+in  :{Di:3:1 Fa:4:4}
+out :{Bo:0:3}
+gain:8 lost:3
+$tic
+$show
+[Ai:0:6][Di:3:1][]
+in  :{Fa:4:3}
+out :{Ce:0:8}
+gain:9 lost:3
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT tic 5
+init 3
+show
+in Ai 4 6
+in Bo 2 3
+in Ce 3 8
+in Di 3 5
+in Em 3 2
+show
+tic
+show
+tic
+show
+tic
+in Fa 4 5
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+tic
+show
+end
+======== EXPECT
+$init 3
+$show
+[][][]
+in  :{}
+out :{}
+gain:0 lost:0
+$in Ai 4 6
+$in Bo 2 3
+$in Ce 3 8
+$in Di 3 5
+$in Em 3 2
+$show
+[][][]
+in  :{Ai:4:6 Bo:2:3 Ce:3:8 Di:3:5 Em:3:2}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:4:6][Bo:2:3][Ce:3:8]
+in  :{Di:3:4 Em:3:1}
+out :{}
+gain:0 lost:0
+$tic
+$show
+[Ai:3:6][Bo:1:3][Ce:2:8]
+in  :{Di:3:3 Em:3:0}
+out :{}
+gain:3 lost:0
+$tic
+$in Fa 4 5
+$show
+[Ai:2:6][Bo:0:3][Ce:1:8]
+in  :{Di:3:2 Fa:4:5}
+out :{Em:3:0}
+gain:6 lost:0
+$tic
+$show
+[Ai:1:6][][Ce:0:8]
+in  :{Di:3:1 Fa:4:4}
+out :{Bo:0:3}
+gain:8 lost:3
+$tic
+$show
+[Ai:0:6][Di:3:1][]
+in  :{Fa:4:3}
+out :{Ce:0:8}
+gain:9 lost:3
+$tic
+$show
+[][Di:2:1][Fa:4:3]
+in  :{}
+out :{Ai:0:6}
+gain:10 lost:3
+$tic
+$show
+[][Di:1:1][Fa:3:3]
+in  :{}
+out :{}
+gain:12 lost:3
+$tic
+$show
+[][Di:0:1][Fa:2:3]
+in  :{}
+out :{}
+gain:14 lost:3
+$tic
+$show
+[][][Fa:1:3]
+in  :{}
+out :{Di:0:1}
+gain:15 lost:3
+$tic
+$show
+[][][Fa:0:3]
+in  :{}
+out :{}
+gain:16 lost:3
+$tic
+$show
+[][][]
+in  :{}
+out :{Fa:0:3}
+gain:16 lost:3
+$tic
+$show
+[][][]
+in  :{}
+out :{}
+gain:16 lost:3
+$end
+<<<<<<<< FINISH
+

@@ -20,6 +20,7 @@ Você deve implementar a função `processa` no arquivo `lib.cpp`.
 <!-- links .cache/draft -->
 - cpp
   - [main.cpp](.cache/draft/cpp/main.cpp)
+  - [user.cpp](.cache/draft/cpp/user.cpp)
 - go
   - [main.go](.cache/draft/go/main.go)
 - py

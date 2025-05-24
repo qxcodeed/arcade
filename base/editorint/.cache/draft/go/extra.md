@@ -1,19 +1,15 @@
 # Go
 
 - Navegue pelo terminal até a pasta do projeto.
-- Você encontrará os arquivos `lista.go`, `main.go` e `mod.go`.
+- Você encontrará os arquivos `lista.go`, `main.go`.
 
 ```bash
-# Apague o arquivo `mod.go` para evitar conflitos de versão
-rm -f mod.go
-# Crie um novo módulo Go baseado na sua versão do Go
+# Você precisará criar um projeto Go com o comando:
 go mod init editor
-# Instale a biblioteca `tcell` para poder manipular o terminal
+# Instale a biblioteca `tcell` com o comando
 go get github.com/gdamore/tcell/v2
-# Estando dentro da pasta do projeto, rode o projeto usando
-go run .
-# ou usando
-tko run .
+# Estando dentro da pasta do projeto, você pode rodar o projeto com o comando:
+tko run *.go
 ```
 
 - Caso entre em loop infinito ou dê algum erro de execução, você pode interromper o programa com `Ctrl + C`.

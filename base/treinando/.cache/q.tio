@@ -1,0 +1,189 @@
+>>>>>>>> INSERT tostr
+read
+tostr
+read 4
+tostr
+read 4 5
+tostr
+read 4 5 6
+tostr
+end
+======== EXPECT
+$read
+$tostr
+[]
+$read 4
+$tostr
+[4]
+$read 4 5
+$tostr
+[4, 5]
+$read 4 5 6
+$tostr
+[4, 5, 6]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT torev
+read
+torev
+read 4
+torev
+read 4 5
+torev
+read 4 5 6
+torev
+end
+======== EXPECT
+$read
+$torev
+[]
+$read 4
+$torev
+[4]
+$read 4 5
+$torev
+[5, 4]
+$read 4 5 6
+$torev
+[6, 5, 4]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT reverse
+read
+reverse
+tostr
+read 4
+reverse
+tostr
+read 4 5
+reverse
+tostr
+read 4 5 6
+reverse
+tostr
+end
+======== EXPECT
+$read
+$reverse
+$tostr
+[]
+$read 4
+$reverse
+$tostr
+[4]
+$read 4 5
+$reverse
+$tostr
+[5, 4]
+$read 4 5 6
+$reverse
+$tostr
+[6, 5, 4]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT sum
+read
+sum
+read 4
+sum
+read 4 5
+sum
+read 4 5 6
+sum
+end
+======== EXPECT
+$read
+$sum
+0
+$read 4
+$sum
+4
+$read 4 5
+$sum
+9
+$read 4 5 6
+$sum
+15
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT mult
+read
+mult
+read 4
+mult
+read 4 5
+mult
+read 4 5 6
+mult
+end
+======== EXPECT
+$read
+$mult
+1
+$read 4
+$mult
+4
+$read 4 5
+$mult
+20
+$read 4 5 6
+$mult
+120
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT min
+read
+min
+read 4
+min
+read 4 5
+min
+read 5 4
+min
+read 4 5 6
+min
+read 5 4 6
+min
+read 5 6 4
+min
+read 4 3 5 1 9 4 5
+min
+end
+======== EXPECT
+$read
+$min
+-1
+$read 4
+$min
+0
+$read 4 5
+$min
+0
+$read 5 4
+$min
+1
+$read 4 5 6
+$min
+0
+$read 5 4 6
+$min
+1
+$read 5 6 4
+$min
+2
+$read 4 3 5 1 9 4 5
+$min
+3
+$end
+<<<<<<<< FINISH
+

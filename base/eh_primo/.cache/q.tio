@@ -1,0 +1,62 @@
+>>>>>>>> INSERT
+1
+======== EXPECT
+false
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2
+======== EXPECT
+true
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+3
+======== EXPECT
+true
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4
+======== EXPECT
+false
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5
+======== EXPECT
+true
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+6
+======== EXPECT
+false
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+7
+======== EXPECT
+true
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+18
+======== EXPECT
+false
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+19
+======== EXPECT
+true
+<<<<<<<< FINISH
+

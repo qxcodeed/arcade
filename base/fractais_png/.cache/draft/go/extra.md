@@ -1,15 +1,18 @@
 # Instalação
 
-- Instalação das dependências
-  - Após baixar a atividade pelo tko
-  - Navegue até a pasta da atividade pelo terminal
-  - cd ed/database/fractais_png
-  - Digite o seguinte comando para baixar a biblioteca de desenho
-  - go get "github.com/fogleman/gg"
-- Rodando
-  - Digite o seguinte comando para rodar
-  - `go run .`
-  - Abra o arquivo .png gerado para acompanhar o resultado do desenho
+- Após baixar a atividade pelo tko
+- Navegue até a pasta da atividade pelo terminal
+- cd ed/database/fractais_png
+- Digite o seguintes comandos para iniciar o módulo e baixar a biblioteca de desenho
+
+```bash
+go mod init fractais
+go get "github.com/fogleman/gg"
+tko run *.go
+
+# Abra o arquivo `tree.png` para ver desenho gerado
+code tree.png
+```
 
 ## Utilizando
 

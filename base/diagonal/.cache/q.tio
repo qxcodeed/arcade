@@ -1,0 +1,52 @@
+>>>>>>>> INSERT
+jefferson
+======== EXPECT
+j
+ e
+  f
+   f
+    e
+     r
+      s
+       o
+        n
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+lukeEuSouSeuPai
+======== EXPECT
+l
+ u
+  k
+   e
+    E
+     u
+      S
+       o
+        u
+         S
+          e
+           u
+            P
+             a
+              i
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+fabiocarlos
+======== EXPECT
+f
+ a
+  b
+   i
+    o
+     c
+      a
+       r
+        l
+         o
+          s
+<<<<<<<< FINISH
+

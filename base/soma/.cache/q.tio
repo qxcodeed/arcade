@@ -1,0 +1,48 @@
+>>>>>>>> INSERT 01 um
+4 # # 
+======== EXPECT
+4 4
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 02 dois
+1 # 0 # # 
+======== EXPECT
+1 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 03 tres
+4 # 8 2 # # # 
+======== EXPECT
+14 2
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 04 quatro
+0 9 4 # # # 5 # # 
+======== EXPECT
+18 0
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 05 cinco
+0 4 # # 2 0 # # -3 # # 
+======== EXPECT
+3 -3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 06 seis
+2 0 5 # # # 3 # 7 # -9 # # 
+======== EXPECT
+8 -9
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 07 dez
+1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
+======== EXPECT
+45 0
+<<<<<<<< FINISH
+

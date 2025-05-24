@@ -1,0 +1,46 @@
+>>>>>>>> INSERT
+abc
+======== EXPECT
+abc|
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+euRteRamo
+======== EXPECT
+eu
+te
+amo|
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+euRamo<<<
+======== EXPECT
+eu
+|amo
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+euRamo<<<<<<<como-
+======== EXPECT
+como-|eu
+amo
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+euRemo<<Ba>>>>>>
+======== EXPECT
+eu
+amo|
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+voc-ae<<v<<e>>>Di>
+======== EXPECT
+voce-vai|
+<<<<<<<< FINISH
+

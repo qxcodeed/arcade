@@ -14,6 +14,7 @@ Implemente a classe ponto e faça a equação da reta.
 
 <!-- links .cache/draft -->
 - cpp
+  - [cases.tio](.cache/draft/cpp/cases.tio)
   - [fn.hpp](.cache/draft/cpp/fn.hpp)
   - [main.cpp](.cache/draft/cpp/main.cpp)
   - [point.cpp](.cache/draft/cpp/point.cpp)

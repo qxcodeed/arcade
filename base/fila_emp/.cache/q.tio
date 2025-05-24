@@ -1,0 +1,52 @@
+>>>>>>>> INSERT Teste tudo
+test_all
+======== EXPECT
+TESTE todos (push, pop, peek)
+push 1
+Fila: [1]
+push 2
+Fila: [1, 2]
+push 3
+Fila: [1, 2, 3]
+pop
+Fila: [2, 3]
+pop
+Fila: [3]
+push 4
+Fila: [3, 4]
+push 5
+Fila: [3, 4, 5]
+pop
+Fila: [4, 5]
+pop
+Fila: [5]
+push 6
+Fila: [5, 6]
+push 7
+Fila: [5, 6, 7]
+push 8
+Fila: [5, 6, 7, 8]
+push 9
+Fila: [5, 6, 7, 8, 9]
+pop
+Fila: [6, 7, 8, 9]
+push 10
+Fila: [6, 7, 8, 9, 10]
+pop
+Fila: [7, 8, 9, 10]
+push 11
+Fila: [7, 8, 9, 10, 11]
+pop
+Fila: [8, 9, 10, 11]
+push 12
+Fila: [8, 9, 10, 11, 12]
+pop
+Fila: [9, 10, 11, 12]
+pop
+Fila: [10, 11, 12]
+pop
+Fila: [11, 12]
+clear
+Lista: []
+<<<<<<<< FINISH
+

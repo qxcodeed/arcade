@@ -1,0 +1,7 @@
+>>>>>>>> INSERT Teste 1
+ main
+======== EXPECT
+Lista simplesmente ligada: A -> B -> C -> D
+Lista duplamente ligada: A <-> B <-> C <-> D
+<<<<<<<< FINISH
+

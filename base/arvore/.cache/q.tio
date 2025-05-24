@@ -1,0 +1,82 @@
+>>>>>>>> INSERT
+Inserir 10
+Inserir 5
+Inserir 15
+Buscar 10
+Tamanho
+Minimo
+Maximo
+======== EXPECT
+Encontrado: 10
+Tamanho: 3
+Minimo: 5
+Maximo: 15
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT test_insert
+test_insert
+======== EXPECT
+TESTE insert
+insert 32
+insert 45
+insert 12
+insert 10
+insert 37
+BinaryTree: Node-32{(Node-45{(Node-10{(, )}, Node-37{(, )})}, Node-12{(, )})}
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT test_search
+test_search
+======== EXPECT
+TESTE search
+BinaryTree: Node-55{(Node-12{(Node-76{(Node-33{(, )}, )}, Node-4{(, )})}, Node-110{(Node-762{(Node-77{(, )}, Node--20{(, Node-19{(, )})})}, Node-1267{(Node--665{(, )}, Node--221{(, Node-9{(, )})})})})}
+search 55: Node(55)
+search 9: Node(9)
+search 77: Node(77)
+search -665: Node(-665)
+search 110: Node(110)
+search -29: Node(empty)
+search 1000: Node(empty)
+search 45: Node(empty)
+search 25: Node(empty)
+search 35: Node(empty)
+search 65: Node(empty)
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT test_size
+test_size
+======== EXPECT
+TESTE size
+insert 32
+size 1
+insert 45
+size 2
+insert 12
+size 3
+insert 10
+size 3
+insert 37
+BinaryTree: Node-32{(Node-45{(, )}, Node-12{(, )})}
+size 3
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT test_min_max
+test_min_max
+======== EXPECT
+TESTE min max
+min -1
+max -1
+insert 32
+insert 45
+insert 12
+insert 10
+insert 37
+BinaryTree: Node-32{(Node-45{(Node-10{(, )}, Node-37{(, )})}, Node-12{(, )})}
+min 10
+max 45
+<<<<<<<< FINISH
+

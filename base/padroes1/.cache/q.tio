@@ -1,0 +1,27 @@
+>>>>>>>> INSERT
+1
+======== EXPECT
+20
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2
+======== EXPECT
+28
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+3
+======== EXPECT
+36
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4
+======== EXPECT
+44
+<<<<<<<< FINISH
+
