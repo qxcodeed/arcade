@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@vetbuild: Lista Sequencial Dinâmica</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Lista Sequencial Dinâmica</h1>
+<ul>
+<li>O vetor dinâmico é uma lista sequencial que pode crescer ou diminuir de tamanho conforme necessário.</li>
+<li>Ele é implementado com diferentes nomes dependendo da linguagem.<ul>
+<li>c não possui vetor dinâmico, mas pode ser implementado com ponteiros.</li>
+<li>c++ usa <code>Vector</code></li>
+<li>go usa <code>slice</code></li>
+<li>python usa <code>list</code></li>
+<li>rust usa <code>Vec</code></li>
+<li>java usa <code>ArrayList</code></li>
+<li>javascript e typescript usam <code>Array</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/vetbuild/cover.jpg" /></p>
+<p>Implemente a classe do vetor dinâmico.</p>
+<ul>
+<li>Cada linguagem vai ter um arquivo <code>extra.md</code> com orientações sobre a implementação.</li>
+<li>Você deve criar a classe e implementar os métodos conforme as orientações.</li>
+<li>Depois de implementar um método, descomente e ajuste a entrada do método na função main.</li>
+<li>Implemente apenas os métodos necessários para passar no primeiro teste.</li>
+<li>Depois de passar no primeiro teste, implemente os métodos necessários para passar no segundo teste.</li>
+<li>Continue assim até passar em todos os testes.</li>
+<li>Os seguintes testes mostram o comportamento esperado da classe para cada invocação de método.</li>
+<li>Cada linha que começa com <code>$</code> equivale a uma chamada de método.</li>
+<li>Cada #TEST_CASE separa um caso de teste diferente.</li>
+</ul>
+<h2>Drafts</h2>
+<!-- links .cache/draft -->
+<ul>
+<li>c<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/c/main.c">main.c</a></li>
+</ul>
+</li>
+<li>cpp<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/cpp/extra.md">extra.md</a></li>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/cpp/main.cpp">main.cpp</a></li>
+</ul>
+</li>
+<li>go<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/go/extra.md">extra.md</a></li>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/go/main.go">main.go</a></li>
+</ul>
+</li>
+<li>java<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/java/Shell.java">Shell.java</a></li>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/java/extra.md">extra.md</a></li>
+</ul>
+</li>
+<li>py<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/py/extra.md">extra.md</a></li>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/vetbuild/.cache/draft/py/main.py">main.py</a></li>
+</ul>
+</li>
+</ul>
+<!-- links -->
+
+<h2>Testes</h2>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE create</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$status</span>
+size:0<span class="w"> </span>capacity:3
+<span class="nv">$show</span>
+<span class="o">[]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE push</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$status</span>
+size:0<span class="w"> </span>capacity:1
+<span class="nv">$show</span>
+<span class="o">[]</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:1<span class="w"> </span>capacity:1
+<span class="nv">$push</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:2<span class="w"> </span>capacity:2
+<span class="nv">$push</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:3<span class="w"> </span>capacity:4
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">1</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:4<span class="w"> </span>capacity:4
+<span class="nv">$push</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:5<span class="w"> </span>capacity:8
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE get e set</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">10</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">10</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">12</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$get</span><span class="w"> </span><span class="m">2</span>
+<span class="m">8</span>
+<span class="nv">$set</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">20</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">10</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">20</span>,<span class="w"> </span><span class="m">12</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$get</span><span class="w"> </span><span class="m">10</span>
+index<span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span>range
+<span class="nv">$set</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">20</span>
+index<span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span>range
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">10</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">20</span>,<span class="w"> </span><span class="m">12</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE clear</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$clear</span>
+<span class="nv">$show</span>
+<span class="o">[]</span>
+<span class="nv">$status</span>
+size:0<span class="w"> </span>capacity:6
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE reserve</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$reserve</span><span class="w"> </span><span class="m">10</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:6<span class="w"> </span>capacity:10
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE pop</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$pop</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$pop</span>
+<span class="nv">$pop</span>
+<span class="nv">$pop</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:1<span class="w"> </span>capacity:5
+<span class="nv">$pop</span>
+<span class="nv">$show</span>
+<span class="o">[]</span>
+<span class="nv">$pop</span>
+vector<span class="w"> </span>is<span class="w"> </span>empty
+<span class="nv">$status</span>
+size:0<span class="w"> </span>capacity:5
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE insert</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">10</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:6<span class="w"> </span>capacity:6
+<span class="nv">$insert</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">20</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">20</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:7<span class="w"> </span>capacity:12
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE insert_resize</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">10</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:7<span class="w"> </span>capacity:12
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE erase</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$erase</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:5<span class="w"> </span>capacity:6
+<span class="nv">$erase</span><span class="w"> </span><span class="m">0</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$status</span>
+size:4<span class="w"> </span>capacity:6
+<span class="nv">$erase</span><span class="w"> </span><span class="m">8</span>
+index<span class="w"> </span>out<span class="w"> </span>of<span class="w"> </span>range
+<span class="nv">$status</span>
+size:4<span class="w"> </span>capacity:6
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE indexOf e contains</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">10</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$indexOf</span><span class="w"> </span><span class="m">12</span>
+<span class="m">3</span>
+<span class="nv">$indexOf</span><span class="w"> </span><span class="m">8</span>
+<span class="m">2</span>
+<span class="nv">$indexOf</span><span class="w"> </span><span class="m">7</span>
+-1
+<span class="nv">$contains</span><span class="w"> </span><span class="m">12</span>
+<span class="nb">true</span>
+<span class="nv">$end</span>
+</code></pre></div>
+</body>
+</html>

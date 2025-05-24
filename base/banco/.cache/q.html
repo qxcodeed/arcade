@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@banco: Gerenciando a fila do banco</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Gerenciando a fila do banco</h1>
+<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/banco/cover.jpg" /></p>
+<p>Neste trabalho, nós simularemos o atendimento em um banco. O nosso banco tem clientes que estão sendo atendidos no caixa, clientes na espera na fila e clientes na fila de saída. Cada cliente tem um nível de paciência (quantidade de tempo que ele pode esperar na fila) e uma quantidade de documentos a serem processados no caixa.</p>
+<h2>Guia</h2>
+<p>Você deve implementar o seguinte código seguindo as instruções em cada função. Observe que várias funções já estão implementadas. Você pode criar métodos auxiliares se precisar. Se atente a implementar onde está com o <code>{ ... }</code>.</p>
+<!--FILTER solver.cpp cpp-->
+<div class="language-cpp highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">Client</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;&quot;</span><span class="p">};</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">docs</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">patience</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="n">Client</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">patience</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">str</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">Bank</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Client</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">tellers</span><span class="p">;</span><span class="w">    </span><span class="c1">//caixas</span>
+<span class="w">    </span><span class="n">list</span><span class="o">&lt;</span><span class="n">Client</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">queue_in</span><span class="p">;</span><span class="w">     </span><span class="c1">//fila de entrada</span>
+<span class="w">    </span><span class="n">list</span><span class="o">&lt;</span><span class="n">Client</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">queue_out</span><span class="p">;</span><span class="w">    </span><span class="c1">//fila de saida</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">docs_gain</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w">          </span><span class="c1">//documentos processados</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">docs_lost</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w">          </span><span class="c1">//documentos perdidos</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tics</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w">               </span><span class="c1">//quantidade de tempo que passou</span>
+
+<span class="w">    </span><span class="c1">//  Roda o algoritmo de passagem de tempo</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">tic</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">tics</span><span class="o">++</span><span class="p">;</span>
+<span class="w">        </span><span class="n">empty_queue_out</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tellers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="w">            </span><span class="n">process_teller</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="w">        </span><span class="n">decrease_patience</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//  iniciliza os caixas com um vetor de nulls</span>
+<span class="w">    </span><span class="n">Bank</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">teller_size</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// deleta qualquer cliente que tenha sobrado no banco</span>
+<span class="w">    </span><span class="o">~</span><span class="n">Bank</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//  cria o cliente e insere na fila de entrada</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">arrive</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">patience</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//  esta vazio se não tem ninguém no banco</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">empty</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//  Retirar todos os clientes da fila de saída</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  para cada cliente da fila de saida, </span>
+<span class="w">    </span><span class="c1">//      this-&gt;docs_lost incrementa dos documentos não processado</span>
+<span class="w">    </span><span class="c1">//      chame o delete para cada um deles</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">empty_queue_out</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//  Processar caixa</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  se o caixa tem algum cliente</span>
+<span class="w">    </span><span class="c1">//      se o cliente do caixa tiver algum documento para processar</span>
+<span class="w">    </span><span class="c1">//          incrementa em um this-&gt;docs_gain</span>
+<span class="w">    </span><span class="c1">//          decrementa em um os documentos do cliente</span>
+<span class="w">    </span><span class="c1">//      senão</span>
+<span class="w">    </span><span class="c1">//          move o cliente para fila de saída</span>
+<span class="w">    </span><span class="c1">//  senão</span>
+<span class="w">    </span><span class="c1">//      se tem alguem na fila de espera</span>
+<span class="w">    </span><span class="c1">//          move o primeiro da fila de espera para o caixa</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">process_teller</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">index</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="c1">//  Processar fila de entrada</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">//  para cada cliente da fila de entrada</span>
+<span class="w">    </span><span class="c1">//      se a paciencia dele for maior que zero</span>
+<span class="w">    </span><span class="c1">//          decremente em um o valor da paciencia</span>
+<span class="w">    </span><span class="c1">//      senão</span>
+<span class="w">    </span><span class="c1">//          mova para fila de saida</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">decrease_patience</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//continua chamando tic até todos os clientes terem ido embora</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">finish</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">//gera uma string com os dados dos banco</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">str</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Bank</span><span class="w"> </span><span class="n">banco</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">cmd</span><span class="p">;</span>
+<span class="w">        </span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">);</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;$&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">stringstream</span><span class="w"> </span><span class="n">ss</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ss</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">cmd</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;end&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">break</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;show&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">banco</span><span class="p">.</span><span class="n">str</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;in&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">docs</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">patience</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="n">ss</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">docs</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">patience</span><span class="p">;</span>
+<span class="w">            </span><span class="n">banco</span><span class="p">.</span><span class="n">arrive</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">docs</span><span class="p">,</span><span class="w"> </span><span class="n">patience</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;init&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">};</span>
+<span class="w">            </span><span class="n">ss</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">size</span><span class="p">;</span>
+<span class="w">            </span><span class="n">banco</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Bank</span><span class="p">(</span><span class="n">size</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;tic&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">banco</span><span class="p">.</span><span class="n">tic</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cmd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;finish&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">banco</span><span class="p">.</span><span class="n">finish</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;fail: command not found</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<!--FILTER_END-->
+
+<h2>Testes</h2>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#__case init</span>
+<span class="c1"># inicia a quantidade de caixas </span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">3</span>
+
+<span class="c1"># mostra os caixas, a fila de entrada e a fila de saída</span>
+<span class="nv">$show</span>
+<span class="o">[][][]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:0<span class="w"> </span>lost:0
+
+<span class="c1">#__case in</span>
+<span class="c1"># O comando &#39;in&#39; adiciona um cliente na fila</span>
+<span class="c1"># in _nome _acoes _paciencia</span>
+<span class="nv">$in</span><span class="w"> </span>Ai<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$in</span><span class="w"> </span>Bo<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$in</span><span class="w"> </span>Ce<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">8</span>
+<span class="nv">$in</span><span class="w"> </span>Di<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$in</span><span class="w"> </span>Em<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span>
+
+<span class="nv">$show</span>
+<span class="o">[][][]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Ai:4:6<span class="w"> </span>Bo:2:3<span class="w"> </span>Ce:3:8<span class="w"> </span>Di:3:5<span class="w"> </span>Em:3:2<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:0<span class="w"> </span>lost:0
+
+
+<span class="c1">#__case tic</span>
+<span class="c1"># O comando &#39;tic&#39; faz passar um intervalo de tempo</span>
+<span class="nv">$tic</span>
+
+<span class="nv">$show</span>
+<span class="o">[</span>Ai:4:6<span class="o">][</span>Bo:2:3<span class="o">][</span>Ce:3:8<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Di:3:4<span class="w"> </span>Em:3:1<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:0<span class="w"> </span>lost:0
+
+<span class="c1">#__case tic2</span>
+<span class="nv">$tic</span>
+
+<span class="nv">$show</span>
+<span class="o">[</span>Ai:3:6<span class="o">][</span>Bo:1:3<span class="o">][</span>Ce:2:8<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Di:3:3<span class="w"> </span>Em:3:0<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:3<span class="w"> </span>lost:0
+
+<span class="c1">#__case tic 3</span>
+<span class="nv">$tic</span>
+
+<span class="nv">$in</span><span class="w"> </span>Fa<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+
+<span class="nv">$show</span>
+<span class="o">[</span>Ai:2:6<span class="o">][</span>Bo:0:3<span class="o">][</span>Ce:1:8<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Di:3:2<span class="w"> </span>Fa:4:5<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{</span>Em:3:0<span class="o">}</span>
+gain:6<span class="w"> </span>lost:0
+
+<span class="c1">#__case tic 4</span>
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[</span>Ai:1:6<span class="o">][][</span>Ce:0:8<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Di:3:1<span class="w"> </span>Fa:4:4<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{</span>Bo:0:3<span class="o">}</span>
+gain:8<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[</span>Ai:0:6<span class="o">][</span>Di:3:1<span class="o">][]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{</span>Fa:4:3<span class="o">}</span>
+out<span class="w"> </span>:<span class="o">{</span>Ce:0:8<span class="o">}</span>
+gain:9<span class="w"> </span>lost:3
+
+<span class="c1">#__case tic 5</span>
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][</span>Di:2:1<span class="o">][</span>Fa:4:3<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{</span>Ai:0:6<span class="o">}</span>
+gain:10<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][</span>Di:1:1<span class="o">][</span>Fa:3:3<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:12<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][</span>Di:0:1<span class="o">][</span>Fa:2:3<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:14<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][][</span>Fa:1:3<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{</span>Di:0:1<span class="o">}</span>
+gain:15<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][][</span>Fa:0:3<span class="o">]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:16<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][][]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{</span>Fa:0:3<span class="o">}</span>
+gain:16<span class="w"> </span>lost:3
+
+<span class="nv">$tic</span>
+<span class="nv">$show</span>
+<span class="o">[][][]</span>
+<span class="k">in</span><span class="w">  </span>:<span class="o">{}</span>
+out<span class="w"> </span>:<span class="o">{}</span>
+gain:16<span class="w"> </span>lost:3
+
+<span class="c1"># end termina a simulação</span>
+<span class="nv">$end</span>
+</code></pre></div>
+</body>
+</html>

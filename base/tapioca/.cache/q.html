@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@tapioca: Tapioca Sort</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Tapioca Sort</h1>
+<!-- toch -->
+<table>
+<thead>
+<tr>
+<th><a href="#intro">Intro</a></th>
+<th><a href="#draft">Draft</a></th>
+<th><a href="#tests">Tests</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- toch -->
+
+<h2>Intro</h2>
+<p>Preparar a pilha perfeita de tapiocas é uma tarefa complicada, pois todas as tapiocas em qualquer pilha têm diâmetros diferentes. Para manter a pilha organizada, você pode ordenar as tapiocas por tamanho de forma que cada tapioca seja menor do que todas as tapiocas abaixo dela. O tamanho de uma tapioca é determinado pelo seu diâmetro.</p>
+<p>A ordenação de uma pilha é feita por uma sequência de viradas de tapiocas. Uma virada consiste em inserir uma espátula entre duas tapiocas em uma pilha e virar (inverter) todas as tapiocas acima da espátula, invertendo a subpilha.</p>
+<p>Uma virada é especificada pela posição da tapioca na parte inferior da subpilha a ser virada em relação a toda a pilha. A tapioca de baixo tem a posição 1, enquanto a tapioca de cima em uma pilha de <code>n</code> tapiocas tem posição <code>n</code>.</p>
+<p>Uma pilha é especificada dando o diâmetro de cada tapioca na ordem em que aparecem na pilha. Por exemplo, considere a seguinte pilha de tapiocas, onde a tapioca com diâmetro 5 está no topo:</p>
+<div class="language-text highlight"><pre><span></span><code>topo -&gt; 5 1 2 3 4 |
+</code></pre></div>
+<p>Fazendo a operação <code>virada 1</code> (a espátula está representada por |), obtemos a seguinte pilha de tapiocas:</p>
+<div class="language-text highlight"><pre><span></span><code>topo -&gt; 4 3 2 1 | 5
+</code></pre></div>
+<p>Fazendo a operação <code>virada 2</code>, obtemos a seguinte pilha de tapiocas:</p>
+<div class="language-text highlight"><pre><span></span><code>topo -&gt; 1 2 3 4 5
+</code></pre></div>
+<p>Observe que a pilha de tapiocas pode ser ordenada utilizando duas operações de virada.</p>
+<h2>Draft</h2>
+<ul>
+<li>Você deve implementar a função <code>tapiocaSort</code> e suas auxiliares no arquivo <code>main.cpp</code>.</li>
+</ul>
+<!-- links .cache/draft -->
+<ul>
+<li>cpp<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/tapioca/.cache/draft/cpp/main.cpp">main.cpp</a></li>
+</ul>
+</li>
+</ul>
+<!-- links -->
+
+<h2>Tests</h2>
+<h3>Entrada</h3>
+<ul>
+<li>A primeira linha contém um inteiro N representando o número de tapiocas.</li>
+<li>A segunda linha contém N inteiros positivos representando os diâmetros das tapiocas na pilha. Cada tapioca terá um diâmetro entre 1 e 30.</li>
+</ul>
+<h3>Saída</h3>
+<ul>
+<li>Seu programa deve imprimir uma sequência de viradas que resulte na pilha de tapiocas ordenada de maneira que a maior tapioca esteja na parte inferior e a menor tapioca na parte superior. A sequência de viradas deve terminar com 0, indicando que não são mais necessárias viradas.</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+5
+5 1 2 3 4
+========
+1 2 0
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+5
+5 4 3 2 1
+========
+1 0
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre></div>
+</body>
+</html>

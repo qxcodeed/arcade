@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@lista_d4: Lista Circular utilizando Template</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Lista Circular utilizando Template</h1>
+<!-- toch -->
+<table>
+<thead>
+<tr>
+<th><a href="#intro">Intro</a></th>
+<th><a href="#guide">Guide</a></th>
+<th><a href="#shell">Shell</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- toch -->
+
+<h2>Intro</h2>
+<p>Vamos implementar uma lista circular utilizando template. A ideia é que a lista seja genérica e possa armazenar qualquer tipo de dado. Além disso, o nó deve ser um iterador, permitindo percorrer a lista de forma simples e intuitiva de forma infinita, já que a lista é circular.</p>
+<h2>Guide</h2>
+<p>Vamos partir do código da atividade anterior, a @lista_d2. A classe <code>LList</code> não vai sofrer nenhuma alteração, apenas os métodos <code>Next</code> e <code>Prev</code> do nó vão ser alterados para que eles retornem o próximo nó da lista circular.</p>
+<div class="language-ts highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="w"> </span><span class="nx">comparable</span><span class="p">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">T</span><span class="w">        </span><span class="c1">// Valor é público</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">next</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">       </span><span class="c1">// o próximo nó da lista</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">prev</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">       </span><span class="c1">// o nó anterior</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">       </span><span class="c1">// aponta para o nó sentinela da lista da qual ele faz parte</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Next</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">     </span><span class="c1">// retorna o próximo nó na lista círcular</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Prev</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">     </span><span class="c1">// retorna o nó anterior na lista círcular</span>
+<span class="p">}</span><span class="w">    </span>
+
+<span class="kd">class</span><span class="w"> </span><span class="nx">LList</span><span class="p">[</span><span class="nx">T</span><span class="w"> </span><span class="nx">comparable</span><span class="p">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">              </span><span class="c1">// Nó sentinela que marca o começo e o fim da lista</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">                    </span><span class="c1">// tamanho da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Size</span><span class="p">()</span><span class="w">                       </span><span class="c1">// retorna o tamanho da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Clear</span><span class="p">()</span><span class="w">                      </span><span class="c1">// apaga todos os nós da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">PushBack</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="nx">T</span><span class="p">)</span><span class="w">            </span><span class="c1">// adiciona um novo nó com esse valor no fim da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Front</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">            </span><span class="c1">// retorna o primeiro nó válido da lista ou nulo</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Back</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">             </span><span class="c1">// retorna o último nó válido da lista ou nulo</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Search</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="nx">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w">    </span><span class="c1">// retorna o nó que contém a primeira ocorrência desse valor ou nulo</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Shell</h2>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE forward</span>
+<span class="c1"># forward &lt;value_to_search&gt; &lt;steps to walk&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$forward</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">9</span>
+<span class="o">[</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE forward</span>
+<span class="c1"># forward &lt;value_to_search&gt; &lt;steps to walk&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span>
+<span class="nv">$forward</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">9</span>
+<span class="o">[</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE backward</span>
+<span class="c1"># backward &lt;value_to_search&gt; &lt;steps to walk&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$backward</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">9</span>
+<span class="o">[</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+</body>
+</html>

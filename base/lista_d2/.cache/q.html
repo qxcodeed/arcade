@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@lista_d2: Lista Dupla com Nó Iterador</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Lista Dupla com Nó Iterador</h1>
+<!-- toch -->
+<table>
+<thead>
+<tr>
+<th><a href="#intro">Intro</a></th>
+<th><a href="#guide">Guide</a></th>
+<th><a href="#shell">Shell</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- toch -->
+
+<h2>Intro</h2>
+<p>Todas as linguagens implementam algum modelo de abstração para facilitar o percorrimentos das diversas estruturas de dados implementadas. Alguns utilizam o modelo de for range, que permite percorrer qualquer coleção de dados, como listas, dicionários, etc. Esse modelo é mais simples e fácil de usar, mas não é tão flexível quanto o modelo de iterador, por não permitir escolher o ponto de partida e o ponto de parada do loop.</p>
+<p>Exemplos de for range:</p>
+<div class="language-java highlight"><pre><span></span><code><span class="c1">// Java</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">list</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span class="c1"># Python</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+<div class="language-c++ highlight"><pre><span></span><code><span class="c1">// C++</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">list</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Também existe o modelo de iterador:</p>
+<div class="language-java highlight"><pre><span></span><code><span class="c1">// Java</span>
+<span class="kd">var</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
+<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">());</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="language-c++ highlight"><pre><span></span><code><span class="c1">// C++</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">list</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="o">++</span><span class="n">it</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="o">*</span><span class="n">it</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<div class="language-go highlight"><pre><span></span><code><span class="c1">// Go</span>
+<span class="nx">lista</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">list</span><span class="p">.</span><span class="nx">New</span><span class="p">()</span>
+<span class="k">for</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">lista</span><span class="p">.</span><span class="nx">Front</span><span class="p">();</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="p">;</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">Next</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">Value</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2>Guide</h2>
+<p>Vamos partir do código da atividade anterior, a @lista_d1, e implementar um modelo de iterador para deixar nossa lista mais usável. O resultado final dessa estrutura de dados deve ser algo parecido o código de percorrimento para Go usando o modelo de iterador.</p>
+<ul>
+<li>Para isso, vamos mudar a estrutura do Nó para que ele se comporte como iterador.</li>
+</ul>
+<div class="language-ts highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Node</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">        </span><span class="c1">// Valor é público</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">next</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">       </span><span class="c1">// o próximo nó da lista</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">prev</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">       </span><span class="c1">// o nó anterior</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">       </span><span class="c1">// aponta para o nó sentinela da lista da qual ele faz parte</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Next</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">     </span><span class="c1">// retorna o próximo nó ou nulo, se o próximo é o root</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Prev</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">     </span><span class="c1">// retorna o nó anterior ou nulo, se o anterior é o root</span>
+<span class="p">}</span><span class="w">    </span>
+
+<span class="kd">class</span><span class="w"> </span><span class="nx">LList</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">root</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">Node</span><span class="w">                  </span><span class="c1">// Nó sentinela que marca o começo e o fim da lista</span>
+<span class="w">        </span><span class="o">-</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">                     </span><span class="c1">// tamanho da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Size</span><span class="p">()</span><span class="w">                        </span><span class="c1">// retorna o tamanho da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Clear</span><span class="p">()</span><span class="w">                       </span><span class="c1">// apaga todos os nós da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">PushFront</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="kr">int</span><span class="p">)</span><span class="w">          </span><span class="c1">// adiciona um novo nó com esse valor no início da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">PushBack</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="kr">int</span><span class="p">)</span><span class="w">           </span><span class="c1">// adiciona um novo nó com esse valor no fim da lista</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">PopFront</span><span class="p">()</span><span class="w">                    </span><span class="c1">// remove o primeiro valor da lista se existir</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">PopBack</span><span class="p">()</span><span class="w">                     </span><span class="c1">// remove o último valor da lista se existir</span>
+<span class="w">    </span><span class="c1">// novos métodos</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Front</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">                 </span><span class="c1">// retorna o primeiro nó válido da lista ou nulo</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Back</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">                  </span><span class="c1">// retorna o último nó válido da lista ou nulo</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Search</span><span class="p">(</span><span class="nx">value</span><span class="w"> </span><span class="kr">int</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">       </span><span class="c1">// retorna o nó que contém a primeira ocorrência desse valor ou nulo</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Insert</span><span class="p">(</span><span class="nx">node</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="kr">int</span><span class="p">)</span><span class="w">  </span><span class="c1">// insere um novo nó antes do nó passado por referência</span>
+<span class="w">    </span><span class="o">+</span><span class="w"> </span><span class="nx">Remove</span><span class="p">(</span><span class="nx">node</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="o">*</span><span class="nx">Node</span><span class="w">      </span><span class="c1">// remove o nó passado por referência retornando o nó que ficou no lugar dele ou nulo</span>
+<span class="w">                                     </span><span class="c1">// caso o nó não exista ou o próximo seja o último</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Perceba que implementando assim, escondemos o root para quem utiliza a lista, dando a impressão que os limites dela apontam para nulo.</p>
+<h2>Shell</h2>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE push_back &lt;value ...&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">0</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<p>Percorrendo a lista usando front e back até o fim</p>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE walking</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$walk</span>
+<span class="o">[</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="o">]</span>
+<span class="o">[</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">]</span>
+<span class="nv">$clear</span>
+<span class="nv">$walk</span>
+<span class="o">[</span><span class="w"> </span><span class="o">]</span>
+<span class="o">[</span><span class="w"> </span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<p>Para executar a inserção e remoção de nós, vamos usar o comando <code>search</code> para encontrar o nó que queremos manipular.
+E depois usar o comando <code>replace</code>, <code>insert</code> ou <code>remove</code> para fazer a operação desejada.</p>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE search and replace</span>
+<span class="c1"># replace &lt;value_to_search&gt; &lt;value_to_replace&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$replace</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">9</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$replace</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">8</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$replace</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">7</span>
+fail:<span class="w"> </span>not<span class="w"> </span>found
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE search and insert</span>
+<span class="c1"># insert &lt;value_to_search&gt; &lt;value_to_insert_before&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">9</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">8</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">7</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">7</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$insert</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">7</span>
+fail:<span class="w"> </span>not<span class="w"> </span>found
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">8</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">9</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">6</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE search and remove</span>
+<span class="c1"># remove &lt;value_to_search&gt;</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$remove</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$remove</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$remove</span><span class="w"> </span><span class="m">7</span>
+fail:<span class="w"> </span>not<span class="w"> </span>found
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">2</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span><span class="o">]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+</body>
+</html>
