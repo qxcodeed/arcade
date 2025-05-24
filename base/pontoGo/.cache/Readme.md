@@ -13,7 +13,6 @@ Implemente a classe ponto e faça a equação da reta.
 
 <!-- links .cache/draft -->
 - cpp
-  - [cases.tio](https://github.com/qxcodeed/arcade/blob/master/base/pontoGo/.cache/draft/cpp/cases.tio)
   - [fn.hpp](https://github.com/qxcodeed/arcade/blob/master/base/pontoGo/.cache/draft/cpp/fn.hpp)
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/pontoGo/.cache/draft/cpp/main.cpp)
   - [point.cpp](https://github.com/qxcodeed/arcade/blob/master/base/pontoGo/.cache/draft/cpp/point.cpp)

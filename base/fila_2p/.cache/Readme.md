@@ -32,6 +32,9 @@ Para cada consulta do tipo 3, imprima o valor do elemento na frente da fila em u
 - Se a prateleira estiver vazia, você retira tudo do deposito para a prateleira.
   - Observe que agora o depósito foi invertido e a primeira a ser inserida no depósito é a última da prateleira.
 
+<!-- links .cache/draft -->
+<!-- links -->
+
 ## Testes
 
 ```txt

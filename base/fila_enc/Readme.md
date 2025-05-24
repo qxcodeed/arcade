@@ -1,4 +1,4 @@
-# Fila encadeada CPP
+# Fila usando lista encadeada simples
 
 <!-- toch -->
 [Intro](#intro) | [Draft](#draft) | [Tests](#tests)

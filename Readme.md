@@ -76,26 +76,20 @@ Significado das tags nas questões:
 - [ ] `@controlz      +04 :leet`[Editor com Control Z](base/controlz/Readme.md)
 - [ ] `@editorint     *08 :open`[Editor de texto interativo](base/editorint/Readme.md)
 
-### Deque
+### Deque, Pilha e Fila
 
-- [ ] `bufferring`    CRIAR ESSA ATIVIDADE
-
-### Pilha
-
+- [ ] `@bufferring  *03 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
+- [ ] `@fila_enc    *01 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
+- [ ] `@fila_2p     *01 :make`[Fila como duas pilhas](base/fila_2p/Readme.md)
 - [ ] `@queimando   *01 :leet`[Queimando árvores usando pilha](base/queimando/Readme.md)
 - [ ] `@pilhado     *01 :leet`[Fugindo do labirinto](base/pilhado/Readme.md)
 - [ ] `@balanceada  *01 :leet`[Fórmula balanceada](base/balanceada/Readme.md)
 - [ ] `@polonesa    *01 :leet`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
-
-### Fila
-
-- [ ] `@fila_2p     *01 :make`[Fila como duas pilhas](base/fila_2p/Readme.md)
-- [ ] `@fila_enc    *01 :make`[Fila encadeada CPP](base/fila_enc/Readme.md)
-- [ ] `@fila_seq    *01 :make`[Fila sequencial CPP](base/fila_seq/Readme.md)
-- [ ] `@fila_emp    *01 :make`[Utilizando Pilhas para a Criação de uma Fila CPP](base/fila_emp/Readme.md)
 - [ ] `@chaves      *01 :leet`[Chaves de disputa](base/chaves/Readme.md)
 - [ ] `@caminhao    *01 :leet`[Caminhao abastecendo](base/caminhao/Readme.md)
 - [ ] `@caminho     *01 :leet`[Menor caminho entre dois pontos](base/caminho/Readme.md)
+- [ ] `@fila_emp    *01 :make`[ANTIGO Utilizando Pilhas para a Criação de uma Fila](base/fila_emp/Readme.md)
+- [ ] `@fila_seq    *01 :make`[ANTIGO Fila usando vetor circular](base/fila_seq/Readme.md)
 
 ### Ordenação
 
