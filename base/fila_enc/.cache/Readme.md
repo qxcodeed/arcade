@@ -28,9 +28,6 @@ Cada operação de inserção e remoção na fila deve atualizar o atributo `siz
 ## Draft
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/cpp/lib.cpp)
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/cpp/main.cpp)
 - go
   - [main.go](https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/go/main.go)
 <!-- links -->

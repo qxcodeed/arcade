@@ -28,9 +28,6 @@ Cada operação de inserção e remoção na fila deve atualizar o atributo `siz
 ## Draft
 
 <!-- links .cache/draft -->
-- cpp
-  - [lib.cpp](.cache/draft/cpp/lib.cpp)
-  - [main.cpp](.cache/draft/cpp/main.cpp)
 - go
   - [main.go](.cache/draft/go/main.go)
 <!-- links -->
