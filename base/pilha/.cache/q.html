@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@fila_enc: Fila usando lista encadeada simples</title>
+    <title>@pilha: Pilha sobre uma lista sequencial</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,96 +83,97 @@
     </script>
 </head>
 <body>
-<h1>Fila usando lista encadeada simples</h1>
-<!-- toch -->
-<table>
-<thead>
-<tr>
-<th><a href="#intro">Intro</a></th>
-<th><a href="#draft">Draft</a></th>
-<th><a href="#shell">Shell</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<!-- toch -->
-
-<h2>Intro</h2>
-<p>Neste exercício, você implementará uma <strong>Fila</strong> utilizando uma <strong>Lista Simplesmente Encadeada</strong>. Fila é uma estrutura de dados linear que segue o princípio FIFO (<strong>First In, First Out</strong>), onde o primeiro elemento inserido é também o primeiro a ser removido.</p>
-<p>Na implementação de uma fila encadeada, cada nó contém uma informação e um ponteiro para o próximo elemento. A estrutura da fila é composta por:</p>
+<h1>Pilha sobre uma lista sequencial</h1>
 <ul>
-<li><code>head</code>: ponteiro para o primeiro nó da fila. É utilizado para remover elementos da fila.</li>
-<li><code>tail</code>: ponteiro para o último nó da fila. É utilizado para adicionar novos elementos à fila.</li>
-</ul>
-<p>Cada operação de inserção e remoção na fila deve atualizar o atributo <code>size</code>, que representa o número de elementos na fila. Sua fila não deve utilizar nós de marcação, ou seja, não deve haver nós que não contenham dados válidos. Todas as operações devem ser implementadas de forma eficiente.</p>
-<h3>Complexidade das operações</h3>
-<ul>
-<li>Inserção (<code>push</code>): O(1) - Adiciona um elemento ao final da fila (enqueue).</li>
-<li>Remoção (<code>pop</code>): O(1) - Remove o elemento do início da fila (dequeue).</li>
-<li>Verificação do tamanho (<code>size</code>): O(1) - Retorna o número de elementos na fila.</li>
-<li>Verificação se a fila está vazia (<code>isEmpty</code>): O(1) - Retorna verdadeiro se não há elementos na fila.</li>
-<li>Visualização do primeiro elemento (<code>peek</code>): O(1) - Retorna o primeiro elemento sem removê-lo.</li>
-<li>Visualização do estado da fila (<code>show</code>): O(n) - Retorna uma representação em string dos elementos da fila para debug.</li>
-</ul>
-<h2>Draft</h2>
-<!-- links .cache/draft -->
-<ul>
-<li>cpp<ul>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/cpp/lib.cpp">lib.cpp</a></li>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/cpp/main.cpp">main.cpp</a></li>
+<li>A pilha é uma estrutura de dados linear que armazena elementos de forma ordenada, onde o último elemento adicionado é o primeiro a ser removido (LIFO - Last In First Out).</li>
+<li>A pilha pode ser implementada utilizando uma lista sequencial, onde os elementos são armazenados em um vetor e o topo da pilha é representado pelo último índice ocupado do vetor.</li>
+<li>A pilha possui duas operações principais: empilhar (push) e desempilhar (pop).</li>
+<li>A operação de empilhar adiciona um elemento ao topo da pilha, enquanto a operação de desempilhar remove o elemento do topo da pilha.</li>
+<li>Uma implementação eficiente da pilha pode ser efetuada sobre uma lista sequencial, por exemplo, a atividade <a href="https://github.com/qxcodeed/arcade/blob/master/base/pilha/../vetbuild/Readme.md">@vetbuild</a>.</li>
+<li>Nesse modelo, a pilha é apenas uma restrição dos métodos de acesso e manipulação da lista sequencial, ou seja, a pilha é uma lista sequencial com restrições.</li>
+<li>Para essa atividade, você deve implementar uma pilha utilizando uma lista sequencial, preferencialmente genérica, ou seja, que funcione para qualquer tipo de dado. A base por baixo da pilha é qualquer vetor dinâmico que sua linguagem já tenha implementado.<ul>
+<li>list em python</li>
+<li>vector em C++</li>
+<li>ArrayList em Java</li>
+<li>slices em Go</li>
 </ul>
 </li>
-<li>go<ul>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/fila_enc/.cache/draft/go/main.go">main.go</a></li>
+<li>A pilha deve ter as seguintes operações:<ul>
+<li>Criar uma pilha vazia, com capacidade inicial: O(1).</li>
+<li>Verificar se a pilha está vazia: O(1).</li>
+<li>Empilhar um elemento, redimensionando o vetor se necessário: O(1) amortizado.</li>
+<li>Desempilhar um elemento: O(1).</li>
+<li>Obter o elemento do topo da pilha: O(1).</li>
+<li>Obter o tamanho da pilha: O(1).</li>
+<li>Limpar a pilha: O(1).</li>
+<li>Gerar um texto com os elementos da pilha: O(n).</li>
 </ul>
 </li>
+<li>
+<p>Observações interessantes:</p>
+<ul>
+<li>Diferente da lista sequencial, a pilha não deve ter um método de acesso direto aos elementos, ou seja, não deve ter um método que permita acessar um elemento em uma posição específica da pilha. A única forma de acessar os elementos da pilha é através das operações de empilhar e desempilhar.</li>
+<li>Pilhas normalmente não possuem iteradores, métodos de busca ou percorrimento. O método toString aqui é apenas para debug e visualização do estado da pilha e normalmente não é disponibilizado em implementações reais de pilhas.</li>
 </ul>
-<!-- links -->
-
+</li>
+<li>
+<p>Você encontrará orientações específicas de cada linguagem no arquivo <code>extra.md</code>.</p>
+</li>
+</ul>
 <h2>Shell</h2>
-<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE 01</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">4</span>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE empilhar</span>
+<span class="c1"># $init &lt;capacidade&gt;</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">2</span>
+<span class="c1"># show the current state of the stack, using _ for unused capacity</span>
+<span class="nv">$debug</span>
+_,<span class="w"> </span>_
+<span class="nv">$push</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$debug</span>
+<span class="m">1</span>,<span class="w"> </span>_
+<span class="nv">$push</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$debug</span>
+<span class="m">1</span>,<span class="w"> </span><span class="m">2</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$debug</span>
+<span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span>_
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE desempilhar</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">5</span>
 <span class="nv">$push</span><span class="w"> </span><span class="m">5</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">6</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">6</span><span class="o">]</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">8</span>
+<span class="nv">$debug</span>
+<span class="m">5</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">8</span>
+<span class="nv">$top</span>
+<span class="m">8</span>
+<span class="nv">$size</span>
+<span class="m">5</span>
+<span class="nv">$clear</span>
+<span class="nv">$debug</span>
+_,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_
 <span class="nv">$end</span>
 </code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE 02</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">8</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span><span class="o">]</span>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE erros</span>
+<span class="nv">$init</span><span class="w"> </span><span class="m">5</span>
 <span class="nv">$pop</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span><span class="o">]</span>
+stack<span class="w"> </span>is<span class="w"> </span>empty
+<span class="nv">$top</span>
+stack<span class="w"> </span>is<span class="w"> </span>empty
+<span class="nv">$push</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$push</span><span class="w"> </span><span class="m">8</span>
+<span class="nv">$debug</span>
+<span class="m">2</span>,<span class="w"> </span><span class="m">8</span>,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_
 <span class="nv">$pop</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">5</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">8</span><span class="o">]</span>
-<span class="nv">$end</span>
-</code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE 03</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">10</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">20</span>
-<span class="nv">$push</span><span class="w"> </span><span class="m">30</span>
-<span class="nv">$peek</span>
-<span class="m">10</span>
+<span class="nv">$debug</span>
+<span class="m">2</span>,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_
 <span class="nv">$pop</span>
-<span class="nv">$peek</span>
-<span class="m">20</span>
+<span class="nv">$debug</span>
+_,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_,<span class="w"> </span>_
 <span class="nv">$pop</span>
-<span class="nv">$peek</span>
-<span class="m">30</span>
-<span class="nv">$pop</span>
-<span class="nv">$peek</span>
-falha:<span class="w"> </span>fila<span class="w"> </span>vazia
-<span class="nv">$pop</span>
-falha:<span class="w"> </span>fila<span class="w"> </span>vazia
+stack<span class="w"> </span>is<span class="w"> </span>empty
 <span class="nv">$end</span>
 </code></pre></div>
 </body>

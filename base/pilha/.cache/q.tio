@@ -1,0 +1,94 @@
+>>>>>>>> INSERT empilhar
+init 2
+debug
+push 1
+debug
+push 2
+debug
+push 3
+debug
+end
+======== EXPECT
+$init 2
+$debug
+_, _
+$push 1
+$debug
+1, _
+$push 2
+$debug
+1, 2
+$push 3
+$debug
+1, 2, 3, _
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT desempilhar
+init 5
+push 5
+push 4
+push 3
+push 2
+push 8
+debug
+top
+size
+clear
+debug
+end
+======== EXPECT
+$init 5
+$push 5
+$push 4
+$push 3
+$push 2
+$push 8
+$debug
+5, 4, 3, 2, 8
+$top
+8
+$size
+5
+$clear
+$debug
+_, _, _, _, _
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT erros
+init 5
+pop
+top
+push 2
+push 8
+debug
+pop
+debug
+pop
+debug
+pop
+end
+======== EXPECT
+$init 5
+$pop
+stack is empty
+$top
+stack is empty
+$push 2
+$push 8
+$debug
+2, 8, _, _, _
+$pop
+$debug
+2, _, _, _, _
+$pop
+$debug
+_, _, _, _, _
+$pop
+stack is empty
+$end
+<<<<<<<< FINISH
+

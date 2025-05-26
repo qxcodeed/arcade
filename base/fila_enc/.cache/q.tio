@@ -1,4 +1,76 @@
->>>>>>>> INSERT Teste peek
+>>>>>>>> INSERT 01
+push 4
+push 5
+push 6
+show
+end
+======== EXPECT
+$push 4
+$push 5
+$push 6
+$show
+[4, 5, 6]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 02
+push 1 3 5 7 8
+show
+pop
+show
+pop
+show
+end
+======== EXPECT
+$push 1 3 5 7 8
+$show
+[1, 3, 5, 7, 8]
+$pop
+$show
+[3, 5, 7, 8]
+$pop
+$show
+[5, 7, 8]
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT 03
+push 10
+push 20
+push 30
+peek
+pop
+peek
+pop
+peek
+pop
+peek
+pop
+end
+======== EXPECT
+$push 10
+$push 20
+$push 30
+$peek
+10
+$pop
+$peek
+20
+$pop
+$peek
+30
+$pop
+$peek
+falha: fila vazia
+$pop
+falha: fila vazia
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT Teste do peek
 test_peek
 ======== EXPECT
 TESTE peek
@@ -12,7 +84,7 @@ peek == 10
 <<<<<<<< FINISH
 
 
->>>>>>>> INSERT Teste push
+>>>>>>>> INSERT Teste do push
 test_push
 ======== EXPECT
 TESTE push
@@ -26,7 +98,7 @@ Fila: [10 -> 15 -> 20 -> 25]
 <<<<<<<< FINISH
 
 
->>>>>>>> INSERT Teste pop
+>>>>>>>> INSERT Teste do pop
 test_pop
 ======== EXPECT
 TESTE pop
@@ -45,7 +117,7 @@ Todos os Nos foram devidamente deletados
 <<<<<<<< FINISH
 
 
->>>>>>>> INSERT Teste tudo
+>>>>>>>> INSERT Teste completo
 test_all
 ======== EXPECT
 TESTE todos (push, pop, peek, size)

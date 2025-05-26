@@ -78,18 +78,16 @@ Significado das tags nas questões:
 
 ### Deque, Pilha e Fila
 
-- [ ] `@bufferring  *03 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
-- [ ] `@fila_enc    *01 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
-- [ ] `@fila_2p     *01 :make`[Fila como duas pilhas](base/fila_2p/Readme.md)
-- [ ] `@queimando   *01 :leet`[Queimando árvores usando pilha](base/queimando/Readme.md)
-- [ ] `@pilhado     *01 :leet`[Fugindo do labirinto](base/pilhado/Readme.md)
-- [ ] `@balanceada  *01 :leet`[Fórmula balanceada](base/balanceada/Readme.md)
-- [ ] `@polonesa    *01 :leet`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
+- [ ] `@bufferring  *04 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
+- [ ] `@fila_enc    *02 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
+- [ ] `@pilha       *02 :make`[Pilha sobre uma lista sequencial](base/pilha/Readme.md)
 - [ ] `@chaves      *01 :leet`[Chaves de disputa](base/chaves/Readme.md)
-- [ ] `@caminhao    *01 :leet`[Caminhao abastecendo](base/caminhao/Readme.md)
-- [ ] `@caminho     *01 :leet`[Menor caminho entre dois pontos](base/caminho/Readme.md)
-- [ ] `@fila_emp    *01 :make`[ANTIGO Utilizando Pilhas para a Criação de uma Fila](base/fila_emp/Readme.md)
-- [ ] `@fila_seq    *01 :make`[ANTIGO Fila usando vetor circular](base/fila_seq/Readme.md)
+- [ ] `@queimando   *03 :leet`[Queimando árvores usando pilha](base/queimando/Readme.md)
+- [ ] `@pilhado     *03 :leet`[Fugindo do labirinto](base/pilhado/Readme.md)
+- [ ] `@caminho     +03 :leet`[Menor caminho entre dois pontos](base/caminho/Readme.md)
+- [ ] `@balanceada  +02 :leet`[Fórmula balanceada](base/balanceada/Readme.md)
+- [ ] `@caminhao    +02 :leet`[Caminhao abastecendo](base/caminhao/Readme.md)
+- [ ] `@polonesa    +03 :leet`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
 
 ### Ordenação
 

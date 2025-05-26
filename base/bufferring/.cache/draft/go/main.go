@@ -7,19 +7,45 @@ import (
 	"strings"
 )
 
-// // Essa função vai de brinde pra você
-// func (b *CircularBuffer) String() string {
-// 	result := []string{}
-// 	for i := range b.size {
-// 		val := b.data[(b.head+i)%b.capacity]
-// 		result = append(result, fmt.Sprint(val))
-// 	}
-// 	return "[" + strings.Join(result, ", ") + "]"
-// }
-// 
+type Deque struct {
+	data     []int
+	front    int
+	size     int
+	capacity int
+}
+
+func (b *Deque) String() string {
+	result := []string{}
+	for i := range b.size {
+		val := b.data[(b.front+i)%b.capacity]
+		result = append(result, fmt.Sprint(val))
+	}
+	return "[" + strings.Join(result, ", ") + "]"
+}
+
+func (b *Deque) Debug() string {
+	result := make([]string, b.capacity)
+	for i, _ := range result {
+		result[i] = " _"
+		if i == b.front {
+			result[i] = ">_"
+		}
+	}
+	for i := range b.size {
+		index := (b.front + i) % b.capacity
+		val := b.data[index]
+		prefix := " "
+		if i == 0 {
+			prefix = ">"
+		}
+		result[index] = fmt.Sprintf("%s%d", prefix, val)
+	}
+	return strings.Join(result, " |")
+}
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
-// 	buf := NewCircularBuffer(4)
+	buf := &Deque{data: make([]int, 4), capacity: 4}
 
 	for {
 		fmt.Print("$")
@@ -38,7 +64,9 @@ func main() {
 
 		switch cmd {
 		case "show":
-			// fmt.Println(buf.String())
+			fmt.Println(buf.String())
+		case "debug":
+			fmt.Println(buf.Debug())
 		case "size":
 			// fmt.Println(buf.Len())
 		case "push_back":
@@ -52,9 +80,25 @@ func main() {
 			// 	buf.PushFront(num)
 			// }
 		case "pop_back":
-			// buf.PopBack()
+			// if err := buf.PopBack(); err != nil {
+			// 	fmt.Println(err)
+			// }
 		case "pop_front":
-			// buf.PopFront()
+			// if err := buf.PopFront(); err != nil {
+			// 	fmt.Println(err)
+			// }
+		case "front":
+			// if val, err := buf.Front(); err != nil {
+			// 	fmt.Println(err)
+			// } else {
+			// 	fmt.Println(val)
+			// }
+		case "back":
+			// if val, err := buf.Back(); err != nil {
+			// 	fmt.Println(err)
+			// } else {
+			// 	fmt.Println(val)
+			// }
 		case "clear":
 			// buf.Clear()
 		case "end":

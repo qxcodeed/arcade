@@ -90,11 +90,17 @@
 <tr>
 <th><a href="#intro">Intro</a></th>
 <th><a href="#guide">Guide</a></th>
+<th><a href="#guia">Guia</a></th>
+<th><a href="#como-implementar">Como implementar</a></th>
+<th><a href="#draft">Draft</a></th>
 <th><a href="#shell">Shell</a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -107,52 +113,148 @@
 <h2>Intro</h2>
 <ul>
 <li>Vamos implementar um deque usando um buffer circular que cresce dinamicamente.</li>
-<li>O buffer usa um vetor circular interno e suporta inserção e remoção tanto na frente quanto no fim.</li>
-<li>A capacidade inicial é de 4 elementos, e ela dobra automaticamente se necessário.</li>
+<li>O termo Deque (Double-Ended Queue ou Fila de final duplo) refere-se a uma estrutura de dados que permite inserção e remoção de elementos em ambas as extremidades de forma eficiente.</li>
+<li>A implementação mais comum do deque utiliza um vetor que manipula o índice de frente (<code>front</code>) e (<code>size</code>) para controlar a posição de leitura e escrita dos elementos em ambas as extremidades.</li>
+<li>Quando um dos índices atinge o início ou o final do vetor, ele é ajustado para o outro lado do vetor, criando um efeito circular.</li>
 </ul>
 <h2>Guide</h2>
-<p>Esse deque simula uma lista de dois lados usando um vetor circular. Os índices de cabeça (<code>head</code>) e cauda (<code>tail</code>) controlam a posição de leitura e escrita. A estrutura cresce quando está cheia, mantendo a ordem correta dos elementos.</p>
+<p>Esse deque simula uma lista de dois lados usando um vetor circular. O índice de frente (<code>front</code>) e o (<code>size</code>) controlam a posição de leitura e escrita. A estrutura precisa ser redimensionada quando está cheia, mantendo a ordem correta dos elementos.</p>
+<h2>Guia</h2>
+<ul>
+<li>Se sua linguagem dá suporte, utilize uma estrutura interna que lhe ofereça um vetor dinâmico, como <code>ArrayList</code> em Java, <code>vector</code> em C++, ou <code>slice</code> em Go.</li>
+<li>O buffer circular é uma estrutura que permite operações de inserção e remoção eficientes em ambas as extremidades, mantendo a ordem dos elementos.</li>
+<li>O buffer pode ser a estrutura base para implementar uma fila, que possui operações de inserção em um lado e remoção do outro.</li>
+<li>Outra implementação possível para o buffer seria utilizando uma lista duplamente encadeada. Mas a implementação com vetor circular é mais eficiente em termos de utilização do cache de memória e velocidade de acesso. Ou seja, mesmo que tanto a implementação com lista ligada ou com vetor circular sejam O(1) para as operações de inserção e remoção, a implementação com vetor circular é mais rápida devido à forma como a memória é acessada e manipulada pelo processador.</li>
+<li>A implementação deve incluir as seguintes operações:<ul>
+<li>Criar um deque vazio com capacidade inicial: O(1).</li>
+<li>Verificar se o deque está vazio: O(1).</li>
+<li>Inserir um elemento na frente, redimensionando o vetor se necessário: O(1) amortizado.</li>
+<li>Inserir um elemento no fim, redimensionando o vetor se necessário: O(1) amortizado.</li>
+<li>Remover um elemento da frente: O(1).</li>
+<li>Remover um elemento do fim: O(1).</li>
+<li>Obter o tamanho do deque: O(1).</li>
+<li>Limpar o deque: O(1).</li>
+<li>Gerar uma representação em string dos elementos do deque para debug: O(n).</li>
+</ul>
+</li>
+<li>Observações interessantes:<ul>
+<li>Diferente de uma lista, o deque não deve ter um método de acesso direto aos elementos, ou seja, não deve ter um método que permita acessar um elemento em uma posição específica do deque. A única forma de acessar os elementos do deque é através das operações de inserção e remoção.</li>
+<li>Deques normalmente não possuem iteradores, métodos de busca ou percorrimento. O método <code>toString</code> aqui é apenas para debug e visualização do estado do deque e normalmente não é disponibilizado em implementações reais de deques.</li>
+<li>O conceito de amortizado se refere ao fato de que, embora a operação de inserção possa ser O(n) quando o vetor precisa ser redimensionado, a maioria das inserções será O(1), resultando em um custo médio O(1) ao longo de várias operações.</li>
+</ul>
+</li>
+</ul>
+<h2>Como implementar</h2>
+<p>Estrutura básica do deque:</p>
+<div class="language-ts highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Deque</span><span class="p">[</span><span class="nx">T</span><span class="p">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="nx">T</span>
+<span class="w">    </span><span class="nx">front</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="c1">// posição do primeiro elemento</span>
+<span class="w">    </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">   </span><span class="c1">// número de elementos no deque</span>
+<span class="w">    </span><span class="nx">capacity</span><span class="o">:</span><span class="w"> </span><span class="kt">int</span><span class="w">  </span><span class="c1">// capacidade total do deque</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li>Um deque vazio inicia com <code>data</code> de acordo com a capacidade especificada, <code>front</code> em 0, <code>size</code> em 0 e <code>capacity</code> em 0.</li>
+<li>Quando o deque está cheio e um novo elemento é adicionado, primeiro o vetor é redimensionado para o dobro do tamanho atual e os elementos são copiados para a nova posição, mantendo a ordem correta, depois o novo elemento é adicionado.</li>
+<li>Para cada operação de inserção ou remoção, o índice <code>front</code> e <code>size</code> são atualizados corretamente, considerando o tamanho do vetor e a posição circular.</li>
+<li>Uma operação de push_back adiciona um elemento no final, aumentando o <code>size</code>.</li>
+<li>Uma operação de push_front adiciona um elemento no início, movendo o <code>front</code> para trás de forma circular.</li>
+<li>Uma operação de pop_front remove o elemento do início, movendo o <code>front</code> para frente.</li>
+<li>Você pode calcular a posição circular usando a fórmula <code>(index + capacity) % capacity</code>, onde <code>index</code> é o índice desejado e <code>capacity</code> é o tamanho do vetor.<ul>
+<li>Por exemplo, uma operação de push_back insere o elemento na posição <code>(front + size) % capacity</code></li>
+<li>Enquanto uma operação de push_front insere o elemento na posição <code>(front - 1 + capacity) % capacity</code>.</li>
+</ul>
+</li>
+<li>Os métodos <code>front</code> e <code>back</code> retornam os elementos na frente e no final do deque, respectivamente, sem removê-los.</li>
+<li>As nomeclaturas mudam um pouco dependendo da linguagem, mas o conceito é o mesmo.<ul>
+<li>Em C++, os métodos são chamados de <code>front</code> e <code>back</code>.</li>
+<li>Por exemplo, em Java, os métodos podem ser chamados de usam <code>First</code> e <code>Last</code>.</li>
+<li>Em Python, é utilizado <code>left</code> e <code>right</code>.</li>
+</ul>
+</li>
+</ul>
+<h2>Draft</h2>
+<!-- links .cache/draft -->
+<ul>
+<li>go<ul>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/bufferring/.cache/draft/go/extra.md">extra.md</a></li>
+<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/bufferring/.cache/draft/go/main.go">main.go</a></li>
+</ul>
+</li>
+</ul>
+<!-- links -->
+
 <h2>Shell</h2>
 <div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE size</span>
 <span class="nv">$size</span>
 <span class="m">0</span>
-<span class="nv">$push_front</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$debug</span>
+&gt;_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">4</span>
 <span class="nv">$show</span>
 <span class="o">[</span><span class="m">4</span><span class="o">]</span>
+<span class="nv">$debug</span>
+&gt;4<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_
 <span class="nv">$size</span>
 <span class="m">1</span>
-<span class="nv">$push_front</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">3</span>
 <span class="nv">$show</span>
-<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
+<span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">3</span><span class="o">]</span>
+<span class="nv">$debug</span>
+&gt;4<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_
 <span class="nv">$size</span>
-<span class="m">4</span>
+<span class="m">2</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE pop_front</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$debug</span>
+&gt;4<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_
+<span class="nv">$pop_front</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;3<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;3<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$pop_front</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;2<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$debug</span>
+<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;2<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$debug</span>
+<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="p">|</span>&gt;2<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">7</span>
+<span class="nv">$debug</span>
+&gt;2<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_
 <span class="nv">$end</span>
 </code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE clear</span>
-<span class="nv">$push_front</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;1
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">2</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;2<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$debug</span>
+<span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;3<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">4</span>
+<span class="nv">$debug</span>
+&gt;4<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span>
 <span class="nv">$show</span>
 <span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">1</span><span class="o">]</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$debug</span>
+<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;5
+<span class="nv">$show</span>
+<span class="o">[</span><span class="m">5</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">1</span><span class="o">]</span>
 <span class="nv">$clear</span>
+<span class="nv">$debug</span>
+&gt;_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_
 <span class="nv">$show</span>
 <span class="o">[]</span>
-<span class="nv">$clear</span>
-<span class="nv">$show</span>
-<span class="o">[]</span>
-<span class="nv">$push_front</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">4</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">1</span><span class="o">]</span>
-<span class="nv">$end</span>
-</code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE push_back &lt;value ...&gt;</span>
-<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
-<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
-<span class="nv">$push_front</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">3</span>
-<span class="nv">$show</span>
-<span class="o">[</span><span class="m">3</span>,<span class="w"> </span><span class="m">0</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span>,<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="m">3</span>,<span class="w"> </span><span class="m">4</span><span class="o">]</span>
 <span class="nv">$end</span>
 </code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE pop_front</span>
@@ -197,6 +299,18 @@ fail:<span class="w"> </span>buffer<span class="w"> </span>vazio
 fail:<span class="w"> </span>buffer<span class="w"> </span>vazio
 <span class="nv">$show</span>
 <span class="o">[]</span>
+<span class="nv">$end</span>
+</code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span class="c1">#TEST_CASE front e back</span>
+
+<span class="nv">$push_back</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span>
+<span class="nv">$push_front</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span>
+<span class="nv">$debug</span>
+<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span><span class="w"> </span>_<span class="w"> </span><span class="p">|</span>&gt;6<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">5</span>
+<span class="nv">$front</span>
+<span class="m">6</span>
+<span class="nv">$back</span>
+<span class="m">3</span>
 <span class="nv">$end</span>
 </code></pre></div>
 </body>

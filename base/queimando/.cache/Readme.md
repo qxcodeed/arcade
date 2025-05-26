@@ -21,18 +21,13 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 - A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
 
-## Arquivos
+## Rascunhos
 
-- Você deve implementar:
-  - [student.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimando/student.cpp)
-    - escrever a função queimar, inside e get_neib.
-- Já está implementado:
-  - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/queimando/main.cpp)
-    - Faz a leitura da matriz e do ponto inicial
-    - Chama a função queimar para o ponto inicial.
-    - Imprime a matriz após a queimada.
-  - [lib.h](https://github.com/qxcodeed/arcade/blob/master/base/queimando/lib.h)
-    - Apenas o cabeçalho da função queimar, inside e get_neib.
+<!-- links .cache/draft -->
+- go
+  - [draft.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/draft.go)
+  - [pilha.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/pilha.go)
+<!-- links -->
 
 ## Testes
 
