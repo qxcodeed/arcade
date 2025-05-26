@@ -85,9 +85,6 @@ Significado das tags nas questões:
 - [ ] `@queimando   *03 :leet`[Queimando árvores usando pilha](base/queimando/Readme.md)
 - [ ] `@pilhado     *03 :leet`[Fugindo do labirinto](base/pilhado/Readme.md)
 - [ ] `@caminho     +03 :leet`[Menor caminho entre dois pontos](base/caminho/Readme.md)
-- [ ] `@balanceada  +02 :leet`[Fórmula balanceada](base/balanceada/Readme.md)
-- [ ] `@caminhao    +02 :leet`[Caminhao abastecendo](base/caminhao/Readme.md)
-- [ ] `@polonesa    +03 :leet`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
 
 ### Ordenação
 
@@ -128,6 +125,12 @@ Significado das tags nas questões:
 - [ ] `@fib2        *02 :leet`[Coelhos procriando e morrendo](base/fib2/Readme.md)
 - [ ] `@santo JM    *03 :leet`[O milagre de ficar pobre](base/santo/Readme.md)
 - [ ] `@bitcoin     *04 :leet`[Investindo em ativos digitais](base/bitcoin/Readme.md)
+
+### Pilha e Fila
+
+- [ ] `@balanceada  +02 :leet`[Fórmula balanceada](base/balanceada/Readme.md)
+- [ ] `@caminhao    +02 :leet`[Caminhao abastecendo](base/caminhao/Readme.md)
+- [ ] `@polonesa    +03 :leet`[Transforme da notação padrão para polonesa reversa](base/polonesa/Readme.md)
 
 ### Conceitos Básicos de C++ <!-- l:cpp -->
 
