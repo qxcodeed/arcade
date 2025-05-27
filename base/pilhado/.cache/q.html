@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@pilhado: Fugindo do labirinto</title>
+    <title>@pilhado: Pilha: Fugindo do labirinto</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,7 +83,7 @@
     </script>
 </head>
 <body>
-<h1>Fugindo do labirinto</h1>
+<h1>Pilha: Fugindo do labirinto</h1>
 <p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/pilhado/cover.jpg" /></p>
 <p>Você vai tentar fugir do labirinto usando uma pilha no lugar da recursão.</p>
 <p>Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.</p>
@@ -94,10 +94,10 @@
 <ul>
 <li>Linha 1: número de linhas e das colunas da matriz</li>
 <li>Linhas subsequentes: matriz composta por 4 caracteres<ul>
-<li><code>#</code> representa uma parede</li>
-<li><code></code> (espaço vazio) representa um corredor por onde se pode andar</li>
-<li><code>I</code> representa o início</li>
-<li><code>F</code> representa o fim</li>
+<li><code>#</code> representa uma parede.</li>
+<li><code></code> (espaço vazio) representa um corredor por onde se pode andar.</li>
+<li><code>I</code> representa o início.</li>
+<li><code>F</code> representa o fim.</li>
 </ul>
 </li>
 </ul>
@@ -109,29 +109,35 @@
 </ul>
 </li>
 </ul>
-<h2>Arquivos</h2>
+<h2>Algoritmo</h2>
 <ul>
-<li>Você deve implementar:<ul>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/pilhado/student.cpp">student.cpp</a><ul>
-<li>escrever a função procurar_saida e get_vizinhos.</li>
+<li>Nosso algorítmo é uma busca em profundidade (DFS) iterativa.</li>
+<li>Vamos utilizar duas pilhas, uma vai armazenar o caminho percorrido até o nó atual e a outra vai armazenar os pontos que identificamos serem becos sem saída.</li>
+<li>Precisamos marcar os pontos visitados para não entrarmos em um loop infinito e também os becos sem saída para remover as marcacões de becos sem saída antes de imprimir o labirinto.</li>
+<li>Você pode utilizar a implementação de pilha que já vem na sua linguagem ou utilizar o modelo embutido no rascunho.</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>Já está implementado:<ul>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/pilhado/main.cpp">main.cpp</a><ul>
-<li>Faz a leitura do numero de linhas, numero de colunas e da matriz com os pontos de início e final marcados</li>
-<li>Chama a função procurar_saida.</li>
-<li>Imprime a matriz com o caminho marcado.</li>
-</ul>
-</li>
-<li><a href="https://github.com/qxcodeed/arcade/blob/master/base/pilhado/lib.h">lib.hpp</a><ul>
-<li>Apenas o cabeçalho da função procurar_saida e get_vizinhos.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<p>Para achar e marcar o caminho com <code>.</code> você pode seguir o seguinte pseudocódigo:</p>
+<div class="language-text highlight"><pre><span></span><code>caminho = pilha()
+becos = pilha()
+caminho.push(inicio)
+enquanto caminho não estiver vazia:
+    atual = caminho.top()
+    marcamos atual como visitado
+    if atual é o fim:
+        break
+    validos = []
+    for cada vizinho de atual:
+        if vizinho não é parede e não foi visitado:
+            validos.append(vizinho)
+    if validos não estiver vazio:
+        caminho.push(validos[0])
+    else:
+        marcamos beco como um beco sem saída
+        adiciona posição à pilha de becos
+        retira o topo da pilha de caminhos
+
+remove as marcações de becos sem saída
+</code></pre></div>
 <h2>Testes</h2>
 <div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
 10 20
@@ -183,55 +189,6 @@
 ##   #  ...#     #...  ##    #
 ##############################
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-</code></pre></div>
-<h2>Help</h2>
-<p>Você pode usar esse código como ajuda. Ele carrega a matriz e mostra. O método <code>get_vizinhos</code> é bem útil para iterar nos vizinhos de um ponto.</p>
-<div class="language-c++ highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-
-<span class="k">struct</span><span class="w"> </span><span class="nc">Pos</span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">//retorna um vetor com todos os vizinhos da posição p</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="n">Pos</span><span class="o">&gt;</span><span class="w"> </span><span class="n">get_vizinhos</span><span class="p">(</span><span class="n">Pos</span><span class="w"> </span><span class="n">p</span><span class="p">){</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{{</span><span class="n">p</span><span class="p">.</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">p</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">c</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">p</span><span class="p">.</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="n">p</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">c</span><span class="p">}};</span>
-<span class="p">}</span>
-
-
-<span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">(){</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">nl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">nc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">nl</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">nc</span><span class="p">;</span>
-<span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mat</span><span class="p">(</span><span class="n">nl</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">//começa com nl strings &quot;&quot;</span>
-<span class="w">    </span><span class="n">getchar</span><span class="p">();</span><span class="c1">//remove \n after nc</span>
-<span class="w">    </span><span class="n">Pos</span><span class="w"> </span><span class="n">inicio</span><span class="p">,</span><span class="w"> </span><span class="n">fim</span><span class="p">;</span>
-
-<span class="w">    </span><span class="c1">//carregando matriz</span>
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nl</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<span class="w">        </span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-
-<span class="w">    </span><span class="c1">//procurando inicio e fim e colocando &#39; &#39; nas posições iniciais</span>
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nl</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">){</span>
-<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nc</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="o">++</span><span class="p">){</span>
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;I&#39;</span><span class="p">){</span>
-<span class="w">                </span><span class="n">mat</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="p">;</span>
-<span class="w">                </span><span class="n">inicio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Pos</span><span class="w"> </span><span class="p">{</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">};</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">            </span><span class="k">if</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="sc">&#39;F&#39;</span><span class="p">){</span>
-<span class="w">                </span><span class="n">mat</span><span class="p">[</span><span class="n">l</span><span class="p">][</span><span class="n">c</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39; &#39;</span><span class="p">;</span>
-<span class="w">                </span><span class="n">fim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Pos</span><span class="w"> </span><span class="p">{</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="n">c</span><span class="p">};</span>
-<span class="w">            </span><span class="p">}</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">mat</span><span class="p">)</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;       nl=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">nl</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; nc=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">nc</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;inicio: l=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">inicio</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; , c=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">inicio</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;   fim: l=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fim</span><span class="p">.</span><span class="n">l</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; , c=&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fim</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
 </code></pre></div>
 </body>
 </html>

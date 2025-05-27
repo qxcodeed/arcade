@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@chaves: Chaves de disputa</title>
+    <title>@chaves: Fila: Chaves de disputa</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,7 +83,7 @@
     </script>
 </head>
 <body>
-<h1>Chaves de disputa</h1>
+<h1>Fila: Chaves de disputa</h1>
 <p>Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.</p>
 <p>Na Copa do Mundo, depois de uma fase de grupos, dezesseis equipes disputam a Fase Final, composta de quinze jogos eliminatórios. A figura abaixo mostra a tabela de jogos da Fase Final:</p>
 <p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/chaves/cover.jpg" /></p>
@@ -94,55 +94,57 @@
 <p>Seu programa deve imprimir uma única linha, contendo a letra identificadora da equipe campeã.</p>
 <h2>Entradas de amostra</h2>
 <div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 01
-4 1 
-1 0 
-0 4 
-3 1 
-2 3 
-1 2 
-2 0 
-0 2 
-1 2 
-4 3 
-0 1 
-3 2 
-3 4 
-1 4 
+4 1
+1 0
+0 4
+3 1
+2 3
+1 2
+2 0
+0 2
+1 2
+4 3
+0 1
+3 2
+3 4
+1 4
 1 0
 ========
 F
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02
-2 0 
-1 0 
-2 1 
-1 0 
-1 0 
-1 2 
-1 2 
-1 0 
-2 1 
-1 0 
-0 1 
-0 2 
-2 1 
-1 0 
+2 0
+1 0
+2 1
+1 0
+1 0
+1 2
+1 2
+1 0
+2 1
+1 0
+0 1
+0 2
+2 1
+1 0
 2 1
 ========
 A
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 </code></pre></div>
-<h2>Dica</h2>
+<h2>Algorítmo</h2>
 <ul>
 <li>Coloque as 16 letras em uma fila</li>
-<li>Pegue as duas primeiras<ul>
-<li>que no caso seriam A e B</li>
-<li>leia os gols</li>
+<li>Enquanto a fila tiver mais de um elemento<ul>
+<li>Pegue dois elementos da fila<ul>
+<li>eles representam os times que vão jogar</li>
+<li>leia os gols correspondentes</li>
 <li>decida quem você coloca de novo na fila</li>
 </ul>
 </li>
-<li>Continue até que só existe um elemento na fila</li>
+</ul>
+</li>
 </ul>
 </body>
 </html>

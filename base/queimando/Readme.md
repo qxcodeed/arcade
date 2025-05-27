@@ -25,7 +25,7 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 <!-- links .cache/draft -->
 - go
-  - [draft.go](.cache/draft/go/draft.go)
+  - [main.go](.cache/draft/go/main.go)
   - [pilha.go](.cache/draft/go/pilha.go)
 <!-- links -->
 

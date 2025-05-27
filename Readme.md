@@ -81,10 +81,10 @@ Significado das tags nas questões:
 - [ ] `@bufferring  *04 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
 - [ ] `@fila_enc    *02 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
 - [ ] `@pilha       *02 :make`[Pilha sobre uma lista sequencial](base/pilha/Readme.md)
-- [ ] `@chaves      *01 :leet`[Chaves de disputa](base/chaves/Readme.md)
-- [ ] `@queimando   *03 :leet`[Queimando árvores usando pilha](base/queimando/Readme.md)
-- [ ] `@pilhado     *03 :leet`[Fugindo do labirinto](base/pilhado/Readme.md)
-- [ ] `@caminho     +03 :leet`[Menor caminho entre dois pontos](base/caminho/Readme.md)
+- [ ] `@queimando   *03 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
+- [ ] `@pilhado     *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
+- [ ] `@chaves      *01 :leet`[Fila: Chaves de disputa](base/chaves/Readme.md)
+- [ ] `@caminho     +03 :leet`[Fila: Menor caminho entre dois pontos](base/caminho/Readme.md)
 
 ### Ordenação
 

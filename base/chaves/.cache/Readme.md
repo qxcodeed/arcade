@@ -1,4 +1,4 @@
-# Chaves de disputa
+# Fila: Chaves de disputa
 
 Este ano tem Copa do Mundo! O país inteiro se prepara para torcer para a equipe canarinho conquistar mais um título, tornando-se hexacampeã.
 
@@ -20,51 +20,51 @@ Seu programa deve imprimir uma única linha, contendo a letra identificadora da 
 
 ```txt
 >>>>>>>> 01
-4 1 
-1 0 
-0 4 
-3 1 
-2 3 
-1 2 
-2 0 
-0 2 
-1 2 
-4 3 
-0 1 
-3 2 
-3 4 
-1 4 
+4 1
+1 0
+0 4
+3 1
+2 3
+1 2
+2 0
+0 2
+1 2
+4 3
+0 1
+3 2
+3 4
+1 4
 1 0
 ========
 F
 <<<<<<<<
 
 >>>>>>>> 02
-2 0 
-1 0 
-2 1 
-1 0 
-1 0 
-1 2 
-1 2 
-1 0 
-2 1 
-1 0 
-0 1 
-0 2 
-2 1 
-1 0 
+2 0
+1 0
+2 1
+1 0
+1 0
+1 2
+1 2
+1 0
+2 1
+1 0
+0 1
+0 2
+2 1
+1 0
 2 1
 ========
 A
 <<<<<<<<
 ```
 
-## Dica
+## Algorítmo
 
 - Coloque as 16 letras em uma fila
-- Pegue as duas primeiras
-  - que no caso seriam A e B
-  - leia os gols
-  - decida quem você coloca de novo na fila
-- Continue até que só existe um elemento na fila
+- Enquanto a fila tiver mais de um elemento
+  - Pegue dois elementos da fila
+    - eles representam os times que vão jogar
+    - leia os gols correspondentes
+    - decida quem você coloca de novo na fila

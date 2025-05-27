@@ -18,7 +18,7 @@ type Stack[T any] struct {
 // 			output += ", "
 // 		}
 // 		if i < len(s.data) {
-// 			output += fmt.Sprintf("%d", s.data[i])
+// 			output += fmt.Sprintf("%v", s.data[i])
 // 		} else {
 // 			output += "_"
 // 		}

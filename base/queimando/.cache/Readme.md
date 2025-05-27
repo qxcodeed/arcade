@@ -1,4 +1,4 @@
-# Queimando árvores usando pilha
+# Pilha: Queimando árvores
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/queimando/cover.jpg)
 
@@ -25,7 +25,7 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 <!-- links .cache/draft -->
 - go
-  - [draft.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/draft.go)
+  - [main.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/main.go)
   - [pilha.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/pilha.go)
 <!-- links -->
 
