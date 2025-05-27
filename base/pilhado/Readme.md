@@ -1,4 +1,4 @@
-# Fugindo do labirinto
+# Pilha: Fugindo do labirinto
 
 ![_](cover.jpg)
 
@@ -12,26 +12,45 @@ Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim 
 
   - Linha 1: número de linhas e das colunas da matriz
   - Linhas subsequentes: matriz composta por 4 caracteres
-    - `#` representa uma parede
-    - ` ` (espaço vazio) representa um corredor por onde se pode andar
-    - `I` representa o início
-    - `F` representa o fim
+    - `#` representa uma parede.
+    - ` ` (espaço vazio) representa um corredor por onde se pode andar.
+    - `I` representa o início.
+    - `F` representa o fim.
 
 - Saída
   - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
 
-## Arquivos
+## Algoritmo
 
-- Você deve implementar:
-  - [student.cpp](student.cpp)
-    - escrever a função procurar_saida e get_vizinhos.
-- Já está implementado:
-  - [main.cpp](main.cpp)
-    - Faz a leitura do numero de linhas, numero de colunas e da matriz com os pontos de início e final marcados
-    - Chama a função procurar_saida.
-    - Imprime a matriz com o caminho marcado.
-  - [lib.hpp](lib.h)
-    - Apenas o cabeçalho da função procurar_saida e get_vizinhos.
+- Nosso algorítmo é uma busca em profundidade (DFS) iterativa.
+- Vamos utilizar duas pilhas, uma vai armazenar o caminho percorrido até o nó atual e a outra vai armazenar os pontos que identificamos serem becos sem saída.
+- Precisamos marcar os pontos visitados para não entrarmos em um loop infinito e também os becos sem saída para remover as marcacões de becos sem saída antes de imprimir o labirinto.
+- Você pode utilizar a implementação de pilha que já vem na sua linguagem ou utilizar o modelo embutido no rascunho.
+
+Para achar e marcar o caminho com `.` você pode seguir o seguinte pseudocódigo:
+
+```txt
+caminho = pilha()
+becos = pilha()
+caminho.push(inicio)
+enquanto caminho não estiver vazia:
+    atual = caminho.top()
+    marcamos atual como visitado
+    if atual é o fim:
+        break
+    validos = []
+    for cada vizinho de atual:
+        if vizinho não é parede e não foi visitado:
+            validos.append(vizinho)
+    if validos não estiver vazio:
+        caminho.push(validos[0])
+    else:
+        marcamos beco como um beco sem saída
+        adiciona posição à pilha de becos
+        retira o topo da pilha de caminhos
+
+remove as marcações de becos sem saída
+```
 
 ## Testes
 
@@ -86,57 +105,4 @@ Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim 
 ##   #  ...#     #...  ##    #
 ##############################
 <<<<<<<<
-```
-
-## Help
-
-Você pode usar esse código como ajuda. Ele carrega a matriz e mostra. O método `get_vizinhos` é bem útil para iterar nos vizinhos de um ponto.
-
-```c++
-#include <iostream>
-#include <vector>
-using namespace std;
-
-struct Pos{
-    int l;
-    int c;
-};
-
-//retorna um vetor com todos os vizinhos da posição p
-vector<Pos> get_vizinhos(Pos p){
-    return {{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}};
-}
-
-
-int main(){
-    int nl = 0, nc = 0;
-    cin >> nl >> nc;
-    vector<string> mat(nl, ""); //começa com nl strings ""
-    getchar();//remove \n after nc
-    Pos inicio, fim;
-
-    //carregando matriz
-    for(int i = 0; i < nl; i++)
-        getline(cin, mat[i]);
-
-    //procurando inicio e fim e colocando ' ' nas posições iniciais
-    for(int l = 0; l < nl; l++){
-        for(int c = 0; c < nc; c++){
-            if(mat[l][c] == 'I'){
-                mat[l][c] = ' ';
-                inicio = Pos {l, c};
-            }
-            if(mat[l][c] == 'F'){
-                mat[l][c] = ' ';
-                fim = Pos {l, c};
-            }
-        }
-    }
-
-    for(string line : mat)
-        cout << line << endl;
-    cout << "       nl=" << nl << " nc=" << nc << "\n";
-    cout << "inicio: l=" << inicio.l << " , c=" << inicio.c << endl;
-    cout << "   fim: l=" << fim.l << " , c=" << fim.c << endl;
-}
 ```

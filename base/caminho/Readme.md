@@ -1,4 +1,4 @@
-# Menor caminho entre dois pontos
+# Fila: Menor caminho entre dois pontos
 
 ![_](cover.jpg)
 
@@ -17,53 +17,37 @@ Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim 
 - Saída
   - Imprima a matriz utilizando o char `.` para mostrar o caminho entre início e fim
 
+## Explicação
+
+- Nos algorítmos de queimada e fuga, utilizamos uma busca em profundidade (Depth-First Search, DFS) para encontrar um caminho. No entanto, isso não garante que o caminho encontrado seja o mais curto. No DFS, a gente explora um caminho o mais longe possível antes de retroceder. É bom para encontrar qualquer caminho, mas não necessariamente o mais curto. Usava uma pilha.
+- Para garantir que encontramos o caminho mais curto, utilizamos uma busca em largura (Breadth-First Search, BFS). A BFS explora todos os vizinhos de um nó antes de avançar para o próximo nível. Isso garante que encontraremos o menor caminho em termos de número de passos em um grafo não ponderado (como um labirinto onde cada passo custa o mesmo). E por isso usamos uma fila.
+- A BFS funciona da seguinte forma:
+  - Começamos na posição inicial e marcamos essa posição como visitada.
+  - Colocamos a posição inicial em uma fila.
+  - Enquanto a fila não estiver vazia, fazemos o seguinte:
+    - Pegamos a posição da frente da fila.
+    - Verificamos todos os vizinhos dessa posição (cima, baixo, esquerda, direita).
+    - Se um vizinho não for uma parede e ainda não tiver sido visitado, marcamos esse vizinho como visitado, adicionamos à fila e atualizamos a matriz de distâncias.
+    - Se encontrarmos o destino, podemos parar.
+
 ## Sugestão do algoritmo
 
-```c
-bool procurar_saida(vector<string> &mat, Pos inicio, Pos fim){
-    iniciar uma matriz de distâncias
-    iniciar a fila
-    inserir a posicao inicial da fila e marcá-la com 0 na matriz de distâncias
-    enquanto a fila não estiver vazia
-        pegue a posição da frente
-        para cada vizinho 'viz' de frente
-            se ele não eh parede a ser percorrido
-                marque esse vizinho na matriz
-                na matriz de distância, coloque 1 a mais que a posição de 'frente'
-                se esse 'viz' for o destino
-                    return
-        fila.pop_front();
-    }
-    return false;
-}
-
-```
-
-Após encontrar a saída, refaça o caminho usando a matriz de distância para chegar no elemento início.
-
-## Dica
-
-- inicializar a matriz de distancia
-
-```cpp
-    vector<vector<int>> mat(nl, vector<int>(nc, -1));
-```
-
-- inicializar a fila
-
-```cpp
-    queue<Pos> fila;
-```
-
-- algoritmo de retorno
-
-```cpp
-    ponto = destino
-    enquanto nao chegar na origem
-        pega os vizinho de ponto
-            se mat[viz] == mat[ponto] - 1
-                ponto = viz
-                break
+```go
+crie uma fila queue
+empilhe o ponto inicial na fila
+crie um mapa para marcar os nós visitados
+marque o ponto inicial como visitado
+crie um mapa caminho<Pos, Pos> para guardar quem é o anterior de cada nó
+enquanto a fila não estiver vazia:
+    desempilhe o nó atual da fila
+    se o nó atual for o destino:
+        pare
+    para cada vizinho do nó atual:
+        se o vizinho não foi visitado e não é uma parede:
+            marque o vizinho como visitado
+            adicione o vizinho na fila
+            registre o nó atual como anterior do vizinho no mapa caminho
+utilize o mapa caminho para reconstruir o caminho
 ```
 
 ## Testes
@@ -119,57 +103,4 @@ Após encontrar a saída, refaça o caminho usando a matriz de distância para c
 ##   #     #     #     ##    #
 ##############################
 <<<<<<<<
-```
-
-## Help
-
-Você pode usar esse código como ajuda. Ele carrega a matriz e mostra. O método `get_vizinhos` é bem útil para iterar nos vizinhos de um ponto.
-
-```c++
-#include <iostream>
-#include <vector>
-using namespace std;
-
-struct Pos{
-    int l;
-    int c;
-};
-
-//retorna um vetor com todos os vizinhos da posição p
-vector<Pos> get_vizinhos(Pos p){
-    return {{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}};
-}
-
-
-int main(){
-    int nl = 0, nc = 0;
-    cin >> nl >> nc;
-    vector<string> mat(nl, ""); //começa com nl strings ""
-    getchar();//remove \n after nc
-    Pos inicio, fim;
-
-    //carregando matriz
-    for(int i = 0; i < nl; i++)
-        getline(cin, mat[i]);
-
-    //procurando inicio e fim e colocando ' ' nas posições iniciais
-    for(int l = 0; l < nl; l++){
-        for(int c = 0; c < nc; c++){
-            if(mat[l][c] == 'I'){
-                mat[l][c] = ' ';
-                inicio = Pos {l, c};
-            }
-            if(mat[l][c] == 'F'){
-                mat[l][c] = ' ';
-                fim = Pos {l, c};
-            }
-        }
-    }
-
-    for(string line : mat)
-        cout << line << endl;
-    cout << "       nl=" << nl << " nc=" << nc << "\n";
-    cout << "inicio: l=" << inicio.l << " , c=" << inicio.c << endl;
-    cout << "   fim: l=" << fim.l << " , c=" << fim.c << endl;
-}
 ```

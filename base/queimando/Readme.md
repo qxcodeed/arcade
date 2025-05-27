@@ -1,4 +1,4 @@
-# Queimando árvores usando pilha
+# Pilha: Queimando árvores
 
 ![_](cover.jpg)
 
