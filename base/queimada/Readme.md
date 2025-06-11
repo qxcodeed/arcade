@@ -14,16 +14,16 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 - 1a linha: `nl, nc, l, c`:
   - Número de linhas e colunas da matriz, linha e coluna onde começa o fogo.
 - Nas linhas subsequentes a matriz da floresta sendo que
-  - '\#' representa uma árvore
-  - '.' representa um espaço vazio
+  - `#` representa uma árvore
+  - `.` representa um espaço vazio
 
 ## Saída
 
-- A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
+- A matriz após a queimada acontecer colocando `o` para cada árvore queimada.
 
 ## Draft
 
-- No arquivo `fogo.cpp`, você deve implementar a função `tocar_fogo`.
+- Você deve implementar a função `tocar_fogo`.
 
 <!-- links .cache/draft -->
 - cpp
@@ -72,6 +72,21 @@ o..oooo
 oooo..o
 ..o.o..
 #.ooo.#
+<<<<<<<<
+
+>>>>>>>> 04
+5 7 0 0
+#..#.#.
+#..####
+##.#..#
+..#.#..
+#.###.#
+========
+o..#.#.
+o..####
+oo.#..#
+..#.#..
+#.###.#
 <<<<<<<<
 
 ```

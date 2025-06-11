@@ -41,19 +41,41 @@ Significado das tags nas questões:
 - [ ] `#rec_read  leitura    +01  :info`[Recursividade](wiki/recursao/recursao.md)
 - [ ] `@triangulo vetores    *02  :leet`[Imprimindo ao contrário](base/triangulo/Readme.md)
 - [ ] `@treinando vetores    *04  :leet`[Treinando recursão com vetores](base/treinando/Readme.md)
-- [ ] `@queimada  vetores    *02  :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
 - [ ] `@resto     matemática *01  :leet`[Divisão e Resto](base/resto/Readme.md)
 - [ ] `@mdc       matemática *01  :leet`[Implemente o mdc recursivo](base/mdc/Readme.md)
 - [ ] `@eh_primo  matemática +02  :leet`[Retorna se é ou não é](base/eh_primo/Readme.md)
 - [ ] `@enesimo   matemática +02  :leet`[Gere o enesimo primo](base/enesimo/Readme.md)
 - [ ] `@priminhos matemática +03  :leet`[Carrega a lista de primos](base/priminhos/Readme.md)
-- [ ] `@labirinto retrocesso *04  :leet`[Escapando do labirinto](base/labirinto/Readme.md)
-- [ ] `@distancia retrocesso +05  :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
-- [ ] `@sudoku    retrocesso +10  :leet`[Sudoku](base/sudoku/Readme.md)
 - [ ] `@fractais             *10  :open`[Desenhando Fractais](base/fractais/Readme.md)
 - [ ] `@fractais_png         +10  :open`[Desenhando Fractais](base/fractais_png/Readme.md)
 - [ ] `@hex                  +10  :open`[Desenhando labirinto perfeito](base/hex/Readme.md)
 - [ ] `@vetequals            +01  :leet`[Verifique se dois vetores são iguais recursivamente](base/vetequals/Readme.md)
+
+### Busca em Profundidade - DFS (Depth-First Search)
+
+- [ ] `#dfs_bfs_bak      :into`[Vídeos de introdução a DFS e BFS](wiki/dfs/Readme.md)
+- [ ] `@queimada     *02 :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
+- [ ] `@ilhas        *01 :leet`[LeetCode 200. Number os islands](base/ilhas/Readme.md)
+- [ ] `@queimando    *02 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
+- [ ] `#cercado      *01 :leet`[Regiões cercadas](https://leetcode.com/problems/surrounded-regions/description/)
+- [ ] `#pintura      *01 :leet`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
+- [ ] `#longest      *01 :leet`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
+- [ ] `#battleship   *01 :leet`[Batalha naval](https://leetcode.com/problems/battleships-in-a-board/description/)
+
+### Busca em Largura - BFS (Breadth-First Search)
+
+- [ ] `@caminho      +03 :leet`[Fila: Menor caminho entre dois pontos](base/caminho/Readme.md)
+- [ ] `#rotten       +01 :leet`[Tomate podre](https://leetcode.com/problems/rotting-oranges/description/)
+- [ ] `#detonate     +01 :leet`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
+- [ ] `#escapeSpread +01 :leet`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
+
+### Algoritmo de Retrocesso - Backtracking
+
+- [ ] `@wordsearch   *02 :leet`[Word Search LeetCode 79](base/wordsearch/Readme.md)
+- [ ] `@labirinto    *02 :leet`[Escapando do labirinto](base/labirinto/Readme.md)
+- [ ] `@pilhado      *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
+- [ ] `@distancia    +05 :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
+- [ ] `@sudoku       +10 :leet`[Sudoku](base/sudoku/Readme.md)
 
 ### Vetor
 
@@ -81,10 +103,7 @@ Significado das tags nas questões:
 - [ ] `@bufferring  *04 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
 - [ ] `@fila_enc    *02 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
 - [ ] `@pilha       *02 :make`[Pilha sobre uma lista sequencial](base/pilha/Readme.md)
-- [ ] `@queimando   *03 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
-- [ ] `@pilhado     *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
 - [ ] `@chaves      *01 :leet`[Fila: Chaves de disputa](base/chaves/Readme.md)
-- [ ] `@caminho     +03 :leet`[Fila: Menor caminho entre dois pontos](base/caminho/Readme.md)
 
 ### Ordenação
 

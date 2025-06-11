@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@labirinto: Escapando do labirinto</title>
+    <title>@wordsearch: Word Search LeetCode 79</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,81 +83,70 @@
     </script>
 </head>
 <body>
-<h1>Escapando do labirinto</h1>
-<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/labirinto/cover.jpg" /></p>
-<p>Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.</p>
-<p>Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.</p>
-<ul>
-<li>
-<p>Entrada</p>
-<ul>
-<li>Linha 1: número de linhas e das colunas da matriz</li>
-<li>Linhas subsequentes: matriz composta por 4 caracteres<ul>
-<li><code>#</code> representa uma parede</li>
-<li><code></code> representa um corredor por onde se pode andar</li>
-<li><code>I</code> representa o início</li>
-<li><code>F</code> representa o fim</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Saída</p>
-<ul>
-<li>Imprima a matriz utilizando o char <code>.</code> para mostrar o caminho entre início e fim</li>
-</ul>
-</li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-10 20
-####################
-#   # # # #   # ## #
-### #     ###      #
-##  ## ##   # ### ##
-# I##   ### ###    #
-# ##### #   #   ## #
-# #     ## ### ##  #
-# ## ####   #  #  ##
-#   F#    #   ## ###
-####################
-========
-####################
-#   # # # #   # ## #
-### #     ###      #
-##  ## ##   # ### ##
-#..##   ### ###    #
-#.##### #   #   ## #
-#.#     ## ### ##  #
-#.## ####   #  #  ##
-#....#    #   ## ###
-####################
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+<h1>Word Search LeetCode 79</h1>
+<p>Given an m x n grid of characters board and a string word, return true if word exists in the grid.</p>
+<p>The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.</p>
+<h2>OBS</h2>
+<p>Lembre de submeter seu código no LeetCode para validar a solução.</p>
+<h2>Example 1</h2>
+<p><img alt="_" src="https://assets.leetcode.com/uploads/2020/11/04/word2.jpg" /></p>
+<div class="language-text highlight"><pre><span></span><code>- Input: board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;ABCCED&quot;
+- Output: true
+</code></pre></div>
+<h2>Example 2</h2>
+<p>"<a href="https://assets.leetcode.com/uploads/2020/11/04/word-1.jpg">_</a></p>
+<div class="language-text highlight"><pre><span></span><code>Input: board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;SEE&quot;
+Output: true
+</code></pre></div>
+<h2>Example 3</h2>
+<p><img alt="_" src="https://assets.leetcode.com/uploads/2020/10/15/word3.jpg" /></p>
+<div class="language-text highlight"><pre><span></span><code>Input: board = [[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;E&quot;],[&quot;S&quot;,&quot;F&quot;,&quot;C&quot;,&quot;S&quot;],[&quot;A&quot;,&quot;D&quot;,&quot;E&quot;,&quot;E&quot;]], word = &quot;ABCB&quot;
+Output: false
+</code></pre></div>
+<h3>Constraints</h3>
+<div class="language-text highlight"><pre><span></span><code>m == board.length
+n = board[i].length
+1 &lt;= m, n &lt;= 6
+1 &lt;= word.length &lt;= 15
+board and word consists of only lowercase and uppercase English letters.
+</code></pre></div>
+<p>Follow up: Could you use search pruning to make your solution faster with a larger board?</p>
+<h2>Tests</h2>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+ABCCED
+ABCE
+SFCS
+ADEE
+======== EXPECT
+true
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+SEE
+ABCE
+SFCS
+ADEE
+======== EXPECT
+true
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-10 30
-##############################
-#  #        ## # # ##       ##
-## # ## ## ##    # #  ## ##  #
-## ###  #I    ##   ####   ## #
-#  ##  ###########   #  #  # #
-# ##  ## F # #   ### ####### #
-# ## ### ###   #   # ##   #  #
-#  # # # #   ##### # #  # # ##
-##   #     #     #     ##    #
-##############################
-========
-##############################
-#  #        ## # # ##       ##
-## # ## ## ##....# #  ## ##  #
-## ###  #.....##...####   ## #
-#  ##  ###########...#  #  # #
-# ##  ##.. # #...###.####### #
-# ## ###.###...#...#.##   #  #
-#  # # #.#...#####.#.#  # # ##
-##   #  ...#     #...  ##    #
-##############################
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+ABCB
+ABCE
+SFCS
+ADEE
+======== EXPECT
+false
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+ABCESEEEFS
+ABCE
+SFES
+ADEE
+======== EXPECT
+true
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 </code></pre></div>
 </body>
 </html>

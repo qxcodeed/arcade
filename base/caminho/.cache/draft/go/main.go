@@ -10,12 +10,22 @@ type Pos struct {
 	l, c int
 }
 
-func (p Pos) pegarVizinhos() []Pos {
+func (p Pos) getNeig() []Pos {
 	return nil
 }
 
-func procurarSaida(mat [][]rune, inicio Pos, fim Pos) {
-	_, _, _ = mat, inicio, fim
+func inside(grid [][]rune, pos Pos) bool {
+	nrows := len(grid)
+	ncols := len(grid[0])
+	return pos.l >= 0 && pos.l < nrows && pos.c >= 0 && pos.c < ncols
+}
+
+func match(grid [][]rune, pos Pos, char rune) bool {
+	return inside(grid, pos) && grid[pos.l][pos.c] == char
+}
+
+func search(grid [][]rune, startPos Pos, endPos Pos) {
+	_, _, _ = grid, startPos, endPos
 }
 
 func main() {
@@ -50,7 +60,7 @@ func main() {
 		}
 	}
 
-	procurarSaida(mat, inicio, fim)
+	search(mat, inicio, fim)
 
 	for _, line := range mat {
 		fmt.Println(string(line)) // Converte o slice de runes de volta para string para imprimir

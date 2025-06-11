@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@labirinto: Escapando do labirinto</title>
+    <title>@ilhas: LeetCode 200. Number os islands</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,81 +83,40 @@
     </script>
 </head>
 <body>
-<h1>Escapando do labirinto</h1>
-<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/labirinto/cover.jpg" /></p>
-<p>Um labirinto perfeito é um labirinto no qual entre dois quaisquer pontos existe apenas um único caminho.</p>
-<p>Leia uma matriz que representa um labirinto perfeito, os pontos de inicio e fim e imprima o labirinto mostrando o caminho entre os pontos.</p>
-<ul>
-<li>
-<p>Entrada</p>
-<ul>
-<li>Linha 1: número de linhas e das colunas da matriz</li>
-<li>Linhas subsequentes: matriz composta por 4 caracteres<ul>
-<li><code>#</code> representa uma parede</li>
-<li><code></code> representa um corredor por onde se pode andar</li>
-<li><code>I</code> representa o início</li>
-<li><code>F</code> representa o fim</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Saída</p>
-<ul>
-<li>Imprima a matriz utilizando o char <code>.</code> para mostrar o caminho entre início e fim</li>
-</ul>
-</li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-10 20
-####################
-#   # # # #   # ## #
-### #     ###      #
-##  ## ##   # ### ##
-# I##   ### ###    #
-# ##### #   #   ## #
-# #     ## ### ##  #
-# ## ####   #  #  ##
-#   F#    #   ## ###
-####################
-========
-####################
-#   # # # #   # ## #
-### #     ###      #
-##  ## ##   # ### ##
-#..##   ### ###    #
-#.##### #   #   ## #
-#.#     ## ### ##  #
-#.## ####   #  #  ##
-#....#    #   ## ###
-####################
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+<h1>LeetCode 200. Number os islands</h1>
+<h2>Intro</h2>
+<p>Dado um mapa 2D de ilhas e água, conte o número de ilhas. Uma ilha é formada por células adjacentes de terra (representadas por '1') conectadas horizontal ou verticalmente, enquanto a água é representada por '0'.</p>
+<p>Uma ilha é cercada por água e é formada por conectar terras adjacentes horizontal ou verticalmente. Você pode assumir que todas as quatro bordas da grade estão cercadas por água.</p>
+<h2>Submission</h2>
+<p>Aqui, copiamos apenas os dois primeiros casos de teste do problema original, ao final, submeta seu código no LeetCode <a href="https://leetcode.com/problems/number-of-islands/">nesse link</a>.</p>
+<h2>Tests</h2>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT Teste 1
+4 5
+11110
+11010
+11000
+00000
+======== EXPECT
+1
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-10 30
-##############################
-#  #        ## # # ##       ##
-## # ## ## ##    # #  ## ##  #
-## ###  #I    ##   ####   ## #
-#  ##  ###########   #  #  # #
-# ##  ## F # #   ### ####### #
-# ## ### ###   #   # ##   #  #
-#  # # # #   ##### # #  # # ##
-##   #     #     #     ##    #
-##############################
-========
-##############################
-#  #        ## # # ##       ##
-## # ## ## ##....# #  ## ##  #
-## ###  #.....##...####   ## #
-#  ##  ###########...#  #  # #
-# ##  ##.. # #...###.####### #
-# ## ###.###...#...#.##   #  #
-#  # # #.#...#####.#.#  # # ##
-##   #  ...#     #...  ##    #
-##############################
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT Teste 2
+4 5
+11000
+11000
+00100
+00011
+======== EXPECT
+3
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 </code></pre></div>
+<h3>Constraints</h3>
+<ul>
+<li><code>m == grid.length</code></li>
+<li><code>n == grid[i].length</code></li>
+<li><code>1 &lt;= m, n &lt;= 300</code></li>
+<li><code>grid[i][j] is '0' or '1'</code></li>
+</ul>
 </body>
 </html>

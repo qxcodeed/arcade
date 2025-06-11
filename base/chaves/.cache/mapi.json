@@ -8,5 +8,18 @@
             "type": "hide"
         }
     ],
-    "draft": {}
+    "draft": {
+        "go": [
+            {
+                "name": "queue.go",
+                "contents": "package main\n\nimport (\n\t\"container/list\"\n\t\"fmt\"\n)\n\ntype Queue[T any] struct {\n\titems *list.List\n}\n\nfunc NewQueue[T any]() *Queue[T] {\n\treturn &Queue[T]{items: list.New()}\n}\n\nfunc (q *Queue[T]) Enqueue(item T) {\n\tq.items.PushBack(item)\n}\n\nfunc (q *Queue[T]) Dequeue() T {\n\tif q.items.Len() == 0 {\n\t\tvar zero T\n\t\treturn zero // Return zero value if queue is empty\n\t}\n\tfront := q.items.Front().Value.(T)\n\tq.items.Remove(q.items.Front())\n\treturn front\n}\n\nfunc (q *Queue[T]) IsEmpty() bool {\n\treturn q.items.Len() == 0\n}\n\nfunc (q *Queue[T]) String() string {\n\tvar result string\n\tfor e := q.items.Front(); e != nil; e = e.Next() {\n\t\tresult += fmt.Sprint(e.Value.(T)) + \" \"\n\t}\n\treturn \"[ \" + result + \"]\"\n}\n",
+                "type": "show"
+            },
+            {
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n)\n\nfunc main() {\n}\n",
+                "type": "show"
+            }
+        ]
+    }
 }

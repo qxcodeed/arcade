@@ -26,7 +26,9 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 <!-- links .cache/draft -->
 - go
   - [main.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/main.go)
-  - [pilha.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/pilha.go)
+  - [stack.go](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/go/stack.go)
+- py
+  - [main.py](https://github.com/qxcodeed/arcade/blob/master/base/queimando/.cache/draft/py/main.py)
 <!-- links -->
 
 ## Testes
