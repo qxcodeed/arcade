@@ -39,12 +39,12 @@ func (l *List[T]) PushBack(value T) {
 	l.Insert(l.root, value)
 }
 
-func (l *List[T]) Insert(mark *Node[T], value T) *Node[T] {
+func (l *List[T]) Insert(it *Node[T], value T) *Node[T] {
 	n := &Node[T]{Value: value, root: l.root}
-	n.prev = mark.prev
-	n.next = mark
-	mark.prev.next = n
-	mark.prev = n
+	n.prev = it.prev
+	n.next = it
+	it.prev.next = n
+	it.prev = n
 	l.size++
 	return n
 }
@@ -77,7 +77,7 @@ func (l *List[T]) Back() *Node[T] {
 	return l.root.prev
 }
 
-func (l *List[T]) Remove(n *Node[T]) *Node[T] {
+func (l *List[T]) Erase(n *Node[T]) *Node[T] {
 	if n == l.root {
 		return l.root
 	}

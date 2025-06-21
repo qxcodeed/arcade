@@ -1,24 +1,23 @@
 package main
 
 import (
-	"container/list"
 	"fmt"
 )
 
 // mostra a lista com o elemento sword destacado
-func ToStr(l *list.List, sword *list.Element) string {
+func ToStr(l *DList[int], sword *DNode[int]) string {
 	return ""
 }
 
 // move para frente na lista circular
-func Next(l *list.List, it *list.Element) *list.Element {
+func Next(l *DList[int], it *DNode[int]) *DNode[int] {
 	return nil
 }
 
 func main() {
 	var qtd, chosen int
 	fmt.Scan(&qtd, &chosen)
-	l := list.New()
+	l := NewDList[int]()
 	for i := 1; i <= qtd; i++ {
 		l.PushBack(i)
 	}
@@ -28,7 +27,7 @@ func main() {
 	}
 	for range qtd - 1 {
 		fmt.Println(ToStr(l, sword))
-		l.Remove(Next(l, sword))
+		l.Erase(Next(l, sword))
 		sword = Next(l, sword)
 	}
 	fmt.Println(ToStr(l, sword))
