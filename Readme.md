@@ -7,6 +7,7 @@ Significado das tags nas questões:
 | marcador  | significado
 | --------- | -----------
 | leet      | Problema de estilo LEET CODE para resolver problemas
+| link      | Link para problema externo
 | make      | Problema de código com testes construindo a estrutura de dados
 | open      | Problema de programação abertos sem testes
 | info      | Conteúdo informativo de leitura ou vídeo
@@ -57,17 +58,17 @@ Significado das tags nas questões:
 - [ ] `@queimada     *02 :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
 - [ ] `@ilhas        *01 :leet`[LeetCode 200. Number os islands](base/ilhas/Readme.md)
 - [ ] `@queimando    *02 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
-- [ ] `#cercado      *01 :leet`[Regiões cercadas](https://leetcode.com/problems/surrounded-regions/description/)
-- [ ] `#pintura      *01 :leet`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
-- [ ] `#longest      *01 :leet`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
-- [ ] `#battleship   *01 :leet`[Batalha naval](https://leetcode.com/problems/battleships-in-a-board/description/)
+- [ ] `#cercado      *01 :link`[Regiões cercadas](https://leetcode.com/problems/surrounded-regions/description/)
+- [ ] `#pintura      *01 :link`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
+- [ ] `#longest      *01 :link`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
+- [ ] `#battleship   *01 :link`[Batalha naval](https://leetcode.com/problems/battleships-in-a-board/description/)
 
 ### Busca em Largura - BFS (Breadth-First Search)
 
 - [ ] `@caminho      +03 :leet`[Fila: Menor caminho entre dois pontos](base/caminho/Readme.md)
-- [ ] `#rotten       +01 :leet`[Tomate podre](https://leetcode.com/problems/rotting-oranges/description/)
-- [ ] `#detonate     +01 :leet`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
-- [ ] `#escapeSpread +01 :leet`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
+- [ ] `#rotten       +01 :link`[Tomate podre](https://leetcode.com/problems/rotting-oranges/description/)
+- [ ] `#detonate     +01 :link`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
+- [ ] `#escapeSpread +01 :link`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
 
 ### Algoritmo de Retrocesso - Backtracking
 
