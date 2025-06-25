@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@cercado: Capturar Regiões Cercadas</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        /* Estilos básicos para o destaque de sintaxe (gerado pelo pygments via pymdownx.highlight) */
+        .highlight .hll { background-color: #ffffcc }
+        .highlight .c { color: #999988; font-style: italic } /* Comment */
+        .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+        .highlight .k { color: #000000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #000000; font-weight: bold } /* Operator */
+        .highlight .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #999999; font-weight: bold; font-style: italic } /* Comment.Preproc */
+        .highlight .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+        .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #aa0000 } /* Generic.Error */
+        .highlight .gh { color: #999999 } /* Generic.Heading */
+        .highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #555555 } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+        .highlight .gt { color: #aa0000 } /* Generic.Traceback */
+        .highlight .kc { color: #000000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #000000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #000000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #000000; font-weight: bold } /* Keyword.Pseudo */
+        .highlight .kr { color: #000000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+        .highlight .m { color: #009999 } /* Literal.Number */
+        .highlight .s { color: #dd1144 } /* Literal.String */
+        .highlight .na { color: #008080 } /* Name.Attribute */
+        .highlight .nb { color: #0086B3 } /* Name.Builtin */
+        .highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #008080 } /* Name.Constant */
+        .highlight .nd { color: #3c5d5d; font-weight: bold } /* Name.Decorator */
+        .highlight .ni { color: #800080 } /* Name.Entity */
+        .highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+        .highlight .nl { color: #990000; font-weight: bold } /* Name.Label */
+        .highlight .nn { color: #555555; font-weight: bold } /* Name.Namespace */
+        .highlight .nx { color: #990000; font-weight: bold } /* Name.Other */
+        .highlight .py { color: #009999 } /* Name.Property */
+        .highlight .p { color: #000000 } /* Name.Punctuation */
+        .highlight .nv { color: #008080 } /* Name.Variable */
+        .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace */
+        .highlight .mf { color: #009999 } /* Literal.Number.Float */
+        .highlight .mh { color: #009999 } /* Literal.Number.Hex */
+        .highlight .mi { color: #009999 } /* Literal.Number.Integer */
+        .highlight .mo { color: #009999 } /* Literal.Number.Oct */
+        .highlight .sb { color: #dd1144 } /* Literal.String.Backtick */
+        .highlight .sc { color: #dd1144 } /* Literal.String.Char */
+        .highlight .sd { color: #dd1144 } /* Literal.String.Doc */
+        .highlight .s2 { color: #dd1144 } /* Literal.String.Double */
+        .highlight .se { color: #dd1144 } /* Literal.String.Escape */
+        .highlight .sh { color: #dd1144 } /* Literal.String.Heredoc */
+        .highlight .si { color: #dd1144 } /* Literal.String.Interpol */
+        .highlight .sx { color: #dd1144 } /* Literal.String.Other */
+        .highlight .sr { color: #009926 } /* Literal.String.Regex */
+        .highlight .s1 { color: #dd1144 } /* Literal.String.Single */
+        .highlight .ss { color: #dd1144 } /* Literal.String.Symbol */
+        .highlight .bp { color: #0086B3 } /* Name.Builtin.Pseudo */
+        .highlight .vc { color: #008080 } /* Name.Variable.Class */
+        .highlight .vg { color: #008080 } /* Name.Variable.Global */
+        .highlight .vi { color: #008080 } /* Name.Variable.Instance */
+        .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+    </style>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+<h1>Capturar Regiões Cercadas</h1>
+<p>Após fazer essa atividade aqui, rode todos os casos de testes no site do leetcode para verificar se o código está correto. <a href="https://leetcode.com/problems/surrounded-regions/">Link para o problema</a></p>
+<p>Após passar nos testes do site do leetcode, você pode marcar manualmente como feito.</p>
+<p>Você recebe uma matriz <code>m x n</code> chamada <code>board</code>, contendo letras <code>'X'</code> e <code>'O'</code>. O objetivo é capturar regiões que estão <strong>cercadas</strong>.</p>
+<h2>Definições</h2>
+<ul>
+<li><strong>Conectar</strong>: Uma célula está conectada às células adjacentes horizontal ou verticalmente.</li>
+<li><strong>Região</strong>: Uma região é formada conectando todas as células <code>'O'</code> adjacentes.</li>
+<li><strong>Cercada</strong>: Uma região está cercada por células <code>'X'</code> se for possível conectá-la com <code>'X'</code> e nenhuma das células da região estiver na borda do tabuleiro.</li>
+</ul>
+<h2>Objetivo</h2>
+<p>Para capturar uma região cercada, substitua todos os <code>'O'</code> por <code>'X'</code> diretamente na matriz original. Não é necessário retornar nada.</p>
+<h2>Estratégia</h2>
+<ul>
+<li>Crie um mapa de visitados e visite todas as ilhas que estão conectadas às bordas do tabuleiro. Se está na borda, então não é cercada.</li>
+<li>Depois, percorra a matriz e substitua os <code>'O'</code> não visitados por <code>'X'</code>.</li>
+</ul>
+<h2>IO</h2>
+<ul>
+<li>Entrada<ul>
+<li>número de linhas e número de colunas da matriz</li>
+<li>matriz com letras <code>'X'</code> e <code>'O'</code></li>
+</ul>
+</li>
+<li>Saída<ul>
+<li>matriz modificada com as regiões cercadas capturadas com <code>'X'</code></li>
+</ul>
+</li>
+</ul>
+<h2>Testes</h2>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+4 4
+XXXX
+XOOX
+XXOX
+XOXX
+======== EXPECT
+XXXX
+XXXX
+XXXX
+XOXX
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+1 1
+X
+======== EXPECT
+X
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT
+5 5
+XXXXX
+XOOOX
+XXOXX
+XXXOX
+XXXOX
+======== EXPECT
+XXXXX
+XXXXX
+XXXXX
+XXXOX
+XXXOX
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
+</code></pre></div>
+</body>
+</html>
