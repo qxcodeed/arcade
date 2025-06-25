@@ -102,47 +102,94 @@
 <li>A saída é a árvore percorrida in-order, mas já está implementado no código de partida.</li>
 </ul>
 <h2>Testes</h2>
-<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; um
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT um
 4 # # 
-========
+======== EXPECT
+4
 [ 4 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dois
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT dois
 1 # 0 # # 
-========
+======== EXPECT
+╭───#
+1
+╰───0
 [ 1 0 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; tres
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT tres
 4 # 8 2 # # # 
-========
+======== EXPECT
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
 [ 4 2 8 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; quatro
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT quatro
 0 9 4 # # # 5 # # 
-========
+======== EXPECT
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
 [ 4 9 0 5 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; cinco
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT cinco
 0 4 # # 2 0 # # 3 # # 
-========
+======== EXPECT
+╭───4
+0
+│   ╭───0
+╰───2
+    ╰───3
 [ 4 0 0 2 3 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; seis
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT seis
 2 0 0 # # # 3 # 7 # 9 # # 
-========
+======== EXPECT
+    ╭───0
+╭───0
+│   ╰───#
+2
+│   ╭───#
+╰───3
+    │   ╭───#
+    ╰───7
+        ╰───9
 [ 0 0 2 3 7 9 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dez
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; INSERT dez
 1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
-========
+======== EXPECT
+    ╭───7
+╭───8
+│   │   ╭───#
+│   ╰───4
+│       ╰───6
+1
+│   ╭───0
+╰───5
+    │   ╭───#
+    ╰───9
+        │   ╭───2
+        ╰───3
+            ╰───#
 [ 7 8 4 6 1 0 5 9 2 3 ]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; FINISH
 </code></pre></div>
 <h2>Ajuda</h2>
 <p>Você pode utilizar o código a seguir como ponto de partida. O método <code>bshow</code> da árvore imprime a árvore em um formato amigável. Você pode utilizá-lo para conferir se seu código está funcionando corretamente.</p>

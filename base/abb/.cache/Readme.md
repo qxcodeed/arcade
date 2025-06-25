@@ -35,6 +35,8 @@ No arquivo `lib.cpp`, você encontrará a classe `BSTree` que representa a Árvo
 - cpp
   - [lib.cpp](https://github.com/qxcodeed/arcade/blob/master/base/abb/.cache/draft/cpp/lib.cpp)
   - [main.cpp](https://github.com/qxcodeed/arcade/blob/master/base/abb/.cache/draft/cpp/main.cpp)
+- go
+  - [main.go](https://github.com/qxcodeed/arcade/blob/master/base/abb/.cache/draft/go/main.go)
 <!-- links -->
 
 - **Importante**: Não altere os métodos que já estão implementados no arquivo `lib.cpp`. Foque apenas em completar as funcionalidades que estão faltando. O arquivo `main()` já está disponível, então você não precisa se preocupar com a entrada ou saída padrão.
