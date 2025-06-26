@@ -59,6 +59,7 @@ Significado das tags nas questões:
 - [ ] `@ilhas        *01 :leet`[LeetCode 200. Number os islands](base/ilhas/Readme.md)
 - [ ] `@queimando    *02 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
 - [ ] `#cercado      *01 :open`[Capturar Regiões Cercadas](base/cercado/Readme.md)
+- [ ] `@labirinto    *02 :leet`[Escapando do labirinto](base/labirinto/Readme.md)
 - [ ] `#pintura      *01 :link`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
 - [ ] `#longest      *01 :link`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
 - [ ] `#battleship   *01 :link`[Batalha naval](https://leetcode.com/problems/battleships-in-a-board/description/)
@@ -73,10 +74,11 @@ Significado das tags nas questões:
 ### Algoritmo de Retrocesso - Backtracking
 
 - [ ] `@wordsearch   *02 :leet`[Word Search LeetCode 79](base/wordsearch/Readme.md)
-- [ ] `@labirinto    *02 :leet`[Escapando do labirinto](base/labirinto/Readme.md)
 - [ ] `@pilhado      *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
 - [ ] `@distancia    +05 :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
 - [ ] `@sudoku       +10 :leet`[Sudoku](base/sudoku/Readme.md)
+- [ ] `@subset_sum   retrocesso +05  :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
+- [ ] `@n_rainhas  retrocesso +05  :leet`[N-Rainhas](base/n_rainhas/Readme.md)
 
 ### Vetor
 

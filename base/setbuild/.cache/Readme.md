@@ -30,6 +30,9 @@ Implemente a classe do vetor dinâmico.
 - java
   - [Main.java](https://github.com/qxcodeed/arcade/blob/master/base/setbuild/.cache/draft/java/Main.java)
   - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/setbuild/.cache/draft/java/extra.md)
+- py
+  - [extra.md](https://github.com/qxcodeed/arcade/blob/master/base/setbuild/.cache/draft/py/extra.md)
+  - [main.py](https://github.com/qxcodeed/arcade/blob/master/base/setbuild/.cache/draft/py/main.py)
 <!-- links -->
 
 

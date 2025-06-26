@@ -30,6 +30,9 @@ Implemente a classe do vetor dinâmico.
 - java
   - [Main.java](.cache/draft/java/Main.java)
   - [extra.md](.cache/draft/java/extra.md)
+- py
+  - [extra.md](.cache/draft/py/extra.md)
+  - [main.py](.cache/draft/py/main.py)
 <!-- links -->
 
 

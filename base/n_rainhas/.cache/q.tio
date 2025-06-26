@@ -1,0 +1,104 @@
+>>>>>>>> INSERT
+1  
+======== EXPECT
+1  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+2  
+======== EXPECT
+0  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+3  
+======== EXPECT
+0  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+4  
+======== EXPECT
+2  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+5  
+======== EXPECT
+10  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+6  
+======== EXPECT
+4  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+7  
+======== EXPECT
+40  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+8  
+======== EXPECT
+92  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+9  
+======== EXPECT
+352  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+10  
+======== EXPECT
+724  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+11  
+======== EXPECT
+2680  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+12  
+======== EXPECT
+14200  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+13  
+======== EXPECT
+73712  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+14  
+======== EXPECT
+365596  
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT
+15  
+======== EXPECT
+2279184  
+<<<<<<<< FINISH
+
