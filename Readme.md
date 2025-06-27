@@ -79,6 +79,7 @@ Significado das tags nas questões:
 - [ ] `@sudoku       +10 :leet`[Sudoku](base/sudoku/Readme.md)
 - [ ] `@subset_sum   retrocesso +05  :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
 - [ ] `@n_rainhas  retrocesso +05  :leet`[N-Rainhas](base/n_rainhas/Readme.md)
+- [ ] `@permutacoes retrocesso +05 :leet`[Permutando coisas](base/permutacoes/Readme.md)
 
 ### Vetor
 

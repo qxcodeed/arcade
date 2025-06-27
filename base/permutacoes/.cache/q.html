@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@subset_sum: Soma subconjuntos</title>
+    <title>@permutacoes: Permutando coisas</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
         pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -83,29 +83,43 @@
     </script>
 </head>
 <body>
-<h1>Soma subconjuntos</h1>
-<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/subset_sum/cover.jpg" /></p>
-<p>O problema da <strong>Soma dos Subconjuntos</strong> consiste em verificar se existe algum subconjunto de um conjunto de inteiros que tenha a soma igual a um valor alvo. É um problema clássico da ciência da computação e pode ser resolvido eficientemente para pequenos conjuntos usando a técnica de <strong>Backtracking</strong>.</p>
+<h1>Permutando coisas</h1>
+<p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/permutacoes/cover.jpg" /></p>
+<p>O problema de <strong>Permutações</strong> consiste em listar <strong>todas as permutações distintas</strong> de uma <em>string de caracteres</em>.</p>
+<p>Por exemplo, para a palavra <code>"abc"</code>, as permutações são:</p>
+<p><code>[abc, acb, bac, bca, cab, cba]</code></p>
 <h2>Entrada</h2>
-<p>A entrada é composta por duas linhas:</p>
+<p>A entrada consiste em uma única string com até <code>6</code> caracteres (sem espaços):</p>
 <ul>
-<li>A primeira linha contém um número inteiro <code>n</code> (<span class="arithmatex">\(1 \leq n \leq 20\)</span>) e <code>k</code> (<span class="arithmatex">\(1 \leq k \leq 10^4\)</span>), representando o número de elementos no conjunto e a soma desejada, respectivamente.</li>
-<li>A segunda linha contém <code>n</code> inteiros separados por espaço.<br />
-<span class="arithmatex">\(1 \leq a_i \leq 10^4\)</span></li>
+<li><code>s</code> — string de entrada<br />
+<code>1 ≤ |s| ≤ 6</code><br />
+  Os caracteres são únicos.</li>
 </ul>
 <h2>Saída</h2>
 <ul>
-<li>Uma resposta contendo "true" se é possível fazer tal soma ou "false" caso contrário.</li>
+<li>Uma lista com <strong>todas as permutações distintas</strong> da string de entrada, <strong>ordenadas lexicograficamente</strong>, uma por linha.</li>
 </ul>
-<p>É garantido que <span class="arithmatex">\(\sum_{i = 0}^{n-1} a_i &lt; 2^{31}\)</span></p>
+<hr />
+<p><strong>Você pode ver sobre ordem lexicográfica <a href="https://en.wikipedia.org/wiki/Lexicographic_order">aqui</a>.</strong></p>
+<p><strong>Dica:</strong> coloque todas as permutações <strong>em um array</strong>, e depois <strong>ordene o array</strong> para garantir a ordem lexicográfica na saída.</p>
 <h3>Exemplo</h3>
-<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-5 9
-3 34 4 12 5
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-true
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+abc
+========
+abc
+acb
+bac
+bca
+cab
+cba
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 </code></pre></div>
-<h3>Explicação</h3>
-<p>Para a soma 9 temos <span class="arithmatex">\(4 + 5 = 9\)</span></p>
+<div class="language-text highlight"><pre><span></span><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+ab
+========
+ab
+ba
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+</code></pre></div>
 </body>
 </html>

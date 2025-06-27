@@ -8,7 +8,6 @@ O problema das **N-Rainhas** consiste em posicionar `N` rainhas em um tabuleiro 
 - Nenhuma rainha pode estar na **mesma coluna**
 - Nenhuma rainha pode estar na **mesma diagonal**
 
-
 Dado um número inteiro `n`, encontrar **todas as soluções possíveis** para posicionar `n` rainhas em um tabuleiro `n x n` de modo que nenhuma possa atacar a outra.
 
 ---
@@ -32,5 +31,7 @@ A entrada consiste em um único número inteiro:
 <<<<<<<<<<<
 2
 ```
+
 ### Explicação
+
 Em um tabuleiro 4 x 4 com 4 rainhas temos 2 maneiras possíveis para posicionar 4 rainhas de modo que nenhuma ataque a outra.

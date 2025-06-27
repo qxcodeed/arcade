@@ -4,7 +4,6 @@
 
 O problema da **Soma dos Subconjuntos** consiste em verificar se existe algum subconjunto de um conjunto de inteiros que tenha a soma igual a um valor alvo. É um problema clássico da ciência da computação e pode ser resolvido eficientemente para pequenos conjuntos usando a técnica de **Backtracking**.
 
-
 ## Entrada
 
 A entrada é composta por duas linhas:
@@ -19,8 +18,7 @@ A entrada é composta por duas linhas:
 
  É garantido que $\sum_{i = 0}^{n-1} a_i < 2^{31}$
 
-
-### Exemplo:
+### Exemplo
 
 ```txt
 >>>>>>>>>>>>>>>
@@ -29,6 +27,7 @@ A entrada é composta por duas linhas:
 <<<<<<<<<<<<<<<
 true
 ```
-### Explicação
-Para a soma 9 temos $4 + 5 = 9$
 
+### Explicação
+
+Para a soma 9 temos $4 + 5 = 9$

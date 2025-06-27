@@ -2,7 +2,7 @@
 6 10  
 3 34 4 12 5 2  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -10,7 +10,7 @@ true
 6 19  
 3 34 4 12 5 2  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -18,7 +18,7 @@ true
 5 30  
 7 14 3 8 1  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -26,7 +26,7 @@ true
 4 100  
 20 30 40 50  
 ======== EXPECT
-false  
+true
 <<<<<<<< FINISH
 
 
@@ -34,7 +34,7 @@ false
 3 15  
 5 5 5  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -42,7 +42,7 @@ true
 1 7  
 6  
 ======== EXPECT
-false  
+false
 <<<<<<<< FINISH
 
 
@@ -50,7 +50,7 @@ false
 2 13  
 13 1  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -58,7 +58,7 @@ true
 6 0  
 1 2 3 4 5 6  
 ======== EXPECT
-false  
+true
 <<<<<<<< FINISH
 
 
@@ -66,7 +66,7 @@ false
 5 10  
 10 2 3 4 5  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -74,7 +74,7 @@ true
 5 11  
 1 2 3 4 5  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -82,7 +82,7 @@ true
 3 9  
 2 4 5  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -90,7 +90,7 @@ true
 5 9999  
 2000 3000 1500 2500 1000  
 ======== EXPECT
-false  
+false
 <<<<<<<< FINISH
 
 
@@ -98,7 +98,7 @@ false
 7 10000  
 10 20 30 40 50 60 10000  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -106,7 +106,7 @@ true
 20 10001  
 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500 500  
 ======== EXPECT
-false  
+false
 <<<<<<<< FINISH
 
 
@@ -114,7 +114,7 @@ false
 4 5000  
 1000 2000 3000 4000  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -122,7 +122,7 @@ true
 4 10000  
 1000 2000 3000 4000  
 ======== EXPECT
-false  
+true
 <<<<<<<< FINISH
 
 
@@ -130,7 +130,7 @@ false
 3 10000  
 9999 1 10000  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -138,7 +138,7 @@ true
 5 1  
 1 2 3 4 5  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -146,7 +146,7 @@ true
 5 1  
 2 3 4 5 6  
 ======== EXPECT
-false  
+false
 <<<<<<<< FINISH
 
 
@@ -154,7 +154,7 @@ false
 6 7654  
 654 1000 2000 3000 4000 5000  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -162,7 +162,7 @@ true
 6 7655  
 654 1000 2000 3000 4000 5000  
 ======== EXPECT
-false  
+false
 <<<<<<<< FINISH
 
 
@@ -170,7 +170,7 @@ false
 10 9999  
 999 1000 1001 1002 1003 1004 1005 1006 1007 1008  
 ======== EXPECT
-true  
+false
 <<<<<<<< FINISH
 
 
@@ -178,7 +178,7 @@ true
 15 1234  
 100 200 300 400 134 250 50 600 10 9 1 5 7 3 20  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
 
@@ -186,6 +186,6 @@ true
 20 10000  
 500 450 550 600 700 800 1000 1200 900 850 50 100 150 250 300 400 475 425 375 625  
 ======== EXPECT
-true  
+true
 <<<<<<<< FINISH
 
