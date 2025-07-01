@@ -77,9 +77,9 @@ Significado das tags nas questões:
 - [ ] `@pilhado      *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
 - [ ] `@distancia    +05 :leet`[Colocando os números no lugar certo](base/distancia/Readme.md)
 - [ ] `@sudoku       +10 :leet`[Sudoku](base/sudoku/Readme.md)
-- [ ] `@subset_sum   retrocesso +05  :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
-- [ ] `@n_rainhas  retrocesso +05  :leet`[N-Rainhas](base/n_rainhas/Readme.md)
-- [ ] `@permutacoes retrocesso +05 :leet`[Permutando coisas](base/permutacoes/Readme.md)
+- [ ] `@subset_sum   +05 :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
+- [ ] `@n_rainhas    +05 :leet`[N-Rainhas](base/n_rainhas/Readme.md)
+- [ ] `@permutacoes  +05 :leet`[Permutando coisas](base/permutacoes/Readme.md)
 
 ### Vetor
 

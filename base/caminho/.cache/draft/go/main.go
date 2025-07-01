@@ -28,6 +28,8 @@ func search(grid [][]rune, startPos Pos, endPos Pos) {
 	_, _, _ = grid, startPos, endPos
 }
 
+func voltar()
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 

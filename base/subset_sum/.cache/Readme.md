@@ -21,11 +21,12 @@ A entrada é composta por duas linhas:
 ### Exemplo
 
 ```txt
->>>>>>>>>>>>>>>
+>>>>>>>>
 5 9
 3 34 4 12 5
-<<<<<<<<<<<<<<<
+========
 true
+<<<<<<<<
 ```
 
 ### Explicação
