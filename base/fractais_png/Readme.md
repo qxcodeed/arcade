@@ -1,4 +1,4 @@
-# Desenhando Fractais
+# Desenhando Fractais (Opção 2)
 
 - Veja o arquivo `extra.md` para detalhes de como instalar a biblioteca para desenhar pngs.
 - Após isso, vamos treinar o desenho de alguns fractais.

@@ -1,10 +1,7 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
 )
 
 // Node representa um nó na árvore binária.
@@ -16,6 +13,39 @@ type Node struct {
 
 func clone(parts []string, index *int) *Node {
 	return nil
+}
+
+func find(node **Node, value int) **Node {
+	if *node == nil {
+		return nil
+	}
+	if (*node).Value == value {
+		return node
+	}
+	if value > (*node).Value {
+		return find(&(*node).Right, value)
+	}
+	return find(&(*node).Left, value)
+}
+
+func remover(root **Node, value int) {
+	link := find(root, value)
+	node := *link
+	if node.Left == nil && node.Right == nil {
+		*link = nil
+	}
+	if node.Left != nil && node.Right == nil {
+		*link = node.Left
+	}
+	if node.Left == nil && node.Right != nil {
+		*link = node.Right
+	}
+	escolhido := node.Left
+	for escolhido.Right != nil {
+		escolhido = escolhido.Right
+	}
+	remover(root, escolhido.Value)
+	node.Value = escolhido.Value
 }
 
 // BShow é uma função auxiliar para bshow.
@@ -51,10 +81,6 @@ func BShow(node *Node, heranca string) {
 }
 
 func main() {
-	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
-	vet := strings.Fields(scanner.Text())
-	index := 0
-	root := clone(vet, &index)
-	BShow(root, "")
+	node := &Node{Value: 5}
+	find(&node, 7)
 }
