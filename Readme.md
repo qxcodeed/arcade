@@ -25,7 +25,7 @@ Significado das tags nas questões:
 - [ ] `@baruel      *03 :leet`[Figurinhas repetidas](https://github.com/qxcodefup/arcade/blob/master/base/baruel/Readme.md)
 - [ ] `@gomos       +04 :leet`[Gomos da cobra](https://github.com/qxcodefup/arcade/blob/master/base/gomos/Readme.md)
 
-### Análise<!-- +analise -->
+### Análise<!-- +map_set -->
 
 - [ ] `#analise     *02 :info`[Análise de Algoritmos](wiki/analise/analise.md)
 - [ ] `@princesa    *06 :leet`[Princesa v1](base/princesa/Readme.md)
@@ -69,7 +69,7 @@ Significado das tags nas questões:
 - [ ] `#detonate     *03 :link`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
 - [ ] `#escapeSpread +02 :link`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
 
-### Backtracking<!-- +back:5 -->
+### Backtracking<!-- +backtracking:5 -->
 
 - [ ] `@wordsearch   *02 :leet`[Word Search LeetCode 79](base/wordsearch/Readme.md)
 - [ ] `@subset_sum   *02 :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
@@ -83,9 +83,9 @@ Significado das tags nas questões:
 - [ ] `@vetbuild     *03 :make`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
 - [ ] `@setbuild     *03 :make`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
 - [ ] `@bettersearch *01 :make`[Better Search com busca binária](base/bettersearch/Readme.md)
-- [ ] `@magicsearch  *01 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
 - [ ] `@multiset     *02 :make`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
-- [ ] `@iterador     *02 :make`[Criando um iterador](base/iterador/Readme.md)
+- [ ] `@magicsearch  +01 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
+- [ ] `@iterador     +01 :make`[Criando um iterador](base/iterador/Readme.md)
 
 ### Lista<!-- +list:2 -->
 
