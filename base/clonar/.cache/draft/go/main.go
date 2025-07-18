@@ -67,8 +67,8 @@ func main() {
 	scanner.Scan()
 	parts := strings.Split(scanner.Text(), " ")
 	root := create(&parts)
-	BShow(root, "") // Chama a função de impressão formatada
 	fmt.Println("original:")
+	BShow(root, "") // Chama a função de impressão formatada
 	newRoot := Clone(root) // Clona a árvore
 	root.Value = 4         // Modifica o valor do nó raiz original
 	fmt.Println("clone:")
