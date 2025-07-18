@@ -1,11 +1,9 @@
 # Lendo uma árvore a partir de um serial
 
-<!--TOC_BEGIN-->
-- [Descrição](#descrição)
-- [Testes](#testes)
-- [Ajuda](#ajuda)
-- [Código base](#código-base)
-<!--TOC_END-->
+<!-- toch -->
+[Descrição](#descrição) | [Testes](#testes)
+-- | --
+<!-- toch -->
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/serial/cover.jpg)
 
@@ -13,8 +11,9 @@
 
 - Leia a string que representa a árvore serializada.
 - Você deve construir a árvore a partir da string implementando corretamente o construtor do código de partida.
-- Você pode entender a lógica de serialização no seguinte [link](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
+- Você pode entender a lógica de serialização no seguinte [link para explicação](https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/).
 - A saída é a árvore percorrida in-order, mas já está implementado no código de partida.
+- Baixe o código de rascunho e implemente a função `create` para construir a árvore a partir da string serializada.
 
 ## Testes
 

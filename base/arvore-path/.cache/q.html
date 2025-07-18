@@ -84,14 +84,24 @@
 </head>
 <body>
 <h1>Caminho até o nó</h1>
-<!--TOC_BEGIN-->
-<ul>
-<li><a href="#descrição">Descrição</a></li>
-<li><a href="#exemplo">Exemplo</a></li>
-<li><a href="#testes">Testes</a></li>
-<li><a href="#código-base">Código base</a></li>
-</ul>
-<!--TOC_END-->
+<!-- toch -->
+<table>
+<thead>
+<tr>
+<th><a href="#descrição">Descrição</a></th>
+<th><a href="#exemplo">Exemplo</a></th>
+<th><a href="#testes">Testes</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- toch -->
 
 <p><img alt="_" src="https://raw.githubusercontent.com/qxcodeed/arcade/master/base/arvore-path/cover.jpg" /></p>
 <h2>Descrição</h2>
@@ -147,102 +157,47 @@
 4 # #
 4
 ========
-x
+Arvore:
+4
+Caminho: x
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 02 dois
 1 # 0 # # 
 0
 ========
-rx
+Arvore:
+╭───#
+1
+╰───0
+Caminho: rx
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 03 tres
 4 # 8 2 # # # 
 2
 ========
-rlx
+Arvore:
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
+Caminho: rlx
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
 
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; 04 not found
 0 9 4 # # # 5 # # 
 7
 ========
-!
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Caminho: !
 &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-
-&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # #
-2
-========
-rrrlx
-&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-</code></pre></div>
-<h2>Código base</h2>
-<div class="language-cpp highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sstream&gt;</span>
-<span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-
-<span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">left</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">right</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Node</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">){</span>
-<span class="w">        </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">left</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">left</span><span class="p">;</span>
-<span class="w">        </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">right</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">right</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">};</span>
-
-<span class="k">struct</span><span class="w"> </span><span class="nc">BTree</span><span class="p">{</span>
-<span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">root</span><span class="p">;</span>
-<span class="w">    </span><span class="n">BTree</span><span class="p">(){</span>
-<span class="w">        </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">clone</span><span class="p">(</span><span class="n">stringstream</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ss</span><span class="p">,</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">elo</span><span class="p">){</span>
-<span class="w">        </span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">        </span><span class="n">ss</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;#&quot;</span><span class="p">)</span>
-<span class="w">            </span><span class="k">return</span><span class="p">;</span>
-<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">num</span><span class="p">;</span>
-<span class="w">        </span><span class="n">stringstream</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">num</span><span class="p">;</span>
-<span class="w">        </span><span class="o">*</span><span class="n">elo</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="k">new</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
-<span class="w">        </span><span class="n">clone</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="p">(</span><span class="o">*</span><span class="n">elo</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-<span class="w">        </span><span class="n">clone</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="p">(</span><span class="o">*</span><span class="n">elo</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">BTree</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">serial</span><span class="p">){</span>
-<span class="w">        </span><span class="n">stringstream</span><span class="w"> </span><span class="nf">ss</span><span class="p">(</span><span class="n">serial</span><span class="p">);</span>
-<span class="w">        </span><span class="n">clone</span><span class="p">(</span><span class="n">ss</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">root</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">__destroy</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">node</span><span class="p">){</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">node</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="k">nullptr</span><span class="p">)</span>
-<span class="w">            </span><span class="k">return</span><span class="p">;</span>
-<span class="w">        </span><span class="n">__destroy</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
-<span class="w">        </span><span class="n">__destroy</span><span class="p">(</span><span class="n">node</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
-<span class="w">        </span><span class="k">delete</span><span class="w"> </span><span class="n">node</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="o">~</span><span class="n">BTree</span><span class="p">(){</span>
-<span class="w">        </span><span class="n">__destroy</span><span class="p">(</span><span class="k">this</span><span class="o">-&gt;</span><span class="n">root</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">find_path</span><span class="p">(</span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">){</span>
-<span class="w">        </span><span class="c1">//TODO</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">};</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">line</span><span class="p">;</span>
-<span class="w">    </span><span class="n">getline</span><span class="p">(</span><span class="n">cin</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">);</span>
-<span class="w">    </span><span class="n">BTree</span><span class="w"> </span><span class="n">bt</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
-<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bt</span><span class="p">.</span><span class="n">find_path</span><span class="p">(</span><span class="n">bt</span><span class="p">.</span><span class="n">root</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">);</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<span class="p">}</span>
 </code></pre></div>
 </body>
 </html>

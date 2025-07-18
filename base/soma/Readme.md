@@ -1,84 +1,112 @@
-# Soma dos nós da árvore
+# Soma e Mínimo Recursivos
 
-<!--TOC_BEGIN-->
-- [Descrição](#descrição)
-- [Testes](#testes)
-- [Código base](#código-base)
-<!--TOC_END-->
+<!-- toch -->
+[Descrição](#descrição) | [Testes](#testes)
+-- | --
+<!-- toch -->
 
 ![_](cover.jpg)
 
 ## Descrição
 
-Leia a árvore a partir do serial utilizando o método da atividade `@044` e implemente os seguintes métodos para calcular a soma de todos os elementos e o valor do menor elemento.
-
-```cpp
-int sum(Node * root);
-
-int min(Node * root);
-```
-
-- Entrada
-  - Serial de uma árvore
-- Saída
-  - Soma dos valores da árvore, menor valor da árvore.
+Implemente os métodos solicitados no rascunho de acordo com os comentários no código. Essa NÃO é uma árvore binária de busca. É uma árvore binária genérica no qual os nós podem conter quaisquer valores.
 
 ## Testes
 
 ```txt
->>>>>>>> 01 um
+>>>>>>>> INSERT 01 um
 4 # # 
-========
-4 4
-<<<<<<<<
+======== EXPECT
+Arvore:
+4
+Soma: 4, Minimo: 4
+<<<<<<<< FINISH
 
->>>>>>>> 02 dois
+
+>>>>>>>> INSERT 02 dois
 1 # 0 # # 
-========
-1 0
-<<<<<<<<
+======== EXPECT
+Arvore:
+╭───#
+1
+╰───0
+Soma: 1, Minimo: 0
+<<<<<<<< FINISH
 
->>>>>>>> 03 tres
+
+>>>>>>>> INSERT 03 tres
 4 # 8 2 # # # 
-========
-14 2
-<<<<<<<<
+======== EXPECT
+Arvore:
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
+Soma: 14, Minimo: 2
+<<<<<<<< FINISH
 
->>>>>>>> 04 quatro
+
+>>>>>>>> INSERT 04 quatro
 0 9 4 # # # 5 # # 
-========
-18 0
-<<<<<<<<
+======== EXPECT
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Soma: 18, Minimo: 0
+<<<<<<<< FINISH
 
->>>>>>>> 05 cinco
+
+>>>>>>>> INSERT 05 cinco
 0 4 # # 2 0 # # -3 # # 
-========
-3 -3
-<<<<<<<<
+======== EXPECT
+Arvore:
+╭───4
+0
+│   ╭───0
+╰───2
+    ╰───-3
+Soma: 3, Minimo: -3
+<<<<<<<< FINISH
 
->>>>>>>> 06 seis
+
+>>>>>>>> INSERT 06 seis
 2 0 5 # # # 3 # 7 # -9 # # 
-========
-8 -9
-<<<<<<<<
+======== EXPECT
+Arvore:
+    ╭───5
+╭───0
+│   ╰───#
+2
+│   ╭───#
+╰───3
+    │   ╭───#
+    ╰───7
+        ╰───-9
+Soma: 8, Minimo: -9
+<<<<<<<< FINISH
 
->>>>>>>> 07 dez
+
+>>>>>>>> INSERT 07 dez
 1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
-========
-45 0
-<<<<<<<<
-```
-
-## Código base
-
-Utilize a árvore dos exercícios anteriores
-
-```cpp
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    getline(cin, line);
-    cout << bt.sum() << " " << bt.min() << "\n";
-}
+======== EXPECT
+Arvore:
+    ╭───7
+╭───8
+│   │   ╭───#
+│   ╰───4
+│       ╰───6
+1
+│   ╭───0
+╰───5
+    │   ╭───#
+    ╰───9
+        │   ╭───2
+        ╰───3
+            ╰───#
+Soma: 45, Minimo: 0
+<<<<<<<< FINISH
 ```

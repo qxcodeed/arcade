@@ -8,7 +8,6 @@ Significado das tags nas questões:
 | --------- | -----------
 | leet      | Problema de estilo LEET CODE para resolver problemas
 | link      | Link para problema externo
-| make      | Problema de código com testes construindo a estrutura de dados
 | open      | Problema de programação abertos sem testes
 | info      | Conteúdo informativo de leitura ou vídeo
 | task      | Outras atividades
@@ -80,56 +79,47 @@ Significado das tags nas questões:
 
 ### Vetor<!-- +vector:5 -->
 
-- [ ] `@vetbuild     *03 :make`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
-- [ ] `@setbuild     *03 :make`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
-- [ ] `@bettersearch *01 :make`[Better Search com busca binária](base/bettersearch/Readme.md)
-- [ ] `@multiset     *02 :make`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
-- [ ] `@magicsearch  +01 :make`[Magic Search com busca binária](base/magicsearch/Readme.md)
-- [ ] `@iterador     +01 :make`[Criando um iterador](base/iterador/Readme.md)
+- [ ] `@vetbuild     *03 :leet`[Lista Sequencial Dinâmica](base/vetbuild/Readme.md)
+- [ ] `@setbuild     *03 :leet`[Conjunto usando Lista Sequencial Ordenada](base/setbuild/Readme.md)
+- [ ] `@bettersearch *01 :leet`[Better Search com busca binária](base/bettersearch/Readme.md)
+- [ ] `@multiset     *02 :leet`[MultiSet usando vetor dinâmico](base/multiset/Readme.md)
+- [ ] `@magicsearch  +01 :leet`[Magic Search com busca binária](base/magicsearch/Readme.md)
+- [ ] `@iterador     +01 :leet`[Criando um iterador](base/iterador/Readme.md)
 
 ### Lista<!-- +list:2 -->
 
-- [ ] `@lista_d1      *03 :make`[Lista Dupla com Nó Sentinela](base/lista_d1/Readme.md)
-- [ ] `@lista_d2      *03 :make`[Lista Dupla com Nó Iterador](base/lista_d2/Readme.md)
-- [ ] `@lista_d4      *02 :make`[Lista Circular utilizando Template](base/lista_d4/Readme.md)
+- [ ] `@lista_d1      *03 :leet`[Lista Dupla com Nó Sentinela](base/lista_d1/Readme.md)
+- [ ] `@lista_d2      *03 :leet`[Lista Dupla com Nó Iterador](base/lista_d2/Readme.md)
+- [ ] `@lista_d4      *02 :leet`[Lista Circular utilizando Template](base/lista_d4/Readme.md)
 - [ ] `@prin_list1    *03 :leet`[Princesa com lista ligada](base/prin_list1/Readme.md)
 - [ ] `@editor        *04 :leet`[Editor de texto](base/editor/Readme.md)
-- [ ] `@lista_d3      +03 :make`[Lista Dupla - Extra](base/lista_d3/Readme.md)
+- [ ] `@lista_d3      +03 :leet`[Lista Dupla - Extra](base/lista_d3/Readme.md)
 - [ ] `@prin_list2    +02 :leet`[Princesa2 com lista ligada](base/prin_list2/Readme.md)
 - [ ] `@controlz      +04 :leet`[Editor com Control Z](base/controlz/Readme.md)
 - [ ] `@editorint     *08 :open`[Editor de texto interativo](base/editorint/Readme.md)
 
 ### Deque, Pilha e Fila<!-- +linear:4 -->
 
-- [ ] `@bufferring  *04 :make`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
-- [ ] `@fila_enc    *02 :make`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
-- [ ] `@pilha       *02 :make`[Pilha sobre uma lista sequencial](base/pilha/Readme.md)
+- [ ] `@bufferring  *04 :leet`[Buffer Circular (Deque Dinâmico)](base/bufferring/Readme.md)
+- [ ] `@fila_enc    *02 :leet`[Fila usando lista encadeada simples](base/fila_enc/Readme.md)
+- [ ] `@pilha       *02 :leet`[Pilha sobre uma lista sequencial](base/pilha/Readme.md)
 - [ ] `@chaves      *01 :leet`[Fila: Chaves de disputa](base/chaves/Readme.md)
 - [ ] `@queimando   *02 :leet`[Pilha: Queimando árvores](base/queimando/Readme.md)
 - [ ] `@pilhado     *03 :leet`[Pilha: Fugindo do labirinto](base/pilhado/Readme.md)
 
-### Ordenação<!-- +sort:2 -->
-
-- [ ] `#ord_video   *01 :info`[Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
-- [ ] `#ord_leitura *01 :info`[Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
-- [ ] `#ord_simples *01 :info`[Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
-- [ ] `#ord_recurs  *01 :info`[Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
-- [ ] `@vacina      *01 :leet`[Otimizando vacinas](base/vacina/Readme.md)
-- [ ] `@indices     *02 :leet`[Índices originais](base/indices/Readme.md)
-- [ ] `@tapioca     *03 :make`[Tapioca Sort](base/tapioca/Readme.md)
-- [ ] `@mergevet    *03 :make`[Criando um vetor simples e fazendo um merge](base/mergevet/Readme.md)
-
 ### Árvore<!-- +tree:3 -->
 
-- [ ] `@serial      *01 :make`[Lendo uma árvore a partir de um serial](base/serial/Readme.md)
-- [ ] `@formatada   *01 :make`[Mostrando a árvore formatada](base/formatada/Readme.md)
-- [ ] `@soma        *01 :make`[Soma dos nós da árvore](base/soma/Readme.md)
-- [ ] `@altura      *02 :make`[Altura e profundidade da árvore](base/altura/Readme.md)
-- [ ] `@arvore-path *04 :make`[Caminho até o nó](base/arvore-path/Readme.md)
-- [ ] `@dividido    *02 :make`[Percorrer in-order](base/dividido/Readme.md)
-- [ ] `@arvore      *03 :make`[Construir árvore binaria CPP](base/arvore/Readme.md)
-- [ ] `@incompleta  *04 :make`[Arvore incompleta](base/incompleta/Readme.md)
-- [ ] `@abb         *04 :make`[Árvore Binária de Busca](base/abb/Readme.md)
+- [ ] `@serial      *01 :leet`[Lendo uma árvore a partir de um serial](base/serial/Readme.md)
+- [ ] `@formatada   *01 :leet`[Mostrando a árvore formatada](base/formatada/Readme.md)
+- [ ] `@inverter    *01 :leet`[Inverter a árvore](base/inverter/Readme.md)
+- [ ] `@clonar      *01 :leet`[Clonando a árvore](base/clonar/Readme.md)
+- [ ] `@soma        *01 :leet`[Soma e Mínimo Recursivos](base/soma/Readme.md)
+- [ ] `@altura      *02 :leet`[Altura e profundidade da árvore](base/altura/Readme.md)
+- [ ] `@compare     *02 :leet`[Mostrando a árvore formatada](base/compare/Readme.md)
+- [ ] `@arvore-path *02 :leet`[Caminho até o nó](base/arvore-path/Readme.md)
+- [ ] `@bst_insert  *03 :leet`[Árvore Binária de Busca - Inserção](base/bst_insert/Readme.md)
+- [ ] `@bst_serial  *02 :leet`[Árvore Binária de Busca - Serializar](base/bst_serial/Readme.md)
+- [ ] `@bst_remove  *04 :leet`[Árvore Binária de Busca - Remoção](base/bst_remove/Readme.md)
 
 ## Side Quests
 
@@ -165,6 +155,14 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 
 ### A consertar<!-- l:cpp -->
 
+- [ ] `#ord_video     +00 :info`[Vídeo - implementação de todos os algoritmos de ordenação](https://youtu.be/k6nODikH_D8?si=tpbDRg139HvdzSIS)
+- [ ] `#ord_leitura   +00 :info`[Algoritmos de Busca](wiki/busca_ordenacao/busca.md)
+- [ ] `#ord_simples   +00 :info`[Algoritmos de Ordenação](wiki/busca_ordenacao/ordenacao.md)
+- [ ] `#ord_recurs    +00 :info`[Algoritmos de Ordenação Recursiva: Merge Sort e Quick Sort](wiki/ordenacao_recursiva/ordenacao_rec.md)
+- [ ] `@vacina        +00 :leet`[Otimizando vacinas](base/vacina/Readme.md)
+- [ ] `@indices       +00 :leet`[Índices originais](base/indices/Readme.md)
+- [ ] `@tapioca       +00 :leet`[Tapioca Sort](base/tapioca/Readme.md)
+- [ ] `@mergevet      +00 :leet`[Criando um vetor simples e fazendo um merge](base/mergevet/Readme.md)
 - [ ] `@hex           *00  :open`[Desenhando labirinto perfeito](base/hex/Readme.md)
 - [ ] `@budega        *00 :leet`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/Readme.md)
 - [ ] `@agenda        *00 :leet`[Gerencie contatos e telefones](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/Readme.md)
@@ -172,10 +170,10 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `#cpp_oper      *00 :info`[Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
 - [ ] `@ponto         *00 :leet`[Implemente a classe ponto](base/ponto/Readme.md)
 - [ ] `@fracao        *00 :leet`[Implemente a classe fração reduzida](base/fracao/Readme.md)
-- [ ] `@pontoGo       *00 :make`[Implemente a classe ponto](base/pontoGo/Readme.md)
-- [ ] `@fracaoGo      *00 :make`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
-- [ ] `@lista_simples +05 :make`[Lista simples 1](base/lista_simples/Readme.md)
-- [ ] `@list_basic    *01 :make`[Lista Simplesmente Encadeada - CPP](base/list_basic/Readme.md)
+- [ ] `@pontoGo       *00 :leet`[Implemente a classe ponto](base/pontoGo/Readme.md)
+- [ ] `@fracaoGo      *00 :leet`[Implemente a classe fração reduzida](base/fracaoGo/Readme.md)
+- [ ] `@lista_simples +05 :leet`[Lista simples 1](base/lista_simples/Readme.md)
+- [ ] `@list_basic    *01 :leet`[Lista Simplesmente Encadeada - CPP](base/list_basic/Readme.md)
 - [ ] `@cauda         *00 :leet`[Lista Simplesmente Encadeada com Cauda](base/cauda/Readme.md)
 - [ ] `@duplamente    *00 :leet`[Lista Dupla - Algoritmos](base/duplamente/Readme.md)
 - [ ] `@invertendo    *00 :leet`[Inversão usando next e previous](base/invertendo/Readme.md)

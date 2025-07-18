@@ -1,7 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strings"
 )
 
 // Node representa um nó na árvore binária.
@@ -11,76 +14,52 @@ type Node struct {
 	Right *Node
 }
 
-func clone(parts []string, index *int) *Node {
+// create constrói uma árvore binária a partir de uma lista de strings.
+// Consuma os elementos da lista sempre do início.
+// Você pode obter o primeiro elemento com 'elem := (*parts)[0]'
+// Você pode fazer um "push_front" no array usando '*parts = (*parts)[1:]
+// Se o elemento for "#", significa que o nó é nulo.
+func create(parts *[]string) *Node {
+	_ = parts
 	return nil
 }
 
-func find(node **Node, value int) **Node {
-	if *node == nil {
-		return nil
-	}
-	if (*node).Value == value {
-		return node
-	}
-	if value > (*node).Value {
-		return find(&(*node).Right, value)
-	}
-	return find(&(*node).Left, value)
-}
-
-func remover(root **Node, value int) {
-	link := find(root, value)
-	node := *link
-	if node.Left == nil && node.Right == nil {
-		*link = nil
-	}
-	if node.Left != nil && node.Right == nil {
-		*link = node.Left
-	}
-	if node.Left == nil && node.Right != nil {
-		*link = node.Right
-	}
-	escolhido := node.Left
-	for escolhido.Right != nil {
-		escolhido = escolhido.Right
-	}
-	remover(root, escolhido.Value)
-	node.Value = escolhido.Value
-}
-
-// BShow é uma função auxiliar para bshow.
-func BShow(node *Node, heranca string) {
+// BShow é uma função auxiliar para imprimir a árvore binária.
+// Primeira invocação de ser com history como uma string vazia.
+func BShow(node *Node, history string) {
 	if node != nil && (node.Left != nil || node.Right != nil) {
-		BShow(node.Left, heranca+"l")
+		BShow(node.Left, history+"l")
 	}
 
-	for i := 0; i < len(heranca)-1; i++ {
-		if heranca[i] != heranca[i+1] {
+	for i := 0; i < len(history)-1; i++ {
+		if history[i] != history[i+1] {
 			fmt.Print("│   ")
 		} else {
 			fmt.Print("    ")
 		}
 	}
-	if heranca != "" {
-		if heranca[len(heranca)-1] == 'l' {
+	if history != "" {
+		if history[len(history)-1] == 'l' {
 			fmt.Print("╭───")
 		} else {
 			fmt.Print("╰───")
 		}
 	}
-
 	if node == nil {
 		fmt.Println("#")
 		return
 	}
 	fmt.Println(node.Value)
-
 	if node.Left != nil || node.Right != nil {
-		BShow(node.Right, heranca+"r")
+		BShow(node.Right, history+"r")
 	}
 }
 
 func main() {
-	node := &Node{Value: 5}
-	find(&node, 7)
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	line := scanner.Text()
+	parts := strings.Split(line, " ")
+	root := create(&parts)
+	BShow(root, "")
 }

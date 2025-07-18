@@ -1,71 +1,107 @@
 # Mostrando a árvore formatada
 
-<!--TOC_BEGIN-->
-- [Descrição](#descrição)
-- [Testes](#testes)
-- [Ajuda](#ajuda)
-- [Código base](#código-base)
-<!--TOC_END-->
+<!-- toch -->
+[Descrição](#descrição) | [Testes](#testes)
+-- | --
+<!-- toch -->
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/formatada/cover.jpg)
 
 ## Descrição
 
 - Leia a string que representa a árvore serializada utilizando o código que você implementou no exercício @serial para construir sua árvore.
-- Utilize o espaçamento de "...." para cada nível do nó.
+- Crie um método recursivo chamado `my_show()` que recebe um nó e um inteiro `depth` (inicialmente 0) e imprime a árvore formatada.
+- Utilize o espaçamento de "...." para cada nível de profundidade do nó.
 - Faça a impressão usando o percorrimento in-order.
-- Se o nó possuir pelos menos um filho não nulo, imprima o filho nulo como um #
+- Se o nó possuir pelos menos um filho não nulo, chame a recursão para ambos os filhos e imprima o filho nulo como um #
+- Se o nó não possuir filhos, imprima apenas o valor do nó.
+
+- Saída
+  - Impressão da função 'BShow' que já vem no rascunho, seguido da sua função de impressão `MyShow()`.
 
 ## Testes
 
 ```txt
->>>>>>>> um
+>>>>>>>> INSERT um
 4 # # 
-========
+======== EXPECT
 4
-<<<<<<<<
+4
+<<<<<<<< FINISH
 
->>>>>>>> dois
+
+>>>>>>>> INSERT dois
 1 # 0 # # 
-========
+======== EXPECT
+╭───#
+1
+╰───0
 ....#
 1
 ....0
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> tres
+
+>>>>>>>> INSERT tres
 4 # 8 2 # # # 
-========
+======== EXPECT
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
 ....#
 4
 ........2
 ....8
 ........#
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> quatro
+
+>>>>>>>> INSERT quatro
 0 9 4 # # # 5 # # 
-========
+======== EXPECT
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
 ........4
 ....9
 ........#
 0
 ....5
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> cinco
+
+>>>>>>>> INSERT cinco
 0 4 # # 2 0 # # 3 # # 
-========
+======== EXPECT
+╭───4
+0
+│   ╭───0
+╰───2
+    ╰───3
 ....4
 0
 ........0
 ....2
 ........3
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> seis
+
+>>>>>>>> INSERT seis
 2 0 0 # # # 3 # 7 # 9 # # 
-========
+======== EXPECT
+    ╭───0
+╭───0
+│   ╰───#
+2
+│   ╭───#
+╰───3
+    │   ╭───#
+    ╰───7
+        ╰───9
 ........0
 ....0
 ........#
@@ -75,11 +111,25 @@
 ............#
 ........7
 ............9
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> dez
+
+>>>>>>>> INSERT dez
 1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
-========
+======== EXPECT
+    ╭───7
+╭───8
+│   │   ╭───#
+│   ╰───4
+│       ╰───6
+1
+│   ╭───0
+╰───5
+    │   ╭───#
+    ╰───9
+        │   ╭───2
+        ╰───3
+            ╰───#
 ........7
 ....8
 ............#
@@ -93,108 +143,6 @@
 ................2
 ............3
 ................#
-<<<<<<<<
+<<<<<<<< FINISH
 
-```
-
-
-## Ajuda
-
-Você pode utilizar o código a seguir como ponto de partida. O método `bshow` da árvore imprime a árvore em um formato amigável. Você pode utilizá-lo para conferir se seu código está funcionando corretamente.
-
-Para o caso da árvore do último teste, temos essa saída.
-
-```c
-//serial
-1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # #
-
-//sua saída
-........7
-....8
-............#
-........4
-............6
-1
-........0
-....5
-............#
-........9
-................2
-............3
-................#
-
-//bshow()
-    ┌───7
-┌───8
-│   │   ┌───#
-│   └───4
-│       └───6
-1
-│   ┌───0
-└───5
-    │   ┌───#
-    └───9
-        │   ┌───2
-        └───3
-            └───#
-```
-
-Para simplificar, estou utilizando a convenção `__` para expressar quais são os métodos privados, própria do python.
-
-Os locais onde você deve colocar seu código estão marcados com //TODO. Como estamos lidando com árvores, você deverá criar também os métodos recursivos para realizar a operação de construção da árvore.
-
-## Código base
-
-```cpp
-#include <iostream>
-#include <sstream>
-using namespace std;
-
-struct Node{
-    int value;
-    Node * left;
-    Node * right;
-    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){
-        this->value = value;
-        this->left = left;
-        this->right = right;
-    }
-};
-
-struct BTree{
-    Node * root {nullptr};
-    BTree(){
-    }
-
-    BTree(string serial){
-        //TODO
-    }
-
-    void __destroy(Node * node){
-        if(node == nullptr)
-            return;
-        __destroy(node->left);
-        __destroy(node->right);
-        delete node;
-    }
-
-    ~BTree(){
-        __destroy(this->root);
-    }
-
-    void show(){
-        //TODO
-    }
-
-};
-
-
-
-
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    bt.show();
-}
 ```

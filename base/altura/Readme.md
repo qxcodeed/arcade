@@ -1,10 +1,9 @@
 # Altura e profundidade da árvore
 
-<!--TOC_BEGIN-->
-- [Descrição](#descrição)
-- [Código base](#código-base)
-- [Testes](#testes)
-<!--TOC_END-->
+<!-- toch -->
+[Descrição](#descrição) | [Testes](#testes)
+-- | --
+<!-- toch -->
 
 ![_](cover.jpg)
 
@@ -26,102 +25,130 @@ int getProfundidade(Node * node);
 
 ![_](__altura.jpg)
 
-## Código base
-
-```cpp 
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    getline(cin, line);
-    stringstream ss(line);
-    int value;
-        while(ss >> value){ //enquanto houver elementos no buffer
-        Node * node = bt.find(value);
-        if(node != nullptr)
-            cout << bt.getAltura(node) << " " << bt.getProfundidade(value) << "\n";
-        else
-            cout << "-1\n";
-    }
-}
-```
-
 ## Testes
 
 ```txt
->>>>>>>> 01 um
+>>>>>>>> INSERT 01 um
 4 # # 
 4
-========
-1 1
-<<<<<<<<
+======== EXPECT
+Arvore:
+4
+Altura: 1, Profundidade: 1
+<<<<<<<< FINISH
 
->>>>>>>> 02 dois
+>>>>>>>> INSERT 02 dois
 1 # 0 # # 
 0 1
-========
-1 2
-2 1
-<<<<<<<<
+======== EXPECT
+Arvore:
+╭───#
+1
+╰───0
+Altura: 1, Profundidade: 2
+Altura: 2, Profundidade: 1
+<<<<<<<< FINISH
 
->>>>>>>> 03 tres
+>>>>>>>> INSERT 03 tres
 4 # 8 2 # # # 
 2 8 4
-========
-1 3
-2 2
-3 1
-<<<<<<<<
+======== EXPECT
+Arvore:
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
+Altura: 1, Profundidade: 3
+Altura: 2, Profundidade: 2
+Altura: 3, Profundidade: 1
+<<<<<<<< FINISH
 
->>>>>>>> 04 quatro
+>>>>>>>> INSERT 04 quatro
 0 9 4 # # # 5 # # 
 5 4 3 0 9
-========
-1 2
-1 3
+======== EXPECT
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Altura: 1, Profundidade: 2
+Altura: 1, Profundidade: 3
 -1
-3 1
-2 2
-<<<<<<<<
+Altura: 3, Profundidade: 1
+Altura: 2, Profundidade: 2
+<<<<<<<< FINISH
 
->>>>>>>> 05 cinco
+>>>>>>>> INSERT 05 cinco
 8 4 # # 2 0 # # 3 # # 
 0 4 8 2 3 7
-========
-1 3
-1 2
-3 1
-2 2
-1 3
+======== EXPECT
+Arvore:
+╭───4
+8
+│   ╭───0
+╰───2
+    ╰───3
+Altura: 1, Profundidade: 3
+Altura: 1, Profundidade: 2
+Altura: 3, Profundidade: 1
+Altura: 2, Profundidade: 2
+Altura: 1, Profundidade: 3
 -1
-<<<<<<<<
+<<<<<<<< FINISH
 
->>>>>>>> 06 seis
+>>>>>>>> INSERT 06 seis
 2 1 0 # # # 3 # 7 # 9 # # 
 9 7 3 6 1 2 0
-========
-1 4
-2 3
-3 2
+======== EXPECT
+Arvore:
+    ╭───0
+╭───1
+│   ╰───#
+2
+│   ╭───#
+╰───3
+    │   ╭───#
+    ╰───7
+        ╰───9
+Altura: 1, Profundidade: 4
+Altura: 2, Profundidade: 3
+Altura: 3, Profundidade: 2
 -1
-2 2
-4 1
-1 3
-<<<<<<<<
+Altura: 2, Profundidade: 2
+Altura: 4, Profundidade: 1
+Altura: 1, Profundidade: 3
+<<<<<<<< FINISH
 
->>>>>>>> 07 dez
+>>>>>>>> INSERT 07 dez
 1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # # 
 1 2 3 4 5 6 7 8 9
-========
-5 1
-1 5
-2 4
-2 3
-4 2
-1 4
-1 3
-3 2
-3 3
-<<<<<<<<
+======== EXPECT
+Arvore:
+    ╭───7
+╭───8
+│   │   ╭───#
+│   ╰───4
+│       ╰───6
+1
+│   ╭───0
+╰───5
+    │   ╭───#
+    ╰───9
+        │   ╭───2
+        ╰───3
+            ╰───#
+Altura: 5, Profundidade: 1
+Altura: 1, Profundidade: 5
+Altura: 2, Profundidade: 4
+Altura: 2, Profundidade: 3
+Altura: 4, Profundidade: 2
+Altura: 1, Profundidade: 4
+Altura: 1, Profundidade: 3
+Altura: 3, Profundidade: 2
+Altura: 3, Profundidade: 3
+<<<<<<<< FINISH
 
 ```

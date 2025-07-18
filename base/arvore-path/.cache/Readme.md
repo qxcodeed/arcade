@@ -1,11 +1,9 @@
 # Caminho até o nó
 
-<!--TOC_BEGIN-->
-- [Descrição](#descrição)
-- [Exemplo](#exemplo)
-- [Testes](#testes)
-- [Código base](#código-base)
-<!--TOC_END-->
+<!-- toch -->
+[Descrição](#descrição) | [Exemplo](#exemplo) | [Testes](#testes)
+-- | -- | --
+<!-- toch -->
 
 ![_](https://raw.githubusercontent.com/qxcodeed/arcade/master/base/arvore-path/cover.jpg)
 
@@ -60,104 +58,46 @@ string find_path(Node * root, int value);
 4 # #
 4
 ========
-x
+Arvore:
+4
+Caminho: x
 <<<<<<<<
 
 >>>>>>>> 02 dois
 1 # 0 # # 
 0
 ========
-rx
+Arvore:
+╭───#
+1
+╰───0
+Caminho: rx
 <<<<<<<<
 
 >>>>>>>> 03 tres
 4 # 8 2 # # # 
 2
 ========
-rlx
+Arvore:
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
+Caminho: rlx
 <<<<<<<<
 
 >>>>>>>> 04 not found
 0 9 4 # # # 5 # # 
 7
 ========
-!
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Caminho: !
 <<<<<<<<
 
->>>>>>>>
-1 8 7 # # 4 # 6 # # 5 0 # # 9 # 3 2 # # #
-2
-========
-rrrlx
-<<<<<<<<
-
-```
-
-## Código base
-
-```cpp
-#include <iostream>
-#include <sstream>
-using namespace std;
-
-struct Node{
-    int value;
-    Node * left;
-    Node * right;
-    Node(int value = 0, Node * left = nullptr, Node * right = nullptr){
-        this->value = value;
-        this->left = left;
-        this->right = right;
-    }
-};
-
-struct BTree{
-    Node * root;
-    BTree(){
-        this->root = nullptr;
-    }
-
-    void clone(stringstream& ss, Node ** elo){
-        string value;
-        ss >> value;
-        if(value == "#")
-            return;
-        int num;
-        stringstream(value) >> num;
-        *elo =  new Node(num);
-        clone(ss, &(*elo)->left);
-        clone(ss, &(*elo)->right);
-    }
-
-    BTree(string serial){
-        stringstream ss(serial);
-        clone(ss, &root);
-    }
-
-    void __destroy(Node * node){
-        if(node == nullptr)
-            return;
-        __destroy(node->left);
-        __destroy(node->right);
-        delete node;
-    }
-
-    ~BTree(){
-        __destroy(this->root);
-    }
-
-    string find_path(Node * node, int value){
-        //TODO
-    }
-};
-
-int main(){
-    string line;
-    getline(cin, line);
-    BTree bt(line);
-    int value;
-    cin >> value;
-    string path = bt.find_path(bt.root, value);
-    cout << path << "\n";
-}
 ```
