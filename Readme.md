@@ -68,7 +68,7 @@ Significado das tags nas questões:
 - [ ] `#detonate     *03 :link`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
 - [ ] `#escapeSpread +02 :link`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
 
-### Backtracking<!-- +backtracking:5 -->
+### Backtracking<!-- +backtrack:5 -->
 
 - [ ] `@wordsearch   *02 :leet`[Word Search LeetCode 79](base/wordsearch/Readme.md)
 - [ ] `@subset_sum   *02 :leet`[Soma subconjuntos](base/subset_sum/Readme.md)
