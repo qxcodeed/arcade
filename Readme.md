@@ -55,7 +55,7 @@ Significado das tags nas questões:
 - [ ] `#dfs_bfs_bak      :into`[Vídeos de introdução a DFS e BFS](wiki/dfs/Readme.md)
 - [ ] `@queimada     *03 :leet`[Tocando fogo na floresta](base/queimada/Readme.md)
 - [ ] `@ilhas        *03 :leet`[LeetCode 200. Number os islands](base/ilhas/Readme.md)
-- [ ] `#cercado      *03 :open`[Capturar Regiões Cercadas](base/cercado/Readme.md)
+- [ ] `@cercado      *03 :leet`[Capturar Regiões Cercadas](base/cercado/Readme.md)
 - [ ] `@labirinto    *04 :leet`[Escapando do labirinto](base/labirinto/Readme.md)
 - [ ] `#pintura      *02 :link`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
 - [ ] `#longest      +02 :link`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
