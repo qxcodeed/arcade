@@ -16,13 +16,13 @@
                 "type": "show"
             },
             {
-                "name": "main.cpp",
-                "contents": "#include <iostream>\n#include \"lib.h\"\n\nint main() {\n    int value {};\n    std::cin >> value;\n    process(value);\n}\n",
+                "name": "lib.h",
+                "contents": "#pragma once\n\nvoid process(int);\n",
                 "type": "show"
             },
             {
-                "name": "lib.h",
-                "contents": "#pragma once\n\nvoid process(int);\n",
+                "name": "main.cpp",
+                "contents": "#include <iostream>\n#include \"lib.h\"\n\nint main() {\n    int value {};\n    std::cin >> value;\n    process(value);\n}\n",
                 "type": "show"
             }
         ]

@@ -11,20 +11,13 @@
     "draft": {
         "cpp": [
             {
-                "name": "main.cpp",
-                "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n\nvoid processa(std::vector<int> vet);\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}\n",
-                "type": "show"
-            },
-            {
                 "name": "user.cpp",
                 "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n\nvoid processa(std::vector<int> vet){\n    (void) vet;\n    // 1. defina o ponto de parada\n    // 2. monte o vetor auxiliar com os resultados das somas\n    // 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    // 4. imprima o vetor original\n}\n",
                 "type": "show"
-            }
-        ],
-        "go": [
+            },
             {
-                "name": "main.go",
-                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\t_ = vet;\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
+                "name": "main.cpp",
+                "contents": "#include <iostream>\n#include <vector>\n#include <sstream>\n\nvoid processa(std::vector<int> vet);\n\nint main(){\n    std::string line;\n    std::getline(std::cin, line);\n    std::stringstream ss(line);\n    std::vector<int> vet;\n    int value {};\n    while(ss >> value) {\n        vet.push_back(value);\n    }\n    processa(vet);\n}\n",
                 "type": "show"
             }
         ],
@@ -32,6 +25,13 @@
             {
                 "name": "main.py",
                 "contents": "#!/usr/bin/env python3\nfrom typing import List\n\ndef processa(vet: List[int]) -> None:\n    if len(vet) == 0:\n        return\n    aux: List[int] = []\n    for i in range(len(vet) - 1):\n        aux.append(vet[i] + vet[i + 1])\n    processa(aux)\n    out = [str(x) for x in vet]\n    print(\"[ {} ]\".format(\" \".join(out)))\n    # $$\n    # pass\n    # ==\n    # 1. defina o ponto de parada\n    # 2. monte o vetor auxiliar com os resultados das somas\n    # 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n    # 4. imprima o vetor original\n\n\ndef main():\n    line = input().split(\" \")\n    vet = [int(x) for x in line]\n    processa(vet)\n\nif __name__ == \"__main__\":\n    main()\n",
+                "type": "show"
+            }
+        ],
+        "go": [
+            {
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\t_ = vet;\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
                 "type": "show"
             }
         ]

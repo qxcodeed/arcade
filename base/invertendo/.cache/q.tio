@@ -1,3 +1,13 @@
+>>>>>>>> INSERT Teste 1
+ main
+======== EXPECT
+[ azul branco cinza dourado escarlate ]
+[ escarlate dourado cinza branco azul ]
+[ azul branco cinza dourado escarlate ]
+[ escarlate dourado cinza branco azul ]
+<<<<<<<< FINISH
+
+
 >>>>>>>> INSERT Teste 2
 1
 100 
@@ -33,15 +43,5 @@ Output=[ azul branco cinza dourado escarlate ]
 [ azul branco cinza dourado escarlate ]
 [ escarlate dourado cinza branco azul ]
 >>>>>>> origin/sequencial-encadeada
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT Teste 1
- main
-======== EXPECT
-[ azul branco cinza dourado escarlate ]
-[ escarlate dourado cinza branco azul ]
-[ azul branco cinza dourado escarlate ]
-[ escarlate dourado cinza branco azul ]
 <<<<<<<< FINISH
 

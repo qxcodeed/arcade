@@ -16,25 +16,25 @@
                 "type": "show"
             },
             {
-                "name": "main.cpp",
-                "contents": "#include \"lib.h\"\n\nint main() {\n    int nl = 0, nc = 0;\n    cin >> nl >> nc;\n    vector<string> mat(nl, \"\"); //come\u00e7a com nl strings \"\"\n    getchar(); //remove \\n after nc\n    Pos inicio, fim;\n\n    //carregando matriz\n    for (int i = 0; i < nl; i++)\n        getline(cin, mat[i]);\n\n    //procurando inicio e fim e colocando ' ' nas posi\u00e7\u00f5es iniciais\n    for (int l = 0; l < nl; l++) {\n        for (int c = 0; c < nc; c++) {\n            if (mat[l][c] == 'I') {\n                mat[l][c] = ' ';\n                inicio = Pos{ l, c };\n            }\n            if (mat[l][c] == 'F') {\n                mat[l][c] = ' ';\n                fim = Pos{ l, c };\n            }\n        }\n    }\n\n    procurar_saida(mat, inicio, fim);\n\n    for (string line : mat) {\n        cout << line << endl;\n    }\n}\n",
+                "name": "lib.h",
+                "contents": "#include <iostream>\n#include <vector>\n#include <stack>\nusing namespace std;\n\nstruct Pos {\n    int l;\n    int c;\n};\n\nvector<Pos> get_vizinhos(Pos p);\nvoid procurar_saida(vector<string>& mat, Pos inicio, Pos fim);\n",
                 "type": "show"
             },
             {
-                "name": "lib.h",
-                "contents": "#include <iostream>\n#include <vector>\n#include <stack>\nusing namespace std;\n\nstruct Pos {\n    int l;\n    int c;\n};\n\nvector<Pos> get_vizinhos(Pos p);\nvoid procurar_saida(vector<string>& mat, Pos inicio, Pos fim);\n",
+                "name": "main.cpp",
+                "contents": "#include \"lib.h\"\n\nint main() {\n    int nl = 0, nc = 0;\n    cin >> nl >> nc;\n    vector<string> mat(nl, \"\"); //come\u00e7a com nl strings \"\"\n    getchar(); //remove \\n after nc\n    Pos inicio, fim;\n\n    //carregando matriz\n    for (int i = 0; i < nl; i++)\n        getline(cin, mat[i]);\n\n    //procurando inicio e fim e colocando ' ' nas posi\u00e7\u00f5es iniciais\n    for (int l = 0; l < nl; l++) {\n        for (int c = 0; c < nc; c++) {\n            if (mat[l][c] == 'I') {\n                mat[l][c] = ' ';\n                inicio = Pos{ l, c };\n            }\n            if (mat[l][c] == 'F') {\n                mat[l][c] = ' ';\n                fim = Pos{ l, c };\n            }\n        }\n    }\n\n    procurar_saida(mat, inicio, fim);\n\n    for (string line : mat) {\n        cout << line << endl;\n    }\n}\n",
                 "type": "show"
             }
         ],
         "go": [
             {
-                "name": "main.go",
-                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n",
+                "name": "stack.go",
+                "contents": "package main\n\ntype Stack[T any] struct {\n\tdata []T\n}\n\nfunc NewStack[T any]() *Stack[T] {\n\treturn &Stack[T]{data: []T{}}\n}\n\nfunc (s *Stack[T]) Push(value T) {\n\ts.data = append(s.data, value)\n}\n\nfunc (s *Stack[T]) Top() T {\n\tif len(s.data) == 0 {\n\t\tpanic(\"stack is empty\")\n\t}\n\treturn s.data[len(s.data)-1]\n}\n\nfunc (s *Stack[T]) IsEmpty() bool {\n\treturn len(s.data) == 0\n}\n\nfunc (s *Stack[T]) Pop() T {\n\tif s.IsEmpty() {\n\t\tpanic(\"stack is empty\")\n\t}\n\tvalue := s.data[len(s.data)-1]\n\ts.data = s.data[:len(s.data)-1]\n\treturn value\n}\n",
                 "type": "show"
             },
             {
-                "name": "stack.go",
-                "contents": "package main\n\ntype Stack[T any] struct {\n\tdata []T\n}\n\nfunc NewStack[T any]() *Stack[T] {\n\treturn &Stack[T]{data: []T{}}\n}\n\nfunc (s *Stack[T]) Push(value T) {\n\ts.data = append(s.data, value)\n}\n\nfunc (s *Stack[T]) Top() T {\n\tif len(s.data) == 0 {\n\t\tpanic(\"stack is empty\")\n\t}\n\treturn s.data[len(s.data)-1]\n}\n\nfunc (s *Stack[T]) IsEmpty() bool {\n\treturn len(s.data) == 0\n}\n\nfunc (s *Stack[T]) Pop() T {\n\tif s.IsEmpty() {\n\t\tpanic(\"stack is empty\")\n\t}\n\tvalue := s.data[len(s.data)-1]\n\ts.data = s.data[:len(s.data)-1]\n\treturn value\n}\n",
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n",
                 "type": "show"
             }
         ]

@@ -57,16 +57,16 @@ Significado das tags nas questões:
 - [ ] `@ilhas        *03 :leet`[LeetCode 200. Number os islands](base/ilhas/Readme.md)
 - [ ] `@cercado      *03 :leet`[Capturar Regiões Cercadas](base/cercado/Readme.md)
 - [ ] `@labirinto    *04 :leet`[Escapando do labirinto](base/labirinto/Readme.md)
-- [ ] `#pintura      *02 :link`[Pintura de regiões](https://leetcode.com/problems/flood-fill/description/)
-- [ ] `#longest      +02 :link`[Caminho mais longo](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
-- [ ] `#battleship   +02 :link`[Batalha naval](https://leetcode.com/problems/battleships-in-a-board/description/)
+- [ ] `@pintura      *02 :leet`[LeetCode 733. Flood Fill](base/pintura/Readme.md)
+- [ ] `@longest      +02 :leet`[LeetCode 329. Longest Increasing Path in a Matrix](base/longest/Readme.md)
+- [ ] `@battleship   +02 :leet`[LeetCode 419. Battleships in a Board](base/battleship/Readme.md)
 
 ### Busca em Largura<!-- +bfs:4 -->
 
-- [ ] `#rotten       *04 :link`[Tomate podre](https://leetcode.com/problems/rotting-oranges/description/)
+- [ ] `@rotten       *04 :leet`[LeetCode 994. Rotting Oranges](base/rotten/Readme.md)
 - [ ] `@caminho      *03 :leet`[Fila: Menor caminho entre dois pontos](base/caminho/Readme.md)
-- [ ] `#detonate     *03 :link`[Detonando bombas](https://leetcode.com/problems/detonate-the-maximum-bombs/description/)
-- [ ] `#escapeSpread +02 :link`[Escape do fogo](https://leetcode.com/problems/escape-the-spreading-fire/description/)
+- [ ] `@detonate     *03 :leet`[LeetCode 2101. Detonate the Maximum Bombs](base/detonate/Readme.md)
+- [ ] `@escapeSpread +02 :leet`[LeetCode 2258. Escape the Spreading Fire](base/escapeSpread/Readme.md)
 
 ### Backtracking<!-- +backtrack:5 -->
 

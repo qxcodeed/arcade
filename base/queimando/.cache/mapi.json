@@ -9,22 +9,22 @@
         }
     ],
     "draft": {
-        "go": [
-            {
-                "name": "main.go",
-                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\tstack := NewStack[Pos]()\n\t_ , _ , _ = mat, l, c\n\n\t// Essa fun\u00e7\u00e3o deve usar uma list como pilha\n\t// e marcar as \u00e1rvores na matriz como queimados\n\t// Uma sugest\u00e3o de como fazer isso \u00e9:\n\t// - adicionar a primeira posi\u00e7\u00e3o na pilha\n\t// - enquanto a pilha n\u00e3o estiver vazia:\n\t//   - retirar o elemento do topo\n\t//   - se puder ser queimado, queime e adicione seus vizinhos \u00e0 pilha\n\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(mat [][]rune) {\n\tfor _, linha := range mat {\n\t\tfmt.Println(string(linha))\n\t}\n}\n",
-                "type": "show"
-            },
-            {
-                "name": "stack.go",
-                "contents": "package main\n\ntype Stack[T any] struct {\n\tdata []T\n}\n\nfunc NewStack[T any]() *Stack[T] {\n\treturn &Stack[T]{data: []T{}}\n}\n\nfunc (s *Stack[T]) Push(value T) {\n\ts.data = append(s.data, value)\n}\n\nfunc (s *Stack[T]) Top() T {\n\tif len(s.data) == 0 {\n\t\tpanic(\"stack is empty\")\n\t}\n\treturn s.data[len(s.data)-1]\n}\n\nfunc (s *Stack[T]) IsEmpty() bool {\n\treturn len(s.data) == 0\n}\n\nfunc (s *Stack[T]) Pop() T {\n\tif s.IsEmpty() {\n\t\tpanic(\"stack is empty\")\n\t}\n\tvalue := s.data[len(s.data)-1]\n\ts.data = s.data[:len(s.data)-1]\n\treturn value\n}\n",
-                "type": "show"
-            }
-        ],
         "py": [
             {
                 "name": "main.py",
                 "contents": "# -*- coding: utf-8 -*-\n\nclass Pos:\n    def __init__(self, l: int, c: int):\n        self.l: int = l\n        self.c: int = c\n\n    # Sobrescreve o m\u00e9todo __eq__ para permitir compara\u00e7\u00e3o direta de objetos Pos\n    def __eq__(self, other: object) -> bool:\n        if not isinstance(other, Pos):\n            return NotImplemented\n        return self.l == other.l and self.c == other.c\n    \n# Retorna uma lista de vizinhos (acima, abaixo, esquerda, direita)\ndef get_neib(p: Pos) -> list[Pos]: # Usando 'list' diretamente\n    return [\n        Pos(p.l - 1, p.c),\n        Pos(p.l + 1, p.c),\n        Pos(p.l, p.c - 1),\n        Pos(p.l, p.c + 1),\n    ]\n\n# Verifica se a posi\u00e7\u00e3o est\u00e1 dentro da matriz\ndef inside(mat: list[list[str]], p: Pos) -> bool: # Usando 'list' diretamente\n    \"\"\"\n    Essa fun\u00e7\u00e3o retorna uma booleana que\n    diz se a posi\u00e7\u00e3o p est\u00e1 dentro da\n    matriz mat\n    \"\"\"\n    return 0 <= p.l < len(mat) and 0 <= p.c < len(mat[0])\n\n# Fun\u00e7\u00e3o para propagar a \"chama\" (substitui '#' por 'o')\ndef queimar(mat: list[list[str]], l: int, c: int) -> None: # Usando 'list' diretamente\n    \"\"\"\n    Essa fun\u00e7\u00e3o deve usar uma list como pilha\n    e marcar as \u00e1rvores na matriz como\n    queimados.\n    Uma sugest\u00e3o de como fazer isso \u00e9:\n    - adicionar a primeira posi\u00e7\u00e3o na pilha se poss\u00edvel tocar fogo nele\n    - enquanto a pilha n\u00e3o estiver vazia:\n      - pegar o elemento do topo\n      - ver se tem algum de seus vizinhos que pode ser queimado\n      - se sim, tocar fogo nele e adicionar na pilha\n      - se n\u00e3o, remover o elemento do topo da pilha\n    \"\"\"\n    pass\n# Fun\u00e7\u00e3o para exibir a matriz\ndef show_mat(mat: list[list[str]]) -> None: # Usando 'list' diretamente\n    for row in mat:\n        print(\"\".join(row)) # Junta os caracteres de volta em uma string para imprimir\n\ndef main() -> None:\n    nl, nc, l, c = map(int, input().split()) # Alterado para input()\n    _ = nc\n\n    mat: list[list[str]] = [] # Usando 'list' diretamente\n    for _ in range(nl):\n        mat.append(list(input().strip())) # Alterado para input()\n\n    queimar(mat, l, c) # Chama a fun\u00e7\u00e3o de queimar\n    show_mat(mat) # Exibe o resultado\n\n# Garante que main() seja chamado apenas quando o script for executado diretamente\nif __name__ == \"__main__\":\n    main()\n",
+                "type": "show"
+            }
+        ],
+        "go": [
+            {
+                "name": "stack.go",
+                "contents": "package main\n\ntype Stack[T any] struct {\n\tdata []T\n}\n\nfunc NewStack[T any]() *Stack[T] {\n\treturn &Stack[T]{data: []T{}}\n}\n\nfunc (s *Stack[T]) Push(value T) {\n\ts.data = append(s.data, value)\n}\n\nfunc (s *Stack[T]) Top() T {\n\tif len(s.data) == 0 {\n\t\tpanic(\"stack is empty\")\n\t}\n\treturn s.data[len(s.data)-1]\n}\n\nfunc (s *Stack[T]) IsEmpty() bool {\n\treturn len(s.data) == 0\n}\n\nfunc (s *Stack[T]) Pop() T {\n\tif s.IsEmpty() {\n\t\tpanic(\"stack is empty\")\n\t}\n\tvalue := s.data[len(s.data)-1]\n\ts.data = s.data[:len(s.data)-1]\n\treturn value\n}\n",
+                "type": "show"
+            },
+            {
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\tstack := NewStack[Pos]()\n\t_ , _ , _ = mat, l, c\n\n\t// Essa fun\u00e7\u00e3o deve usar uma list como pilha\n\t// e marcar as \u00e1rvores na matriz como queimados\n\t// Uma sugest\u00e3o de como fazer isso \u00e9:\n\t// - adicionar a primeira posi\u00e7\u00e3o na pilha\n\t// - enquanto a pilha n\u00e3o estiver vazia:\n\t//   - retirar o elemento do topo\n\t//   - se puder ser queimado, queime e adicione seus vizinhos \u00e0 pilha\n\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(mat [][]rune) {\n\tfor _, linha := range mat {\n\t\tfmt.Println(string(linha))\n\t}\n}\n",
                 "type": "show"
             }
         ]

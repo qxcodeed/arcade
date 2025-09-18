@@ -16,17 +16,17 @@
                 "type": "show"
             }
         ],
-        "go": [
-            {
-                "name": "main.go",
-                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\t_, _ = slice, value\n\treturn false, 0\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
-                "type": "show"
-            }
-        ],
         "py": [
             {
                 "name": "main.py",
                 "contents": "def better_search(arr: list[int], value: int) -> tuple[bool, int]:\n    \"\"\"\n    Retorna a posi\u00e7\u00e3o do elemento x na lista arr ou onde ele deve ser inserido.\n    \"\"\"\n    return False, 0\nargs = input().split()[1:-1]\nvet: list[int] = []\nfor i in range(len(args)):\n    vet.append(int(args[i]))\n\nvalue = int(input())\nresult = better_search(vet, value)\nprint(\"V\" if result[0] else \"F\", result[1])\n",
+                "type": "show"
+            }
+        ],
+        "go": [
+            {
+                "name": "main.go",
+                "contents": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc BetterSearch(slice []int, value int) (bool, int) {\n\t_, _ = slice, value\n\treturn false, 0\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tslice := []int{}\n\tfor _, elem := range parts[1 : len(parts)-1] {\n\t\tvalue, _ := strconv.Atoi(elem)\n\t\tslice = append(slice, value)\n\t}\n\tscanner.Scan()\n\tvalue, _ := strconv.Atoi(scanner.Text())\n\tfound, result := BetterSearch(slice, value)\n\tif found {\n\t\tfmt.Println(\"V\", result)\n\t} else {\n\t\tfmt.Println(\"F\", result)\n\t}\n}\n",
                 "type": "show"
             }
         ]
