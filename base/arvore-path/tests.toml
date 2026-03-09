@@ -1,0 +1,133 @@
+[[tests]]
+label = '01 um'
+input = '''
+4 # #
+4
+'''
+output = '''
+Arvore:
+4
+Caminho: x
+'''
+
+[[tests]]
+label = '02 dois'
+input = '''
+1 # 0 # # 
+0
+'''
+output = '''
+Arvore:
+╭───#
+1
+╰───0
+Caminho: rx
+'''
+
+[[tests]]
+label = '03 tres'
+input = '''
+4 # 8 2 # # # 
+2
+'''
+output = '''
+Arvore:
+╭───#
+4
+│   ╭───2
+╰───8
+    ╰───#
+Caminho: rlx
+'''
+
+[[tests]]
+label = '04 not found'
+input = '''
+0 9 4 # # # 5 # # 
+7
+'''
+output = '''
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Caminho: !
+'''
+
+[[tests]]
+label = '05 quatro'
+input = '''
+0 9 4 # # # 5 # # 
+5
+'''
+output = '''
+Arvore:
+    ╭───4
+╭───9
+│   ╰───#
+0
+╰───5
+Caminho: rx
+'''
+
+[[tests]]
+label = '06 cinco'
+input = '''
+0 4 # # 2 0 # # 1 # # 
+4
+'''
+output = '''
+Arvore:
+╭───4
+0
+│   ╭───0
+╰───2
+    ╰───1
+Caminho: lx
+'''
+
+[[tests]]
+label = '07 seis'
+input = '''
+2 1 5 # # # 9 # 7 # 8 # # 
+9
+'''
+output = '''
+Arvore:
+    ╭───5
+╭───1
+│   ╰───#
+2
+│   ╭───#
+╰───9
+    │   ╭───#
+    ╰───7
+        ╰───8
+Caminho: rx
+'''
+
+[[tests]]
+label = '08 dez'
+input = '''
+1 8 7 # # 5 # 6 # # 3 0 # # 9 # 4 2 # # # 
+2
+'''
+output = '''
+Arvore:
+    ╭───7
+╭───8
+│   │   ╭───#
+│   ╰───5
+│       ╰───6
+1
+│   ╭───0
+╰───3
+    │   ╭───#
+    ╰───9
+        │   ╭───2
+        ╰───4
+            ╰───#
+Caminho: rrrlx
+'''

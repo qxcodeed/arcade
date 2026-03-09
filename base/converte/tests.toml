@@ -1,0 +1,9 @@
+[[tests]]
+label = 'Teste 1'
+input = '''
+ main
+'''
+output = '''
+Lista simplesmente ligada: A -> B -> C -> D
+Lista duplamente ligada: A <-> B <-> C <-> D
+'''

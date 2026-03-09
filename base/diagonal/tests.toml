@@ -1,0 +1,55 @@
+[[tests]]
+input = '''
+jefferson
+'''
+output = '''
+j
+ e
+  f
+   f
+    e
+     r
+      s
+       o
+        n
+'''
+
+[[tests]]
+input = '''
+lukeEuSouSeuPai
+'''
+output = '''
+l
+ u
+  k
+   e
+    E
+     u
+      S
+       o
+        u
+         S
+          e
+           u
+            P
+             a
+              i
+'''
+
+[[tests]]
+input = '''
+fabiocarlos
+'''
+output = '''
+f
+ a
+  b
+   i
+    o
+     c
+      a
+       r
+        l
+         o
+          s
+'''

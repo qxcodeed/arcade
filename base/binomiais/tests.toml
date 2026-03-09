@@ -1,0 +1,79 @@
+[[tests]]
+input = '''
+8 1
+'''
+output = '''
+8
+'''
+
+[[tests]]
+input = '''
+8 2
+'''
+output = '''
+28
+'''
+
+[[tests]]
+input = '''
+8 3
+'''
+output = '''
+56
+'''
+
+[[tests]]
+input = '''
+8 4
+'''
+output = '''
+70
+'''
+
+[[tests]]
+input = '''
+8 5
+'''
+output = '''
+56
+'''
+
+[[tests]]
+input = '''
+8 6
+'''
+output = '''
+28
+'''
+
+[[tests]]
+input = '''
+8 7
+'''
+output = '''
+8
+'''
+
+[[tests]]
+input = '''
+7 2
+'''
+output = '''
+21
+'''
+
+[[tests]]
+input = '''
+7 3
+'''
+output = '''
+35
+'''
+
+[[tests]]
+input = '''
+7 4
+'''
+output = '''
+35
+'''

@@ -1,0 +1,319 @@
+[[tests]]
+input = '''
+1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+2
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+3
+'''
+output = '''
+2
+'''
+
+[[tests]]
+input = '''
+4
+'''
+output = '''
+2
+'''
+
+[[tests]]
+input = '''
+5
+'''
+output = '''
+3
+'''
+
+[[tests]]
+input = '''
+6
+'''
+output = '''
+4
+'''
+
+[[tests]]
+input = '''
+7
+'''
+output = '''
+5
+'''
+
+[[tests]]
+input = '''
+8
+'''
+output = '''
+7
+'''
+
+[[tests]]
+input = '''
+9
+'''
+output = '''
+9
+'''
+
+[[tests]]
+input = '''
+10
+'''
+output = '''
+12
+'''
+
+[[tests]]
+input = '''
+11
+'''
+output = '''
+16
+'''
+
+[[tests]]
+input = '''
+12
+'''
+output = '''
+21
+'''
+
+[[tests]]
+input = '''
+13
+'''
+output = '''
+28
+'''
+
+[[tests]]
+input = '''
+14
+'''
+output = '''
+37
+'''
+
+[[tests]]
+input = '''
+15
+'''
+output = '''
+49
+'''
+
+[[tests]]
+input = '''
+16
+'''
+output = '''
+65
+'''
+
+[[tests]]
+input = '''
+17
+'''
+output = '''
+86
+'''
+
+[[tests]]
+input = '''
+18
+'''
+output = '''
+114
+'''
+
+[[tests]]
+input = '''
+19
+'''
+output = '''
+151
+'''
+
+[[tests]]
+input = '''
+20
+'''
+output = '''
+200
+'''
+
+[[tests]]
+input = '''
+21
+'''
+output = '''
+265
+'''
+
+[[tests]]
+input = '''
+22
+'''
+output = '''
+351
+'''
+
+[[tests]]
+input = '''
+23
+'''
+output = '''
+465
+'''
+
+[[tests]]
+input = '''
+24
+'''
+output = '''
+616
+'''
+
+[[tests]]
+input = '''
+25
+'''
+output = '''
+816
+'''
+
+[[tests]]
+input = '''
+26
+'''
+output = '''
+1081
+'''
+
+[[tests]]
+input = '''
+27
+'''
+output = '''
+1432
+'''
+
+[[tests]]
+input = '''
+28
+'''
+output = '''
+1897
+'''
+
+[[tests]]
+input = '''
+29
+'''
+output = '''
+2513
+'''
+
+[[tests]]
+input = '''
+30
+'''
+output = '''
+3329
+'''
+
+[[tests]]
+input = '''
+31
+'''
+output = '''
+4410
+'''
+
+[[tests]]
+input = '''
+32
+'''
+output = '''
+5842
+'''
+
+[[tests]]
+input = '''
+33
+'''
+output = '''
+7739
+'''
+
+[[tests]]
+input = '''
+34
+'''
+output = '''
+10252
+'''
+
+[[tests]]
+input = '''
+35
+'''
+output = '''
+13581
+'''
+
+[[tests]]
+input = '''
+36
+'''
+output = '''
+17991
+'''
+
+[[tests]]
+input = '''
+37
+'''
+output = '''
+23833
+'''
+
+[[tests]]
+input = '''
+38
+'''
+output = '''
+31572
+'''
+
+[[tests]]
+input = '''
+39
+'''
+output = '''
+41824
+'''
+
+[[tests]]
+input = '''
+40
+'''
+output = '''
+55405
+'''

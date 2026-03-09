@@ -1,0 +1,115 @@
+[[tests]]
+label = 'Teste has_info '
+input = '''
+test_has_info
+'''
+output = '''
+TESTE has_info
+Lista: [30 <-> 20 <-> 15 <-> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+'''
+
+[[tests]]
+label = 'Teste push_back'
+input = '''
+test_push_back
+'''
+output = '''
+TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Lista: [10 <-> 15 <-> 20 <-> 30]
+'''
+
+[[tests]]
+label = 'Teste pop_front'
+input = '''
+test_pop_front
+'''
+output = '''
+TESTE pop_front
+Esperado: [30 <-> 20 <-> 15 <-> 10]
+Lista: [30 <-> 20 <-> 15 <-> 10]
+pop_front
+Esperado: [20 <-> 15 <-> 10]
+Lista: [20 <-> 15 <-> 10]
+pop_front
+Esperado: [15 <-> 10]
+Lista: [15 <-> 10]
+pop_front
+Esperado: [10]
+Lista: [10]
+pop_front
+Esperado: []
+Lista: []
+pop_front
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+'''
+
+[[tests]]
+label = 'Teste pop_back'
+input = '''
+test_pop_back
+'''
+output = '''
+TESTE pop_back
+Esperado: [30 <-> 20 <-> 15 <-> 10]
+Lista: [30 <-> 20 <-> 15 <-> 10]
+pop_back
+Esperado: [30 <-> 20 <-> 15]
+Lista: [30 <-> 20 <-> 15]
+pop_back
+Esperado: [30 <-> 20]
+Lista: [30 <-> 20]
+pop_back
+Esperado: [30]
+Lista: [30]
+pop_back
+Esperado: []
+Lista: []
+pop_back
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+'''
+
+[[tests]]
+label = 'Teste remove_one'
+input = '''
+test_remove_one
+'''
+output = '''
+TESTE remove_one
+Esperado: [10 <-> 20 <-> 30 <-> 10 <-> 20 <-> 30]
+Lista: [10 <-> 20 <-> 30 <-> 10 <-> 20 <-> 30]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20 <-> 30]
+Lista: [10 <-> 20 <-> 10 <-> 20 <-> 30]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20]
+Lista: [10 <-> 20 <-> 10 <-> 20]
+remove_one 30
+Esperado: [10 <-> 20 <-> 10 <-> 20]
+Lista: [10 <-> 20 <-> 10 <-> 20]
+remove_one 20
+Esperado: [10 <-> 10 <-> 20]
+Lista: [10 <-> 10 <-> 20]
+remove_one 20
+Esperado: [10 <-> 10]
+Lista: [10 <-> 10]
+remove_one 10
+Esperado: [10]
+Lista: [10]
+remove_one 10
+Esperado: []
+Lista: []
+Todos os Nos foram devidamente deletados
+'''

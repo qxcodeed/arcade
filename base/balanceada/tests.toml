@@ -1,0 +1,89 @@
+[[tests]]
+label = 'Teste 1'
+input = '''
+()
+'''
+output = '''
+balanceado
+'''
+
+[[tests]]
+label = 'Teste 2'
+input = '''
+(())
+'''
+output = '''
+balanceado
+'''
+
+[[tests]]
+label = 'Teste 3'
+input = '''
+()()()()[][][][]
+'''
+output = '''
+balanceado
+'''
+
+[[tests]]
+label = 'Teste 4'
+input = '''
+([])(([][]))
+'''
+output = '''
+balanceado
+'''
+
+[[tests]]
+label = 'Teste 5'
+input = '''
+(([[[(([([])][][][](([()]))))]]()(())()][][][()[](())]))()([])[()]
+'''
+output = '''
+balanceado
+'''
+
+[[tests]]
+label = 'Teste 6'
+input = '''
+)(
+'''
+output = '''
+nao balanceado
+'''
+
+[[tests]]
+label = 'Teste 7'
+input = '''
+[[]
+'''
+output = '''
+nao balanceado
+'''
+
+[[tests]]
+label = 'Teste 8'
+input = '''
+[(][)]
+'''
+output = '''
+nao balanceado
+'''
+
+[[tests]]
+label = 'Teste 9'
+input = '''
+[[[[))))
+'''
+output = '''
+nao balanceado
+'''
+
+[[tests]]
+label = 'Teste 10'
+input = '''
+(([[[(([([])][][][](([()]))))]]()(())()][][][()[](())])))()([])[()]
+'''
+output = '''
+nao balanceado
+'''

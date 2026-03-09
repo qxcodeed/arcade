@@ -1,0 +1,12 @@
+[[tests]]
+label = 'Teste 1'
+input = '''
+ main
+'''
+output = '''
+Lista A: uno dos tres 
+Lista B: cuatro cinco seis siete 
+Concatena Lista A e Lista B
+Lista A (head): uno dos tres cuatro cinco seis siete 
+Lista A (tail): uno dos tres cuatro cinco seis siete 
+'''

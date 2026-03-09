@@ -1,0 +1,95 @@
+[[tests]]
+label = '00'
+input = '''
+2
+rw rw 
+3 
+y rw iowz
+'''
+output = '''
+0 2 0
+'''
+
+[[tests]]
+label = '01'
+input = '''
+3
+c c mpikv
+8
+f c o uplbd o zl xoi mpikv
+'''
+output = '''
+0 2 0 0 0 0 0 1
+'''
+
+[[tests]]
+label = '02'
+input = '''
+7
+qu qu pg qu qu cjyrx y
+6
+o qu sxsse b pd yuv
+'''
+output = '''
+0 4 0 0 0 0
+'''
+
+[[tests]]
+label = '03'
+input = '''
+4
+jphjf urx xs ijn
+7
+fzsjg u hb daldh mgzd hgv jmqh
+'''
+output = '''
+0 0 0 0 0 0 0
+'''
+
+[[tests]]
+label = '04'
+input = '''
+5
+sdurp tnl himf tnl tnl
+6
+y sdurp tvaez tnl undx u
+'''
+output = '''
+0 1 0 3 0 0
+'''
+
+[[tests]]
+label = '05'
+input = '''
+7
+axx svw xhac svw svw wfsy svw
+5
+ms axx svw svw svw
+'''
+output = '''
+0 1 4 4 4
+'''
+
+[[tests]]
+label = '06'
+input = '''
+3
+yakwy hkfx hkfx
+10
+v uqojw hkfx mo o qzb yakwy fsl evhb b
+'''
+output = '''
+0 0 2 0 0 0 1 0 0 0
+'''
+
+[[tests]]
+label = '07'
+input = '''
+5
+odbor aeoow dbpak hwsh pwkr
+7
+wqtmc vpje ia vn kajln dwe zi
+'''
+output = '''
+0 0 0 0 0 0 0
+'''

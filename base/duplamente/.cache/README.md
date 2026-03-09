@@ -1,1 +1,0 @@
-# Lista Dupla - Algoritmos

@@ -1,0 +1,639 @@
+[[tests]]
+input = '''
+3 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+3 2
+'''
+output = '''
+3
+'''
+
+[[tests]]
+input = '''
+3 3
+'''
+output = '''
+6
+'''
+
+[[tests]]
+input = '''
+3 4
+'''
+output = '''
+10
+'''
+
+[[tests]]
+input = '''
+3 5
+'''
+output = '''
+15
+'''
+
+[[tests]]
+input = '''
+3 6
+'''
+output = '''
+21
+'''
+
+[[tests]]
+input = '''
+3 7
+'''
+output = '''
+28
+'''
+
+[[tests]]
+input = '''
+3 8
+'''
+output = '''
+36
+'''
+
+[[tests]]
+input = '''
+3 9
+'''
+output = '''
+45
+'''
+
+[[tests]]
+input = '''
+3 10
+'''
+output = '''
+55
+'''
+
+[[tests]]
+input = '''
+4 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+4 2
+'''
+output = '''
+4
+'''
+
+[[tests]]
+input = '''
+4 3
+'''
+output = '''
+9
+'''
+
+[[tests]]
+input = '''
+4 4
+'''
+output = '''
+16
+'''
+
+[[tests]]
+input = '''
+4 5
+'''
+output = '''
+25
+'''
+
+[[tests]]
+input = '''
+4 6
+'''
+output = '''
+36
+'''
+
+[[tests]]
+input = '''
+4 7
+'''
+output = '''
+49
+'''
+
+[[tests]]
+input = '''
+4 8
+'''
+output = '''
+64
+'''
+
+[[tests]]
+input = '''
+4 9
+'''
+output = '''
+81
+'''
+
+[[tests]]
+input = '''
+4 10
+'''
+output = '''
+100
+'''
+
+[[tests]]
+input = '''
+5 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+5 2
+'''
+output = '''
+5
+'''
+
+[[tests]]
+input = '''
+5 3
+'''
+output = '''
+12
+'''
+
+[[tests]]
+input = '''
+5 4
+'''
+output = '''
+22
+'''
+
+[[tests]]
+input = '''
+5 5
+'''
+output = '''
+35
+'''
+
+[[tests]]
+input = '''
+5 6
+'''
+output = '''
+51
+'''
+
+[[tests]]
+input = '''
+5 7
+'''
+output = '''
+70
+'''
+
+[[tests]]
+input = '''
+5 8
+'''
+output = '''
+92
+'''
+
+[[tests]]
+input = '''
+5 9
+'''
+output = '''
+117
+'''
+
+[[tests]]
+input = '''
+5 10
+'''
+output = '''
+145
+'''
+
+[[tests]]
+input = '''
+6 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+6 2
+'''
+output = '''
+6
+'''
+
+[[tests]]
+input = '''
+6 3
+'''
+output = '''
+15
+'''
+
+[[tests]]
+input = '''
+6 4
+'''
+output = '''
+28
+'''
+
+[[tests]]
+input = '''
+6 5
+'''
+output = '''
+45
+'''
+
+[[tests]]
+input = '''
+6 6
+'''
+output = '''
+66
+'''
+
+[[tests]]
+input = '''
+6 7
+'''
+output = '''
+91
+'''
+
+[[tests]]
+input = '''
+6 8
+'''
+output = '''
+120
+'''
+
+[[tests]]
+input = '''
+6 9
+'''
+output = '''
+153
+'''
+
+[[tests]]
+input = '''
+6 10
+'''
+output = '''
+190
+'''
+
+[[tests]]
+input = '''
+7 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+7 2
+'''
+output = '''
+7
+'''
+
+[[tests]]
+input = '''
+7 3
+'''
+output = '''
+18
+'''
+
+[[tests]]
+input = '''
+7 4
+'''
+output = '''
+34
+'''
+
+[[tests]]
+input = '''
+7 5
+'''
+output = '''
+55
+'''
+
+[[tests]]
+input = '''
+7 6
+'''
+output = '''
+81
+'''
+
+[[tests]]
+input = '''
+7 7
+'''
+output = '''
+112
+'''
+
+[[tests]]
+input = '''
+7 8
+'''
+output = '''
+148
+'''
+
+[[tests]]
+input = '''
+7 9
+'''
+output = '''
+189
+'''
+
+[[tests]]
+input = '''
+7 10
+'''
+output = '''
+235
+'''
+
+[[tests]]
+input = '''
+8 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+8 2
+'''
+output = '''
+8
+'''
+
+[[tests]]
+input = '''
+8 3
+'''
+output = '''
+21
+'''
+
+[[tests]]
+input = '''
+8 4
+'''
+output = '''
+40
+'''
+
+[[tests]]
+input = '''
+8 5
+'''
+output = '''
+65
+'''
+
+[[tests]]
+input = '''
+8 6
+'''
+output = '''
+96
+'''
+
+[[tests]]
+input = '''
+8 7
+'''
+output = '''
+133
+'''
+
+[[tests]]
+input = '''
+8 8
+'''
+output = '''
+176
+'''
+
+[[tests]]
+input = '''
+8 9
+'''
+output = '''
+225
+'''
+
+[[tests]]
+input = '''
+8 10
+'''
+output = '''
+280
+'''
+
+[[tests]]
+input = '''
+9 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+9 2
+'''
+output = '''
+9
+'''
+
+[[tests]]
+input = '''
+9 3
+'''
+output = '''
+24
+'''
+
+[[tests]]
+input = '''
+9 4
+'''
+output = '''
+46
+'''
+
+[[tests]]
+input = '''
+9 5
+'''
+output = '''
+75
+'''
+
+[[tests]]
+input = '''
+9 6
+'''
+output = '''
+111
+'''
+
+[[tests]]
+input = '''
+9 7
+'''
+output = '''
+154
+'''
+
+[[tests]]
+input = '''
+9 8
+'''
+output = '''
+204
+'''
+
+[[tests]]
+input = '''
+9 9
+'''
+output = '''
+261
+'''
+
+[[tests]]
+input = '''
+9 10
+'''
+output = '''
+325
+'''
+
+[[tests]]
+input = '''
+10 1
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+10 2
+'''
+output = '''
+10
+'''
+
+[[tests]]
+input = '''
+10 3
+'''
+output = '''
+27
+'''
+
+[[tests]]
+input = '''
+10 4
+'''
+output = '''
+52
+'''
+
+[[tests]]
+input = '''
+10 5
+'''
+output = '''
+85
+'''
+
+[[tests]]
+input = '''
+10 6
+'''
+output = '''
+126
+'''
+
+[[tests]]
+input = '''
+10 7
+'''
+output = '''
+175
+'''
+
+[[tests]]
+input = '''
+10 8
+'''
+output = '''
+232
+'''
+
+[[tests]]
+input = '''
+10 9
+'''
+output = '''
+297
+'''
+
+[[tests]]
+input = '''
+10 10
+'''
+output = '''
+370
+'''
