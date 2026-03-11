@@ -16,21 +16,21 @@ Significado das tags nas questões:
 
 ### Revisão<!-- +basic -->
 
-- [ ] `@pintando    *01 :leet`[Pintando a casa](https://github.com/qxcodefup/arcade/blob/master/base/pintando/README.md)
-- [ ] `@mumia       *02 :leet`[Criança, jovem, adulto](https://github.com/qxcodefup/arcade/blob/master/base/mumia/README.md)
-- [ ] `@fuga        *02 :leet`[Fuga de helicóptero](https://github.com/qxcodefup/arcade/blob/master/base/fuga/README.md)
-- [ ] `@pedra       *02 :leet`[Pedra na lua](https://github.com/qxcodefup/arcade/blob/master/base/pedra/README.md)
-- [ ] `@casais      *02 :leet`[Casais na arca](https://github.com/qxcodefup/arcade/blob/master/base/casais/README.md)
-- [ ] `@baruel      *03 :leet`[Figurinhas repetidas](https://github.com/qxcodefup/arcade/blob/master/base/baruel/README.md)
-- [ ] `@gomos       +04 :leet`[Gomos da cobra](https://github.com/qxcodefup/arcade/blob/master/base/gomos/README.md)
+- [ ] `@pintando    *01 :leet`[Pintando a casa](base/pintando/README.md)
+- [ ] `@mumia       *02 :leet`[Criança, jovem, adulto](base/mumia/README.md)
+- [ ] `@fuga        *02 :leet`[Fuga em helicóptero - OBI 2016](base/fuga/README.md)
+- [ ] `@pedra       *02 :leet`[Pedra na lua](base/pedra/README.md)
+- [ ] `@casais      *02 :leet`[Quantos casais na arca](base/casais/README.md)
+- [ ] `@baruel      *03 :leet`[Figurinhas repetidas](base/baruel/README.md)
+- [ ] `@gomos       +04 :leet`[Gomos da cobrinha](base/gomos/README.md)
 
 ### Análise<!-- +map_set -->
 
 - [ ] `#analise     *02 :info`[Análise de Algoritmos](wiki/analise/analise.md)
 - [ ] `@princesa    *06 :leet`[Princesa v1](base/princesa/README.md)
 - [ ] `@apagando    *04 :leet`[Apagando elementos de forma eficiente](base/apagando/README.md)
-- [ ] `@manipulacao *09 :leet`[Funções prontas de ordenar, inverter, buscar, ...](https://github.com/qxcodepoo/arcade/blob/master/base/manipulacao/README.md)
-- [ ] `@especiais   *15 :leet`[Utilizando map e set](https://github.com/qxcodepoo/arcade/blob/master/base/especiais/README.md)
+- [ ] `@manipulacao *09 :leet`[Estressados Operações III](base/manipulacao/README.md)
+- [ ] `@especiais   *15 :leet`[Estressados Operações IV](base/especiais/README.md)
 - [ ] `@buscas      +03 :leet`[Buscas de strings](base/buscas/README.md)
 - [ ] `@rotacoes    +03 :leet`[Rotacoes em uma lista](base/rotacoes/README.md)
 - [ ] `@alternando  +04 :leet`[Princesa v2](base/alternando/README.md)
@@ -164,8 +164,6 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ] `@tapioca       +00 :leet`[Tapioca Sort](base/tapioca/README.md)
 - [ ] `@mergevet      +00 :leet`[Criando um vetor simples e fazendo um merge](base/mergevet/README.md)
 - [ ] `@hex           *00  :open`[Desenhando labirinto perfeito](base/hex/README.md)
-- [ ] `@budega        *00 :leet`[Gerencie a fila de espera e atendimento](https://github.com/qxcodepoo/arcade/blob/master/base/budega/README.md)
-- [ ] `@agenda        *00 :leet`[Gerencie contatos e telefones](https://github.com/qxcodepoo/arcade/blob/master/base/agenda/README.md)
 - [ ] `#cpp_cpref     *00 :info`[Como fazer sobrecarga de cópia e referencia](wiki/tad/sobrecarga.md)
 - [ ] `#cpp_oper      *00 :info`[Sobrecarga de operadores de classes](wiki/tad/sobrecarga_operadores.md)
 - [ ] `@ponto         *00 :leet`[Implemente a classe ponto](base/ponto/README.md)
