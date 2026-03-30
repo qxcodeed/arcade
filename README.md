@@ -29,14 +29,15 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 
 - [ ] `@crec_view    :2:side:user:view:free`[Vídeo - Introdução à recursão](https://youtu.be/nEohgkZkm_c?si=XIDgq6jPKlAd9gbz)
 - [ ] `@rec_read     :1:side:user:view:free`[Recursividade](wiki/recursao/recursao.md)
-- [ ] `@fractais     :9:main:user:edit:part`[Desenhando Fractais](base/fractais/README.md)
-- [ ] `@fractais_png :0:main:user:edit:part`[Desenhando Fractais (Opção 2)](base/fractais_png/README.md)
+- [ ] `@fractais_png :9:main:user:edit:part`[Desenhando Fractais (Opção 2)](base/fractais_png/README.md)
 - [ ] `@triangulo    :2:main:auto:edit:part`[Imprimindo ao contrário](base/triangulo/README.md)
 - [ ] `@treinando    :4:main:auto:edit:part`[Treinando recursão com vetores](base/treinando/README.md)
 - [ ] `@resto        :1:main:auto:edit:part`[Divisão e Resto](base/resto/README.md)
 - [ ] `@mdc          :1:main:auto:edit:part`[Implemente o mdc recursivo](base/mdc/README.md)
+- [ ] `@queimada     :3:main:auto:edit:part`[Tocando fogo na floresta](base/queimada/README.md)
+- [ ] `@labirinto    :4:main:auto:edit:part`[Escapando do labirinto](base/labirinto/README.md)
 - [ ] `@eh_primo     :2:main:auto:edit:part`[Retorna se é ou não é](base/eh_primo/README.md)
-- [ ] `@enesimo      :2:main:auto:edit:part`[Gere o enesimo primo](base/enesimo/README.md)
+- [ ] `@enesimo      :2:side:auto:edit:part`[Gere o enesimo primo](base/enesimo/README.md)
 - [ ] `@vetequals    :1:main:auto:edit:part`[Verifique se dois vetores são iguais recursivamente](base/vetequals/README.md)
 - [ ] `@priminhos    :3:side:auto:edit:part`[Carrega a lista de primos](base/priminhos/README.md)
 - [ ] `@escada       :1:side:auto:edit:part`[De quantas maneiras podemos subir](base/escada/README.md)
@@ -51,6 +52,7 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ] `@fib2         :2:side:auto:edit:part`[Coelhos procriando e morrendo](base/fib2/README.md)
 - [ ] `@santo JM     :3:side:auto:edit:part`[O milagre de ficar pobre](base/santo/README.md)
 - [ ] `@bitcoin      :4:side:auto:edit:part`[Investindo em ativos digitais](base/bitcoin/README.md)
+- [ ] `@fractais     :0:side:user:edit:part`[Desenhando Fractais](base/fractais/README.md)
 
 ## Backtracking +backtrack:5 @backtrack !@rec
 
@@ -80,7 +82,7 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ] `@lista_d3      :3:side:auto:edit:part`[Lista Dupla - Extra](base/lista_d3/README.md)
 - [ ] `@prin_list2    :2:side:auto:edit:part`[Princesa2 com lista ligada](base/prin_list2/README.md)
 - [ ] `@controlz      :4:side:auto:edit:part`[Editor com Control Z](base/controlz/README.md)
-- [ ] `@editorint     :8:main:user:edit:part`[Editor de texto interativo](base/editorint/README.md)
+- [ ] `@editorint     :5:main:user:edit:part`[Editor de texto interativo](base/editorint/README.md)
 
 ## Deque, Pilha e Fila +linear:4 @linear !@vector !@list
 
@@ -111,10 +113,8 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 ## Busca em Profundidade +dfs:4 @dfs !@tree
 
 - [ ] `@dfs_bfs_bak   :1:main:user:view:free`[Vídeos de introdução a DFS e BFS](wiki/dfs/README.md)
-- [ ] `@queimada      :3:main:auto:edit:part`[Tocando fogo na floresta](base/queimada/README.md)
 - [ ] `@ilhas         :3:main:auto:edit:part`[LeetCode 200. Number os islands](base/ilhas/README.md)
 - [ ] `@cercado       :3:main:auto:edit:part`[Capturar Regiões Cercadas](base/cercado/README.md)
-- [ ] `@labirinto     :4:main:auto:edit:part`[Escapando do labirinto](base/labirinto/README.md)
 - [ ] `@pintura       :2:main:auto:edit:part`[LeetCode 733. Flood Fill](base/pintura/README.md)
 - [ ] `@longest       :2:side:auto:edit:part`[LeetCode 329. Longest Increasing Path in a Matrix](base/longest/README.md)
 - [ ] `@battleship    :2:side:auto:edit:part`[LeetCode 419. Battleships in a Board](base/battleship/README.md)
