@@ -34,8 +34,8 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ]`@queimada        :3:main`[Tocando fogo na floresta](base/queimada/README.md)
 - [ ]`@labirinto       :4:main`[Escapando do labirinto](base/labirinto/README.md)
 - [ ]`@eh_primo        :2:main`[Retorna se é ou não é](base/eh_primo/README.md)
-- [ ]`@enesimo         :2:side`[Gere o enesimo primo](base/enesimo/README.md)
 - [ ]`@vetequals       :1:main`[Verifique se dois vetores são iguais recursivamente](base/vetequals/README.md)
+- [ ]`@enesimo         :2:side`[Gere o enesimo primo](base/enesimo/README.md)
 - [ ]`@priminhos       :3:side`[Carrega a lista de primos](base/priminhos/README.md)
 - [ ]`@escada          :1:side`[De quantas maneiras podemos subir](base/escada/README.md)
 - [ ]`@binomiais       :1:side`[Calculando coeficientes](base/binomiais/README.md)
@@ -49,8 +49,7 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ]`@fib2            :2:side`[Coelhos procriando e morrendo](base/fib2/README.md)
 - [ ]`@santo           :3:side`[O milagre de ficar pobre](base/santo/README.md)
 - [ ]`@bitcoin         :4:side`[Investindo em ativos digitais](base/bitcoin/README.md)
-- [ ]`@fractais_png    :9:main:self`[Desenhando Fractais (Opção 2)](base/fractais_png/README.md)
-- [ ]`@fractais        :0:side:self`[Desenhando Fractais](base/fractais/README.md)
+- [ ]`@fractais_png    :9:main:self`[Desenhando Fractais](base/fractais_png/README.md)
 
 ## Backtracking +backtrack:5 @backtrack !@rec
 
@@ -155,5 +154,3 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ]`@banco           :3:main`[Gerenciando a fila do banco](base/banco/README.md)
 
 ## sandbox
-
-
