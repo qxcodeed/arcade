@@ -9,7 +9,7 @@
 
 Suponha agora os nossos coelhos não vivam para sempre e morrem depois de 3 meses. Contudo, os coelhos acasalam com um mês de idade e cada fêmea produz um novo par de coelhos a cada mês a partir do segundo mês.
 
-![Fibonacci](Fibonacci.png)
+![Fibonacci](assets/Fibonacci.png)
 
 A imagem mostra que ao final de seis meses teremos apenas 4 pares de coelhos considerando que os coelhos morrem após 3 meses. Quantos pares de coelhos teremos ao final de $n$ meses?
 

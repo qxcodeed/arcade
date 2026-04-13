@@ -10,7 +10,7 @@
   - java usa `ArrayList`
   - javascript e typescript usam `Array`
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Implemente a classe do vetor dinâmico.
 

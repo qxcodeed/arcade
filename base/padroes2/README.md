@@ -2,7 +2,7 @@
 
 Considere a seguinte sequência de imagem:
 
-![Padrões](seq1.png)
+![Padrões](assets/seq1.png)
 
 Cada imagem na sequência é formada por um número de peças (uma peça pode ser um quadrado ou triângulo).
 

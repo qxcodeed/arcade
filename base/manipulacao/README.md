@@ -5,7 +5,7 @@
 -- | -- | --
 <!-- toch -->
 
-![cover](cover.jpg)
+![cover](assets/cover.jpg)
 
 ***
 

@@ -1,0 +1,44 @@
+[[tests]]
+input = '''
+3
+5
+'''
+output = '''
+1
+'''
+
+[[tests]]
+input = '''
+6
+9
+'''
+output = '''
+3
+'''
+
+[[tests]]
+input = '''
+50
+15
+'''
+output = '''
+5
+'''
+
+[[tests]]
+input = '''
+270
+192
+'''
+output = '''
+6
+'''
+
+[[tests]]
+input = '''
+192
+276
+'''
+output = '''
+12
+'''

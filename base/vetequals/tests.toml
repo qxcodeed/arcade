@@ -1,0 +1,89 @@
+[[tests]]
+input = '''
+[ ]
+[ ]
+'''
+output = '''
+iguais
+'''
+
+[[tests]]
+input = '''
+[ 1 ]
+[ 1 ]
+'''
+output = '''
+iguais
+'''
+
+[[tests]]
+input = '''
+[ 1 ]
+[ 1 2 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 1 2 ]
+[ 1 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 2 1 ]
+[ 1 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 1 ]
+[ 2 1 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 1 3 ]
+[ 2 1 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 3 1 ]
+[ 2 1 ]
+'''
+output = '''
+diferentes
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 ]
+[ 1 2 3 ]
+'''
+output = '''
+iguais
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 4 ]
+[ 1 2 3 ]
+'''
+output = '''
+diferentes
+'''

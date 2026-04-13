@@ -1,6 +1,6 @@
 # Princesa v2
 
-[![_](cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
+[![_](assets/cover.jpg)](https://www.youtube.com/watch?v=uCsD3ZGzMgE)
 
 Esse jogo é equivalente ao V1 porém com duas diferenças.
 

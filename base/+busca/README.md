@@ -10,7 +10,7 @@ Dada uma chave de busca e uma coleção de elementos, onde cada elemento possui 
 
 ## Busca Sequencial
 
-![Exemplo de uso da busca sequencial](./assets/linearSearch.webp)
+![Exemplo de uso da busca sequencial](assets/./assets/linearSearch.webp)
 
 A busca sequencial é o algoritmo mais simples de busca:
 
@@ -36,7 +36,7 @@ int buscaSequencial(int A[], int n, int key) {
 
 ## Busca Binária
 
-![Exemplo de uso da busca binária](./assets/binarySearch.webp)
+![Exemplo de uso da busca binária](assets/./assets/binarySearch.webp)
 
 A busca binária é um algoritmo mais eficiente, entretanto, requer que a lista esteja ordenada pelos valores da chave de busca.
 

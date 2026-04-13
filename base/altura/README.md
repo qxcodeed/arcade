@@ -5,7 +5,7 @@
 -- | --
 <!-- toch -->
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 ## Descrição
 
@@ -23,7 +23,7 @@ int getProfundidade(Node * node);
 - Saída
   - Para cada nó da lista, um nó por linha, altura e profundidade do nó ou -1 se o nó não for encontrado
 
-![_](__altura.jpg)
+![_](assets/__altura.jpg)
 
 ## Testes
 

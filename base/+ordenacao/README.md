@@ -12,7 +12,7 @@ O problema da ordenação de um vetor consiste em:
 
 - Rearranjar os elementos de um vetor $A[0...n-1]$ de tal modo que ele se torne crescente, ou seja, de modo que $A[0] \leq ... \leq A[n-1]$.
 
-![Exemplo de ordenação de vetor](./assets/vetorOrdenado.png)
+![Exemplo de ordenação de vetor](assets/./assets/vetorOrdenado.png)
 
 ## BubbleSort
 
@@ -24,7 +24,7 @@ De maneira geral:
 - Eventualmente, encontramos o menor elemento
 - Ele será trocado com os elementos que estiverem antes
 
-![Exemplo de uso do BubbleSort](./assets/BubbleSort.gif)
+![Exemplo de uso do BubbleSort](assets/./assets/BubbleSort.gif)
 
 ### Implementação do BubbleSort em C++
 
@@ -65,7 +65,7 @@ void bubbleSort_v2(int A[], int l, int r) {
 
 O InsertionSort também é um algoritmo simples de ordenação. A ideia central do algoritmo é ordenar o vetor de maneira incremental, da esquerda para a direita, inserindo cada elemento na posição correta, como se estivéssemos ordenando cartas de um baralho.
 
-![ordenando cartas de um baralho](./assets/cartasNaMão.png)
+![ordenando cartas de um baralho](assets/./assets/cartasNaMão.png)
 
 - Se já temos $A[0], A[1], ..., A[i-1]$ ordenado, então inserimos $A[i]$ na posição correta.
 
@@ -78,7 +78,7 @@ O InsertionSort também é um algoritmo simples de ordenação. A ideia central 
 - Devemos seguir comparando $j$ com os elementos ordenados à sua esquerda até encontrarmos um que seja menor que este, ou quando não houver mais elementos à sua esquerda. Quando isso ocorrer, $j$ estará ordenado. Seguiremos para o próximo elemento.
 - Quando todos os elementos forem ordenados, o vetor estará completamente ordenado.
 
-![Exemplo de uso do InsertionSort](./assets/InsertionSort.gif)
+![Exemplo de uso do InsertionSort](assets/./assets/InsertionSort.gif)
 
 ### Implementação do InsertionSort em C++
 
@@ -102,7 +102,7 @@ Comparado aos outros algoritmos de ordenação, o SelectionSort é bastante dire
 
 Na primeira passagem, o menor valor é encontrado e colocado na posição 0. O resto do vetor desordenado é então vasculhado à procura do novo menor valor, que é colocado na posição 1 e assim sucessivamente. Para um vetor de $n$ elementos, serão necessárias $n$ voltas.
 
-![Exemplo de uso do SelectionSort](./assets/SelectionSort.gif)
+![Exemplo de uso do SelectionSort](assets/./assets/SelectionSort.gif)
 
 ### Implementação do SelectionSort em C++
 

@@ -15,7 +15,7 @@ Se isso for impossível, retorne `-1`.
 
 
 Segue uma representação visual do teste 1.
-![_](image.png)
+![_](assets/image.png)
 
 ## Submission
 

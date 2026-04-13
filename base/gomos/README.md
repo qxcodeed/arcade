@@ -1,6 +1,6 @@
 # Gomos da cobrinha
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 ## Contexto
 

@@ -12,7 +12,7 @@ O Merge Sort é um algoritmo de ordenação baseado na técnica de Divisão e Co
 
 ### Funcionamento do Merge
 
-![Gif MergeSort](./assets/merge.gif)
+![Gif MergeSort](assets/./assets/merge.gif)
 
 ### Implementação do Merge em C++
 
@@ -108,7 +108,7 @@ O Quick Sort é outro algoritmo de ordenação baseado na técnica de Divisão e
 
 ### Funcionamento do Quick
 
-![Gif do QuickSort](./assets/quick.gif)
+![Gif do QuickSort](assets/./assets/quick.gif)
 
 ### Implementação do Quick em C++
 

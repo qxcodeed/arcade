@@ -115,13 +115,16 @@ int main() {
 
     while (true) {
         printf("$");
-        if (!fgets(line, sizeof(line), stdin)) break;
+        if (!fgets(line, sizeof(line), stdin)) { 
+            break;
+        }
         line[strcspn(line, "\n")] = 0;
         printf("%s\n", line);
 
         char* cmd = strtok(line, " ");
-        if (!cmd) continue;
-
+        if (!cmd) {
+            continue;
+        }
         if (strcmp(cmd, "end") == 0) {
             break;
         } else if (strcmp(cmd, "init") == 0) {
@@ -130,24 +133,28 @@ int main() {
             v = vector_create(cap);
         } else if (strcmp(cmd, "push") == 0) {
             char* arg;
-            while ((arg = strtok(NULL, " ")))
+            while ((arg = strtok(NULL, " "))) {
                 vector_push_back(v, atoi(arg));
+            }
         } else if (strcmp(cmd, "show") == 0) {
             vector_str(v);
         } else if (strcmp(cmd, "status") == 0) {
             vector_status(v);
         } else if (strcmp(cmd, "pop") == 0) {
-            if (!vector_pop_back(v))
+            if (!vector_pop_back(v)) {
                 printf("vector is empty\n");
+            }
         } else if (strcmp(cmd, "insert") == 0) {
             int index = atoi(strtok(NULL, " "));
             int value = atoi(strtok(NULL, " "));
-            if (!vector_insert(v, index, value))
+            if (!vector_insert(v, index, value)) {
                 printf("index out of range\n");
+            }
         } else if (strcmp(cmd, "erase") == 0) {
             int index = atoi(strtok(NULL, " "));
-            if (!vector_erase(v, index))
+            if (!vector_erase(v, index)) {
                 printf("index out of range\n");
+            }
         } else if (strcmp(cmd, "indexOf") == 0) {
             int value = atoi(strtok(NULL, " "));
             printf("%d\n", vector_index_of(v, value));
@@ -161,15 +168,17 @@ int main() {
         } else if (strcmp(cmd, "get") == 0) {
             int index = atoi(strtok(NULL, " "));
             int value;
-            if (vector_at(v, index, &value))
+            if (vector_at(v, index, &value)) {
                 printf("%d\n", value);
-            else
+            } else {
                 printf("index out of range\n");
+            }
         } else if (strcmp(cmd, "set") == 0) {
             int index = atoi(strtok(NULL, " "));
             int value = atoi(strtok(NULL, " "));
-            if (!vector_set(v, index, value))
+            if (!vector_set(v, index, value)) {
                 printf("index out of range\n");
+            }
         } else if (strcmp(cmd, "reserve") == 0) {
             int newCap = atoi(strtok(NULL, " "));
             vector_reserve(v, newCap);

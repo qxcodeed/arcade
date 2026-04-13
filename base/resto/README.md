@@ -1,6 +1,6 @@
 # Divisão e Resto
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Para trabalhar essa técnica, vamos resolver o seguinte problema.
 

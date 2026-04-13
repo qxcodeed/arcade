@@ -1,6 +1,6 @@
 # Permutando coisas
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 O problema de **Permutações** consiste em listar **todas as permutações distintas** de uma *string de caracteres*.
 

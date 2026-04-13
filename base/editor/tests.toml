@@ -1,0 +1,52 @@
+[[tests]]
+input = '''
+abc
+'''
+output = '''
+abc|
+'''
+
+[[tests]]
+input = '''
+euRteRamo
+'''
+output = '''
+eu
+te
+amo|
+'''
+
+[[tests]]
+input = '''
+euRamo<<<
+'''
+output = '''
+eu
+|amo
+'''
+
+[[tests]]
+input = '''
+euRamo<<<<<<<como-
+'''
+output = '''
+como-|eu
+amo
+'''
+
+[[tests]]
+input = '''
+euRemo<<Ba>>>>>>
+'''
+output = '''
+eu
+amo|
+'''
+
+[[tests]]
+input = '''
+voc-ae<<v<<e>>>Di>
+'''
+output = '''
+voce-vai|
+'''

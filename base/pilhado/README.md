@@ -1,6 +1,6 @@
 # Pilha: Fugindo do labirinto
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Você vai tentar fugir do labirinto usando uma pilha no lugar da recursão.
 

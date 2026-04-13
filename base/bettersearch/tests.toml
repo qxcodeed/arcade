@@ -1,0 +1,98 @@
+[[tests]]
+input = '''
+[ ]
+4
+'''
+output = '''
+F 0
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 4 ]
+1
+'''
+output = '''
+V 0
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 4 ]
+2
+'''
+output = '''
+V 1
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 4 ]
+3
+'''
+output = '''
+V 2
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 4 ]
+4
+'''
+output = '''
+V 3
+'''
+
+[[tests]]
+input = '''
+[ 1 3 4 ]
+2
+'''
+output = '''
+F 1
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 5 6 7 8 ]
+4
+'''
+output = '''
+F 3
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 7 8 9 ]
+0
+'''
+output = '''
+F 0
+'''
+
+[[tests]]
+input = '''
+[ 1 3 5 6 7 9 10 ]
+2
+'''
+output = '''
+F 1
+'''
+
+[[tests]]
+input = '''
+[ 1 2 3 6 7 9 ]
+9
+'''
+output = '''
+V 5
+'''
+
+[[tests]]
+input = '''
+[ -2 1 2 4 5 6 7 ]
+8
+'''
+output = '''
+F 7
+'''

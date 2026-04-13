@@ -1,0 +1,124 @@
+[[tests]]
+input = '''
+abc
+'''
+output = '''
+abc|
+'''
+
+[[tests]]
+input = '''
+euRteRamo
+'''
+output = '''
+eu
+te
+amo|
+'''
+
+[[tests]]
+input = '''
+euRamo<<<
+'''
+output = '''
+eu
+|amo
+'''
+
+[[tests]]
+input = '''
+euRamo<<<<<<<como-
+'''
+output = '''
+como-|eu
+amo
+'''
+
+[[tests]]
+input = '''
+euRemo<<Ba>>>>>>
+'''
+output = '''
+eu
+amo|
+'''
+
+[[tests]]
+input = '''
+voc-ae<<v<<e>>>Di>
+'''
+output = '''
+voce-vai|
+'''
+
+[[tests]]
+input = '''
+eu-te-amoB
+'''
+output = '''
+eu-te-am|
+'''
+
+[[tests]]
+input = '''
+eu-te-amoBZ
+'''
+output = '''
+eu-te-amo|
+'''
+
+[[tests]]
+input = '''
+eu-te-amoBZ<<braco
+'''
+output = '''
+eu-te-abraco|mo
+'''
+
+[[tests]]
+input = '''
+abcZZd
+'''
+output = '''
+ad|
+'''
+
+[[tests]]
+input = '''
+abcZZYd
+'''
+output = '''
+abd|
+'''
+
+[[tests]]
+input = '''
+abcBZ
+'''
+output = '''
+abc|
+'''
+
+[[tests]]
+input = '''
+abcBZZZZ
+'''
+output = '''
+|
+'''
+
+[[tests]]
+input = '''
+abcBZZZZZZZZZZZZY
+'''
+output = '''
+a|
+'''
+
+[[tests]]
+input = '''
+abcBZZZZZZZZZZZZYbYYYYY
+'''
+output = '''
+ab|
+'''

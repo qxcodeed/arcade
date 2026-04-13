@@ -1,6 +1,6 @@
 # Editor com Control Z
 
-![_](capa.jpg)
+![_](assets/capa.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

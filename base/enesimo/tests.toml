@@ -1,0 +1,63 @@
+[[tests]]
+input = '''
+1
+'''
+output = '''
+2
+'''
+
+[[tests]]
+input = '''
+2
+'''
+output = '''
+3
+'''
+
+[[tests]]
+input = '''
+3
+'''
+output = '''
+5
+'''
+
+[[tests]]
+input = '''
+4
+'''
+output = '''
+7
+'''
+
+[[tests]]
+input = '''
+5
+'''
+output = '''
+11
+'''
+
+[[tests]]
+input = '''
+6
+'''
+output = '''
+13
+'''
+
+[[tests]]
+input = '''
+7
+'''
+output = '''
+17
+'''
+
+[[tests]]
+input = '''
+8
+'''
+output = '''
+19
+'''

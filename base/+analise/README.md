@@ -112,7 +112,7 @@ $0 \leq f(n) \leq c \cdot g(n) \quad \text{para todo} \quad n \geq n_0 $
 | 10⁵       | 16    | 10⁵ | 10⁶     | 10¹⁰  | 10¹⁵  | 10³⁰⁰⁰⁰  |
 | 10⁶       | 19    | 10⁶ | 10⁷     | 10¹²  | 10¹⁸  | 10³⁰⁰⁰⁰⁰ |
 
-![Gráfico de comparação do comportamento assintótico das funções](grafico-comparacao.png)
+![Gráfico de comparação do comportamento assintótico das funções](assets/grafico-comparacao.png)
 
 ### Exemplo de Cálculo de Notação Big-O
 

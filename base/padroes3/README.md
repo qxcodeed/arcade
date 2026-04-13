@@ -9,7 +9,7 @@
 
 Considere as seguintes sequências de figuras geométricas:
 
-![Padrões](Padroes.png)
+![Padrões](assets/Padroes.png)
 
 Dado dois inteiros $3 \leq n \leq 20$ e $ 1 \leq m \leq 40$, encontre o número de pontos da m-ésima figura da sequência $F_n$. Por exemplo, a segunda figura da sequência $F_3$ é formada por 3 pontos.
 

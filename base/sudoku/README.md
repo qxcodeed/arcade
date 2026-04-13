@@ -1,12 +1,12 @@
 # Sudoku
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 O Sudoku tem várias versões para diferentes dificuldades. O mais conhecido é o modelo 9x9.
 
 O site [sudoku](https://www.sudokuonline.io/pt/criancas) tem versões simplificadas para crianças com versões 4x4 e 6x6.
 
-![_](__exemplos.png)
+![_](assets/__exemplos.png)
 
 Seu objetivo é resolver um sudoku NxN com números de 1 a N.
 

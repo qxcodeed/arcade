@@ -1,6 +1,6 @@
 # Pilha: Queimando árvores
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 - Seja uma matriz de caracteres que representa um mapa de uma floresta.
 - Cada caractere representa um espaço vazio ou uma árvore.

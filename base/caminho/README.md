@@ -1,6 +1,6 @@
 # Fila: Menor caminho entre dois pontos
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Dessa vez, o labirinto não é perfeito e existem múltiplos caminhos que podem levar ao destino. Seu objetivo é implementar o algoritmo de floodfill pathfinding.
 

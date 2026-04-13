@@ -49,7 +49,7 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ]`@fib2            :2:side`[Coelhos procriando e morrendo](base/fib2/README.md)
 - [ ]`@santo           :3:side`[O milagre de ficar pobre](base/santo/README.md)
 - [ ]`@bitcoin         :4:side`[Investindo em ativos digitais](base/bitcoin/README.md)
-- [ ]`@fractais_png    :9:main:self`[Desenhando Fractais](base/fractais_png/README.md)
+- [ ]`@fractais_png    :9:main:self`[Desenhando Fractais (Opção 2)](base/fractais_png/README.md)
 
 ## Backtracking +backtrack:5 @backtrack !@rec
 
@@ -154,3 +154,6 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ]`@banco           :3:main`[Gerenciando a fila do banco](base/banco/README.md)
 
 ## sandbox
+
+- [ ]`@fractais        `[Desenhando Fractais](base/fractais/README.md)
+

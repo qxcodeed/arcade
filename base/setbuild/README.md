@@ -8,7 +8,7 @@
 - A busca binária tem um custo de O(log n).
 - A remoção de um elemento também tem um custo de O(n) pela necessidade de deslocar os elementos.
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Implemente a classe do vetor dinâmico.
 

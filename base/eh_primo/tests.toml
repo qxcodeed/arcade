@@ -1,0 +1,71 @@
+[[tests]]
+input = '''
+1
+'''
+output = '''
+false
+'''
+
+[[tests]]
+input = '''
+2
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+3
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+4
+'''
+output = '''
+false
+'''
+
+[[tests]]
+input = '''
+5
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+6
+'''
+output = '''
+false
+'''
+
+[[tests]]
+input = '''
+7
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+18
+'''
+output = '''
+false
+'''
+
+[[tests]]
+input = '''
+19
+'''
+output = '''
+true
+'''

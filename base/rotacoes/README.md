@@ -1,6 +1,6 @@
 # Rotacoes em uma lista
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Uma rotação desloca os elementos do vetor em uma determinada direção. Uma rotação à direita equivale a pegar o último elemento e inserir na primeira posição.
 

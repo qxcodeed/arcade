@@ -1,0 +1,43 @@
+[[tests]]
+input = '''
+ABCCED
+ABCE
+SFCS
+ADEE
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+SEE
+ABCE
+SFCS
+ADEE
+'''
+output = '''
+true
+'''
+
+[[tests]]
+input = '''
+ABCB
+ABCE
+SFCS
+ADEE
+'''
+output = '''
+false
+'''
+
+[[tests]]
+input = '''
+ABCESEEEFS
+ABCE
+SFES
+ADEE
+'''
+output = '''
+true
+'''

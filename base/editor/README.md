@@ -1,6 +1,6 @@
 # Editor de texto
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Implementar um editor de texto simplificado que receba os seguintes valores como
 entrada.

@@ -1,0 +1,40 @@
+[[tests]]
+input = '''
+4 4
+XXXX
+XOOX
+XXOX
+XOXX
+'''
+output = '''
+XXXX
+XXXX
+XXXX
+XOXX
+'''
+
+[[tests]]
+input = '''
+1 1
+X
+'''
+output = '''
+X
+'''
+
+[[tests]]
+input = '''
+5 5
+XXXXX
+XOOOX
+XXOXX
+XXXOX
+XXXOX
+'''
+output = '''
+XXXXX
+XXXXX
+XXXXX
+XXXOX
+XXXOX
+'''

@@ -1,6 +1,6 @@
 # Caminhao abastecendo
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 [](solver.cpp)
 

@@ -11,11 +11,12 @@ func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
 		return ""
 	}
-	result := fmt.Sprintf("%d", slice[0])
+	var result strings.Builder
+	fmt.Fprintf(&result, "%d", slice[0])
 	for _, value := range slice[1:] {
-		result += sep + fmt.Sprintf("%d", value)
+		fmt.Fprintf(&result, "%s%d", sep, value)
 	}
-	return result
+	return result.String()
 }
 
 func main() {

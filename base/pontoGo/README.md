@@ -17,8 +17,6 @@ Implemente a classe ponto e faça a equação da reta.
   - [main.cpp](.cache/drafts/cpp/main.cpp)
   - [point.cpp](.cache/drafts/cpp/point.cpp)
   - [point.hpp](.cache/drafts/cpp/point.hpp)
-- go
-  - [point.go](.cache/drafts/go/point.go)
 <!-- links -->
 
 ## Testes

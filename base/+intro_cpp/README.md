@@ -10,7 +10,7 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 
 Esse vídeo introdução mostra os principais aspectos da linguagem.
 
-[![image](images/play.png)](https://youtu.be/VcGw1ydBf64?si=dfLfGPh0j10hkTZr)
+[![image](assets/images/play.png)](https://youtu.be/VcGw1ydBf64?si=dfLfGPh0j10hkTZr)
 
 - 00:00:00 introdução
 - 00:01:02 compilando hello world manualmente

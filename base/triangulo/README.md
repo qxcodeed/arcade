@@ -1,6 +1,6 @@
 # Imprimindo ao contrário
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 Dado um vetor de inteiros A, imprima um triângulo de números tal que na base do triângulo estejam todos os elementos do vetor original, e tal que, a cada i-ésimo nível acima da base, o número de elementos seja um a menos que no nível inferior e cada elemento do i-ésimo nível seja a soma de dois elementos consecutivos do nível inferior.
 
@@ -23,8 +23,6 @@ Você deve implementar a função `processa` no arquivo `lib.cpp`.
   - [user.cpp](.cache/drafts/cpp/user.cpp)
 - go
   - [main.go](.cache/drafts/go/main.go)
-- py
-  - [main.py](.cache/drafts/py/main.py)
 <!-- links -->
 
 ## Testes

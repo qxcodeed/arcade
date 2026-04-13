@@ -1,6 +1,6 @@
 # Colocando os números no lugar certo
 
-![_](cover.jpg)
+![_](assets/cover.jpg)
 
 - Seja uma string formada por dígitos e underlines `.`.
 - Seja um valor de limite L.
