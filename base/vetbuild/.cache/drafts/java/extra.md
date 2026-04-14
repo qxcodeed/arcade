@@ -27,5 +27,7 @@ class MyArrayList {
   --
   + indexOf(value: int): int                // Retorna o índice da primeira ocorrência do valor, ou -1
   + contains(value: int): boolean           // Retorna se o valor está presente na lista
+  --
+  + slice(start: int, end: int): MyArrayList // Retorna uma nova lista contendo os elementos do intervalo [start, end)                     // Idealmente, o método slice deveria ser O(1) e compartilhar os dados, mas para simplificar a implementação, ele é O(n) e copia os dados para uma nova lista
 }
 ```

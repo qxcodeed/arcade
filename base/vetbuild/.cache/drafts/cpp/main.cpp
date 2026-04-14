@@ -4,6 +4,15 @@
 #include <sstream>
 #include <algorithm>
 
+class Vector {
+    private:
+    int* data;
+    int size;
+    int capacity;
+    bool is_view; // indica se é uma view (slice) ou um vetor independente
+    
+};
+
 int main() {
     std::string line, cmd;
     
@@ -73,6 +82,11 @@ int main() {
         } else if (cmd == "reserve") {
             // int newCap = std::stoi(parts[1]);
             // v->reserve(newCap);
+        } else if (cmd == "slice") {
+            // int start = std::stoi(parts[1]);
+            // int end = std::stoi(parts[2]);
+            // Vector slice = v->slice(start, end);
+            // std::cout << slice.str() << "\n";
         } else {
             std::cout << "comando invalido\n";
         }

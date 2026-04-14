@@ -32,5 +32,9 @@ class Vector {
   --
   + IndexOf(value: int): int                ' Retorna o índice da primeira ocorrência do valor especificado, ou -1 se não for encontrado
   + Contains(value: int): bool              ' Verifica se o valor especificado existe no vetor
+  --
+  + Slice(start: int, end: int): *Vector    ' Retorna um novo vetor que é uma fatia do vetor original do índice start até o índice end (exclusivo).
+                                            ' O método deve lidar com índices negativos e índices que excedem o tamanho do vetor de forma circular
+                                            ' Ele não deve criar um novo bloco de memória para os elementos, mas sim compartilhar a mesma memória do vetor original
 }
 ```

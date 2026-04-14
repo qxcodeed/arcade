@@ -230,3 +230,14 @@ $contains 12
 true
 $end
 ```
+
+```bash
+#TEST_CASE slice
+$init 10
+$push 10 2 8 12 8 6
+$slice 2 5
+[8, 12, 8]
+$slice 1 -1
+[2, 8, 12, 8]
+$end
+```

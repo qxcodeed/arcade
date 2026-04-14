@@ -62,6 +62,11 @@ public class Shell {
                 // int sidx = Integer.parseInt(parts[1]);
                 // int sval = Integer.parseInt(parts[2]);
                 // v.set(sidx, sval);
+            } else if (cmd.equals("slice")) {
+                // int start = Integer.parseInt(parts[1]);
+                // int end = Integer.parseInt(parts[2]);
+                // MyArrayList sliced = v.slice(start, end);
+                // System.out.println(sliced);
             } else {
                 System.out.println("comando invalido");
             }

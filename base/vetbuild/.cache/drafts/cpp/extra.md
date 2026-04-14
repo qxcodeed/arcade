@@ -5,8 +5,11 @@ class Vector {
     - data: int*                              ' Guarda os elementos do vetor
     - size: int                               ' Guarda o número atual de elementos
     - capacity: int                           ' Guarda a capacidade atual do vetor
+    - is_view: bool                           ' Indica se é uma view (slice) ou um vetor independente
+    --
+    Vector(capacity: int)                     ' Cria um novo vetor com a capacidade inicial especificada
+    ~Vector()                                 ' Destrutor para liberar a memória alocada, apenas se não for uma view (slice)
     __
-    + Vector(capacity: int)                   ' Cria um novo vetor com a capacidade inicial especificada
     + reserve(newCapacity: int): void         ' Redimensiona a capacidade do vetor para pelo menos o valor especificado
     + pushBack(value: int): void              ' Adiciona um valor ao final do vetor, redimensionando se necessário
     + getSize(): int                          ' Retorna o número atual de elementos no vetor
@@ -29,5 +32,10 @@ class Vector {
                                               ' Retorna false se o índice estiver fora dos limites
     + indexOf(value: int): int                ' Retorna o índice da primeira ocorrência do valor especificado, ou -1 se não for encontrado
     + contains(value: int): bool              ' Verifica se o valor especificado existe no vetor
+    --
+    + slice(start: int, end: int): Vector     ' Retorna um novo vetor que é uma fatia do vetor original do índice start até o índice end (exclusivo).
+                                              ' O método deve lidar com índices negativos e índices que excedem o tamanho do vetor de forma circular
+                                              ' Ele não deve criar um novo bloco de memória para os elementos, mas sim compartilhar a mesma memória do vetor original
+                                              ' Marca o vetor retornado como uma view (slice) para evitar que ele seja deletado quando for destruído
 }
 ```

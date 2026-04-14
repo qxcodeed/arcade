@@ -109,6 +109,13 @@ void vector_clear(Vector* v) {
     (void) v;
 }
 
+Vector vector_slice(Vector* v, int start, int end) {
+    (void) v;
+    (void) start;
+    (void) end;
+    return (Vector){0};
+}
+
 int main() {
     char line[100];
     Vector* v = vector_create(0);
@@ -182,6 +189,11 @@ int main() {
         } else if (strcmp(cmd, "reserve") == 0) {
             int newCap = atoi(strtok(NULL, " "));
             vector_reserve(v, newCap);
+        } else if (strcmp(cmd, "slice") == 0) {
+            int start = atoi(strtok(NULL, " "));
+            int end = atoi(strtok(NULL, " "));
+            Vector slice = vector_slice(v, start, end);
+            vector_str(&slice);
         } else {
             printf("comando invalido\n");
         }

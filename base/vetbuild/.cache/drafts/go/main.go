@@ -6,6 +6,20 @@ import (
 	"strings"
 )
 
+type Vector struct {
+	data     []int
+	size     int
+	capacity int
+}
+
+func NewVector(capacity int) *Vector {
+	return &Vector{
+		data:     make([]int, capacity), // nunca use len(data) ou cap(data) ou qq método do go de manipulação de array
+		size:     0,
+		capacity: capacity,
+	}
+}
+
 
 func Join(slice []int, sep string) string {
 	if len(slice) == 0 {
@@ -104,6 +118,11 @@ func main() {
 		case "reserve":
 			// newCapacity, _ := strconv.Atoi(parts[1])
 			// v.Reserve(newCapacity)
+		case "slice":
+			// start, _ := strconv.Atoi(parts[1])
+			// end, _ := strconv.Atoi(parts[2])
+			// slice := v.Slice(start, end)
+			// fmt.Println(slice)
 		default:
 			fmt.Println("fail: comando invalido")
 		}
