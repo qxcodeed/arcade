@@ -9,6 +9,7 @@ import (
 )
 
 func processa(vet []int) {
+	fmt.Println("[ " + Join(vet, " ") + " ]")
 	_ = vet;
 	// 1. defina o ponto de parada
 	// 2. monte o vetor auxiliar com os resultados das somas

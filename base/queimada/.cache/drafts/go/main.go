@@ -8,6 +8,9 @@ import (
 
 func burnTrees(grid [][]rune, l, c int) {
 	_, _, _ = grid, l, c
+	nl := len(grid)
+	nc := len(grid[0])
+	_, _ = nl, nc
 	// se estiver fora da matriz, retorne
 	// se o elemento atual não for uma arvore, retorne
 	// queime a arvore colocando o caractere 'o' na posição atual
