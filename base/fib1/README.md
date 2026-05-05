@@ -16,14 +16,30 @@ A entrada é composta por uma única linha contendo dois inteiros ($1 \leq n \le
 
 A saída é composta por uma única linha contendo o número total de pares de coelhos que estão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz uma ninhada de $k$ pares de coelhos.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
-5 3
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1 1
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
-
-```txt
-19
+```py
+>>>>>>>> INSERT
+1 2
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+1 3
+======== EXPECT
+1
+<<<<<<<< FINISH
+```
+<!-- load -->

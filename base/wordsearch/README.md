@@ -47,9 +47,10 @@ board and word consists of only lowercase and uppercase English letters.
 
 Follow up: Could you use search pruning to make your solution faster with a larger board?
 
-## Tests
+## Exemplos
 
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
 >>>>>>>> INSERT
 ABCCED
 ABCE
@@ -58,7 +59,9 @@ ADEE
 ======== EXPECT
 true
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 SEE
 ABCE
@@ -67,7 +70,9 @@ ADEE
 ======== EXPECT
 true
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 ABCB
 ABCE
@@ -76,13 +81,5 @@ ADEE
 ======== EXPECT
 false
 <<<<<<<< FINISH
-
->>>>>>>>> INSERT
-ABCESEEEFS
-ABCE
-SFES
-ADEE
-======== EXPECT
-true
-<<<<<<<< FINISH
 ```
+<!-- load -->

@@ -23,3 +23,50 @@ A funcionalidade de cada método está descrita em comentários no próprio arqu
 OBS.: Não altere os métodos já implementados.
 
 OBS.2: Não precisa escrever a main(). Ela já está implementada internamente no Moodle.
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+test_has_info
+======== EXPECT
+TESTE has_info
+[30 -> 20 -> 15 -> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+test_push_front
+======== EXPECT
+TESTE push_front
+push_front 10
+push_front 15
+push_front 20
+push_front 30
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+4 Nos alocados
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+test_push_back
+======== EXPECT
+TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Expected: [10 -> 15 -> 20 -> 30]
+[10 -> 15 -> 20 -> 30]
+<<<<<<<< FINISH
+```
+<!-- load -->

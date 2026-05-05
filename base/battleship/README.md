@@ -15,10 +15,18 @@ Os navios podem estar apenas em duas formas:
 
 Aqui, copiamos apenas alguns casos de teste do problema original, ao final, submeta seu código no LeetCode [nesse link](https://leetcode.com/problems/battleships-in-a-board/).
 
-## Tests
+## Constraints
 
-```txt
->>>>>>>> INSERT Teste 1
+- `m == board.length`
+- `n == board[i].length`
+- `1 <= m, n <= 200`
+- `board[i][j] is '.' ou 'X'`
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3 4
 X..X
 ...X
@@ -26,22 +34,14 @@ X..X
 ======== EXPECT
 2
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 2
+```py
+>>>>>>>> INSERT
 1 1
 .
 ======== EXPECT
 0
 <<<<<<<< FINISH
 ```
-
-## Constraints
-
-- `m == board.length`
-
-- `n == board[i].length`
-
-- `1 <= m, n <= 200`
-
-- `board[i][j] is '.' ou 'X'`
+<!-- load -->

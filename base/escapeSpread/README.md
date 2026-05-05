@@ -21,14 +21,25 @@ Retorne o **número máximo de minutos que você pode permanecer na posição in
 
 Segue uma represnetação visual do teste 1.
 ![](image.png)
+
 ## Submission
 
 Aqui, copiamos apenas alguns casos de teste do problema original, ao final, submeta seu código no LeetCode [nesse link](https://leetcode.com/problems/escape-the-spreading-fire/).
 
-## Tests
+## Constraints
 
-```txt
->>>>>>>> INSERT Teste 1
+- `m == grid.length`
+- `n == grid[i].length`
+- `2 <= m, n <= 300`
+- `4 <= m * n <= 2 * 10^4`
+- `grid[i][j] é 0, 1 ou 2`
+- `grid[0][0] == grid[m - 1][n - 1] == 0`
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 5 7
 0 2 0 0 0 0 0
 0 0 0 2 2 1 0
@@ -38,9 +49,10 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 ======== EXPECT
 3
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 2
+```py
+>>>>>>>> INSERT
 3 4
 0 0 0 0
 0 1 2 0
@@ -48,9 +60,10 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 ======== EXPECT
 -1
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 3
+```py
+>>>>>>>> INSERT
 3 3
 0 0 0
 2 2 0
@@ -59,17 +72,4 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 1000000000
 <<<<<<<< FINISH
 ```
-
-## Constraints
-
-- `m == grid.length`
-
-- `n == grid[i].length`
-
-- `2 <= m, n <= 300`
-
-- `4 <= m * n <= 2 * 10^4`
-
-- `grid[i][j] é 0, 1 ou 2`
-
-- `grid[0][0] == grid[m - 1][n - 1] == 0`
+<!-- load -->

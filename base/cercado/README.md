@@ -28,10 +28,11 @@ Para capturar uma região cercada, substitua todos os `'O'` por `'X'` diretament
   - matriz com letras `'X'` e `'O'`
 - Saída
   - matriz modificada com as regiões cercadas capturadas com `'X'`
+  
+## Exemplos
 
-## Testes
-
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
 >>>>>>>> INSERT
 4 4
 XXXX
@@ -46,7 +47,7 @@ XOXX
 <<<<<<<< FINISH
 ```
 
-```txt
+```py
 >>>>>>>> INSERT
 1 1
 X
@@ -55,7 +56,7 @@ X
 <<<<<<<< FINISH
 ```
 
-```txt
+```py
 >>>>>>>> INSERT
 5 5
 XXXXX
@@ -71,3 +72,4 @@ XXXOX
 XXXOX
 <<<<<<<< FINISH
 ```
+<!-- load -->

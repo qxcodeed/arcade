@@ -14,18 +14,30 @@ A entrada é composta por uma única linha contendo um inteiro `n` representando
 
 A saída é composta por uma única linha contendo o número de quadrados sombreados do n-ésimo padrão da sequência.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 1
-```
-
-## Exemplo de Saída
-
-```txt
+======== EXPECT
 20
+<<<<<<<< FINISH
 ```
 
-A primeira imagem do padrão pode ser decomposto em 4 retângulos 1x2 e 4 figuras no formato de L.
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+28
+<<<<<<<< FINISH
+```
 
-![decomposition](./decomposition.jpeg)
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+36
+<<<<<<<< FINISH
+```
+<!-- load -->

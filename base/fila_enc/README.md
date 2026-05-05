@@ -1,8 +1,8 @@
 # Fila usando lista encadeada simples
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Shell](#shell)
--- | -- | --
+[Intro](#intro) | [Shell](#shell)
+-- | --
 <!-- toch -->
 
 ## Intro
@@ -24,13 +24,6 @@ Cada operação de inserção e remoção na fila deve atualizar o atributo `siz
 - Verificação se a fila está vazia (`isEmpty`): O(1) - Retorna verdadeiro se não há elementos na fila.
 - Visualização do primeiro elemento (`peek`): O(1) - Retorna o primeiro elemento sem removê-lo.
 - Visualização do estado da fila (`show`): O(n) - Retorna uma representação em string dos elementos da fila para debug.
-
-## Draft
-
-<!-- links .cache/drafts -->
-- go
-  - [main.go](.cache/drafts/go/main.go)
-<!-- links -->
 
 ## Shell
 

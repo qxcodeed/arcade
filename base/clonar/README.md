@@ -1,7 +1,7 @@
 # Clonando a árvore
 
 <!-- toch -->
-[Descrição](#descrição) | [Testes](#testes)
+[Descrição](#descrição) | [Exemplos](#exemplos)
 -- | --
 <!-- toch -->
 
@@ -13,11 +13,12 @@
 
 - Saída
   - Impressão da função 'BShow' que já vem no rascunho.
+  
+## Exemplos
 
-## Testes
-
-```txt
->>>>>>>> INSERT um
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4 # # 
 ======== EXPECT
 original:
@@ -25,9 +26,10 @@ original:
 clone:
 4
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT dois
+```py
+>>>>>>>> INSERT
 1 # 0 # # 
 ======== EXPECT
 original:
@@ -39,9 +41,10 @@ clone:
 1
 ╰───0
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT tres
+```py
+>>>>>>>> INSERT
 4 # 8 2 # # # 
 ======== EXPECT
 original:
@@ -57,67 +60,5 @@ clone:
 ╰───8
     ╰───#
 <<<<<<<< FINISH
-
-
->>>>>>>> INSERT quatro
-0 9 4 # # # 5 # # 
-======== EXPECT
-original:
-    ╭───4
-╭───9
-│   ╰───#
-0
-╰───5
-clone:
-    ╭───4
-╭───9
-│   ╰───#
-0
-╰───5
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT cinco
-0 4 # # 2 0 # # 3 # # 
-======== EXPECT
-original:
-╭───4
-0
-│   ╭───0
-╰───2
-    ╰───3
-clone:
-╭───4
-0
-│   ╭───0
-╰───2
-    ╰───3
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT seis
-2 0 0 # # # 3 # 7 # 9 # # 
-======== EXPECT
-original:
-    ╭───0
-╭───0
-│   ╰───#
-2
-│   ╭───#
-╰───3
-    │   ╭───#
-    ╰───7
-        ╰───9
-clone:
-    ╭───0
-╭───0
-│   ╰───#
-2
-│   ╭───#
-╰───3
-    │   ╭───#
-    ╰───7
-        ╰───9
-<<<<<<<< FINISH
-
 ```
+<!-- load -->

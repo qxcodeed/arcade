@@ -11,10 +11,19 @@ Vamos criar iteradores para navegar em um vetor utilizando a sintaxe simplificad
 
 Um iterador é criado a partir da estrutura a ser percorrida e possui dois métodos principais.
 
-- hasNext(): bool, que informa se ainda tem algum elemento.
-- next(): int, que pega o próximo elemento.
+- HasNext(): bool, que informa se ainda tem algum elemento para ser processado.
+- Next(): int, que pega o valor do elemento e move o interador para próximo elemento.
 
 Os nomes mudam um pouco dependendo da linguagem utilizada. Veja o diagrama dos métodos a serem implementados e o exemplo nos arquivos `extra.md` e no rascunho da linguagem.
+
+Um iterador teria a seguinte sintaxe de uso:
+
+```go
+mylist := MyList([]int{2, 1, 3, 5, 6, 7}) // criação da estrutura de dados
+for it := mylist.Iterator(); it.HasNext(); { // percorrimento utilizando iteradores
+  fmt.Printf("%v ", it.Next())
+}
+```
 
 Você vai receber implementado um iterador que percorre a estrutura do início ao fim e deve implementar outros dois iteradores.
 

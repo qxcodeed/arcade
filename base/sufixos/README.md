@@ -88,15 +88,13 @@ A entrada é composta por uma única linha contendo uma palavra com até 100 car
 
 A saída é composta por `n` linhas sendo `n` o tamanho da palavra lida.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 wladimir
-```
-
-## Exemplo de Saída
-
-```txt
+======== EXPECT
 r
 ir
 mir
@@ -105,4 +103,93 @@ dimir
 adimir
 ladimir
 wladimir
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+inconstitucionalissimamente
+======== EXPECT
+e
+te
+nte
+ente
+mente
+amente
+mamente
+imamente
+simamente
+ssimamente
+issimamente
+lissimamente
+alissimamente
+nalissimamente
+onalissimamente
+ionalissimamente
+cionalissimamente
+ucionalissimamente
+tucionalissimamente
+itucionalissimamente
+titucionalissimamente
+stitucionalissimamente
+nstitucionalissimamente
+onstitucionalissimamente
+constitucionalissimamente
+nconstitucionalissimamente
+inconstitucionalissimamente
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+pneumoultramicroscopicossilicovulcanoconiotico
+======== EXPECT
+o
+co
+ico
+tico
+otico
+iotico
+niotico
+oniotico
+coniotico
+oconiotico
+noconiotico
+anoconiotico
+canoconiotico
+lcanoconiotico
+ulcanoconiotico
+vulcanoconiotico
+ovulcanoconiotico
+covulcanoconiotico
+icovulcanoconiotico
+licovulcanoconiotico
+ilicovulcanoconiotico
+silicovulcanoconiotico
+ssilicovulcanoconiotico
+ossilicovulcanoconiotico
+cossilicovulcanoconiotico
+icossilicovulcanoconiotico
+picossilicovulcanoconiotico
+opicossilicovulcanoconiotico
+copicossilicovulcanoconiotico
+scopicossilicovulcanoconiotico
+oscopicossilicovulcanoconiotico
+roscopicossilicovulcanoconiotico
+croscopicossilicovulcanoconiotico
+icroscopicossilicovulcanoconiotico
+microscopicossilicovulcanoconiotico
+amicroscopicossilicovulcanoconiotico
+ramicroscopicossilicovulcanoconiotico
+tramicroscopicossilicovulcanoconiotico
+ltramicroscopicossilicovulcanoconiotico
+ultramicroscopicossilicovulcanoconiotico
+oultramicroscopicossilicovulcanoconiotico
+moultramicroscopicossilicovulcanoconiotico
+umoultramicroscopicossilicovulcanoconiotico
+eumoultramicroscopicossilicovulcanoconiotico
+neumoultramicroscopicossilicovulcanoconiotico
+pneumoultramicroscopicossilicovulcanoconiotico
+<<<<<<<< FINISH
+```
+<!-- load -->

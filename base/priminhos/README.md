@@ -4,37 +4,30 @@
 
 Gere um vetor com os `n` primeiros números primos.
 
-## Draft
+## Exemplos
 
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-<!-- links -->
-
-## Testes
-
-```bash
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 1
-========
+======== EXPECT
 [2]
-<<<<<<<<
-
->>>>>>>>
-2
-========
-[2, 3]
-<<<<<<<<
-
->>>>>>>>
-3
-========
-[2, 3, 5]
-<<<<<<<<<
-
->>>>>>>>
-7
-========
-[2, 3, 5, 7, 11, 13, 17]
-<<<<<<<<<
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+[2, 3]
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+[2, 3, 5]
+<<<<<<<< FINISH
+```
+<!-- load -->

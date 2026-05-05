@@ -13,56 +13,20 @@ Dado um vetor de inteiros A, imprima um triângulo de números tal que na base d
 
 Veja a resolução da atividade "Empilhamento da Recursão" para entender como funciona a impressão de trás pra frente.
 
-## Arquivos
+## Exemplos
 
-Você deve implementar a função `processa` no arquivo `lib.cpp`.
-
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-  - [user.cpp](.cache/drafts/cpp/user.cpp)
-- go
-  - [main.go](.cache/drafts/go/main.go)
-<!-- links -->
-
-## Testes
-
-```txt
-
->>>>>>>> 01
-1 2 3
-========
-[ 8 ]
-[ 3 5 ]
-[ 1 2 3 ]
-<<<<<<<<
-
->>>>>>>> 02
-3 2 1
-========
-[ 8 ]
-[ 5 3 ]
-[ 3 2 1 ]
-<<<<<<<<
-
->>>>>>>> 03
-4 3 2 1
-========
-[ 20 ]
-[ 12 8 ]
-[ 7 5 3 ]
-[ 4 3 2 1 ]
-<<<<<<<<
-
->>>>>>>> 04
-1 1 2 3 5 8
-========
-[ 89 ]
-[ 34 55 ]
-[ 13 21 34 ]
-[ 5 8 13 21 ]
-[ 2 3 5 8 13 ]
-[ 1 1 2 3 5 8 ]
-<<<<<<<<
-
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1 2 4 8 16 32 64
+======== EXPECT
+[ 729 ]
+[ 243 486 ]
+[ 81 162 324 ]
+[ 27 54 108 216 ]
+[ 9 18 36 72 144 ]
+[ 3 6 12 24 48 96 ]
+[ 1 2 4 8 16 32 64 ]
+<<<<<<<< FINISH
 ```
+<!-- load -->

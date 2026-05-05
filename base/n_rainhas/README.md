@@ -23,15 +23,30 @@ A entrada consiste em um único número inteiro:
 
 - Quantidades de maneiras possíveis para posicionar `n` rainhas em um tabuleiro `n x n`
 
-### Exemplo
+## Exemplos
 
-```txt
->>>>>>>>>>>
-4
-<<<<<<<<<<<
-2
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
 
-### Explicação
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+0
+<<<<<<<< FINISH
+```
 
-Em um tabuleiro 4 x 4 com 4 rainhas temos 2 maneiras possíveis para posicionar 4 rainhas de modo que nenhuma ataque a outra.
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+0
+<<<<<<<< FINISH
+```
+<!-- load -->

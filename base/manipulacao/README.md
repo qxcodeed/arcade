@@ -1,8 +1,8 @@
 # Estressados Operações III
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Shell](#shell)
--- | -- | --
+[Intro](#intro) | [Shell](#shell)
+-- | --
 <!-- toch -->
 
 ![cover](assets/cover.jpg)
@@ -10,6 +10,10 @@
 ***
 
 ## Intro
+
+O vetor representa as seguintes informações:
+  - Valores positivos representam homens, e valores negativos representam mulheres.
+  - O valor absoluto representa o nível de stress da pessoa, ou seja, quanto maior o valor, mais estressada a pessoa está.
 
 ### filter
 
@@ -31,19 +35,6 @@
 - **repetidos**: retorne uma nova lista apenas com os valores repetidos
 
 ***
-
-## Draft
-
-<!-- links .cache/drafts -->
-- cpp
-  - [shell.cpp](.cache/drafts/cpp/shell.cpp)
-- go
-  - [shell.go](.cache/drafts/go/shell.go)
-- java
-  - [Shell.java](.cache/drafts/java/Shell.java)
-- ts
-  - [shell.ts](.cache/drafts/ts/shell.ts)
-<!-- links -->
 
 ## Shell
 

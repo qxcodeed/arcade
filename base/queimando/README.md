@@ -21,96 +21,51 @@ Dado a matriz da floresta e o ponto inicial onde começa o fogo, queime as árvo
 
 - A matriz após a queimada acontecer colocando 'o' para cada árvore queimada.
 
-## Rascunhos
+## Exemplos
 
-<!-- links .cache/drafts -->
-- go
-  - [main.go](.cache/drafts/go/main.go)
-  - [stack.go](.cache/drafts/go/stack.go)
-- py
-  - [main.py](.cache/drafts/py/main.py)
-<!-- links -->
-
-## Testes
-
-```txt
->>>>>>>> 01
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 2 3 1 1
 #.#
 .##
-========
+======== EXPECT
 #.o
 .oo
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>> 02
+```py
+>>>>>>>> INSERT
 5 5 0 0
 #..#.
 #...#
 ###..
 ..#.#
 ..###
-========
+======== EXPECT
 o..#.
 o...#
 ooo..
 ..o.o
 ..ooo
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>> 03
+```py
+>>>>>>>> INSERT
 5 7 2 0
 #..#.#.
 #..####
 ###...#
 ..#.###
 #.###..
-========
+======== EXPECT
 o..o.o.
 o..oooo
 ooo...o
 ..o.ooo
 #.ooo..
-<<<<<<<<
-
->>>>>>>> 04
-5 5 0 0
-...#.
-#...#
-###..
-..#.#
-..###
-========
-...#.
-#...#
-###..
-..#.#
-..###
-<<<<<<<<
-
->>>>>>>> 05
-10 40 0 3
-..####..##.##.#..#.#####.##.####.#.#.###
-.##.####..#####.##..##.#.###...##.#.#.#.
-.#....#..##.#...#.#.#..#.##.#.###.#.###.
-.###.#.##.##.######.###..##..#####.#..##
-.##########.##########.########.######.#
-.########.#####.###.########.#..##.####.
-###.###..##.#..###.#.##.##.###..####.###
-..######..#.#..#.###.##......####..#.###
-######.##.##.#.####.####.##############.
-##.##.#.###.###........###.##.####.###..
-========
-..oooo..##.oo.o..o.ooooo.oo.oooo.#.#.###
-.oo.oooo..ooooo.oo..oo.o.ooo...oo.#.#.#.
-.o....o..oo.o...o.o.o..o.oo.#.ooo.#.###.
-.ooo.o.oo.oo.oooooo.ooo..oo..ooooo.o..##
-.oooooooooo.oooooooooo.oooooooo.oooooo.#
-.oooooooo.ooooo.ooo.oooooooo.o..oo.oooo.
-ooo.ooo..oo.o..ooo.o.oo.oo.ooo..oooo.ooo
-..oooooo..o.o..o.ooo.oo......oooo..o.ooo
-oooooo.oo.oo.#.oooo.oooo.oooooooooooooo.
-oo.oo.#.ooo.###........ooo.oo.oooo.ooo..
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+<!-- load -->

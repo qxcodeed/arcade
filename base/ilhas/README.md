@@ -10,10 +10,18 @@ Uma ilha é cercada por água e é formada por conectar terras adjacentes horizo
 
 Aqui, copiamos apenas os dois primeiros casos de teste do problema original, ao final, submeta seu código no LeetCode [nesse link](https://leetcode.com/problems/number-of-islands/).
 
-## Tests
+### Constraints
 
-```txt
->>>>>>>> INSERT Teste 1
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m, n <= 300`
+- `grid[i][j] is '0' or '1'`
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4 5
 11110
 11010
@@ -22,9 +30,10 @@ Aqui, copiamos apenas os dois primeiros casos de teste do problema original, ao 
 ======== EXPECT
 1
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 2
+```py
+>>>>>>>> INSERT
 4 5
 11000
 11000
@@ -34,10 +43,4 @@ Aqui, copiamos apenas os dois primeiros casos de teste do problema original, ao 
 3
 <<<<<<<< FINISH
 ```
-
-### Constraints
-
-- `m == grid.length`
-- `n == grid[i].length`
-- `1 <= m, n <= 300`
-- `grid[i][j] is '0' or '1'`
+<!-- load -->

@@ -42,33 +42,39 @@ matchingStrings possui os seguintes parâmetros:
 
 Retorne um vetor inteiro dos resultados de todas as consultas em ordem.
 
-## Testes
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+2
+rw rw 
+3 
+y rw iowz
+======== EXPECT
+0 2 0
+<<<<<<<< FINISH
+```
 
 ```py
->>>>>>>> 00
-4 
-aba baba aba xzxb
-3
-aba xzxb ab
-========
-2 1 0
-<<<<<<<<
-
->>>>>>>> 01
+>>>>>>>> INSERT
 3
 c c mpikv
 8
 f c o uplbd o zl xoi mpikv
-========
+======== EXPECT
 0 2 0 0 0 0 0 1
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>> 02
+```py
+>>>>>>>> INSERT
 7
 qu qu pg qu qu cjyrx y
 6
 o qu sxsse b pd yuv
-========
+======== EXPECT
 0 4 0 0 0 0
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+<!-- load -->

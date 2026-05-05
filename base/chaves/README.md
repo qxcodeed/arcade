@@ -16,50 +16,6 @@ A entrada é composta de quinze linhas, cada uma contendo o resultado de um jogo
 
 Seu programa deve imprimir uma única linha, contendo a letra identificadora da equipe campeã.
 
-## Entradas de amostra
-
-```txt
->>>>>>>> 01
-4 1
-1 0
-0 4
-3 1
-2 3
-1 2
-2 0
-0 2
-1 2
-4 3
-0 1
-3 2
-3 4
-1 4
-1 0
-========
-F
-<<<<<<<<
-
->>>>>>>> 02
-2 0
-1 0
-2 1
-1 0
-1 0
-1 2
-1 2
-1 0
-2 1
-1 0
-0 1
-0 2
-2 1
-1 0
-2 1
-========
-A
-<<<<<<<<
-```
-
 ## Algorítmo
 
 - Coloque as 16 letras em uma fila
@@ -68,3 +24,73 @@ A
     - eles representam os times que vão jogar
     - leia os gols correspondentes
     - decida quem você coloca de novo na fila
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+2 3
+3 1
+2 1
+1 5
+2 4
+5 4
+5 2
+2 5
+1 4
+1 5
+2 5
+3 4
+1 2
+5 3
+5 1
+======== EXPECT
+H
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+2 4
+2 3
+1 5
+3 2
+2 3
+1 2
+2 1
+3 4
+3 2
+5 4
+1 2
+1 4
+2 5
+2 5
+4 5
+======== EXPECT
+P
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+1 5
+3 5
+1 2
+1 2
+4 1
+3 1
+2 3
+4 3
+4 2
+1 5
+5 2
+2 5
+2 5
+2 5
+2 1
+======== EXPECT
+H
+<<<<<<<< FINISH
+```
+<!-- load -->

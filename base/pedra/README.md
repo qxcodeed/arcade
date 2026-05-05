@@ -31,8 +31,9 @@ Você deve escrever um programa que identifique o competidor vencedor.
 - Cada competidor arremessa duas pedras, cujas distâncias estão entre **1** e **100 metros**.
 - Todos os competidores que lançarem **qualquer** pedra a **menos de 10 metros** são automaticamente **desclassificados**.
 
-### Testes
+## Exemplos
 
+<!-- load tests.toml --tests 3 -->
 ```py
 >>>>>>>> INSERT
 2
@@ -64,21 +65,4 @@ Você deve escrever um programa que identifique o competidor vencedor.
 1
 <<<<<<<< FINISH
 ```
-
-```py
->>>>>>>> INSERT
-4
-12 15
-20 23
-10 9
-35 35
-======== EXPECT
-3
-<<<<<<<< FINISH
-```
-
-### Dicas
-
-- Utilize a função `abs()` para calcular a diferença absoluta entre as distâncias das pedras A e B.
-- Para resolver o problema de desclassificação, verifique se ambos os arremessos são **maiores ou iguais a 10 metros**.
-- Caso múltiplos competidores tenham a mesma pontuação, escolha aquele que tiver o **menor índice**.
+<!-- load -->

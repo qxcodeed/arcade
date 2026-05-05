@@ -16,14 +16,30 @@ A entrada é composta por uma única linha contendo dois inteiros $n$ e $k$ resp
 
 A saída é composta por uma única linha contendo um único número, a quantidade de empresas E em que Suarez irá investir seu capital.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
-18 4
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+804289383 42641504
+======== EXPECT
+32
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
-
-```txt
-6
+```py
+>>>>>>>> INSERT
+681692777 10404975
+======== EXPECT
+128
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+957747793 424238335
+======== EXPECT
+4
+<<<<<<<< FINISH
+```
+<!-- load -->

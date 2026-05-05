@@ -11,10 +11,19 @@ Troque a cor do pixel inicial e de todos os pixels conectados a ele (em 4 direç
 
 Aqui, copiamos apenas alguns casos de teste do problema original, ao final, submeta seu código no LeetCode [nesse link](https://leetcode.com/problems/flood-fill/).
 
-## Tests
+## Constraints
 
-```txt
->>>>>>>> INSERT Teste 1
+- `m == image.length`
+- `n == image[i].length`
+- `1 <= m, n <= 50c`
+- `0 <= sr < m`
+- `0 <= sc < n`
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3 3
 1 1 1
 1 1 0
@@ -25,9 +34,10 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 2 2 0
 2 0 1
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 2
+```py
+>>>>>>>> INSERT
 2 3
 0 0 0
 0 0 0
@@ -38,11 +48,4 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 0 0 0
 <<<<<<<< FINISH
 ```
-
-## Constraints
-
-- `m == image.length`
-- `n == image[i].length`
-- `1 <= m, n <= 50c`
-- `0 <= sr < m`
-- `0 <= sc < n`
+<!-- load -->

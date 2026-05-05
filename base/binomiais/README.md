@@ -22,14 +22,30 @@ A primeira linha contendo dois inteiros n e k.
 
 Imprima uma linha contendo C(n,k).
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
-8 4
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+8 1
+======== EXPECT
+8
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
-
-```txt
-70
+```py
+>>>>>>>> INSERT
+8 2
+======== EXPECT
+28
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+8 3
+======== EXPECT
+56
+<<<<<<<< FINISH
+```
+<!-- load -->

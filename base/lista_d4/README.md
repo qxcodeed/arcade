@@ -15,7 +15,7 @@ Vamos partir do código da atividade anterior, a @lista_d2. A classe `LList` nã
 
 ```ts
 class Node[T comparable] {
-    - value: T        // Valor é público
+    - Value: T        // Valor é público
     - next: *Node[T]       // o próximo nó da lista
     - prev: *Node[T]       // o nó anterior
     - root: *Node[T]       // aponta para o nó sentinela da lista da qual ele faz parte

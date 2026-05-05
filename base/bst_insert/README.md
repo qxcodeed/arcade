@@ -1,7 +1,7 @@
 # Árvore Binária de Busca - Inserção
 
 <!-- toch -->
-[Intro](#intro) | [Entrada e Saída](#entrada-e-saída) | [Tests](#tests)
+[Intro](#intro) | [Entrada e Saída](#entrada-e-saída) | [Exemplos](#exemplos)
 -- | -- | --
 <!-- toch -->
 
@@ -15,26 +15,29 @@
 - Entrada: lista de números inteiros representando a árvore a serem inseridos.
 - Saída: Árvore impressa pelo BShow que já vem no rascunho.
 
-## Tests
+## Exemplos
 
-```txt
->>>>>>>> INSERT um
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4
 ======== EXPECT
 4
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT dois
+```py
+>>>>>>>> INSERT
 2 3 2
 ======== EXPECT
 ╭───#
 2
 ╰───3
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT tres
+```py
+>>>>>>>> INSERT
 4 2 1 5 2 1
 ======== EXPECT
     ╭───1
@@ -43,44 +46,5 @@
 4
 ╰───5
 <<<<<<<< FINISH
-
-
->>>>>>>> INSERT quatro
-4 9 6 3 1
-======== EXPECT
-    ╭───1
-╭───3
-│   ╰───#
-4
-│   ╭───6
-╰───9
-    ╰───#
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT cinco
-3 2 5 8
-======== EXPECT
-╭───2
-3
-│   ╭───#
-╰───5
-    ╰───8
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT seis
-8 10 12 15 5 7 3 9 11
-======== EXPECT
-    ╭───3
-╭───5
-│   ╰───7
-8
-│   ╭───9
-╰───10
-    │   ╭───11
-    ╰───12
-        ╰───15
-<<<<<<<< FINISH
-
 ```
+<!-- load -->

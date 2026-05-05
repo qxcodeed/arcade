@@ -23,24 +23,39 @@ Seu programa deve imprimir uma linha contedo **N-M** inteiros com os identificad
 - Ao invés de remover do vetor original, que é uma operação ineficiente, percorra o vetor original consultando se o elemento deve permanecer e preencha um novo vetor.
 - Assim, o custo total permanece O(N)
 
-### Entrada de amostra
+## Exemplos
 
-```txt
->>>>>>>> 01
-4
-10 9 6 3
-1
-3
-========
-10 9 6 
-<<<<<<<<
-
->>>>>>>> 02
-8
-5 100 9 81 70 33 2 1000
-3
-9 33 5
-========
-100 81 70 2 1000 
-<<<<<<<<
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+10
+817 364 524 565 132 499 412 563 297 638 
+7
+364 817 412 132 499 524 297 
+======== EXPECT
+565 563 638 
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+9
+2 840 316 408 711 537 296 565 735 
+5
+316 565 408 735 2 
+======== EXPECT
+840 711 537 296 
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+7
+831 565 110 581 726 770 990 
+3
+770 581 565 
+======== EXPECT
+831 110 726 990 
+<<<<<<<< FINISH
+```
+<!-- load -->

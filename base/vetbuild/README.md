@@ -29,6 +29,7 @@ Implemente a classe do vetor dinâmico.
 <!-- links .cache/drafts -->
 - c
   - [main.c](.cache/drafts/c/main.c)
+  - [teste.go](.cache/drafts/c/teste.go)
 - cpp
   - [extra.md](.cache/drafts/cpp/extra.md)
   - [main.cpp](.cache/drafts/cpp/main.cpp)

@@ -26,8 +26,9 @@ Neste problema, dadas as posições do helicóptero, do policial e do fugitivo, 
 
 - Os inteiros **H**, **P** e **F* são distintos e estão entre **0** e **15**, inclusive.
 
-## Testes
+## Exemplos
 
+<!-- load tests.toml --tests 3 -->
 ```py
 >>>>>>>> INSERT
 4 14 7 -1
@@ -51,11 +52,4 @@ N
 S
 <<<<<<<< FINISH
 ```
-
-```py
->>>>>>>> INSERT
-0 14 15 -1
-======== EXPECT
-N
-<<<<<<<< FINISH
-```
+<!-- load -->

@@ -30,11 +30,15 @@ Implemente a classe fração e os métodos orientados no arquivo `fracao.hpp`.
   - Lista de frações reduzidas no formato `numerador/denominador`
   - Lista ordenada pelo valor da fração.
 
-```txt
->>>>>>>> 01
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 1/2 1/3 2/3 3/4 8/4 10/50 20/5 13/5 4/50 50/30
-========
+======== EXPECT
 1/2 1/3 2/3 3/4 2/1 1/5 4/1 13/5 2/25 5/3
 2/25 1/5 1/3 1/2 2/3 3/4 5/3 2/1 13/5 4/1
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+<!-- load -->

@@ -20,9 +20,10 @@ Sua tarefa é simular o movimento de uma cobra em um plano 2D. A cobra é compos
 - O eixo **x** aumenta para a direita.
 - O eixo **y** aumenta para baixo.
 
-### Testes
+## Exemplos
 
-``` py
+<!-- load tests.toml --tests 3 -->
+```py
 >>>>>>>> INSERT
 1 L
 5 5
@@ -58,30 +59,4 @@ Sua tarefa é simular o movimento de uma cobra em um plano 2D. A cobra é compos
 6 6
 <<<<<<<< FINISH
 ```
-
-```py
->>>>>>>> INSERT
-1 R
-5 5
-======== EXPECT
-6 5
-<<<<<<<< FINISH
-```
-
-```py
->>>>>>>> INSERT
-1 D
-5 5
-======== EXPECT
-5 6
-<<<<<<<< FINISH
-```
-
-```py
->>>>>>>> INSERT
-1 U
-5 5
-======== EXPECT
-5 4
-<<<<<<<< FINISH
-```
+<!-- load -->

@@ -11,10 +11,18 @@ Não é permitido mover na diagonal nem sair dos limites da matriz.
 
 Aqui, copiamos apenas alguns casos de teste do problema original, ao final, submeta seu código no LeetCode [nesse link](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/).
 
-## Tests
+## Constraints
 
-```txt
->>>>>>>> INSERT Teste 1
+- `m == matrix.length`
+- `n == matrix[i].length`
+- `1 <= m, n <= 200`
+- `0 <= matrix[i][j] <= 2³¹ - 1`
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3 3
 9 9 4
 6 6 8
@@ -22,9 +30,10 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 ======== EXPECT
 4
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 2
+```py
+>>>>>>>> INSERT
 3 3
 3 4 5
 3 2 6
@@ -32,22 +41,14 @@ Aqui, copiamos apenas alguns casos de teste do problema original, ao final, subm
 ======== EXPECT
 4
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT Teste 3
+```py
+>>>>>>>> INSERT
 1 1
 1
 ======== EXPECT
 1
 <<<<<<<< FINISH
 ```
-
-## Constraints
-
-- `m == matrix.length`
-
-- `n == matrix[i].length`
-
-- `1 <= m, n <= 200`
-
-- `0 <= matrix[i][j] <= 2³¹ - 1`
+<!-- load -->

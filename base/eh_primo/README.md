@@ -2,71 +2,31 @@
 
 Seja um número inteiro, retorne se ele é primo ou não.
 
-## Draft
+  
+## Exemplos
 
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-- go
-  - [main.go](.cache/drafts/go/main.go)
-<!-- links -->
-
-## Testes
-
-```bash
-
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 1
-========
+======== EXPECT
 false
-<<<<<<<<
-
->>>>>>>>
-2
-========
-true
-<<<<<<<<
-
->>>>>>>>
-3
-========
-true
-<<<<<<<<
-
->>>>>>>>
-4
-========
-false
-<<<<<<<<
-
->>>>>>>>
-5
-========
-true
-<<<<<<<<
-
->>>>>>>>
-6
-========
-false
-<<<<<<<<
-
->>>>>>>>
-7
-========
-true
-<<<<<<<<
-
->>>>>>>>
-18
-========
-false
-<<<<<<<<
-
->>>>>>>>
-19
-========
-true
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+true
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+true
+<<<<<<<< FINISH
+```
+<!-- load -->

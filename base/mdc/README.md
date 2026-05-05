@@ -22,42 +22,34 @@ Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
   - A entrada consiste de dois números inteiros positivos.
 - Saída
   - A saída consiste de um número inteiro positivo que representa o mdc dos dois números.
+  
+## Exemplos
 
-## Shell
-
-```bash
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3
 5
-========
+======== EXPECT
 1
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 6
 9
-========
+======== EXPECT
 3
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 50
 15
-========
+======== EXPECT
 5
-<<<<<<<<
-
->>>>>>>>
-270
-192
-========
-6
-<<<<<<<<
-
->>>>>>>>
-192
-276
-========
-12
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+<!-- load -->

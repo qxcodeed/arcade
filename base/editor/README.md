@@ -15,48 +15,34 @@ entrada.
     - ">" move o cursor para direita, se for possível.
     - "<" move o cursor para esquerda, se for possível.
 
-## Testes
+  
+## Exemplos
 
-```txt
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 abc
-========
+======== EXPECT
 abc|
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 euRteRamo
-========
+======== EXPECT
 eu
 te
 amo|
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 euRamo<<<
-========
+======== EXPECT
 eu
 |amo
-<<<<<<<<
-
->>>>>>>>
-euRamo<<<<<<<como-
-========
-como-|eu
-amo
-<<<<<<<<
-
-
->>>>>>>>
-euRemo<<Ba>>>>>>
-========
-eu
-amo|
-<<<<<<<<
-
->>>>>>>>
-voc-ae<<v<<e>>>Di>
-========
-voce-vai|
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+<!-- load -->

@@ -1,8 +1,8 @@
 # Coelhos procriando e morrendo
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Tests](#tests)
--- | -- | --
+[Intro](#intro) | [Exemplos](#exemplos)
+-- | --
 <!-- toch -->
 
 ## Intro
@@ -15,35 +15,38 @@ A imagem mostra que ao final de seis meses teremos apenas 4 pares de coelhos con
 
 Desenvolva uma função recursiva $f(n)$ que devolve o número de pares de coelhos após n meses considerando que os coelhos morrem depois de 3 meses.
 
-## Draft
+### Entrada
 
-- Você deve implementar de forma recursiva a função `f` no arquivo `main.cpp`.
+A entrada é composta por uma única linha contendo um único inteiro correspondente ao mês desejado ($1 \leq n \leq 40$).
 
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-<!-- links -->
+### Saída
 
-## Tests
+A saída é composta por uma única linha contendo o número total de pares de coelhos que estão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz um par de coelhos e eles morrem depois de 3 meses.
 
-- Entrada
-  - A entrada é composta por uma única linha contendo um único inteiro correspondente ao mês desejado ($1 \leq n \leq 40$).
+## Exemplos
 
-- Saída
-  - A saída é composta por uma única linha contendo o número total de pares de coelhos que estão presentes após n meses, se começarmos com 1 par e em cada geração, cada par de coelhos em idade reprodutiva produz um par de coelhos e eles morrem depois de 3 meses.
-
-```txt
->>>>>>>>
-6
-========
-4
-<<<<<<<<
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
 
-```txt
->>>>>>>>
-40
-========
-55405
-<<<<<<<<
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+2
+<<<<<<<< FINISH
+```
+<!-- load -->

@@ -21,20 +21,6 @@ Implemente a classe do vetor dinâmico.
 
 - Os seguintes testes mostrar o comportamento esperado da classe para cada invocação de método.
 
-## Drafts
-
-<!-- links .cache/drafts -->
-- go
-  - [extra.md](.cache/drafts/go/extra.md)
-  - [main.go](.cache/drafts/go/main.go)
-- java
-  - [Main.java](.cache/drafts/java/Main.java)
-  - [extra.md](.cache/drafts/java/extra.md)
-- py
-  - [extra.md](.cache/drafts/py/extra.md)
-  - [main.py](.cache/drafts/py/main.py)
-<!-- links -->
-
 
 ## Testes
 

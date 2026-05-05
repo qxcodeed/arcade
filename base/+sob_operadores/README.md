@@ -4,7 +4,4 @@
 
 <!-- load imprimindo.cpp fenced -->
 
-```cpp
-```
-
 <!-- load -->

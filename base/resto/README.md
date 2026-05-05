@@ -32,21 +32,23 @@ Imprimindo ao contrário, temos:
 
 [![imagem](https://user-images.githubusercontent.com/4747652/267033420-04b92b31-5905-45ea-9cb6-f903681e7e20.png)](https://youtu.be/2n8w2yju6Sc)
 
-## Testes
+## Exemplos
 
-```bash
-
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 5
-========
+======== EXPECT
 0 1
 1 0
 2 1
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 100
-========
+======== EXPECT
 0 1
 1 1
 3 0
@@ -54,11 +56,13 @@ Imprimindo ao contrário, temos:
 12 1
 25 0
 50 0
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 101
-========
+======== EXPECT
 0 1
 1 1
 3 0
@@ -66,20 +70,6 @@ Imprimindo ao contrário, temos:
 12 1
 25 0
 50 1
-<<<<<<<<
-
-
->>>>>>>>
-150
-========
-0 1
-1 0
-2 0
-4 1
-9 0
-18 1
-37 1
-75 0
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+<!-- load -->

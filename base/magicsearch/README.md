@@ -18,77 +18,33 @@ Seu algoritmo deve utilizar a busca binária para encontrar alguma ocorrência d
 - Saída
   - Posição da última ocorrência do elemento ou onde ele deve ser inserido
 
-## Testes
+## Exemplos
 
-```bash
+<!-- load tests.toml --tests 3 -->
+```py
 >>>>>>>> INSERT
 [ ]
 4
 ======== EXPECT
 0
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 [ 1 1 1 ]
 1
 ======== EXPECT
 2
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 [ 1 2 3 ]
 1
 ======== EXPECT
 0
 <<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 ]
-3
-======== EXPECT
-2
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 2 2 3 ]
-2
-======== EXPECT
-4
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 3 3 5 ]
-0
-======== EXPECT
-0
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 4 4 6 6 ]
-2
-======== EXPECT
-3
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 4 4 6 6 ]
-5
-======== EXPECT
-5
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 4 4 6 6 ]
-8
-======== EXPECT
-7
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 1 1 4 4 6 6 6 6 6 6 6 6 6 ]
-6
-======== EXPECT
-13
-<<<<<<<< FINISH
-
 ```
+<!-- load -->

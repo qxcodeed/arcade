@@ -16,14 +16,30 @@ A entrada possui dois inteiros N e C, separado por um espaço, representando o n
 
 Um inteiro representando a quantidade de dinheiro que Jota Marcelinho entrou na primeira igreja.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3 20
+======== EXPECT
+17.50
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
-
-```txt
-17.5
+```py
+>>>>>>>> INSERT
+6 20
+======== EXPECT
+19.69
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+6 10
+======== EXPECT
+9.84
+<<<<<<<< FINISH
+```
+<!-- load -->

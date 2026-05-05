@@ -18,16 +18,18 @@ A entrada é composta por duas linhas:
 
  É garantido que $\sum_{i = 0}^{n-1} a_i < 2^{31}$
 
-### Exemplo
+## Exemplos
 
-```txt
->>>>>>>>
-5 9
-3 34 4 12 5
-========
+<!-- load tests.toml --tests 1 -->
+```py
+>>>>>>>> INSERT
+6 10  
+3 34 4 12 5 2  
+======== EXPECT
 true
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+<!-- load -->
 
 ### Explicação
 

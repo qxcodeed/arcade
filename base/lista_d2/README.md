@@ -46,6 +46,9 @@ while (it.hasNext()) {
 for (auto it = list.begin(); it != list.end(); ++it) {
     std::cout << *it << std::endl;
 }
+for (auto it = list.rbegin(); it != list.rend(); ++it) {
+    std::cout << *it << std::endl;
+}
 ```
 
 ```go
@@ -54,6 +57,10 @@ lista := list.New()
 for e := lista.Front(); e != nil; e = e.Next() {
     fmt.Println(e.Value)
 }
+for e := lista.Back(); e != nil; e = e.Prev() {
+    fmt.Println(e.Value)
+}
+
 ```
 
 ## Guide
@@ -64,10 +71,10 @@ Vamos partir do código da atividade anterior, a @lista_d1, e implementar um mod
 
 ```ts
 class Node {
-    - value: int        // Valor é público
     - next: *Node       // o próximo nó da lista
     - prev: *Node       // o nó anterior
     - root: *Node       // aponta para o nó sentinela da lista da qual ele faz parte
+    + Value: int        // Valor é público
     + Next(): *Node     // retorna o próximo nó ou nulo, se o próximo é o root
     + Prev(): *Node     // retorna o nó anterior ou nulo, se o anterior é o root
 }    

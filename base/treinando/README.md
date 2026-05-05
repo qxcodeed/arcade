@@ -1,8 +1,8 @@
 # Treinando recursão com vetores
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Shell](#shell)
--- | -- | --
+[Intro](#intro) | [Shell](#shell)
+-- | --
 <!-- toch -->
 
 ![_](assets/cover.jpg)
@@ -15,21 +15,11 @@
 - Na seção Shell, você pode ver os testes que serão executados.
 - Na seção Draft, você pode baixar manualmente os arquivos. Mas é mais prático utilizar o `tko`.
 
-## Draft
-
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-- go
-  - [main.go](.cache/drafts/go/main.go)
-<!-- links -->
-
-___
 
 ## Shell
   
 ```bash
-#__case tostr
+#TEST_CASE tostr
 
 $read
 $tostr
@@ -50,7 +40,7 @@ $end
 ```
 
 ```bash
-#__case torev
+#TEST_CASE torev
 
 $read
 $torev
@@ -72,7 +62,7 @@ $end
 ```
 
 ```bash
-#__case reverse
+#TEST_CASE reverse
 
 $read
 $reverse
@@ -98,7 +88,7 @@ $end
 ```
 
 ```bash
-#__case sum
+#TEST_CASE sum
 $read
 $sum
 0
@@ -119,7 +109,7 @@ $end
 ```
 
 ```bash
-#__case mult
+#TEST_CASE mult
 $read
 $mult
 1
@@ -140,7 +130,7 @@ $end
 ```
 
 ```bash
-#__case min
+#TEST_CASE min
 $read
 $min
 -1

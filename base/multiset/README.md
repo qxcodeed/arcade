@@ -41,7 +41,7 @@ Implemente a classe do vetor dinâmico.
 ## Testes
 
 ```bash
-#__case insert and show with repetitions
+#TEST_CASE insert and show with repetitions
 $init 2
 $insert 3 1 2 2 3 4 3
 $show
@@ -50,7 +50,7 @@ $end
 ```
 
 ```bash
-#__case contains true and false
+#TEST_CASE contains true and false
 $init 5
 $insert 5 1 5 3
 $show
@@ -65,7 +65,7 @@ $end
 ```
 
 ```bash
-#__case erase one occurrence at a time
+#TEST_CASE erase one occurrence at a time
 $init 5
 $insert 2 2 2 3
 $show
@@ -85,7 +85,7 @@ $end
 ```
 
 ```bash
-#__case count
+#TEST_CASE count
 $init 5
 $insert 1 2 2 2 3 3 4
 $count 2
@@ -100,7 +100,7 @@ $end
 ```
 
 ```bash
-#__case unique
+#TEST_CASE unique
 $init 10
 $insert 5 5 5 1 2 2 3 3 3 3
 $show
@@ -114,7 +114,7 @@ $end
 ```
 
 ```bash
-#__case clear
+#TEST_CASE clear
 $init 3
 $insert 1 1 2 3
 $show

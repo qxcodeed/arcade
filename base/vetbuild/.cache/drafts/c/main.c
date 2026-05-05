@@ -200,5 +200,6 @@ int main() {
     }
 
     vector_destroy(v);
+
     return 0;
 }

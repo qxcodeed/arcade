@@ -17,117 +17,43 @@ entrada.
   - __Parte 2__ - Fila de ações.
     - "Z" Desfazer, desfaz a inserção ou remoção.
     - "Y" Refazer, refaz a última inserção ou remoção.
+  
+## Exemplos
 
-## Testes da parte 1
-
-```txt
->>>>>>>>
+<!-- load tests.toml --tests 4 -->
+```py
+>>>>>>>> INSERT
 abc
-========
+======== EXPECT
 abc|
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 euRteRamo
-========
+======== EXPECT
 eu
 te
 amo|
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 euRamo<<<
-========
+======== EXPECT
 eu
 |amo
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>>
+```py
+>>>>>>>> INSERT
 euRamo<<<<<<<como-
-========
+======== EXPECT
 como-|eu
 amo
-<<<<<<<<
-
-
->>>>>>>>
-euRemo<<Ba>>>>>>
-========
-eu
-amo|
-<<<<<<<<
-
->>>>>>>>
-voc-ae<<v<<e>>>Di>
-========
-voce-vai|
-<<<<<<<<
+<<<<<<<< FINISH
 ```
-
-## Parte II
-
-Se você implementar a __Parte 2__ o undo e o redo funcionam como no seu editor.
-
-Apenas dados geram novos estados. Movimentar não. Vamos processar passo a passo o comandos no passo a passo dos testes
-
-```txt
->>>>>>>>
-eu-te-amoB
-========
-eu-te-am|
-<<<<<<<<
-
->>>>>>>>
-eu-te-amoBZ
-========
-eu-te-amo|
-<<<<<<<<
-
->>>>>>>>
-eu-te-amoBZ<<braco
-========
-eu-te-abraco|mo
-<<<<<<<<
-
->>>>>>>>
-abcZZd
-========
-ad|
-<<<<<<<<
-
->>>>>>>>
-abcZZYd
-========
-abd|
-<<<<<<<<
-
->>>>>>>>
-abcBZ
-========
-abc|
-<<<<<<<<
-
->>>>>>>>
-abcBZZZZ
-========
-|
-<<<<<<<<
-
-
->>>>>>>>
-abcBZZZZZZZZZZZZY
-========
-a|
-<<<<<<<<
-
->>>>>>>>
-abcBZZZZZZZZZZZZYbYYYYY
-========
-ab|
-<<<<<<<<
-
-
-```
-
-Perceba que como no seu editor, se você der C-Z e depois escrever algo, você
-perderá o que tinha escrito e não poderá mais dar redo.
+<!-- load -->

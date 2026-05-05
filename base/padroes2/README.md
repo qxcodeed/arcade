@@ -22,14 +22,30 @@ A entrada é composta por uma única linha contendo um inteiro `n` representando
 
 A saída é composta por uma única linha contendo o total de peças da n-ésima imagem da sequência.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1
+======== EXPECT
 3
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+8
+<<<<<<<< FINISH
+```
 
-```txt
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
 15
+<<<<<<<< FINISH
 ```
+<!-- load -->

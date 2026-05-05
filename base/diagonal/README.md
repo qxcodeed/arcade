@@ -53,3 +53,63 @@ func diagonal(s string, k int) {
   // faça a chamada recursiva
 }
 ```
+
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+jefferson
+======== EXPECT
+j
+ e
+  f
+   f
+    e
+     r
+      s
+       o
+        n
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+lukeEuSouSeuPai
+======== EXPECT
+l
+ u
+  k
+   e
+    E
+     u
+      S
+       o
+        u
+         S
+          e
+           u
+            P
+             a
+              i
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+fabiocarlos
+======== EXPECT
+f
+ a
+  b
+   i
+    o
+     c
+      a
+       r
+        l
+         o
+          s
+<<<<<<<< FINISH
+```
+<!-- load -->

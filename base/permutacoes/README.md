@@ -20,32 +20,58 @@ A entrada consiste em uma única string com até `6` caracteres (sem espaços):
 
 - Uma lista com **todas as permutações distintas** da string de entrada, **ordenadas lexicograficamente**, uma por linha.
 
----
+## Exemplos
 
-**Você pode ver sobre ordem lexicográfica [aqui](https://en.wikipedia.org/wiki/Lexicographic_order).**
-
-**Dica:** coloque todas as permutações **em um array**, e depois **ordene o array** para garantir a ordem lexicográfica na saída.
-
-### Exemplo
-
-```txt
->>>>>>>>
-abc
-========
-abc
-acb
-bac
-bca
-cab
-cba
-<<<<<<<<
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+abcd
+======== EXPECT
+abcd
+abdc
+acbd
+acdb
+adbc
+adcb
+bacd
+badc
+bcad
+bcda
+bdac
+bdca
+cabd
+cadb
+cbad
+cbda
+cdab
+cdba
+dabc
+dacb
+dbac
+dbca
+dcab
+dcba
+<<<<<<<< FINISH
 ```
 
-```txt
->>>>>>>>
-ab
-========
-ab
-ba
-<<<<<<<<
+```py
+>>>>>>>> INSERT
+a
+======== EXPECT
+a
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+1a2
+======== EXPECT
+12a
+1a2
+21a
+2a1
+a12
+a21
+<<<<<<<< FINISH
+```
+<!-- load -->

@@ -8,47 +8,30 @@
 - Precedência 2: `*` e `/`
 - Precedência 3(maior): `^`
 
-## Drafts
+## Exemplos
 
-<!-- links .cache/drafts -->
-- cpp
-  - [fn.hpp](.cache/drafts/cpp/fn.hpp)
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-<!-- links -->
-
-## Testes
-
-```bash
-
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 3 + 4 * 2
-========
+======== EXPECT
 3 4 2 * +
-<<<<<<<<
-
-
->>>>>>>>
-3 + 4 * 2 - 1
-========
-3 4 2 * + 1 -
-<<<<<<<<
-
->>>>>>>>
-3 + 4 * 2 - 1 / 2
-========
-3 4 2 * + 1 2 / -
-<<<<<<<<
-
->>>>>>>>
-1 + 2 * 3 ^ 4
-========
-1 2 3 4 ^ * +
-<<<<<<<<
-
->>>>>>>>
-1 + 2 * 3 ^ 4 - 5
-========
-1 2 3 4 ^ * + 5 -
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+3 + 4 * 2 - 1
+======== EXPECT
+3 4 2 * + 1 -
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+3 + 4 * 2 - 1 / 2
+======== EXPECT
+3 4 2 * + 1 2 / -
+<<<<<<<< FINISH
+```
+<!-- load -->

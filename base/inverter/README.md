@@ -1,7 +1,7 @@
 # Inverter a árvore
 
 <!-- toch -->
-[Descrição](#descrição) | [Testes](#testes)
+[Descrição](#descrição) | [Exemplos](#exemplos)
 -- | --
 <!-- toch -->
 
@@ -14,18 +14,20 @@
 - Saída
   - Impressão da função 'BShow' que já vem no rascunho.
 
-## Testes
+## Exemplos
 
-```txt
->>>>>>>> INSERT um
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4 # # 
 ======== EXPECT
 4
 4
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT dois
+```py
+>>>>>>>> INSERT
 1 # 0 # # 
 ======== EXPECT
 ╭───#
@@ -35,9 +37,10 @@
 1
 ╰───#
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT tres
+```py
+>>>>>>>> INSERT
 4 # 8 2 # # # 
 ======== EXPECT
 ╭───#
@@ -51,61 +54,5 @@
 4
 ╰───#
 <<<<<<<< FINISH
-
-
->>>>>>>> INSERT quatro
-0 9 4 # # # 5 # # 
-======== EXPECT
-    ╭───4
-╭───9
-│   ╰───#
-0
-╰───5
-╭───5
-0
-│   ╭───#
-╰───9
-    ╰───4
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT cinco
-0 4 # # 2 0 # # 3 # # 
-======== EXPECT
-╭───4
-0
-│   ╭───0
-╰───2
-    ╰───3
-    ╭───3
-╭───2
-│   ╰───0
-0
-╰───4
-<<<<<<<< FINISH
-
-
->>>>>>>> INSERT seis
-2 0 0 # # # 3 # 7 # 9 # # 
-======== EXPECT
-    ╭───0
-╭───0
-│   ╰───#
-2
-│   ╭───#
-╰───3
-    │   ╭───#
-    ╰───7
-        ╰───9
-        ╭───9
-    ╭───7
-    │   ╰───#
-╭───3
-│   ╰───#
-2
-│   ╭───#
-╰───0
-    ╰───0
-<<<<<<<< FINISH
-
 ```
+<!-- load -->

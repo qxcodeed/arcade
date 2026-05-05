@@ -1,7 +1,7 @@
 # Mostrando a árvore formatada
 
 <!-- toch -->
-[Descrição](#descrição) | [Testes](#testes)
+[Descrição](#descrição) | [Exemplos](#exemplos)
 -- | --
 <!-- toch -->
 
@@ -21,11 +21,12 @@
   - `menor` se a primeira árvore for menor que a segunda;
   - `maior` se a primeira árvore for maior que a segunda;
   - `iguais` se ambas forem iguais.
+  
+## Exemplos
 
-## Testes
-
-```txt
->>>>>>>> INSERT um
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4 # # 
 4 # # 
 ======== EXPECT
@@ -33,9 +34,10 @@
 4
 iguais
 <<<<<<<< FINISH
+```
 
-
->>>>>>>> INSERT dois
+```py
+>>>>>>>> INSERT
 1 # 0 # # 
 1 # 1 # # 
 ======== EXPECT
@@ -47,8 +49,10 @@ iguais
 ╰───1
 menor
 <<<<<<<< FINISH
+```
 
->>>>>>>> INSERT dois
+```py
+>>>>>>>> INSERT
 1 # 2 # # 
 1 # 1 # # 
 ======== EXPECT
@@ -60,80 +64,5 @@ menor
 ╰───1
 maior
 <<<<<<<< FINISH
-
->>>>>>>> INSERT dois
-1 2 # # # 
-1 # 2 # # 
-======== EXPECT
-╭───2
-1
-╰───#
-╭───#
-1
-╰───2
-maior
-<<<<<<<< FINISH
-
->>>>>>>> INSERT dois
-1 # 2 # # 
-1 2 # # # 
-======== EXPECT
-╭───#
-1
-╰───2
-╭───2
-1
-╰───#
-menor
-<<<<<<<< FINISH
-
->>>>>>>> INSERT tres
-4 # 8 2 # # # 
-4 # 8 2 # # # 
-======== EXPECT
-╭───#
-4
-│   ╭───2
-╰───8
-    ╰───#
-╭───#
-4
-│   ╭───2
-╰───8
-    ╰───#
-iguais
-<<<<<<<< FINISH
-
->>>>>>>> INSERT tres
-4 # 8 2 # # # 
-4 8 2 # # # #
-======== EXPECT
-╭───#
-4
-│   ╭───2
-╰───8
-    ╰───#
-    ╭───2
-╭───8
-│   ╰───#
-4
-╰───#
-menor
-<<<<<<<< FINISH
-
->>>>>>>> INSERT quatro
-0 9 4 # # # 5 # # 
-0 8 4 # # # 5 # # 
-======== EXPECT
-    ╭───4
-╭───9
-│   ╰───#
-0
-╰───5
-    ╭───4
-╭───8
-│   ╰───#
-0
-╰───5
-maior
-<<<<<<<< FINISH
+```
+<!-- load -->

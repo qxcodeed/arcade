@@ -30,15 +30,31 @@ A entrada é composta por uma única linha contendo um inteiro $n$ representando
 ## Saída
 
 A saída é composta por uma única linha contendo o número de maneiras que uma escada com $n$ degraus pode ser subida saltando 1 ou 3 degraus por vez.
+  
+## Exemplos
 
-## Exemplo de Entrada
-
-```txt
-4
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1
+======== EXPECT
+1
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+1
+<<<<<<<< FINISH
+```
 
-```txt
+```py
+>>>>>>>> INSERT
 3
+======== EXPECT
+2
+<<<<<<<< FINISH
 ```
+<!-- load -->

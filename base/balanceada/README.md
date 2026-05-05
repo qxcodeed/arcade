@@ -1,8 +1,8 @@
 # Fórmula balanceada
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Tests](#tests)
--- | -- | --
+[Intro](#intro) | [Draft](#draft) | [Tests](#tests) | [Exemplos](#exemplos)
+-- | -- | -- | --
 <!-- toch -->
 
 ## Intro
@@ -45,10 +45,30 @@ Exemplos de strings não balanceadas:
 - `balanceado` se a string estiver balanceada.
 - `nao balanceado` caso contrário.
 
-```txt
->>>>>>>>
-(())
-========
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+()
+======== EXPECT
 balanceado
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+(())
+======== EXPECT
+balanceado
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+()()()()[][][][]
+======== EXPECT
+balanceado
+<<<<<<<< FINISH
+```
+<!-- load -->

@@ -17,8 +17,9 @@ Baruel Ruel tem muitas figurinhas do álbum de futebol. Ele estava indo para uma
 - **Linha 1:** Os números das figurinhas que estão repetidas ou **"N"** se não houver nenhuma.
 - **Linha 2:** Os números das figurinhas que estão faltando no álbum ou **"N"** se nenhuma estiver faltando.
 
-## Testes
+## Exemplos
 
+<!-- load tests.toml --tests 3 -->
 ```py
 >>>>>>>> INSERT
 5
@@ -51,14 +52,4 @@ N
 1 2 3
 <<<<<<<< FINISH
 ```
-
-```py
->>>>>>>> INSERT
-5
-5
-1 1 2 3 3
-======== EXPECT
-1 3
-4 5
-<<<<<<<< FINISH
-```
+<!-- load -->

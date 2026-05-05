@@ -31,84 +31,33 @@ func BetterSearch(arr []int, value int) (bool, int)
 - Saída
   - F ou V (Falso ou Verdadeiro) e a posição do elemento (encontrado ou onde deve ser inserido)
 
-## Testes
+## Exemplos
 
-```bash
+<!-- load tests.toml --tests 3 -->
+```py
 >>>>>>>> INSERT
 [ ]
 4
 ======== EXPECT
 F 0
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 [ 1 2 3 4 ]
 1
 ======== EXPECT
 V 0
 <<<<<<<< FINISH
+```
 
+```py
 >>>>>>>> INSERT
 [ 1 2 3 4 ]
 2
 ======== EXPECT
 V 1
 <<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 4 ]
-3
-======== EXPECT
-V 2
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 4 ]
-4
-======== EXPECT
-V 3
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 3 4 ]
-2
-======== EXPECT
-F 1
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 5 6 7 8 ]
-4
-======== EXPECT
-F 3
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 7 8 9 ]
-0
-======== EXPECT
-F 0
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 3 5 6 7 9 10 ]
-2
-======== EXPECT
-F 1
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ 1 2 3 6 7 9 ]
-9
-======== EXPECT
-V 5
-<<<<<<<< FINISH
-
->>>>>>>> INSERT
-[ -2 1 2 4 5 6 7 ]
-8
-======== EXPECT
-F 7
-<<<<<<<< FINISH
-
 ```
+<!-- load -->

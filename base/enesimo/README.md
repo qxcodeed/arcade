@@ -7,63 +7,31 @@ Dado um número inteiro `n`, gere o `n`-ésimo número primo apenas utilizando r
 Utilize o código eh_primo que você já implementou.
 
 O primeiro primo da lista é o número 2.
+  
+## Exemplos
 
-## Draft
-
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-<!-- links -->
-
-## Teste
-
-```txt
->>>>>>>>
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 1
-========
+======== EXPECT
 2
-<<<<<<<<
-
->>>>>>>>
-2
-========
-3
-<<<<<<<<
-
->>>>>>>>
-3
-========
-5
-<<<<<<<<
-
->>>>>>>>
-4
-========
-7
-<<<<<<<<
-
->>>>>>>>
-5
-========
-11
-<<<<<<<<
-
->>>>>>>>
-6
-========
-13
-<<<<<<<<
-
->>>>>>>>
-7
-========
-17
-<<<<<<<<
-
->>>>>>>>
-8
-========
-19
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+3
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
+5
+<<<<<<<< FINISH
+```
+<!-- load -->

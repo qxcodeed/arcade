@@ -11,6 +11,11 @@
 
 ## Intro
 
+Os vetores de entrada seguem a seguinte convenção:
+  - Valores positivos representam homens.
+  - Valores negativos representam mulheres.
+  - O valor absoluto do número representa o nível de stress da pessoa.
+
 ### pares
 
 - **occurr**: Faça uma contagem de quantas vezes cada nível de stress aparece e retorne essa contagem ordenado pelo nível de stress.

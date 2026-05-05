@@ -1,8 +1,8 @@
 # Tapioca Sort
 
 <!-- toch -->
-[Intro](#intro) | [Draft](#draft) | [Tests](#tests)
--- | -- | --
+[Intro](#intro) | [Exemplos](#exemplos)
+-- | --
 <!-- toch -->
 
 ## Intro
@@ -33,17 +33,6 @@ topo -> 1 2 3 4 5
 
 Observe que a pilha de tapiocas pode ser ordenada utilizando duas operações de virada.
 
-## Draft
-
-- Você deve implementar a função `tapiocaSort` e suas auxiliares no arquivo `main.cpp`.
-
-<!-- links .cache/drafts -->
-- cpp
-  - [main.cpp](.cache/drafts/cpp/main.cpp)
-<!-- links -->
-
-## Tests
-
 ### Entrada
 
 - A primeira linha contém um inteiro N representando o número de tapiocas.
@@ -53,20 +42,33 @@ Observe que a pilha de tapiocas pode ser ordenada utilizando duas operações de
 
 - Seu programa deve imprimir uma sequência de viradas que resulte na pilha de tapiocas ordenada de maneira que a maior tapioca esteja na parte inferior e a menor tapioca na parte superior. A sequência de viradas deve terminar com 0, indicando que não são mais necessárias viradas.
 
-```txt
->>>>>>>>
+## Exemplos
+
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 5
-5 1 2 3 4
-========
-1 2 0
-<<<<<<<<
+1 2 3 4 5
+======== EXPECT
+0
+<<<<<<<< FINISH
 ```
 
-```txt
->>>>>>>>
+```py
+>>>>>>>> INSERT
 5
 5 4 3 2 1
-========
+======== EXPECT
 1 0
-<<<<<<<<
+<<<<<<<< FINISH
 ```
+
+```py
+>>>>>>>> INSERT
+5
+5 1 2 3 4 
+======== EXPECT
+1 2 0
+<<<<<<<< FINISH
+```
+<!-- load -->

@@ -28,16 +28,8 @@ Resolva novamente o problema utilizando
 - use o método erase da lista para matar os elementos
 
 
-## Testes
+## Exemplos
 
-```toml
-[[tests]]
-input = '''
-3 1
-'''
-output = '''
-[ 1> 2 3 ]
-[ 1 3> ]
-[ 3> ]
-'''
-```
+<!-- load tests.toml --tests 3 -->
+
+<!-- load -->

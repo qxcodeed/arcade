@@ -1,7 +1,7 @@
 # Caminho até o nó
 
 <!-- toch -->
-[Descrição](#descrição) | [Exemplo](#exemplo) | [Testes](#testes)
+[Descrição](#descrição) | [Estudo de caso](#estudo-de-caso) | [Exemplos](#exemplos)
 -- | -- | --
 <!-- toch -->
 
@@ -22,7 +22,7 @@
 - Limitação
   - Você deve percorrer a árvore UMA única vez para obter os caminhos e montar o caminho através do retorno da função.
 
-## Exemplo
+## Estudo de caso
 
 Para encontrar o 2 na árvore abaixo, seguimos o caminho `rrrlx`
 
@@ -51,33 +51,38 @@ Para encontrar o 2 na árvore abaixo, seguimos o caminho `rrrlx`
 string find_path(Node * root, int value);
 ```
 
-## Testes
+## Exemplos
 
-```txt
->>>>>>>> 01 um
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
 4 # #
 4
-========
+======== EXPECT
 Arvore:
 4
 Caminho: x
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>> 02 dois
+```py
+>>>>>>>> INSERT
 1 # 0 # # 
 0
-========
+======== EXPECT
 Arvore:
 ╭───#
 1
 ╰───0
 Caminho: rx
-<<<<<<<<
+<<<<<<<< FINISH
+```
 
->>>>>>>> 03 tres
+```py
+>>>>>>>> INSERT
 4 # 8 2 # # # 
 2
-========
+======== EXPECT
 Arvore:
 ╭───#
 4
@@ -85,19 +90,6 @@ Arvore:
 ╰───8
     ╰───#
 Caminho: rlx
-<<<<<<<<
-
->>>>>>>> 04 not found
-0 9 4 # # # 5 # # 
-7
-========
-Arvore:
-    ╭───4
-╭───9
-│   ╰───#
-0
-╰───5
-Caminho: !
-<<<<<<<<
-
+<<<<<<<< FINISH
 ```
+<!-- load -->

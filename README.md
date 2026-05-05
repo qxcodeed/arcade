@@ -77,8 +77,8 @@ Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/M
 - [ ]`@prin_list1      :3:main`[Princesa com lista ligada](base/prin_list1/README.md)
 - [ ]`@lista_d3        :3:side`[Lista Dupla - Extra](base/lista_d3/README.md)
 - [ ]`@prin_list2      :2:side`[Princesa2 com lista ligada](base/prin_list2/README.md)
-- [ ]`@editor          :4:main:self`[Editor de texto](base/editor/README.md)
-- [ ]`@controlz        :4:side:self`[Editor com Control Z](base/controlz/README.md)
+- [ ]`@editor          :4:main`[Editor de texto](base/editor/README.md)
+- [ ]`@controlz        :4:side`[Editor com Control Z](base/controlz/README.md)
 - [ ]`@editorint       :5:main:self`[Editor de texto interativo](base/editorint/README.md)
 
 ## Deque, Pilha e Fila +linear:4 @linear !@vector !@list
@@ -139,21 +139,14 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ]`@mergevet        :0:side`[Criando um vetor simples e fazendo um merge](base/mergevet/README.md)
 - [ ]`@hex             :0:main`[Desenhando labirinto perfeito](base/hex/README.md)
 - [ ]`@+sob_operadores :0:main`[Sobrecarga de operadores de classes](base/+sob_operadores/README.md)
-- [ ]`@ponto           :0:main`[Implemente a classe ponto](base/ponto/README.md)
 - [ ]`@fracao          :0:main`[Implemente a classe fração reduzida](base/fracao/README.md)
-- [ ]`@pontoGo         :0:main`[Implemente a classe ponto](base/pontoGo/README.md)
 - [ ]`@fracaoGo        :0:main`[Implemente a classe fração reduzida](base/fracaoGo/README.md)
 - [ ]`@lista_simples   :5:side`[Lista simples 1](base/lista_simples/README.md)
-- [ ]`@list_basic      :1:main`[Lista Simplesmente Encadeada - CPP](base/list_basic/README.md)
 - [ ]`@cauda           :0:main`[Lista Simplesmente Encadeada com Cauda](base/cauda/README.md)
-- [ ]`@duplamente      :0:main`[Lista Dupla - Algoritmos](base/duplamente/README.md)
-- [ ]`@invertendo      :0:main`[Inversão usando next e previous](base/invertendo/README.md)
-- [ ]`@invertendo2     :0:main`[Pilha - invertendo com pilhas auxiliares](base/invertendo2/README.md)
 - [ ]`@concatenar      :0:main`[Concatenar duas listas duplamente encadeadas](base/concatenar/README.md)
-- [ ]`@converte        :0:main`[Converte simples em dupla](base/converte/README.md)
 - [ ]`@banco           :3:main`[Gerenciando a fila do banco](base/banco/README.md)
 
 ## sandbox
 
-- [ ]`@fractais        `[Desenhando Fractais](base/fractais/README.md)
+- [ ]`@+sobrecarga     `[Como fazer sobrecarga de cópia e referencia](base/+sobrecarga/README.md)
 

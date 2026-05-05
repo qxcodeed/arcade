@@ -27,8 +27,9 @@ Leia o nome da pessoa e um inteiro que representa a idade de uma pessoa e escrev
 
 Por simplificações, não faça flexão de gênero (idoso, idosa, adulto, adulta), não use acento, nem ç, nem maiúscula.
 
-## Testes
+## Exemplos
 
+<!-- load tests.toml --tests 3 -->
 ```py
 >>>>>>>> INSERT
 mario
@@ -47,56 +48,12 @@ jose eh idoso
 <<<<<<<< FINISH
 ```
 
-## Dicas
-
-### Programando em: C
-
-- Utilize a técnica do seleção intervalada e termine com um else sem condição:
-
-```c
-int main() {
-    if(x < 12) {
-        ...
-    }  
-    else if(x < 18) {
-        ...
-    }  
-    else if(x < 65) {
-        ...
-    }  
-    else {
-        ...
-    }
-}
-```
-
-### Programando em: Python
-
-- Utilize a técnica do seleção intervalada e termine com um else sem condição:
-
 ```py
-if x < 12:
-    ...
-elif x < 18:
-    ...
-elif x < 65:
-    ...
-else:
-    ...
+>>>>>>>> INSERT
+mario
+1
+======== EXPECT
+mario eh crianca
+<<<<<<<< FINISH
 ```
-
-### Programando em: TypeScript
-
-- Utilize a técnica do seleção intervalada e termine com um else sem condição:
-
-```ts
-if(x < 12) {
-    ...
-} else if(x < 18) {
-    ...
-} else if(x < 65) {
-    ...
-} else {
-    ...
-}
-```
+<!-- load -->

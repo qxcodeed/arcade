@@ -12,32 +12,36 @@ A entrada é composta por uma única linha contendo um inteiro $n$
 
 A saída é composta por várias linhas mostrando o passo-a-passo do algoritmo recursivo.
 
-## Exemplo de Entrada
+## Exemplos
 
-```txt
-10
+<!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+1
+======== EXPECT
+1^2 = 1
+<<<<<<<< FINISH
 ```
 
-## Exemplo de Saída
+```py
+>>>>>>>> INSERT
+2
+======== EXPECT
+2^2 = 1^2 + 2*1 + 1 = ?
+1^2 = 1
+2^2 = 1^2 + 2*1 + 1 = 4
+<<<<<<<< FINISH
+```
 
-```txt
-10^2 = 9^2 + 2*9 + 1 = ?
-9^2 = 8^2 + 2*8 + 1 = ?
-8^2 = 7^2 + 2*7 + 1 = ?
-7^2 = 6^2 + 2*6 + 1 = ?
-6^2 = 5^2 + 2*5 + 1 = ?
-5^2 = 4^2 + 2*4 + 1 = ?
-4^2 = 3^2 + 2*3 + 1 = ?
+```py
+>>>>>>>> INSERT
+3
+======== EXPECT
 3^2 = 2^2 + 2*2 + 1 = ?
 2^2 = 1^2 + 2*1 + 1 = ?
 1^2 = 1
 2^2 = 1^2 + 2*1 + 1 = 4
 3^2 = 2^2 + 2*2 + 1 = 9
-4^2 = 3^2 + 2*3 + 1 = 16
-5^2 = 4^2 + 2*4 + 1 = 25
-6^2 = 5^2 + 2*5 + 1 = 36
-7^2 = 6^2 + 2*6 + 1 = 49
-8^2 = 7^2 + 2*7 + 1 = 64
-9^2 = 8^2 + 2*8 + 1 = 81
-10^2 = 9^2 + 2*9 + 1 = 100
+<<<<<<<< FINISH
 ```
+<!-- load -->

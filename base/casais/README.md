@@ -42,9 +42,9 @@ para cada animal no zoo:
 ### Saída
 
 - A quantidade de casais formados.
+## Exemplos
 
-### Testes
-
+<!-- load tests.toml --tests 3 -->
 ```py
 >>>>>>>> INSERT
 3
@@ -71,12 +71,4 @@ para cada animal no zoo:
 3
 <<<<<<<< FINISH
 ```
-
-```py
->>>>>>>> INSERT
-11
-1 9 -3 3 3 2 -1 4 -3 1 -1
-======== EXPECT
-4
-<<<<<<<< FINISH
-```
+<!-- load -->
