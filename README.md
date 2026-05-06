@@ -146,7 +146,7 @@ Nesse primeiro bloco, vamos aprender ou relembrar os conceitos básicos da lingu
 - [ ]`@concatenar      :0:main`[Concatenar duas listas duplamente encadeadas](base/concatenar/README.md)
 - [ ]`@banco           :3:main`[Gerenciando a fila do banco](base/banco/README.md)
 
-## sandbox
+## sandbox =X
 
 - [ ]`@+sobrecarga     `[Como fazer sobrecarga de cópia e referencia](base/+sobrecarga/README.md)
 

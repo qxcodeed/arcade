@@ -9,7 +9,7 @@ go mod init editor
 # Instale a biblioteca `tcell` com o comando
 go get github.com/gdamore/tcell/v2
 # Estando dentro da pasta do projeto, você pode rodar o projeto com o comando:
-tko run *.go
+tko run
 ```
 
 - Caso entre em loop infinito ou dê algum erro de execução, você pode interromper o programa com `Ctrl + C`.

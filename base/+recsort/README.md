@@ -16,7 +16,7 @@ O Merge Sort é um algoritmo de ordenação baseado na técnica de Divisão e Co
 
 ### Implementação do Merge em C++
 
-<!-- load assets/merge.cpp fenced -->
+<!-- load assets/merge.cpp --fenced -->
 #include <iostream>
 #include <vector>
 
@@ -108,7 +108,7 @@ O Quick Sort é outro algoritmo de ordenação baseado na técnica de Divisão e
 
 ### Implementação do Quick em C++
 
-<!-- load ./assets/merge.cpp fenced -->
+<!-- load ./assets/merge.cpp --fenced -->
 #include <iostream>
 #include <vector>
 

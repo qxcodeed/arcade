@@ -7,31 +7,34 @@ import (
 )
 
 type Editor struct {
-	lines  *List[*List[rune]]
-	line   *Node[*List[rune]]
-	cursor *Node[rune]
+	text   *List[*List[rune]] // a lista de linhas
+	itLine *Node[*List[rune]] // iterador para a linha corrente
+	itChar *Node[rune]        // iterador para o caracter do cursor
 	screen tcell.Screen
 	style  tcell.Style
 }
 
 func (e *Editor) InsertChar(r rune) {
-	e.cursor = e.line.Value.Insert(e.cursor, r)
-	e.cursor = e.cursor.Next()
+	e.itChar = e.itLine.Value.Insert(e.itChar, r) // insere antes do elemento apontado pelo cursor
+	e.itChar = e.itChar.Next()                    // move o cursor para próxima posição
 }
 
 func (e *Editor) KeyLeft() {
-	if e.cursor != e.line.Value.Front() { // Se o cursor não está no início da linha
-		e.cursor = e.cursor.Prev() // Move o cursor para a esquerda
+	if e.itChar != e.itLine.Value.Front() { // Se o cursor não está no início da linha
+		e.itChar = e.itChar.Prev() // Move o cursor para a esquerda
 		return
 	}
 	// Estamos no início da linha
-	if e.line != e.lines.Front() { // Se não está na primeira linha
-		e.line = e.line.Prev()        // Move para a linha anterior
-		e.cursor = e.line.Value.End() // Move o cursor para o final da linha
+	if e.itLine != e.text.Front() { // Se não está na primeira linha
+		e.itLine = e.itLine.Prev()      // Atualiza iterador de linha para linha anterior
+		e.itChar = e.itLine.Value.End() // Move o cursor para o final da linha
 	}
 }
 
 func (e *Editor) KeyEnter() {
+	e.text.Insert(e.itLine.Next(), NewList[rune]()) // cria uma nova linha e insere abaixo da linha corrente
+	e.itLine = e.itLine.Next()        // vai pra próxima linha
+	e.itChar = e.itLine.Value.Front() // move o cursor para o início da linha
 }
 
 func (e *Editor) KeyRight() {
@@ -49,8 +52,7 @@ func (e *Editor) KeyBackspace() {
 func (e *Editor) KeyDelete() {
 }
 
-func main() {
-	// Texto inicial e posição do cursor
+func main() { // Texto inicial e posição do cursor
 	editor := NewEditor()
 	editor.Draw()
 	editor.MainLoop()
@@ -103,10 +105,10 @@ func NewEditor() *Editor {
 		fmt.Printf("erro ao iniciar a tela: %v", err)
 	}
 	e.screen = screen
-	e.lines = NewList[*List[rune]]()
-	e.lines.PushBack(NewList[rune]())
-	e.line = e.lines.Front()
-	e.cursor = e.line.Value.Back()
+	e.text = NewList[*List[rune]]()
+	e.text.PushBack(NewList[rune]())
+	e.itLine = e.text.Front()
+	e.itChar = e.itLine.Value.Back()
 	// Define o estilo do texto (branco com fundo preto)
 	e.style = tcell.StyleDefault.Foreground(tcell.ColorWhite).Background(tcell.ColorBlack)
 
@@ -120,16 +122,16 @@ func (e *Editor) Draw() {
 	e.screen.Clear()
 	x := 0
 	y := 0
-	for line := e.lines.Front(); line != e.lines.End(); line = line.Next() {
+	for line := e.text.Front(); line != e.text.End(); line = line.Next() {
 		for char := line.Value.Front(); ; char = char.Next() {
 			data := char.Value
 			if char == line.Value.End() {
-				data = '⤶'
+				data = '↲'
 			}
 			if data == ' ' {
 				data = '·'
 			}
-			if char == e.cursor {
+			if char == e.itChar {
 				e.screen.SetContent(x, y, data, nil, e.style.Reverse(true))
 			} else {
 				e.screen.SetContent(x, y, data, nil, e.style)

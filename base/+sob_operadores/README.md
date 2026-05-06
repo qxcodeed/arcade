@@ -2,6 +2,6 @@
 
 ## Imprimindo um classe usando operator<<
 
-<!-- load imprimindo.cpp fenced -->
+<!-- load imprimindo.cpp --fenced -->
 
 <!-- load -->

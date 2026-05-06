@@ -2,46 +2,36 @@
 
 ## Seja esse nosso código de referencia a ser estudado
 
-<!-- load tad.cpp fenced -->
-
+<!-- load src/cpp/imprimindo.cpp --fenced -->
 ```cpp
 #include <iostream>
+#include <sstream>
 
 class Foo {
-
-    int x;
-
+    int value = 10;
+    float f = 3.14;
 
 public:
-
-    Foo(int value = 0) {
-        x = value;
-    }
-
-    // esse método é chamado quando posso alterar o objeto
-    int& getX() { 
-        std::cout << "obtendo por referencia\n";
-        return x;
-    }
-
-    // esse método é chamado quando não posso alterar o objeto
-    int getX() const {
-        std::cout << "obtendo por valor\n";
-        return x;
+    // sugestão de criar um método str() para converter o objeto em string
+    std::string str() const {
+        std::ostringstream ss; //crie a saida dos seus dados
+        ss << "value: " << value << ", f: " << f;
+        return ss.str();
     }
 };
 
-int main() {
-    Foo f(5);
-    f.getX() = 10; // chama o método int& getX()
-    std::cout << f.getX() << '\n'; // 10
-
-    const Foo f2(5);
-    // f2.getX() = 10; // erro de compilação
-    std::cout << f2.getX() << '\n'; // 5
+// ensine o ostream a imprimir Foo
+std::ostream& operator<<(std::ostream& os, const Foo& foo) {
+    return os << foo.str();
 }
-```
 
+int main() {
+    Foo f;
+    std::cout << f.str() << '\n'; // convertendo manualmente
+    std::cout << f << '\n'; // usando o operador <<
+}
+
+```
 <!-- load -->
 
 Este código em C++ demonstra a sobrecarga de métodos e o uso de qualificadores de const para objetos. Vamos explorar os componentes e conceitos fundamentais para entender o código.
