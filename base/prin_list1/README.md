@@ -31,5 +31,33 @@ Resolva novamente o problema utilizando
 ## Exemplos
 
 <!-- load tests.toml --tests 3 -->
+```py
+>>>>>>>> INSERT
+3 1
+======== EXPECT
+[ 1> 2 3 ]
+[ 1 3> ]
+[ 3> ]
+<<<<<<<< FINISH
+```
 
+```py
+>>>>>>>> INSERT
+3 2
+======== EXPECT
+[ 1 2> 3 ]
+[ 1> 2 ]
+[ 1> ]
+<<<<<<<< FINISH
+```
+
+```py
+>>>>>>>> INSERT
+3 3
+======== EXPECT
+[ 1 2 3> ]
+[ 2> 3 ]
+[ 2> ]
+<<<<<<<< FINISH
+```
 <!-- load -->
