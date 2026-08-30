@@ -1,4 +1,4 @@
-// DEL!
+// @DROP
 
 package main
 

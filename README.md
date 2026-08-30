@@ -1,7 +1,6 @@
 # Repositório de exercícios para Estrutura de Dados
 
 Esse é um repositório que integra o conteúdo das atividades de Estrutura de Dados (ED).
-Descrição do marcadores[LINK](https://github.com/senapk/tko/blob/master/wiki/Marcadores-e-Tipos.md)
 
 ## Revisão <!-- @basic xpgoal=12 -->
 

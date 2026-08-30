@@ -19,7 +19,7 @@ type Node struct {
 func MyShow(node *Node, nivel int) {
 	_, _ = node, nivel
 	// TODO
-	// DEL!
+	// @DROP
 	if node == nil {
 		fmt.Println(strings.Repeat(".", nivel*4) + "#")
 		return

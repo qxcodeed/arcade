@@ -23,7 +23,7 @@ func findPath(node *Node, value int) string {
 	// ACT
 	// _, _ = node, value
 	// return ""
-	// DEL!
+	// @DROP
 	if node == nil {
 		return "!"
 	}
@@ -41,7 +41,7 @@ func findPath(node *Node, value int) string {
 	return "!"
 }
 
-// DEL!
+// @DROP
 func findPath2(node *Node, history string, value int) string {
 	if node == nil {
 		return "!"

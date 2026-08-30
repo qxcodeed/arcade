@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// DEL!
+// @DROP
 type Pos struct {
 	l int
 	c int
@@ -23,7 +23,7 @@ func (p Pos) getNeig() []Pos {
 
 func search(grid [][]rune, startPos Pos, endPos Pos) {
 	_, _, _ = grid, startPos, endPos
-	// DEL!
+	// @DROP
 	path := Stack[Pos]{}          // vai conter o caminho percorrido
 	visited := make(map[Pos]bool) // vai guardar os nós visitados
 

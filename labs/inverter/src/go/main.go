@@ -17,7 +17,7 @@ type Node struct {
 func Reverse(node *Node) {
 	_ = node
 	// TODO
-	// DEL!
+	// @DROP
 	if node == nil {
 		return
 	}

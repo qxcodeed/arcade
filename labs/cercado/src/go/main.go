@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// DEL!
+// @DROP
 type Pos struct {
 	l, c int
 }
@@ -15,7 +15,7 @@ type Pos struct {
 // NÃO ALTERE A ASSINATURA DA FUNÇÃO solve
 func solve(board [][]byte) {
 	_ = board
-	// DEL!
+	// @DROP
 	if len(board) == 0 || len(board[0]) == 0 {
 		return
 	}

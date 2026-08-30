@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// DEL!
+// @DROP
 type Pos struct {
 	l int
 	c int
@@ -30,7 +30,7 @@ func burnTrees(grid [][]rune, l, c int) {
 	// nl := len(grid)
 	// nc := len(grid[0])
 	// _, _ = nl, nc
-	// DEL!
+	// @DROP
 	if !match(grid, Pos{l, c}, '#') {
 		return
 	}

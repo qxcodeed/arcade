@@ -1,7 +1,7 @@
 package main
 import "fmt"
 func main() {
-	// DEL!
+	// @DROP
     var qtd int
     fmt.Scan(&qtd)
 

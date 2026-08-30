@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt" // DEL!
+	"fmt" // @DROP
 )
 
 func main() {
-	// DEL!
+	// @DROP
 	times := NewQueue[rune]()
 	for i := range 16 {
 		times.Enqueue(rune(i + 'A'))
