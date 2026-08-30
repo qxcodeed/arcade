@@ -1,0 +1,23 @@
+case=
+input=1
+output="[2]
+"
+
+
+case=
+input=2
+output="[2, 3]
+"
+
+
+case=
+input=3
+output="[2, 3, 5]
+"
+
+
+case=
+input=7
+output="[2, 3, 5, 7, 11, 13, 17]
+"
+

@@ -1,0 +1,29 @@
+case=
+input=3 + 4 * 2
+output="3 4 2 * +
+"
+
+
+case=
+input=3 + 4 * 2 - 1
+output="3 4 2 * + 1 -
+"
+
+
+case=
+input=3 + 4 * 2 - 1 / 2
+output="3 4 2 * + 1 2 / -
+"
+
+
+case=
+input=1 + 2 * 3 ^ 4
+output="1 2 3 4 ^ * +
+"
+
+
+case=
+input=1 + 2 * 3 ^ 4 - 5
+output="1 2 3 4 ^ * + 5 -
+"
+

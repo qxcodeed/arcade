@@ -1,0 +1,15 @@
+case=
+input=3 4
+X..X
+...X
+...X
+output="2
+"
+
+
+case=
+input=1 1
+.
+output="0
+"
+

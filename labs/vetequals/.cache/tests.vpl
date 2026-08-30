@@ -1,0 +1,69 @@
+case=
+input=[ ]
+[ ]
+output="iguais
+"
+
+
+case=
+input=[ 1 ]
+[ 1 ]
+output="iguais
+"
+
+
+case=
+input=[ 1 ]
+[ 1 2 ]
+output="diferentes
+"
+
+
+case=
+input=[ 1 2 ]
+[ 1 ]
+output="diferentes
+"
+
+
+case=
+input=[ 2 1 ]
+[ 1 ]
+output="diferentes
+"
+
+
+case=
+input=[ 1 ]
+[ 2 1 ]
+output="diferentes
+"
+
+
+case=
+input=[ 1 3 ]
+[ 2 1 ]
+output="diferentes
+"
+
+
+case=
+input=[ 3 1 ]
+[ 2 1 ]
+output="diferentes
+"
+
+
+case=
+input=[ 1 2 3 ]
+[ 1 2 3 ]
+output="iguais
+"
+
+
+case=
+input=[ 1 2 3 4 ]
+[ 1 2 3 ]
+output="diferentes
+"
+

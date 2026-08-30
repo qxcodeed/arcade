@@ -1,0 +1,530 @@
+case=init e empty show
+input=show
+end
+output="$show
+[]
+$end
+"
+
+
+case=push_front <value ...>
+input=push_front 1 2 3 4
+show
+push_front 9 6
+show
+end
+output="$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$push_front 9 6
+$show
+[6, 9, 4, 3, 2, 1]
+$end
+"
+
+
+case=size
+input=size
+push_front 4
+show
+size
+push_front 3 2 1
+show
+size
+end
+output="$size
+0
+$push_front 4
+$show
+[4]
+$size
+1
+$push_front 3 2 1
+$show
+[1, 2, 3, 4]
+$size
+4
+$end
+"
+
+
+case=clear
+input=push_front 1 2 3 4
+show
+clear
+show
+clear
+show
+push_front 1 2 3 4
+show
+end
+output="$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$clear
+$show
+[]
+$clear
+$show
+[]
+$push_front 1 2 3 4
+$show
+[4, 3, 2, 1]
+$end
+"
+
+
+case=push_back <value ...>
+input=push_back 1 2 3 4
+show
+push_back 1 2 3 4
+show
+push_front 0 3
+show
+end
+output="$push_back 1 2 3 4
+$show
+[1, 2, 3, 4]
+$push_back 1 2 3 4
+$show
+[1, 2, 3, 4, 1, 2, 3, 4]
+$push_front 0 3
+$show
+[3, 0, 1, 2, 3, 4, 1, 2, 3, 4]
+$end
+"
+
+
+case=pop_front
+input=push_back 1 3 4 5
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+pop_front
+show
+end
+output="$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_front
+$show
+[3, 4, 5]
+$pop_front
+$show
+[4, 5]
+$pop_front
+$show
+[5]
+$pop_front
+$show
+[]
+$pop_front
+$show
+[]
+$end
+"
+
+
+case=pop_back
+input=push_back 1 3 4 5
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+pop_back
+show
+end
+output="$push_back 1 3 4 5
+$show
+[1, 3, 4, 5]
+$pop_back
+$show
+[1, 3, 4]
+$pop_back
+$show
+[1, 3]
+$pop_back
+$show
+[1]
+$pop_back
+$show
+[]
+$pop_back
+$show
+[]
+$end
+"
+
+
+case=walking
+input=push_back 1 2 3 4 5 6
+walk
+clear
+walk
+end
+output="$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$end
+"
+
+
+case=search and replace
+input=push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+end
+output="$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$end
+"
+
+
+case=search and insert
+input=push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+push_back 1 2 3 4 5
+show
+insert 3 9
+show
+insert 1 8
+show
+insert 5 7
+show
+insert 6 7
+show
+insert 1 7
+show
+insert 10 7
+show
+end
+output="$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$insert 3 9
+$show
+[1, 2, 9, 3, 4, 5]
+$insert 1 8
+$show
+[8, 1, 2, 9, 3, 4, 5]
+$insert 5 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 5]
+$insert 6 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 1 7
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 10 7
+fail: not found
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$end
+"
+
+
+case=search and remove
+input=push_back 1 2 3 4 5 6
+walk
+clear
+walk
+push_back 1 2 3 4 5
+replace 3 9
+show
+replace 1 8
+show
+replace 5 7
+show
+push_back 1 2 3 4 5
+show
+insert 3 9
+show
+insert 1 8
+show
+insert 5 7
+show
+insert 6 7
+show
+insert 1 7
+show
+insert 10 7
+show
+push_back 1 2 3 4 5
+show
+remove 3
+show
+remove 1
+show
+remove 7
+show
+output="$push_back 1 2 3 4 5 6
+$walk
+[1, 2, 3, 4, 5, 6]
+[6, 5, 4, 3, 2, 1]
+$clear
+$walk
+[]
+[]
+$push_back 1 2 3 4 5
+$replace 3 9
+$show
+[1, 2, 9, 4, 5]
+$replace 1 8
+$show
+[8, 2, 9, 4, 5]
+$replace 5 7
+$show
+fail: not found
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$insert 3 9
+$show
+[1, 2, 9, 3, 4, 5]
+$insert 1 8
+$show
+[8, 1, 2, 9, 3, 4, 5]
+$insert 5 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 5]
+$insert 6 7
+$show
+[8, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 1 7
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$insert 10 7
+fail: not found
+$show
+[8, 7, 1, 2, 9, 3, 4, 7, 6, 5]
+$push_back 1 2 3 4 5
+$show
+[1, 2, 3, 4, 5]
+$remove 3
+$show
+[1, 2, 4, 5]
+$remove 1
+$show
+[2, 4, 5]
+$remove 7
+fail: not found
+$show
+[2, 4, 5]
+------------------------------------------   LISTA DUPLA 2 ----------------------------------------------------------
+"
+
+
+case=Teste do Construtor
+input=test_constructor
+output="TESTE Construtor
+Ok
+"
+
+
+case=Teste do has_info
+input=test_has_info
+output="TESTE has_info
+[30 -> 20 -> 15 -> 10]
+has_info -1 == 0
+has_info 0 == 0
+has_info 5 == 0
+has_info 10 == 1
+has_info 15 == 1
+"
+
+
+case=Teste do get
+input=test_get
+output="TESTE get
+[30 -> 20 -> 15 -> 10]
+get 0 == 30
+get 1 == 20
+get 2 == 15
+get 3 == 10
+"
+
+
+case=Teste do push_front
+input=test_push_front
+output="TESTE push_front
+push_front 10
+push_front 15
+push_front 20
+push_front 30
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+4 Nos alocados
+"
+
+
+case=Teste do push_back
+input=test_push_back
+output="TESTE push_back
+push_back 10
+push_back 15
+push_back 20
+push_back 30
+Expected: [10 -> 15 -> 20 -> 30]
+[10 -> 15 -> 20 -> 30]
+"
+
+
+case=Teste do pop_front
+input=test_pop_front
+output="TESTE pop_front
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_front
+Esperado: [20 -> 15 -> 10]
+[20 -> 15 -> 10]
+pop_front
+Esperado: [15 -> 10]
+[15 -> 10]
+pop_front
+Esperado: [10]
+[10]
+pop_front
+Esperado: []
+[]
+pop_front
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+"
+
+
+case=Teste do pop_back
+input=test_pop_back
+output="TESTE pop_back
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+pop_back
+Esperado: [30 -> 20 -> 15]
+[30 -> 20 -> 15]
+pop_back
+Esperado: [30 -> 20]
+[30 -> 20]
+pop_back
+Esperado: [30]
+[30]
+pop_back
+Esperado: []
+[]
+pop_back
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+"
+
+
+case=Teste do clear
+input=test_clear
+output="TESTE clear
+Esperado: [30 -> 20 -> 15 -> 10]
+[30 -> 20 -> 15 -> 10]
+clear
+Esperado: []
+[]
+clear
+Esperado: []
+[]
+Todos os Nos foram devidamente deletados
+"
+
+
+case=Teste do length
+input=test_length
+output="TESTE length
+[]
+length  == 0
+[42]
+length  == 1
+[42 -> 42]
+length  == 2
+"
+
+
+case=Teste do empty
+input=test_empty
+output="TESTE empty
+[]
+empty  == 1
+[42]
+empty  == 0
+"
+
+
+case=Teste do destrutor
+input=test_destructor
+output="TESTE destructor
+Existem Nos nao foram liberados na memoria
+"
+

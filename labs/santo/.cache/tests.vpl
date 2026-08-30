@@ -1,0 +1,23 @@
+case=
+input=3 20
+output="17.50
+"
+
+
+case=
+input=6 20
+output="19.69
+"
+
+
+case=
+input=6 10
+output="9.84
+"
+
+
+case=
+input=5 20
+output="19.38
+"
+

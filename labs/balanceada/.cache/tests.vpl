@@ -1,0 +1,59 @@
+case=
+input=()
+output="balanceado
+"
+
+
+case=
+input=(())
+output="balanceado
+"
+
+
+case=
+input=()()()()[][][][]
+output="balanceado
+"
+
+
+case=Teste 4
+input=([])(([][]))
+output="balanceado
+"
+
+
+case=Teste 5
+input=(([[[(([([])][][][](([()]))))]]()(())()][][][()[](())]))()([])[()]
+output="balanceado
+"
+
+
+case=Teste 6
+input=)(
+output="nao balanceado
+"
+
+
+case=Teste 7
+input=[[]
+output="nao balanceado
+"
+
+
+case=Teste 8
+input=[(][)]
+output="nao balanceado
+"
+
+
+case=Teste 9
+input=[[[[))))
+output="nao balanceado
+"
+
+
+case=Teste 10
+input=(([[[(([([])][][][](([()]))))]]()(())()][][][()[](())])))()([])[()]
+output="nao balanceado
+"
+
